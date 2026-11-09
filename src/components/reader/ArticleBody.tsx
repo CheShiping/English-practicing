@@ -157,6 +157,47 @@ export default function ArticleBody({
     window.setTimeout(captureSelection, 60);
   }, [captureSelection]);
 
+  const renderTokens = (text: string) => (
+    <WordTokens
+      text={text}
+      vocabSet={vocabSet}
+      highlightVocab={highlightVocab}
+      guardMode={guardMode}
+      onWordClick={onWordClick}
+    />
+  );
+
+  const renderTable = (block: Block, index: number) => {
+    const rows = block.rows || [];
+    if (!rows.length) return null;
+    const [header, ...body] = rows;
+    return (
+      <div className="article-table-wrap" key={`table-${index}`}>
+        <table className="article-table">
+          <thead>
+            <tr>
+              {header.map((cell, ci) => (
+                <th key={ci} scope="col">
+                  {renderTokens(cell)}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {body.map((row, ri) => (
+              <tr key={ri}>
+                {row.map((cell, ci) => (
+                  <td key={ci}>{renderTokens(cell)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {header.length > 5 && <div className="article-table-hint">表格可左右滑动查看 →</div>}
+      </div>
+    );
+  };
+
   const renderBlock = (block: Block, index: number) => {
     const anns = annotations.filter((a) => a.blockIndex === index);
     const segments = buildSegments(block.text, anns);
@@ -231,7 +272,10 @@ export default function ArticleBody({
   };
 
   article.blocks.forEach((block, i) => {
-    if (block.type === 'li') {
+    if (block.type === 'table') {
+      flushList(String(i));
+      nodes.push(renderTable(block, i));
+    } else if (block.type === 'li') {
       listBuffer.push(renderBlock(block, i));
     } else {
       flushList(String(i));

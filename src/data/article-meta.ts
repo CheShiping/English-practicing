@@ -40,6 +40,12 @@ export const CATEGORY_META: Record<
     icon: 'users',
     short: '社会',
   },
+  chongci: {
+    description: '考前综合冲刺：混合题材、限时阅读与快速定位训练。',
+    color: '#8E3B4E',
+    icon: 'rocket',
+    short: '冲刺',
+  },
 };
 
 export const ARTICLE_META: Record<
@@ -273,6 +279,84 @@ export const ARTICLE_META: Record<
     subtitle: '食物里的科学与风险',
     tags: ['食品', '健康', '科学'],
     summary: '科学让食物更安全，也让一些潜在有害物质进入餐桌。硝酸盐、抗生素与添加剂背后的健康风险。',
+  },
+  'chongci-01': {
+    title: 'Job Search and Career Planning Seminars',
+    subtitle: '求职与职业规划研讨会',
+    tags: ['职场', '求职', '应用文'],
+    summary: '一场面向在职员工的内部培训通知：两场三小时课程，教你做职业规划和求职准备。',
+  },
+  'chongci-02': {
+    title: 'Choosing a College',
+    subtitle: '选择大学：公立与私立的账本',
+    tags: ['教育', '择校', '数据'],
+    summary: '公立大学四年约 5.3 万美元，私立大学约 10 万美元。用数据说明为什么这所公立学院值得考虑。',
+  },
+  'chongci-03': {
+    title: 'Should School Uniforms Be Required?',
+    subtitle: '校服之争',
+    tags: ['教育', '校服', '议论文'],
+    summary: '校服会抹杀个性，还是能减少攀比、培养纪律？作者给出了明确的立场与理由。',
+  },
+  'chongci-04': {
+    title: 'Student Dormitory Comparison',
+    subtitle: '学生宿舍对比表',
+    tags: ['校园', '宿舍', '表格'],
+    summary: '七个学生宿舍的校区、房间数、周租金、网络与租期一览，练习表格信息快速定位。',
+  },
+  'chongci-05': {
+    title: 'What Mice Can Teach Us About Food',
+    subtitle: '老鼠实验：吃得少会更健康吗？',
+    tags: ['健康', '实验', '饮食'],
+    summary: '三组老鼠吃同样的健康食物、不同的分量。三年后，吃得最少的一组最瘦、最活跃、也活得最久。',
+  },
+  'chongci-06': {
+    title: 'International Students in the U.S.',
+    subtitle: '美国国际学生新趋势',
+    tags: ['教育', '留学', '数据'],
+    summary: '在美留学生连续五年增长，中国学生约占 22%。他们不再只集中在少数名校，而是遍布全美各类院校。',
+  },
+  'chongci-07': {
+    title: 'Four Steps to Better Communication',
+    subtitle: '改善沟通的四个步骤',
+    tags: ['沟通', '方法', '说明文'],
+    summary: '开放式提问、积极倾听、创造专注空间、真正投入对话——四个可以立刻练习的沟通技巧。',
+  },
+  'chongci-08': {
+    title: 'Sugar and Athletes',
+    subtitle: '糖分与运动员',
+    tags: ['健康', '运动', '饮食'],
+    summary: '一罐可乐含 39 克糖。运动员该如何在 40–60 克的每日区间里，既补充能量又不伤害身体？',
+  },
+  'chongci-09': {
+    title: 'Green Village Community Guide',
+    subtitle: '绿村社区健身指南',
+    tags: ['社区', '健身', '说明文'],
+    summary: '五家社区运动与健身场所的开放时间、课程与适合人群，一篇典型的信息检索题。',
+  },
+  'chongci-10': {
+    title: "Shanghai's First Forest Library",
+    subtitle: '上海首座森林图书馆',
+    tags: ['城市', '阅读', '新闻'],
+    summary: '在森林里读书是什么体验？上海首座森林图书馆把阅读空间搬进自然，也把自然带进阅读。',
+  },
+  'chongci-11': {
+    title: 'Emotional Eating',
+    subtitle: '情绪性进食',
+    tags: ['心理', '饮食', '健康'],
+    summary: '压力、愤怒、悲伤时想吃东西？问题不在食物，而在情绪。心理学家给出三个可操作的步骤。',
+  },
+  'chongci-12': {
+    title: 'Do Plants Make Sounds?',
+    subtitle: '植物会“说话”吗？',
+    tags: ['科学', '植物', '研究'],
+    summary: '番茄和烟草在缺水或被切割时会发出人耳听不到的声音。植物也许比我们想象的更“敏感”。',
+  },
+  'chongci-13': {
+    title: 'The Case for Self-Driving Cars',
+    subtitle: '自动驾驶汽车的未来',
+    tags: ['科技', '交通', '议论文'],
+    summary: '94% 的车祸源于人为失误。自动驾驶能减少事故、缓解拥堵、释放城市空间——但前提是安全被证明。',
   },
 };
 

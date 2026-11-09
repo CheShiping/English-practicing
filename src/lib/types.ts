@@ -1,6 +1,7 @@
 export interface Block {
-  type: 'p' | 'li';
+  type: 'p' | 'li' | 'table';
   text: string;
+  rows?: string[][];
   translation?: string;
 }
 

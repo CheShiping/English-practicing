@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:25:38.220Z",
+  "generatedAt": "2026-11-09T15:39:46.992Z",
   "categories": [
     {
       "id": "kepu",
@@ -42,6 +42,13 @@
       "order": 6,
       "file": "社会生活类专项训.md",
       "count": 12
+    },
+    {
+      "id": "chongci",
+      "name": "冲刺训练",
+      "order": 7,
+      "file": "冲刺训练.md",
+      "count": 13
     }
   ],
   "articles": [
@@ -4432,13 +4439,1681 @@
         "",
         ""
       ]
+    },
+    {
+      "id": "chongci-01",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 1,
+      "heading": "Job Search and Career Planning Seminars",
+      "title": "Job Search and Career Planning Seminars",
+      "fallbackTitle": "Do you want to grow with the company but aren’t sure what direction you should take",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Do you want to grow with the company but aren’t sure what direction you should take? Do you read internal job postings but not apply for jobs because you are not sure how to write a resume or fill in the required application form? Do you go for interviews but feel nervous about answering the questions?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The Human Resources Department is considering offering two three-hour seminars for employees who would like to learn more about our job posting policy, career planning and job searching techniques. The seminars would be offered on evenings or weekends and would cover the following topics.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Session 1 – Career Planning",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In this session you would learn how to:",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "set goals, priorities, and timelines",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "document your skills and abilities",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "analyze your personality and interests",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "determine the type of job that suits you best",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "create the learning plan",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Session 2 – Job Search Techniques",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In this session you would learn how to:",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "write a great resume",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "complete an application form",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "develop strong cover letters",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "prepare for an interview",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "If you are interested in attending one or both of these sessions, please fill out one of the attached forms and leave it in the labeled envelope. If there is enough interest in these sessions, dates will be scheduled and interested employees will be contacted.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Do you want to grow with the company but aren’t sure what direction you should take? Do you read internal job postings but not apply for jobs because you are not sure how to write a resume or fill in the required application form? Do you go for interviews but feel nervous about answering the questions?",
+        "The Human Resources Department is considering offering two three-hour seminars for employees who would like to learn more about our job posting policy, career planning and job searching techniques. The seminars would be offered on evenings or weekends and would cover the following topics.",
+        "Session 1 – Career Planning",
+        "In this session you would learn how to:",
+        "Session 2 – Job Search Techniques",
+        "In this session you would learn how to:",
+        "If you are interested in attending one or both of these sessions, please fill out one of the attached forms and leave it in the labeled envelope. If there is enough interest in these sessions, dates will be scheduled and interested employees will be contacted."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "How long does it take if an employee participates in both sessions?",
+          "options": [
+            "Two weekends.",
+            "Three weekends.",
+            "Five hours.",
+            "Six hours."
+          ],
+          "answer": "D",
+          "explanation": "文中说两个研讨会各三小时（two three-hour seminars），两场都参加共六小时。",
+          "evidence": "two three-hour seminars"
+        },
+        {
+          "num": 2,
+          "stem": "Which of the following is one of the topics of session 2?",
+          "options": [
+            "Goal setting.",
+            "Interview preparation.",
+            "Learning planning.",
+            "Personality analysis."
+          ],
+          "answer": "B",
+          "explanation": "Session 2 的主题包括写简历、填申请表、写求职信和准备面试，B 对应 interview preparation。",
+          "evidence": "prepare for an interview"
+        },
+        {
+          "num": 3,
+          "stem": "If an employee wants to improve his resume and cover letters, which session(s) should he go to?",
+          "options": [
+            "Both sessions.",
+            "Session 1.",
+            "Session 2.",
+            "Neither session."
+          ],
+          "answer": "C",
+          "explanation": "简历和求职信都属于 Session 2 – Job Search Techniques 的内容，因此应参加第二场。",
+          "evidence": "write a great resume ... develop strong cover letters"
+        },
+        {
+          "num": 4,
+          "stem": "Who will be the most likely participants of the above seminars?",
+          "options": [
+            "Anyone looking for a job.",
+            "Former employees of the company.",
+            "Future employees of the company.",
+            "Current employees of the company."
+          ],
+          "answer": "D",
+          "explanation": "通知面向公司内部员工（employees），由人力资源部提供，因此最可能的参加者是现有员工。",
+          "evidence": "offering two ... seminars for employees"
+        }
+      ],
+      "wordCount": 212,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-02",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 2,
+      "heading": "",
+      "title": "Choosing a college requires that you ask yourself many questions",
+      "fallbackTitle": "Choosing a college requires that you ask yourself many questions",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Choosing a college requires that you ask yourself many questions. Who do you want to be? What do you want to do? Where do you want to go in life? How do you get there? Perhaps the best way to find those answers is to look at our college on Long Island.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Think about it. Private colleges on Long Island charge an average of $25, 000 a year on overall costs, an average total of $100, 000 over four years. Our college’s cost is just over $13, 000 or about $53, 000 over four years. That means, because of the investment of the State of New York in our public college, you pay nearly half what students at those private colleges pay. That’s the money you can use later for graduate school, travel, or whatever you choose.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "LOCATION: With a wooded 604-acre campus centrally located on Long Island, the nation’s 16th largest population center, our college offers the best of both worlds, a quiet atmosphere dedicated to learning yet just 20 miles from the heart of New York City.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "STUDENTS: 3, 200 students from across the United States and more than 20 foreign countries, among the most culturally diverse student populations in the Northeast.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "FACULTY: 120 full-time, of whom 80% hold a terminal degree in their field. A 17:1 students-to-faculty ratio.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "CURRICULUN（课程）: Comprehensive, with 45 undergraduate majors and 16 minors in both liberal arts and professional fields. One graduate program currently available.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "DEGREES: Undergraduate: Bachelor of Arts, Bachelor of Science, Bachelor of Professional Studies. Graduate: M.S. in Accounting.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "STUDENT LIFE: Active and diverse with more than 50 students organizations, including a newspaper and television station, academic organizations and community service.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "FINANCIAL ASSISTANCE: 60% of students receive either need-based aid or merit-based scholarships.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "ADMISSION REQUIREMENTS: Applications considered on a rolling basis. About 55% of freshman applicants are accepted. Transfer students earning more than 24 credit hours of college work will be evaluated based on that work.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Choosing a college requires that you ask yourself many questions. Who do you want to be? What do you want to do? Where do you want to go in life? How do you get there? Perhaps the best way to find those answers is to look at our college on Long Island.",
+        "Think about it. Private colleges on Long Island charge an average of $25, 000 a year on overall costs, an average total of $100, 000 over four years. Our college’s cost is just over $13, 000 or about $53, 000 over four years. That means, because of the investment of the State of New York in our public college, you pay nearly half what students at those private colleges pay. That’s the money you can use later for graduate school, travel, or whatever you choose.",
+        "LOCATION: With a wooded 604-acre campus centrally located on Long Island, the nation’s 16th largest population center, our college offers the best of both worlds, a quiet atmosphere dedicated to learning yet just 20 miles from the heart of New York City.",
+        "STUDENTS: 3, 200 students from across the United States and more than 20 foreign countries, among the most culturally diverse student populations in the Northeast.",
+        "FACULTY: 120 full-time, of whom 80% hold a terminal degree in their field. A 17:1 students-to-faculty ratio.",
+        "CURRICULUN（课程）: Comprehensive, with 45 undergraduate majors and 16 minors in both liberal arts and professional fields. One graduate program currently available.",
+        "DEGREES: Undergraduate: Bachelor of Arts, Bachelor of Science, Bachelor of Professional Studies. Graduate: M.S. in Accounting.",
+        "STUDENT LIFE: Active and diverse with more than 50 students organizations, including a newspaper and television station, academic organizations and community service.",
+        "FINANCIAL ASSISTANCE: 60% of students receive either need-based aid or merit-based scholarships.",
+        "ADMISSION REQUIREMENTS: Applications considered on a rolling basis. About 55% of freshman applicants are accepted. Transfer students earning more than 24 credit hours of college work will be evaluated based on that work."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "In comparison with private colleges, how much can be saved over four years in this college?",
+          "options": [
+            "About $13, 000.",
+            "About $25, 000.",
+            "About $47, 000.",
+            "About $53, 000."
+          ],
+          "answer": "C",
+          "explanation": "私立大学四年约 100,000 美元，这所公立大学约 53,000 美元，相差约 47,000 美元。",
+          "evidence": "an average total of $100,000 over four years ... about $53,000 over four years"
+        },
+        {
+          "num": 2,
+          "stem": "How many full-time faculty members hold a terminal degree in their fields?",
+          "options": [
+            "120.",
+            "96.",
+            "80.",
+            "45."
+          ],
+          "answer": "B",
+          "explanation": "120 名全职教师中 80% 拥有终端学位，120 × 80% = 96。",
+          "evidence": "120 full-time, of whom 80% hold a terminal degree"
+        },
+        {
+          "num": 3,
+          "stem": "What is the rough number of students who get financial assistance?",
+          "options": [
+            "3, 200.",
+            "1, 900.",
+            "120.",
+            "50."
+          ],
+          "answer": "B",
+          "explanation": "3,200 名学生中 60% 获得资助，约 1,920 人，最接近 1,900。",
+          "evidence": "60% of students receive either need-based aid or merit-based scholarships"
+        },
+        {
+          "num": 4,
+          "stem": "Why is this college less expensive than private colleges on Long Island?",
+          "options": [
+            "It offers both undergraduate and graduate programs.",
+            "Students get more aid and scholarships.",
+            "New York State invests money in it.",
+            "It has a small number of students."
+          ],
+          "answer": "C",
+          "explanation": "文中说因为纽约州对这所公立大学投资，学生只需支付私立大学约一半的费用。",
+          "evidence": "because of the investment of the State of New York in our public college"
+        }
+      ],
+      "wordCount": 305,
+      "difficulty": "挑战",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-03",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 3,
+      "heading": "",
+      "title": "There has been an ongoing debate on whether school uniforms should be completely abolished",
+      "fallbackTitle": "There has been an ongoing debate on whether school uniforms should be completely abolished",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "There has been an ongoing debate on whether school uniforms should be completely abolished in all schools, both private and public. Despite both pros and cons（赞同和反对意见）of any uniform, personally I stick to the idea that school uniforms should be introduced in all public and private schools.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "There are certainly many factors that should be taken into account when discussing the issue of school uniforms. While most private schools already have established a particular school uniform to be worn at all times and by all students, public schools mostly remain more liberal and only have a more or less strict dress code. In public schools, some kids have parents with rather high incomes who can afford to buy fashionable and costly clothes for their kids. But there are also those teens who are forced to buy low-cost outfits at discount retail stores. If all students wear identical clothes, no one will be hurt by the comparison.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Another point to consider is, of course, the way teenagers try to express their feelings. If from an early age children get used to paying too much attention to the way people dress and look instead of enriching their inner being and acquiring new skills, we should expect a very materialistic（物质至上的）society in the nearest future. Wearing a uniform would help in having people pay more attention to one’s personality, rather than looks. The main idea is to help a child understand that they should develop their inner beauty and not get involved with bad company and false friends.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "All in all, wearing school uniforms is a great solution to these arguments. What counts most is that school uniforms teach children a certain discipline — the qualities they will later in life make use of when they have to obey certain social norms and laws.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "There has been an ongoing debate on whether school uniforms should be completely abolished in all schools, both private and public. Despite both pros and cons（赞同和反对意见）of any uniform, personally I stick to the idea that school uniforms should be introduced in all public and private schools.",
+        "There are certainly many factors that should be taken into account when discussing the issue of school uniforms. While most private schools already have established a particular school uniform to be worn at all times and by all students, public schools mostly remain more liberal and only have a more or less strict dress code. In public schools, some kids have parents with rather high incomes who can afford to buy fashionable and costly clothes for their kids. But there are also those teens who are forced to buy low-cost outfits at discount retail stores. If all students wear identical clothes, no one will be hurt by the comparison.",
+        "Another point to consider is, of course, the way teenagers try to express their feelings. If from an early age children get used to paying too much attention to the way people dress and look instead of enriching their inner being and acquiring new skills, we should expect a very materialistic（物质至上的）society in the nearest future. Wearing a uniform would help in having people pay more attention to one’s personality, rather than looks. The main idea is to help a child understand that they should develop their inner beauty and not get involved with bad company and false friends.",
+        "All in all, wearing school uniforms is a great solution to these arguments. What counts most is that school uniforms teach children a certain discipline — the qualities they will later in life make use of when they have to obey certain social norms and laws."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What is the author’s attitude towards wearing school uniforms?",
+          "options": [
+            "Critical.",
+            "Supportive.",
+            "Indifferent.",
+            "Double."
+          ],
+          "answer": "B",
+          "explanation": "作者明确说“I stick to the idea that school uniforms should be introduced”，态度是支持。",
+          "evidence": "school uniforms should be introduced in all public and private schools"
+        },
+        {
+          "num": 2,
+          "stem": "In public schools, ______.",
+          "options": [
+            "some children have to buy low-price clothes",
+            "all parents of the students have high incomes",
+            "the dress code is stricter than in private schools",
+            "all the students must wear uniforms all the time"
+          ],
+          "answer": "A",
+          "explanation": "第二段说公立学校中有些孩子只能在折扣店买低价衣服（low-cost outfits），A 正确；B、C、D 都与原文不符。",
+          "evidence": "forced to buy low-cost outfits at discount retail stores"
+        },
+        {
+          "num": 3,
+          "stem": "Focusing on personality will probably help children ______.",
+          "options": [
+            "have false friends",
+            "ignore their looks",
+            "expect a material life",
+            "enrich their inner beauty"
+          ],
+          "answer": "D",
+          "explanation": "第三段说穿校服有助于人们关注人格而非外表，帮助孩子“develop their inner beauty”。",
+          "evidence": "develop their inner beauty"
+        },
+        {
+          "num": 4,
+          "stem": "What is the most important role that wearing school uniforms plays?",
+          "options": [
+            "It helps children find solutions to some arguments in their life.",
+            "It helps children develop qualities useful in their future.",
+            "It will teach children some laws to obey in the future.",
+            "It will introduce some social norms to the children."
+          ],
+          "answer": "B",
+          "explanation": "最后一段说校服最重要的是教孩子纪律，这些品质他们日后遵守社会规范和法律时会用到。",
+          "evidence": "the qualities they will later in life make use of"
+        }
+      ],
+      "wordCount": 300,
+      "difficulty": "挑战",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-04",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 4,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "",
+      "blocks": [
+        {
+          "type": "table",
+          "text": "Name of Student dorm Swinhoe Hall Anastasia House CB1 Student House CB2 Student House Varsity House The Forum Student Village Campus Cambridge Chelmsford Cambridge Chelmsford Chelmsford Cambridge Chelmsford Number of rooms 122 68 50 251 72 111 510 Proposed price per week £ 98.50 £ 127.50 £ 116.50 £ 115.00 £ 107.50 £ 110.00 £ 92.50 Free Internet access in room up to 3Mb included up to 2Mb included up to 2Mb included up to 3Mb included up to 4Mb included up to 3Mb included up to 2Mb included Occupancy agreement length September to June September to August September to June September to July September to July September to July September to July",
+          "rows": [
+            [
+              "Name of Student dorm",
+              "Swinhoe Hall",
+              "Anastasia House",
+              "CB1 Student House",
+              "CB2 Student House",
+              "Varsity House",
+              "The Forum",
+              "Student Village"
+            ],
+            [
+              "Campus",
+              "Cambridge",
+              "Chelmsford",
+              "Cambridge",
+              "Chelmsford",
+              "Chelmsford",
+              "Cambridge",
+              "Chelmsford"
+            ],
+            [
+              "Number of rooms",
+              "122",
+              "68",
+              "50",
+              "251",
+              "72",
+              "111",
+              "510"
+            ],
+            [
+              "Proposed price per week",
+              "£ 98.50",
+              "£ 127.50",
+              "£ 116.50",
+              "£ 115.00",
+              "£ 107.50",
+              "£ 110.00",
+              "£ 92.50"
+            ],
+            [
+              "Free Internet access in room",
+              "up to 3Mb included",
+              "up to 2Mb included",
+              "up to 2Mb included",
+              "up to 3Mb included",
+              "up to 4Mb included",
+              "up to 3Mb included",
+              "up to 2Mb included"
+            ],
+            [
+              "Occupancy agreement length",
+              "September to June",
+              "September to August",
+              "September to June",
+              "September to July",
+              "September to July",
+              "September to July",
+              "September to July"
+            ]
+          ],
+          "translation": ""
+        }
+      ],
+      "paragraphs": [],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which student dorm has the lowest price on Cambridge campus?",
+          "options": [
+            "The Forum.",
+            "Swinhoe Hall.",
+            "CB2 Student House.",
+            "CB1 Student House."
+          ],
+          "answer": "B",
+          "explanation": "剑桥校区（Cambridge）的宿舍有 Swinhoe Hall（£98.50）、CB1（£116.50）、The Forum（£110.00），最低的是 Swinhoe Hall。",
+          "evidence": "Swinhoe Hall ... £98.50"
+        },
+        {
+          "num": 2,
+          "stem": "How many rooms can Chelmsford campus provide to the students?",
+          "options": [
+            "68.",
+            "251.",
+            "510.",
+            "901."
+          ],
+          "answer": "D",
+          "explanation": "Chelmsford 校区的房间数为 Anastasia 68 + CB2 251 + Varsity 72 + Student Village 510 = 901。",
+          "evidence": "68 ... 251 ... 72 ... 510"
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following offers the longest occupancy on Chelmsford campus?",
+          "options": [
+            "Varsity House.",
+            "Student Village.",
+            "Anastasia House.",
+            "The Forum."
+          ],
+          "answer": "C",
+          "explanation": "Chelmsford 校区中，Anastasia House 的租期是 September to August，其余多为 September to July，因此它最长。",
+          "evidence": "Anastasia House ... September to August"
+        },
+        {
+          "num": 4,
+          "stem": "How many choices of free internet access does the university have for students’ dorm?",
+          "options": [
+            "2.",
+            "3.",
+            "4.",
+            "5."
+          ],
+          "answer": "B",
+          "explanation": "表中免费网络速度有 up to 2Mb、3Mb、4Mb 三种，因此共有 3 种选择。",
+          "evidence": "up to 2Mb ... up to 3Mb ... up to 4Mb"
+        }
+      ],
+      "wordCount": 92,
+      "difficulty": "基础",
+      "file": "冲刺训练.md",
+      "translations": [
+        ""
+      ]
+    },
+    {
+      "id": "chongci-05",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 5,
+      "heading": "",
+      "title": "Scientists can learn about man by studying animals, such as mice, rats and monkeys",
+      "fallbackTitle": "Scientists can learn about man by studying animals, such as mice, rats and monkeys",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Scientists can learn about man by studying animals, such as mice, rats and monkeys. The scientists in a laboratory are experimenting on mice and they are studying the relationship between diet and health.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In this experiment, the scientists are studying the relationship between the amount of food the mice can eat and their health. The mice are in three groups. All these groups are receiving the same healthy diet. But the amount of food that each group is receiving is different. The first group is eating one cup of food each day, the second two cups, and the third three cups.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "After three years, the healthiest group is the one that is only eating one cup of food each day. The mice in this group are thinner than normal mice but they are more active. Most of the day, they are running, playing with one another, and using the equipment in their cages. Also, they are living longer. Mice usually live for two years, while most of the mice in this group are still alive after three years.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The second group of mice is of normal weight. They are healthy, too. They are active, but not as active as the thinner mice. But they are only living about two years.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The last group of mice is receiving more food than the other two groups. Most of the day, these mice are eating or sleeping. They are not active. These mice are living longer than the scientists thought — about a year and a half, but they are not healthy. They are sick more often than the other two groups.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Scientists can learn about man by studying animals, such as mice, rats and monkeys. The scientists in a laboratory are experimenting on mice and they are studying the relationship between diet and health.",
+        "In this experiment, the scientists are studying the relationship between the amount of food the mice can eat and their health. The mice are in three groups. All these groups are receiving the same healthy diet. But the amount of food that each group is receiving is different. The first group is eating one cup of food each day, the second two cups, and the third three cups.",
+        "After three years, the healthiest group is the one that is only eating one cup of food each day. The mice in this group are thinner than normal mice but they are more active. Most of the day, they are running, playing with one another, and using the equipment in their cages. Also, they are living longer. Mice usually live for two years, while most of the mice in this group are still alive after three years.",
+        "The second group of mice is of normal weight. They are healthy, too. They are active, but not as active as the thinner mice. But they are only living about two years.",
+        "The last group of mice is receiving more food than the other two groups. Most of the day, these mice are eating or sleeping. They are not active. These mice are living longer than the scientists thought — about a year and a half, but they are not healthy. They are sick more often than the other two groups."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The first group is the thinnest mainly because ______.",
+          "options": [
+            "they run and play all day long",
+            "they eat only one cup of food a day",
+            "they live longer than the other groups",
+            "they are bored with the kind of food in the cup"
+          ],
+          "answer": "B",
+          "explanation": "第一组最瘦的主要原因是每天只吃一杯食物，而不是因为运动或无聊。",
+          "evidence": "eating one cup of food each day"
+        },
+        {
+          "num": 2,
+          "stem": "How long do normal mice live according to the passage?",
+          "options": [
+            "About one year.",
+            "About a year and a half.",
+            "About two years.",
+            "About three years."
+          ],
+          "answer": "C",
+          "explanation": "文中说“Mice usually live for two years”，普通老鼠寿命约两年。",
+          "evidence": "Mice usually live for two years"
+        },
+        {
+          "num": 3,
+          "stem": "What can we learn from the experiment?",
+          "options": [
+            "Daily amount of food may influence our health.",
+            "Less exercise may make us live longer.",
+            "Sleeping may have nothing to do with weight.",
+            "Playing with others may help us sleep better."
+          ],
+          "answer": "A",
+          "explanation": "实验比较不同食量与健康、寿命的关系，说明每日食物量可能影响健康；B、C、D 都不是实验结论。",
+          "evidence": "the relationship between the amount of food the mice can eat and their health"
+        },
+        {
+          "num": 4,
+          "stem": "This passage is mainly about the relationship between ______.",
+          "options": [
+            "food and health",
+            "sleep and weight",
+            "weight and exercise",
+            "exercise and equipment"
+          ],
+          "answer": "A",
+          "explanation": "全文围绕老鼠实验中食物量与健康的关系展开，因此主题是 food and health。",
+          "evidence": "studying the relationship between diet and health"
+        }
+      ],
+      "wordCount": 268,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-06",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 6,
+      "heading": "",
+      "title": "The number of international students at colleges and universities in the United States has",
+      "fallbackTitle": "The number of international students at colleges and universities in the United States has",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The number of international students at colleges and universities in the United States has increased continually for the fifth year.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The Institute of International Education in New York released its annual “Open Doors” report this week. It says a record of more than 720, 000 students from other countries were studying in America during the last school year. The number was 5% higher than the year before and almost one-third higher than ten years ago.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "There were big increases from China, Saudi Arabia, Vietnam, Iran and Venezuela. Almost 22% of international students were Chinese, with increases especially at the undergraduate level. Together, almost half of all international students came from China, India and South Korea.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Peggy Blumenthal at the institute says that Chinese students are now studying throughout the United States. Twenty years ago, students from China only knew of a handful of the US institutions, but now they are admitted into the US community colleges, small liberal arts institutions, and research universities — really spread across the US. Ms. Blumenthal suggests that one reason for the increase is a lack of space in Chinese colleges for everyone who wants an education. She says students and their parents are also looking for a different educational experience.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "More international students study in California than in any other state. For ten years in a row, the University of Southern California in Los Angeles led the country, with more than 8, 600 foreign students.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The most popular area of study for international students is business and management, followed by engineering.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "The number of international students at colleges and universities in the United States has increased continually for the fifth year.",
+        "The Institute of International Education in New York released its annual “Open Doors” report this week. It says a record of more than 720, 000 students from other countries were studying in America during the last school year. The number was 5% higher than the year before and almost one-third higher than ten years ago.",
+        "There were big increases from China, Saudi Arabia, Vietnam, Iran and Venezuela. Almost 22% of international students were Chinese, with increases especially at the undergraduate level. Together, almost half of all international students came from China, India and South Korea.",
+        "Peggy Blumenthal at the institute says that Chinese students are now studying throughout the United States. Twenty years ago, students from China only knew of a handful of the US institutions, but now they are admitted into the US community colleges, small liberal arts institutions, and research universities — really spread across the US. Ms. Blumenthal suggests that one reason for the increase is a lack of space in Chinese colleges for everyone who wants an education. She says students and their parents are also looking for a different educational experience.",
+        "More international students study in California than in any other state. For ten years in a row, the University of Southern California in Los Angeles led the country, with more than 8, 600 foreign students.",
+        "The most popular area of study for international students is business and management, followed by engineering."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Big increases in the number of international students were mainly from ______.",
+          "options": [
+            "China, Vietnam, India, etc.",
+            "Iran, China, Saudi Arabia, etc.",
+            "South Korea, China, Vietnam, etc.",
+            "South Korea, Vietnam, Venezuela, etc."
+          ],
+          "answer": "B",
+          "explanation": "第三段列出大幅增长的国家：China, Saudi Arabia, Vietnam, Iran and Venezuela，B 最完整。",
+          "evidence": "big increases from China, Saudi Arabia, Vietnam, Iran and Venezuela"
+        },
+        {
+          "num": 2,
+          "stem": "According to the passage the number of Chinese students in the US is ______.",
+          "options": [
+            "about 720, 000",
+            "about 360, 000",
+            "about 158, 000",
+            "about 8, 600"
+          ],
+          "answer": "C",
+          "explanation": "留学生总数超过 720,000，中国学生约占 22%，720,000 × 22% ≈ 158,000。",
+          "evidence": "Almost 22% of international students were Chinese"
+        },
+        {
+          "num": 3,
+          "stem": "Where do Chinese students study in the US today?",
+          "options": [
+            "In a handful of institutions.",
+            "In different kinds of institutions.",
+            "In small liberal arts institutions.",
+            "In engineering institutions."
+          ],
+          "answer": "B",
+          "explanation": "第四段说中国学生现在遍布美国各类院校：社区学院、小型文理学院、研究型大学，B 正确。",
+          "evidence": "spread across the US ... community colleges, small liberal arts institutions, and research universities"
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following would be the best title for the passage?",
+          "options": [
+            "Home Countries of International Students in the US.",
+            "Study Areas of International Students in the US.",
+            "New Trends of International Students in the US.",
+            "Backgrounds of International Students in the US."
+          ],
+          "answer": "C",
+          "explanation": "全文介绍美国国际学生数量、来源国、就读院校和热门专业的新变化，最佳标题是 New Trends。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 250,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-07",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 7,
+      "heading": "Step 1: Use open-ended questions",
+      "title": "Step 1: Use open-ended questions",
+      "fallbackTitle": "For a conversation to flow well, it’s important to ask open questions; these often start w",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For a conversation to flow well, it’s important to ask open questions; these often start with “how”, “when”, “why”, etc. Try to avoid asking closed questions that can be answered with yes or no answers, because closed questions tend to kill the conversation.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 2: Listen actively",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "People speak at 100 to 175 words per minute, but they can listen intelligently at up to 300 words per minute. Since only a part of our mind is paying attention, it is easy to go into mind drift — thinking about other things while listening to someone. The cure for this is active listening, which involves listening with a purpose.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 3: Create a “cocoon”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "If you’re finding it particularly difficult to concentrate on what someone is saying, try to imagine a “cocoon” around you and the person you’re listening to. Imagine that the cocoon is blocking out all outside distractions（干扰）, so you can really focus on what they are saying.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 4: Engage with the other person",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "When someone is trying to get your attention, or engage you in a conversation, don’t turn your back on them or answer over your shoulder. Instead, turn and face them, engage with them. Good communication is when you really engage. When you are talking to people, observe your body language and your tone of voice. Remember to use gestures, look people in the eye and smile when you talk unless you are complaining about something.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "For a conversation to flow well, it’s important to ask open questions; these often start with “how”, “when”, “why”, etc. Try to avoid asking closed questions that can be answered with yes or no answers, because closed questions tend to kill the conversation.",
+        "Step 2: Listen actively",
+        "People speak at 100 to 175 words per minute, but they can listen intelligently at up to 300 words per minute. Since only a part of our mind is paying attention, it is easy to go into mind drift — thinking about other things while listening to someone. The cure for this is active listening, which involves listening with a purpose.",
+        "Step 3: Create a “cocoon”",
+        "If you’re finding it particularly difficult to concentrate on what someone is saying, try to imagine a “cocoon” around you and the person you’re listening to. Imagine that the cocoon is blocking out all outside distractions（干扰）, so you can really focus on what they are saying.",
+        "Step 4: Engage with the other person",
+        "When someone is trying to get your attention, or engage you in a conversation, don’t turn your back on them or answer over your shoulder. Instead, turn and face them, engage with them. Good communication is when you really engage. When you are talking to people, observe your body language and your tone of voice. Remember to use gestures, look people in the eye and smile when you talk unless you are complaining about something."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which of the following questions tends to kill a conversation according to the passage?",
+          "options": [
+            "Why do you like reading novels?",
+            "What do you usually read?",
+            "How do you improve your reading skills?",
+            "Do you like reading science fiction?"
+          ],
+          "answer": "D",
+          "explanation": "文章建议避免用 yes/no 回答的封闭式问题，D“Do you like reading science fiction?”正是封闭式问题。",
+          "evidence": "avoid asking closed questions that can be answered with yes or no"
+        },
+        {
+          "num": 2,
+          "stem": "What does the underlined phrase “mind drift” in Step 2 most probably mean?",
+          "options": [
+            "Thinking about something else.",
+            "Listening with a purpose.",
+            "Feeling comfortable.",
+            "Speaking slowly."
+          ],
+          "answer": "A",
+          "explanation": "mind drift 指听人说话时走神、想别的事情，A 正确。",
+          "evidence": "thinking about other things while listening to someone"
+        },
+        {
+          "num": 3,
+          "stem": "What is your purpose to engage with the speaker in a conversation?",
+          "options": [
+            "For the tone of your voice.",
+            "For the use of body language.",
+            "For blocking distractions.",
+            "For good communication."
+          ],
+          "answer": "D",
+          "explanation": "Step 4 说与对方互动、面对面交流，是为了实现良好的沟通（good communication）。",
+          "evidence": "Good communication is when you really engage."
+        },
+        {
+          "num": 4,
+          "stem": "What is the passage mainly about?",
+          "options": [
+            "Improvement in communication skills.",
+            "Open-ended questions vs. closed questions.",
+            "Distractions and concentration.",
+            "Mind drift and engaging in conversations."
+          ],
+          "answer": "A",
+          "explanation": "文章给出四个改善沟通的技巧：开放问题、积极倾听、创造专注空间、投入互动，主题是 communication skills。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 234,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-08",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 8,
+      "heading": "",
+      "title": "Athletes of all shapes and sizes need to pay attention to what goes into their bodies, but",
+      "fallbackTitle": "Athletes of all shapes and sizes need to pay attention to what goes into their bodies, but",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Athletes of all shapes and sizes need to pay attention to what goes into their bodies, but sometimes it’s hard to know exactly what’s being consumed.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Sugar is one of those substances that you might take too much without knowing. One can of Coke contains about 39 grams of sugar, amounting to a total of 140 calories（卡路里）. Given their complete lack of nutritional（营养的）value, soft drinks aren’t worth your time.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Another problem is that most people love the taste of sugar and often don’t care whether they consume an unhealthy amount. This presents a risk for the general population, but emphatically for young athletes looking to improve their game. Like many things in life, there’s a fine line between too much sugar and just the right amount.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Staying within the 40-to-60 grams per day range, athletes can use simple sugars to their advantage, fueling their normal levels of activity. Beyond that, intense physical activity requires athletes to increase their daily sugar intake.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Some performance-supporting sugars are found in all kinds of healthy fruits. That’s why NBA All-Star Carmelo Anthony has adopted a diet（饮食）filled with fruits to stay within his weight range of 228-230 pounds. He would not be the dominating force if he didn’t pay attention to his diet, specifically his sugar consumption. He limits sugar intake before and after workouts, both fueling his body and satisfying his sweet tooth.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Athletes of all shapes and sizes need to pay attention to what goes into their bodies, but sometimes it’s hard to know exactly what’s being consumed.",
+        "Sugar is one of those substances that you might take too much without knowing. One can of Coke contains about 39 grams of sugar, amounting to a total of 140 calories（卡路里）. Given their complete lack of nutritional（营养的）value, soft drinks aren’t worth your time.",
+        "Another problem is that most people love the taste of sugar and often don’t care whether they consume an unhealthy amount. This presents a risk for the general population, but emphatically for young athletes looking to improve their game. Like many things in life, there’s a fine line between too much sugar and just the right amount.",
+        "Staying within the 40-to-60 grams per day range, athletes can use simple sugars to their advantage, fueling their normal levels of activity. Beyond that, intense physical activity requires athletes to increase their daily sugar intake.",
+        "Some performance-supporting sugars are found in all kinds of healthy fruits. That’s why NBA All-Star Carmelo Anthony has adopted a diet（饮食）filled with fruits to stay within his weight range of 228-230 pounds. He would not be the dominating force if he didn’t pay attention to his diet, specifically his sugar consumption. He limits sugar intake before and after workouts, both fueling his body and satisfying his sweet tooth."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What is the author’s opinion about soft drinks?",
+          "options": [
+            "They are of little value.",
+            "They contain too much sugar.",
+            "They have too many calories.",
+            "They can help weight control."
+          ],
+          "answer": "A",
+          "explanation": "作者说软饮料“completely lack nutritional value”，不值得花时间，即几乎没有价值。",
+          "evidence": "Given their complete lack of nutritional value, soft drinks aren’t worth your time."
+        },
+        {
+          "num": 2,
+          "stem": "What kind of people are most harmed by an unhealthy amount of sugar?",
+          "options": [
+            "Old people.",
+            "General public.",
+            "Overweight people.",
+            "Young athletes."
+          ],
+          "answer": "D",
+          "explanation": "文中说过量糖分对普通人群有风险，但“emphatically for young athletes”，对年轻运动员影响最大。",
+          "evidence": "emphatically for young athletes"
+        },
+        {
+          "num": 3,
+          "stem": "Some famous athletes pay attention to their diet, especially to ______.",
+          "options": [
+            "nutrition",
+            "calories",
+            "sugar",
+            "drinks"
+          ],
+          "answer": "C",
+          "explanation": "以 Carmelo Anthony 为例，说明著名运动员注意饮食，尤其是糖分摄入（sugar consumption）。",
+          "evidence": "specifically his sugar consumption"
+        },
+        {
+          "num": 4,
+          "stem": "According to this passage, one gram of sugar amounts to about ______ calories.",
+          "options": [
+            "3.5",
+            "12",
+            "50",
+            "60"
+          ],
+          "answer": "A",
+          "explanation": "一罐可乐含 39 克糖、140 卡路里，140 ÷ 39 ≈ 3.6，最接近 3.5。",
+          "evidence": "39 grams of sugar, amounting to a total of 140 calories"
+        }
+      ],
+      "wordCount": 228,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-09",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 9,
+      "heading": "",
+      "title": "Welcome to Green Village Community",
+      "fallbackTitle": "Welcome to Green Village Community",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Welcome to Green Village Community! Here is some information for the newcomers about the sports and fitness facilities in this area.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Power Station Gym",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This gym is well known in the area. Here you can find newly-built swimming pool and the latest fitness equipment. It has a team of skilled trainers that can provide personal training. Please note that the swimming pool is closed for cleaning every Sunday and it is not open to the public.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Zest-booster Leisure Center",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This is the largest leisure center in the area and it is open 24 hours a day. It is a perfect choice for people who need a flexible workout schedule. It has a 400-meter running track that is free to use for members. It provides specially designed fitness programs for VIP members. It is open six days a week and closed on Mondays.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Wonder Ladies Club",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This club is for female members only. It has a modern gym with the newest equipment. It offers one-to-one training and programs that best meet females’ needs. It also organizes club events such as lectures on healthcare and member gatherings where you can get to know other club members over a cup of coffee and snacks.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Josh’s Running Club",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This is a club organized by Josh Smith, a professional running athlete. He leads a five-kilometer run every Tuesday and Friday evening, starting at 9 o’clock. You don’t have to become a member or pay anything to run with the club. Just come and meet other runners at the main gate of Green Village Park.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Papa and Mama’s Health and Fitness",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This center welcomes anyone above the age of 60 who wants to improve his or her fitness by doing some regular and easy exercises. You can surely find the support you need to achieve your goals. It has a team of super friendly personal trainers of yoga, dancing etc. Currently they are offering programs to non-members free of charge, every Monday morning.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Welcome to Green Village Community! Here is some information for the newcomers about the sports and fitness facilities in this area.",
+        "Power Station Gym",
+        "This gym is well known in the area. Here you can find newly-built swimming pool and the latest fitness equipment. It has a team of skilled trainers that can provide personal training. Please note that the swimming pool is closed for cleaning every Sunday and it is not open to the public.",
+        "Zest-booster Leisure Center",
+        "This is the largest leisure center in the area and it is open 24 hours a day. It is a perfect choice for people who need a flexible workout schedule. It has a 400-meter running track that is free to use for members. It provides specially designed fitness programs for VIP members. It is open six days a week and closed on Mondays.",
+        "Wonder Ladies Club",
+        "This club is for female members only. It has a modern gym with the newest equipment. It offers one-to-one training and programs that best meet females’ needs. It also organizes club events such as lectures on healthcare and member gatherings where you can get to know other club members over a cup of coffee and snacks.",
+        "Josh’s Running Club",
+        "This is a club organized by Josh Smith, a professional running athlete. He leads a five-kilometer run every Tuesday and Friday evening, starting at 9 o’clock. You don’t have to become a member or pay anything to run with the club. Just come and meet other runners at the main gate of Green Village Park.",
+        "Papa and Mama’s Health and Fitness",
+        "This center welcomes anyone above the age of 60 who wants to improve his or her fitness by doing some regular and easy exercises. You can surely find the support you need to achieve your goals. It has a team of super friendly personal trainers of yoga, dancing etc. Currently they are offering programs to non-members free of charge, every Monday morning."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "At Power Station Gym, you can ______.",
+          "options": [
+            "attend member gatherings",
+            "have coffee and snacks",
+            "use a running track for free",
+            "swim in a new pool"
+          ],
+          "answer": "D",
+          "explanation": "Power Station Gym 有新建的游泳池（newly-built swimming pool）和最新健身设备。A、B 属于 Wonder Ladies Club，C 属于 Zest-booster。",
+          "evidence": "newly-built swimming pool and the latest fitness equipment"
+        },
+        {
+          "num": 2,
+          "stem": "Which of the following is for people who need a flexible workout schedule?",
+          "options": [
+            "Zest-booster Leisure center.",
+            "Wonder Ladies’ club.",
+            "Josh’s Running club.",
+            "Papa and mama’s Health and Fitness."
+          ],
+          "answer": "A",
+          "explanation": "Zest-booster Leisure Center 24 小时开放，适合需要灵活锻炼时间的人。",
+          "evidence": "open 24 hours a day ... flexible workout schedule"
+        },
+        {
+          "num": 3,
+          "stem": "Wonder Ladies Club provides ______.",
+          "options": [
+            "VIP fitness programs",
+            "health care lectures",
+            "swimming courses",
+            "running classes"
+          ],
+          "answer": "B",
+          "explanation": "Wonder Ladies Club 组织健康讲座（lectures on healthcare）和会员聚会。",
+          "evidence": "lectures on healthcare and member gatherings"
+        },
+        {
+          "num": 4,
+          "stem": "Who set up Josh’s Running Club?",
+          "options": [
+            "A wonder lady.",
+            "An old couple.",
+            "A professional athlete.",
+            "A fitness trainer."
+          ],
+          "answer": "C",
+          "explanation": "Josh’s Running Club 由职业跑步运动员 Josh Smith 组织。",
+          "evidence": "a professional running athlete"
+        },
+        {
+          "num": 5,
+          "stem": "Who are the target customers of Papa and Mama’s Health and Fitness?",
+          "options": [
+            "Swimming athletes.",
+            "Young mothers.",
+            "Running lovers.",
+            "Elderly people."
+          ],
+          "answer": "D",
+          "explanation": "Papa and Mama’s Health and Fitness 面向 60 岁以上、想通过规律轻松运动改善健康的人，即老年人。",
+          "evidence": "anyone above the age of 60"
+        }
+      ],
+      "wordCount": 324,
+      "difficulty": "挑战",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-10",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 10,
+      "heading": "",
+      "title": "The first forest library in Shanghai recently opened to the public",
+      "fallbackTitle": "The first forest library in Shanghai recently opened to the public",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The first forest library in Shanghai recently opened to the public. Known as Read \\& Joy Forest, the library was jointly founded by Pudong New Area and Shanghai Library. It is located in an urban wood, covering an area of 20, 546 square meters.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The design of forest library allows an environment-friendly principle — ensuring minimum disturbance to nature, with existing green spaces connected by wooden walkways.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The library is can be open air and equipped with facilities such as benches and an information booth. Visitors can read and relax in a natural environment. It allows visitors to take a pleasant walk in the quiet forest, which includes osmanthus.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "“I learned about the forest library from my friends, so I came here,” said a 21-year-old college student, Mr. Wang. “The green outdoor environment helps reduce eyestrain. I will come back for sure.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Having a library in a wood is an extension of reading indoors, according to Xu Qiang, who works in Shanghai Library. “It offers a different reading experience to readers,” he added.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Most of the visitors to the forest library are young people and parents with kids. They are really impressed by the fresh air and the pleasant smell of green trees. Since most of the time they stay indoors, this special library makes it possible for them to get close to nature surroundings. They feel really relaxed there.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "The first forest library in Shanghai recently opened to the public. Known as Read \\& Joy Forest, the library was jointly founded by Pudong New Area and Shanghai Library. It is located in an urban wood, covering an area of 20, 546 square meters.",
+        "The design of forest library allows an environment-friendly principle — ensuring minimum disturbance to nature, with existing green spaces connected by wooden walkways.",
+        "The library is can be open air and equipped with facilities such as benches and an information booth. Visitors can read and relax in a natural environment. It allows visitors to take a pleasant walk in the quiet forest, which includes osmanthus.",
+        "“I learned about the forest library from my friends, so I came here,” said a 21-year-old college student, Mr. Wang. “The green outdoor environment helps reduce eyestrain. I will come back for sure.”",
+        "Having a library in a wood is an extension of reading indoors, according to Xu Qiang, who works in Shanghai Library. “It offers a different reading experience to readers,” he added.",
+        "Most of the visitors to the forest library are young people and parents with kids. They are really impressed by the fresh air and the pleasant smell of green trees. Since most of the time they stay indoors, this special library makes it possible for them to get close to nature surroundings. They feel really relaxed there."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The environment-friendly principle focuses on ______.",
+          "options": [
+            "increasing green spaces",
+            "making the least change to nature",
+            "reducing disturbance to readers",
+            "creating a relaxing indoor environment"
+          ],
+          "answer": "B",
+          "explanation": "第二段说环保原则是“ensuring minimum disturbance to nature”，即尽量减少对自然的改变和干扰。",
+          "evidence": "ensuring minimum disturbance to nature"
+        },
+        {
+          "num": 2,
+          "stem": "What do we know about “osmanthus” in paragraph 3?",
+          "options": [
+            "It is a plant.",
+            "It is a path.",
+            "It is a bench.",
+            "It is a device."
+          ],
+          "answer": "A",
+          "explanation": "第三段说森林里有“osmanthus”（桂花），它是一种植物。",
+          "evidence": "the quiet forest, which includes osmanthus"
+        },
+        {
+          "num": 3,
+          "stem": "What does Xu Qiang think of the forest library?",
+          "options": [
+            "It appeals a lot to parents and kids.",
+            "It provides a new reading experience.",
+            "It enlarges the indoor reading space.",
+            "It helps reduce reader’s eyestrain."
+          ],
+          "answer": "B",
+          "explanation": "徐强说森林图书馆“offers a different reading experience to readers”，提供了新的阅读体验。",
+          "evidence": "It offers a different reading experience to readers"
+        },
+        {
+          "num": 4,
+          "stem": "The forest library is special because it ______.",
+          "options": [
+            "offers people a chance to read in nature",
+            "attracts a large number of readers",
+            "has support from the local government",
+            "covers a large area of forest"
+          ],
+          "answer": "A",
+          "explanation": "森林图书馆特别之处在于让人在自然环境中阅读、放松，A 最准确。",
+          "evidence": "Visitors can read and relax in a natural environment."
+        },
+        {
+          "num": 5,
+          "stem": "Where is this passage most likely from?",
+          "options": [
+            "A diary.",
+            "A handbook.",
+            "A newspaper.",
+            "A novel."
+          ],
+          "answer": "C",
+          "explanation": "文章报道上海首座森林图书馆开放，引用读者和工作人员采访，最可能出自报纸。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 226,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-11",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 11,
+      "heading": "",
+      "title": "Does stress, anger, or sadness drive you to eat",
+      "fallbackTitle": "Does stress, anger, or sadness drive you to eat",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Does stress, anger, or sadness drive you to eat? Do you turn to food for comfort, or when you’re bored? Many people do. If you often eat for emotional reasons instead of because you’re physically hungry, that can be a problem.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Obeying the urge to eat more than you need is certain to gain weight. It’s an even bigger problem if you already have health conditions like high blood pressure.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "You can get back in control of your emotional eating. The surprising part is, it’s not really about food at all. The solution to emotional eating is less about eating than it is about emotions. You can start with a simple step. “Make a list of what is stressing you, and make a plan to take control of the situation,” New York psychologist Patricia Farrell says. If you can change the situation, go for it. If the problem is out of your control, you can manage the way you think about it. If you can notice your stress in the moment, you can choose how you respond, rather than reacting the way you have in the past. It helps to add a delay between the urge to eat and the actual eating. That gives you time to check in with how you’re feeling and why you want to eat.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "When you get the urge to eat a cookie out of sadness or boredom, remember that you have the choice to wait it out. “Tell yourself to have it later,” Farrell says. Even if it doesn’t, successfully delaying the snack helps you feel more in control.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In addition, consider talking with a doctor so you can better understand what’s going on with you and the best way to handle it.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Does stress, anger, or sadness drive you to eat? Do you turn to food for comfort, or when you’re bored? Many people do. If you often eat for emotional reasons instead of because you’re physically hungry, that can be a problem.",
+        "Obeying the urge to eat more than you need is certain to gain weight. It’s an even bigger problem if you already have health conditions like high blood pressure.",
+        "You can get back in control of your emotional eating. The surprising part is, it’s not really about food at all. The solution to emotional eating is less about eating than it is about emotions. You can start with a simple step. “Make a list of what is stressing you, and make a plan to take control of the situation,” New York psychologist Patricia Farrell says. If you can change the situation, go for it. If the problem is out of your control, you can manage the way you think about it. If you can notice your stress in the moment, you can choose how you respond, rather than reacting the way you have in the past. It helps to add a delay between the urge to eat and the actual eating. That gives you time to check in with how you’re feeling and why you want to eat.",
+        "When you get the urge to eat a cookie out of sadness or boredom, remember that you have the choice to wait it out. “Tell yourself to have it later,” Farrell says. Even if it doesn’t, successfully delaying the snack helps you feel more in control.",
+        "In addition, consider talking with a doctor so you can better understand what’s going on with you and the best way to handle it."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Emotional eating happens when a person is ______.",
+          "options": [
+            "bored",
+            "hungry",
+            "in a negative mood",
+            "in need of comfort"
+          ],
+          "answer": "C",
+          "explanation": "文章说压力、愤怒、悲伤、无聊等情绪会让人进食，这些都属于负面情绪，C 最概括；A 只是其中一种。",
+          "evidence": "stress, anger, or sadness drive you to eat"
+        },
+        {
+          "num": 2,
+          "stem": "What bigger problem will a person have when he obeys the urge to eat?",
+          "options": [
+            "He will gain weight.",
+            "He will have health problems.",
+            "He will have high blood pressure.",
+            "He will fail to control his emotions."
+          ],
+          "answer": "A",
+          "explanation": "第二段说听从冲动吃得过多“is certain to gain weight”，直接后果是体重增加；高血压是已有的健康问题会让情况更糟。",
+          "evidence": "Obeying the urge to eat more than you need is certain to gain weight."
+        },
+        {
+          "num": 3,
+          "stem": "What is the solution to emotional eating according to Patricia Farrell?",
+          "options": [
+            "Finding out the sources of stress.",
+            "Thinking about why a person wants to eat.",
+            "Keeping the emotional problem under control.",
+            "Reacting in the way as a person did in the past."
+          ],
+          "answer": "A",
+          "explanation": "Patricia Farrell 建议“Make a list of what is stressing you”，即找出压力来源并制定控制计划。",
+          "evidence": "Make a list of what is stressing you"
+        },
+        {
+          "num": 4,
+          "stem": "What is the main purpose of this passage?",
+          "options": [
+            "To persuade emotional eaters to see a doctor.",
+            "To remind the readers to be careful with emotional eating.",
+            "To tell the readers about the reasons for emotional eating.",
+            "To instruct the readers how to deal with emotional eating."
+          ],
+          "answer": "D",
+          "explanation": "全文介绍情绪性进食的问题，并给出具体应对方法：找压力源、延迟进食、求助医生，目的是指导读者应对。",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "This passage would most likely be found in ______.",
+          "options": [
+            "a textbook about healthcare",
+            "a newspaper’s local news section",
+            "a popular science or health magazine",
+            "a professional journal for public health"
+          ],
+          "answer": "C",
+          "explanation": "文章面向大众，语言通俗，讲健康与心理，最可能出自科普或健康杂志。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 289,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-12",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 12,
+      "heading": "",
+      "title": "A new study shows that plants are creating frequencies in responses to their surroundings,",
+      "fallbackTitle": "A new study shows that plants are creating frequencies in responses to their surroundings,",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A new study shows that plants are creating frequencies in responses to their surroundings, or in other words, they are reacting. These “reactions” in plants, which we could see as analogous to human senses, are actually nothing new. We have learned over the past few years that plants are capable of seeing, hearing, and smelling.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "And with this newest finding we are just one sense away from completing the five human senses in some plants. For the first time, plants have been recorded making airborne sounds when stressed, which researchers say could open up a new field of precision agriculture where farmers listen for water starved crops.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The researchers found that tomato and tobacco plants made sounds at frequencies humans cannot hear when facing situations such as lack of water or when being cut.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "On average, drought-stressed tomato plants made 35 sounds per hour, while tobacco plants made 11 and unstressed plants produced fewer than one sound per hour.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The researchers trained a machine-learning model to tell difference between the plant’s sounds and the wind, rain, and other surrounding noises of the greenhouse, in order to correctly identify the source of stress. Results showed that drought-stressed plants make significantly more sounds than control plants.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Humans cannot hear the whole range of frequencies around us. If we could, we would likely become absent-minded and anxious by always hearing the frequencies around us including radio frequencies from cell towers near us or even cooking a frozen meal in the microwave. Thankfully, the range of human hearing is typically considered to be only 20 Hz to 20, 000 Hz. That is why humans are not sensitive to the sounds that plants are making.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "A new study shows that plants are creating frequencies in responses to their surroundings, or in other words, they are reacting. These “reactions” in plants, which we could see as analogous to human senses, are actually nothing new. We have learned over the past few years that plants are capable of seeing, hearing, and smelling.",
+        "And with this newest finding we are just one sense away from completing the five human senses in some plants. For the first time, plants have been recorded making airborne sounds when stressed, which researchers say could open up a new field of precision agriculture where farmers listen for water starved crops.",
+        "The researchers found that tomato and tobacco plants made sounds at frequencies humans cannot hear when facing situations such as lack of water or when being cut.",
+        "On average, drought-stressed tomato plants made 35 sounds per hour, while tobacco plants made 11 and unstressed plants produced fewer than one sound per hour.",
+        "The researchers trained a machine-learning model to tell difference between the plant’s sounds and the wind, rain, and other surrounding noises of the greenhouse, in order to correctly identify the source of stress. Results showed that drought-stressed plants make significantly more sounds than control plants.",
+        "Humans cannot hear the whole range of frequencies around us. If we could, we would likely become absent-minded and anxious by always hearing the frequencies around us including radio frequencies from cell towers near us or even cooking a frozen meal in the microwave. Thankfully, the range of human hearing is typically considered to be only 20 Hz to 20, 000 Hz. That is why humans are not sensitive to the sounds that plants are making."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What is the newest finding about plants?",
+          "options": [
+            "Plants can see.",
+            "Plants can hear.",
+            "Plants can smell.",
+            "Plants can speak."
+          ],
+          "answer": "D",
+          "explanation": "最新发现是植物在压力下会发出人耳听不到的“airborne sounds”，即会“发声/说话”，补上了视觉、听觉、嗅觉之外的又一种能力。",
+          "evidence": "plants have been recorded making airborne sounds when stressed"
+        },
+        {
+          "num": 2,
+          "stem": "The underlined word “analogical” in Para. 1 is closest in meaning to ______.",
+          "options": [
+            "similar",
+            "available",
+            "practical",
+            "beneficial"
+          ],
+          "answer": "A",
+          "explanation": "analogous 意为“类似的”，与 similar 最接近；文中把植物的反应类比为人类感官。",
+          "evidence": "analogous to human senses"
+        },
+        {
+          "num": 3,
+          "stem": "What do we learn about tomato and tobacco plants?",
+          "options": [
+            "They will produce sounds when stressed out.",
+            "They will make more sounds when drought-stressed.",
+            "They will produce annoying sound in different situations.",
+            "They will make different sound frequencies in different situations."
+          ],
+          "answer": "B",
+          "explanation": "研究数据显示，干旱胁迫的番茄每小时约 35 声、烟草 11 声，而未受压力的植物少于 1 声，因此 B“干旱时发出更多声音”最准确。",
+          "evidence": "drought-stressed tomato plants made 35 sounds per hour, while tobacco plants made 11"
+        },
+        {
+          "num": 4,
+          "stem": "What is the best title of this passage?",
+          "options": [
+            "Stress of Plants.",
+            "Five Senses of Plants.",
+            "Noises in the Greenhouse.",
+            "Sound Frequencies of Plants."
+          ],
+          "answer": "D",
+          "explanation": "全文围绕植物在压力下发出的声频（sound frequencies）及研究意义展开，最佳标题是 Sound Frequencies of Plants。",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "We can learn from the last paragraph that ______.",
+          "options": [
+            "we feel strange if we can hear all sounds",
+            "we cannot focus if we can hear all sounds",
+            "we are less sensitive to sounds than plants",
+            "we cannot figure out plant sound frequencies"
+          ],
+          "answer": "B",
+          "explanation": "最后一段说如果能听到所有频率，人会“absent-minded and anxious”，即无法集中注意力，B 正确。",
+          "evidence": "we would likely become absent-minded and anxious"
+        }
+      ],
+      "wordCount": 275,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "chongci-13",
+      "catId": "chongci",
+      "catName": "冲刺训练",
+      "number": 13,
+      "heading": "",
+      "title": "Each year, 1.3 million people worldwide die in car accidents",
+      "fallbackTitle": "Each year, 1.3 million people worldwide die in car accidents",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Each year, 1.3 million people worldwide die in car accidents. Ninety-four percent of those crashes are due to human error. This is a tragedy that self-driving vehicles can help prevent. That’s because computers can think better and react earlier than people.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "As soon as we can show that a self-driving car can drive more safely than a human, we should expect to see many more such vehicles picking up passengers across the country — and eventually around the world.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Self-driving cars will also help speed up the shift toward increased ride sharing and reduced car ownership. Many people already use ride-sharing services instead of owning their own cars. Self-driving vehicles are a great fit for ride sharing because machines have the potential to find the best routes for getting people to their destinations more safely and quickly than human drivers.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "A future where more of us use ride sharing as our primary mode of transportation means we’ll need fewer cars overall, which comes with key benefits, including reduced road congestion and less time wasted in traffic. Fewer cars also mean less pollution and fewer parking spaces. That would make room for more parks, bike lanes, and businesses.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Real-world testing is critical to getting this technology ready for nationwide use. That’s why some companies are testing self-driving cars in Pittsburgh, Pennsylvania, and Tempe, Arizona. Both cities have welcomed this technology with open arms.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "A better future is within reach. We already have the technology. While it won’t happen overnight, self-driving cars will be an important part of the future of transportation.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Each year, 1.3 million people worldwide die in car accidents. Ninety-four percent of those crashes are due to human error. This is a tragedy that self-driving vehicles can help prevent. That’s because computers can think better and react earlier than people.",
+        "As soon as we can show that a self-driving car can drive more safely than a human, we should expect to see many more such vehicles picking up passengers across the country — and eventually around the world.",
+        "Self-driving cars will also help speed up the shift toward increased ride sharing and reduced car ownership. Many people already use ride-sharing services instead of owning their own cars. Self-driving vehicles are a great fit for ride sharing because machines have the potential to find the best routes for getting people to their destinations more safely and quickly than human drivers.",
+        "A future where more of us use ride sharing as our primary mode of transportation means we’ll need fewer cars overall, which comes with key benefits, including reduced road congestion and less time wasted in traffic. Fewer cars also mean less pollution and fewer parking spaces. That would make room for more parks, bike lanes, and businesses.",
+        "Real-world testing is critical to getting this technology ready for nationwide use. That’s why some companies are testing self-driving cars in Pittsburgh, Pennsylvania, and Tempe, Arizona. Both cities have welcomed this technology with open arms.",
+        "A better future is within reach. We already have the technology. While it won’t happen overnight, self-driving cars will be an important part of the future of transportation."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the author, self-driving can reduce car crashes because self-driving cars ______.",
+          "options": [
+            "can think",
+            "know directions",
+            "are controlled by computers",
+            "can avoid some human errors"
+          ],
+          "answer": "D",
+          "explanation": "文章说 94% 的事故由人为失误造成，自动驾驶可以避免部分人为错误，因此减少事故。",
+          "evidence": "Ninety-four percent of those crashes are due to human error."
+        },
+        {
+          "num": 2,
+          "stem": "Why can we expect more car sharing with the development of self-driving cars?",
+          "options": [
+            "Because machines know the destinations better.",
+            "Because many people prefer ride-sharing services.",
+            "Because they are fit for those that do not have car ownership.",
+            "Because people can get to their destinations more safely and faster."
+          ],
+          "answer": "D",
+          "explanation": "第三段说自动驾驶适合共享出行，因为机器能为人们找到最佳路线，更安全、更快速地到达目的地。",
+          "evidence": "getting people to their destinations more safely and quickly"
+        },
+        {
+          "num": 3,
+          "stem": "The underlined phrase “road congestion” in Para. 4 refers to ______.",
+          "options": [
+            "traffic jams",
+            "traffic rules",
+            "traffic lights",
+            "traffic signs"
+          ],
+          "answer": "A",
+          "explanation": "road congestion 指道路拥堵，即 traffic jams；后文“less time wasted in traffic”也印证。",
+          "evidence": "less time wasted in traffic"
+        },
+        {
+          "num": 4,
+          "stem": "What is the attitude of Pittsburgh and Tempe towards self-driving cars?",
+          "options": [
+            "Positive.",
+            "Negative.",
+            "Conservative.",
+            "Unclear."
+          ],
+          "answer": "A",
+          "explanation": "文章说匹兹堡和坦佩“welcomed this technology with open arms”，态度积极。",
+          "evidence": "welcomed this technology with open arms"
+        },
+        {
+          "num": 5,
+          "stem": "What is the biggest advantage of self-driving cars according to the passage?",
+          "options": [
+            "They reduce pollution.",
+            "They save public space.",
+            "They enhance road safety.",
+            "They reduce car ownership."
+          ],
+          "answer": "C",
+          "explanation": "文章开头强调车祸与人为失误，自动驾驶最大的优势是提升道路安全（enhance road safety）；其他是附加好处。",
+          "evidence": "This is a tragedy that self-driving vehicles can help prevent."
+        }
+      ],
+      "wordCount": 258,
+      "difficulty": "进阶",
+      "file": "冲刺训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     }
   ],
   "stats": {
-    "articles": 38,
-    "questions": 187,
-    "words": 10278,
-    "withAnswers": 187,
+    "articles": 51,
+    "questions": 244,
+    "words": 13539,
+    "withAnswers": 244,
     "withTranslations": 24
   }
 }

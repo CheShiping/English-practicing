@@ -26,12 +26,19 @@ function cleanLine(line: string): string {
 }
 
 function isPassageMarker(line: string): boolean {
-  return /^#{0,3}\s*Passage\s+\d+\s*$/i.test(line.trim());
+  const t = line.trim();
+  return /^#{1,4}\s*Passage\s+\d+\b/i.test(t) || /^Passage\s+\d+\s*$/i.test(t);
 }
 
 function passageNumber(line: string): number | null {
   const m = line.match(/Passage\s+(\d+)/i);
   return m ? Number(m[1]) : null;
+}
+
+function passageTitle(line: string): string {
+  const t = line.trim();
+  const m = t.match(/^#{1,4}\s*Passage\s+\d+\b\s*(.*)$/i) || t.match(/^Passage\s+\d+\b\s*(.*)$/i);
+  return m ? m[1].trim() : '';
 }
 
 function isQuestionStart(line: string): boolean {
@@ -58,22 +65,48 @@ function inferCategory(name: string): { id: string; name: string } {
   return { id: 'custom', name: name || '自定义' };
 }
 
+function tableRow(line: string): string[] {
+  return line
+    .replace(/^\|/, '')
+    .replace(/\|$/, '')
+    .split('|')
+    .map((c) => c.trim());
+}
+
+function isTableSeparator(line: string): boolean {
+  return /^\|?[\s:|-]+\|?$/.test(line) && line.includes('-');
+}
+
 function buildBlocks(lines: string[]): Block[] {
   const blocks: Block[] = [];
   let para: string[] = [];
+  let tableRows: string[][] = [];
 
   const flushPara = () => {
     const text = para.join(' ').replace(/\s+/g, ' ').trim();
     if (text) blocks.push({ type: 'p', text });
     para = [];
   };
+  const flushTable = () => {
+    if (tableRows.length) {
+      blocks.push({ type: 'table', text: tableRows.flat().join(' '), rows: tableRows });
+      tableRows = [];
+    }
+  };
 
   for (const raw of lines) {
     const line = raw.trim();
     if (!line) {
       flushPara();
+      flushTable();
       continue;
     }
+    if (line.startsWith('|') && line.includes('|')) {
+      flushPara();
+      if (!isTableSeparator(line)) tableRows.push(tableRow(line));
+      continue;
+    }
+    flushTable();
     const li = line.match(/^[*\-•]\s*(.+)$/);
     if (li) {
       flushPara();
@@ -92,6 +125,7 @@ function buildBlocks(lines: string[]): Block[] {
     }
   }
   flushPara();
+  flushTable();
   return blocks;
 }
 
@@ -214,7 +248,7 @@ export function parseMarkdownArticles(text: string, opts: ParseOptions = {}): Pa
       continue;
     }
     if (isPassageMarker(line)) {
-      startChunk(passageNumber(line) || chunks.length + 1);
+      startChunk(passageNumber(line) || chunks.length + 1, passageTitle(line));
       continue;
     }
     const h = line.match(/^#{2,4}\s+(.+)$/);

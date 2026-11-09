@@ -1,0 +1,50 @@
+{
+  "chongci-01": {
+    "1": { "answer": "D", "explanation": "文中说两个研讨会各三小时（two three-hour seminars），两场都参加共六小时。", "evidence": "two three-hour seminars" },
+    "2": { "answer": "B", "explanation": "Session 2 的主题包括写简历、填申请表、写求职信和准备面试，B 对应 interview preparation。", "evidence": "prepare for an interview" },
+    "3": { "answer": "C", "explanation": "简历和求职信都属于 Session 2 – Job Search Techniques 的内容，因此应参加第二场。", "evidence": "write a great resume ... develop strong cover letters" },
+    "4": { "answer": "D", "explanation": "通知面向公司内部员工（employees），由人力资源部提供，因此最可能的参加者是现有员工。", "evidence": "offering two ... seminars for employees" }
+  },
+  "chongci-02": {
+    "1": { "answer": "C", "explanation": "私立大学四年约 100,000 美元，这所公立大学约 53,000 美元，相差约 47,000 美元。", "evidence": "an average total of $100,000 over four years ... about $53,000 over four years" },
+    "2": { "answer": "B", "explanation": "120 名全职教师中 80% 拥有终端学位，120 × 80% = 96。", "evidence": "120 full-time, of whom 80% hold a terminal degree" },
+    "3": { "answer": "B", "explanation": "3,200 名学生中 60% 获得资助，约 1,920 人，最接近 1,900。", "evidence": "60% of students receive either need-based aid or merit-based scholarships" },
+    "4": { "answer": "C", "explanation": "文中说因为纽约州对这所公立大学投资，学生只需支付私立大学约一半的费用。", "evidence": "because of the investment of the State of New York in our public college" }
+  },
+  "chongci-03": {
+    "1": { "answer": "B", "explanation": "作者明确说“I stick to the idea that school uniforms should be introduced”，态度是支持。", "evidence": "school uniforms should be introduced in all public and private schools" },
+    "2": { "answer": "A", "explanation": "第二段说公立学校中有些孩子只能在折扣店买低价衣服（low-cost outfits），A 正确；B、C、D 都与原文不符。", "evidence": "forced to buy low-cost outfits at discount retail stores" },
+    "3": { "answer": "D", "explanation": "第三段说穿校服有助于人们关注人格而非外表，帮助孩子“develop their inner beauty”。", "evidence": "develop their inner beauty" },
+    "4": { "answer": "B", "explanation": "最后一段说校服最重要的是教孩子纪律，这些品质他们日后遵守社会规范和法律时会用到。", "evidence": "the qualities they will later in life make use of" }
+  },
+  "chongci-04": {
+    "1": { "answer": "B", "explanation": "剑桥校区（Cambridge）的宿舍有 Swinhoe Hall（£98.50）、CB1（£116.50）、The Forum（£110.00），最低的是 Swinhoe Hall。", "evidence": "Swinhoe Hall ... £98.50" },
+    "2": { "answer": "D", "explanation": "Chelmsford 校区的房间数为 Anastasia 68 + CB2 251 + Varsity 72 + Student Village 510 = 901。", "evidence": "68 ... 251 ... 72 ... 510" },
+    "3": { "answer": "C", "explanation": "Chelmsford 校区中，Anastasia House 的租期是 September to August，其余多为 September to July，因此它最长。", "evidence": "Anastasia House ... September to August" },
+    "4": { "answer": "B", "explanation": "表中免费网络速度有 up to 2Mb、3Mb、4Mb 三种，因此共有 3 种选择。", "evidence": "up to 2Mb ... up to 3Mb ... up to 4Mb" }
+  },
+  "chongci-05": {
+    "1": { "answer": "B", "explanation": "第一组最瘦的主要原因是每天只吃一杯食物，而不是因为运动或无聊。", "evidence": "eating one cup of food each day" },
+    "2": { "answer": "C", "explanation": "文中说“Mice usually live for two years”，普通老鼠寿命约两年。", "evidence": "Mice usually live for two years" },
+    "3": { "answer": "A", "explanation": "实验比较不同食量与健康、寿命的关系，说明每日食物量可能影响健康；B、C、D 都不是实验结论。", "evidence": "the relationship between the amount of food the mice can eat and their health" },
+    "4": { "answer": "A", "explanation": "全文围绕老鼠实验中食物量与健康的关系展开，因此主题是 food and health。", "evidence": "studying the relationship between diet and health" }
+  },
+  "chongci-06": {
+    "1": { "answer": "B", "explanation": "第三段列出大幅增长的国家：China, Saudi Arabia, Vietnam, Iran and Venezuela，B 最完整。", "evidence": "big increases from China, Saudi Arabia, Vietnam, Iran and Venezuela" },
+    "2": { "answer": "C", "explanation": "留学生总数超过 720,000，中国学生约占 22%，720,000 × 22% ≈ 158,000。", "evidence": "Almost 22% of international students were Chinese" },
+    "3": { "answer": "B", "explanation": "第四段说中国学生现在遍布美国各类院校：社区学院、小型文理学院、研究型大学，B 正确。", "evidence": "spread across the US ... community colleges, small liberal arts institutions, and research universities" },
+    "4": { "answer": "C", "explanation": "全文介绍美国国际学生数量、来源国、就读院校和热门专业的新变化，最佳标题是 New Trends。", "evidence": "" }
+  },
+  "chongci-07": {
+    "1": { "answer": "D", "explanation": "文章建议避免用 yes/no 回答的封闭式问题，D“Do you like reading science fiction?”正是封闭式问题。", "evidence": "avoid asking closed questions that can be answered with yes or no" },
+    "2": { "answer": "A", "explanation": "mind drift 指听人说话时走神、想别的事情，A 正确。", "evidence": "thinking about other things while listening to someone" },
+    "3": { "answer": "D", "explanation": "Step 4 说与对方互动、面对面交流，是为了实现良好的沟通（good communication）。", "evidence": "Good communication is when you really engage." },
+    "4": { "answer": "A", "explanation": "文章给出四个改善沟通的技巧：开放问题、积极倾听、创造专注空间、投入互动，主题是 communication skills。", "evidence": "" }
+  },
+  "chongci-08": {
+    "1": { "answer": "A", "explanation": "作者说软饮料“completely lack nutritional value”，不值得花时间，即几乎没有价值。", "evidence": "Given their complete lack of nutritional value, soft drinks aren’t worth your time." },
+    "2": { "answer": "D", "explanation": "文中说过量糖分对普通人群有风险，但“emphatically for young athletes”，对年轻运动员影响最大。", "evidence": "emphatically for young athletes" },
+    "3": { "answer": "C", "explanation": "以 Carmelo Anthony 为例，说明著名运动员注意饮食，尤其是糖分摄入（sugar consumption）。", "evidence": "specifically his sugar consumption" },
+    "4": { "answer": "A", "explanation": "一罐可乐含 39 克糖、140 卡路里，140 ÷ 39 ≈ 3.6，最接近 3.5。", "evidence": "39 grams of sugar, amounting to a total of 140 calories" }
+  }
+}

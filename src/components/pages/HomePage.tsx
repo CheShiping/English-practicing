@@ -15,6 +15,7 @@ import {
   TrendingUp,
   Landmark,
   Users,
+  Rocket,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
@@ -29,6 +30,7 @@ const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: num
   jingji: TrendingUp,
   lishi: Landmark,
   shehui: Users,
+  chongci: Rocket,
 };
 
 export default function HomePage() {

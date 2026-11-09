@@ -1,0 +1,37 @@
+{
+  "chongci-09": {
+    "1": { "answer": "D", "explanation": "Power Station Gym 有新建的游泳池（newly-built swimming pool）和最新健身设备。A、B 属于 Wonder Ladies Club，C 属于 Zest-booster。", "evidence": "newly-built swimming pool and the latest fitness equipment" },
+    "2": { "answer": "A", "explanation": "Zest-booster Leisure Center 24 小时开放，适合需要灵活锻炼时间的人。", "evidence": "open 24 hours a day ... flexible workout schedule" },
+    "3": { "answer": "B", "explanation": "Wonder Ladies Club 组织健康讲座（lectures on healthcare）和会员聚会。", "evidence": "lectures on healthcare and member gatherings" },
+    "4": { "answer": "C", "explanation": "Josh’s Running Club 由职业跑步运动员 Josh Smith 组织。", "evidence": "a professional running athlete" },
+    "5": { "answer": "D", "explanation": "Papa and Mama’s Health and Fitness 面向 60 岁以上、想通过规律轻松运动改善健康的人，即老年人。", "evidence": "anyone above the age of 60" }
+  },
+  "chongci-10": {
+    "1": { "answer": "B", "explanation": "第二段说环保原则是“ensuring minimum disturbance to nature”，即尽量减少对自然的改变和干扰。", "evidence": "ensuring minimum disturbance to nature" },
+    "2": { "answer": "A", "explanation": "第三段说森林里有“osmanthus”（桂花），它是一种植物。", "evidence": "the quiet forest, which includes osmanthus" },
+    "3": { "answer": "B", "explanation": "徐强说森林图书馆“offers a different reading experience to readers”，提供了新的阅读体验。", "evidence": "It offers a different reading experience to readers" },
+    "4": { "answer": "A", "explanation": "森林图书馆特别之处在于让人在自然环境中阅读、放松，A 最准确。", "evidence": "Visitors can read and relax in a natural environment." },
+    "5": { "answer": "C", "explanation": "文章报道上海首座森林图书馆开放，引用读者和工作人员采访，最可能出自报纸。", "evidence": "" }
+  },
+  "chongci-11": {
+    "1": { "answer": "C", "explanation": "文章说压力、愤怒、悲伤、无聊等情绪会让人进食，这些都属于负面情绪，C 最概括；A 只是其中一种。", "evidence": "stress, anger, or sadness drive you to eat" },
+    "2": { "answer": "A", "explanation": "第二段说听从冲动吃得过多“is certain to gain weight”，直接后果是体重增加；高血压是已有的健康问题会让情况更糟。", "evidence": "Obeying the urge to eat more than you need is certain to gain weight." },
+    "3": { "answer": "A", "explanation": "Patricia Farrell 建议“Make a list of what is stressing you”，即找出压力来源并制定控制计划。", "evidence": "Make a list of what is stressing you" },
+    "4": { "answer": "D", "explanation": "全文介绍情绪性进食的问题，并给出具体应对方法：找压力源、延迟进食、求助医生，目的是指导读者应对。", "evidence": "" },
+    "5": { "answer": "C", "explanation": "文章面向大众，语言通俗，讲健康与心理，最可能出自科普或健康杂志。", "evidence": "" }
+  },
+  "chongci-12": {
+    "1": { "answer": "D", "explanation": "最新发现是植物在压力下会发出人耳听不到的“airborne sounds”，即会“发声/说话”，补上了视觉、听觉、嗅觉之外的又一种能力。", "evidence": "plants have been recorded making airborne sounds when stressed" },
+    "2": { "answer": "A", "explanation": "analogous 意为“类似的”，与 similar 最接近；文中把植物的反应类比为人类感官。", "evidence": "analogous to human senses" },
+    "3": { "answer": "B", "explanation": "研究数据显示，干旱胁迫的番茄每小时约 35 声、烟草 11 声，而未受压力的植物少于 1 声，因此 B“干旱时发出更多声音”最准确。", "evidence": "drought-stressed tomato plants made 35 sounds per hour, while tobacco plants made 11" },
+    "4": { "answer": "D", "explanation": "全文围绕植物在压力下发出的声频（sound frequencies）及研究意义展开，最佳标题是 Sound Frequencies of Plants。", "evidence": "" },
+    "5": { "answer": "B", "explanation": "最后一段说如果能听到所有频率，人会“absent-minded and anxious”，即无法集中注意力，B 正确。", "evidence": "we would likely become absent-minded and anxious" }
+  },
+  "chongci-13": {
+    "1": { "answer": "D", "explanation": "文章说 94% 的事故由人为失误造成，自动驾驶可以避免部分人为错误，因此减少事故。", "evidence": "Ninety-four percent of those crashes are due to human error." },
+    "2": { "answer": "D", "explanation": "第三段说自动驾驶适合共享出行，因为机器能为人们找到最佳路线，更安全、更快速地到达目的地。", "evidence": "getting people to their destinations more safely and quickly" },
+    "3": { "answer": "A", "explanation": "road congestion 指道路拥堵，即 traffic jams；后文“less time wasted in traffic”也印证。", "evidence": "less time wasted in traffic" },
+    "4": { "answer": "A", "explanation": "文章说匹兹堡和坦佩“welcomed this technology with open arms”，态度积极。", "evidence": "welcomed this technology with open arms" },
+    "5": { "answer": "C", "explanation": "文章开头强调车祸与人为失误，自动驾驶最大的优势是提升道路安全（enhance road safety）；其他是附加好处。", "evidence": "This is a tragedy that self-driving vehicles can help prevent." }
+  }
+}

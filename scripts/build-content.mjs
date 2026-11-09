@@ -15,6 +15,7 @@ const CATEGORY_MAP = {
   '历史人文类专项训练': { catId: 'lishi', catName: '历史人文类', order: 5 },
   '社会生活类专项训': { catId: 'shehui', catName: '社会生活类', order: 6 },
   '社会生活类专项训练': { catId: 'shehui', catName: '社会生活类', order: 6 },
+  '冲刺训练': { catId: 'chongci', catName: '冲刺训练', order: 7 },
 };
 
 function unescapeMd(s) {
@@ -27,17 +28,25 @@ function unescapeMd(s) {
 
 function cleanLine(line) {
   return unescapeMd(line.replace(/\r$/, ''))
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
     .replace(/\*([^*]+)\*/g, '$1')
     .replace(/[ \t]+$/g, '');
 }
 
 function isPassageMarker(line) {
-  return /^#{0,3}\s*Passage\s+\d+\s*$/i.test(line.trim());
+  const t = line.trim();
+  return /^#{1,4}\s*Passage\s+\d+\b/i.test(t) || /^Passage\s+\d+\s*$/i.test(t);
 }
 
 function passageNumber(line) {
   const m = line.trim().match(/Passage\s+(\d+)/i);
   return m ? Number(m[1]) : null;
+}
+
+function passageTitle(line) {
+  const t = line.trim();
+  const m = t.match(/^#{1,4}\s*Passage\s+\d+\b\s*(.*)$/i) || t.match(/^Passage\s+\d+\b\s*(.*)$/i);
+  return m ? m[1].trim() : '';
 }
 
 function isQuestionStart(line) {
@@ -86,11 +95,10 @@ function parseFile(filePath, category) {
       if (isPassageMarker(line)) {
         current = {
           number: passageNumber(line),
-          heading: '',
+          heading: passageTitle(line),
           rawLines: [],
         };
         sawQuestions = false;
-        // Look ahead: a "### Title" may immediately follow the Passage marker? Usually not.
         continue;
       }
       const h = line.match(/^#{2,4}\s+(.+)$/);
@@ -105,7 +113,7 @@ function parseFile(filePath, category) {
 
     if (isPassageMarker(line)) {
       flush();
-      current = { number: passageNumber(line), heading: '', rawLines: [] };
+      current = { number: passageNumber(line), heading: passageTitle(line), rawLines: [] };
       sawQuestions = false;
       continue;
     }
@@ -157,22 +165,52 @@ function splitBodyAndQuestions(rawLines) {
   return { bodyLines, qLines };
 }
 
+function tableRow(line) {
+  return line
+    .replace(/^\|/, '')
+    .replace(/\|$/, '')
+    .split('|')
+    .map((c) => c.trim());
+}
+
+function isTableSeparator(line) {
+  return /^\|?[\s:|-]+\|?$/.test(line) && line.includes('-');
+}
+
 function buildBlocks(bodyLines) {
   const blocks = [];
   let para = [];
+  let tableRows = [];
 
   const flushPara = () => {
     const text = para.join(' ').replace(/\s+/g, ' ').trim();
     if (text) blocks.push({ type: 'p', text });
     para = [];
   };
+  const flushTable = () => {
+    if (tableRows.length) {
+      blocks.push({
+        type: 'table',
+        text: tableRows.flat().join(' '),
+        rows: tableRows,
+      });
+      tableRows = [];
+    }
+  };
 
   for (const raw of bodyLines) {
     const line = raw.trim();
     if (!line) {
       flushPara();
+      flushTable();
       continue;
     }
+    if (line.startsWith('|') && line.includes('|')) {
+      flushPara();
+      if (!isTableSeparator(line)) tableRows.push(tableRow(line));
+      continue;
+    }
+    flushTable();
     const li = line.match(/^[*\-•]\s*(.+)$/);
     if (li) {
       flushPara();
@@ -192,6 +230,7 @@ function buildBlocks(bodyLines) {
     }
   }
   flushPara();
+  flushTable();
   return blocks;
 }
 
