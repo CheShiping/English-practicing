@@ -1,5 +1,11 @@
 import type { DictEntry } from '@/lib/types';
 import { normalizeWord } from '@/lib/utils';
+import coreData from '@/data/core-dict.json';
+
+const CORE = coreData as {
+  words: Record<string, DictEntry>;
+  forms: Record<string, string>;
+};
 
 interface DictChunk {
   words: Record<string, DictEntry>;
@@ -82,23 +88,40 @@ export async function lookupWord(raw: string): Promise<LookupResult> {
   const word = normalizeWord(raw);
   if (!word) return { word, base: word, isBaseForm: true };
 
-  const [chunk, forms] = await Promise.all([loadChunk(firstLetter(word)), loadForms()]);
+  // Bundled article vocabulary ships with the app: no network wait at all.
+  const coreDirect = CORE.words[word];
+  if (coreDirect) return makeResult(word, word, coreDirect);
+
+  const coreForm = CORE.forms[word];
+  if (coreForm && CORE.words[coreForm]) return makeResult(word, coreForm, CORE.words[coreForm]);
+
+  for (const cand of candidateForms(word)) {
+    const entry = CORE.words[cand];
+    if (entry) return makeResult(word, cand, entry);
+    const mapped = CORE.forms[cand];
+    if (mapped && CORE.words[mapped]) return makeResult(word, mapped, CORE.words[mapped]);
+  }
+
+  // Imported / uncommon words fall back to a single letter chunk.
+  const chunk = await loadChunk(firstLetter(word));
   if (!chunk) return { word, base: word, isBaseForm: true };
 
   const direct = chunk.words[word];
   if (direct) return makeResult(word, word, direct);
 
+  for (const cand of candidateForms(word)) {
+    const entry = chunk.words[cand];
+    if (entry) return makeResult(word, cand, entry);
+  }
+
+  const forms = await loadForms();
   const formBase = forms[word];
   if (formBase && formBase !== word) {
     const baseChunk = await loadChunk(firstLetter(formBase));
     const entry = baseChunk?.words[formBase];
     if (entry) return makeResult(word, formBase, entry);
   }
-
   for (const cand of candidateForms(word)) {
-    const entry = chunk.words[cand];
-    if (entry) return makeResult(word, cand, entry);
-
     const mapped = forms[cand];
     if (mapped) {
       const mappedChunk = await loadChunk(firstLetter(mapped));

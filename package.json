@@ -9,7 +9,7 @@
     "build:static": "npm run content && next build",
     "start": "npx serve out",
     "content": "node scripts/build-content.mjs",
-    "dict:split": "node scripts/split-dict.mjs",
+    "dict:split": "node scripts/split-dict.mjs && node scripts/build-core-dict.mjs",
     "lint": "next lint"
   },
   "dependencies": {
