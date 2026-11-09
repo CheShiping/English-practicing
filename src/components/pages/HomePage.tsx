@@ -13,6 +13,8 @@ import {
   Feather,
   FileText,
   TrendingUp,
+  Landmark,
+  Users,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
@@ -25,6 +27,8 @@ const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: num
   jingli: Feather,
   yingyong: FileText,
   jingji: TrendingUp,
+  lishi: Landmark,
+  shehui: Users,
 };
 
 export default function HomePage() {

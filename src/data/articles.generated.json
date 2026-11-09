@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T14:51:44.051Z",
+  "generatedAt": "2026-11-09T15:25:38.220Z",
   "categories": [
     {
       "id": "kepu",
@@ -28,6 +28,20 @@
       "order": 4,
       "file": "经济商业类专项训练.md",
       "count": 1
+    },
+    {
+      "id": "lishi",
+      "name": "历史人文类",
+      "order": 5,
+      "file": "历史人文类专项训练.md",
+      "count": 2
+    },
+    {
+      "id": "shehui",
+      "name": "社会生活类",
+      "order": 6,
+      "file": "社会生活类专项训.md",
+      "count": 12
     }
   ],
   "articles": [
@@ -2863,13 +2877,1568 @@
         "然而，对唱片公司来说，坏消息是非法下载音乐的机会。盗版——通常以廉价复制的 CD 形式出现——长期困扰音乐行业，但互联网让盗版者通过文件分享网站和大型盗版下载网站自由而广泛地传播。",
         "在这种情况下，未来几年乐队可能会免费赠送音乐来宣传自己，这是音乐行业一个非常值得开始观察的现象。"
       ]
+    },
+    {
+      "id": "lishi-01",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 1,
+      "heading": "",
+      "title": "Every year there is the Spring Festival in China",
+      "fallbackTitle": "Every year there is the Spring Festival in China",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Every year there is the Spring Festival in China. Usually it is in January or February. It is the most important festival in China. So before it comes, everyone has to prepare things. They buy beef, pork, chicken, fruit and many other things. And they often make a special kind of food called “dumplings”. It means “come together” in Chinese. On the day before the festival, parents buy new clothes for their children and children also buy presents for their parents. On the festival eve, all the family members come back to their home. This is a happy moment. They sing, dance and play cards. When they enjoy the meal, they give each other the best wishes for the coming year. They all have a good time.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Every year there is the Spring Festival in China. Usually it is in January or February. It is the most important festival in China. So before it comes, everyone has to prepare things. They buy beef, pork, chicken, fruit and many other things. And they often make a special kind of food called “dumplings”. It means “come together” in Chinese. On the day before the festival, parents buy new clothes for their children and children also buy presents for their parents. On the festival eve, all the family members come back to their home. This is a happy moment. They sing, dance and play cards. When they enjoy the meal, they give each other the best wishes for the coming year. They all have a good time."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which is the most important festival in China?",
+          "options": [
+            "The Mid-Autumn Festival.",
+            "The Spring Festival.",
+            "Children’s Day.",
+            "May Day."
+          ],
+          "answer": "B",
+          "explanation": "第一段明确说“It is the most important festival in China”，指春节。",
+          "evidence": "It is the most important festival in China."
+        },
+        {
+          "num": 2,
+          "stem": "The Spring Festival is usually in ______.",
+          "options": [
+            "January or February",
+            "February or March",
+            "September or October",
+            "December or January"
+          ],
+          "answer": "A",
+          "explanation": "第一段说春节“Usually it is in January or February”。",
+          "evidence": "Usually it is in January or February."
+        },
+        {
+          "num": 3,
+          "stem": "What’s the special kind of food for the Spring Festival in China?",
+          "options": [
+            "Pork.",
+            "Fish.",
+            "Dumplings.",
+            "Noodles."
+          ],
+          "answer": "C",
+          "explanation": "文中说人们常做一种特别的食物“called dumplings”，即饺子。",
+          "evidence": "a special kind of food called “dumplings”"
+        },
+        {
+          "num": 4,
+          "stem": "The food “dumplings” means “______”.",
+          "options": [
+            "be delicious",
+            "be hungry",
+            "come together",
+            "come back"
+          ],
+          "answer": "C",
+          "explanation": "文中解释饺子在中文里“means ‘come together’”。",
+          "evidence": "It means “come together” in Chinese."
+        },
+        {
+          "num": 5,
+          "stem": "When they are having dinner on the festival eve, the Chinese ______.",
+          "options": [
+            "sing, dance and play cards",
+            "buy each other presents",
+            "never drink",
+            "give each other the best wishes"
+          ],
+          "answer": "D",
+          "explanation": "除夕吃年夜饭时，人们“give each other the best wishes for the coming year”；唱歌跳舞打牌是饭前/饭后活动。",
+          "evidence": "they give each other the best wishes for the coming year"
+        }
+      ],
+      "wordCount": 127,
+      "difficulty": "基础",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        ""
+      ]
+    },
+    {
+      "id": "lishi-02",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 2,
+      "heading": "",
+      "title": "The Winter Olympics is also called the White Olympics",
+      "fallbackTitle": "The Winter Olympics is also called the White Olympics",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The Winter Olympics is also called the White Olympics. At this time, many colorful stamps are published to mark the great Games. The first stamps marking the opening came out on January 25, 1932 in the United States for the 3rd White Olympics. From then on, publishing stamps during the White Olympics became a rule.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "During the 4th Winter Olympic Games a group of stamps were published in Germany in November 1936. The five rings of Olympics were sewn(缝制)on the front of the sportswear. It was the first time that the rings appeared on the stamps of the White Olympics.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In the 1950’s, the stamps of this kind became more colorful. When the White Olympics came, the host countries as well as the non-host countries published stamps to mark those Games. China also published four stamps in February 1980, when the Chinese sportsmen began to take part in the White Olympics.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Japan is the only Asian country that has ever held the White Olympics. Altogether 14, 500 million stamps were sold to raise money for this sports meet.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Different kinds of sports were drawn on these small stamps. People can enjoy the beauty of the wonderful movements of some sportsmen.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "The Winter Olympics is also called the White Olympics. At this time, many colorful stamps are published to mark the great Games. The first stamps marking the opening came out on January 25, 1932 in the United States for the 3rd White Olympics. From then on, publishing stamps during the White Olympics became a rule.",
+        "During the 4th Winter Olympic Games a group of stamps were published in Germany in November 1936. The five rings of Olympics were sewn(缝制)on the front of the sportswear. It was the first time that the rings appeared on the stamps of the White Olympics.",
+        "In the 1950’s, the stamps of this kind became more colorful. When the White Olympics came, the host countries as well as the non-host countries published stamps to mark those Games. China also published four stamps in February 1980, when the Chinese sportsmen began to take part in the White Olympics.",
+        "Japan is the only Asian country that has ever held the White Olympics. Altogether 14, 500 million stamps were sold to raise money for this sports meet.",
+        "Different kinds of sports were drawn on these small stamps. People can enjoy the beauty of the wonderful movements of some sportsmen."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The White Olympics and the Winter Olympics are ______.",
+          "options": [
+            "the same thing",
+            "different games",
+            "not held in winter",
+            "held in summer"
+          ],
+          "answer": "A",
+          "explanation": "文章开头说“The Winter Olympics is also called the White Olympics”，两者是同一项赛事。",
+          "evidence": "The Winter Olympics is also called the White Olympics."
+        },
+        {
+          "num": 2,
+          "stem": "The world made it a rule to publish stamps to mark the Olympic Games ______.",
+          "options": [
+            "after the year 1936",
+            "after the 3rd White Olympics",
+            "before the 3rd White Olympics",
+            "before the year 1932"
+          ],
+          "answer": "B",
+          "explanation": "第一段说 1932 年第三届白色奥运会的邮票发行后，“From then on, publishing stamps ... became a rule”，即从第三届之后成为惯例。",
+          "evidence": "From then on, publishing stamps during the White Olympics became a rule."
+        },
+        {
+          "num": 3,
+          "stem": "The Winter Olympics is held once every ______ years.",
+          "options": [
+            "two",
+            "three",
+            "four",
+            "five"
+          ],
+          "answer": "C",
+          "explanation": "冬季奥运会每四年举办一次，这是常识；文中也提到第三届（1932）与第四届（1936）相隔四年。",
+          "evidence": "the 3rd White Olympics ... 1932 ... the 4th Winter Olympic Games ... 1936"
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following is TRUE?",
+          "options": [
+            "Only the host countries can publish stamps to mark those Games.",
+            "Only the non-host countries can publish stamps to mark those Games.",
+            "All the countries can publish stamps to mark those Games.",
+            "China has never published stamps to mark those Games."
+          ],
+          "answer": "C",
+          "explanation": "第三段说主办国和非主办国都发行邮票纪念奥运会，中国也在 1980 年发行了四枚，因此所有国家都可以发行。",
+          "evidence": "the host countries as well as the non-host countries published stamps"
+        },
+        {
+          "num": 5,
+          "stem": "What most probably appears on the stamps of the White Olympics?",
+          "options": [
+            "Basketball.",
+            "Table tennis.",
+            "Football.",
+            "Skating."
+          ],
+          "answer": "D",
+          "explanation": "冬季奥运会项目是冰雪运动，四个选项中只有滑冰（skating）属于冬季项目。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 195,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-01",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 1,
+      "heading": "",
+      "title": "When young people get their first real jobs, they face a lot of new and confusing situatio",
+      "fallbackTitle": "When young people get their first real jobs, they face a lot of new and confusing situatio",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When young people get their first real jobs, they face a lot of new and confusing situations. They may find that everything is different from the way things were at school. It is also possible that they will feel uncomfortable and insecure in both professional and social situations. Eventually, they realize that university classes can’t be the only preparation for all of the different situations that arise in the working world.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Perhaps the best way to learn how to behave in the working world is to identify a worker you admire and observe his behavior. By doing so, you will be able to see what it is that you admire in this person. For example, you will observe how he acts in a crisis. Perhaps even more importantly, you will be able to see what his approach to day-to-day situations is.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "While you are observing your colleague, you should be asking yourself whether his behavior is like yours and how you can learn from his responses to a variety of situations. By watching and learning from a model, you will probably begin to identify and adopt good working habits.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "When young people get their first real jobs, they face a lot of new and confusing situations. They may find that everything is different from the way things were at school. It is also possible that they will feel uncomfortable and insecure in both professional and social situations. Eventually, they realize that university classes can’t be the only preparation for all of the different situations that arise in the working world.",
+        "Perhaps the best way to learn how to behave in the working world is to identify a worker you admire and observe his behavior. By doing so, you will be able to see what it is that you admire in this person. For example, you will observe how he acts in a crisis. Perhaps even more importantly, you will be able to see what his approach to day-to-day situations is.",
+        "While you are observing your colleague, you should be asking yourself whether his behavior is like yours and how you can learn from his responses to a variety of situations. By watching and learning from a model, you will probably begin to identify and adopt good working habits."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The young people who just graduated from school may not behave well in the working world because ______.",
+          "options": [
+            "they were not well educated at school",
+            "what they learn in university classes is not adequate for their new life",
+            "the society is too complicated to adapt to",
+            "they failed to work hard at school"
+          ],
+          "answer": "B",
+          "explanation": "第一段说年轻人最终意识到“university classes can’t be the only preparation” for the working world，即大学课堂所学不足以应对新生活。",
+          "evidence": "university classes can’t be the only preparation"
+        },
+        {
+          "num": 2,
+          "stem": "The underlined word “arise” in Para. 1 means “______”.",
+          "options": [
+            "come into being",
+            "bring about",
+            "go up",
+            "cause to happen"
+          ],
+          "answer": "A",
+          "explanation": "arise 在句中表示“出现、产生”，与 come into being 同义；bring about/cause 是“使发生”，方向相反。",
+          "evidence": "all of the different situations that arise in the working world"
+        },
+        {
+          "num": 3,
+          "stem": "The best way to learn how to behave in the working world is ______.",
+          "options": [
+            "to find a worker and follow him closely",
+            "to find a person you respect and see how he acts in different situations",
+            "to find a person you admire and make friends with him",
+            "to make the acquaintance of a model you admire"
+          ],
+          "answer": "B",
+          "explanation": "第二段说最好的办法是找一个你敬佩的同事，观察他在危机和日常情境中的行为；不是简单跟随或交朋友。",
+          "evidence": "identify a worker you admire and observe his behavior"
+        },
+        {
+          "num": 4,
+          "stem": "The purpose of this writing is ______.",
+          "options": [
+            "to offer career guide to young people",
+            "to tell young people the importance of the first job",
+            "to instruct young people how to communicate with people",
+            "to advise young people on good working habits"
+          ],
+          "answer": "A",
+          "explanation": "全文给刚参加工作的年轻人提供如何适应职场、学习良好工作习惯的建议，属于职业指导。",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "The passage could be best entitled ______.",
+          "options": [
+            "Learn, Learn and Learn Again",
+            "One Is Never Too Old to Learn",
+            "Learn from a Model",
+            "Learn Forever"
+          ],
+          "answer": "C",
+          "explanation": "文章核心是观察并学习一个榜样（model）的行为，因此最佳标题是 Learn from a Model。",
+          "evidence": "By watching and learning from a model"
+        }
+      ],
+      "wordCount": 189,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-02",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 2,
+      "heading": "",
+      "title": "Airline companies are responsible for transporting your luggage",
+      "fallbackTitle": "Airline companies are responsible for transporting your luggage",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Airline companies are responsible for transporting your luggage. If you cannot recover it at the point of arrival, you must inform the airline immediately. They will carry out the necessary search. If the luggage is recovered, it will be delivered to your place of residence. If you wish to insure your luggage, you may do so at your own expense.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Some airlines restrict luggage weight to 44 pounds(20 kg); in other cases, there is no weight restriction, but you are not allowed more than two pieces of luggage. Inquire about luggage allowances from the airline with which you will be traveling. However, you must pay extra for excess luggage, which is not reimbursed(补偿) by Canadian International Development Agency(CIDA).",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Each suitcase, bag or package must be clearly labeled with your name and destination. If you do not know the exact destination address at the time of your departure, label your luggage in care of(由……代收) the executing agency whose name appears in the Training Agreement, using the following model:",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Surname, first name Name of your country Address of the executing agency City, country, postal code Telephone number of executing agency",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "If you do not have this information, please label your luggage with the name and address of the institution you are to attend in Canada. If none of these details are available, you can use CIDA’s address.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Airline companies are responsible for transporting your luggage. If you cannot recover it at the point of arrival, you must inform the airline immediately. They will carry out the necessary search. If the luggage is recovered, it will be delivered to your place of residence. If you wish to insure your luggage, you may do so at your own expense.",
+        "Some airlines restrict luggage weight to 44 pounds(20 kg); in other cases, there is no weight restriction, but you are not allowed more than two pieces of luggage. Inquire about luggage allowances from the airline with which you will be traveling. However, you must pay extra for excess luggage, which is not reimbursed(补偿) by Canadian International Development Agency(CIDA).",
+        "Each suitcase, bag or package must be clearly labeled with your name and destination. If you do not know the exact destination address at the time of your departure, label your luggage in care of(由……代收) the executing agency whose name appears in the Training Agreement, using the following model:",
+        "Surname, first name Name of your country Address of the executing agency City, country, postal code Telephone number of executing agency",
+        "If you do not have this information, please label your luggage with the name and address of the institution you are to attend in Canada. If none of these details are available, you can use CIDA’s address."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "If you can’t find your luggage at the point of arrival, airline companies will try to find it and ______.",
+          "options": [
+            "ask you to insure your luggage",
+            "deliver it to where you live",
+            "inform you about its recovery",
+            "ask you to pay some money for it"
+          ],
+          "answer": "B",
+          "explanation": "第一段说如果行李找回，会“delivered to your place of residence”，即送到你的住处。",
+          "evidence": "it will be delivered to your place of residence"
+        },
+        {
+          "num": 2,
+          "stem": "Before taking your air trip, you have to make sure ______.",
+          "options": [
+            "of the restrictions on luggage",
+            "of the insurance for luggage",
+            "who will pay for the excess luggage",
+            "how much CIDA will pay for the excess luggage"
+          ],
+          "answer": "A",
+          "explanation": "第二段建议向航空公司询问行李额度（luggage allowances），即先确认行李限制。",
+          "evidence": "Inquire about luggage allowances from the airline"
+        },
+        {
+          "num": 3,
+          "stem": "The charge for the excess luggage should be paid by ______.",
+          "options": [
+            "CIDA",
+            "the passenger",
+            "the insurance company",
+            "the executing agency"
+          ],
+          "answer": "B",
+          "explanation": "第二段说超重行李必须额外付费，且 CIDA 不予补偿，因此费用由乘客自己承担。",
+          "evidence": "you must pay extra for excess luggage"
+        },
+        {
+          "num": 4,
+          "stem": "In case you have no idea at all where to send your luggage, you can send it to the address of ______.",
+          "options": [
+            "the institution you are to attend",
+            "the airline you travel with",
+            "the Canadian International Development Agency",
+            "the executive agency given in the Training Agreement"
+          ],
+          "answer": "C",
+          "explanation": "最后一段说如果什么信息都没有，“you can use CIDA’s address”，即加拿大国际开发署的地址。",
+          "evidence": "you can use CIDA’s address"
+        },
+        {
+          "num": 5,
+          "stem": "The passage is mainly about CIDA’s advice on ______.",
+          "options": [
+            "the charge of your luggage",
+            "the handling of your luggage",
+            "the insurance of your luggage",
+            "the transportation of your luggage"
+          ],
+          "answer": "B",
+          "explanation": "全文讲行李的查找、重量限制、超重付费、标签填写等处理办法，最全面的概括是 the handling of your luggage。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 225,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-03",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 3,
+      "heading": "",
+      "title": "I am one of the many city people who are always saying that given the choice we would pref",
+      "fallbackTitle": "I am one of the many city people who are always saying that given the choice we would pref",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "I am one of the many city people who are always saying that given the choice we would prefer to live in the country away from the dirt and noise of a large city. I have managed to convince myself that if it weren’t for my job I would immediately head out for the open spaces and go back to nature in some sleepy village buried in the country. But how realistic is the dream?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Cities can be frightening places. The majority of the population live in massive tower blocks, noisy, dirty and impersonal. The sense of belonging to a community tends to disappear when you live fifteen floors up. All you can see from your window is sky, or other blocks of flats. Children become aggressive and nervous — cooped up at home all day, with nowhere to play; their mothers feel isolated from the rest of the world. Strangely enough, whereas in the past the inhabitants of one street all knew each other, nowadays people on the same floor in tower blocks don’t even say hello to each other.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Country life, on the other hand, differs from this kind of isolated existence in that a sense of community generally binds the inhabitants of small villages together. People have the advantage of knowing that there is always someone to turn to when they need help. But country life has disadvantages too. While it is true that you may be among friends in a village, it is also true that you are cut off from the existing and important events that take place in cities. There’s little possibility of going to a new show or the latest movie. Shopping becomes a major problem, and for anything slightly out of the ordinary you have to go on an expedition to the nearest large town. The city-dweller who leaves for the country is often oppressed by a sense of unbearable stillness and quiet.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "What, then, is the answer? The country has the advantage of peace and quiet, but suffers from the disadvantage of being cut off; the city breeds a feeling of isolation, and constant noise batters the senses. But one of its main advantages is that you are at the center of things, and that life doesn’t come to an end at half-past nine at night. Some people have found (or rather bought) a compromise between the two: they have expressed their preference for the “quiet life” by leaving the suburbs and moving to villages within commuting distance of large cities. They generally have about as much sensitivity as the plastic flowers they leave behind — they are polluted with strange ideas about change and improvement which they force on to the unwilling original inhabitants of the villages.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "What then of my dreams of leaning on a cottage gate and murmuring “morning” to the locals as they pass by? I’m keen on the idea, but you see there’s my cat, Toby. I’m not at all sure that he would take to all that fresh air and exercise in the long grass. I mean, can you see him mixing with all those hearty males down the farm? No, he would rather have the electric imitation-coal fire any evening.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "I am one of the many city people who are always saying that given the choice we would prefer to live in the country away from the dirt and noise of a large city. I have managed to convince myself that if it weren’t for my job I would immediately head out for the open spaces and go back to nature in some sleepy village buried in the country. But how realistic is the dream?",
+        "Cities can be frightening places. The majority of the population live in massive tower blocks, noisy, dirty and impersonal. The sense of belonging to a community tends to disappear when you live fifteen floors up. All you can see from your window is sky, or other blocks of flats. Children become aggressive and nervous — cooped up at home all day, with nowhere to play; their mothers feel isolated from the rest of the world. Strangely enough, whereas in the past the inhabitants of one street all knew each other, nowadays people on the same floor in tower blocks don’t even say hello to each other.",
+        "Country life, on the other hand, differs from this kind of isolated existence in that a sense of community generally binds the inhabitants of small villages together. People have the advantage of knowing that there is always someone to turn to when they need help. But country life has disadvantages too. While it is true that you may be among friends in a village, it is also true that you are cut off from the existing and important events that take place in cities. There’s little possibility of going to a new show or the latest movie. Shopping becomes a major problem, and for anything slightly out of the ordinary you have to go on an expedition to the nearest large town. The city-dweller who leaves for the country is often oppressed by a sense of unbearable stillness and quiet.",
+        "What, then, is the answer? The country has the advantage of peace and quiet, but suffers from the disadvantage of being cut off; the city breeds a feeling of isolation, and constant noise batters the senses. But one of its main advantages is that you are at the center of things, and that life doesn’t come to an end at half-past nine at night. Some people have found (or rather bought) a compromise between the two: they have expressed their preference for the “quiet life” by leaving the suburbs and moving to villages within commuting distance of large cities. They generally have about as much sensitivity as the plastic flowers they leave behind — they are polluted with strange ideas about change and improvement which they force on to the unwilling original inhabitants of the villages.",
+        "What then of my dreams of leaning on a cottage gate and murmuring “morning” to the locals as they pass by? I’m keen on the idea, but you see there’s my cat, Toby. I’m not at all sure that he would take to all that fresh air and exercise in the long grass. I mean, can you see him mixing with all those hearty males down the farm? No, he would rather have the electric imitation-coal fire any evening."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "We get the impression from the first paragraph that the author ______.",
+          "options": [
+            "used to live in the country",
+            "used to work in the city",
+            "works in the city",
+            "lives in the country"
+          ],
+          "answer": "C",
+          "explanation": "第一段说“if it weren’t for my job I would immediately head out”，说明作者因工作在城里，目前住在城市。",
+          "evidence": "if it weren’t for my job I would immediately head out"
+        },
+        {
+          "num": 2,
+          "stem": "In the author’s opinion, the following may cause city people to be unhappy EXCEPT ______.",
+          "options": [
+            "a strong sense of fear",
+            "lack of communication",
+            "housing conditions",
+            "a sense of isolation"
+          ],
+          "answer": "A",
+          "explanation": "第二段提到住房条件（tower blocks）、缺乏交流（same floor don’t say hello）和孤立感，但没有提到“强烈的恐惧感”。",
+          "evidence": "noisy, dirty and impersonal ... don’t even say hello"
+        },
+        {
+          "num": 3,
+          "stem": "The passage implies that it is easy to buy the following things in the country EXCEPT ______.",
+          "options": [
+            "daily necessities",
+            "fresh fruits",
+            "designer clothes",
+            "fresh vegetables"
+          ],
+          "answer": "C",
+          "explanation": "第三段说在乡村买东西是大问题，稍微不寻常的东西都要去大城镇，因此设计师服装最难买到；日用品和新鲜果蔬通常当地有。",
+          "evidence": "for anything slightly out of the ordinary you have to go on an expedition"
+        },
+        {
+          "num": 4,
+          "stem": "According to the passage, which of the following adjectives best describes those people who work in large cities and live in villages?",
+          "options": [
+            "Original.",
+            "Quiet.",
+            "Arrogant.",
+            "Insensitive."
+          ],
+          "answer": "D",
+          "explanation": "作者说这些人“as much sensitivity as the plastic flowers”，并把奇怪观念强加给村民，最贴切的形容词是 insensitive（不敏感、不体谅）。",
+          "evidence": "as much sensitivity as the plastic flowers"
+        },
+        {
+          "num": 5,
+          "stem": "Do you think the author will move to the country?",
+          "options": [
+            "Yes, he will do so.",
+            "No, he will not do so.",
+            "It is difficult to tell.",
+            "He is in two minds."
+          ],
+          "answer": "B",
+          "explanation": "最后一段说作者喜欢乡村生活的想法，但猫 Toby 不会适应乡下的新鲜空气和草地，暗示他不会搬去乡村。",
+          "evidence": "he would rather have the electric imitation-coal fire"
+        }
+      ],
+      "wordCount": 534,
+      "difficulty": "挑战",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-04",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 4,
+      "heading": "",
+      "title": "Ideas about education are changing in the United States",
+      "fallbackTitle": "Ideas about education are changing in the United States",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ideas about education are changing in the United States. Education today is not just a high school diploma or a college degree. Many adults are not interested in going to college. They are interested in other kinds of learning. For them, learning does not end with a diploma.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Continuing education gives these adults the opportunity to increase their knowledge about their own field or to learn about a new field. It also gives them a chance to improve their old skills or to learn new ones.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Scientists, mechanics and barbers can take classes to improve their work skills. If they know more or learn more, they can get a better job or earn more money.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Continuing education classes give more adults the chances to learn new skills. There is usually a large variety of classes to choose from: typing, foreign cooking, photography, auto repair, furniture repair, or swimming. These are only some of the classes available.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Some adults take classes for fun or because the class will be useful for them. Other adults take continuing education classes to improve their own lives because they want to feel better about themselves.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Almost any community college or public school system has a continuing education program. There are classes in schools, community buildings or churches. Most classes are in the evening, so working people can attend. The classes are usually small, and they are inexpensive.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Ideas about education are changing in the United States. Education today is not just a high school diploma or a college degree. Many adults are not interested in going to college. They are interested in other kinds of learning. For them, learning does not end with a diploma.",
+        "Continuing education gives these adults the opportunity to increase their knowledge about their own field or to learn about a new field. It also gives them a chance to improve their old skills or to learn new ones.",
+        "Scientists, mechanics and barbers can take classes to improve their work skills. If they know more or learn more, they can get a better job or earn more money.",
+        "Continuing education classes give more adults the chances to learn new skills. There is usually a large variety of classes to choose from: typing, foreign cooking, photography, auto repair, furniture repair, or swimming. These are only some of the classes available.",
+        "Some adults take classes for fun or because the class will be useful for them. Other adults take continuing education classes to improve their own lives because they want to feel better about themselves.",
+        "Almost any community college or public school system has a continuing education program. There are classes in schools, community buildings or churches. Most classes are in the evening, so working people can attend. The classes are usually small, and they are inexpensive."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The new idea about education in the U.S. is that ______.",
+          "options": [
+            "everyone should get a college degree",
+            "it’s no use for adults to go to college",
+            "a high school diploma is the end of education",
+            "adults should go on learning after graduating from school"
+          ],
+          "answer": "D",
+          "explanation": "第一段说教育不再只是文凭，许多成年人对其他学习方式感兴趣，“learning does not end with a diploma”，即毕业后仍应继续学习。",
+          "evidence": "learning does not end with a diploma"
+        },
+        {
+          "num": 2,
+          "stem": "What’s the purpose for adults to continue their education?",
+          "options": [
+            "Enlarge their knowledge and learn new skills.",
+            "Catch up the opportunity to get a higher degree.",
+            "Learn more basic knowledge to get a diploma.",
+            "Make themselves live a more comfortable life."
+          ],
+          "answer": "A",
+          "explanation": "第二段说继续教育让成年人增加本领域知识、学习新领域，并提升旧技能或学习新技能。",
+          "evidence": "increase their knowledge ... improve their old skills or to learn new ones"
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following statement is true?",
+          "options": [
+            "There are only a few continuing education classes available for adults.",
+            "Only those who want to get more money should go on with their education.",
+            "People take continuing education can get a good job.",
+            "All the people getting continuing education can get a good job."
+          ],
+          "answer": "C",
+          "explanation": "第三段说如果学到更多，他们“can get a better job or earn more money”，因此 C 有原文依据；A、B、D 都过于绝对或与原文不符。",
+          "evidence": "they can get a better job or earn more money"
+        },
+        {
+          "num": 4,
+          "stem": "Usually, the continuing education program is given ______.",
+          "options": [
+            "in a small size and expensively",
+            "only for working people",
+            "only in community buildings or churches",
+            "by community colleges and public schools"
+          ],
+          "answer": "D",
+          "explanation": "最后一段说几乎所有社区学院或公立学校系统都有继续教育项目，因此通常由社区学院和公立学校提供。",
+          "evidence": "Almost any community college or public school system has a continuing education program"
+        },
+        {
+          "num": 5,
+          "stem": "The best title for the passage would be ______.",
+          "options": [
+            "Continuing Education Classes",
+            "The Importance of a College Degree",
+            "A Good Way to Earn More Money",
+            "Different Choices for Adults"
+          ],
+          "answer": "A",
+          "explanation": "全文围绕继续教育课程（继续学习）、其目的、内容和提供方式展开，最佳标题是 Continuing Education Classes。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 232,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-05",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 5,
+      "heading": "",
+      "title": "No one knows exactly how many disabled people there are in the world, but estimates sugges",
+      "fallbackTitle": "No one knows exactly how many disabled people there are in the world, but estimates sugges",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "No one knows exactly how many disabled people there are in the world, but estimates suggest the number is over 450 million. The number of disabled people in India alone is probably more than double the total population of Canada.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In the United Kingdom, about one in ten people have some disability. Disability is not just something that happens to other people. As we get older, many of us will become less mobile, hard of hearing or have failing eyesight.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Disablement can take many forms and occur at any time of life. Some people are born with disabilities. Many others become disabled as they get older. There are many progressive disabling diseases. The longer time goes on, the worse they become. Some people are disabled in accidents. Many others may have a period of disability in the form of a mental illness. All are affected by people’s attitude towards them.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Disabled people face many physical barriers. Next time you go shopping or to work or visit friends, imagine how you would manage if you could not get up steps, or on to buses and trains. How would you cope if you could not see where you were going or could not hear the traffic? But there are other barriers: prejudice can be even harder to break down and ignorance inevitably represents by far the greatest barrier of all. It is almost impossible for the able-bodied to fully appreciate what the severely disabled go through, so it is important to draw attention to these barriers and show that it is the individual person and their ability, not their disability, which counts.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "No one knows exactly how many disabled people there are in the world, but estimates suggest the number is over 450 million. The number of disabled people in India alone is probably more than double the total population of Canada.",
+        "In the United Kingdom, about one in ten people have some disability. Disability is not just something that happens to other people. As we get older, many of us will become less mobile, hard of hearing or have failing eyesight.",
+        "Disablement can take many forms and occur at any time of life. Some people are born with disabilities. Many others become disabled as they get older. There are many progressive disabling diseases. The longer time goes on, the worse they become. Some people are disabled in accidents. Many others may have a period of disability in the form of a mental illness. All are affected by people’s attitude towards them.",
+        "Disabled people face many physical barriers. Next time you go shopping or to work or visit friends, imagine how you would manage if you could not get up steps, or on to buses and trains. How would you cope if you could not see where you were going or could not hear the traffic? But there are other barriers: prejudice can be even harder to break down and ignorance inevitably represents by far the greatest barrier of all. It is almost impossible for the able-bodied to fully appreciate what the severely disabled go through, so it is important to draw attention to these barriers and show that it is the individual person and their ability, not their disability, which counts."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The first paragraph points out that ______.",
+          "options": [
+            "there are many disabled people in the world",
+            "the number of disabled people in India is the largest",
+            "India has many more disabled people than Canada",
+            "it is easy to get an exact number of the world’s disabled people"
+          ],
+          "answer": "A",
+          "explanation": "第一段指出全球残疾人估计超过 4.5 亿，印度一国就超过加拿大总人口的两倍，核心是残疾人数量很多。",
+          "evidence": "estimates suggest the number is over 450 million"
+        },
+        {
+          "num": 2,
+          "stem": "The last paragraph focuses on ______.",
+          "options": [
+            "disability",
+            "ignorance",
+            "prejudice",
+            "barriers"
+          ],
+          "answer": "D",
+          "explanation": "最后一段从身体障碍（physical barriers）谈到偏见和无知等其他障碍，中心词是 barriers。",
+          "evidence": "Disabled people face many physical barriers ... other barriers"
+        },
+        {
+          "num": 3,
+          "stem": "The last word “counts” most probably means “______”.",
+          "options": [
+            "is important",
+            "is considered",
+            "is included",
+            "is numbered"
+          ],
+          "answer": "A",
+          "explanation": "“it is the individual person and their ability, not their disability, which counts” 意为重要的是个人及其能力，而不是残疾；counts = is important。",
+          "evidence": "it is the individual person and their ability ... which counts"
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following statements is NOT TURE?",
+          "options": [
+            "Even the able-bodied may lose some of their body functions when they get older.",
+            "There are about 10 percent disabled people in the United Kingdom.",
+            "The whole society should pay attention to the barriers faced by disabled people.",
+            "There still exits prejudice against the disabled that is easy to break down."
+          ],
+          "answer": "D",
+          "explanation": "文章说偏见“can be even harder to break down”，即很难消除，D 说“easy to break down”与原文相反。A、B、C 均符合原文。",
+          "evidence": "prejudice can be even harder to break down"
+        },
+        {
+          "num": 5,
+          "stem": "It can be concluded from the passage that ______.",
+          "options": [
+            "we should try our best to prevent disability",
+            "both physical and mental barriers are hard to break down",
+            "we should take a proper attitude towards the disabled",
+            "the able-bodied people will fully understand the disabled"
+          ],
+          "answer": "C",
+          "explanation": "全文呼吁关注残疾人面临的身体与社会障碍，并强调应以正确的态度看待残疾人及其能力，因此 C 最符合结论。",
+          "evidence": "it is the individual person and their ability ... which counts"
+        }
+      ],
+      "wordCount": 269,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-06",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 6,
+      "heading": "",
+      "title": "If we take a close look at successful language learners, we may discover a few techniques ",
+      "fallbackTitle": "If we take a close look at successful language learners, we may discover a few techniques ",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If we take a close look at successful language learners, we may discover a few techniques which make language learning easier for them.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "First of all, successful language learners are independent learners. They do not depend on books or teachers; they discover their own way to learn the language. Instead of waiting for the teacher to explain everything, they try to find the patterns and the rules for themselves. They are good guessers who look for clues and form their own conclusions.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Successful language learning is active learning. Therefore, successful learners do not wait for a chance to use the language; they look for such a chance. They find people who speak the language and ask these people to correct them when they make a mistake. They will try anything to communicate. When communication is difficult, they can accept information that is neither exact nor complete. It is more important for them to learn to think in the language than to know the meaning of every word.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Finally, successful language learners are learners with a purpose. They want to learn the language because they are interested in the language and the people who speak it. It is necessary for them to learn the language in order to communicate with these people and to learn from them.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "If we take a close look at successful language learners, we may discover a few techniques which make language learning easier for them.",
+        "First of all, successful language learners are independent learners. They do not depend on books or teachers; they discover their own way to learn the language. Instead of waiting for the teacher to explain everything, they try to find the patterns and the rules for themselves. They are good guessers who look for clues and form their own conclusions.",
+        "Successful language learning is active learning. Therefore, successful learners do not wait for a chance to use the language; they look for such a chance. They find people who speak the language and ask these people to correct them when they make a mistake. They will try anything to communicate. When communication is difficult, they can accept information that is neither exact nor complete. It is more important for them to learn to think in the language than to know the meaning of every word.",
+        "Finally, successful language learners are learners with a purpose. They want to learn the language because they are interested in the language and the people who speak it. It is necessary for them to learn the language in order to communicate with these people and to learn from them."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Successful language learners want to learn the language because ______.",
+          "options": [
+            "they have to pass the examination",
+            "they are interested in it",
+            "they want to find better jobs",
+            "they think it is very easy to learn"
+          ],
+          "answer": "B",
+          "explanation": "最后一段说成功学习者想学语言是因为“they are interested in the language and the people who speak it”。",
+          "evidence": "they are interested in the language and the people who speak it"
+        },
+        {
+          "num": 2,
+          "stem": "Successful language learning is active. so successful learners ______.",
+          "options": [
+            "only use the language in class",
+            "try to avoid using the language",
+            "wait for a chance to use the language",
+            "look for a chance to use the language"
+          ],
+          "answer": "D",
+          "explanation": "第三段说成功学习者“do not wait for a chance ... they look for such a chance”，即主动寻找使用语言的机会。",
+          "evidence": "they look for such a chance"
+        },
+        {
+          "num": 3,
+          "stem": "According to the passage, when successful language learners meet some new words, they usually ______.",
+          "options": [
+            "wait for their teachers to explain them",
+            "look them up in the dictionary at once",
+            "try to guess their meanings",
+            "ask their teachers"
+          ],
+          "answer": "C",
+          "explanation": "第二段说他们是“good guessers who look for clues and form their own conclusions”，遇到生词会尝试猜测。",
+          "evidence": "They are good guessers who look for clues"
+        },
+        {
+          "num": 4,
+          "stem": "Which one of the following statements is TRUE about successful language learners according to the passage?",
+          "options": [
+            "They are more intelligent than others.",
+            "They are learners with a purpose.",
+            "They have good teachers and good books.",
+            "They spend much more time learning than others."
+          ],
+          "answer": "B",
+          "explanation": "第四段明确说“successful language learners are learners with a purpose”，B 正确；A、C、D 文中没有依据。",
+          "evidence": "learners with a purpose"
+        },
+        {
+          "num": 5,
+          "stem": "What is the purpose of this passage?",
+          "options": [
+            "To explain the importance of language learning.",
+            "To compare language learning with language teaching.",
+            "To teach people to speak a foreign language.",
+            "To introduce some useful techniques of language learning."
+          ],
+          "answer": "D",
+          "explanation": "文章介绍成功语言学习者的几种技巧：独立、主动、有目的，目的是教给读者有用的学习方法。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 216,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-07",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 7,
+      "heading": "",
+      "title": "Most American people hate repeating the same work endlessly, especially those who live in ",
+      "fallbackTitle": "Most American people hate repeating the same work endlessly, especially those who live in ",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most American people hate repeating the same work endlessly, especially those who live in the west of America. They try their best to make their life colorful and their work interesting. If they have to do the same regular work, they’ll try to do it in different ways. Repetition and Monotony(单调) are what they can’t stand.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In the west of America, there is a beautiful old mountain village which is well known for its straw hats. The villagers there can make different styles of hats — hats for old gentlemen, for sweet and playful children, and for beautiful young ladies. People often go there to buy hats.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "One day, there came a young tourist who entered a millinery(女士帽子)shop and found a very nice hat costing five dollars. He said to the shopkeeper, “If you agree to sell at a cheaper price, I’d like to buy two hundred hats of this style.” “No, you should pay me at least ten dollars each if you wish to get so many hats of the same style.” The tourist could not understand.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "“How’s that?”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "“Well, ” said the shopkeeper, “If you buy only one hat of this style, I can make it easily. If you order two hundred hats of different styles, I can also manage the business without much difficulty. However, it will almost bore me to death if you want me to make two hundred hats of the same style. So you at least pay me double price.”",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Most American people hate repeating the same work endlessly, especially those who live in the west of America. They try their best to make their life colorful and their work interesting. If they have to do the same regular work, they’ll try to do it in different ways. Repetition and Monotony(单调) are what they can’t stand.",
+        "In the west of America, there is a beautiful old mountain village which is well known for its straw hats. The villagers there can make different styles of hats — hats for old gentlemen, for sweet and playful children, and for beautiful young ladies. People often go there to buy hats.",
+        "One day, there came a young tourist who entered a millinery(女士帽子)shop and found a very nice hat costing five dollars. He said to the shopkeeper, “If you agree to sell at a cheaper price, I’d like to buy two hundred hats of this style.” “No, you should pay me at least ten dollars each if you wish to get so many hats of the same style.” The tourist could not understand.",
+        "“How’s that?”",
+        "“Well, ” said the shopkeeper, “If you buy only one hat of this style, I can make it easily. If you order two hundred hats of different styles, I can also manage the business without much difficulty. However, it will almost bore me to death if you want me to make two hundred hats of the same style. So you at least pay me double price.”"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The story tells us ______.",
+          "options": [
+            "that the American people don’t want to do the same work again and again",
+            "how to buy a hat",
+            "that the straw hats were sold only in the mountain village",
+            "the price will be cheaper if you buy a lot of hats of the same style"
+          ],
+          "answer": "A",
+          "explanation": "文章开头说大多数美国人不喜欢无休止地重复同样的工作，随后用帽子店故事说明这一点，A 最能概括主旨。",
+          "evidence": "Most American people hate repeating the same work endlessly"
+        },
+        {
+          "num": 2,
+          "stem": "How much did the nice hat cost?",
+          "options": [
+            "Ten dollars were paid.",
+            "It cost five dollars.",
+            "They were five dollars.",
+            "It cost at least five dollars."
+          ],
+          "answer": "B",
+          "explanation": "第三段说游客看中一顶“very nice hat costing five dollars”，即五美元。",
+          "evidence": "costing five dollars"
+        },
+        {
+          "num": 3,
+          "stem": "The answer of the shopkeeper really made the tourist ______.",
+          "options": [
+            "frightened",
+            "puzzled",
+            "shocked",
+            "amused"
+          ],
+          "answer": "B",
+          "explanation": "游客听到买得越多反而越贵，说“The tourist could not understand”，即感到困惑（puzzled）。",
+          "evidence": "The tourist could not understand."
+        },
+        {
+          "num": 4,
+          "stem": "Why did the shopkeeper demand the tourist to pay him double price for two hundred hats of the same style? Because the shopkeeper ______.",
+          "options": [
+            "couldn’t make two hundred hats of the same style",
+            "hadn’t enough straw to make the hats",
+            "didn’t want to sell him so many hats",
+            "couldn’t stand repeating the same work endlessly"
+          ],
+          "answer": "D",
+          "explanation": "店主说做两百顶同款帽子会“bore me to death”，因为他无法忍受无休止重复同样的工作，所以要双倍价钱。",
+          "evidence": "it will almost bore me to death if you want me to make two hundred hats of the same style"
+        },
+        {
+          "num": 5,
+          "stem": "The part “it almost bore me to death” means ______.",
+          "options": [
+            "that the shopkeeper was dying",
+            "that the shopkeeper was bored and would die at once",
+            "that it would be too boring for the shopkeeper",
+            "it would tire the shopkeeper out"
+          ],
+          "answer": "C",
+          "explanation": "“bore me to death”是夸张说法，表示“让我无聊死了”，即对店主来说太枯燥，不是真的会死。",
+          "evidence": "it will almost bore me to death"
+        }
+      ],
+      "wordCount": 245,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-08",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 8,
+      "heading": "",
+      "title": "It is exciting to apply for a job that really interests you",
+      "fallbackTitle": "It is exciting to apply for a job that really interests you",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It is exciting to apply for a job that really interests you. In making your application, there are a number of points for you to observe.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In your letter of application, aim to say just enough to introduce yourself. If you are answering an advertisement, any information for which it asks must, of course, be given. This will usually cover your school record and any further education and training. You may also be asked to give the names of one or two persons to supply reference. For this purpose you should choose people who know enough about your character and ability; and you should also ask for their permission to be named as referees.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "It will depend on circumstances how much you can usefully add about yourself. Your purpose is to bring to the notice of the boss any good reason why you rather than any of the other applicants (申请人) should be chosen for the job. If you feel you have any special skill for the work or, for example, any particular interest in the line of the business, let this be known.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Finally there is your use of language. You cannot go wrong if you keep your sentences and paragraphs short, making sure the sense is clear and well expressed. Choose plain words so long as they can express your meaning.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "It is exciting to apply for a job that really interests you. In making your application, there are a number of points for you to observe.",
+        "In your letter of application, aim to say just enough to introduce yourself. If you are answering an advertisement, any information for which it asks must, of course, be given. This will usually cover your school record and any further education and training. You may also be asked to give the names of one or two persons to supply reference. For this purpose you should choose people who know enough about your character and ability; and you should also ask for their permission to be named as referees.",
+        "It will depend on circumstances how much you can usefully add about yourself. Your purpose is to bring to the notice of the boss any good reason why you rather than any of the other applicants (申请人) should be chosen for the job. If you feel you have any special skill for the work or, for example, any particular interest in the line of the business, let this be known.",
+        "Finally there is your use of language. You cannot go wrong if you keep your sentences and paragraphs short, making sure the sense is clear and well expressed. Choose plain words so long as they can express your meaning."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The aim of writing a letter of application is to ______.",
+          "options": [
+            "tell the boss your school",
+            "express why you are most suitable for the job",
+            "show your character and ability",
+            "give enough information about yourself"
+          ],
+          "answer": "B",
+          "explanation": "第三段说求职信的目的是让老板注意到“why you rather than any of the other applicants should be chosen”，即说明你为什么最适合。",
+          "evidence": "why you rather than any of the other applicants should be chosen"
+        },
+        {
+          "num": 2,
+          "stem": "In your letter of application try to ______.",
+          "options": [
+            "keep it as short as possible",
+            "give more information about your education and training",
+            "tell enough information in a few words",
+            "cover your school record fully"
+          ],
+          "answer": "C",
+          "explanation": "第二段开头说求职信应“say just enough to introduce yourself”，即用简洁的话提供足够信息。",
+          "evidence": "aim to say just enough to introduce yourself"
+        },
+        {
+          "num": 3,
+          "stem": "The underlined word “referees” means a person ______.",
+          "options": [
+            "who is willing to comment on your character and ability",
+            "who writes reference books on bosses",
+            "to whom you are going to work",
+            "who is to examine the matter"
+          ],
+          "answer": "A",
+          "explanation": "referees 是为你写推荐信、证明你品格和能力的人；文中说应选择“know enough about your character and ability”的人。",
+          "evidence": "people who know enough about your character and ability"
+        },
+        {
+          "num": 4,
+          "stem": "The best title for this passage could be ______.",
+          "options": [
+            "How to Find a Job",
+            "The Best Way to Write a Letter",
+            "Writing Letters to One’s Boss",
+            "How to Write a Letter of Application"
+          ],
+          "answer": "D",
+          "explanation": "全文逐条讲如何写求职信：内容、个人信息、突出优势、语言表达，最佳标题是 How to Write a Letter of Application。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 222,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-09",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 9,
+      "heading": "",
+      "title": "Unlike Britain, the United States does not have a national health care service",
+      "fallbackTitle": "Unlike Britain, the United States does not have a national health care service",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Unlike Britain, the United States does not have a national health care service. The government does help pay for some medical care for people who are on low incomes and for old people, but most people buy insurance (保险) to help pay for medical care. The problems of those who cannot afford insurance are an important political subject.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In Britain, when people are ill, they usually go to a family doctor first. However, people in America sometimes go straight to an expert. Children are usually taken to a doctor who is an expert in the treatment (治疗) of children. In Britain, if a patient needs to see a specialist doctor, their family doctor will usually recommend a specialist.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Doctors do not go to people’s homes when they are ill. People always make appointments to see the doctor in the doctor’s office. In a serious situation, people call for an ambulance. In America, hospitals must treat all seriously ill patients, even if they do not have medical insurance. The government will then help pay for some of the cost of the medical care.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Unlike Britain, the United States does not have a national health care service. The government does help pay for some medical care for people who are on low incomes and for old people, but most people buy insurance (保险) to help pay for medical care. The problems of those who cannot afford insurance are an important political subject.",
+        "In Britain, when people are ill, they usually go to a family doctor first. However, people in America sometimes go straight to an expert. Children are usually taken to a doctor who is an expert in the treatment (治疗) of children. In Britain, if a patient needs to see a specialist doctor, their family doctor will usually recommend a specialist.",
+        "Doctors do not go to people’s homes when they are ill. People always make appointments to see the doctor in the doctor’s office. In a serious situation, people call for an ambulance. In America, hospitals must treat all seriously ill patients, even if they do not have medical insurance. The government will then help pay for some of the cost of the medical care."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Some medical care is paid by the U.S. government for ______.",
+          "options": [
+            "people living in the country",
+            "government officials",
+            "people with insurance",
+            "the poor and the old"
+          ],
+          "answer": "D",
+          "explanation": "第一段说政府帮助支付“people who are on low incomes and for old people”的部分医疗费用，即穷人和老人。",
+          "evidence": "people who are on low incomes and for old people"
+        },
+        {
+          "num": 2,
+          "stem": "Most people in the United States buy insurance ______.",
+          "options": [
+            "to help to live on their low incomes",
+            "to pay for their own medical care",
+            "to improve the national health care service",
+            "to solve one of the important political problems"
+          ],
+          "answer": "B",
+          "explanation": "第一段说大多数美国人购买保险“to help pay for medical care”，即支付自己的医疗费用。",
+          "evidence": "most people buy insurance to help pay for medical care"
+        },
+        {
+          "num": 3,
+          "stem": "When people in Britain are ill, they will ______.",
+          "options": [
+            "go straight to an expert first",
+            "go to see their family doctor first",
+            "buy a medical insurance first",
+            "ask someone to recommend an expert first"
+          ],
+          "answer": "B",
+          "explanation": "第二段说在英国人们生病时“usually go to a family doctor first”，先看家庭医生。",
+          "evidence": "they usually go to a family doctor first"
+        },
+        {
+          "num": 4,
+          "stem": "In America, seriously ill people will ______.",
+          "options": [
+            "be treated if they have an insurance",
+            "go to see the doctor by making an appointment",
+            "receive treatment even without insurance",
+            "normally go to see an expert for treatment"
+          ],
+          "answer": "C",
+          "explanation": "第三段说美国医院必须治疗所有重病患者，“even if they do not have medical insurance”，即没有保险也能得到治疗。",
+          "evidence": "hospitals must treat all seriously ill patients, even if they do not have medical insurance"
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following would be the best title for this passage?",
+          "options": [
+            "Health Care in the United States and Britain.",
+            "Types of Doctors in the United States.",
+            "Treatment of Sick Children in the United States.",
+            "Medical Insurance in the United States and Britain."
+          ],
+          "answer": "A",
+          "explanation": "全文对比美国和英国的医疗服务体系，最佳标题是 Health Care in the United States and Britain。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 180,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-10",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 10,
+      "heading": "",
+      "title": "Shopping for clothes is not the same experience for a man as it is for a woman",
+      "fallbackTitle": "Shopping for clothes is not the same experience for a man as it is for a woman",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Shopping for clothes is not the same experience for a man as it is for a woman. A man goes shopping because he needs something. His purpose is clear and decided in advance. He knows what he wants, and his objective is to find it and buy it; the price is the second place for consideration (考虑). All men simply walk into a shop and ask the assistant for what they want. If the shop has it, the salesman quickly produces it, and the man begins to try it at once. For a man, the small problems may begin when the shop does not have what he wants, or does not have exactly what he wants. In that case the salesman will try to sell the customer something else. Very often, he offers the nearest thing that he can produce.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Now how does a woman go about buying clothes? In almost every respect, she does so in the opposite way. Her shopping is not often based on need. She has never fully made up her mind about what she wants, and she is only “having a look round”. She will still be satisfied even if she has bought nothing.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Shopping for clothes is not the same experience for a man as it is for a woman. A man goes shopping because he needs something. His purpose is clear and decided in advance. He knows what he wants, and his objective is to find it and buy it; the price is the second place for consideration (考虑). All men simply walk into a shop and ask the assistant for what they want. If the shop has it, the salesman quickly produces it, and the man begins to try it at once. For a man, the small problems may begin when the shop does not have what he wants, or does not have exactly what he wants. In that case the salesman will try to sell the customer something else. Very often, he offers the nearest thing that he can produce.",
+        "Now how does a woman go about buying clothes? In almost every respect, she does so in the opposite way. Her shopping is not often based on need. She has never fully made up her mind about what she wants, and she is only “having a look round”. She will still be satisfied even if she has bought nothing."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the passage, a man’s shopping is based on ______.",
+          "options": [
+            "his hobbies",
+            "his need",
+            "his money",
+            "his friends"
+          ],
+          "answer": "B",
+          "explanation": "第一段说男人购物是因为“he needs something”，目的明确，因此基于需要（need）。",
+          "evidence": "A man goes shopping because he needs something."
+        },
+        {
+          "num": 2,
+          "stem": "How does a man go shopping when he wants to buy something?",
+          "options": [
+            "He makes a plan before he buys it.",
+            "He looks at it carefully and waits for a while.",
+            "He never asks for help from the shop assistant.",
+            "He discusses it with his wife and then buys it."
+          ],
+          "answer": "A",
+          "explanation": "第一段说男人的目的“clear and decided in advance”，他知道自己要什么，直接进店询问，即事先有计划。",
+          "evidence": "His purpose is clear and decided in advance."
+        },
+        {
+          "num": 3,
+          "stem": "What is the man’s attitude to the price of goods?",
+          "options": [
+            "He is often not sure of it.",
+            "He wants to buy a cheaper one.",
+            "He doesn’t care much about it.",
+            "He regards the price as important."
+          ],
+          "answer": "C",
+          "explanation": "第一段说男人把价格放在“the second place for consideration”，即不太在意价格；C 最符合。",
+          "evidence": "the price is the second place for consideration"
+        },
+        {
+          "num": 4,
+          "stem": "What does a woman do when she goes shopping?",
+          "options": [
+            "She often buys what she needs.",
+            "She knows clearly what she wants.",
+            "She will be sad with nothing bought.",
+            "She sometimes just looks around the shop."
+          ],
+          "answer": "D",
+          "explanation": "第二段说女人购物常常只是“having a look round”，即使什么都没买也会满意，因此 D 正确。",
+          "evidence": "she is only “having a look round”"
+        },
+        {
+          "num": 5,
+          "stem": "What is this passage mainly about?",
+          "options": [
+            "Men’s way of buying clothes.",
+            "Women’s attitude towards buying clothes.",
+            "Men’s problems in buying clothes.",
+            "The differences between men and women in buying clothes."
+          ],
+          "answer": "D",
+          "explanation": "全文对比男人和女人买衣服时的不同目的、方式和态度，最佳概括是男女购物的差异。",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 198,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-11",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 11,
+      "heading": "",
+      "title": "The multi-billion-dollar Western pop music industry is under fire",
+      "fallbackTitle": "The multi-billion-dollar Western pop music industry is under fire",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The multi-billion-dollar Western pop music industry is under fire. It is being blamed by the United Nations for the dramatic rise in drug abuse worldwide, “The most worrying development is a culture of drug-friendliness,” says the UN’s International Narcotics Control Board in a report released last year.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The 74-page study says the pop music, as a global industry, is by far the most influential trend-setter for young people of most cultures. “Some songs encourage people to take drugs. Certain pop stars make statements and set examples as if the use of drugs for non-medicinal purposes were a normal and acceptable part of a person’s lifestyle,” the study says.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Surprisingly, says the Board, the effect of drug-friendly pop music seems to survive despite the occasional shock of death by overdose. “Such incidents tend to be seen as an occasion to mourn the loss of a role model, and not an opportunity to face the deadly effect of drug use,” it notes. Since the 1970s, several internationally famous singers and movie stars — including Elvis Presley, Janice Joplin, John Belushi, Jimi Hendrix, Jonathan Melvin and Andy Gibbs — have died of either drug abuse or drug related illnesses. With the globalization of popular music — messages promoting drug abuse are now reaching beyond their countries of origin. “In most countries, the names of certain pop stars have become familiar to the members of every household,” the study says.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The UN study also blames the media for its description of certain drug incidents, which encourages rather than prevents drug abuse. “Over the past years, we have seen how drug abuse is increasingly regarded as being acceptable or even attractive,” says Hamid Ghodse, president of the Board. “Powerful pressure groups run political campaigns aimed at legalizing controlled drugs,” he says. Ghodse also points out that all these developments have created an environment which is tolerant of or even favorable to drug abuse and spoils international drug prevention efforts currently under way.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The study focuses on demand reduction and prevention within an environment that has become tolerant of drug abuse. The Board calls on governments to do their legal and moral duties, and to act against the pro-drug-abuse messages of the youth culture to which young people are increasingly being exposed.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "The multi-billion-dollar Western pop music industry is under fire. It is being blamed by the United Nations for the dramatic rise in drug abuse worldwide, “The most worrying development is a culture of drug-friendliness,” says the UN’s International Narcotics Control Board in a report released last year.",
+        "The 74-page study says the pop music, as a global industry, is by far the most influential trend-setter for young people of most cultures. “Some songs encourage people to take drugs. Certain pop stars make statements and set examples as if the use of drugs for non-medicinal purposes were a normal and acceptable part of a person’s lifestyle,” the study says.",
+        "Surprisingly, says the Board, the effect of drug-friendly pop music seems to survive despite the occasional shock of death by overdose. “Such incidents tend to be seen as an occasion to mourn the loss of a role model, and not an opportunity to face the deadly effect of drug use,” it notes. Since the 1970s, several internationally famous singers and movie stars — including Elvis Presley, Janice Joplin, John Belushi, Jimi Hendrix, Jonathan Melvin and Andy Gibbs — have died of either drug abuse or drug related illnesses. With the globalization of popular music — messages promoting drug abuse are now reaching beyond their countries of origin. “In most countries, the names of certain pop stars have become familiar to the members of every household,” the study says.",
+        "The UN study also blames the media for its description of certain drug incidents, which encourages rather than prevents drug abuse. “Over the past years, we have seen how drug abuse is increasingly regarded as being acceptable or even attractive,” says Hamid Ghodse, president of the Board. “Powerful pressure groups run political campaigns aimed at legalizing controlled drugs,” he says. Ghodse also points out that all these developments have created an environment which is tolerant of or even favorable to drug abuse and spoils international drug prevention efforts currently under way.",
+        "The study focuses on demand reduction and prevention within an environment that has become tolerant of drug abuse. The Board calls on governments to do their legal and moral duties, and to act against the pro-drug-abuse messages of the youth culture to which young people are increasingly being exposed."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which of the following statements does the author tend to agree with?",
+          "options": [
+            "The use of drugs for non-medicinal purposes is an acceptable part of a person’s lifestyle.",
+            "The spreading of pop music may cause drug abuse beyond country boundaries.",
+            "No efforts have been made to prevent the spreading of drug abuse.",
+            "Governments have no ability to act against the pro-drug messages of the youth culture."
+          ],
+          "answer": "B",
+          "explanation": "文章说随着流行音乐全球化，宣扬吸毒的信息“reaching beyond their countries of origin”，作者认同流行音乐可能跨越国界助长吸毒。A、C、D 都与文章立场相反。",
+          "evidence": "messages promoting drug abuse are now reaching beyond their countries of origin"
+        },
+        {
+          "num": 2,
+          "stem": "The expression “under fire” in the first paragraph means ______.",
+          "options": [
+            "in an urgent situation",
+            "facing some problems",
+            "being criticized",
+            "in trouble"
+          ],
+          "answer": "C",
+          "explanation": "under fire 本义是“遭到炮火攻击”，此处指西方流行音乐产业受到联合国批评，因此意为 being criticized。",
+          "evidence": "It is being blamed by the United Nations"
+        },
+        {
+          "num": 3,
+          "stem": "From the third paragraph, we learn that the youth ______.",
+          "options": [
+            "tend to mourn the pop stars who died of overdose as role models",
+            "are shocked to know even pop stars may abuse drugs",
+            "try to face the deadly effect of drug use",
+            "may stop abusing drugs"
+          ],
+          "answer": "A",
+          "explanation": "第三段说吸毒过量致死事件“tend to be seen as an occasion to mourn the loss of a role model”，即年轻人把明星当作榜样来哀悼，而不是正视毒品危害。",
+          "evidence": "seen as an occasion to mourn the loss of a role model"
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following is NOT mentioned as tolerant of drug abuse?",
+          "options": [
+            "The spreading of pop music.",
+            "The media.",
+            "Political campaigns run by powerful pressure groups.",
+            "The low price of some drugs."
+          ],
+          "answer": "D",
+          "explanation": "文章提到流行音乐、媒体和强势压力集团的政治运动都在营造宽容毒品的环境，但没有提到“毒品价格低”。",
+          "evidence": "Powerful pressure groups run political campaigns"
+        },
+        {
+          "num": 5,
+          "stem": "According to the passage, pop music ______.",
+          "options": [
+            "has a great influence on young people of most cultures",
+            "attracts a small number of young people",
+            "is not a profitable industry",
+            "is alone responsible for drug abuse"
+          ],
+          "answer": "A",
+          "explanation": "第二段说流行音乐是“by far the most influential trend-setter for young people of most cultures”，对大多数文化中的年轻人影响巨大。",
+          "evidence": "the most influential trend-setter for young people of most cultures"
+        }
+      ],
+      "wordCount": 373,
+      "difficulty": "挑战",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-12",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 12,
+      "heading": "",
+      "title": "The food we eat seems to have profound effects on our health",
+      "fallbackTitle": "The food we eat seems to have profound effects on our health",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The food we eat seems to have profound effects on our health. Although science has made enormous steps in making food more fit to eat, it has, at the same time, made many foods unfit to eat. Some research has shown that perhaps eighty percent of all human illnesses are related to diet and forty percent of cancer is related to the diet as well, especially cancer of the colon. Different cultures are more likely to cause certain different illnesses because of the food that is characteristic in these cultures. That food is related to illness is a new discovery. In 1945, government researchers realized that nitrates, commonly used to preserve color in meats, and other food additives, caused cancer. Yet, these carcinogenic additives remain in our food, and it becomes more difficult all the time to know which things on the packaging labels of processed food are helpful or harmful.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The additives which we eat are not all so direct. Farmers often give penicillin to beef and living animals, and because of this, penicillin has been found in the milk of treated cows. Some times similar drugs are given to animals not for medical purposes, but for financial reasons. The farmers are simply trying to fatten the animals in order to obtain a higher price on the market. Although the Food and Drug Administration (FDA) has tried repeatedly to control these procedures, the practices continue.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "The food we eat seems to have profound effects on our health. Although science has made enormous steps in making food more fit to eat, it has, at the same time, made many foods unfit to eat. Some research has shown that perhaps eighty percent of all human illnesses are related to diet and forty percent of cancer is related to the diet as well, especially cancer of the colon. Different cultures are more likely to cause certain different illnesses because of the food that is characteristic in these cultures. That food is related to illness is a new discovery. In 1945, government researchers realized that nitrates, commonly used to preserve color in meats, and other food additives, caused cancer. Yet, these carcinogenic additives remain in our food, and it becomes more difficult all the time to know which things on the packaging labels of processed food are helpful or harmful.",
+        "The additives which we eat are not all so direct. Farmers often give penicillin to beef and living animals, and because of this, penicillin has been found in the milk of treated cows. Some times similar drugs are given to animals not for medical purposes, but for financial reasons. The farmers are simply trying to fatten the animals in order to obtain a higher price on the market. Although the Food and Drug Administration (FDA) has tried repeatedly to control these procedures, the practices continue."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What is the best possible title of the passage?",
+          "options": [
+            "Drug and Food.",
+            "Cancer and Health.",
+            "Food and Health.",
+            "Health and Drug."
+          ],
+          "answer": "C",
+          "explanation": "文章开头即说“The food we eat seems to have profound effects on our health”，全文讨论食物与健康的关系，最佳标题是 Food and Health。",
+          "evidence": "The food we eat seems to have profound effects on our health."
+        },
+        {
+          "num": 2,
+          "stem": "Which of the following statements is NOT true?",
+          "options": [
+            "Drugs are always given to animals for medical reasons.",
+            "Some of the additives in our food are added to the food itself and some are given to the living animals.",
+            "Researchers discovered the potential dangers of food additives in 1945.",
+            "Food may cause forty percent of cancer in the world."
+          ],
+          "answer": "A",
+          "explanation": "第二段说农民给动物使用类似药物有时“not for medical purposes, but for financial reasons”，因此“药物总是为了医疗目的给动物”是错误的。",
+          "evidence": "not for medical purposes, but for financial reasons"
+        },
+        {
+          "num": 3,
+          "stem": "How has science done something harmful to mankind?",
+          "options": [
+            "Because of science, diseases caused by polluted food haven’t been virtually eliminated.",
+            "It has caused a lack of information concerning the value of food.",
+            "Because of the application of science, some potentially harmful substances have been added to food.",
+            "The scientists have preserved the color of meats, but not of vegetables."
+          ],
+          "answer": "C",
+          "explanation": "第一段说科学一方面让食物更适宜食用，另一方面也使许多食物不宜食用；添加剂等潜在有害物质被加入食物，这是科学带来的危害。",
+          "evidence": "it has, at the same time, made many foods unfit to eat"
+        },
+        {
+          "num": 4,
+          "stem": "What are nitrates used for?",
+          "options": [
+            "They preserve flavor in packaged foods.",
+            "They preserve the color of meats.",
+            "They are the objects of research.",
+            "They cause the animals to become fatter."
+          ],
+          "answer": "B",
+          "explanation": "第一段明确说 nitrates“commonly used to preserve color in meats”，即用于保持肉类的颜色。",
+          "evidence": "commonly used to preserve color in meats"
+        },
+        {
+          "num": 5,
+          "stem": "The word “carcinogenic” means ______.",
+          "options": [
+            "trouble-making",
+            "color-retaining",
+            "money-making",
+            "cancer-causing"
+          ],
+          "answer": "D",
+          "explanation": "上文说这些添加剂“caused cancer”，因此 carcinogenic 意为“致癌的”，即 cancer-causing。",
+          "evidence": "these carcinogenic additives ... caused cancer"
+        }
+      ],
+      "wordCount": 235,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        ""
+      ]
     }
   ],
   "stats": {
-    "articles": 24,
-    "questions": 118,
-    "words": 6838,
-    "withAnswers": 118,
+    "articles": 38,
+    "questions": 187,
+    "words": 10278,
+    "withAnswers": 187,
     "withTranslations": 24
   }
 }

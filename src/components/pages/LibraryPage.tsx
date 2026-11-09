@@ -15,6 +15,8 @@ import {
   SlidersHorizontal,
   TrendingUp,
   Layers,
+  Landmark,
+  Users,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
@@ -27,6 +29,8 @@ const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: num
   jingli: Feather,
   yingyong: FileText,
   jingji: TrendingUp,
+  lishi: Landmark,
+  shehui: Users,
 };
 
 type SortKey = 'default' | 'words' | 'questions' | 'progress';
@@ -201,7 +205,7 @@ function ArticleCard({ article: a }: { article: Article }) {
 
       <h3 className="lib-title">{a.title}</h3>
       <div className="lib-sub">{a.subtitle || `Passage ${a.number}`}</div>
-      <p className="lib-summary">{a.summary || a.fallbackTitle}</p>
+      {a.summary && <p className="lib-summary">{a.summary}</p>}
 
       <div className="lib-tags">
         {(a.tags || []).slice(0, 3).map((t) => (

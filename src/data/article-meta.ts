@@ -28,6 +28,18 @@ export const CATEGORY_META: Record<
     icon: 'chart',
     short: '商业',
   },
+  lishi: {
+    description: '从节日、奥运到礼物文化，在历史与人文语境中练习细节理解。',
+    color: '#7A5C3E',
+    icon: 'landmark',
+    short: '历史',
+  },
+  shehui: {
+    description: '初入职场、出行、饮食与健康，读懂社会生活类说明与议论文。',
+    color: '#4F6D7A',
+    icon: 'users',
+    short: '社会',
+  },
 };
 
 export const ARTICLE_META: Record<
@@ -177,6 +189,90 @@ export const ARTICLE_META: Record<
     subtitle: '把专辑免费送人的乐队',
     tags: ['商业', '音乐', '数字化'],
     summary: '一支独立乐队主动免费发布专辑，却靠演出和周边赚得更多。数字时代的音乐生意正在改写。',
+  },
+  'lishi-01': {
+    title: 'The Spring Festival',
+    subtitle: '春节：团圆与祝福',
+    tags: ['节日', '文化', '说明文'],
+    summary: '从置办年货、包饺子到除夕团圆饭，一篇短文讲清中国最重要的传统节日。',
+  },
+  'lishi-02': {
+    title: 'Stamps of the White Olympics',
+    subtitle: '白色奥运会的邮票',
+    tags: ['奥运', '邮票', '历史'],
+    summary: '从 1932 年美国首发纪念邮票，到各国竞相发行，小小邮票记录了冬奥会的历史。',
+  },
+  'shehui-01': {
+    title: 'Learning to Behave in the Working World',
+    subtitle: '职场第一课：向榜样学习',
+    tags: ['职场', '成长', '建议'],
+    summary: '刚毕业的年轻人如何适应职场？作者给出的答案是：找到一个值得敬佩的同事，观察他如何做事。',
+  },
+  'shehui-02': {
+    title: 'A Guide to Your Luggage',
+    subtitle: '行李处理指南',
+    tags: ['出行', '行李', '说明文'],
+    summary: '行李丢了怎么办？超重谁来付费？标签怎么写？一篇实用的航空行李说明。',
+  },
+  'shehui-03': {
+    title: 'City Life or Country Life?',
+    subtitle: '城市与乡村之间',
+    tags: ['城乡', '对比', '议论'],
+    summary: '城市有便利也有孤立，乡村有宁静也有不便。作者用幽默的笔触拆解“归园田居”的幻想。',
+  },
+  'shehui-04': {
+    title: 'Learning Never Ends',
+    subtitle: '继续教育：学习没有终点',
+    tags: ['教育', '成人', '终身学习'],
+    summary: '美国的继续教育为成年人提供了重新学习的机会：为工作、为兴趣，也为更好的自己。',
+  },
+  'shehui-05': {
+    title: 'Disability and the Barriers Around Us',
+    subtitle: '残疾人与无形的障碍',
+    tags: ['残障', '社会', '态度'],
+    summary: '真正难以打破的，往往不是台阶和车门，而是偏见与无知。',
+  },
+  'shehui-06': {
+    title: 'How Successful Learners Learn',
+    subtitle: '成功语言学习者的三个习惯',
+    tags: ['语言', '学习', '方法'],
+    summary: '独立、主动、有目的——成功语言学习者身上反复出现的三个共同点。',
+  },
+  'shehui-07': {
+    title: 'Why Repetition Bores Us',
+    subtitle: '重复与单调',
+    tags: ['工作', '心理', '故事'],
+    summary: '一顶帽子五美元，订两百顶却要十美元一顶。帽子店老板的解释，道出了美国人对重复劳动的态度。',
+  },
+  'shehui-08': {
+    title: 'Writing a Job Application Letter',
+    subtitle: '如何写求职信',
+    tags: ['求职', '写作', '建议'],
+    summary: '求职信不是简历的重复：说够、说准、说清你为什么最适合这份工作。',
+  },
+  'shehui-09': {
+    title: 'Health Care in the U.S. and Britain',
+    subtitle: '美英医疗体系对比',
+    tags: ['医疗', '对比', '社会'],
+    summary: '从家庭医生、专科预约到急救与保险，对比美英两国医疗服务的不同逻辑。',
+  },
+  'shehui-10': {
+    title: 'Men and Women Go Shopping',
+    subtitle: '男女购物的不同',
+    tags: ['消费', '性别', '对比'],
+    summary: '男人带着明确目标进店，女人常常只是“随便看看”。一篇轻松的消费行为对比。',
+  },
+  'shehui-11': {
+    title: 'Pop Music and the Drug Message',
+    subtitle: '流行音乐与毒品信息',
+    tags: ['媒体', '毒品', '社会'],
+    summary: '联合国报告批评西方流行音乐产业传播“对毒品友好”的文化，并点名媒体的推波助澜。',
+  },
+  'shehui-12': {
+    title: 'What Is in Our Food?',
+    subtitle: '食物里的科学与风险',
+    tags: ['食品', '健康', '科学'],
+    summary: '科学让食物更安全，也让一些潜在有害物质进入餐桌。硝酸盐、抗生素与添加剂背后的健康风险。',
   },
 };
 

@@ -12,6 +12,9 @@ const CATEGORY_MAP = {
   '经历记叙类专项训练': { catId: 'jingli', catName: '经历记叙类', order: 2 },
   '应用文类专项训练': { catId: 'yingyong', catName: '应用文类', order: 3 },
   '经济商业类专项训练': { catId: 'jingji', catName: '经济商业类', order: 4 },
+  '历史人文类专项训练': { catId: 'lishi', catName: '历史人文类', order: 5 },
+  '社会生活类专项训': { catId: 'shehui', catName: '社会生活类', order: 6 },
+  '社会生活类专项训练': { catId: 'shehui', catName: '社会生活类', order: 6 },
 };
 
 function unescapeMd(s) {
@@ -317,7 +320,7 @@ function main() {
       // Skip clearly truncated passages: too little body, or a body that ends mid-instruction.
       const lastText = (blocks[blocks.length - 1]?.text || '').trim();
       if (words < 60) { warnings.push(`${file} Passage ${p.number}: 正文过短（${words} 词），疑似截断，已跳过`); continue; }
-      if (!questions.length && /[:：]$/.test(lastText)) {
+      if (!questions.length && (/[:：]$/.test(lastText) || !/[.!?。！？"”']$/.test(lastText))) {
         warnings.push(`${file} Passage ${p.number}: 正文在“${lastText}”处截断且无题目，已跳过`);
         continue;
       }

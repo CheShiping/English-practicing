@@ -1,0 +1,16 @@
+{
+  "shehui-11": {
+    "1": { "answer": "B", "explanation": "文章说随着流行音乐全球化，宣扬吸毒的信息“reaching beyond their countries of origin”，作者认同流行音乐可能跨越国界助长吸毒。A、C、D 都与文章立场相反。", "evidence": "messages promoting drug abuse are now reaching beyond their countries of origin" },
+    "2": { "answer": "C", "explanation": "under fire 本义是“遭到炮火攻击”，此处指西方流行音乐产业受到联合国批评，因此意为 being criticized。", "evidence": "It is being blamed by the United Nations" },
+    "3": { "answer": "A", "explanation": "第三段说吸毒过量致死事件“tend to be seen as an occasion to mourn the loss of a role model”，即年轻人把明星当作榜样来哀悼，而不是正视毒品危害。", "evidence": "seen as an occasion to mourn the loss of a role model" },
+    "4": { "answer": "D", "explanation": "文章提到流行音乐、媒体和强势压力集团的政治运动都在营造宽容毒品的环境，但没有提到“毒品价格低”。", "evidence": "Powerful pressure groups run political campaigns" },
+    "5": { "answer": "A", "explanation": "第二段说流行音乐是“by far the most influential trend-setter for young people of most cultures”，对大多数文化中的年轻人影响巨大。", "evidence": "the most influential trend-setter for young people of most cultures" }
+  },
+  "shehui-12": {
+    "1": { "answer": "C", "explanation": "文章开头即说“The food we eat seems to have profound effects on our health”，全文讨论食物与健康的关系，最佳标题是 Food and Health。", "evidence": "The food we eat seems to have profound effects on our health." },
+    "2": { "answer": "A", "explanation": "第二段说农民给动物使用类似药物有时“not for medical purposes, but for financial reasons”，因此“药物总是为了医疗目的给动物”是错误的。", "evidence": "not for medical purposes, but for financial reasons" },
+    "3": { "answer": "C", "explanation": "第一段说科学一方面让食物更适宜食用，另一方面也使许多食物不宜食用；添加剂等潜在有害物质被加入食物，这是科学带来的危害。", "evidence": "it has, at the same time, made many foods unfit to eat" },
+    "4": { "answer": "B", "explanation": "第一段明确说 nitrates“commonly used to preserve color in meats”，即用于保持肉类的颜色。", "evidence": "commonly used to preserve color in meats" },
+    "5": { "answer": "D", "explanation": "上文说这些添加剂“caused cancer”，因此 carcinogenic 意为“致癌的”，即 cancer-causing。", "evidence": "these carcinogenic additives ... caused cancer" }
+  }
+}
