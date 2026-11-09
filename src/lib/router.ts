@@ -41,7 +41,10 @@ export function useRoute(): Route {
   const [route, setRoute] = useState<Route>({ name: 'home' });
 
   useEffect(() => {
-    const sync = () => setRoute(parseRoute(window.location.hash));
+    const sync = () => {
+      setRoute(parseRoute(window.location.hash));
+      window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+    };
     sync();
     window.addEventListener('hashchange', sync);
     return () => window.removeEventListener('hashchange', sync);

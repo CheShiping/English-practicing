@@ -1,0 +1,83 @@
+{
+  "jingli-01": {
+    "1": {
+      "answer": "B",
+      "explanation": "第二段说 Peter 会“studied the menu for a moment”，然后抬头点可乐和汉堡；他后来承认自己只是“act as if he were examining the menu”，即假装在看菜单。",
+      "evidence": "he had learned to act as if he were examining the menu"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "第一段说大家直到某天在当地餐馆吃饭才发现他不识字；第二段补充说这不是第一次，而是第二或第三次外出吃饭时，他的绝望才震惊了作者。",
+      "evidence": "it was not the first time we went out to eat, but something like the second or third"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "Peter 每次点餐都先要“just a coke and a hamburger”，有时再要一个小面包自己动手做汉堡；他最常点的就是可乐和汉堡。",
+      "evidence": "he could have \"just a coke and a hamburger\""
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "self-possession 与前面的 outward confidence 并列，表示“沉着、自信”，因此最接近 self-confidence。",
+      "evidence": "absolute outward confidence and self-possession"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "第三段说 Howard Johnson’s 菜单上每道标准菜都附有照片，Peter 不需要辨认单词，照片帮助他掩饰自己不识字；A 的 anything dangerous 曲解了原文。",
+      "evidence": "The photographs ... could help him not to struggle with the shape of words at all."
+    }
+  },
+  "jingli-02": {
+    "1": {
+      "answer": "A",
+      "explanation": "作者说自己离开家上大学，要适应独立生活、认识新朋友，还提到“Are you a new student?”，可见作者是一名大学新生。",
+      "evidence": "College is a new and different experience for me."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第二段说父母不在身边，一切都要自己做决定，“that makes me responsible for my own life”，即对自己负责。",
+      "evidence": "that makes me responsible for my own life"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "第三段开头明确说“Friendly people is another thing I like about college”，作者喜欢的是友善的人。",
+      "evidence": "Friendly people is another thing I like about college."
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "文中说“My room was on the first floor of New Gerard”，New Gerard 是宿舍楼的名字。",
+      "evidence": "My room was on the first floor of New Gerard"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "最后一段作者明确说“I can still get homesick”，因此“作者不想家”是错误的；A、B、C 都与原文相符。",
+      "evidence": "Although I like college, I can still get homesick."
+    }
+  },
+  "jingli-03": {
+    "1": {
+      "answer": "A",
+      "explanation": "作者学英语，Jim 学法语，Steve 学中文，三人都在学习语言，可视为语言专业学生；B 与“thought and acted quite differently”相反，C 与作者常和 Steve 交流不符，D 无依据。",
+      "evidence": "Jim was studying French and Steve was studying Chinese"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "作者说 Steve 抓住每个机会说中文，自己常被他的“diligence”（勤奋）感动，因此认为 Steve 很用功；他的中文发音并不纯正，文中还调侃他的口音。",
+      "evidence": "I was often touched with his diligence."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "第一段说 Jim“too busy dating pretty French girls to do any shopping”，即约会占用了大量时间；他并没有为了约会才学法语，也不是爱做家务。",
+      "evidence": "He was too busy dating pretty French girls to do any shopping."
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "Steve 认为 Jim 不买东西是“his own fault”，不应由作者帮忙，作者由此感叹 Steve 仍持有美国人的价值观，说明中美价值观存在差异。",
+      "evidence": "he still held his American sense of value"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "最后一段开头说“The three of us still keep in touch”，三人仍保持联系；Jim 是否是好丈夫、Steve 是否喜欢教书都无法确定，作者是在大学工作而非专门为留学生工作。",
+      "evidence": "The three of us still keep in touch."
+    }
+  }
+}

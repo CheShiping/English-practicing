@@ -23,6 +23,7 @@ export interface Article {
   fallbackTitle: string;
   blocks: Block[];
   paragraphs: string[];
+  translations?: string[];
   questions: Question[];
   wordCount: number;
   difficulty: '基础' | '进阶' | '挑战' | string;

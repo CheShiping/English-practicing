@@ -18,9 +18,8 @@ import {
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
-import { CATEGORIES } from '@/lib/data';
+import { CATEGORIES, searchArticles } from '@/lib/data';
 import { hrefFor } from '@/lib/router';
-import { percent } from '@/lib/utils';
 import type { Article } from '@/lib/types';
 
 const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: number }>> = {
@@ -47,16 +46,8 @@ export default function LibraryPage({ catId }: { catId?: string }) {
       list = list.filter((a) => a.catId === catId);
     }
     if (onlyBookmarks) list = list.filter((a) => bookmarks.includes(a.id));
-    const q = query.trim().toLowerCase();
-    if (q) {
-      list = list.filter((a) => {
-        const hay = [a.title, a.subtitle, a.summary, a.catName, ...(a.tags || [])]
-          .filter(Boolean)
-          .join(' ')
-          .toLowerCase();
-        return hay.includes(q);
-      });
-    }
+    const q = query.trim();
+    if (q) list = searchArticles(list, q);
     const sorted = [...list];
     if (sort === 'words') sorted.sort((a, b) => b.wordCount - a.wordCount);
     if (sort === 'questions') sorted.sort((a, b) => b.questions.length - a.questions.length);

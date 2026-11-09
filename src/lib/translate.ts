@@ -129,6 +129,19 @@ const STRUCTURE_RULES: Array<{ re: RegExp; label: string }> = [
   { re: /[,;]\s*(and|but|or|so|yet)\b/i, label: '并列句连接' },
 ];
 
+const STOPWORDS = new Set(
+  `the and for with from this that these those there their them they then than when while what where which who whom whose why how
+  have has had been being are was were will would can could shall should may might must not but nor yet so too very just also only
+  more most some any all each every other another such into over under about after before because although though since until
+  your yours our ours its it's i'm you're we're they're he's she's is are was were do does did done doing make makes made
+  one two three four five first second third next last new old good bad big small long short high low early late right left
+  same own few many much less least well back even still ever never always often sometimes usually really quite rather almost
+  enough something anything nothing everything someone anyone everyone nobody people person thing things time times day days
+  year years way ways part parts place places case cases fact facts`
+    .split(/\s+/)
+    .filter(Boolean),
+);
+
 export async function analyzeSentence(text: string): Promise<SentenceAnalysis> {
   const clean = text.replace(/\s+/g, ' ').trim();
   const [trans, dictWords] = await Promise.all([
@@ -139,16 +152,34 @@ export async function analyzeSentence(text: string): Promise<SentenceAnalysis> {
       const picked: string[] = [];
       for (const t of tokens) {
         const w = normalizeWord(t);
-        if (w.length < 4 || seen.has(w)) continue;
+        if (w.length < 4 || seen.has(w) || STOPWORDS.has(w)) continue;
         seen.add(w);
         picked.push(w);
-        if (picked.length >= 14) break;
+        if (picked.length >= 30) break;
       }
       const results = await Promise.all(picked.map((w) => lookupWord(w)));
+      const seenBase = new Set<string>();
       return results
-        .filter((r) => r.meaning && !/(人名|地名)/.test(r.meaning))
+        .filter((r) => {
+          if (!r.meaning || /(人名|地名)/.test(r.meaning)) return false;
+          if (STOPWORDS.has(r.base) || seenBase.has(r.base)) return false;
+          seenBase.add(r.base);
+          return true;
+        })
+        .map((r) => ({
+          r,
+          score:
+            (r.base.length >= 7 ? 3 : 0) +
+            (r.rank && r.rank > 2500 ? 2 : 0) +
+            (r.rank ? 0 : 2) +
+            (/(?:n\.|v\.|adj\.|adv\.)/.test(r.meaning || '') ? 1 : 0),
+        }))
+        .sort((a, b) => b.score - a.score)
         .slice(0, 8)
-        .map((r) => ({ word: r.base, meaning: (r.meaning || '').split('\n')[0].slice(0, 60) }));
+        .map(({ r }) => ({
+          word: r.base,
+          meaning: (r.meaning || '').split('\n')[0].slice(0, 60),
+        }));
     })(),
   ]);
 

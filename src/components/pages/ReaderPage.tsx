@@ -5,6 +5,8 @@ import {
   ArrowLeft,
   ArrowRight,
   BookMarked,
+  Bookmark,
+  BookmarkCheck,
   BookOpen,
   CheckCircle2,
   Languages,
@@ -59,6 +61,8 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
     recordActivity,
     pushRecent,
     setLastRead,
+    bookmarks,
+    toggleBookmark,
     toast,
   } = useApp();
 
@@ -75,6 +79,7 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
   } | null>(null);
   const [noteAnnotation, setNoteAnnotation] = useState<Annotation | null>(null);
   const [analysisText, setAnalysisText] = useState<string | null>(null);
+  const [analysisFallback, setAnalysisFallback] = useState('');
   const [showSettings, setShowSettings] = useState(false);
   const [showTimer, setShowTimer] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
@@ -100,6 +105,7 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
     setNoteDraft(null);
     setNoteAnnotation(null);
     setAnalysisText(null);
+    setAnalysisFallback('');
     setShowTranslation(false);
     setQuizStartedAt(null);
     setMobileSheet(null);
@@ -517,6 +523,16 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
               <button onClick={() => { markComplete(article.id); setMobileMore(false); toast('已标记完成', 'success'); }}>
                 <CheckCircle2 size={18} /> 标记完成
               </button>
+              <button
+                onClick={() => {
+                  const on = !bookmarks.includes(article.id);
+                  toggleBookmark(article.id);
+                  toast(on ? '已收藏这篇' : '已取消收藏', 'success');
+                  setMobileMore(false);
+                }}
+              >
+                {bookmarks.includes(article.id) ? <BookmarkCheck size={18} /> : <Bookmark size={18} />} 收藏
+              </button>
               <button onClick={() => { setMobileMore(false); neighbors.prev && navigate(`/read/${neighbors.prev.id}`); }} disabled={!neighbors.prev}>
                 <ArrowLeft size={18} /> 上一篇
               </button>
@@ -555,6 +571,7 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
           onHighlight={highlight}
           onNote={openNote}
           onTranslate={() => {
+            setAnalysisFallback(article.blocks[sel.blockIndex]?.translation || '');
             setAnalysisText(sel.text.trim());
             clearSelection();
           }}
@@ -566,12 +583,11 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
       {analysisText && (
         <SelectionAnalysisModal
           text={analysisText}
-          fallbackTranslation={
-            sel
-              ? article.blocks[sel.blockIndex]?.translation
-              : article.blocks.find((b) => b.text.includes(analysisText))?.translation
-          }
-          onClose={() => setAnalysisText(null)}
+          fallbackTranslation={analysisFallback}
+          onClose={() => {
+            setAnalysisText(null);
+            setAnalysisFallback('');
+          }}
         />
       )}
 

@@ -40,7 +40,7 @@ export default function ReaderBar({
   onTranslate,
   onSettings,
 }: Props) {
-  const { bookmarks, toggleBookmark, timer, timerElapsed, toast } = useApp();
+  const { bookmarks, toggleBookmark, timer, timerElapsed, timerRemaining, toast } = useApp();
   const [menu, setMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const bookmarked = bookmarks.includes(article.id);
@@ -77,7 +77,9 @@ export default function ReaderBar({
           >
             <TimerIcon size={15} />
             <span className="rb-label">
-              {timer.status === 'idle' ? '计时' : formatDuration(timerElapsed)}
+              {timer.status === 'idle'
+                ? '计时'
+                : formatDuration(timer.mode === 'down' ? timerRemaining : timerElapsed)}
             </span>
           </button>
 

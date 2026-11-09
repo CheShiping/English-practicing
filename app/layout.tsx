@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import './reader.css';
+import './pages.css';
 import { AppProvider } from '@/state/AppProvider';
 import AppShell from '@/components/AppShell';
 

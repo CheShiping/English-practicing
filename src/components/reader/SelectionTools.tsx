@@ -133,7 +133,10 @@ export function SelectionAnalysisModal({
     return () => document.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  const translation = data?.translation || fallbackTranslation || '';
+  const preferFallback = !!fallbackTranslation && text.length > 140;
+  const translation = preferFallback
+    ? fallbackTranslation
+    : data?.translation || fallbackTranslation || '';
 
   return (
     <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
@@ -175,7 +178,7 @@ export function SelectionAnalysisModal({
                 {fallbackTranslation ? '' : '（可稍后重试，或查阅本段译文）'}
               </p>
             )}
-            {fallbackTranslation && !data?.translation && (
+            {(preferFallback || (fallbackTranslation && !data?.translation)) && (
               <p className="analysis-fallback-note">以上为本段参考译文，仅作理解辅助。</p>
             )}
           </div>

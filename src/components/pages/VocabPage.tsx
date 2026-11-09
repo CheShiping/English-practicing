@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
@@ -28,7 +28,7 @@ import type { VocabWord } from '@/lib/types';
 type Filter = 'all' | 'due' | 'new' | 'mastered';
 
 export default function VocabPage() {
-  const { vocab, removeWord, reviewWord, toast } = useApp();
+  const { vocab, removeWord, reviewWord, updateWord, toast } = useApp();
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<Filter>('all');
   const [sort, setSort] = useState<'new' | 'alpha' | 'mastery'>('new');
@@ -182,8 +182,12 @@ export default function VocabPage() {
                 toast('已移出生词本');
               }}
               onMaster={() => {
-                reviewWord(w.word, 'easy');
-                toast('已标记为熟悉', 'success');
+                updateWord(w.word, {
+                  mastery: 5,
+                  lastReviewedAt: Date.now(),
+                  nextReviewAt: Date.now() + 30 * 86400000,
+                });
+                toast('已标记为掌握', 'success');
               }}
             />
           ))}
@@ -243,7 +247,7 @@ function VocabCard({ word, onRemove, onMaster }: { word: VocabWord; onRemove: ()
           )}
         </span>
         <span className="vocab-date">{relativeTime(word.createdAt)}</span>
-        <button className="vocab-master-btn" onClick={onMaster} title="标记为熟悉">
+        <button className="vocab-master-btn" onClick={onMaster} title="标记为已掌握">
           <Check size={12} />
         </button>
       </div>
@@ -273,6 +277,23 @@ function ReviewModal({
     setRevealed(false);
     setIndex((i) => i + 1);
   };
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (done) return;
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (!revealed) setRevealed(true);
+        return;
+      }
+      if (!revealed) return;
+      if (e.key === '1') rate('again');
+      if (e.key === '2') rate('good');
+      if (e.key === '3') rate('easy');
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  });
 
   return (
     <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>

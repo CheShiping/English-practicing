@@ -1,0 +1,110 @@
+{
+  "kepu-07": {
+    "1": {
+      "answer": "B",
+      "explanation": "第一段说这个游戏帮助他与三个姐姐“settle disagreements”，也就是在分歧时达成一致；不是学剪纸、也不是在电视上学会游戏。",
+      "evidence": "The game helped him settle disagreements with his three older sisters."
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "Baldwin 说成功的秘诀是观察对手动作或行为中的“patterns”（模式），即摸清对手的出拳规律；文中明确说这不只是运气。",
+      "evidence": "Look for patterns in either your opponent’s moves or behavior"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "第三段说游戏结果并非随机，因为人的决策行为存在模式；A 与“idea is the same”相反，B 与“about the same”不符，C 与“different hand symbols”相反。",
+      "evidence": "There are patterns in how people make decisions."
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "浙江大学的研究发现两个关键模式：赢家倾向于重复自己获胜的手势，输家倾向于按石头→布→剪刀的顺序变化。D 与原文一致。",
+      "evidence": "Winners tended to repeat their winning hand symbols."
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "Ken Watson 说策略的一部分就是“being confident”，即自信能提高获胜机会；A 的 relaxed、C 的完全靠运气、D 的对手体型都不符合原意。",
+      "evidence": "Part of my strategy is being confident."
+    }
+  },
+  "kepu-08": {
+    "1": {
+      "answer": "D",
+      "explanation": "文章开头说“Faces, like fingerprints, are unique”，用指纹作类比，是为了说明每个人的面部特征各不相同。",
+      "evidence": "Faces, like fingerprints, are unique."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第一段举例说，连鸽子这样的动物也能学会辨认人脸，说明某些动物具有识别人脸的能力。",
+      "evidence": "even an animal, such as a pigeon — can learn to recognize faces"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "第二段提到美国心理学家 Gordon 找到了近 18,000 个描述行为差异的英语词汇，心理学家最可能擅长描述人格。",
+      "evidence": "Gordon, an American psychologist, found nearly 18, 000 English words"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "全文说明我们既能通过面部特征（physical characteristics）区分人，也能通过行为方式（behavioral characteristics）给人分类，因此 A 最全面。",
+      "evidence": "We also tell people apart by how they behave."
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "文章从“人脸独特”谈到“人格复杂但可以用语言描述”，核心是解释为什么我们能够描述和区分人；不是讲如何识别人或人格的重要性。",
+      "evidence": ""
+    }
+  },
+  "kepu-09": {
+    "1": {
+      "answer": "C",
+      "explanation": "第一段用蜜蜂振翅、苍蝇复眼、蜘蛛丝等自然界生物的例子，说明自然法则的精确性，因此体现在“the creatures of nature”。",
+      "evidence": "every bee strokes its wings exactly 440 times a second"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第二段按时间顺序举了埃及人、希腊人、欧洲文明和后来的数学家等例子，说明文明进步与数学范围的关系，属于举例论证。",
+      "evidence": "The early Egyptians knew enough of geometry to build the pyramids"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "yardstick 原意是“码尺”，此处引申为衡量事物的“标准、尺度”；第三段讲今天的测量标准要覆盖从原子到光年的范围。",
+      "evidence": "The yardstick of measurement today must cover everything"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "文章从古代几何、三角学到微积分、精密计算，说明文明越进步，对数学工具的要求越高；A 与古代人懂几何矛盾，B、D 不是主旨。",
+      "evidence": "The progress of civilization itself can be measured by its range of mathematics."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文章以科普方式介绍自然界的数学规律和数学在文明、航天中的应用，最可能出自科学杂志。",
+      "evidence": ""
+    }
+  },
+  "kepu-10": {
+    "1": {
+      "answer": "C",
+      "explanation": "全文介绍社会学家 Michael Lewis 对 50 个家庭晚餐录像的研究发现，属于研究报告；不是教父母维持秩序或泛泛谈家庭问题。",
+      "evidence": "Sociologist Michael Lewis has been studying 50 families"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第二段说孩子越多，谈话就越会让位于父母“control the loud noise they make”，即忙于维持餐桌秩序，因此提问更少。",
+      "evidence": "conversation gives way to the parents’ efforts to control the loud noise"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第三段说三个或四个孩子的家庭里，晚餐谈话常围绕最年长和最年幼的孩子，中间的孩子被忽视，因此“invisible”指得到最少关注。",
+      "evidence": "Middle children are invisible"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "第三段开头明确说，这项研究解释了“why middle children often seem to have a harder time in life”；D 与原文对应。",
+      "evidence": "provides an explanation for why middle children often seem to have a harder time"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "研究显示父母提问越多，孩子智商分数越高，而孩子多时提问变少；因此作者会赞同父母应多与每个孩子交流。A 未提及，B 与“TV on, dinner is a non-event”相反，D 无依据。",
+      "evidence": "the more question-asking the parents do, the higher the children’s IQ scores"
+    }
+  }
+}

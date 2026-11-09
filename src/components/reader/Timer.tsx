@@ -17,7 +17,7 @@ import { cn, formatDuration } from '@/lib/utils';
 const PRESETS = [5, 10, 15, 20, 25, 30, 45, 60];
 
 export function TimerModal({ onClose }: { onClose: () => void }) {
-  const { timer, timerElapsed, startTimer, pauseTimer, resumeTimer, resetTimer } = useApp();
+  const { timer, timerElapsed, timerRemaining, startTimer, pauseTimer, resumeTimer, resetTimer } = useApp();
   const [mode, setMode] = useState<'up' | 'down'>(timer.mode === 'down' ? 'down' : 'up');
   const [minutes, setMinutes] = useState(() => {
     if (timer.mode === 'down' && timer.totalMs) return Math.round(timer.totalMs / 60000);
@@ -62,9 +62,11 @@ export function TimerModal({ onClose }: { onClose: () => void }) {
         <div className="modal-body">
           {active ? (
             <div className="timer-live">
-              <div className="timer-live-time">{formatDuration(timerElapsed)}</div>
+              <div className="timer-live-time">
+                {formatDuration(timer.mode === 'down' ? timerRemaining : timerElapsed)}
+              </div>
               <div className="timer-live-label">
-                {timer.mode === 'down' ? `倒计时 · 共 ${Math.round(timer.totalMs / 60000)} 分钟` : '正计时'}
+                {timer.mode === 'down' ? `倒计时 · 剩余（共 ${Math.round(timer.totalMs / 60000)} 分钟）` : '正计时'}
                 {timer.status === 'paused' ? ' · 已暂停' : ' · 进行中'}
               </div>
               <div className="timer-live-actions">
@@ -156,7 +158,7 @@ export function TimerModal({ onClose }: { onClose: () => void }) {
 }
 
 export function TimerWidget({ onOpen }: { onOpen: () => void }) {
-  const { timer, timerElapsed, pauseTimer, resumeTimer, resetTimer, hideTimer } = useApp();
+  const { timer, timerElapsed, timerRemaining, pauseTimer, resumeTimer, resetTimer, hideTimer } = useApp();
   const [pos, setPos] = useState<{ x: number; y: number } | null>(null);
   const drag = useRef<{ dx: number; dy: number } | null>(null);
 
@@ -214,7 +216,7 @@ export function TimerWidget({ onOpen }: { onOpen: () => void }) {
         </button>
       </div>
       <button className="timer-float-time" onClick={onOpen} title="点开计时设置">
-        {formatDuration(timerElapsed)}
+        {formatDuration(timer.mode === 'down' ? timerRemaining : timerElapsed)}
       </button>
       <div className="timer-float-actions">
         {done ? (

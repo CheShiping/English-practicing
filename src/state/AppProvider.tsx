@@ -101,6 +101,7 @@ interface AppContextValue {
 
   timer: TimerState;
   timerElapsed: number;
+  timerRemaining: number;
   startTimer: (mode: 'up' | 'down', totalMs: number) => void;
   pauseTimer: () => void;
   resumeTimer: () => void;
@@ -118,6 +119,15 @@ interface AppContextValue {
 const AppContext = createContext<AppContextValue | null>(null);
 
 function loadAll() {
+  const savedTimer = { ...DEFAULT_TIMER, ...readJson<Partial<TimerState>>(KEYS.timer, {}) };
+  // A page reload must not turn a running timer into hours of "reading time".
+  // Keep the accumulated value and pause it; the user can resume deliberately.
+  if (savedTimer.status === 'running' && savedTimer.startedAt) {
+    savedTimer.accumulated += Math.min(Date.now() - savedTimer.startedAt, 60000);
+    savedTimer.status = 'paused';
+    savedTimer.startedAt = null;
+  }
+
   return {
     settings: { ...DEFAULT_SETTINGS, ...readJson<Partial<Settings>>(KEYS.settings, {}) },
     vocab: readJson<VocabWord[]>(KEYS.vocab, []),
@@ -129,7 +139,7 @@ function loadAll() {
     bookmarks: readJson<string[]>(KEYS.bookmarks, []),
     recent: readJson<string[]>(KEYS.recent, []),
     lastRead: readJson<string>(KEYS.lastRead, ''),
-    timer: { ...DEFAULT_TIMER, ...readJson<Partial<TimerState>>(KEYS.timer, {}) },
+    timer: savedTimer,
   };
 }
 
@@ -239,6 +249,14 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
     return timer.accumulated;
   }, [timer, now]);
+
+  const timerRemaining = useMemo(
+    () =>
+      timer.mode === 'down' && timer.totalMs > 0
+        ? Math.max(0, timer.totalMs - timerElapsed)
+        : timerElapsed,
+    [timer.mode, timer.totalMs, timerElapsed],
+  );
 
   // Countdown completion
   useEffect(() => {
@@ -572,6 +590,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setLastRead,
     timer,
     timerElapsed,
+    timerRemaining,
     startTimer,
     pauseTimer,
     resumeTimer,

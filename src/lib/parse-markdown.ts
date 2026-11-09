@@ -191,7 +191,6 @@ export function parseMarkdownArticles(text: string, opts: ParseOptions = {}): Pa
   const rawLines = text.split(/\r?\n/);
   const warnings: string[] = [];
   let docTitle = '';
-  let heading = '';
 
   type Chunk = { number: number; heading: string; lines: string[] };
   const chunks: Chunk[] = [];
@@ -266,15 +265,21 @@ export function parseMarkdownArticles(text: string, opts: ParseOptions = {}): Pa
       return;
     }
     if (!questions.length) warnings.push(`第 ${idx + 1} 篇没有识别到题目，将以“纯阅读”模式导入`);
+    const lastText = (blocks[blocks.length - 1]?.text || '').trim();
+    if (!questions.length && words < 150 && /[:：]$/.test(lastText)) {
+      warnings.push(`第 ${idx + 1} 篇正文在“${lastText}”处截断且没有题目，已跳过`);
+      return;
+    }
     const firstSentence = (blocks.find((b) => b.type === 'p')?.text || '').split(/(?<=[.!?])\s+/)[0] || '';
+    const titleText = firstSentence.replace(/[.!?。！？]+$/, '').slice(0, 90);
     articles.push({
       id: `user-${stamp}-${idx + 1}`,
       catId: cat.id,
       catName: opts.categoryName || cat.name,
       number: chunk.number || idx + 1,
       heading: chunk.heading,
-      title: chunk.heading || firstSentence.slice(0, 90) || `导入文章 ${idx + 1}`,
-      fallbackTitle: firstSentence.slice(0, 90),
+      title: chunk.heading || titleText || `导入文章 ${idx + 1}`,
+      fallbackTitle: titleText,
       blocks,
       paragraphs: blocks.filter((b) => b.type === 'p').map((b) => b.text),
       questions,

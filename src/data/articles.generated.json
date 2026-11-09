@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T12:39:19.967Z",
+  "generatedAt": "2026-11-09T14:28:49.429Z",
   "categories": [
     {
       "id": "kepu",
@@ -37,20 +37,23 @@
       "catName": "科普类",
       "number": 1,
       "heading": "",
-      "title": "",
+      "title": "After a busy day of work and play, the body needs to rest",
       "fallbackTitle": "After a busy day of work and play, the body needs to rest",
       "blocks": [
         {
           "type": "p",
-          "text": "After a busy day of work and play, the body needs to rest. Sleep is necessary for good health. During this time, the body recovers from the activities of the previous day. The rest that you get while sleeping makes it possible for your body to prepare itself for the next day."
+          "text": "After a busy day of work and play, the body needs to rest. Sleep is necessary for good health. During this time, the body recovers from the activities of the previous day. The rest that you get while sleeping makes it possible for your body to prepare itself for the next day.",
+          "translation": "忙碌地工作、玩耍一天之后，身体需要休息。睡眠对健康必不可少。在这段时间里，身体会从前一天的各种活动中恢复过来。睡眠中得到的休息，让身体能够为第二天做好准备。"
         },
         {
           "type": "p",
-          "text": "There are four levels of sleep, each being a little deeper than the one before. As you sleep, your body relaxes little by little. Your heart beats more slowly, and your brain slows down. After you reach the fourth level, your body shifts back and forth from one level of sleep to the other. Although your mind slows down, from time to time you will dream."
+          "text": "There are four levels of sleep, each being a little deeper than the one before. As you sleep, your body relaxes little by little. Your heart beats more slowly, and your brain slows down. After you reach the fourth level, your body shifts back and forth from one level of sleep to the other. Although your mind slows down, from time to time you will dream.",
+          "translation": "睡眠有四个层次，每一层都比上一层更深。入睡时，身体一点一点放松，心跳变慢，大脑也慢下来。到达第四层之后，身体会在不同睡眠层次之间来回转换。虽然思维变慢，但你仍会不时做梦。"
         },
         {
           "type": "p",
-          "text": "Scientists who study sleep point out that when dreaming occurs, your eyeballs begin to move more quickly (although your eyelids are closed). This stage of sleep is called REM, which stands for rapid eye movement. If you have trouble falling asleep, some people recommend breathing very slowly and very deeply. Other people believe that drinking warm milk will help make you drowsy. There is also an old suggestion that counting sheep will put you to sleep."
+          "text": "Scientists who study sleep point out that when dreaming occurs, your eyeballs begin to move more quickly (although your eyelids are closed). This stage of sleep is called REM, which stands for rapid eye movement. If you have trouble falling asleep, some people recommend breathing very slowly and very deeply. Other people believe that drinking warm milk will help make you drowsy. There is also an old suggestion that counting sheep will put you to sleep.",
+          "translation": "研究睡眠的科学家指出，做梦时你的眼球会开始快速转动（尽管眼皮是闭着的）。这一睡眠阶段叫作 REM，即快速眼动。如果你难以入睡，有人建议缓慢而深长地呼吸；也有人相信喝热牛奶能让你犯困。还有一个古老的说法：数羊能让你睡着。"
         }
       ],
       "paragraphs": [
@@ -68,8 +71,9 @@
             "Good Health",
             "Work and Rest"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "全文从睡眠的作用、四个睡眠层次讲到 REM 与入睡建议，核心话题始终是 sleep；dreams、good health 只是其中一部分，不能概括全文。",
+          "evidence": "Sleep is necessary for good health."
         },
         {
           "num": 2,
@@ -80,8 +84,9 @@
             "relaxed",
             "pleased"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "前文说“喝热牛奶有助于入睡”，因此 drowsy 表示“困倦的、想睡的”，与 sleepy 最接近。",
+          "evidence": "drinking warm milk will help make you drowsy"
         },
         {
           "num": 3,
@@ -92,8 +97,9 @@
             "dream more often",
             "breathe quickly"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "文章开头明确指出“Sleep is necessary for good health”，由此可推知睡眠不足可能损害健康；文中没有说会紧张、多梦或呼吸变快。",
+          "evidence": "Sleep is necessary for good health."
         },
         {
           "num": 4,
@@ -104,8 +110,9 @@
             "you are restless",
             "both A and B"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "文中说做梦时眼球会快速移动，并把这一阶段称为 REM（rapid eye movement）；因此 REM 期间既在做梦，眼球也在快速移动，A、B 都对。",
+          "evidence": "when dreaming occurs, your eyeballs begin to move more quickly"
         },
         {
           "num": 5,
@@ -116,17 +123,18 @@
             "about eight hours",
             "not described here"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "文章只讨论了睡眠层次、REM 和入睡方法，没有给出成年人平均需要多少小时睡眠。",
+          "evidence": ""
         }
       ],
       "wordCount": 194,
       "difficulty": "进阶",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "忙碌地工作、玩耍一天之后，身体需要休息。睡眠对健康必不可少。在这段时间里，身体会从前一天的各种活动中恢复过来。睡眠中得到的休息，让身体能够为第二天做好准备。",
+        "睡眠有四个层次，每一层都比上一层更深。入睡时，身体一点一点放松，心跳变慢，大脑也慢下来。到达第四层之后，身体会在不同睡眠层次之间来回转换。虽然思维变慢，但你仍会不时做梦。",
+        "研究睡眠的科学家指出，做梦时你的眼球会开始快速转动（尽管眼皮是闭着的）。这一睡眠阶段叫作 REM，即快速眼动。如果你难以入睡，有人建议缓慢而深长地呼吸；也有人相信喝热牛奶能让你犯困。还有一个古老的说法：数羊能让你睡着。"
       ]
     },
     {
@@ -135,20 +143,23 @@
       "catName": "科普类",
       "number": 2,
       "heading": "",
-      "title": "",
+      "title": "Doctors have known for a long time that extremely loud noises can cause hearing damage or ",
       "fallbackTitle": "Doctors have known for a long time that extremely loud noises can cause hearing damage or ",
       "blocks": [
         {
           "type": "p",
-          "text": "Doctors have known for a long time that extremely loud noises can cause hearing damage or loss. The noise can be the sound of a jet airplane or machines in factories or loud music or other common sounds found at home or at work. A person only needs to hear the noise for a little more than one second to be affected."
+          "text": "Doctors have known for a long time that extremely loud noises can cause hearing damage or loss. The noise can be the sound of a jet airplane or machines in factories or loud music or other common sounds found at home or at work. A person only needs to hear the noise for a little more than one second to be affected.",
+          "translation": "医生们早就知道，极响的噪音会造成听力损伤或丧失。这种噪音可能是喷气式飞机、工厂机器、大声的音乐，也可能是家中或工作中的其他常见声音。人只要听到这种噪音超过一秒，就可能受到影响。"
         },
         {
           "type": "p",
-          "text": "An American scientist has found that using aspirin can increase the temporary hearing loss or damage from loud noise. He did an experiment, using a number of male students at a university who all had normal hearing. He gave them different amounts of aspirin for different periods of time, and then he tested their hearing ability. He found that the students who were given four grams of aspirin a day for two days suffered much greater temporary hearing loss than those who did not use aspirin. The hearing loss was about two times as great."
+          "text": "An American scientist has found that using aspirin can increase the temporary hearing loss or damage from loud noise. He did an experiment, using a number of male students at a university who all had normal hearing. He gave them different amounts of aspirin for different periods of time, and then he tested their hearing ability. He found that the students who were given four grams of aspirin a day for two days suffered much greater temporary hearing loss than those who did not use aspirin. The hearing loss was about two times as great.",
+          "translation": "一位美国科学家发现，服用阿司匹林会加重噪音造成的暂时性听力损伤。他用一些听力正常的男大学生做实验，让他们在不同时间段服用不同剂量的阿司匹林，然后测试他们的听力。他发现，连续两天每天服用四克阿司匹林的学生，其暂时性听力损失比不服用阿司匹林的学生严重得多，约为后者的两倍。"
         },
         {
           "type": "p",
-          "text": "The scientist said millions of people in the United States use much larger amounts of aspirin than were used in the study. He said these people face a serious danger of suffering hearing loss from loud noise."
+          "text": "The scientist said millions of people in the United States use much larger amounts of aspirin than were used in the study. He said these people face a serious danger of suffering hearing loss from loud noise.",
+          "translation": "这位科学家说，美国有数百万人服用的阿司匹林剂量远高于研究中的用量。他说，这些人面临因噪音而听力受损的严重危险。"
         }
       ],
       "paragraphs": [
@@ -166,8 +177,9 @@
             "common sounds at home or at work",
             "all of the above"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第一段列举了飞机、工厂机器、大声的音乐以及家中或工作中的常见声音，并说这些都可能造成听力损伤，因此 A、B、C 都包括。",
+          "evidence": "The noise can be the sound of a jet airplane or machines in factories or loud music or other common sounds"
         },
         {
           "num": 2,
@@ -178,8 +190,9 @@
             "will not be damaged even if he hears a loud noise for a little more than one second",
             "will not be damaged even if he hears a loud noise for a little less than one second"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "第一段说“A person only needs to hear the noise for a little more than one second to be affected”，即只要超过一秒就可能受影响，A 与原文一致。",
+          "evidence": "for a little more than one second to be affected"
         },
         {
           "num": 3,
@@ -190,8 +203,9 @@
             "decreases hearing damage by two times",
             "should never be taken for more than two days"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "实验发现服用阿司匹林的学生暂时性听力损失更大，说明阿司匹林会加重噪音造成的听力损伤；文章并没有给出“每天不得超过四克”这类用药结论。",
+          "evidence": "using aspirin can increase the temporary hearing loss or damage from loud noise"
         },
         {
           "num": 4,
@@ -202,8 +216,9 @@
             "make loud noise at home and at work",
             "often take jet airplanes"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "科学家指出，美国有数百万人服用的阿司匹林剂量远高于实验用量，因此他们面临噪音导致听力损失的危险；原因在于服用过多阿司匹林。",
+          "evidence": "millions of people in the United States use much larger amounts of aspirin"
         },
         {
           "num": 5,
@@ -214,17 +229,18 @@
             "three grams of aspirin",
             "four grams of aspirin"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "实验中产生明显听力损失的是“每天四克、连续两天”的那一组，其他剂量没有在文中被证明会影响听力。",
+          "evidence": "four grams of aspirin a day for two days"
         }
       ],
       "wordCount": 194,
       "difficulty": "进阶",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "医生们早就知道，极响的噪音会造成听力损伤或丧失。这种噪音可能是喷气式飞机、工厂机器、大声的音乐，也可能是家中或工作中的其他常见声音。人只要听到这种噪音超过一秒，就可能受到影响。",
+        "一位美国科学家发现，服用阿司匹林会加重噪音造成的暂时性听力损伤。他用一些听力正常的男大学生做实验，让他们在不同时间段服用不同剂量的阿司匹林，然后测试他们的听力。他发现，连续两天每天服用四克阿司匹林的学生，其暂时性听力损失比不服用阿司匹林的学生严重得多，约为后者的两倍。",
+        "这位科学家说，美国有数百万人服用的阿司匹林剂量远高于研究中的用量。他说，这些人面临因噪音而听力受损的严重危险。"
       ]
     },
     {
@@ -233,20 +249,23 @@
       "catName": "科普类",
       "number": 3,
       "heading": "",
-      "title": "",
+      "title": "Are some people born clever and others born stupid",
       "fallbackTitle": "Are some people born clever and others born stupid",
       "blocks": [
         {
           "type": "p",
-          "text": "Are some people born clever and others born stupid? Or is intelligence developed by our environment and our experience? Strangely enough, the answer to these questions is yes. To some extent our intelligence is given to us at birth, and no amount of special education can make a genius out of a child born with low intelligence. On the other hand, a child who lives in a boring environment will develop his intelligence less than one who lives in rich and varied surroundings. Thus the limits of a person’s intelligence are fixed at birth, whether or not he reaches those limits will depend on his environment. This view, now held by most experts, can be supported in a number of ways."
+          "text": "Are some people born clever and others born stupid? Or is intelligence developed by our environment and our experience? Strangely enough, the answer to these questions is yes. To some extent our intelligence is given to us at birth, and no amount of special education can make a genius out of a child born with low intelligence. On the other hand, a child who lives in a boring environment will develop his intelligence less than one who lives in rich and varied surroundings. Thus the limits of a person’s intelligence are fixed at birth, whether or not he reaches those limits will depend on his environment. This view, now held by most experts, can be supported in a number of ways.",
+          "translation": "有些人生来聪明，有些人生来愚笨吗？还是智力由环境和经历发展而来？奇怪的是，这两个问题的答案都是“是”。在某种程度上，智力是出生时就被赋予的，再多的特殊教育也无法让一个天生智力低下的孩子变成天才。另一方面，生活在枯燥环境中的孩子，其智力发展会不如生活在丰富多样环境中的孩子。因此，一个人智力的上限在出生时就已确定，但他能否达到这个上限，则取决于环境。这一观点如今为大多数专家所接受，并有多方面的支持。"
         },
         {
           "type": "p",
-          "text": "It is easy to show that intelligence is to some extent something we are born with. The closer the blood relationship between two people is, the closer they are likely to be in intelligence. Thus if we take two unrelated people at random from the population, it is likely that their degree of intelligence will be completely different. If, on the other hand, we take two identical twins, they will very likely be as intelligent as each other. Relations like brothers and sisters, parents and children, usually have similar intelligence, and this clearly suggests that intelligence depend on birth."
+          "text": "It is easy to show that intelligence is to some extent something we are born with. The closer the blood relationship between two people is, the closer they are likely to be in intelligence. Thus if we take two unrelated people at random from the population, it is likely that their degree of intelligence will be completely different. If, on the other hand, we take two identical twins, they will very likely be as intelligent as each other. Relations like brothers and sisters, parents and children, usually have similar intelligence, and this clearly suggests that intelligence depend on birth.",
+          "translation": "很容易证明，智力在某种程度上是与生俱来的。两个人的血缘关系越近，他们的智力水平往往越接近。因此，如果从人群中随机选取两个没有亲属关系的人，他们的智力水平很可能完全不同。反过来，如果选取一对同卵双胞胎，他们的智力很可能不相上下。兄弟姐妹、父母子女等亲属通常智力相近，这清楚地表明智力与出生有关。"
         },
         {
           "type": "p",
-          "text": "Imagine now that we take two identical twins and put them in different environments. We might send one, for example, to a university and the other to a factory where the work is boring. We would soon find differences in their intelligence developing, and this indicates that environment as well as birth plays a part. This conclusion is also suggested by the fact that people who live in close contact with each other, but who are not related at all are likely to have similar degree of intelligence."
+          "text": "Imagine now that we take two identical twins and put them in different environments. We might send one, for example, to a university and the other to a factory where the work is boring. We would soon find differences in their intelligence developing, and this indicates that environment as well as birth plays a part. This conclusion is also suggested by the fact that people who live in close contact with each other, but who are not related at all are likely to have similar degree of intelligence.",
+          "translation": "现在设想我们把一对同卵双胞胎放到不同环境中：比如送一个上大学，送另一个去工作枯燥的工厂。很快就会发现他们的智力发展出现差异，这说明环境和出生一样起作用。这一结论还有一个佐证：彼此密切接触但完全没有亲属关系的人，智力水平也可能相似。"
         }
       ],
       "paragraphs": [
@@ -264,8 +283,9 @@
             "still become a genius if he should be given special education",
             "become a genius"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "文章认为智力上限由出生决定，但能否达到上限取决于环境；因此低智力儿童在丰富环境中仍可能达到自己的智力上限。特殊教育不能把他变成天才，所以 C、D 错。",
+          "evidence": "whether or not he reaches those limits will depend on his environment"
         },
         {
           "num": 2,
@@ -276,8 +296,9 @@
             "take out two persons of close relationship",
             "pick any two persons"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "at random 意为“随机地”，unrelated 意为“无亲属关系的”，合起来就是“随机挑选任何两个人”，D 最准确。",
+          "evidence": "if we take two unrelated people at random from the population"
         },
         {
           "num": 3,
@@ -288,8 +309,9 @@
             "the role of environment on intelligence",
             "the importance of their intelligence"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "同卵双胞胎基因相同，被放到大学和工厂后智力发展出现差异，说明环境对智力有作用；这个例子不是为了说明出生的重要性。",
+          "evidence": "environment as well as birth plays a part"
         },
         {
           "num": 4,
@@ -300,8 +322,9 @@
             "both at birth and through education",
             "at birth"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "作者既承认智力在一定程度上与生俱来，又强调环境与教育影响智力能否达到上限，因此他支持“先天与后天共同作用”的观点。",
+          "evidence": "environment as well as birth plays a part"
         },
         {
           "num": 5,
@@ -312,17 +335,18 @@
             "Intelligence",
             "Surroundings"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "全文围绕“智力由什么决定”展开，先天、环境、教育都是围绕 intelligence 这个中心话题的论据，因此最佳标题是 Intelligence。",
+          "evidence": ""
         }
       ],
       "wordCount": 308,
       "difficulty": "挑战",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "有些人生来聪明，有些人生来愚笨吗？还是智力由环境和经历发展而来？奇怪的是，这两个问题的答案都是“是”。在某种程度上，智力是出生时就被赋予的，再多的特殊教育也无法让一个天生智力低下的孩子变成天才。另一方面，生活在枯燥环境中的孩子，其智力发展会不如生活在丰富多样环境中的孩子。因此，一个人智力的上限在出生时就已确定，但他能否达到这个上限，则取决于环境。这一观点如今为大多数专家所接受，并有多方面的支持。",
+        "很容易证明，智力在某种程度上是与生俱来的。两个人的血缘关系越近，他们的智力水平往往越接近。因此，如果从人群中随机选取两个没有亲属关系的人，他们的智力水平很可能完全不同。反过来，如果选取一对同卵双胞胎，他们的智力很可能不相上下。兄弟姐妹、父母子女等亲属通常智力相近，这清楚地表明智力与出生有关。",
+        "现在设想我们把一对同卵双胞胎放到不同环境中：比如送一个上大学，送另一个去工作枯燥的工厂。很快就会发现他们的智力发展出现差异，这说明环境和出生一样起作用。这一结论还有一个佐证：彼此密切接触但完全没有亲属关系的人，智力水平也可能相似。"
       ]
     },
     {
@@ -331,28 +355,33 @@
       "catName": "科普类",
       "number": 4,
       "heading": "",
-      "title": "",
+      "title": "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’",
       "fallbackTitle": "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’",
       "blocks": [
         {
           "type": "p",
-          "text": "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’s influences on children from those of the family. We tend to blame TV, he says, for problems it doesn’t really cause, overlooking our own roles in shaping children’s minds."
+          "text": "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’s influences on children from those of the family. We tend to blame TV, he says, for problems it doesn’t really cause, overlooking our own roles in shaping children’s minds.",
+          "translation": "著名心理学家丹尼尔·安德森认为，有必要把电视对儿童的影响与家庭对儿童的影响区分开来。他说，我们往往把并非由电视造成的问题归咎于电视，却忽视了自己在塑造孩子心灵中的作用。"
         },
         {
           "type": "p",
-          "text": "One traditional belief about television is that it reduces a child’s ability to think and to understand the world. While watching TV, children do not merely absorb words and images(影像). Instead, they learn both explicit and hidden meanings from what they see. Actually, children learn early the psychology of characters in TV shows. Furthermore, as many teachers agree, children understand far more when their parents watch TV with them, explaining new words and ideas. Yet, most parents use an educational program as a chance to sit their kids in front of the TV set and do something in another room."
+          "text": "One traditional belief about television is that it reduces a child’s ability to think and to understand the world. While watching TV, children do not merely absorb words and images(影像). Instead, they learn both explicit and hidden meanings from what they see. Actually, children learn early the psychology of characters in TV shows. Furthermore, as many teachers agree, children understand far more when their parents watch TV with them, explaining new words and ideas. Yet, most parents use an educational program as a chance to sit their kids in front of the TV set and do something in another room.",
+          "translation": "关于电视的一种传统看法是，它会削弱孩子思考和理解世界的能力。但孩子看电视时并不只是吸收文字和图像，他们会从所见内容中学到显性和隐性的含义。事实上，孩子很早就学会了电视节目中人物的心理。此外，许多老师也认同，当父母陪着孩子看电视、解释新词和新观点时，孩子理解得更多。然而，大多数父母只是把教育节目当作把孩子放在电视机前的机会，自己则去另一个房间做事。"
         },
         {
           "type": "p",
-          "text": "Another argument against television is that it replaces reading as a form of entertainment. But according to Anderson, the amount of time spent watching television is not related to reading ability. TV doesn’t take the place of reading for most children; it takes the place of similar sorts of recreation, such as listening to the radio and playing sports. Things like parents’ educational background have a stronger influence on a child’s reading. “A child’s reading ability is best predicted by how much a parent reads.” Anderson says."
+          "text": "Another argument against television is that it replaces reading as a form of entertainment. But according to Anderson, the amount of time spent watching television is not related to reading ability. TV doesn’t take the place of reading for most children; it takes the place of similar sorts of recreation, such as listening to the radio and playing sports. Things like parents’ educational background have a stronger influence on a child’s reading. “A child’s reading ability is best predicted by how much a parent reads.” Anderson says.",
+          "translation": "另一种反对电视的观点是，它取代了阅读这种娱乐方式。但安德森认为，看电视的时间长短与阅读能力无关。对大多数孩子来说，电视并没有取代阅读，而是取代了听广播、做运动等类似的娱乐活动。父母的教育背景等因素对孩子阅读的影响更大。安德森说：“孩子阅读能力的最佳预测指标，是父母读多少书。”"
         },
         {
           "type": "p",
-          "text": "Traditional wisdom also has believed that heavy television-watching lowers children’s IQ scores and affects their school performance. But here, too, Anderson notes that no studies have proved it. In fact, research suggests that it’s the other way around. “If you’re smart young, you’ll watch less TV when you’re older.” Anderson says. Yet, people of lower IQ tend to be lifelong television viewers."
+          "text": "Traditional wisdom also has believed that heavy television-watching lowers children’s IQ scores and affects their school performance. But here, too, Anderson notes that no studies have proved it. In fact, research suggests that it’s the other way around. “If you’re smart young, you’ll watch less TV when you’re older.” Anderson says. Yet, people of lower IQ tend to be lifelong television viewers.",
+          "translation": "传统观念还认为，长时间看电视会降低孩子的智商分数并影响学业表现。但安德森指出，同样没有研究能证明这一点。事实上，研究显示情况可能恰恰相反。安德森说：“如果你小时候聪明，长大后就会少看电视。”而智商较低的人往往一辈子都是电视观众。"
         },
         {
           "type": "p",
-          "text": "For years, researchers have attempted to show that television is dangerous to children. However, by showing that television promotes none of the dangerous effects as conventionally (传统地) believed, Anderson suggests that television cannot be blamed without considering other influences."
+          "text": "For years, researchers have attempted to show that television is dangerous to children. However, by showing that television promotes none of the dangerous effects as conventionally (传统地) believed, Anderson suggests that television cannot be blamed without considering other influences.",
+          "translation": "多年来，研究人员一直试图证明电视对儿童有害。然而，安德森通过证明电视并不会产生人们传统上认为的那些危险影响，提示我们不能在不考虑其他影响因素的情况下把责任都推给电视。"
         }
       ],
       "paragraphs": [
@@ -372,8 +401,9 @@
             "more about images than words",
             "little about people’s psychology"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第二段明确指出：孩子看电视并不是只吸收文字和图像，而是从看到的内容中学习“explicit and hidden meanings”（显性和隐性含义）。",
+          "evidence": "they learn both explicit and hidden meanings from what they see"
         },
         {
           "num": 2,
@@ -384,8 +414,9 @@
             "with their parents",
             "with their teachers"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第二段说，当父母和孩子一起看电视并解释新词和观点时，孩子理解得更多；作者批评的正是父母把孩子独自留在电视前。因此教育节目最好由父母陪同观看。",
+          "evidence": "children understand far more when their parents watch TV with them"
         },
         {
           "num": 3,
@@ -396,8 +427,9 @@
             "Parents’ reading list.",
             "Parent’s educational background."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第三段指出，看电视时间与阅读能力无关，而父母的教育背景等因素对阅读影响更大，并引用“孩子阅读能力最好由父母读多少来预测”。",
+          "evidence": "parents’ educational background have a stronger influence on a child’s reading"
         },
         {
           "num": 4,
@@ -408,19 +440,20 @@
             "the smarter children are, the less likely they are more interested in watching TV",
             "the less children watch TV, the better they perform at school"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "Anderson 引用研究说“小时候聪明，长大后看电视更少”，即越聪明的孩子越不倾向于长时间看电视；A、B、D 都与原文相反或无依据。",
+          "evidence": "If you’re smart young, you’ll watch less TV when you’re older."
         }
       ],
       "wordCount": 327,
       "difficulty": "挑战",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "著名心理学家丹尼尔·安德森认为，有必要把电视对儿童的影响与家庭对儿童的影响区分开来。他说，我们往往把并非由电视造成的问题归咎于电视，却忽视了自己在塑造孩子心灵中的作用。",
+        "关于电视的一种传统看法是，它会削弱孩子思考和理解世界的能力。但孩子看电视时并不只是吸收文字和图像，他们会从所见内容中学到显性和隐性的含义。事实上，孩子很早就学会了电视节目中人物的心理。此外，许多老师也认同，当父母陪着孩子看电视、解释新词和新观点时，孩子理解得更多。然而，大多数父母只是把教育节目当作把孩子放在电视机前的机会，自己则去另一个房间做事。",
+        "另一种反对电视的观点是，它取代了阅读这种娱乐方式。但安德森认为，看电视的时间长短与阅读能力无关。对大多数孩子来说，电视并没有取代阅读，而是取代了听广播、做运动等类似的娱乐活动。父母的教育背景等因素对孩子阅读的影响更大。安德森说：“孩子阅读能力的最佳预测指标，是父母读多少书。”",
+        "传统观念还认为，长时间看电视会降低孩子的智商分数并影响学业表现。但安德森指出，同样没有研究能证明这一点。事实上，研究显示情况可能恰恰相反。安德森说：“如果你小时候聪明，长大后就会少看电视。”而智商较低的人往往一辈子都是电视观众。",
+        "多年来，研究人员一直试图证明电视对儿童有害。然而，安德森通过证明电视并不会产生人们传统上认为的那些危险影响，提示我们不能在不考虑其他影响因素的情况下把责任都推给电视。"
       ]
     },
     {
@@ -429,24 +462,28 @@
       "catName": "科普类",
       "number": 5,
       "heading": "",
-      "title": "",
+      "title": "If someone is sleepwalking, they are walking around while they are asleep",
       "fallbackTitle": "If someone is sleepwalking, they are walking around while they are asleep",
       "blocks": [
         {
           "type": "p",
-          "text": "If someone is sleepwalking, they are walking around while they are asleep. Sleepwalking happens when a person is not fully asleep but not quite awake. Usually we move from our deepest levels of sleep to a lighter level and stay there. Sleepwalkers come right up to wake levels but do not fully awaken. It is at this time that they get up and walk."
+          "text": "If someone is sleepwalking, they are walking around while they are asleep. Sleepwalking happens when a person is not fully asleep but not quite awake. Usually we move from our deepest levels of sleep to a lighter level and stay there. Sleepwalkers come right up to wake levels but do not fully awaken. It is at this time that they get up and walk.",
+          "translation": "梦游的人会在睡着时四处走动。梦游发生在一个既没有完全睡着、也没有完全清醒的状态。通常我们会从最深睡眠阶段转到较浅阶段并停留在那里。梦游者会接近清醒状态，却没有完全醒来，正是在这时他们起身走动。"
         },
         {
           "type": "p",
-          "text": "The longer a person stays in deep sleep, the more time there is for the sleep to be broken. That opens up the possibility of being awakened (but not fully) and of sleepwalking."
+          "text": "The longer a person stays in deep sleep, the more time there is for the sleep to be broken. That opens up the possibility of being awakened (but not fully) and of sleepwalking.",
+          "translation": "一个人在深睡中停留的时间越长，睡眠被打断的机会就越多，也就越可能出现“被唤醒（但没有完全清醒）”以及梦游。"
         },
         {
           "type": "p",
-          "text": "Sleepwalking happens more often among young people than grown-ups because young people usually have more deep sleep. Up to 7% of 5- to 12-year-olds sleepwalk, while only about 2% of grown-ups sleepwalk. We get less deep sleep as we are getting older and the possibility of sleepwalking is also reduced."
+          "text": "Sleepwalking happens more often among young people than grown-ups because young people usually have more deep sleep. Up to 7% of 5- to 12-year-olds sleepwalk, while only about 2% of grown-ups sleepwalk. We get less deep sleep as we are getting older and the possibility of sleepwalking is also reduced.",
+          "translation": "梦游在年轻人中比成年人更常见，因为年轻人通常深睡更多。5 至 12 岁儿童中多达 7% 会梦游，而成年人只有约 2%。随着年龄增长，我们的深睡减少，梦游的可能性也随之降低。"
         },
         {
           "type": "p",
-          "text": "Sleepwalking may run in families, too. If one of your parents was a sleepwalker, you have about a 50 % possibility of also being a sleepwalker."
+          "text": "Sleepwalking may run in families, too. If one of your parents was a sleepwalker, you have about a 50 % possibility of also being a sleepwalker.",
+          "translation": "梦游也可能与家族遗传有关。如果父母一方曾梦游，你梦游的可能性约为 50%。"
         }
       ],
       "paragraphs": [
@@ -465,8 +502,9 @@
             "what sleepwalkers do",
             "when sleepwalkers walk"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "全文围绕梦游发生的原因展开：睡眠层次、深睡时长、年龄和遗传。B、C、D 都只是文中的局部信息，不能概括主旨。",
+          "evidence": "Sleepwalking happens when a person is not fully asleep but not quite awake."
         },
         {
           "num": 2,
@@ -477,8 +515,9 @@
             "Old men.",
             "Old women."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第三段明确说年轻人比成年人更容易梦游，因为年轻人深睡更多；5–12 岁儿童梦游比例高达 7%，成年人只有约 2%。",
+          "evidence": "Sleepwalking happens more often among young people than grown-ups"
         },
         {
           "num": 3,
@@ -489,8 +528,9 @@
             "Kept on.",
             "Sped up."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "随着年龄增长，深睡减少，梦游的可能性也“降低”。reduced 与 cut down（减少）同义。",
+          "evidence": "the possibility of sleepwalking is also reduced"
         },
         {
           "num": 4,
@@ -501,8 +541,9 @@
             "if their parents sleepwalked",
             "if they don’t sleep well"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "最后一段说梦游可能遗传：如果父母之一有梦游史，孩子梦游的可能性约为 50%。A 与原文相反，B、D 无依据。",
+          "evidence": "If one of your parents was a sleepwalker, you have about a 50 % possibility"
         },
         {
           "num": 5,
@@ -513,18 +554,19 @@
             "a science book",
             "a cooking book"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文章用睡眠阶段、百分比和遗传概率解释梦游，属于科普说明文，最可能出自科学类书籍。",
+          "evidence": ""
         }
       ],
       "wordCount": 168,
       "difficulty": "基础",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        ""
+        "梦游的人会在睡着时四处走动。梦游发生在一个既没有完全睡着、也没有完全清醒的状态。通常我们会从最深睡眠阶段转到较浅阶段并停留在那里。梦游者会接近清醒状态，却没有完全醒来，正是在这时他们起身走动。",
+        "一个人在深睡中停留的时间越长，睡眠被打断的机会就越多，也就越可能出现“被唤醒（但没有完全清醒）”以及梦游。",
+        "梦游在年轻人中比成年人更常见，因为年轻人通常深睡更多。5 至 12 岁儿童中多达 7% 会梦游，而成年人只有约 2%。随着年龄增长，我们的深睡减少，梦游的可能性也随之降低。",
+        "梦游也可能与家族遗传有关。如果父母一方曾梦游，你梦游的可能性约为 50%。"
       ]
     },
     {
@@ -533,16 +575,18 @@
       "catName": "科普类",
       "number": 6,
       "heading": "",
-      "title": "",
+      "title": "Our eating habits are very important for good health and a strong body",
       "fallbackTitle": "Our eating habits are very important for good health and a strong body",
       "blocks": [
         {
           "type": "p",
-          "text": "Our eating habits are very important for good health and a strong body. There are times when most of us would rather eat sweets and ice cream than meat and rice. Sweets and ice cream are not bad for the stomach if we eat them at the end of a meal. If we eat them before a meal, they may take away our appetite. It is important for us to eat our meal at the same time each day. When we feel hungry, it is a sign that our bodies need food. When we feel angry or excited, we may not want to eat. When we are worried, we may not want to eat, either."
+          "text": "Our eating habits are very important for good health and a strong body. There are times when most of us would rather eat sweets and ice cream than meat and rice. Sweets and ice cream are not bad for the stomach if we eat them at the end of a meal. If we eat them before a meal, they may take away our appetite. It is important for us to eat our meal at the same time each day. When we feel hungry, it is a sign that our bodies need food. When we feel angry or excited, we may not want to eat. When we are worried, we may not want to eat, either.",
+          "translation": "我们的饮食习惯对健康和强壮的身体非常重要。有时我们大多数人宁愿吃甜食和冰淇淋，也不愿吃肉和米饭。如果在饭后吃，甜食和冰淇淋对胃并无害处；但如果在饭前吃，它们可能会让我们失去食欲。每天在固定时间吃饭很重要。感到饥饿，是身体需要食物的信号。生气或兴奋时，我们可能不想吃东西；担忧时，也可能不想吃。"
         },
         {
           "type": "p",
-          "text": "A long time ago, in England, some judges used to decide whether a man was telling the truth by giving him some dry bread.If the man could not swallow the bread, it was a sign that he was not telling the truth. He was telling a lie.Although this seems very strange and rather foolish, it is indeed an excellent way of finding out the truth.A man who is worrying about something has difficulty in swallowing anything dry.Because when he is worrying, he loses his appetite and does not want to eat."
+          "text": "A long time ago, in England, some judges used to decide whether a man was telling the truth by giving him some dry bread.If the man could not swallow the bread, it was a sign that he was not telling the truth. He was telling a lie.Although this seems very strange and rather foolish, it is indeed an excellent way of finding out the truth.A man who is worrying about something has difficulty in swallowing anything dry.Because when he is worrying, he loses his appetite and does not want to eat.",
+          "translation": "很久以前在英国，一些法官会让嫌疑人吃干面包，以此判断他是否说真话。如果那人咽不下面包，就被认为没有说真话，是在撒谎。这听起来很奇怪甚至愚蠢，却确实是查明真相的好办法。一个心里担忧的人很难咽下干的东西，因为担忧时他会失去食欲，不想吃东西。"
         }
       ],
       "paragraphs": [
@@ -559,8 +603,9 @@
             "we want to be healthy and strong",
             "we want to eat less"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文章开头说“Our eating habits are very important for good health and a strong body”，因此养成良好饮食习惯是为了健康强壮。",
+          "evidence": "Our eating habits are very important for good health and a strong body."
         },
         {
           "num": 2,
@@ -571,8 +616,9 @@
             "Neither sweets nor ice cream",
             "Not only meat but also rice"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第一段说，如果在饭前吃甜食和冰淇淋，它们可能会“take away our appetite”，即影响食欲；B 同时包含两者。",
+          "evidence": "If we eat them before a meal, they may take away our appetite."
         },
         {
           "num": 3,
@@ -583,8 +629,9 @@
             "when the meal is being cooked",
             "before we go back home"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第一段强调“It is important for us to eat our meal at the same time each day”，即每天在固定时间吃饭。",
+          "evidence": "eat our meal at the same time each day"
         },
         {
           "num": 4,
@@ -595,8 +642,9 @@
             "to eat more food",
             "to eat dry bread"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "第一段说“When we feel angry or excited, we may not want to eat”，说明生气时食欲差。",
+          "evidence": "When we feel angry or excited, we may not want to eat."
         },
         {
           "num": 5,
@@ -607,16 +655,17 @@
             "hardly swallow dry bread",
             "eat a lot of dry bread"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第二段讲英国法官用干面包断案：说谎者因担忧而难以下咽干面包。因此若一个人说谎，他很难吞下干面包。",
+          "evidence": "A man who is worrying about something has difficulty in swallowing anything dry."
         }
       ],
       "wordCount": 210,
       "difficulty": "进阶",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        ""
+        "我们的饮食习惯对健康和强壮的身体非常重要。有时我们大多数人宁愿吃甜食和冰淇淋，也不愿吃肉和米饭。如果在饭后吃，甜食和冰淇淋对胃并无害处；但如果在饭前吃，它们可能会让我们失去食欲。每天在固定时间吃饭很重要。感到饥饿，是身体需要食物的信号。生气或兴奋时，我们可能不想吃东西；担忧时，也可能不想吃。",
+        "很久以前在英国，一些法官会让嫌疑人吃干面包，以此判断他是否说真话。如果那人咽不下面包，就被认为没有说真话，是在撒谎。这听起来很奇怪甚至愚蠢，却确实是查明真相的好办法。一个心里担忧的人很难咽下干的东西，因为担忧时他会失去食欲，不想吃东西。"
       ]
     },
     {
@@ -625,32 +674,38 @@
       "catName": "科普类",
       "number": 7,
       "heading": "",
-      "title": "",
+      "title": "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped",
       "fallbackTitle": "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped",
       "blocks": [
         {
           "type": "p",
-          "text": "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped him settle disagreements with his three older sisters. “I never got the chance to pick what we watched on TV until I learned the sport of rock, paper, scissors,” he says."
+          "text": "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped him settle disagreements with his three older sisters. “I never got the chance to pick what we watched on TV until I learned the sport of rock, paper, scissors,” he says.",
+          "translation": "怀亚特·鲍德温从小就开始玩石头剪刀布。这个游戏帮他解决与三个姐姐之间的分歧。他说：“在学会石头剪刀布这项‘运动’之前，我从来没有机会决定我们看电视看什么。”"
         },
         {
           "type": "p",
-          "text": "Baldwin is president of the World Rock Paper Scissors Association.He has played in and hosted competitions all around the globe.He once had a 43-game winning streak.What is the secret to his success? “Look for patterns in either your opponent’s moves or behavior,” he says.As all serious rock, paper, scissors players know, there is more to the game than luck."
+          "text": "Baldwin is president of the World Rock Paper Scissors Association.He has played in and hosted competitions all around the globe.He once had a 43-game winning streak.What is the secret to his success? “Look for patterns in either your opponent’s moves or behavior,” he says.As all serious rock, paper, scissors players know, there is more to the game than luck.",
+          "translation": "鲍德温是世界石头剪刀布协会主席。他参加过并主持过世界各地的比赛，曾创下 43 连胜。他成功的秘诀是什么？“观察对手出拳或行为中的模式。”他说。所有认真的石头剪刀布玩家都知道，这个游戏靠的不只是运气。"
         },
         {
           "type": "p",
-          "text": "People have been playing rock, paper, scissors for about 2, 000 years.It is played everywhere.Some cultures use different hand symbols, but the idea is the same.You and an opponent each “throw” one of three hand symbols.You win, lose, or tie (不分胜负).Many people think the game is all luck.It seems that your chances of winning and losing are about the same, but the outcome of the game is not random.That is because human behavior is not random.There are patterns in how people make decisions."
+          "text": "People have been playing rock, paper, scissors for about 2, 000 years.It is played everywhere.Some cultures use different hand symbols, but the idea is the same.You and an opponent each “throw” one of three hand symbols.You win, lose, or tie (不分胜负).Many people think the game is all luck.It seems that your chances of winning and losing are about the same, but the outcome of the game is not random.That is because human behavior is not random.There are patterns in how people make decisions.",
+          "translation": "人们玩石头剪刀布已有约两千年，世界各地都有人玩。有些文化使用不同的手势，但游戏理念相同：你和对手各“出”三种手势之一，然后获胜、失败或平局。许多人认为这个游戏全凭运气，输赢机会似乎大致相同，但结果并非随机，因为人的行为不是随机的——人们做决定时存在模式。"
         },
         {
           "type": "p",
-          "text": "A study at Zhejiang University in China looked at how people play rock, paper, scissors. It followed 360 students in a competition.Researchers found two key patterns.Winners tended to repeat their winning hand symbols.Losers tended to go from rock to paper to scissors."
+          "text": "A study at Zhejiang University in China looked at how people play rock, paper, scissors. It followed 360 students in a competition.Researchers found two key patterns.Winners tended to repeat their winning hand symbols.Losers tended to go from rock to paper to scissors.",
+          "translation": "中国浙江大学的一项研究观察了人们玩石头剪刀布的方式，追踪了 360 名参加比赛的学生。研究者发现两个关键模式：赢家倾向于重复自己获胜的手势；输家则倾向于按石头→布→剪刀的顺序变化。"
         },
         {
           "type": "p",
-          "text": "Knowing the psychology of the game is not a sure ticket to winning, but it can help.Ken Watson is one of the world’s best rock, paper, scissors players.He says winning takes skill. “You have to size up your opponent.” Luck and chance play a part, but “you have to be prepared and have a strategy, ” he says, “Part of my strategy is being confident.”"
+          "text": "Knowing the psychology of the game is not a sure ticket to winning, but it can help.Ken Watson is one of the world’s best rock, paper, scissors players.He says winning takes skill. “You have to size up your opponent.” Luck and chance play a part, but “you have to be prepared and have a strategy, ” he says, “Part of my strategy is being confident.”",
+          "translation": "了解这个游戏的心理机制并不能保证获胜，但会有帮助。肯·沃森是世界顶尖的石头剪刀布玩家之一。他说获胜需要技巧：“你必须掂量你的对手。”运气和偶然确实起作用，但“你必须做好准备、有策略”，他说，“我策略的一部分就是保持自信。”"
         },
         {
           "type": "p",
-          "text": "According to Baldwin, “practice, practice, practice” is the key to success. “You can try practicing against yourself in front of a mirror, ” he says."
+          "text": "According to Baldwin, “practice, practice, practice” is the key to success. “You can try practicing against yourself in front of a mirror, ” he says.",
+          "translation": "鲍德温认为，“练习、练习、再练习”是成功的关键。他说：“你可以试着对着镜子和自己练。”"
         }
       ],
       "paragraphs": [
@@ -671,8 +726,9 @@
             "learn the sport on TV",
             "produce TV shows with his sisters"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第一段说这个游戏帮助他与三个姐姐“settle disagreements”，也就是在分歧时达成一致；不是学剪纸、也不是在电视上学会游戏。",
+          "evidence": "The game helped him settle disagreements with his three older sisters."
         },
         {
           "num": 2,
@@ -683,8 +739,9 @@
             "Figuring out his rival’s patterns.",
             "Making friends with his opponent."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "Baldwin 说成功的秘诀是观察对手动作或行为中的“patterns”（模式），即摸清对手的出拳规律；文中明确说这不只是运气。",
+          "evidence": "Look for patterns in either your opponent’s moves or behavior"
         },
         {
           "num": 3,
@@ -695,8 +752,9 @@
             "Different cultures use similar hand symbols to play the game.",
             "The decision-making patterns affect the outcome of the game."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第三段说游戏结果并非随机，因为人的决策行为存在模式；A 与“idea is the same”相反，B 与“about the same”不符，C 与“different hand symbols”相反。",
+          "evidence": "There are patterns in how people make decisions."
         },
         {
           "num": 4,
@@ -707,8 +765,9 @@
             "winners were likely to ignore their opponents completely",
             "winners were likely to repeat their winning hand symbols"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "浙江大学的研究发现两个关键模式：赢家倾向于重复自己获胜的手势，输家倾向于按石头→布→剪刀的顺序变化。D 与原文一致。",
+          "evidence": "Winners tended to repeat their winning hand symbols."
         },
         {
           "num": 5,
@@ -719,20 +778,21 @@
             "Your chance of winning wholly depends on luck.",
             "Your chance of winning relates to the size of your opponent."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "Ken Watson 说策略的一部分就是“being confident”，即自信能提高获胜机会；A 的 relaxed、C 的完全靠运气、D 的对手体型都不符合原意。",
+          "evidence": "Part of my strategy is being confident."
         }
       ],
       "wordCount": 332,
       "difficulty": "挑战",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "怀亚特·鲍德温从小就开始玩石头剪刀布。这个游戏帮他解决与三个姐姐之间的分歧。他说：“在学会石头剪刀布这项‘运动’之前，我从来没有机会决定我们看电视看什么。”",
+        "鲍德温是世界石头剪刀布协会主席。他参加过并主持过世界各地的比赛，曾创下 43 连胜。他成功的秘诀是什么？“观察对手出拳或行为中的模式。”他说。所有认真的石头剪刀布玩家都知道，这个游戏靠的不只是运气。",
+        "人们玩石头剪刀布已有约两千年，世界各地都有人玩。有些文化使用不同的手势，但游戏理念相同：你和对手各“出”三种手势之一，然后获胜、失败或平局。许多人认为这个游戏全凭运气，输赢机会似乎大致相同，但结果并非随机，因为人的行为不是随机的——人们做决定时存在模式。",
+        "中国浙江大学的一项研究观察了人们玩石头剪刀布的方式，追踪了 360 名参加比赛的学生。研究者发现两个关键模式：赢家倾向于重复自己获胜的手势；输家则倾向于按石头→布→剪刀的顺序变化。",
+        "了解这个游戏的心理机制并不能保证获胜，但会有帮助。肯·沃森是世界顶尖的石头剪刀布玩家之一。他说获胜需要技巧：“你必须掂量你的对手。”运气和偶然确实起作用，但“你必须做好准备、有策略”，他说，“我策略的一部分就是保持自信。”",
+        "鲍德温认为，“练习、练习、再练习”是成功的关键。他说：“你可以试着对着镜子和自己练。”"
       ]
     },
     {
@@ -741,20 +801,23 @@
       "catName": "科普类",
       "number": 8,
       "heading": "",
-      "title": "",
+      "title": "Faces, like fingerprints, are unique",
       "fallbackTitle": "Faces, like fingerprints, are unique",
       "blocks": [
         {
           "type": "p",
-          "text": "Faces, like fingerprints, are unique. Have you ever wondered how it is possible for us to recognize people? Even a skilled writer probably could not describe all the features that make one face different from another. Yet a very young child — or even an animal, such as a pigeon — can learn to recognize faces. We all take this ability for granted. We also tell people apart by how they behave. When we talk about someone’s personality, we mean the ways in which he or she acts, speaks, thinks and feels that make that individual different from others. Like the human face, human personality is very complex. But describing someone’s personality in words is somewhat easier than describing his face. If you were asked to describe what a “nice face” looked like, you probably would have a difficult time doing so. But if you were asked to describe a “nice person”, you might begin to think about someone who was kind, considerate, friendly, warm, and so forth."
+          "text": "Faces, like fingerprints, are unique. Have you ever wondered how it is possible for us to recognize people? Even a skilled writer probably could not describe all the features that make one face different from another. Yet a very young child — or even an animal, such as a pigeon — can learn to recognize faces. We all take this ability for granted. We also tell people apart by how they behave. When we talk about someone’s personality, we mean the ways in which he or she acts, speaks, thinks and feels that make that individual different from others. Like the human face, human personality is very complex. But describing someone’s personality in words is somewhat easier than describing his face. If you were asked to describe what a “nice face” looked like, you probably would have a difficult time doing so. But if you were asked to describe a “nice person”, you might begin to think about someone who was kind, considerate, friendly, warm, and so forth.",
+          "translation": "人脸像指纹一样独一无二。你是否想过，我们为什么能够认出别人？即使是一位技艺高超的作家，恐怕也无法描述出使每张脸彼此不同的全部特征。然而，一个很小的孩子——甚至鸽子这样的动物——都能学会认脸。我们都把这种能力视为理所当然。我们也通过行为方式来区分人。当我们谈论某人的“人格”时，指的是他或她行动、说话、思考和感受的方式，这些方式使这个人区别于他人。人的脸很复杂，人格同样复杂；但用语言描述一个人的人格，比描述他的脸要容易一些。如果让你描述一张“好看的脸”是什么样，你大概会很为难；但如果让你描述一个“好人”，你可能会想到善良、体贴、友好、温暖等等。"
         },
         {
           "type": "p",
-          "text": "There are many words to describe how a person thinks, feels and acts. Gordon, an American psychologist, found nearly 18, 000 English words characterizing differences in people’s behavior. And many of us use this information as a basis for describing, or typing his personality."
+          "text": "There are many words to describe how a person thinks, feels and acts. Gordon, an American psychologist, found nearly 18, 000 English words characterizing differences in people’s behavior. And many of us use this information as a basis for describing, or typing his personality.",
+          "translation": "有许多词可以描述一个人如何思考、感受和行动。美国心理学家戈登发现，英语中近 18,000 个词可以刻画人们行为上的差异。我们许多人就以这些信息为基础来描述或归类一个人的人格。"
         },
         {
           "type": "p",
-          "text": "Bookworms, conservatives (保守派), military (军人或军事的) types — people are described with such terms. People have always tried to “type” each other. Actors in early Greek drama wore masks to show the audience whether they played the villain’s or the hero’s role. In fact, the words “person” and “personality” come from the Latin persona, meaning “mask”. Today, most television and movie actors do not wear masks. But we can easily tell the “good guys” from the “bad guys” because the two types differ in appearance as well as in actions."
+          "text": "Bookworms, conservatives (保守派), military (军人或军事的) types — people are described with such terms. People have always tried to “type” each other. Actors in early Greek drama wore masks to show the audience whether they played the villain’s or the hero’s role. In fact, the words “person” and “personality” come from the Latin persona, meaning “mask”. Today, most television and movie actors do not wear masks. But we can easily tell the “good guys” from the “bad guys” because the two types differ in appearance as well as in actions.",
+          "translation": "书虫、保守派、军人型——人们用这类词相互描述。人总是试图给彼此“归类”。早期希腊戏剧中的演员戴面具，让观众看出他们演的是反派还是英雄。事实上，“person”和“personality”这两个词都来自拉丁语 persona，意为“面具”。如今大多数影视演员不再戴面具，但我们仍能轻易分辨“好人”和“坏人”，因为这两类人不仅行为不同，外表也不同。"
         }
       ],
       "paragraphs": [
@@ -772,8 +835,9 @@
             "people have difficulty in describing the features of fingerprints",
             "people differ from each other in facial features"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "文章开头说“Faces, like fingerprints, are unique”，用指纹作类比，是为了说明每个人的面部特征各不相同。",
+          "evidence": "Faces, like fingerprints, are unique."
         },
         {
           "num": 2,
@@ -784,8 +848,9 @@
             "telling good people from bad people",
             "recognizing human faces"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第一段举例说，连鸽子这样的动物也能学会辨认人脸，说明某些动物具有识别人脸的能力。",
+          "evidence": "even an animal, such as a pigeon — can learn to recognize faces"
         },
         {
           "num": 3,
@@ -796,8 +861,9 @@
             "Psychologists.",
             "The modern TV audience."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第二段提到美国心理学家 Gordon 找到了近 18,000 个描述行为差异的英语词汇，心理学家最可能擅长描述人格。",
+          "evidence": "Gordon, an American psychologist, found nearly 18, 000 English words"
         },
         {
           "num": 4,
@@ -808,8 +874,9 @@
             "people’s behavior can be easily described in words",
             "human faces have complex features"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "全文说明我们既能通过面部特征（physical characteristics）区分人，也能通过行为方式（behavioral characteristics）给人分类，因此 A 最全面。",
+          "evidence": "We also tell people apart by how they behave."
         },
         {
           "num": 5,
@@ -820,17 +887,18 @@
             "How to get to know people.",
             "How best to recognize people."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "文章从“人脸独特”谈到“人格复杂但可以用语言描述”，核心是解释为什么我们能够描述和区分人；不是讲如何识别人或人格的重要性。",
+          "evidence": ""
         }
       ],
       "wordCount": 294,
       "difficulty": "进阶",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "人脸像指纹一样独一无二。你是否想过，我们为什么能够认出别人？即使是一位技艺高超的作家，恐怕也无法描述出使每张脸彼此不同的全部特征。然而，一个很小的孩子——甚至鸽子这样的动物——都能学会认脸。我们都把这种能力视为理所当然。我们也通过行为方式来区分人。当我们谈论某人的“人格”时，指的是他或她行动、说话、思考和感受的方式，这些方式使这个人区别于他人。人的脸很复杂，人格同样复杂；但用语言描述一个人的人格，比描述他的脸要容易一些。如果让你描述一张“好看的脸”是什么样，你大概会很为难；但如果让你描述一个“好人”，你可能会想到善良、体贴、友好、温暖等等。",
+        "有许多词可以描述一个人如何思考、感受和行动。美国心理学家戈登发现，英语中近 18,000 个词可以刻画人们行为上的差异。我们许多人就以这些信息为基础来描述或归类一个人的人格。",
+        "书虫、保守派、军人型——人们用这类词相互描述。人总是试图给彼此“归类”。早期希腊戏剧中的演员戴面具，让观众看出他们演的是反派还是英雄。事实上，“person”和“personality”这两个词都来自拉丁语 persona，意为“面具”。如今大多数影视演员不再戴面具，但我们仍能轻易分辨“好人”和“坏人”，因为这两类人不仅行为不同，外表也不同。"
       ]
     },
     {
@@ -839,20 +907,23 @@
       "catName": "科普类",
       "number": 9,
       "heading": "",
-      "title": "",
+      "title": "Long ago men learned that the world of nature is built with mathematical exactness accordi",
       "fallbackTitle": "Long ago men learned that the world of nature is built with mathematical exactness accordi",
       "blocks": [
         {
           "type": "p",
-          "text": "Long ago men learned that the world of nature is built with mathematical exactness according to refined and powerful laws: every bee strokes its wings exactly 440 times a second to propel itself forty miles an hour; the eye of every fly has exactly 7000 lenses; every spider’s thread is composed of 300 single threads."
+          "text": "Long ago men learned that the world of nature is built with mathematical exactness according to refined and powerful laws: every bee strokes its wings exactly 440 times a second to propel itself forty miles an hour; the eye of every fly has exactly 7000 lenses; every spider’s thread is composed of 300 single threads.",
+          "translation": "很久以前，人们就发现自然界是按照精确而强大的法则、以数学般的精确性构建的：每只蜜蜂每秒正好振动翅膀 440 次，从而以每小时四十英里的速度前进；每只苍蝇的眼睛正好有 7000 个晶状体；每根蜘蛛丝由 300 根单丝组成。"
         },
         {
           "type": "p",
-          "text": "The progress of civilization itself can be measured by its range of mathematics. The early Egyptians knew enough of geometry to build the pyramids and the Greeks used trigonometry to measure the circumference of the earth two thousand years before Columbus sailed. European civilization combined geometry and trigonometry with the decimal system of the Arabs to produce the maps with which the Europeans explored the world. In a later century, mathematicians studied the pendulum (钟摆) of the newly invented clock and created the language of calculus to measure motion."
+          "text": "The progress of civilization itself can be measured by its range of mathematics. The early Egyptians knew enough of geometry to build the pyramids and the Greeks used trigonometry to measure the circumference of the earth two thousand years before Columbus sailed. European civilization combined geometry and trigonometry with the decimal system of the Arabs to produce the maps with which the Europeans explored the world. In a later century, mathematicians studied the pendulum (钟摆) of the newly invented clock and created the language of calculus to measure motion.",
+          "translation": "文明本身的进步可以用其数学的范围来衡量。早期埃及人掌握了几何学，足以建造金字塔；希腊人在哥伦布航行两千年前就用三角学测量地球的周长。欧洲文明把几何学、三角学与阿拉伯人的十进制结合起来，绘制出用于探索世界的地图。再往后，数学家研究新发明的钟摆，创造了描述运动的微积分语言。"
         },
         {
           "type": "p",
-          "text": "The yardstick of measurement today must cover everything from units tinier than atoms to distances of millions of light years. Speed and accuracy are vital. Man can never send a rocket to Mars unless he knows the exact distance to the planet, since the slightest error could mean missing it by 30, 000 miles. In navigating amid planets and stars, man must have the help of some kind of machine calculators for fast and absolutely accurate information."
+          "text": "The yardstick of measurement today must cover everything from units tinier than atoms to distances of millions of light years. Speed and accuracy are vital. Man can never send a rocket to Mars unless he knows the exact distance to the planet, since the slightest error could mean missing it by 30, 000 miles. In navigating amid planets and stars, man must have the help of some kind of machine calculators for fast and absolutely accurate information.",
+          "translation": "今天的测量尺度必须覆盖从比原子还小的单位到数百万光年的距离。速度和精确性至关重要。人类若不知道到火星的精确距离，就永远无法把火箭送上火星，因为极小的误差就可能意味着偏离目标三万英里。在行星与恒星之间航行，人类必须借助某种计算机器来获得快速而绝对准确的信息。"
         }
       ],
       "paragraphs": [
@@ -870,8 +941,9 @@
             "the creatures of nature",
             "the progress of civilization"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第一段用蜜蜂振翅、苍蝇复眼、蜘蛛丝等自然界生物的例子，说明自然法则的精确性，因此体现在“the creatures of nature”。",
+          "evidence": "every bee strokes its wings exactly 440 times a second"
         },
         {
           "num": 2,
@@ -882,8 +954,9 @@
             "By making assumptions.",
             "By giving examples."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第二段按时间顺序举了埃及人、希腊人、欧洲文明和后来的数学家等例子，说明文明进步与数学范围的关系，属于举例论证。",
+          "evidence": "The early Egyptians knew enough of geometry to build the pyramids"
         },
         {
           "num": 3,
@@ -894,8 +967,9 @@
             "Method.",
             "Process."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "yardstick 原意是“码尺”，此处引申为衡量事物的“标准、尺度”；第三段讲今天的测量标准要覆盖从原子到光年的范围。",
+          "evidence": "The yardstick of measurement today must cover everything"
         },
         {
           "num": 4,
@@ -906,8 +980,9 @@
             "Progress in civilization demands ever better mathematical tools.",
             "Technology plays an important role in information collection."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文章从古代几何、三角学到微积分、精密计算，说明文明越进步，对数学工具的要求越高；A 与古代人懂几何矛盾，B、D 不是主旨。",
+          "evidence": "The progress of civilization itself can be measured by its range of mathematics."
         },
         {
           "num": 5,
@@ -918,17 +993,18 @@
             "A science magazine.",
             "A math textbook."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文章以科普方式介绍自然界的数学规律和数学在文明、航天中的应用，最可能出自科学杂志。",
+          "evidence": ""
         }
       ],
       "wordCount": 215,
       "difficulty": "进阶",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "很久以前，人们就发现自然界是按照精确而强大的法则、以数学般的精确性构建的：每只蜜蜂每秒正好振动翅膀 440 次，从而以每小时四十英里的速度前进；每只苍蝇的眼睛正好有 7000 个晶状体；每根蜘蛛丝由 300 根单丝组成。",
+        "文明本身的进步可以用其数学的范围来衡量。早期埃及人掌握了几何学，足以建造金字塔；希腊人在哥伦布航行两千年前就用三角学测量地球的周长。欧洲文明把几何学、三角学与阿拉伯人的十进制结合起来，绘制出用于探索世界的地图。再往后，数学家研究新发明的钟摆，创造了描述运动的微积分语言。",
+        "今天的测量尺度必须覆盖从比原子还小的单位到数百万光年的距离。速度和精确性至关重要。人类若不知道到火星的精确距离，就永远无法把火箭送上火星，因为极小的误差就可能意味着偏离目标三万英里。在行星与恒星之间航行，人类必须借助某种计算机器来获得快速而绝对准确的信息。"
       ]
     },
     {
@@ -937,20 +1013,23 @@
       "catName": "科普类",
       "number": 10,
       "heading": "",
-      "title": "",
+      "title": "As any homemaker who has tried to keep order at the dinner table knows, there is far more ",
       "fallbackTitle": "As any homemaker who has tried to keep order at the dinner table knows, there is far more ",
       "blocks": [
         {
           "type": "p",
-          "text": "As any homemaker who has tried to keep order at the dinner table knows, there is far more to a family meal than food. Sociologist Michael Lewis has been studying 50 families to find out just how much more."
+          "text": "As any homemaker who has tried to keep order at the dinner table knows, there is far more to a family meal than food. Sociologist Michael Lewis has been studying 50 families to find out just how much more.",
+          "translation": "任何试图维持餐桌秩序的家庭主妇都知道，一顿家庭晚餐远不止食物那么简单。社会学家迈克尔·刘易斯研究了 50 个家庭，想弄清楚它究竟还包含什么。"
         },
         {
           "type": "p",
-          "text": "Lewis and his co-workers carried out their study by videotaping (录像) the families while they ate ordinary meals in their own homes. They found that parents with small families talk actively with each other and their children. But as the number of children gets larger, conversation gives way to the parents’ efforts to control the loud noise they make. That can have an important effect on the children. “In general the more question-asking the parents do, the higher the children’s IQ scores, ” Lewis says, “And the more children there are, the less question-asking there is.”"
+          "text": "Lewis and his co-workers carried out their study by videotaping (录像) the families while they ate ordinary meals in their own homes. They found that parents with small families talk actively with each other and their children. But as the number of children gets larger, conversation gives way to the parents’ efforts to control the loud noise they make. That can have an important effect on the children. “In general the more question-asking the parents do, the higher the children’s IQ scores, ” Lewis says, “And the more children there are, the less question-asking there is.”",
+          "translation": "刘易斯和同事在家庭成员于家中吃普通晚餐时进行录像。他们发现，孩子少的家庭中，父母会积极与彼此和孩子交谈。但随着孩子数量增加，交谈会让位于父母控制孩子大声喧闹的努力。这会对孩子产生重要影响。刘易斯说：“一般来说，父母提问越多，孩子的智商分数越高；而孩子越多，提问就越少。”"
         },
         {
           "type": "p",
-          "text": "The study also provides an explanation for why middle children often seem to have a harder time in life than their siblings (兄弟姐妹). Lewis found that in families with three or four children, dinner conversation is likely to center on the oldest child, who has the most to talk about, and the youngest, who needs the most attention. “Middle children are invisible, ” says Lewis. “When you see someone get up from the table and walk around during dinner, chances are it’s the middle child.” There is, however, one thing that stops all conversation and prevents anyone from having attention: “When the TV is on”, Lewis says, “dinner is a non-event.”"
+          "text": "The study also provides an explanation for why middle children often seem to have a harder time in life than their siblings (兄弟姐妹). Lewis found that in families with three or four children, dinner conversation is likely to center on the oldest child, who has the most to talk about, and the youngest, who needs the most attention. “Middle children are invisible, ” says Lewis. “When you see someone get up from the table and walk around during dinner, chances are it’s the middle child.” There is, however, one thing that stops all conversation and prevents anyone from having attention: “When the TV is on”, Lewis says, “dinner is a non-event.”",
+          "translation": "这项研究也解释了为什么中间的孩子似乎比兄弟姐妹在生活中更艰难。刘易斯发现，在三四个孩子的家庭里，晚餐谈话往往围绕最年长的孩子（最有话可说）和最年幼的孩子（最需要关注）展开。刘易斯说：“中间的孩子是隐形的。如果你看到有人在吃饭时起身在桌边走动，那多半是中间的孩子。”不过，有一件事能终止所有谈话、让任何人都得不到关注：“电视一开，”刘易斯说，“晚餐就形同虚设。”"
         }
       ],
       "paragraphs": [
@@ -968,8 +1047,9 @@
             "report on the findings of a study",
             "give information about family problems"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "全文介绍社会学家 Michael Lewis 对 50 个家庭晚餐录像的研究发现，属于研究报告；不是教父母维持秩序或泛泛谈家庭问题。",
+          "evidence": "Sociologist Michael Lewis has been studying 50 families"
         },
         {
           "num": 2,
@@ -980,8 +1060,9 @@
             "they have to pay more attention to younger children",
             "they are tired out having prepared food for the whole family"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第二段说孩子越多，谈话就越会让位于父母“control the loud noise they make”，即忙于维持餐桌秩序，因此提问更少。",
+          "evidence": "conversation gives way to the parents’ efforts to control the loud noise"
         },
         {
           "num": 3,
@@ -992,8 +1073,9 @@
             "are often kept away from the dinner table",
             "find it hard to keep up with other children"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第三段说三个或四个孩子的家庭里，晚餐谈话常围绕最年长和最年幼的孩子，中间的孩子被忽视，因此“invisible”指得到最少关注。",
+          "evidence": "Middle children are invisible"
         },
         {
           "num": 4,
@@ -1004,8 +1086,9 @@
             "why children in small families seem to be quieter",
             "why middle children seem to have more difficulties in life"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第三段开头明确说，这项研究解释了“why middle children often seem to have a harder time in life”；D 与原文对应。",
+          "evidence": "provides an explanation for why middle children often seem to have a harder time"
         },
         {
           "num": 5,
@@ -1016,17 +1099,18 @@
             "Parents should talk to each of their children frequently.",
             "Elder children should help the younger ones at dinner."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "研究显示父母提问越多，孩子智商分数越高，而孩子多时提问变少；因此作者会赞同父母应多与每个孩子交流。A 未提及，B 与“TV on, dinner is a non-event”相反，D 无依据。",
+          "evidence": "the more question-asking the parents do, the higher the children’s IQ scores"
         }
       ],
       "wordCount": 241,
       "difficulty": "进阶",
       "file": "科普类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "任何试图维持餐桌秩序的家庭主妇都知道，一顿家庭晚餐远不止食物那么简单。社会学家迈克尔·刘易斯研究了 50 个家庭，想弄清楚它究竟还包含什么。",
+        "刘易斯和同事在家庭成员于家中吃普通晚餐时进行录像。他们发现，孩子少的家庭中，父母会积极与彼此和孩子交谈。但随着孩子数量增加，交谈会让位于父母控制孩子大声喧闹的努力。这会对孩子产生重要影响。刘易斯说：“一般来说，父母提问越多，孩子的智商分数越高；而孩子越多，提问就越少。”",
+        "这项研究也解释了为什么中间的孩子似乎比兄弟姐妹在生活中更艰难。刘易斯发现，在三四个孩子的家庭里，晚餐谈话往往围绕最年长的孩子（最有话可说）和最年幼的孩子（最需要关注）展开。刘易斯说：“中间的孩子是隐形的。如果你看到有人在吃饭时起身在桌边走动，那多半是中间的孩子。”不过，有一件事能终止所有谈话、让任何人都得不到关注：“电视一开，”刘易斯说，“晚餐就形同虚设。”"
       ]
     },
     {
@@ -1035,20 +1119,23 @@
       "catName": "经历记叙类",
       "number": 1,
       "heading": "",
-      "title": "",
+      "title": "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) conf",
       "fallbackTitle": "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) conf",
       "blocks": [
         {
           "type": "p",
-          "text": "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) confidence and self-possession for a number of years before I discovered that he could not read or write. His various methods of trick, which were also skills of self-protection, were so skillful and so desperate (绝望) that neither I nor any of his other adult friends were aware of his entire helplessness in face of written words until we went to dinner one night at a local restaurant — and suddenly discovered that he could not read."
+          "text": "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) confidence and self-possession for a number of years before I discovered that he could not read or write. His various methods of trick, which were also skills of self-protection, were so skillful and so desperate (绝望) that neither I nor any of his other adult friends were aware of his entire helplessness in face of written words until we went to dinner one night at a local restaurant — and suddenly discovered that he could not read.",
+          "translation": "我曾认识一个十九岁的年轻人，多年来一直表现得极其自信、沉着，直到后来我发现他既不识字也不会写。他用各种花招掩饰自己，这些花招同时也是自我保护的手段，手法娴熟又带着绝望，以至于我和他其他成年朋友都没有察觉他在文字面前完全无助，直到有一天晚上我们去当地一家餐馆吃饭，才突然发现他不识字。"
         },
         {
           "type": "p",
-          "text": "Even here, it was not the first time we went out to eat, but something like the second or third, that Peter’s desperation shocked me. The first time, he was clever enough to cover the truth. He studied the menu for a moment, then looked up to the waitress and asked her if he could have \"just a coke and a hamburger\". He told me later that he had done the same thing many times before and that he had learned to act as if he were examining the menu: \"Then I ask for a coke and a hamburger... Sometimes they give me a hamburger on a plate with salad and potatoes... Then I ask them for a roll and make my own hamburger.\""
+          "text": "Even here, it was not the first time we went out to eat, but something like the second or third, that Peter’s desperation shocked me. The first time, he was clever enough to cover the truth. He studied the menu for a moment, then looked up to the waitress and asked her if he could have \"just a coke and a hamburger\". He told me later that he had done the same thing many times before and that he had learned to act as if he were examining the menu: \"Then I ask for a coke and a hamburger... Sometimes they give me a hamburger on a plate with salad and potatoes... Then I ask them for a roll and make my own hamburger.\"",
+          "translation": "即使在那时，那也不是我们第一次出去吃饭，大概是第二次或第三次，彼得的绝望才让我震惊。第一次他机灵地掩饰了真相：他盯着菜单看了一会儿，然后抬头问女服务员能不能只给他“一杯可乐和一个汉堡”。后来他告诉我，他以前多次这样做，已经学会装出研究菜单的样子：“然后我要一杯可乐和一个汉堡……有时他们给我一个放在盘子里的汉堡，配沙拉和土豆……然后我再要一个小圆面包，自己做一个汉堡。”"
         },
         {
           "type": "p",
-          "text": "As we began to go out more frequently, Peter would ask to go to Howard Johnson’s. I soon discovered the reason for his choice: The photographs, attached in cellophane (玻璃纸) containers to each of the standard items on the menu, could help him not to struggle with the shape of words at all. Howard Johnson’s, whether intentionally or not, had provided the perfect escape for the endangered pride of an adult who was illiterate (文盲)."
+          "text": "As we began to go out more frequently, Peter would ask to go to Howard Johnson’s. I soon discovered the reason for his choice: The photographs, attached in cellophane (玻璃纸) containers to each of the standard items on the menu, could help him not to struggle with the shape of words at all. Howard Johnson’s, whether intentionally or not, had provided the perfect escape for the endangered pride of an adult who was illiterate (文盲).",
+          "translation": "随着我们外出越来越频繁，彼得总要求去霍华德·约翰逊餐厅。我很快发现了他选择那里的原因：菜单上每道标准菜都附有装在玻璃纸套里的照片，这让他完全不必费力辨认单词的形状。不管有意与否，霍华德·约翰逊餐厅为一个文盲成年人岌岌可危的自尊提供了完美的避难所。"
         }
       ],
       "paragraphs": [
@@ -1066,8 +1153,9 @@
             "be desperate for help from other people",
             "protect himself by playing a musical instrument"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第二段说 Peter 会“studied the menu for a moment”，然后抬头点可乐和汉堡；他后来承认自己只是“act as if he were examining the menu”，即假装在看菜单。",
+          "evidence": "he had learned to act as if he were examining the menu"
         },
         {
           "num": 2,
@@ -1078,8 +1166,9 @@
             "he had dinner with his friends at a certain local restaurant for the second or third time",
             "he was not careful enough to be aware of his entire helplessness in face of written words"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第一段说大家直到某天在当地餐馆吃饭才发现他不识字；第二段补充说这不是第一次，而是第二或第三次外出吃饭时，他的绝望才震惊了作者。",
+          "evidence": "it was not the first time we went out to eat, but something like the second or third"
         },
         {
           "num": 3,
@@ -1090,8 +1179,9 @@
             "A hamburger made by himself.",
             "A coke and a hamburger."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "Peter 每次点餐都先要“just a coke and a hamburger”，有时再要一个小面包自己动手做汉堡；他最常点的就是可乐和汉堡。",
+          "evidence": "he could have \"just a coke and a hamburger\""
         },
         {
           "num": 4,
@@ -1102,8 +1192,9 @@
             "self-discipline",
             "self-devotion"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "self-possession 与前面的 outward confidence 并列，表示“沉着、自信”，因此最接近 self-confidence。",
+          "evidence": "absolute outward confidence and self-possession"
         },
         {
           "num": 5,
@@ -1114,17 +1205,18 @@
             "The photographs attached to the main items on the menu helped conceal his illiteracy.",
             "He would feel at ease because eaters at Howard Johnson’s were all adult non-readers."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第三段说 Howard Johnson’s 菜单上每道标准菜都附有照片，Peter 不需要辨认单词，照片帮助他掩饰自己不识字；A 的 anything dangerous 曲解了原文。",
+          "evidence": "The photographs ... could help him not to struggle with the shape of words at all."
         }
       ],
       "wordCount": 287,
       "difficulty": "进阶",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "我曾认识一个十九岁的年轻人，多年来一直表现得极其自信、沉着，直到后来我发现他既不识字也不会写。他用各种花招掩饰自己，这些花招同时也是自我保护的手段，手法娴熟又带着绝望，以至于我和他其他成年朋友都没有察觉他在文字面前完全无助，直到有一天晚上我们去当地一家餐馆吃饭，才突然发现他不识字。",
+        "即使在那时，那也不是我们第一次出去吃饭，大概是第二次或第三次，彼得的绝望才让我震惊。第一次他机灵地掩饰了真相：他盯着菜单看了一会儿，然后抬头问女服务员能不能只给他“一杯可乐和一个汉堡”。后来他告诉我，他以前多次这样做，已经学会装出研究菜单的样子：“然后我要一杯可乐和一个汉堡……有时他们给我一个放在盘子里的汉堡，配沙拉和土豆……然后我再要一个小圆面包，自己做一个汉堡。”",
+        "随着我们外出越来越频繁，彼得总要求去霍华德·约翰逊餐厅。我很快发现了他选择那里的原因：菜单上每道标准菜都附有装在玻璃纸套里的照片，这让他完全不必费力辨认单词的形状。不管有意与否，霍华德·约翰逊餐厅为一个文盲成年人岌岌可危的自尊提供了完美的避难所。"
       ]
     },
     {
@@ -1133,24 +1225,28 @@
       "catName": "经历记叙类",
       "number": 2,
       "heading": "",
-      "title": "",
+      "title": "College is a new and different experience for me",
       "fallbackTitle": "College is a new and different experience for me",
       "blocks": [
         {
           "type": "p",
-          "text": "College is a new and different experience for me. I’m away from home, so I have many things to adjust to, such as being on my own and meeting many different types of people. There are a lot of things that I like about college that I would like to describe for you."
+          "text": "College is a new and different experience for me. I’m away from home, so I have many things to adjust to, such as being on my own and meeting many different types of people. There are a lot of things that I like about college that I would like to describe for you.",
+          "translation": "大学对我来说是一种全新而不同的经历。我离开家，有很多东西要适应，比如独立生活、认识各种不同类型的人。大学里有很多我喜欢的地方，我想向你描述。"
         },
         {
           "type": "p",
-          "text": "First of all, living at college gives me a sense of responsibility and of being on my own. My parents aren’t around to say, \"No, you’re not going out tonight,\" or \"Did you finish your homework?\" Everything I do has to be my decision, and that makes me responsible for my own life. During the second week I was at college, I had to go out and look for a bank where I could open an account. And when I got to the bank, I had to decide whether to have a checking or savings account and whether or not to get a credit card. Decisions! Decisions!"
+          "text": "First of all, living at college gives me a sense of responsibility and of being on my own. My parents aren’t around to say, \"No, you’re not going out tonight,\" or \"Did you finish your homework?\" Everything I do has to be my decision, and that makes me responsible for my own life. During the second week I was at college, I had to go out and look for a bank where I could open an account. And when I got to the bank, I had to decide whether to have a checking or savings account and whether or not to get a credit card. Decisions! Decisions!",
+          "translation": "首先，住在大学里让我有一种责任感和独立感。父母不在身边，不会说“不行，你今晚不许出去”或“作业写完了吗”。我做的一切都必须自己决定，这让我对自己的人生负责。到大学的第二周，我得出去找一家银行开户。到了银行，我还得决定开活期账户还是储蓄账户，要不要办信用卡。决定，决定，全是决定！"
         },
         {
           "type": "p",
-          "text": "Friendly people is another thing I like about college. On the first day I came to Marymount University here in Virginia from New York, I was a bit confused about where I was going. My mother and I drove in. We did not know the building we were supposed to go to, but the guard was very nice. With a smile, he told us what building we were looking for and where we could park our car. My room was on the first floor of New Gerard, and I knew I had to go through some glass doors, but my mother and I didn’t know which ones. Some students saw me and asked, \"Are you a new student?\" When they found out I was looking for New Gerard, one said, \"Oh, just follow us; that’s where we’re going.\" Even now I feel comfortable in the dorm because there are friendly people around to talk with."
+          "text": "Friendly people is another thing I like about college. On the first day I came to Marymount University here in Virginia from New York, I was a bit confused about where I was going. My mother and I drove in. We did not know the building we were supposed to go to, but the guard was very nice. With a smile, he told us what building we were looking for and where we could park our car. My room was on the first floor of New Gerard, and I knew I had to go through some glass doors, but my mother and I didn’t know which ones. Some students saw me and asked, \"Are you a new student?\" When they found out I was looking for New Gerard, one said, \"Oh, just follow us; that’s where we’re going.\" Even now I feel comfortable in the dorm because there are friendly people around to talk with.",
+          "translation": "友善的人是大学里另一件让我喜欢的事。第一天我从纽约来到弗吉尼亚的玛丽蒙特大学时，有点搞不清该往哪走。我和妈妈开车来的，不知道要去哪栋楼，但保安非常好，笑着告诉我们该找哪栋楼、车停在哪里。我的房间在新杰拉德楼一层，我知道要穿过几扇玻璃门，但我和妈妈不知道是哪几扇。一些学生看到我，问：“你是新生吗？”当他们得知我在找新杰拉德楼时，一个学生说：“哦，跟着我们走吧，我们也去那儿。”直到现在，我在宿舍里仍觉得很自在，因为周围有友善的人可以聊天。"
         },
         {
           "type": "p",
-          "text": "I do like a lot of things about college, but that doesn’t mean I don’t think about things at home. Although I like college, I can still get homesick. New York is a very good place, too! And sometimes I miss it!"
+          "text": "I do like a lot of things about college, but that doesn’t mean I don’t think about things at home. Although I like college, I can still get homesick. New York is a very good place, too! And sometimes I miss it!",
+          "translation": "我确实喜欢大学的许多方面，但这并不意味着我不想家里的事。虽然我喜欢大学，我仍然会想家。纽约也是个很好的地方！有时我会想念它！"
         }
       ],
       "paragraphs": [
@@ -1169,8 +1265,9 @@
             "a foreign reporter",
             "a foreign visitor"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "作者说自己离开家上大学，要适应独立生活、认识新朋友，还提到“Are you a new student?”，可见作者是一名大学新生。",
+          "evidence": "College is a new and different experience for me."
         },
         {
           "num": 2,
@@ -1181,8 +1278,9 @@
             "responsible for the school",
             "responsible for myself"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第二段说父母不在身边，一切都要自己做决定，“that makes me responsible for my own life”，即对自己负责。",
+          "evidence": "that makes me responsible for my own life"
         },
         {
           "num": 3,
@@ -1193,8 +1291,9 @@
             "his studies as a first year student",
             "the friendly people"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第三段开头明确说“Friendly people is another thing I like about college”，作者喜欢的是友善的人。",
+          "evidence": "Friendly people is another thing I like about college."
         },
         {
           "num": 4,
@@ -1205,8 +1304,9 @@
             "It’s a dorm’s name.",
             "It’s a school’s name."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文中说“My room was on the first floor of New Gerard”，New Gerard 是宿舍楼的名字。",
+          "evidence": "My room was on the first floor of New Gerard"
         },
         {
           "num": 5,
@@ -1217,18 +1317,19 @@
             "The writer drove to Marymount University with his mother.",
             "The writer is not homesick."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "最后一段作者明确说“I can still get homesick”，因此“作者不想家”是错误的；A、B、C 都与原文相符。",
+          "evidence": "Although I like college, I can still get homesick."
         }
       ],
       "wordCount": 357,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        ""
+        "大学对我来说是一种全新而不同的经历。我离开家，有很多东西要适应，比如独立生活、认识各种不同类型的人。大学里有很多我喜欢的地方，我想向你描述。",
+        "首先，住在大学里让我有一种责任感和独立感。父母不在身边，不会说“不行，你今晚不许出去”或“作业写完了吗”。我做的一切都必须自己决定，这让我对自己的人生负责。到大学的第二周，我得出去找一家银行开户。到了银行，我还得决定开活期账户还是储蓄账户，要不要办信用卡。决定，决定，全是决定！",
+        "友善的人是大学里另一件让我喜欢的事。第一天我从纽约来到弗吉尼亚的玛丽蒙特大学时，有点搞不清该往哪走。我和妈妈开车来的，不知道要去哪栋楼，但保安非常好，笑着告诉我们该找哪栋楼、车停在哪里。我的房间在新杰拉德楼一层，我知道要穿过几扇玻璃门，但我和妈妈不知道是哪几扇。一些学生看到我，问：“你是新生吗？”当他们得知我在找新杰拉德楼时，一个学生说：“哦，跟着我们走吧，我们也去那儿。”直到现在，我在宿舍里仍觉得很自在，因为周围有友善的人可以聊天。",
+        "我确实喜欢大学的许多方面，但这并不意味着我不想家里的事。虽然我喜欢大学，我仍然会想家。纽约也是个很好的地方！有时我会想念它！"
       ]
     },
     {
@@ -1237,16 +1338,18 @@
       "catName": "经历记叙类",
       "number": 3,
       "heading": "",
-      "title": "",
+      "title": "When I was studying English at a training center in Washington D.C",
       "fallbackTitle": "When I was studying English at a training center in Washington D.C",
       "blocks": [
         {
           "type": "p",
-          "text": "When I was studying English at a training center in Washington D.C. in 1998, I shared a house with two young Americans, Jim and Steve. Jim was studying French and Steve was studying Chinese, both at the Foreign Service Institute. We shared many things in common, but we also thought and acted quite differently. Steve was interested in speaking Chinese. He always tried every opportunity to talk with me with his very English-like pronunciation. I was often touched with his diligence. However, I wanted to practice English with him, too. So we often spoke at the same time in the other’s mother tongue. Jim was fresh from college and the youngest of the three. He was going out all the time. The only time we met was at breakfast. There was a small round table in our kitchen, where we sat around to enjoy our food. Steve had Chinese fast food such as dumplings or noodles, and I ate bread and boiled eggs. But Jim often just drank a cup of tea because he had nothing in his fridge. He was too busy dating pretty French girls to do any shopping. I often offered him some of my food. But Steve told me in his poor Chinese that I didn’t need to do that. He said that it was Jim’s own fault and that it served him right. Although he was learning Chinese, he still held his American sense of value."
+          "text": "When I was studying English at a training center in Washington D.C. in 1998, I shared a house with two young Americans, Jim and Steve. Jim was studying French and Steve was studying Chinese, both at the Foreign Service Institute. We shared many things in common, but we also thought and acted quite differently. Steve was interested in speaking Chinese. He always tried every opportunity to talk with me with his very English-like pronunciation. I was often touched with his diligence. However, I wanted to practice English with him, too. So we often spoke at the same time in the other’s mother tongue. Jim was fresh from college and the youngest of the three. He was going out all the time. The only time we met was at breakfast. There was a small round table in our kitchen, where we sat around to enjoy our food. Steve had Chinese fast food such as dumplings or noodles, and I ate bread and boiled eggs. But Jim often just drank a cup of tea because he had nothing in his fridge. He was too busy dating pretty French girls to do any shopping. I often offered him some of my food. But Steve told me in his poor Chinese that I didn’t need to do that. He said that it was Jim’s own fault and that it served him right. Although he was learning Chinese, he still held his American sense of value.",
+          "translation": "1998 年，我在华盛顿特区的一个培训中心学英语时，和两个美国年轻人吉姆和史蒂夫合住一栋房子。吉姆学法语，史蒂夫学中文，都在外交学院。我们有许多共同点，但想法和行事方式也很不同。史蒂夫对说中文很感兴趣，总是抓住每个机会用他那带着浓重英语腔的发音和我说话。我常被他的勤奋感动。不过，我也想和他练英语，所以我们经常同时用对方的母语交谈。吉姆刚大学毕业，是三人中最年轻的。他总在外面，我们唯一能见面的时候是早餐。厨房里有一张小圆桌，我们围坐着吃东西。史蒂夫吃饺子、面条等中式快餐，我吃面包和煮鸡蛋，而吉姆常常只喝一杯茶，因为冰箱里什么都没有。他忙于和漂亮的法国女孩约会，根本没时间购物。我常分给他一些食物，但史蒂夫用蹩脚的中文告诉我不用这样做。他说那是吉姆自己的错，活该。尽管他在学中文，他仍持有美国人的价值观。"
         },
         {
           "type": "p",
-          "text": "Two years later, I returned to China. The three of us still keep in touch. Jim now works in a travel agency in Paris. He got married to one of the pretty girls. He wrote to tell us that now he can enjoy a delicious breakfast with his beautiful wife every morning in their comfortable living room. Steve wants to work in China. And I’m helping him with this. I have introduced him to the dean of the Overseas Section of our university. He is very interested in Steve. He wants to know if Steve can work here teaching the overseas students Chinese. I have sent the message to Steve. I’m sure he’d be very happy to accept the job. However, I hope he could try harder to improve himself. Otherwise, all the overseas students would speak with his terrible pronunciation!"
+          "text": "Two years later, I returned to China. The three of us still keep in touch. Jim now works in a travel agency in Paris. He got married to one of the pretty girls. He wrote to tell us that now he can enjoy a delicious breakfast with his beautiful wife every morning in their comfortable living room. Steve wants to work in China. And I’m helping him with this. I have introduced him to the dean of the Overseas Section of our university. He is very interested in Steve. He wants to know if Steve can work here teaching the overseas students Chinese. I have sent the message to Steve. I’m sure he’d be very happy to accept the job. However, I hope he could try harder to improve himself. Otherwise, all the overseas students would speak with his terrible pronunciation!",
+          "translation": "两年后我回到中国，我们三人仍保持联系。吉姆现在在巴黎一家旅行社工作，娶了其中一个漂亮女孩。他写信告诉我们，现在他每天早上都能和美丽的妻子在舒适的客厅里享用美味的早餐。史蒂夫想来中国工作，我正在帮他。我把他介绍给我们大学海外部的主任，主任对史蒂夫很感兴趣，想知道他能否来这里教留学生中文。我已把消息转给史蒂夫，相信他会很乐意接受这份工作。不过，我希望他能更努力地提升自己，否则所有留学生都会学成他那种糟糕的发音！"
         }
       ],
       "paragraphs": [
@@ -1263,8 +1366,9 @@
             "The author didn’t enjoy talking with Steve.",
             "Their living condition was rather poor."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "作者学英语，Jim 学法语，Steve 学中文，三人都在学习语言，可视为语言专业学生；B 与“thought and acted quite differently”相反，C 与作者常和 Steve 交流不符，D 无依据。",
+          "evidence": "Jim was studying French and Steve was studying Chinese"
         },
         {
           "num": 2,
@@ -1275,8 +1379,9 @@
             "Steve enjoyed shopping more than Jim.",
             "Steve’s Chinese accent was quite pure."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "作者说 Steve 抓住每个机会说中文，自己常被他的“diligence”（勤奋）感动，因此认为 Steve 很用功；他的中文发音并不纯正，文中还调侃他的口音。",
+          "evidence": "I was often touched with his diligence."
         },
         {
           "num": 3,
@@ -1287,8 +1392,9 @@
             "He learned French in order to date Paris girls.",
             "He liked doing housework."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "第一段说 Jim“too busy dating pretty French girls to do any shopping”，即约会占用了大量时间；他并没有为了约会才学法语，也不是爱做家务。",
+          "evidence": "He was too busy dating pretty French girls to do any shopping."
         },
         {
           "num": 4,
@@ -1299,8 +1405,9 @@
             "Americans and Chinese differ in their sense of value.",
             "Steve wanted Jim to do his own shopping."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "Steve 认为 Jim 不买东西是“his own fault”，不应由作者帮忙，作者由此感叹 Steve 仍持有美国人的价值观，说明中美价值观存在差异。",
+          "evidence": "he still held his American sense of value"
         },
         {
           "num": 5,
@@ -1311,16 +1418,17 @@
             "the author works for overseas students",
             "the three friends still keep in touch"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "最后一段开头说“The three of us still keep in touch”，三人仍保持联系；Jim 是否是好丈夫、Steve 是否喜欢教书都无法确定，作者是在大学工作而非专门为留学生工作。",
+          "evidence": "The three of us still keep in touch."
         }
       ],
       "wordCount": 382,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        ""
+        "1998 年，我在华盛顿特区的一个培训中心学英语时，和两个美国年轻人吉姆和史蒂夫合住一栋房子。吉姆学法语，史蒂夫学中文，都在外交学院。我们有许多共同点，但想法和行事方式也很不同。史蒂夫对说中文很感兴趣，总是抓住每个机会用他那带着浓重英语腔的发音和我说话。我常被他的勤奋感动。不过，我也想和他练英语，所以我们经常同时用对方的母语交谈。吉姆刚大学毕业，是三人中最年轻的。他总在外面，我们唯一能见面的时候是早餐。厨房里有一张小圆桌，我们围坐着吃东西。史蒂夫吃饺子、面条等中式快餐，我吃面包和煮鸡蛋，而吉姆常常只喝一杯茶，因为冰箱里什么都没有。他忙于和漂亮的法国女孩约会，根本没时间购物。我常分给他一些食物，但史蒂夫用蹩脚的中文告诉我不用这样做。他说那是吉姆自己的错，活该。尽管他在学中文，他仍持有美国人的价值观。",
+        "两年后我回到中国，我们三人仍保持联系。吉姆现在在巴黎一家旅行社工作，娶了其中一个漂亮女孩。他写信告诉我们，现在他每天早上都能和美丽的妻子在舒适的客厅里享用美味的早餐。史蒂夫想来中国工作，我正在帮他。我把他介绍给我们大学海外部的主任，主任对史蒂夫很感兴趣，想知道他能否来这里教留学生中文。我已把消息转给史蒂夫，相信他会很乐意接受这份工作。不过，我希望他能更努力地提升自己，否则所有留学生都会学成他那种糟糕的发音！"
       ]
     },
     {
@@ -1329,44 +1437,53 @@
       "catName": "经历记叙类",
       "number": 4,
       "heading": "",
-      "title": "",
+      "title": "I saved the grain carefully and finally had enough to plant",
       "fallbackTitle": "I saved the grain carefully and finally had enough to plant",
       "blocks": [
         {
           "type": "p",
-          "text": "I saved the grain carefully and finally had enough to plant. I built a wall around my garden to keep the wild goats away."
+          "text": "I saved the grain carefully and finally had enough to plant. I built a wall around my garden to keep the wild goats away.",
+          "translation": "我小心地保存粮食，终于攒够了播种的量。我在园子周围筑起一道墙，防止野山羊进来。"
         },
         {
           "type": "p",
-          "text": "Then when my crop bore its fruit, the birds discovered it. The birds were not afraid of my dog at all. I shot them but as soon as I walked away, they returned. At last, I killed some birds and hung them among the crop, hoping they would serve as the scarecrows, which turned out to be successful. By harvest time, I had nearly two bushels of rice and two and a half bushels of wheat."
+          "text": "Then when my crop bore its fruit, the birds discovered it. The birds were not afraid of my dog at all. I shot them but as soon as I walked away, they returned. At last, I killed some birds and hung them among the crop, hoping they would serve as the scarecrows, which turned out to be successful. By harvest time, I had nearly two bushels of rice and two and a half bushels of wheat.",
+          "translation": "后来庄稼结果时，鸟群发现了它。鸟一点也不怕我的狗。我开枪打它们，但我一走开它们就回来。最后我打死一些鸟，挂在庄稼中间，希望它们能当稻草人，结果很成功。到收获时，我收了近两蒲式耳稻谷和两蒲式耳半小麦。"
         },
         {
           "type": "p",
-          "text": "With my new grain to store, I found a new problem. The fine grain ran through my baskets. It took me nearly two months to form and dry two ugly pots — one for rice and one for wheat."
+          "text": "With my new grain to store, I found a new problem. The fine grain ran through my baskets. It took me nearly two months to form and dry two ugly pots — one for rice and one for wheat.",
+          "translation": "有了新粮食要储存，我又遇到新问题：细小的谷粒会从篮子里漏出去。我花了近两个月，做成并晾干两个难看的陶罐——一个装稻谷，一个装小麦。"
         },
         {
           "type": "p",
-          "text": "Next I formed a clay oven and made some other tools from hard wood and cloth to bake bread. I made and baked bread in my oven. I spent the third year on the island in farming and baking."
+          "text": "Next I formed a clay oven and made some other tools from hard wood and cloth to bake bread. I made and baked bread in my oven. I spent the third year on the island in farming and baking.",
+          "translation": "接着我做了黏土烤炉，又用硬木和布做了些工具来烤面包。我在自己的烤炉里做面包、烤面包。在岛上的第三年，我用来种地和烤面包。"
         },
         {
           "type": "p",
-          "text": "Soon after that, I began to think of my days sailing in a tidy boat with Xury. I wished to have a boat and explore the island by sea."
+          "text": "Soon after that, I began to think of my days sailing in a tidy boat with Xury. I wished to have a boat and explore the island by sea.",
+          "translation": "不久之后，我开始想起和 Xury 一起乘小船航行的日子。我希望有一条船，从海上探索这座岛。"
         },
         {
           "type": "p",
-          "text": "I tried to turn over the ship’s boat that I had seen washed up, but failed. I was still determined to have a boat. So I chose a strong tree and spent weeks cutting it down. Then it took me months to turn it from tree to boat."
+          "text": "I tried to turn over the ship’s boat that I had seen washed up, but failed. I was still determined to have a boat. So I chose a strong tree and spent weeks cutting it down. Then it took me months to turn it from tree to boat.",
+          "translation": "我试着把冲到岸上的那条大船翻过来，但失败了。我仍决心要有一条船，于是选了一棵粗壮的树，花了几周把它砍倒，又花了几个月把它从一棵树变成一条船。"
         },
         {
           "type": "p",
-          "text": "When it was time to launch, I realized I had made my boat too far from the nearest stream. The boat was far too heavy for me to move. I tried bringing the water to the boat instead of the boat to the water. I soon saw it would take me twenty years of constant labor."
+          "text": "When it was time to launch, I realized I had made my boat too far from the nearest stream. The boat was far too heavy for me to move. I tried bringing the water to the boat instead of the boat to the water. I soon saw it would take me twenty years of constant labor.",
+          "translation": "到了该下水的时候，我才发现船造得离最近的溪流太远。船太重，我根本搬不动。我试着把水引到船边，而不是把船搬到水边，但很快明白那需要我连续干二十年。"
         },
         {
           "type": "p",
-          "text": "I celebrated my fourth year on the island with two boats, but I was no closer to a sea journey."
+          "text": "I celebrated my fourth year on the island with two boats, but I was no closer to a sea journey.",
+          "translation": "我在岛上第四年时有了两条船，但离真正的海上航行并没有更近一步。"
         },
         {
           "type": "p",
-          "text": "——Taken from *The Adventures of Robinson Crusoe*"
+          "text": "——Taken from The Adventures of Robinson Crusoe",
+          "translation": "——选自《鲁滨逊漂流记》"
         }
       ],
       "paragraphs": [
@@ -1378,7 +1495,7 @@
         "I tried to turn over the ship’s boat that I had seen washed up, but failed. I was still determined to have a boat. So I chose a strong tree and spent weeks cutting it down. Then it took me months to turn it from tree to boat.",
         "When it was time to launch, I realized I had made my boat too far from the nearest stream. The boat was far too heavy for me to move. I tried bringing the water to the boat instead of the boat to the water. I soon saw it would take me twenty years of constant labor.",
         "I celebrated my fourth year on the island with two boats, but I was no closer to a sea journey.",
-        "——Taken from *The Adventures of Robinson Crusoe*"
+        "——Taken from The Adventures of Robinson Crusoe"
       ],
       "questions": [
         {
@@ -1390,8 +1507,9 @@
             "how I protected my crop from the birds",
             "how I kept the wild goats away from my crop"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第二段写鸟群来吃庄稼，作者先开枪、再挂死鸟当稻草人，最后成功保住收成，核心是“如何从鸟口中保护庄稼”；A 只是结果，B 是下一段的内容。",
+          "evidence": "I killed some birds and hung them among the crop, hoping they would serve as the scarecrows"
         },
         {
           "num": 2,
@@ -1402,8 +1520,9 @@
             "catch fish",
             "leave the island"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "第五段说作者想起和 Xury 坐船航行的日子，“I wished to have a boat and explore the island by sea”，想有船是为了从海上探索这座岛。",
+          "evidence": "I wished to have a boat and explore the island by sea."
         },
         {
           "num": 3,
@@ -1414,8 +1533,9 @@
             "How to store grain.",
             "How to fix the baskets."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第三段说有了新粮食要储存，但细粮从篮子里漏出去，于是花了两个月做陶罐，因此“a new problem”指如何储存粮食。",
+          "evidence": "With my new grain to store, I found a new problem."
         },
         {
           "num": 4,
@@ -1426,8 +1546,9 @@
             "it was possible for me to have a sea journey in my boats",
             "it was still impossible for me to explore the island by sea"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "最后一句说“我”在岛上第四年有了两条船，但离海上航行并没有更近一步，意思是仍然无法乘船探索海岛。",
+          "evidence": "I was no closer to a sea journey."
         },
         {
           "num": 5,
@@ -1438,23 +1559,24 @@
             "I tried to solve the problems with my courage and wisdom.",
             "I spent the third year on the island in farming and baking."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "作者不断用墙、稻草人、陶罐、造船等办法解决生存问题，体现勇气与智慧；A 与“failed”相反，B 与“twenty years”不符，D 是原文直述而非推断。",
+          "evidence": ""
         }
       ],
       "wordCount": 337,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "我小心地保存粮食，终于攒够了播种的量。我在园子周围筑起一道墙，防止野山羊进来。",
+        "后来庄稼结果时，鸟群发现了它。鸟一点也不怕我的狗。我开枪打它们，但我一走开它们就回来。最后我打死一些鸟，挂在庄稼中间，希望它们能当稻草人，结果很成功。到收获时，我收了近两蒲式耳稻谷和两蒲式耳半小麦。",
+        "有了新粮食要储存，我又遇到新问题：细小的谷粒会从篮子里漏出去。我花了近两个月，做成并晾干两个难看的陶罐——一个装稻谷，一个装小麦。",
+        "接着我做了黏土烤炉，又用硬木和布做了些工具来烤面包。我在自己的烤炉里做面包、烤面包。在岛上的第三年，我用来种地和烤面包。",
+        "不久之后，我开始想起和 Xury 一起乘小船航行的日子。我希望有一条船，从海上探索这座岛。",
+        "我试着把冲到岸上的那条大船翻过来，但失败了。我仍决心要有一条船，于是选了一棵粗壮的树，花了几周把它砍倒，又花了几个月把它从一棵树变成一条船。",
+        "到了该下水的时候，我才发现船造得离最近的溪流太远。船太重，我根本搬不动。我试着把水引到船边，而不是把船搬到水边，但很快明白那需要我连续干二十年。",
+        "我在岛上第四年时有了两条船，但离真正的海上航行并没有更近一步。",
+        "——选自《鲁滨逊漂流记》"
       ]
     },
     {
@@ -1463,40 +1585,48 @@
       "catName": "经历记叙类",
       "number": 5,
       "heading": "",
-      "title": "",
+      "title": "It’s not easy to be an astronaut’s son",
       "fallbackTitle": "It’s not easy to be an astronaut’s son",
       "blocks": [
         {
           "type": "p",
-          "text": "It’s not easy to be an astronaut’s son. Everybody expects you to be special or perfect. I often wonder how my father ever had a son like me. I mean, he is so special and so good at everything he does. Even in middle school he was the class monitor and captain of the football team."
+          "text": "It’s not easy to be an astronaut’s son. Everybody expects you to be special or perfect. I often wonder how my father ever had a son like me. I mean, he is so special and so good at everything he does. Even in middle school he was the class monitor and captain of the football team.",
+          "translation": "做宇航员的儿子并不容易。每个人都期待你特别或完美。我常想，父亲怎么会有我这样的儿子。我是说，他那么特别，做什么都那么出色。甚至在中学时，他就是班长和足球队队长。"
         },
         {
           "type": "p",
-          "text": "Well, to be honest, I often dream about being some kind of hero or doing something special, like saving a child from a burning building or discovering a new star. I was daydreaming at school one morning when my teacher said: \"There would be a Father’s Day writing competition for the whole school. I hope we have a winner right here in my class.\""
+          "text": "Well, to be honest, I often dream about being some kind of hero or doing something special, like saving a child from a burning building or discovering a new star. I was daydreaming at school one morning when my teacher said: \"There would be a Father’s Day writing competition for the whole school. I hope we have a winner right here in my class.\"",
+          "translation": "说实话，我常梦想成为某种英雄，或做点特别的事，比如从着火的楼里救出孩子，或发现一颗新星。一天早上我在学校做白日梦，老师却说：“学校要举办父亲节写作比赛，我希望我们班的获奖者就在这里。”"
         },
         {
           "type": "p",
-          "text": "When I got home, I started to think about what to write. My father is an astronaut. No, I wouldn’t start like that. That was the way others saw him. How did I see my father?"
+          "text": "When I got home, I started to think about what to write. My father is an astronaut. No, I wouldn’t start like that. That was the way others saw him. How did I see my father?",
+          "translation": "回到家，我开始想写什么。“我父亲是宇航员。”不，我不能这样开头。那是别人看他的方式。我是怎么看父亲的？"
         },
         {
           "type": "p",
-          "text": "I saw him sitting with me in the dark when I had a terrible dream. I remembered how he hugged me for hours when my dog Spotty was killed by a car. Yes, these were the things I was going to write. To me he wasn’t just a world-famous astronaut. He was my dad."
+          "text": "I saw him sitting with me in the dark when I had a terrible dream. I remembered how he hugged me for hours when my dog Spotty was killed by a car. Yes, these were the things I was going to write. To me he wasn’t just a world-famous astronaut. He was my dad.",
+          "translation": "我看到他在我做噩梦时坐在黑暗中陪我；我记得我的狗 Spotty 被车撞死后，他抱着我好几个小时。对，这些才是我要写的。对我来说，他不只是世界闻名的宇航员，他是我的爸爸。"
         },
         {
           "type": "p",
-          "text": "My parents and I went to school on Thursday. There were so many people in the big hall! My dad looked at me, and shrugged(耸肩)."
+          "text": "My parents and I went to school on Thursday. There were so many people in the big hall! My dad looked at me, and shrugged(耸肩).",
+          "translation": "星期四，我和父母去了学校。大礼堂里人真多！爸爸看着我，耸了耸肩。"
         },
         {
           "type": "p",
-          "text": "The third prize was announced and it was not me. I was relieved and disappointed at the same time. The second prize was announced. It was me."
+          "text": "The third prize was announced and it was not me. I was relieved and disappointed at the same time. The second prize was announced. It was me.",
+          "translation": "三等奖宣布了，不是我。我既松了一口气，又有些失望。二等奖宣布了，是我。"
         },
         {
           "type": "p",
-          "text": "I went up to the stage and read what I had written. When I finished, the people stood up and cheered. I saw my father blowing his nose. Tears were running down my mother’s face. Dad cleared his throat and put his hand on my shoulder. \"Son, this is the proudest moment of my life.\""
+          "text": "I went up to the stage and read what I had written. When I finished, the people stood up and cheered. I saw my father blowing his nose. Tears were running down my mother’s face. Dad cleared his throat and put his hand on my shoulder. \"Son, this is the proudest moment of my life.\"",
+          "translation": "我走上台，朗读我写的内容。读完后，全场起立欢呼。我看到父亲在擤鼻子，泪水顺着母亲的脸颊流下。父亲清了清嗓子，把手放在我肩上：“儿子，这是我一生中最骄傲的时刻。”"
         },
         {
           "type": "p",
-          "text": "It was the proudest moment of my life, too. Maybe I will never be a great hero or win a Nobel Prize, but it was enough just to be my father’s son."
+          "text": "It was the proudest moment of my life, too. Maybe I will never be a great hero or win a Nobel Prize, but it was enough just to be my father’s son.",
+          "translation": "这也是我一生中最骄傲的时刻。也许我永远不会成为伟大的英雄，也不会获得诺贝尔奖，但仅仅是做我父亲的儿子，就已经足够了。"
         }
       ],
       "paragraphs": [
@@ -1519,8 +1649,9 @@
             "hard",
             "pleasant"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文章开头说“It’s not easy to be an astronaut’s son”，每个人都期待他特别或完美，因此作者觉得做名人之子很难。",
+          "evidence": "It’s not easy to be an astronaut’s son."
         },
         {
           "num": 2,
@@ -1531,8 +1662,9 @@
             "be made school team captain",
             "be made class president"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第二段说作者常梦想成为某种英雄，例如从着火的楼里救出孩子或发现一颗新星，因此他想救孩子是为了成为英雄。",
+          "evidence": "I often dream about being some kind of hero"
         },
         {
           "num": 3,
@@ -1543,8 +1675,9 @@
             "The unforgettable time he had spent with his father.",
             "The experiences his father had in middle school."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "作者最终决定写父亲陪他度过噩梦、在他失去小狗时拥抱他等日常片段，即与父亲共度的难忘时光，而不是父亲作为宇航员的成就。",
+          "evidence": "I saw him sitting with me in the dark when I had a terrible dream."
         },
         {
           "num": 4,
@@ -1555,8 +1688,9 @@
             "saved a child from a burning building",
             "discovered a new star"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "作者在作文比赛中获得二等奖，上台朗读后全场起立鼓掌，他说那是自己最骄傲的时刻。",
+          "evidence": "The second prize was announced. It was me."
         },
         {
           "num": 5,
@@ -1567,22 +1701,23 @@
             "My Famous Father.",
             "My Happy Family."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "全文围绕“作为宇航员之子”的自我认同展开，结尾落在“be my father’s son”，因此最佳标题是 My Father’s Son。",
+          "evidence": "it was enough just to be my father’s son."
         }
       ],
       "wordCount": 349,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "做宇航员的儿子并不容易。每个人都期待你特别或完美。我常想，父亲怎么会有我这样的儿子。我是说，他那么特别，做什么都那么出色。甚至在中学时，他就是班长和足球队队长。",
+        "说实话，我常梦想成为某种英雄，或做点特别的事，比如从着火的楼里救出孩子，或发现一颗新星。一天早上我在学校做白日梦，老师却说：“学校要举办父亲节写作比赛，我希望我们班的获奖者就在这里。”",
+        "回到家，我开始想写什么。“我父亲是宇航员。”不，我不能这样开头。那是别人看他的方式。我是怎么看父亲的？",
+        "我看到他在我做噩梦时坐在黑暗中陪我；我记得我的狗 Spotty 被车撞死后，他抱着我好几个小时。对，这些才是我要写的。对我来说，他不只是世界闻名的宇航员，他是我的爸爸。",
+        "星期四，我和父母去了学校。大礼堂里人真多！爸爸看着我，耸了耸肩。",
+        "三等奖宣布了，不是我。我既松了一口气，又有些失望。二等奖宣布了，是我。",
+        "我走上台，朗读我写的内容。读完后，全场起立欢呼。我看到父亲在擤鼻子，泪水顺着母亲的脸颊流下。父亲清了清嗓子，把手放在我肩上：“儿子，这是我一生中最骄傲的时刻。”",
+        "这也是我一生中最骄傲的时刻。也许我永远不会成为伟大的英雄，也不会获得诺贝尔奖，但仅仅是做我父亲的儿子，就已经足够了。"
       ]
     },
     {
@@ -1591,28 +1726,33 @@
       "catName": "经历记叙类",
       "number": 6,
       "heading": "",
-      "title": "",
+      "title": "Having graduated from college, I succeeded in finding a job at Toyota",
       "fallbackTitle": "Having graduated from college, I succeeded in finding a job at Toyota",
       "blocks": [
         {
           "type": "p",
-          "text": "Having graduated from college, I succeeded in finding a job at Toyota. My first workday was not as busy as I had expected, but it taught me a lot. In actual fact, it will benefit me for my whole life."
+          "text": "Having graduated from college, I succeeded in finding a job at Toyota. My first workday was not as busy as I had expected, but it taught me a lot. In actual fact, it will benefit me for my whole life.",
+          "translation": "大学毕业后，我成功在丰田找到一份工作。第一个工作日没有我想象的那么忙，却教会了我很多。事实上，它让我受益终生。"
         },
         {
           "type": "p",
-          "text": "When I was enrolled in the financial department, I was assigned by the chief to check some data in the account books with the invoices. I was glad at first and thought, \"It’s a piece of cake for a graduate majoring in accounting.\" It didn’t take me long before I finished the job. Expecting to be praised, I went to the chief."
+          "text": "When I was enrolled in the financial department, I was assigned by the chief to check some data in the account books with the invoices. I was glad at first and thought, \"It’s a piece of cake for a graduate majoring in accounting.\" It didn’t take me long before I finished the job. Expecting to be praised, I went to the chief.",
+          "translation": "我被分配到财务部后，主管让我核对账本与发票之间的一些数据。起初我很高兴，心想：“对一个会计专业毕业生来说，这是小菜一碟。”我没花多久就完成了。我期待着被表扬，便去找主管。"
         },
         {
           "type": "p",
-          "text": "Unexpectedly, he asked me to check all the data again with care, without stopping doing his own work. I felt a little disappointed. Time was passing slowly when I felt hungry. The chief came to me and said, \"Put your work aside; it’s time for lunch now.\" I relaxed, and went to the dining hall."
+          "text": "Unexpectedly, he asked me to check all the data again with care, without stopping doing his own work. I felt a little disappointed. Time was passing slowly when I felt hungry. The chief came to me and said, \"Put your work aside; it’s time for lunch now.\" I relaxed, and went to the dining hall.",
+          "translation": "没想到，他头也不抬地继续自己的工作，只让我把所有数据再仔细核对一遍。我有点失望。时间过得很慢，我感到饿了。主管走过来对我说：“把工作放一放，该吃午饭了。”我放松下来，去了食堂。"
         },
         {
           "type": "p",
-          "text": "I went on with my assignment immediately after I came back. I found some mistakes that I hadn’t noticed the first time. At this moment the chief approached me and said, \"Are there any errors? Do you think it’s necessary to repeat the whole cycle?\" I nodded with embarrassment, and told him that I’d like to do it a third time. The chief was satisfied when I handed the account books to him."
+          "text": "I went on with my assignment immediately after I came back. I found some mistakes that I hadn’t noticed the first time. At this moment the chief approached me and said, \"Are there any errors? Do you think it’s necessary to repeat the whole cycle?\" I nodded with embarrassment, and told him that I’d like to do it a third time. The chief was satisfied when I handed the account books to him.",
+          "translation": "回来后我立刻继续任务。我发现了一些第一次没有注意到的错误。这时主管走近我，说：“有错误吗？你觉得有必要把整个流程再来一遍吗？”我尴尬地点点头，告诉他我愿意再做第三遍。当我把账本交给他时，主管满意了。"
         },
         {
           "type": "p",
-          "text": "Now he’s retired, and I have taken over his post. I attribute my success to the experience of my first workday at Toyota. It taught me that everything must be handled with care. There is no trifling matter in the financial department."
+          "text": "Now he’s retired, and I have taken over his post. I attribute my success to the experience of my first workday at Toyota. It taught me that everything must be handled with care. There is no trifling matter in the financial department.",
+          "translation": "如今他已退休，我接替了他的职位。我把自己的成功归功于在丰田第一个工作日的经历。它教会我，做任何事都必须认真细致。财务部里没有小事。"
         }
       ],
       "paragraphs": [
@@ -1632,8 +1772,9 @@
             "the job was quite easy for him",
             "he was most suitable for the job"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "作者心想“It’s a piece of cake for a graduate majoring in accounting”，即认为这项工作对自己这个会计专业毕业生来说很简单，所以一开始很高兴。",
+          "evidence": "It’s a piece of cake for a graduate majoring in accounting."
         },
         {
           "num": 2,
@@ -1644,8 +1785,9 @@
             "humorous",
             "aggressive"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "主管要求作者把所有数据再仔细核对一遍，后来又说“Do you think it’s necessary to repeat the whole cycle?”，体现他对工作严格、认真。",
+          "evidence": "he asked me to check all the data again with care"
         },
         {
           "num": 3,
@@ -1656,8 +1798,9 @@
             "to find more mistakes than the first time",
             "to hand in the account books to the chief"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "上文主管刚要求作者重新仔细核对全部数据，因此“repeat the whole cycle”指把整个核对流程再做一遍，即再次仔细检查所有数据。",
+          "evidence": "check all the data again with care"
         },
         {
           "num": 4,
@@ -1668,8 +1811,9 @@
             "In the end, the chief was still dissatisfied with the author’s work.",
             "The author discovered some mistakes which he had not found the first time."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文中说作者第三次核对后把账本交给主管，“The chief was satisfied”，因此“主管仍不满意”是错误的。A、B、D 都与原文相符。",
+          "evidence": "The chief was satisfied when I handed the account books to him."
         },
         {
           "num": 5,
@@ -1680,19 +1824,20 @@
             "how to help the chief of the department",
             "how to deal with everything with care"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "结尾明确总结：“It taught me that everything must be handled with care.” 即从第一天的经历中学到做事要认真谨慎。",
+          "evidence": "everything must be handled with care"
         }
       ],
       "wordCount": 272,
       "difficulty": "进阶",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "大学毕业后，我成功在丰田找到一份工作。第一个工作日没有我想象的那么忙，却教会了我很多。事实上，它让我受益终生。",
+        "我被分配到财务部后，主管让我核对账本与发票之间的一些数据。起初我很高兴，心想：“对一个会计专业毕业生来说，这是小菜一碟。”我没花多久就完成了。我期待着被表扬，便去找主管。",
+        "没想到，他头也不抬地继续自己的工作，只让我把所有数据再仔细核对一遍。我有点失望。时间过得很慢，我感到饿了。主管走过来对我说：“把工作放一放，该吃午饭了。”我放松下来，去了食堂。",
+        "回来后我立刻继续任务。我发现了一些第一次没有注意到的错误。这时主管走近我，说：“有错误吗？你觉得有必要把整个流程再来一遍吗？”我尴尬地点点头，告诉他我愿意再做第三遍。当我把账本交给他时，主管满意了。",
+        "如今他已退休，我接替了他的职位。我把自己的成功归功于在丰田第一个工作日的经历。它教会我，做任何事都必须认真细致。财务部里没有小事。"
       ]
     },
     {
@@ -1701,32 +1846,38 @@
       "catName": "经历记叙类",
       "number": 7,
       "heading": "",
-      "title": "",
+      "title": "Some people bring out the best in you in a way that you might never have fully realized on",
       "fallbackTitle": "Some people bring out the best in you in a way that you might never have fully realized on",
       "blocks": [
         {
           "type": "p",
-          "text": "Some people bring out the best in you in a way that you might never have fully realized on your own. My mom was one of those people."
+          "text": "Some people bring out the best in you in a way that you might never have fully realized on your own. My mom was one of those people.",
+          "translation": "有些人能以你自己从未完全意识到的方式，激发出你最好的一面。我母亲就是其中之一。"
         },
         {
           "type": "p",
-          "text": "When I was nine years old, my mom became a single mother. While I was growing up, we lived a very hard life. But she gave me a lot of love. Each night, she spoke the words that would change my life, \"Kemmons, you are certain to be a great man and you can do anything in life if you work hard enough to get it.\""
+          "text": "When I was nine years old, my mom became a single mother. While I was growing up, we lived a very hard life. But she gave me a lot of love. Each night, she spoke the words that would change my life, \"Kemmons, you are certain to be a great man and you can do anything in life if you work hard enough to get it.\"",
+          "translation": "我九岁时，母亲成了单亲妈妈。成长过程中，我们生活非常艰难，但她给了我很多爱。每天晚上，她都会说那句改变我一生的话：“肯蒙斯，你一定会成为了不起的人。只要足够努力，你可以做到任何事。”"
         },
         {
           "type": "p",
-          "text": "At fourteen, I was hit by a car and the doctors said I would never walk again. Every day, my mother spoke to me in her gentle, loving voice, telling me that no matter what those doctors said, I could walk again if I wanted to walk badly enough. She drove that message so deep into my heart that I finally believed her. A year later, I returned to school-walking on my own!"
+          "text": "At fourteen, I was hit by a car and the doctors said I would never walk again. Every day, my mother spoke to me in her gentle, loving voice, telling me that no matter what those doctors said, I could walk again if I wanted to walk badly enough. She drove that message so deep into my heart that I finally believed her. A year later, I returned to school-walking on my own!",
+          "translation": "十四岁时，我被车撞了，医生说我再也无法走路。每天，母亲都用温柔而充满爱意的声音对我说，不管医生怎么说，只要我足够想走，我就能重新走路。她把这句话深深植入我心里，我终于相信了她。一年后，我重返学校——自己走着去的！"
         },
         {
           "type": "p",
-          "text": "When the Great Depression hit, I left school. Over the years, I experienced various levels of business success. But the real turning point occurred on a vacation I took with my wife and five kids. I was dissatisfied with the second-class hotels available for families and was angry that they charged an extra $2 for each child. I told my wife that I was going to open a motel for families that would never charge extra for children."
+          "text": "When the Great Depression hit, I left school. Over the years, I experienced various levels of business success. But the real turning point occurred on a vacation I took with my wife and five kids. I was dissatisfied with the second-class hotels available for families and was angry that they charged an extra $2 for each child. I told my wife that I was going to open a motel for families that would never charge extra for children.",
+          "translation": "大萧条来临时，我离开了学校。多年来，我经历了不同层次的商业成功。但真正的转折点发生在一次我和妻子、五个孩子的度假中。我对可供家庭入住的二流酒店很不满意，也对每个孩子额外收 2 美元感到愤怒。我告诉妻子，我要开一家家庭旅馆，永远不向儿童额外收费。"
         },
         {
           "type": "p",
-          "text": "Not surprisingly, my mom was one of my strongest supporters. She worked behind the desk and even designed the room style. As in any business, we experienced a lot of challenges. But with my mother’s words deeply rooted in my soul, I never doubted we would succeed. Fifteen years later, we had the largest hotel system in the World-Holiday Inn. In 1979 my company had 1,759 Inns in more than fifty countries with an income of $1 billion a year."
+          "text": "Not surprisingly, my mom was one of my strongest supporters. She worked behind the desk and even designed the room style. As in any business, we experienced a lot of challenges. But with my mother’s words deeply rooted in my soul, I never doubted we would succeed. Fifteen years later, we had the largest hotel system in the World-Holiday Inn. In 1979 my company had 1,759 Inns in more than fifty countries with an income of $1 billion a year.",
+          "translation": "不出所料，母亲是我最坚定的支持者之一。她在前台工作，甚至设计了房间风格。和任何生意一样，我们经历了许多挑战。但母亲的话深植于我灵魂中，我从未怀疑我们会成功。十五年后，我们拥有了世界上最大的酒店系统——假日酒店。1979 年，我的公司在五十多个国家拥有 1,759 家酒店，年收入 10 亿美元。"
         },
         {
           "type": "p",
-          "text": "You may not have started out life in the best situations. But if you can find a task in life worth working for and believe in yourself, nothing can stop you."
+          "text": "You may not have started out life in the best situations. But if you can find a task in life worth working for and believe in yourself, nothing can stop you.",
+          "translation": "你的人生起点也许并不好。但如果你能找到一件值得为之奋斗的事，并相信自己，就没有什么能阻止你。"
         }
       ],
       "paragraphs": [
@@ -1747,8 +1898,9 @@
             "amusing",
             "interesting"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "母亲每晚告诉他“你一定会成为了不起的人，只要足够努力就能做到任何事”，这些话充满鼓励，改变了作者一生。",
+          "evidence": "you are certain to be a great man and you can do anything in life"
         },
         {
           "num": 2,
@@ -1759,8 +1911,9 @@
             "I should always believe her.",
             "I could walk again if I wanted to."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第三段说母亲每天告诉作者，不管医生怎么说，只要他足够想走就能重新走路；“that message”指的就是这句话。",
+          "evidence": "I could walk again if I wanted to walk badly enough"
         },
         {
           "num": 3,
@@ -1771,8 +1924,9 @@
             "His wife’s suggestion.",
             "His mom’s support."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第四段说作者在度假时对只能住二流酒店、每个孩子还要加收 2 美元感到不满和愤怒，于是决定开一家不向儿童额外收费的家庭旅馆。",
+          "evidence": "I was dissatisfied with the second-class hotels ... and was angry that they charged an extra $2"
         },
         {
           "num": 4,
@@ -1783,8 +1937,9 @@
             "Modest, helpful and hard-working.",
             "Loving, supportive and strong-willed."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "母亲独自抚养孩子、在车祸后坚信儿子能重新走路、后来又在旅馆前台工作并设计房间，体现她充满爱、支持儿子且意志坚强。",
+          "evidence": "my mom was one of my strongest supporters"
         },
         {
           "num": 5,
@@ -1795,20 +1950,21 @@
             "Mom’s encouragement, clear goals, self-confidence and hard work.",
             "Mom’s encouragement, a poor family, generosity and opportunities."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文章强调母亲的鼓励、明确的目标（为家庭开旅馆）、自信和努力；没有把高等教育、家庭贫困或运气列为成功原因。",
+          "evidence": "if you can find a task in life worth working for and believe in yourself"
         }
       ],
       "wordCount": 352,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "有些人能以你自己从未完全意识到的方式，激发出你最好的一面。我母亲就是其中之一。",
+        "我九岁时，母亲成了单亲妈妈。成长过程中，我们生活非常艰难，但她给了我很多爱。每天晚上，她都会说那句改变我一生的话：“肯蒙斯，你一定会成为了不起的人。只要足够努力，你可以做到任何事。”",
+        "十四岁时，我被车撞了，医生说我再也无法走路。每天，母亲都用温柔而充满爱意的声音对我说，不管医生怎么说，只要我足够想走，我就能重新走路。她把这句话深深植入我心里，我终于相信了她。一年后，我重返学校——自己走着去的！",
+        "大萧条来临时，我离开了学校。多年来，我经历了不同层次的商业成功。但真正的转折点发生在一次我和妻子、五个孩子的度假中。我对可供家庭入住的二流酒店很不满意，也对每个孩子额外收 2 美元感到愤怒。我告诉妻子，我要开一家家庭旅馆，永远不向儿童额外收费。",
+        "不出所料，母亲是我最坚定的支持者之一。她在前台工作，甚至设计了房间风格。和任何生意一样，我们经历了许多挑战。但母亲的话深植于我灵魂中，我从未怀疑我们会成功。十五年后，我们拥有了世界上最大的酒店系统——假日酒店。1979 年，我的公司在五十多个国家拥有 1,759 家酒店，年收入 10 亿美元。",
+        "你的人生起点也许并不好。但如果你能找到一件值得为之奋斗的事，并相信自己，就没有什么能阻止你。"
       ]
     },
     {
@@ -1817,35 +1973,40 @@
       "catName": "经历记叙类",
       "number": 8,
       "heading": "",
-      "title": "",
+      "title": "From the very beginning of school we make books and reading a constant source of possible ",
       "fallbackTitle": "From the very beginning of school we make books and reading a constant source of possible ",
       "blocks": [
         {
           "type": "p",
-          "text": "From the very beginning of school we make books and reading a constant source of possible failure and public shame. When children are little, we make them read aloud before the teacher and other children, so that we can be sure that they \"know\" all the words they are reading. This means that when they don’t know a word, they are going to make a mistake, right in front of everyone. After having taught fifth-grade classes for four years, I decided to try at all costs to rid them of their fear and dislike of books, and to get them to read more often and more adventurously."
+          "text": "From the very beginning of school we make books and reading a constant source of possible failure and public shame. When children are little, we make them read aloud before the teacher and other children, so that we can be sure that they \"know\" all the words they are reading. This means that when they don’t know a word, they are going to make a mistake, right in front of everyone. After having taught fifth-grade classes for four years, I decided to try at all costs to rid them of their fear and dislike of books, and to get them to read more often and more adventurously.",
+          "translation": "从上学第一天起，我们就让书本和阅读成为可能的失败与当众羞辱的来源。孩子还小时，我们让他们在老师和别的孩子面前大声朗读，以确保他们“认识”所读的每个词。这意味着，一旦他们不认识某个词，就会在所有人面前犯错。教了四年五年级之后，我决定不惜一切代价消除他们对书本的恐惧和厌恶，让他们更经常、更勇敢地阅读。"
         },
         {
           "type": "p",
-          "text": "One day soon after school had started, I said to them, \"Now I’m going to say something about reading that you have probably never heard a teacher say before. I would like you to read a lot of books this year, but I want you to read them only for pleasure. If you understand enough of a book to enjoy it and want to go on reading it, that’s enough for me. Also I am not going to ask you what words mean.\""
+          "text": "One day soon after school had started, I said to them, \"Now I’m going to say something about reading that you have probably never heard a teacher say before. I would like you to read a lot of books this year, but I want you to read them only for pleasure. If you understand enough of a book to enjoy it and want to go on reading it, that’s enough for me. Also I am not going to ask you what words mean.\"",
+          "translation": "开学不久的一天，我对他们说：“现在我要说一些关于阅读的话，你们可能从没听老师说过。我希望你们今年读很多书，但只为乐趣而读。如果你能读懂到享受一本书并想继续读下去，对我来说就够了。另外，我不会问你们单词是什么意思。”"
         },
         {
           "type": "p",
-          "text": "The children sat stunned（惊呆）and silent. Was this a teacher talking? One girl, who had just come to us from a school where she had had a very hard time, looked at me steadily for a long time after I had finished. Then, still looking at me, she said slowly and seriously, \"Mr. Holt, do you really mean that?\" I said just as seriously, \"I mean every word of it.\""
+          "text": "The children sat stunned（惊呆）and silent. Was this a teacher talking? One girl, who had just come to us from a school where she had had a very hard time, looked at me steadily for a long time after I had finished. Then, still looking at me, she said slowly and seriously, \"Mr. Holt, do you really mean that?\" I said just as seriously, \"I mean every word of it.\"",
+          "translation": "孩子们惊呆了，一言不发。这是一个老师在说话吗？一个刚从一所让她过得很艰难的学校转来的女孩，在我讲完后久久地凝视着我。然后，她仍看着我，缓慢而认真地说：“霍尔特先生，你真是这个意思吗？”我同样认真地回答：“我每个字都是认真的。”"
         },
         {
           "type": "p",
-          "text": "During the spring she really astonished me. One day, she was reading *Moby Dick*! \"Don’t you find parts of it rather difficult?\" I asked. \"Oh, sure, but I just skip over those parts and go on to the next good part,\" she answered."
+          "text": "During the spring she really astonished me. One day, she was reading Moby Dick! \"Don’t you find parts of it rather difficult?\" I asked. \"Oh, sure, but I just skip over those parts and go on to the next good part,\" she answered.",
+          "translation": "那年春天，她真的让我吃惊。有一天，她正在读《白鲸》！“你不觉得有些部分很难吗？”我问。“哦，当然，但我跳过那些部分，直接读下一个精彩的部分。”她回答。"
         },
         {
           "type": "p",
-          "text": "This is exactly what reading should be and in school so seldom is — an exciting, joyous adventure. Find something, dive into it, take the good parts, skip the bad parts, get what you can out of it, and go on to something else."
+          "text": "This is exactly what reading should be and in school so seldom is — an exciting, joyous adventure. Find something, dive into it, take the good parts, skip the bad parts, get what you can out of it, and go on to something else.",
+          "translation": "这正是阅读应有的样子，而学校里却很少如此——一场令人兴奋、充满欢乐的冒险。找到一本书，投入进去，取走精彩的部分，跳过糟糕的部分，尽可能从中汲取，然后再去读别的。"
         }
       ],
       "paragraphs": [
         "From the very beginning of school we make books and reading a constant source of possible failure and public shame. When children are little, we make them read aloud before the teacher and other children, so that we can be sure that they \"know\" all the words they are reading. This means that when they don’t know a word, they are going to make a mistake, right in front of everyone. After having taught fifth-grade classes for four years, I decided to try at all costs to rid them of their fear and dislike of books, and to get them to read more often and more adventurously.",
         "One day soon after school had started, I said to them, \"Now I’m going to say something about reading that you have probably never heard a teacher say before. I would like you to read a lot of books this year, but I want you to read them only for pleasure. If you understand enough of a book to enjoy it and want to go on reading it, that’s enough for me. Also I am not going to ask you what words mean.\"",
         "The children sat stunned（惊呆）and silent. Was this a teacher talking? One girl, who had just come to us from a school where she had had a very hard time, looked at me steadily for a long time after I had finished. Then, still looking at me, she said slowly and seriously, \"Mr. Holt, do you really mean that?\" I said just as seriously, \"I mean every word of it.\"",
-        "During the spring she really astonished me. One day, she was reading *Moby Dick*! \"Don’t you find parts of it rather difficult?\" I asked. \"Oh, sure, but I just skip over those parts and go on to the next good part,\" she answered.",
+        "During the spring she really astonished me. One day, she was reading Moby Dick! \"Don’t you find parts of it rather difficult?\" I asked. \"Oh, sure, but I just skip over those parts and go on to the next good part,\" she answered.",
         "This is exactly what reading should be and in school so seldom is — an exciting, joyous adventure. Find something, dive into it, take the good parts, skip the bad parts, get what you can out of it, and go on to something else."
       ],
       "questions": [
@@ -1858,8 +2019,9 @@
             "reading often and adventurously",
             "being made to read aloud before others"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第一段说孩子从小被要求当众大声朗读，一旦不认识单词就会在所有人面前出错，这种公开羞辱让他们害怕并讨厌书本。",
+          "evidence": "we make them read aloud before the teacher and other children"
         },
         {
           "num": 2,
@@ -1870,8 +2032,9 @@
             "for a larger vocabulary",
             "for higher scores in exams"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "老师明确说“I want you to read them only for pleasure”，只要读懂到能享受并愿意继续读就够了，不考单词意思。",
+          "evidence": "I want you to read them only for pleasure."
         },
         {
           "num": 3,
@@ -1882,8 +2045,9 @@
             "it was understandable to them",
             "it was no different from other teachers’ talk"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "孩子们“sat stunned and silent”，一个女孩还反复确认“Do you really mean that?”，说明他们觉得老师的话好得难以置信。",
+          "evidence": "The children sat stunned and silent."
         },
         {
           "num": 4,
@@ -1894,19 +2058,20 @@
             "reading is never a pleasant and inspiring experience in school",
             "reading involves understanding every little piece of information"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "老师主张让孩子为乐趣阅读、跳过难懂部分、自己选择读什么和怎么读；她并不要求理解每个细节，也不认为阅读永远不快乐。",
+          "evidence": "skip over those parts and go on to the next good part"
         }
       ],
       "wordCount": 346,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "从上学第一天起，我们就让书本和阅读成为可能的失败与当众羞辱的来源。孩子还小时，我们让他们在老师和别的孩子面前大声朗读，以确保他们“认识”所读的每个词。这意味着，一旦他们不认识某个词，就会在所有人面前犯错。教了四年五年级之后，我决定不惜一切代价消除他们对书本的恐惧和厌恶，让他们更经常、更勇敢地阅读。",
+        "开学不久的一天，我对他们说：“现在我要说一些关于阅读的话，你们可能从没听老师说过。我希望你们今年读很多书，但只为乐趣而读。如果你能读懂到享受一本书并想继续读下去，对我来说就够了。另外，我不会问你们单词是什么意思。”",
+        "孩子们惊呆了，一言不发。这是一个老师在说话吗？一个刚从一所让她过得很艰难的学校转来的女孩，在我讲完后久久地凝视着我。然后，她仍看着我，缓慢而认真地说：“霍尔特先生，你真是这个意思吗？”我同样认真地回答：“我每个字都是认真的。”",
+        "那年春天，她真的让我吃惊。有一天，她正在读《白鲸》！“你不觉得有些部分很难吗？”我问。“哦，当然，但我跳过那些部分，直接读下一个精彩的部分。”她回答。",
+        "这正是阅读应有的样子，而学校里却很少如此——一场令人兴奋、充满欢乐的冒险。找到一本书，投入进去，取走精彩的部分，跳过糟糕的部分，尽可能从中汲取，然后再去读别的。"
       ]
     },
     {
@@ -1915,24 +2080,28 @@
       "catName": "经历记叙类",
       "number": 9,
       "heading": "",
-      "title": "",
+      "title": "On Thursday afternoon Mrs",
       "fallbackTitle": "On Thursday afternoon Mrs",
       "blocks": [
         {
           "type": "p",
-          "text": "On Thursday afternoon Mrs. Clarke, dressed for going out, took her handbag with some money and her key in it, pulled the door behind her to lock it and went to the Over 60s Club. She always went there on Thursdays. It was a nice outing for an old woman who lived alone."
+          "text": "On Thursday afternoon Mrs. Clarke, dressed for going out, took her handbag with some money and her key in it, pulled the door behind her to lock it and went to the Over 60s Club. She always went there on Thursdays. It was a nice outing for an old woman who lived alone.",
+          "translation": "星期四下午，克拉克太太穿戴好准备出门，拿起装了些钱和钥匙的手提包，拉上门锁好，去了“六十岁以上俱乐部”。她每周四都去那里。对一个独居老人来说，这是一次愉快的出游。"
         },
         {
           "type": "p",
-          "text": "At six o’clock she came home, let herself in and at once smelt cigarette smoke. Cigarette smoke in her house? How? Had someone got in? She checked the back door and the windows. All were locked or fastened, as usual. There was no sign of forced entry."
+          "text": "At six o’clock she came home, let herself in and at once smelt cigarette smoke. Cigarette smoke in her house? How? Had someone got in? She checked the back door and the windows. All were locked or fastened, as usual. There was no sign of forced entry.",
+          "translation": "六点时她回到家，开门进去，立刻闻到香烟味。她家里怎么会有香烟味？有人进来了吗？她检查了后门和窗户，都像往常一样锁着或扣着，没有强行闯入的迹象。"
         },
         {
           "type": "p",
-          "text": "Over a cup of tea she was wondering whether someone might have a key that fitted her front door — \"a master key\" perhaps. So she stayed at home the following Thursday. Nothing happened. Was anyone watching her movements? On the Thursday after that, dressed as usual, she went out at her usual time, but she didn’t go to the club. Instead she took a short cut home again, letting herself in through her garden and the back door. She settled down to wait."
+          "text": "Over a cup of tea she was wondering whether someone might have a key that fitted her front door — \"a master key\" perhaps. So she stayed at home the following Thursday. Nothing happened. Was anyone watching her movements? On the Thursday after that, dressed as usual, she went out at her usual time, but she didn’t go to the club. Instead she took a short cut home again, letting herself in through her garden and the back door. She settled down to wait.",
+          "translation": "她边喝茶边想，会不会有人有一把能开她前门的钥匙——“万能钥匙”？于是下一个星期四她留在家里，什么也没发生。有人在观察她的行踪吗？再下一个星期四，她像往常一样穿戴好，按平时的时间出门，但没有去俱乐部，而是抄近路从花园和后门回了家。她坐下来等待。"
         },
         {
           "type": "p",
-          "text": "It was just after four o’clock when the front door bell rang. Mrs. Clarke was making a cup of tea at the time. The bell rang again, and then she heard her letter-box being pushed open. With the kettle of boiling water in her hand, she moved quietly toward the front door. A long piece of wire appeared through the letter-box, and then a hand. The wire turned and caught around the knob on the door-lock. Mrs. Clarke raised the kettle and poured the water over the hand. There was a shout outside, and the skin seemed to drop off the fingers like a glove. The wire fell to the floor, the hand was pulled back, and Mrs. Clarke heard the sound of running feet."
+          "text": "It was just after four o’clock when the front door bell rang. Mrs. Clarke was making a cup of tea at the time. The bell rang again, and then she heard her letter-box being pushed open. With the kettle of boiling water in her hand, she moved quietly toward the front door. A long piece of wire appeared through the letter-box, and then a hand. The wire turned and caught around the knob on the door-lock. Mrs. Clarke raised the kettle and poured the water over the hand. There was a shout outside, and the skin seemed to drop off the fingers like a glove. The wire fell to the floor, the hand was pulled back, and Mrs. Clarke heard the sound of running feet.",
+          "translation": "刚过四点，前门铃响了。克拉克太太正在泡茶。门铃又响了，接着她听到信箱被推开。她手里提着装满沸水的水壶，悄悄走向前门。一根长铁丝从信箱口伸进来，随后是一只手。铁丝转动，勾住门锁上的旋钮。克拉克太太举起水壶，把水浇在那只手上。外面传来一声惨叫，手指上的皮肤像手套一样脱落。铁丝掉到地上，手缩了回去，克拉克太太听到奔跑的脚步声。"
         }
       ],
       "paragraphs": [
@@ -1951,8 +2120,9 @@
             "she visited a club on Thursdays",
             "a special visitor came on Thursday Clarke"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第一段说 Clarke 太太每周四都去 Over 60s Club，这对独居老人来说是一次愉快的出游，因此她期待星期四。",
+          "evidence": "She always went there on Thursdays."
         },
         {
           "num": 2,
@@ -1963,8 +2133,9 @@
             "things would have been thrown about",
             "he or she would have needed a master key"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "第二段说门和窗都锁好，没有“forced entry”的迹象；反过来说，如果有人强行进入，就应该会发现门窗被破坏。",
+          "evidence": "There was no sign of forced entry."
         },
         {
           "num": 3,
@@ -1975,8 +2146,9 @@
             "to report the break-in to the police",
             "to trick the thief"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "第三个星期四她按平时时间出门，却没去俱乐部，而是从花园后门悄悄回家等待，目的是诱使小偷现身。",
+          "evidence": "she went out at her usual time, but she didn’t go to the club"
         },
         {
           "num": 4,
@@ -1987,8 +2159,9 @@
             "could not be opened without a key",
             "could be opened by using a knob instead of a key"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "小偷从信箱口伸进一根长铁丝，转动门锁上的旋钮，说明这把锁可以用长铁丝从信箱口打开。",
+          "evidence": "The wire turned and caught around the knob on the door-lock."
         },
         {
           "num": 5,
@@ -1999,18 +2172,19 @@
             "it was too hot to hold",
             "the thief just wanted to get away"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "Clarke 太太把一壶沸水浇在小偷手上，小偷因烫而松手，铁丝掉在地上；原因不是手套掉落或主动放弃。",
+          "evidence": "Mrs. Clarke raised the kettle and poured the water over the hand."
         }
       ],
       "wordCount": 308,
       "difficulty": "挑战",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        ""
+        "星期四下午，克拉克太太穿戴好准备出门，拿起装了些钱和钥匙的手提包，拉上门锁好，去了“六十岁以上俱乐部”。她每周四都去那里。对一个独居老人来说，这是一次愉快的出游。",
+        "六点时她回到家，开门进去，立刻闻到香烟味。她家里怎么会有香烟味？有人进来了吗？她检查了后门和窗户，都像往常一样锁着或扣着，没有强行闯入的迹象。",
+        "她边喝茶边想，会不会有人有一把能开她前门的钥匙——“万能钥匙”？于是下一个星期四她留在家里，什么也没发生。有人在观察她的行踪吗？再下一个星期四，她像往常一样穿戴好，按平时的时间出门，但没有去俱乐部，而是抄近路从花园和后门回了家。她坐下来等待。",
+        "刚过四点，前门铃响了。克拉克太太正在泡茶。门铃又响了，接着她听到信箱被推开。她手里提着装满沸水的水壶，悄悄走向前门。一根长铁丝从信箱口伸进来，随后是一只手。铁丝转动，勾住门锁上的旋钮。克拉克太太举起水壶，把水浇在那只手上。外面传来一声惨叫，手指上的皮肤像手套一样脱落。铁丝掉到地上，手缩了回去，克拉克太太听到奔跑的脚步声。"
       ]
     },
     {
@@ -2019,56 +2193,68 @@
       "catName": "经历记叙类",
       "number": 10,
       "heading": "",
-      "title": "",
+      "title": "Peter loved to buy used articles",
       "fallbackTitle": "Peter loved to buy used articles",
       "blocks": [
         {
           "type": "p",
-          "text": "Peter loved to buy used articles. Almost a month ago, he bought a popular word game that used little pieces of wood with different letters on them. As he was purchasing it, the salesgirl said, \"Uh, look, the game box hasn’t even been opened yet. That might be worth some money.\""
+          "text": "Peter loved to buy used articles. Almost a month ago, he bought a popular word game that used little pieces of wood with different letters on them. As he was purchasing it, the salesgirl said, \"Uh, look, the game box hasn’t even been opened yet. That might be worth some money.\"",
+          "translation": "彼得喜欢买二手物品。大约一个月前，他买了一款很流行的拼字游戏，游戏用小块木头制成，上面印着不同字母。购买时，女店员说：“哎，你看，游戏盒还没开封呢。说不定值点钱。”"
         },
         {
           "type": "p",
-          "text": "Peter examined the box, and sure enough, it was completely covered in factory-sealed plastic. He saw a date of 1973 on the back of the box."
+          "text": "Peter examined the box, and sure enough, it was completely covered in factory-sealed plastic. He saw a date of 1973 on the back of the box.",
+          "translation": "彼得仔细看了看盒子，果然，它完全被工厂密封塑料包着。他看到盒子背面印着 1973 年的日期。"
         },
         {
           "type": "p",
-          "text": "\"You should put that up for auction (拍卖) on the Internet, and see what happens,\" the salesgirl said."
+          "text": "\"You should put that up for auction (拍卖) on the Internet, and see what happens,\" the salesgirl said.",
+          "translation": "“你应该把它放到网上拍卖，看看会怎样。”女店员说。"
         },
         {
           "type": "p",
-          "text": "\"Yes, you’re right. People like something rare,\" Peter agreed, \"I can’t imagine there being very many unopened boxes of this game still around 40 years later.\""
+          "text": "\"Yes, you’re right. People like something rare,\" Peter agreed, \"I can’t imagine there being very many unopened boxes of this game still around 40 years later.\"",
+          "translation": "“对，你说得对。人们喜欢稀有的东西。”彼得赞同道，“我无法想象 40 年后还有多少未开封的这款游戏。”"
         },
         {
           "type": "p",
-          "text": "\"Don’t forget to tell me if you sell it,\" the salesgirl smiled."
+          "text": "\"Don’t forget to tell me if you sell it,\" the salesgirl smiled.",
+          "translation": "“如果卖出去了，别忘了告诉我。”女店员笑着说。"
         },
         {
           "type": "p",
-          "text": "\"No problem,\" Peter said."
+          "text": "\"No problem,\" Peter said.",
+          "translation": "“没问题。”彼得说。"
         },
         {
           "type": "p",
-          "text": "After he got home, Peter went online to several auction websites looking for his game, but he could not find it. Then he typed in the name of the word game and hit SEARCH. The search result was 543 websites containing information about the changes of the games. Over the years, the game had been produced using letters in different sizes and game boards in different colors. He also found some lists of game fans looking for various versions of the game. Peter emailed some of them, telling them what he had."
+          "text": "After he got home, Peter went online to several auction websites looking for his game, but he could not find it. Then he typed in the name of the word game and hit SEARCH. The search result was 543 websites containing information about the changes of the games. Over the years, the game had been produced using letters in different sizes and game boards in different colors. He also found some lists of game fans looking for various versions of the game. Peter emailed some of them, telling them what he had.",
+          "translation": "回家后，彼得上了几个拍卖网站找这款游戏，但没找到。然后他输入游戏名称，按下搜索。搜索结果有 543 个网站，包含这款游戏变迁的信息。多年来，这款游戏使用过不同大小的字母和不同颜色的游戏板。他还找到一些游戏迷的名单，他们在寻找不同版本。彼得给其中一些人发了邮件，告诉他们自己有什么。"
         },
         {
           "type": "p",
-          "text": "Two weeks later, Peter went back to the shop."
+          "text": "Two weeks later, Peter went back to the shop.",
+          "translation": "两周后，彼得回到那家店。"
         },
         {
           "type": "p",
-          "text": "\"Hello! Do you still remember the unopened word game?\""
+          "text": "\"Hello! Do you still remember the unopened word game?\"",
+          "translation": "“你好！你还记得那盒未开封的拼字游戏吗？”"
         },
         {
           "type": "p",
-          "text": "The salesgirl looked at him for a second, then recognized him and said, \"Oh, hi!\""
+          "text": "The salesgirl looked at him for a second, then recognized him and said, \"Oh, hi!\"",
+          "translation": "女店员看了他一秒，认出他后说：“哦，你好！”"
         },
         {
           "type": "p",
-          "text": "\"I’ve got something for you,\" Peter said, \"I sold the game and made $1,000. Thank you for your suggestion,\" He handed her three $100 bills."
+          "text": "\"I’ve got something for you,\" Peter said, \"I sold the game and made $1,000. Thank you for your suggestion,\" He handed her three $100 bills.",
+          "translation": "“我有东西给你，”彼得说，“我把游戏卖了，赚了 1000 美元。谢谢你的建议。”他递给她三张 100 美元钞票。"
         },
         {
           "type": "p",
-          "text": "\"Wow!\" the salesgirl cried out. \"Thank you! I never expected it.\""
+          "text": "\"Wow!\" the salesgirl cried out. \"Thank you! I never expected it.\"",
+          "translation": "“哇！”女店员叫起来，“谢谢你！我完全没想到。”"
         }
       ],
       "paragraphs": [
@@ -2095,8 +2281,9 @@
             "It was kept in a plastic bag with a seal.",
             "It had little pieces of wood in different colors."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "盒子上印着 1973 年，故事发生在约 40 年后，因此这款拼字游戏大约生产于 40 年前；B 是游戏板颜色不同而非尺寸，C 是工厂密封塑料而非普通塑料袋。",
+          "evidence": "He saw a date of 1973 on the back of the box."
         },
         {
           "num": 2,
@@ -2107,8 +2294,9 @@
             "Classic and attractive.",
             "Colorful and interesting."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "女店员看到盒子从未开封，说“That might be worth some money”，并建议拿到网上拍卖，说明她认为它稀有且有价值。",
+          "evidence": "That might be worth some money."
         },
         {
           "num": 3,
@@ -2119,8 +2307,9 @@
             "a game shop",
             "a second-hand shop"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "Peter 在网上搜索游戏名称，找到 543 个相关网站和游戏迷名单，因此名单来自互联网。",
+          "evidence": "Then he typed in the name of the word game and hit SEARCH."
         },
         {
           "num": 4,
@@ -2131,8 +2320,9 @@
             "Peter returned the word game for $1,000.",
             "The salesgirl felt confused to see Peter again."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "故事结尾 Peter 卖掉游戏赚了 1,000 美元，回到店里把三张 100 美元钞票（共 300 美元）交给女店员作为感谢。",
+          "evidence": "He handed her three $100 bills."
         },
         {
           "num": 5,
@@ -2143,26 +2333,27 @@
             "One should be grateful for the help from others.",
             "Something rare is not worth a large amount of money."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "女店员的一句提醒让 Peter 发现旧游戏的价值，Peter 因此专门回来致谢并分享收益，故事传达的是“对别人的帮助心存感激”。",
+          "evidence": "Thank you for your suggestion"
         }
       ],
       "wordCount": 292,
       "difficulty": "进阶",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "彼得喜欢买二手物品。大约一个月前，他买了一款很流行的拼字游戏，游戏用小块木头制成，上面印着不同字母。购买时，女店员说：“哎，你看，游戏盒还没开封呢。说不定值点钱。”",
+        "彼得仔细看了看盒子，果然，它完全被工厂密封塑料包着。他看到盒子背面印着 1973 年的日期。",
+        "“你应该把它放到网上拍卖，看看会怎样。”女店员说。",
+        "“对，你说得对。人们喜欢稀有的东西。”彼得赞同道，“我无法想象 40 年后还有多少未开封的这款游戏。”",
+        "“如果卖出去了，别忘了告诉我。”女店员笑着说。",
+        "“没问题。”彼得说。",
+        "回家后，彼得上了几个拍卖网站找这款游戏，但没找到。然后他输入游戏名称，按下搜索。搜索结果有 543 个网站，包含这款游戏变迁的信息。多年来，这款游戏使用过不同大小的字母和不同颜色的游戏板。他还找到一些游戏迷的名单，他们在寻找不同版本。彼得给其中一些人发了邮件，告诉他们自己有什么。",
+        "两周后，彼得回到那家店。",
+        "“你好！你还记得那盒未开封的拼字游戏吗？”",
+        "女店员看了他一秒，认出他后说：“哦，你好！”",
+        "“我有东西给你，”彼得说，“我把游戏卖了，赚了 1000 美元。谢谢你的建议。”他递给她三张 100 美元钞票。",
+        "“哇！”女店员叫起来，“谢谢你！我完全没想到。”"
       ]
     },
     {
@@ -2171,16 +2362,18 @@
       "catName": "经历记叙类",
       "number": 11,
       "heading": "",
-      "title": "",
+      "title": "I am the owner of a small clothing store",
       "fallbackTitle": "I am the owner of a small clothing store",
       "blocks": [
         {
           "type": "p",
-          "text": "I am the owner of a small clothing store. Three months ago I decided to move my store to Glendale, another area of town, because business was not very good. Now I rent a store in an old building. The new location in Glendale is excellent, and my sales have improved a lot. (The utilities are also cheaper!) There is a high school nearby, and many of the students come to my store to buy their clothes. This location has other advantages, too. It is closer to my home, and there is a food store on the next block, so it is convenient for me to go shopping after work."
+          "text": "I am the owner of a small clothing store. Three months ago I decided to move my store to Glendale, another area of town, because business was not very good. Now I rent a store in an old building. The new location in Glendale is excellent, and my sales have improved a lot. (The utilities are also cheaper!) There is a high school nearby, and many of the students come to my store to buy their clothes. This location has other advantages, too. It is closer to my home, and there is a food store on the next block, so it is convenient for me to go shopping after work.",
+          "translation": "我是一家小服装店的店主。三个月前，因为生意不太好，我决定把店搬到城里的另一个区域 Glendale。现在我租了一栋老建筑里的店面。Glendale 的新位置很好，我的销售额提高了很多。（水电费也更便宜！）附近有一所高中，很多学生来我店里买衣服。这个位置还有其他优势：它离我家更近，而且下一个街区有一家食品店，所以我下班后购物很方便。"
         },
         {
           "type": "p",
-          "text": "The size of my new store is better, too. It is much bigger, and there is a lot of storage space. But the building was not in very good condition, and I had to make many improvements. The paint was old and dirty, and I had to pick a new color and paint all of the walls. I hired a man to build new wooden dressing rooms. I also made new curtains for the rooms and the window. I am completely satisfied with the store now. Unfortunately, I learned last week that the owner wants to sell the building — after all my hard work! How did I learn this? I came to work on Friday and saw a \"For Sale\" sign in front of my store."
+          "text": "The size of my new store is better, too. It is much bigger, and there is a lot of storage space. But the building was not in very good condition, and I had to make many improvements. The paint was old and dirty, and I had to pick a new color and paint all of the walls. I hired a man to build new wooden dressing rooms. I also made new curtains for the rooms and the window. I am completely satisfied with the store now. Unfortunately, I learned last week that the owner wants to sell the building — after all my hard work! How did I learn this? I came to work on Friday and saw a \"For Sale\" sign in front of my store.",
+          "translation": "新店的面积也更好。它大得多，有很多储物空间。但这栋建筑状况不太好，我不得不做很多改善。油漆又旧又脏，我只好重新选颜色，把所有的墙都刷了一遍。我雇人搭了新的木制试衣间，还为试衣间和窗户做了新窗帘。现在我对这家店非常满意。不幸的是，上周我得知房东想卖掉这栋楼——在我辛苦付出之后！我是怎么知道的？星期五我来上班，看到店门前立着一块“出售”的牌子。"
         }
       ],
       "paragraphs": [
@@ -2197,8 +2390,9 @@
             "the old store did not sell a lot of goods",
             "it was in a new area"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "第一段说三个月前决定把店搬到 Glendale，原因是“business was not very good”，即旧店生意不好、卖不出多少货。",
+          "evidence": "because business was not very good"
         },
         {
           "num": 2,
@@ -2209,8 +2403,9 @@
             "can go to the shopping center in her business hours",
             "has been told that the furniture is cheaper there"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第一段说新店附近有一所高中，很多学生来店里买衣服；A 的 until 与原文相反，C、D 无依据。",
+          "evidence": "many of the students come to my store to buy their clothes"
         },
         {
           "num": 3,
@@ -2221,8 +2416,9 @@
             "It was she who made some arrangements for the dressing rooms.",
             "After hard work, she is very satisfied with what she has done."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "原文说新店离家更近，而且隔壁街区有食品店，所以下班后购物方便；A 把便利的原因说成“服装店离家近”，忽略了食品店这一关键，表述不准确。B、C、D 均与原文相符。",
+          "evidence": "there is a food store on the next block"
         },
         {
           "num": 4,
@@ -2233,8 +2429,9 @@
             "the store owner asked the workmen to repair the dressing rooms",
             "the landlord did a lot of work to rebuild it"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "第二段说建筑状况不好，店主自己刷墙、雇人搭更衣室、做窗帘，做了大量改造；不是房东做的。",
+          "evidence": "I had to make many improvements"
         },
         {
           "num": 5,
@@ -2245,16 +2442,17 @@
             "to be rented",
             "to be sold"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "“For Sale” 是“出售”的意思，表示这栋楼要被卖掉；不是出租、招聘或关门。",
+          "evidence": "saw a \"For Sale\" sign in front of my store"
         }
       ],
       "wordCount": 236,
       "difficulty": "进阶",
       "file": "经历记叙类专项训练.md",
       "translations": [
-        "",
-        ""
+        "我是一家小服装店的店主。三个月前，因为生意不太好，我决定把店搬到城里的另一个区域 Glendale。现在我租了一栋老建筑里的店面。Glendale 的新位置很好，我的销售额提高了很多。（水电费也更便宜！）附近有一所高中，很多学生来我店里买衣服。这个位置还有其他优势：它离我家更近，而且下一个街区有一家食品店，所以我下班后购物很方便。",
+        "新店的面积也更好。它大得多，有很多储物空间。但这栋建筑状况不太好，我不得不做很多改善。油漆又旧又脏，我只好重新选颜色，把所有的墙都刷了一遍。我雇人搭了新的木制试衣间，还为试衣间和窗户做了新窗帘。现在我对这家店非常满意。不幸的是，上周我得知房东想卖掉这栋楼——在我辛苦付出之后！我是怎么知道的？星期五我来上班，看到店门前立着一块“出售”的牌子。"
       ]
     },
     {
@@ -2263,48 +2461,58 @@
       "catName": "应用文类",
       "number": 1,
       "heading": "",
-      "title": "",
+      "title": "The White House is the most visited residence in the world",
       "fallbackTitle": "The White House is the most visited residence in the world",
       "blocks": [
         {
           "type": "p",
-          "text": "The White House is the most visited residence in the world. Tours may be scheduled through our Washington DC office. Due to security and scheduling procedures, there are a few things you should know before requesting a tour:"
+          "text": "The White House is the most visited residence in the world. Tours may be scheduled through our Washington DC office. Due to security and scheduling procedures, there are a few things you should know before requesting a tour:",
+          "translation": "白宫是世界上参观人数最多的官邸。参观可以通过我们的华盛顿特区办公室预约。由于安全和日程安排程序，在申请参观之前，有几件事你需要了解："
         },
         {
           "type": "li",
-          "text": "Only groups of 10 or more may request a tour."
+          "text": "Only groups of 10 or more may request a tour.",
+          "translation": "只有 10 人及以上的团体才能申请参观。"
         },
         {
           "type": "li",
-          "text": "Requests must be submitted with a minimum of one month's advance notice from the date of the tour. Notice of whether your application is accepted will be given 10 days prior to the date requested. All tours, even after they have been confirmed, are subject to cancellation due to security interests."
+          "text": "Requests must be submitted with a minimum of one month's advance notice from the date of the tour. Notice of whether your application is accepted will be given 10 days prior to the date requested. All tours, even after they have been confirmed, are subject to cancellation due to security interests.",
+          "translation": "申请必须在参观日期前至少一个月提交。申请是否被接受，会在参观日期前 10 天通知。所有参观即使已经确认，也可能因安全原因被取消。"
         },
         {
           "type": "li",
-          "text": "Tours are only conducted Tuesday through Saturday from 7:30 am to 11:30 am."
+          "text": "Tours are only conducted Tuesday through Saturday from 7:30 am to 11:30 am.",
+          "translation": "参观只在周二至周六上午 7:30 至 11:30 进行。"
         },
         {
           "type": "p",
-          "text": "To process your request for a tour, please contact our Washington office at (202) 224-5521 and provide the following information:"
+          "text": "To process your request for a tour, please contact our Washington office at (202) 224-5521 and provide the following information:",
+          "translation": "为处理你的参观申请，请联系我们的华盛顿办公室 (202) 224-5521，并提供以下信息："
         },
         {
           "type": "li",
-          "text": "Date(s) requesting."
+          "text": "Date(s) requesting.",
+          "translation": "申请参观的日期。"
         },
         {
           "type": "li",
-          "text": "Security information for each person in your party, including: name as it appears on ID (ID required for ages 14 and up), date of birth, social security number, country of origin, and citizenship."
+          "text": "Security information for each person in your party, including: name as it appears on ID (ID required for ages 14 and up), date of birth, social security number, country of origin, and citizenship.",
+          "translation": "每位同行人员的安全信息，包括：身份证上的姓名（14 岁及以上需提供身份证）、出生日期、社会安全号码、原籍国和公民身份。"
         },
         {
           "type": "li",
-          "text": "A home address and daytime and evening phone numbers for the designated (指派的) leader of the group."
+          "text": "A home address and daytime and evening phone numbers for the designated (指派的) leader of the group.",
+          "translation": "指定团体负责人的家庭住址以及日间和晚间电话号码。"
         },
         {
           "type": "li",
-          "text": "A contact number while in DC for the designated leader of the group."
+          "text": "A contact number while in DC for the designated leader of the group.",
+          "translation": "指定团体负责人在华盛顿特区期间的联系电话。"
         },
         {
           "type": "p",
-          "text": "After your request is confirmed or denied, our office will contact you with further instructions."
+          "text": "After your request is confirmed or denied, our office will contact you with further instructions.",
+          "translation": "你的申请被确认或拒绝后，我们的办公室会联系你并给出进一步指示。"
         }
       ],
       "paragraphs": [
@@ -2322,8 +2530,9 @@
             "application for a tour of the White House",
             "duties of a tour group leader"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "全文说明如何申请参观白宫：团队人数、提前多久、需要提交哪些信息，因此这是一份参观申请须知。",
+          "evidence": "before requesting a tour"
         },
         {
           "num": 2,
@@ -2334,8 +2543,9 @@
             "every other day",
             "on weekends only"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "开放时间为周二至周六，共五天；不是只在工作日或周末。",
+          "evidence": "Tours are only conducted Tuesday through Saturday"
         },
         {
           "num": 3,
@@ -2346,8 +2556,9 @@
             "any day between Tuesday and Saturday",
             "10 days before the date of the tour"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "申请必须至少提前一个月提交，一个月约等于 30 天，因此 B 正确；10 天是通知申请结果的时间，不是提交申请的时间。",
+          "evidence": "a minimum of one month's advance notice"
         },
         {
           "num": 4,
@@ -2358,8 +2569,9 @@
             "you can surely visit the White House that day",
             "it is necessary for you to start your tour immediately"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "文中明确说即使参观已确认，也可能因安全原因被取消，因此确认后仍可能取消。",
+          "evidence": "even after they have been confirmed, are subject to cancellation"
         },
         {
           "num": 5,
@@ -2370,17 +2582,25 @@
             "separate tours can also be scheduled for individual visitors",
             "security is the chief concern in scheduling White House tours"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "D",
+          "explanation": "文中多次提到安全审查、安全信息、因安全原因取消等，可推知安全是安排白宫参观的首要考量；A 是对“14 岁及以上需身份证”的误读。",
+          "evidence": "Due to security and scheduling procedures"
         }
       ],
       "wordCount": 205,
       "difficulty": "进阶",
       "file": "应用文类专项训练.md",
       "translations": [
-        "",
-        "",
-        ""
+        "白宫是世界上参观人数最多的官邸。参观可以通过我们的华盛顿特区办公室预约。由于安全和日程安排程序，在申请参观之前，有几件事你需要了解：",
+        "只有 10 人及以上的团体才能申请参观。",
+        "申请必须在参观日期前至少一个月提交。申请是否被接受，会在参观日期前 10 天通知。所有参观即使已经确认，也可能因安全原因被取消。",
+        "参观只在周二至周六上午 7:30 至 11:30 进行。",
+        "为处理你的参观申请，请联系我们的华盛顿办公室 (202) 224-5521，并提供以下信息：",
+        "申请参观的日期。",
+        "每位同行人员的安全信息，包括：身份证上的姓名（14 岁及以上需提供身份证）、出生日期、社会安全号码、原籍国和公民身份。",
+        "指定团体负责人的家庭住址以及日间和晚间电话号码。",
+        "指定团体负责人在华盛顿特区期间的联系电话。",
+        "你的申请被确认或拒绝后，我们的办公室会联系你并给出进一步指示。"
       ]
     },
     {
@@ -2394,31 +2614,38 @@
       "blocks": [
         {
           "type": "p",
-          "text": "These terms and conditions should be read before you sign your contract."
+          "text": "These terms and conditions should be read before you sign your contract.",
+          "translation": "签署合同前，请先阅读这些条款和条件。"
         },
         {
           "type": "p",
-          "text": "Salary: Your starting salary is: $15,000. This is reviewed annually."
+          "text": "Salary: Your starting salary is: $15,000. This is reviewed annually.",
+          "translation": "工资：起薪为 15,000 美元，每年审核一次。"
         },
         {
           "type": "p",
-          "text": "Hours: Work are eight hours a day, Monday through Friday. You will start work on Feb. 21, 2008. On the first morning, report to your line manager John Knight."
+          "text": "Hours: Work are eight hours a day, Monday through Friday. You will start work on Feb. 21, 2008. On the first morning, report to your line manager John Knight.",
+          "translation": "工时：每天工作八小时，周一至周五。你将于 2008 年 2 月 21 日开始工作。第一天早上，向你的直线经理约翰·奈特报到。"
         },
         {
           "type": "p",
-          "text": "Health and safety: Please read the safety regulations attached. If you have any questions, contact the health and safety officer, whose name is at the top of the regulation sheet. If you have health problems, please inform the Senior Nurse, Chris Thomas. If you cannot work because of illness, please telephone the factory."
+          "text": "Health and safety: Please read the safety regulations attached. If you have any questions, contact the health and safety officer, whose name is at the top of the regulation sheet. If you have health problems, please inform the Senior Nurse, Chris Thomas. If you cannot work because of illness, please telephone the factory.",
+          "translation": "健康与安全：请阅读随附的安全规定。如有疑问，联系安全规定表顶部的健康与安全官。如有健康问题，请通知高级护士克里斯·托马斯。如因病无法上班，请致电工厂。"
         },
         {
           "type": "p",
-          "text": "Annual leave: During your first year of employment you are allowed twenty days' leave. This should be arranged with your line manager."
+          "text": "Annual leave: During your first year of employment you are allowed twenty days' leave. This should be arranged with your line manager.",
+          "translation": "年假：入职第一年，你享有二十天假期，需与直线经理安排。"
         },
         {
           "type": "p",
-          "text": "Overtime (加班): If you work more than forty hours a week, you will be paid at the current overtime rate. Your line manager will keep a record of the overtime you work. If you work on public holidays, you will be paid at the current rates. If you prefer, time can be taken instead of extra pay for public holidays and overtime."
+          "text": "Overtime (加班): If you work more than forty hours a week, you will be paid at the current overtime rate. Your line manager will keep a record of the overtime you work. If you work on public holidays, you will be paid at the current rates. If you prefer, time can be taken instead of extra pay for public holidays and overtime.",
+          "translation": "加班：如果每周工作超过四十小时，将按当前加班费率支付。直线经理会记录你的加班时间。如果在公共假日工作，将按当前费率支付。如果你愿意，也可以用调休代替公共假日和加班的额外报酬。"
         },
         {
           "type": "p",
-          "text": "Clothing: The Supplies Department provides overalls (工作服). Inform Supplies of your size two days before you need them. You can also order any other equipment you need for your job from Supplies."
+          "text": "Clothing: The Supplies Department provides overalls (工作服). Inform Supplies of your size two days before you need them. You can also order any other equipment you need for your job from Supplies.",
+          "translation": "服装：供应部提供工作服。需要在两天前把你的尺码告诉供应部。你也可以从供应部订购工作中需要的其他设备。"
         }
       ],
       "paragraphs": [
@@ -2440,8 +2667,9 @@
             "is re-examined from year to year",
             "is fixed for the whole contract period"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "合同写明起薪 15,000 美元，“This is reviewed annually”，即每年重新审核、调整。",
+          "evidence": "This is reviewed annually."
         },
         {
           "num": 2,
@@ -2452,8 +2680,9 @@
             "report to their line manager",
             "contact the health and safety officer"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "健康与安全条款说，如果有健康问题，应通知 Senior Nurse Chris Thomas；生病无法上班才打电话给工厂。",
+          "evidence": "If you have health problems, please inform the Senior Nurse"
         },
         {
           "num": 3,
@@ -2464,8 +2693,9 @@
             "arranging annual leave",
             "helping with personal affairs"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "年假条款说休假应与 line manager 安排，因此 line manager 负责安排年假；加薪、签合同、私事都没有提到。",
+          "evidence": "This should be arranged with your line manager."
         },
         {
           "num": 4,
@@ -2476,8 +2706,9 @@
             "a pay raise",
             "paid holidays"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "在公共假日工作会按当前费率支付，也就是获得额外报酬；如果愿意，也可以用调休代替加班费。",
+          "evidence": "If you work on public holidays, you will be paid at the current rates."
         },
         {
           "num": 5,
@@ -2488,21 +2719,22 @@
             "the style",
             "the quantity"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "服装条款要求员工在需要工服前两天把“size”（尺寸）告诉 Supplies Department。",
+          "evidence": "Inform Supplies of your size two days before you need them."
         }
       ],
       "wordCount": 215,
       "difficulty": "进阶",
       "file": "应用文类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "签署合同前，请先阅读这些条款和条件。",
+        "工资：起薪为 15,000 美元，每年审核一次。",
+        "工时：每天工作八小时，周一至周五。你将于 2008 年 2 月 21 日开始工作。第一天早上，向你的直线经理约翰·奈特报到。",
+        "健康与安全：请阅读随附的安全规定。如有疑问，联系安全规定表顶部的健康与安全官。如有健康问题，请通知高级护士克里斯·托马斯。如因病无法上班，请致电工厂。",
+        "年假：入职第一年，你享有二十天假期，需与直线经理安排。",
+        "加班：如果每周工作超过四十小时，将按当前加班费率支付。直线经理会记录你的加班时间。如果在公共假日工作，将按当前费率支付。如果你愿意，也可以用调休代替公共假日和加班的额外报酬。",
+        "服装：供应部提供工作服。需要在两天前把你的尺码告诉供应部。你也可以从供应部订购工作中需要的其他设备。"
       ]
     },
     {
@@ -2511,32 +2743,38 @@
       "catName": "经济商业类",
       "number": 1,
       "heading": "",
-      "title": "",
+      "title": "It seems obvious that you don’t give away your product for free but this is exactly what i",
       "fallbackTitle": "It seems obvious that you don’t give away your product for free but this is exactly what i",
       "blocks": [
         {
           "type": "p",
-          "text": "It seems obvious that you don’t give away your product for free but this is exactly what indie rock group The Crimea did earlier this year. The band’s reasoning goes like this: more people will download the free album than would pay for it. Therefore, more people will hear the Crimea’s music. These people will then pay money for concerts by the band and perhaps buy a T-shirt or other merchandise. If the band play regular concerts to crowds of 200 or 300 people they can make more money than they would from sales of CDs. There will always be some people who want something they can hold in their hands so they will release the CD into the shops too—but making money through sales of their music isn’t the top priority."
+          "text": "It seems obvious that you don’t give away your product for free but this is exactly what indie rock group The Crimea did earlier this year. The band’s reasoning goes like this: more people will download the free album than would pay for it. Therefore, more people will hear the Crimea’s music. These people will then pay money for concerts by the band and perhaps buy a T-shirt or other merchandise. If the band play regular concerts to crowds of 200 or 300 people they can make more money than they would from sales of CDs. There will always be some people who want something they can hold in their hands so they will release the CD into the shops too—but making money through sales of their music isn’t the top priority.",
+          "translation": "不免费赠送产品似乎是理所当然的，但这正是独立摇滚乐队 The Crimea 今年早些时候做的事。乐队的逻辑是：免费下载专辑的人会比付费购买的人多，因此会有更多人听到 The Crimea 的音乐。这些人随后会花钱看乐队演出，也许还会买 T 恤或其他周边。如果乐队定期为两三百人的观众演出，他们赚的钱会比卖 CD 更多。总有一些人想要能拿在手里的东西，所以他们也会把 CD 放进商店销售——但通过销售音乐赚钱并不是他们的首要目标。"
         },
         {
           "type": "p",
-          "text": "The story illustrates the creative thinking going on in the music business in response to dramatic changes over the last few years in the way that people buy music. Sales of music digitally—to computer, MP3 players and mobile phones—reached nearly 52 billion dollars in 2006—an increase of almost 100% on the previous year. People are simply not buying CDs in the way they used to, and by the time they stop buying them entirely, the music industry wants to make sure they are buying music in another form."
+          "text": "The story illustrates the creative thinking going on in the music business in response to dramatic changes over the last few years in the way that people buy music. Sales of music digitally—to computer, MP3 players and mobile phones—reached nearly 52 billion dollars in 2006—an increase of almost 100% on the previous year. People are simply not buying CDs in the way they used to, and by the time they stop buying them entirely, the music industry wants to make sure they are buying music in another form.",
+          "translation": "这个故事说明了音乐行业正在进行的创造性思考，以应对过去几年人们购买音乐方式的剧烈变化。2006 年，数字音乐（面向电脑、MP3 播放器和手机）销售额达到近 520 亿美元，比上一年增长近 100%。人们就是不再像过去那样购买 CD 了；等到他们完全不买 CD 时，音乐行业希望确保他们正在以另一种形式购买音乐。"
         },
         {
           "type": "p",
-          "text": "This trend looks set to continue so the big question for the music industry is whether they can successfully manage the move to being primarily a digital industry without profits falling to unacceptable levels."
+          "text": "This trend looks set to continue so the big question for the music industry is whether they can successfully manage the move to being primarily a digital industry without profits falling to unacceptable levels.",
+          "translation": "这一趋势看来还会继续，因此音乐行业面临的重大问题是：他们能否成功转向以数字业务为主，同时不让利润跌到不可接受的水平。"
         },
         {
           "type": "p",
-          "text": "There are both positive and negative signs. On the plus side, more and more people are buying music online. At present, teenagers buy a lot of music on mobile phones. Research by UK mobile operators suggests that 75 percent of 16- to 24-year-olds want to buy a track they like if they hear it played on the radio. But with so much competition, it is impossible for all bands to make an impact immediately by doing a free download."
+          "text": "There are both positive and negative signs. On the plus side, more and more people are buying music online. At present, teenagers buy a lot of music on mobile phones. Research by UK mobile operators suggests that 75 percent of 16- to 24-year-olds want to buy a track they like if they hear it played on the radio. But with so much competition, it is impossible for all bands to make an impact immediately by doing a free download.",
+          "translation": "有积极迹象，也有消极迹象。好的一面是，越来越多的人在网上购买音乐。目前，青少年在手机上购买大量音乐。英国移动运营商的研究表明，16 至 24 岁的人中，75% 如果听到收音机里播放喜欢的歌，就想买下这首单曲。但竞争如此激烈，所有乐队都不可能仅靠一次免费下载就立刻产生影响。"
         },
         {
           "type": "p",
-          "text": "The bad news for the record companies, however, is the opportunity to illegally download music. Piracy—usually in the form of cheaply copied CDs—has long been a problem for the music business but the internet is allowing pirates to distribute freely and broadly through file-sharing sites and large pirate download sites."
+          "text": "The bad news for the record companies, however, is the opportunity to illegally download music. Piracy—usually in the form of cheaply copied CDs—has long been a problem for the music business but the internet is allowing pirates to distribute freely and broadly through file-sharing sites and large pirate download sites.",
+          "translation": "然而，对唱片公司来说，坏消息是非法下载音乐的机会。盗版——通常以廉价复制的 CD 形式出现——长期困扰音乐行业，但互联网让盗版者通过文件分享网站和大型盗版下载网站自由而广泛地传播。"
         },
         {
           "type": "p",
-          "text": "In this situation there is a danger that bands may give away their music for free and promote it in the next few years, a very interesting thing to start observing in the music business."
+          "text": "In this situation there is a danger that bands may give away their music for free and promote it in the next few years, a very interesting thing to start observing in the music business.",
+          "translation": "在这种情况下，未来几年乐队可能会免费赠送音乐来宣传自己，这是音乐行业一个非常值得开始观察的现象。"
         }
       ],
       "paragraphs": [
@@ -2557,8 +2795,9 @@
             "They played free concerts.",
             "They charged more for their CDs."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "The Crimea 的不同寻常之处是主动把专辑免费放到网上让人下载，再靠演出和周边赚钱；他们并没有在店里免费送 CD，也没有办免费演唱会。",
+          "evidence": "more people will download the free album than would pay for it"
         },
         {
           "num": 2,
@@ -2569,8 +2808,9 @@
             "by selling merchandise on the internet",
             "through sales of merchandise in shops"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "B",
+          "explanation": "乐队希望人们听完免费专辑后去买演唱会门票、T 恤和其他周边，从而赚钱；CD 销售不是首要目标。",
+          "evidence": "pay money for concerts by the band and perhaps buy a T-shirt or other merchandise"
         },
         {
           "num": 3,
@@ -2581,8 +2821,9 @@
             "there are still people who prefer CDs to other formats",
             "people who fail to attend their concerts need them"
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "文中说总有一些人想要“能拿在手里的东西”，所以乐队仍把 CD 放进商店销售，即仍有人偏爱实体 CD。",
+          "evidence": "some people who want something they can hold in their hands"
         },
         {
           "num": 4,
@@ -2593,8 +2834,9 @@
             "There is no change compared to previous sales.",
             "It is not mentioned in the passage."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "A",
+          "explanation": "第二段说数字音乐销售额达到近 520 亿美元，比上一年增长近 100%，可推知音乐总体销售额上升；CD 销售下降是另一回事。",
+          "evidence": "an increase of almost 100% on the previous year"
         },
         {
           "num": 5,
@@ -2605,20 +2847,21 @@
             "It has made it easier to illegally copy music.",
             "It has reduced the number of pirate CDs available."
           ],
-          "answer": "",
-          "explanation": ""
+          "answer": "C",
+          "explanation": "最后一段说互联网让盗版者通过文件分享网站和大规模盗版下载站自由、广泛地传播音乐，即让非法复制音乐更容易。",
+          "evidence": "the internet is allowing pirates to distribute freely and broadly"
         }
       ],
       "wordCount": 417,
       "difficulty": "挑战",
       "file": "经济商业类专项训练.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "不免费赠送产品似乎是理所当然的，但这正是独立摇滚乐队 The Crimea 今年早些时候做的事。乐队的逻辑是：免费下载专辑的人会比付费购买的人多，因此会有更多人听到 The Crimea 的音乐。这些人随后会花钱看乐队演出，也许还会买 T 恤或其他周边。如果乐队定期为两三百人的观众演出，他们赚的钱会比卖 CD 更多。总有一些人想要能拿在手里的东西，所以他们也会把 CD 放进商店销售——但通过销售音乐赚钱并不是他们的首要目标。",
+        "这个故事说明了音乐行业正在进行的创造性思考，以应对过去几年人们购买音乐方式的剧烈变化。2006 年，数字音乐（面向电脑、MP3 播放器和手机）销售额达到近 520 亿美元，比上一年增长近 100%。人们就是不再像过去那样购买 CD 了；等到他们完全不买 CD 时，音乐行业希望确保他们正在以另一种形式购买音乐。",
+        "这一趋势看来还会继续，因此音乐行业面临的重大问题是：他们能否成功转向以数字业务为主，同时不让利润跌到不可接受的水平。",
+        "有积极迹象，也有消极迹象。好的一面是，越来越多的人在网上购买音乐。目前，青少年在手机上购买大量音乐。英国移动运营商的研究表明，16 至 24 岁的人中，75% 如果听到收音机里播放喜欢的歌，就想买下这首单曲。但竞争如此激烈，所有乐队都不可能仅靠一次免费下载就立刻产生影响。",
+        "然而，对唱片公司来说，坏消息是非法下载音乐的机会。盗版——通常以廉价复制的 CD 形式出现——长期困扰音乐行业，但互联网让盗版者通过文件分享网站和大型盗版下载网站自由而广泛地传播。",
+        "在这种情况下，未来几年乐队可能会免费赠送音乐来宣传自己，这是音乐行业一个非常值得开始观察的现象。"
       ]
     }
   ],
@@ -2626,7 +2869,7 @@
     "articles": 24,
     "questions": 118,
     "words": 6838,
-    "withAnswers": 0,
-    "withTranslations": 0
+    "withAnswers": 118,
+    "withTranslations": 24
   }
 }

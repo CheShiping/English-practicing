@@ -1,0 +1,78 @@
+{
+  "jingli-07": {
+    "1": {
+      "answer": "A",
+      "explanation": "母亲每晚告诉他“你一定会成为了不起的人，只要足够努力就能做到任何事”，这些话充满鼓励，改变了作者一生。",
+      "evidence": "you are certain to be a great man and you can do anything in life"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第三段说母亲每天告诉作者，不管医生怎么说，只要他足够想走就能重新走路；“that message”指的就是这句话。",
+      "evidence": "I could walk again if I wanted to walk badly enough"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第四段说作者在度假时对只能住二流酒店、每个孩子还要加收 2 美元感到不满和愤怒，于是决定开一家不向儿童额外收费的家庭旅馆。",
+      "evidence": "I was dissatisfied with the second-class hotels ... and was angry that they charged an extra $2"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "母亲独自抚养孩子、在车祸后坚信儿子能重新走路、后来又在旅馆前台工作并设计房间，体现她充满爱、支持儿子且意志坚强。",
+      "evidence": "my mom was one of my strongest supporters"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文章强调母亲的鼓励、明确的目标（为家庭开旅馆）、自信和努力；没有把高等教育、家庭贫困或运气列为成功原因。",
+      "evidence": "if you can find a task in life worth working for and believe in yourself"
+    }
+  },
+  "jingli-08": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段说孩子从小被要求当众大声朗读，一旦不认识单词就会在所有人面前出错，这种公开羞辱让他们害怕并讨厌书本。",
+      "evidence": "we make them read aloud before the teacher and other children"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "老师明确说“I want you to read them only for pleasure”，只要读懂到能享受并愿意继续读就够了，不考单词意思。",
+      "evidence": "I want you to read them only for pleasure."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "孩子们“sat stunned and silent”，一个女孩还反复确认“Do you really mean that?”，说明他们觉得老师的话好得难以置信。",
+      "evidence": "The children sat stunned and silent."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "老师主张让孩子为乐趣阅读、跳过难懂部分、自己选择读什么和怎么读；她并不要求理解每个细节，也不认为阅读永远不快乐。",
+      "evidence": "skip over those parts and go on to the next good part"
+    }
+  },
+  "jingli-09": {
+    "1": {
+      "answer": "C",
+      "explanation": "第一段说 Clarke 太太每周四都去 Over 60s Club，这对独居老人来说是一次愉快的出游，因此她期待星期四。",
+      "evidence": "She always went there on Thursdays."
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第二段说门和窗都锁好，没有“forced entry”的迹象；反过来说，如果有人强行进入，就应该会发现门窗被破坏。",
+      "evidence": "There was no sign of forced entry."
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "第三个星期四她按平时时间出门，却没去俱乐部，而是从花园后门悄悄回家等待，目的是诱使小偷现身。",
+      "evidence": "she went out at her usual time, but she didn’t go to the club"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "小偷从信箱口伸进一根长铁丝，转动门锁上的旋钮，说明这把锁可以用长铁丝从信箱口打开。",
+      "evidence": "The wire turned and caught around the knob on the door-lock."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "Clarke 太太把一壶沸水浇在小偷手上，小偷因烫而松手，铁丝掉在地上；原因不是手套掉落或主动放弃。",
+      "evidence": "Mrs. Clarke raised the kettle and poured the water over the hand."
+    }
+  }
+}

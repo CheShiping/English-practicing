@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import {
-  ArrowRight,
   BookOpen,
   CheckCircle2,
   FileText,

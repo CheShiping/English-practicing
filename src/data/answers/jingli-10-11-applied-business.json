@@ -1,0 +1,137 @@
+{
+  "jingli-10": {
+    "1": {
+      "answer": "A",
+      "explanation": "盒子上印着 1973 年，故事发生在约 40 年后，因此这款拼字游戏大约生产于 40 年前；B 是游戏板颜色不同而非尺寸，C 是工厂密封塑料而非普通塑料袋。",
+      "evidence": "He saw a date of 1973 on the back of the box."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "女店员看到盒子从未开封，说“That might be worth some money”，并建议拿到网上拍卖，说明她认为它稀有且有价值。",
+      "evidence": "That might be worth some money."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "Peter 在网上搜索游戏名称，找到 543 个相关网站和游戏迷名单，因此名单来自互联网。",
+      "evidence": "Then he typed in the name of the word game and hit SEARCH."
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "故事结尾 Peter 卖掉游戏赚了 1,000 美元，回到店里把三张 100 美元钞票（共 300 美元）交给女店员作为感谢。",
+      "evidence": "He handed her three $100 bills."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "女店员的一句提醒让 Peter 发现旧游戏的价值，Peter 因此专门回来致谢并分享收益，故事传达的是“对别人的帮助心存感激”。",
+      "evidence": "Thank you for your suggestion"
+    }
+  },
+  "jingli-11": {
+    "1": {
+      "answer": "C",
+      "explanation": "第一段说三个月前决定把店搬到 Glendale，原因是“business was not very good”，即旧店生意不好、卖不出多少货。",
+      "evidence": "because business was not very good"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第一段说新店附近有一所高中，很多学生来店里买衣服；A 的 until 与原文相反，C、D 无依据。",
+      "evidence": "many of the students come to my store to buy their clothes"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "原文说新店离家更近，而且隔壁街区有食品店，所以下班后购物方便；A 把便利的原因说成“服装店离家近”，忽略了食品店这一关键，表述不准确。B、C、D 均与原文相符。",
+      "evidence": "there is a food store on the next block"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第二段说建筑状况不好，店主自己刷墙、雇人搭更衣室、做窗帘，做了大量改造；不是房东做的。",
+      "evidence": "I had to make many improvements"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "“For Sale” 是“出售”的意思，表示这栋楼要被卖掉；不是出租、招聘或关门。",
+      "evidence": "saw a \"For Sale\" sign in front of my store"
+    }
+  },
+  "yingyong-01": {
+    "1": {
+      "answer": "C",
+      "explanation": "全文说明如何申请参观白宫：团队人数、提前多久、需要提交哪些信息，因此这是一份参观申请须知。",
+      "evidence": "before requesting a tour"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "开放时间为周二至周六，共五天；不是只在工作日或周末。",
+      "evidence": "Tours are only conducted Tuesday through Saturday"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "申请必须至少提前一个月提交，一个月约等于 30 天，因此 B 正确；10 天是通知申请结果的时间，不是提交申请的时间。",
+      "evidence": "a minimum of one month's advance notice"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "文中明确说即使参观已确认，也可能因安全原因被取消，因此确认后仍可能取消。",
+      "evidence": "even after they have been confirmed, are subject to cancellation"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "文中多次提到安全审查、安全信息、因安全原因取消等，可推知安全是安排白宫参观的首要考量；A 是对“14 岁及以上需身份证”的误读。",
+      "evidence": "Due to security and scheduling procedures"
+    }
+  },
+  "yingyong-02": {
+    "1": {
+      "answer": "C",
+      "explanation": "合同写明起薪 15,000 美元，“This is reviewed annually”，即每年重新审核、调整。",
+      "evidence": "This is reviewed annually."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "健康与安全条款说，如果有健康问题，应通知 Senior Nurse Chris Thomas；生病无法上班才打电话给工厂。",
+      "evidence": "If you have health problems, please inform the Senior Nurse"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "年假条款说休假应与 line manager 安排，因此 line manager 负责安排年假；加薪、签合同、私事都没有提到。",
+      "evidence": "This should be arranged with your line manager."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "在公共假日工作会按当前费率支付，也就是获得额外报酬；如果愿意，也可以用调休代替加班费。",
+      "evidence": "If you work on public holidays, you will be paid at the current rates."
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "服装条款要求员工在需要工服前两天把“size”（尺寸）告诉 Supplies Department。",
+      "evidence": "Inform Supplies of your size two days before you need them."
+    }
+  },
+  "jingji-01": {
+    "1": {
+      "answer": "A",
+      "explanation": "The Crimea 的不同寻常之处是主动把专辑免费放到网上让人下载，再靠演出和周边赚钱；他们并没有在店里免费送 CD，也没有办免费演唱会。",
+      "evidence": "more people will download the free album than would pay for it"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "乐队希望人们听完免费专辑后去买演唱会门票、T 恤和其他周边，从而赚钱；CD 销售不是首要目标。",
+      "evidence": "pay money for concerts by the band and perhaps buy a T-shirt or other merchandise"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "文中说总有一些人想要“能拿在手里的东西”，所以乐队仍把 CD 放进商店销售，即仍有人偏爱实体 CD。",
+      "evidence": "some people who want something they can hold in their hands"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "第二段说数字音乐销售额达到近 520 亿美元，比上一年增长近 100%，可推知音乐总体销售额上升；CD 销售下降是另一回事。",
+      "evidence": "an increase of almost 100% on the previous year"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "最后一段说互联网让盗版者通过文件分享网站和大规模盗版下载站自由、广泛地传播音乐，即让非法复制音乐更容易。",
+      "evidence": "the internet is allowing pirates to distribute freely and broadly"
+    }
+  }
+}

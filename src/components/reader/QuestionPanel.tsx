@@ -4,7 +4,6 @@ import { useMemo, useRef, useState } from 'react';
 import {
   Bookmark,
   Check,
-  ChevronDown,
   Eye,
   Lightbulb,
   LocateFixed,
@@ -14,6 +13,29 @@ import {
 } from 'lucide-react';
 import type { Article, AnswerState } from '@/lib/types';
 import { cn, formatDuration, percent } from '@/lib/utils';
+
+function StemText({ text }: { text: string }) {
+  const parts = text.split(/(_{3,})/g);
+  return (
+    <>
+      {parts.map((p, i) => {
+        if (!/^_{3,}$/.test(p)) return <span key={i}>{p}</span>;
+        const next = parts[i + 1] || '';
+        const punct = next.match(/^[.?!,;:]+/)?.[0];
+        if (punct) {
+          parts[i + 1] = next.slice(punct.length);
+          return (
+            <span key={i} className="q-blank-group">
+              <span className="q-blank" />
+              {punct}
+            </span>
+          );
+        }
+        return <span key={i} className="q-blank" />;
+      })}
+    </>
+  );
+}
 
 interface Props {
   article: Article;
@@ -169,7 +191,9 @@ export default function QuestionPanel({
             >
               <div className="q-card-head">
                 <span className="q-card-num">{q.num}</span>
-                <p className="q-stem">{q.stem}</p>
+                <p className="q-stem">
+                  <StemText text={q.stem} />
+                </p>
                 <button
                   className={cn('q-mark', answerState.marked.includes(q.num) && 'active')}
                   onClick={() => onMark(q.num)}
@@ -288,7 +312,6 @@ export default function QuestionPanel({
             <Send size={14} /> 提交答案
           </button>
         )}
-        <ChevronDown size={14} style={{ display: 'none' }} />
       </div>
     </div>
   );

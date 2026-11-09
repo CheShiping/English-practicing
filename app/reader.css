@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    Reader, dictionary, annotation, questions, modals
    ============================================================ */
 
@@ -2654,7 +2654,7 @@ html[data-theme='dark'] .sel-toolbar {
 
 .mobile-more-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
 }
 
@@ -2691,3 +2691,14 @@ html[data-theme='dark'] .sel-toolbar {
   justify-content: center;
   gap: 5px;
 }
+
+.q-blank { display: inline-block; width: 40px; border-bottom: 1.5px solid var(--line-strong); margin: 0 4px; vertical-align: -2px; }
+
+
+.q-blank-group { white-space: nowrap; }
+
+
+.q-stem { font-size: 13px; }
+.q-blank { width: 28px; margin: 0 3px; }
+
+

@@ -1,0 +1,83 @@
+{
+  "jingli-04": {
+    "1": {
+      "answer": "C",
+      "explanation": "第二段写鸟群来吃庄稼，作者先开枪、再挂死鸟当稻草人，最后成功保住收成，核心是“如何从鸟口中保护庄稼”；A 只是结果，B 是下一段的内容。",
+      "evidence": "I killed some birds and hung them among the crop, hoping they would serve as the scarecrows"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第五段说作者想起和 Xury 坐船航行的日子，“I wished to have a boat and explore the island by sea”，想有船是为了从海上探索这座岛。",
+      "evidence": "I wished to have a boat and explore the island by sea."
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "第三段说有了新粮食要储存，但细粮从篮子里漏出去，于是花了两个月做陶罐，因此“a new problem”指如何储存粮食。",
+      "evidence": "With my new grain to store, I found a new problem."
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "最后一句说“我”在岛上第四年有了两条船，但离海上航行并没有更近一步，意思是仍然无法乘船探索海岛。",
+      "evidence": "I was no closer to a sea journey."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "作者不断用墙、稻草人、陶罐、造船等办法解决生存问题，体现勇气与智慧；A 与“failed”相反，B 与“twenty years”不符，D 是原文直述而非推断。",
+      "evidence": ""
+    }
+  },
+  "jingli-05": {
+    "1": {
+      "answer": "C",
+      "explanation": "文章开头说“It’s not easy to be an astronaut’s son”，每个人都期待他特别或完美，因此作者觉得做名人之子很难。",
+      "evidence": "It’s not easy to be an astronaut’s son."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第二段说作者常梦想成为某种英雄，例如从着火的楼里救出孩子或发现一颗新星，因此他想救孩子是为了成为英雄。",
+      "evidence": "I often dream about being some kind of hero"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "作者最终决定写父亲陪他度过噩梦、在他失去小狗时拥抱他等日常片段，即与父亲共度的难忘时光，而不是父亲作为宇航员的成就。",
+      "evidence": "I saw him sitting with me in the dark when I had a terrible dream."
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "作者在作文比赛中获得二等奖，上台朗读后全场起立鼓掌，他说那是自己最骄傲的时刻。",
+      "evidence": "The second prize was announced. It was me."
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "全文围绕“作为宇航员之子”的自我认同展开，结尾落在“be my father’s son”，因此最佳标题是 My Father’s Son。",
+      "evidence": "it was enough just to be my father’s son."
+    }
+  },
+  "jingli-06": {
+    "1": {
+      "answer": "C",
+      "explanation": "作者心想“It’s a piece of cake for a graduate majoring in accounting”，即认为这项工作对自己这个会计专业毕业生来说很简单，所以一开始很高兴。",
+      "evidence": "It’s a piece of cake for a graduate majoring in accounting."
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "主管要求作者把所有数据再仔细核对一遍，后来又说“Do you think it’s necessary to repeat the whole cycle?”，体现他对工作严格、认真。",
+      "evidence": "he asked me to check all the data again with care"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "上文主管刚要求作者重新仔细核对全部数据，因此“repeat the whole cycle”指把整个核对流程再做一遍，即再次仔细检查所有数据。",
+      "evidence": "check all the data again with care"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "文中说作者第三次核对后把账本交给主管，“The chief was satisfied”，因此“主管仍不满意”是错误的。A、B、D 都与原文相符。",
+      "evidence": "The chief was satisfied when I handed the account books to him."
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "结尾明确总结：“It taught me that everything must be handled with care.” 即从第一天的经历中学到做事要认真谨慎。",
+      "evidence": "everything must be handled with care"
+    }
+  }
+}

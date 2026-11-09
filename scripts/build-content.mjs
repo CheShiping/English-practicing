@@ -23,7 +23,9 @@ function unescapeMd(s) {
 }
 
 function cleanLine(line) {
-  return unescapeMd(line.replace(/\r$/, '')).replace(/[ \t]+$/g, '');
+  return unescapeMd(line.replace(/\r$/, ''))
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/[ \t]+$/g, '');
 }
 
 function isPassageMarker(line) {
@@ -203,8 +205,9 @@ function parseQuestions(qLines) {
         num: current.num,
         stem,
         options: current.options,
-        answer: '',
-        explanation: '',
+        answer: current.answer || '',
+        explanation: current.explanation || '',
+        evidence: current.evidence || '',
       });
     }
     current = null;
@@ -223,11 +226,35 @@ function parseQuestions(qLines) {
     }
     if (isQuestionStart(line)) {
       flush();
-      current = { num: Number(line.match(/^\s*(\d{1,2})/)[1]), stemParts: [stripQuestionPrefix(line)], options: [] };
+      current = {
+        num: Number(line.match(/^\s*(\d{1,2})/)[1]),
+        stemParts: [stripQuestionPrefix(line)],
+        options: [],
+        answer: '',
+        explanation: '',
+        evidence: '',
+      };
       optionIndex = 0;
       continue;
     }
     if (!current) continue;
+
+    const ans = line.match(/^(?:答案|参考答案|Answer)\s*[:：]\s*([A-DＡ-Ｄ])\b/i);
+    if (ans) {
+      current.answer = ans[1].toUpperCase().replace('Ａ', 'A').replace('Ｂ', 'B').replace('Ｃ', 'C').replace('Ｄ', 'D');
+      continue;
+    }
+    const exp = line.match(/^(?:解析|详解|Explanation)\s*[:：]\s*(.+)$/i);
+    if (exp) {
+      current.explanation = exp[1].trim();
+      continue;
+    }
+    const ev = line.match(/^(?:定位|原文|Evidence)\s*[:：]\s*(.+)$/i);
+    if (ev) {
+      current.evidence = ev[1].trim();
+      continue;
+    }
+
     if (isOption(line)) {
       current.options.push(stripOptionPrefix(line));
       optionIndex++;
@@ -242,6 +269,12 @@ function parseQuestions(qLines) {
   }
   flush();
   return questions;
+}
+
+function shortHash(s) {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h.toString(36);
 }
 
 function estimateDifficulty(words, questions) {
@@ -264,14 +297,14 @@ function main() {
 
   for (const file of files) {
     const base = path.basename(file, '.md');
-    const cat = CATEGORY_MAP[base];
+    let cat = CATEGORY_MAP[base];
     if (!cat) {
-      warnings.push(`未知分类文件（未配置类别，已跳过）: ${file}`);
-      continue;
+      const name = base.replace(/专项训练$/, '') || base;
+      cat = { catId: `custom-${shortHash(base)}`, catName: name, order: 99 };
+      warnings.push(`未注册分类「${name}」：已自动归入「${name}」，可在 article-meta.ts 中补充配色与图标`);
     }
     const parsed = parseFile(path.join(ARTICLE_DIR, file), cat);
     const catArticles = [];
-    let qi = 0;
     for (const p of parsed.passages) {
       const { bodyLines, qLines } = splitBodyAndQuestions(p.rawLines);
       const blocks = buildBlocks(bodyLines);
@@ -291,14 +324,15 @@ function main() {
 
       const id = `${cat.catId}-${String(p.number).padStart(2, '0')}`;
       const firstSentence = (blocks.find((b) => b.type === 'p')?.text || '').split(/(?<=[.!?])\s+/)[0] || '';
+      const fallbackTitle = firstSentence.replace(/[.!?]+$/, '').slice(0, 90);
       catArticles.push({
         id,
         catId: cat.catId,
         catName: cat.catName,
         number: p.number,
         heading: p.heading || '',
-        title: p.heading || '',
-        fallbackTitle: firstSentence.replace(/[.!?]+$/, '').slice(0, 90),
+        title: p.heading || fallbackTitle,
+        fallbackTitle,
         blocks,
         paragraphs: blocks.filter((b) => b.type === 'p').map((b) => b.text),
         questions,
@@ -306,17 +340,18 @@ function main() {
         difficulty: estimateDifficulty(words, questions.length),
         file,
       });
-      qi++;
     }
     catArticles.sort((a, b) => a.number - b.number);
     articles.push(...catArticles);
-    categories.push({
-      id: cat.catId,
-      name: cat.catName,
-      order: cat.order,
-      file,
-      count: catArticles.length,
-    });
+    if (catArticles.length) {
+      categories.push({
+        id: cat.catId,
+        name: cat.catName,
+        order: cat.order,
+        file,
+        count: catArticles.length,
+      });
+    }
   }
 
   categories.sort((a, b) => a.order - b.order);
@@ -326,9 +361,11 @@ function main() {
     return ca - cb || a.number - b.number;
   });
 
-  // Merge optional translations
-  const transPath = path.join(OUT_DIR, 'translations.json');
-  const translations = fs.existsSync(transPath) ? JSON.parse(fs.readFileSync(transPath, 'utf8')) : {};
+  // Merge optional translations (translations.json + translations-part*.json)
+  const translations = {};
+  for (const f of fs.readdirSync(OUT_DIR).filter((x) => /^translations.*\.json$/.test(x))) {
+    Object.assign(translations, JSON.parse(fs.readFileSync(path.join(OUT_DIR, f), 'utf8')));
+  }
   // Merge optional answer keys (supports both answers.json and answers/*.json)
   const answers = {};
   const ansPath = path.join(OUT_DIR, 'answers.json');
@@ -342,7 +379,10 @@ function main() {
 
   for (const a of articles) {
     const t = translations[a.id] || [];
-    a.translations = a.paragraphs.map((_, i) => t[i] || '');
+    a.translations = a.blocks.map((_, i) => t[i] || '');
+    a.blocks.forEach((b, i) => {
+      b.translation = t[i] || '';
+    });
     const key = answers[a.id] || {};
     for (const q of a.questions) {
       const k = key[String(q.num)];

@@ -13,7 +13,6 @@ import {
   Feather,
   FileText,
   TrendingUp,
-  Quote,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';

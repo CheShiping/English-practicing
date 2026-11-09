@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    Library, wordbook, dashboard, import, settings, responsive
    ============================================================ */
 
@@ -2011,7 +2011,7 @@
     padding: 9px 16px;
   }
   .mobile-more-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .theme-options {
     grid-template-columns: repeat(3, 1fr);
@@ -2040,3 +2040,4 @@
     bottom: 84px;
   }
 }
+

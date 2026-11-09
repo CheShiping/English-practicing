@@ -6,9 +6,10 @@ const data = raw as unknown as ArticleData;
 
 export const BUNDLED_ARTICLES: Article[] = applyMeta(data.articles);
 export const CATEGORIES: Category[] = data.categories
+  .filter((c) => c.count > 0)
   .map((c) => ({
     ...c,
-    description: CATEGORY_META[c.id]?.description || '',
+    description: CATEGORY_META[c.id]?.description || '自定义题材训练',
     color: CATEGORY_META[c.id]?.color || '#8A8175',
     icon: CATEGORY_META[c.id]?.icon || 'book',
   }))

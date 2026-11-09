@@ -1,0 +1,78 @@
+{
+  "kepu-04": {
+    "1": {
+      "answer": "B",
+      "explanation": "第二段明确指出：孩子看电视并不是只吸收文字和图像，而是从看到的内容中学习“explicit and hidden meanings”（显性和隐性含义）。",
+      "evidence": "they learn both explicit and hidden meanings from what they see"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "第二段说，当父母和孩子一起看电视并解释新词和观点时，孩子理解得更多；作者批评的正是父母把孩子独自留在电视前。因此教育节目最好由父母陪同观看。",
+      "evidence": "children understand far more when their parents watch TV with them"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "第三段指出，看电视时间与阅读能力无关，而父母的教育背景等因素对阅读影响更大，并引用“孩子阅读能力最好由父母读多少来预测”。",
+      "evidence": "parents’ educational background have a stronger influence on a child’s reading"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "Anderson 引用研究说“小时候聪明，长大后看电视更少”，即越聪明的孩子越不倾向于长时间看电视；A、B、D 都与原文相反或无依据。",
+      "evidence": "If you’re smart young, you’ll watch less TV when you’re older."
+    }
+  },
+  "kepu-05": {
+    "1": {
+      "answer": "A",
+      "explanation": "全文围绕梦游发生的原因展开：睡眠层次、深睡时长、年龄和遗传。B、C、D 都只是文中的局部信息，不能概括主旨。",
+      "evidence": "Sleepwalking happens when a person is not fully asleep but not quite awake."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第三段明确说年轻人比成年人更容易梦游，因为年轻人深睡更多；5–12 岁儿童梦游比例高达 7%，成年人只有约 2%。",
+      "evidence": "Sleepwalking happens more often among young people than grown-ups"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "随着年龄增长，深睡减少，梦游的可能性也“降低”。reduced 与 cut down（减少）同义。",
+      "evidence": "the possibility of sleepwalking is also reduced"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "最后一段说梦游可能遗传：如果父母之一有梦游史，孩子梦游的可能性约为 50%。A 与原文相反，B、D 无依据。",
+      "evidence": "If one of your parents was a sleepwalker, you have about a 50 % possibility"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文章用睡眠阶段、百分比和遗传概率解释梦游，属于科普说明文，最可能出自科学类书籍。",
+      "evidence": ""
+    }
+  },
+  "kepu-06": {
+    "1": {
+      "answer": "C",
+      "explanation": "文章开头说“Our eating habits are very important for good health and a strong body”，因此养成良好饮食习惯是为了健康强壮。",
+      "evidence": "Our eating habits are very important for good health and a strong body."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第一段说，如果在饭前吃甜食和冰淇淋，它们可能会“take away our appetite”，即影响食欲；B 同时包含两者。",
+      "evidence": "If we eat them before a meal, they may take away our appetite."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第一段强调“It is important for us to eat our meal at the same time each day”，即每天在固定时间吃饭。",
+      "evidence": "eat our meal at the same time each day"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "第一段说“When we feel angry or excited, we may not want to eat”，说明生气时食欲差。",
+      "evidence": "When we feel angry or excited, we may not want to eat."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "第二段讲英国法官用干面包断案：说谎者因担忧而难以下咽干面包。因此若一个人说谎，他很难吞下干面包。",
+      "evidence": "A man who is worrying about something has difficulty in swallowing anything dry."
+    }
+  }
+}
