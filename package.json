@@ -1,0 +1,27 @@
+{
+  "name": "moread-english",
+  "version": "1.0.0",
+  "private": true,
+  "description": "墨读英语 · 沉浸式英语阅读与精读训练",
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run content && next build",
+    "build:static": "npm run content && next build",
+    "start": "npx serve out",
+    "content": "node scripts/build-content.mjs",
+    "dict": "node scripts/build-dict.mjs",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "^15.5.29",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.3",
+    "@types/react-dom": "^19.0.2",
+    "typescript": "^5.7.2"
+  }
+}

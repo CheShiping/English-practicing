@@ -1,0 +1,83 @@
+{
+  "kepu-01": {
+    "1": {
+      "answer": "A",
+      "explanation": "全文从睡眠的作用、四个睡眠层次讲到 REM 与入睡建议，核心话题始终是 sleep；dreams、good health 只是其中一部分，不能概括全文。",
+      "evidence": "Sleep is necessary for good health."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "前文说“喝热牛奶有助于入睡”，因此 drowsy 表示“困倦的、想睡的”，与 sleepy 最接近。",
+      "evidence": "drinking warm milk will help make you drowsy"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "文章开头明确指出“Sleep is necessary for good health”，由此可推知睡眠不足可能损害健康；文中没有说会紧张、多梦或呼吸变快。",
+      "evidence": "Sleep is necessary for good health."
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "文中说做梦时眼球会快速移动，并把这一阶段称为 REM（rapid eye movement）；因此 REM 期间既在做梦，眼球也在快速移动，A、B 都对。",
+      "evidence": "when dreaming occurs, your eyeballs begin to move more quickly"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "文章只讨论了睡眠层次、REM 和入睡方法，没有给出成年人平均需要多少小时睡眠。",
+      "evidence": ""
+    }
+  },
+  "kepu-02": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段列举了飞机、工厂机器、大声的音乐以及家中或工作中的常见声音，并说这些都可能造成听力损伤，因此 A、B、C 都包括。",
+      "evidence": "The noise can be the sound of a jet airplane or machines in factories or loud music or other common sounds"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第一段说“A person only needs to hear the noise for a little more than one second to be affected”，即只要超过一秒就可能受影响，A 与原文一致。",
+      "evidence": "for a little more than one second to be affected"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "实验发现服用阿司匹林的学生暂时性听力损失更大，说明阿司匹林会加重噪音造成的听力损伤；文章并没有给出“每天不得超过四克”这类用药结论。",
+      "evidence": "using aspirin can increase the temporary hearing loss or damage from loud noise"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "科学家指出，美国有数百万人服用的阿司匹林剂量远高于实验用量，因此他们面临噪音导致听力损失的危险；原因在于服用过多阿司匹林。",
+      "evidence": "millions of people in the United States use much larger amounts of aspirin"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "实验中产生明显听力损失的是“每天四克、连续两天”的那一组，其他剂量没有在文中被证明会影响听力。",
+      "evidence": "four grams of aspirin a day for two days"
+    }
+  },
+  "kepu-03": {
+    "1": {
+      "answer": "B",
+      "explanation": "文章认为智力上限由出生决定，但能否达到上限取决于环境；因此低智力儿童在丰富环境中仍可能达到自己的智力上限。特殊教育不能把他变成天才，所以 C、D 错。",
+      "evidence": "whether or not he reaches those limits will depend on his environment"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "at random 意为“随机地”，unrelated 意为“无亲属关系的”，合起来就是“随机挑选任何两个人”，D 最准确。",
+      "evidence": "if we take two unrelated people at random from the population"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "同卵双胞胎基因相同，被放到大学和工厂后智力发展出现差异，说明环境对智力有作用；这个例子不是为了说明出生的重要性。",
+      "evidence": "environment as well as birth plays a part"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "作者既承认智力在一定程度上与生俱来，又强调环境与教育影响智力能否达到上限，因此他支持“先天与后天共同作用”的观点。",
+      "evidence": "environment as well as birth plays a part"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "全文围绕“智力由什么决定”展开，先天、环境、教育都是围绕 intelligence 这个中心话题的论据，因此最佳标题是 Intelligence。",
+      "evidence": ""
+    }
+  }
+}

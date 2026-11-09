@@ -1,0 +1,2632 @@
+{
+  "generatedAt": "2026-11-09T12:39:19.967Z",
+  "categories": [
+    {
+      "id": "kepu",
+      "name": "科普类",
+      "order": 1,
+      "file": "科普类专项训练.md",
+      "count": 10
+    },
+    {
+      "id": "jingli",
+      "name": "经历记叙类",
+      "order": 2,
+      "file": "经历记叙类专项训练.md",
+      "count": 11
+    },
+    {
+      "id": "yingyong",
+      "name": "应用文类",
+      "order": 3,
+      "file": "应用文类专项训练.md",
+      "count": 2
+    },
+    {
+      "id": "jingji",
+      "name": "经济商业类",
+      "order": 4,
+      "file": "经济商业类专项训练.md",
+      "count": 1
+    }
+  ],
+  "articles": [
+    {
+      "id": "kepu-01",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 1,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "After a busy day of work and play, the body needs to rest",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "After a busy day of work and play, the body needs to rest. Sleep is necessary for good health. During this time, the body recovers from the activities of the previous day. The rest that you get while sleeping makes it possible for your body to prepare itself for the next day."
+        },
+        {
+          "type": "p",
+          "text": "There are four levels of sleep, each being a little deeper than the one before. As you sleep, your body relaxes little by little. Your heart beats more slowly, and your brain slows down. After you reach the fourth level, your body shifts back and forth from one level of sleep to the other. Although your mind slows down, from time to time you will dream."
+        },
+        {
+          "type": "p",
+          "text": "Scientists who study sleep point out that when dreaming occurs, your eyeballs begin to move more quickly (although your eyelids are closed). This stage of sleep is called REM, which stands for rapid eye movement. If you have trouble falling asleep, some people recommend breathing very slowly and very deeply. Other people believe that drinking warm milk will help make you drowsy. There is also an old suggestion that counting sheep will put you to sleep."
+        }
+      ],
+      "paragraphs": [
+        "After a busy day of work and play, the body needs to rest. Sleep is necessary for good health. During this time, the body recovers from the activities of the previous day. The rest that you get while sleeping makes it possible for your body to prepare itself for the next day.",
+        "There are four levels of sleep, each being a little deeper than the one before. As you sleep, your body relaxes little by little. Your heart beats more slowly, and your brain slows down. After you reach the fourth level, your body shifts back and forth from one level of sleep to the other. Although your mind slows down, from time to time you will dream.",
+        "Scientists who study sleep point out that when dreaming occurs, your eyeballs begin to move more quickly (although your eyelids are closed). This stage of sleep is called REM, which stands for rapid eye movement. If you have trouble falling asleep, some people recommend breathing very slowly and very deeply. Other people believe that drinking warm milk will help make you drowsy. There is also an old suggestion that counting sheep will put you to sleep."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "A good title for this text might be ______.",
+          "options": [
+            "Sleep",
+            "Dreams",
+            "Good Health",
+            "Work and Rest"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The underlined word “drowsy” in the last paragraph probably means ______.",
+          "options": [
+            "lazy",
+            "sleepy",
+            "relaxed",
+            "pleased"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "The text suggests that not getting enough sleep might make you ______.",
+          "options": [
+            "suffer from poor health",
+            "feel tired and nervous",
+            "dream more often",
+            "breathe quickly"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "During REM, ______.",
+          "options": [
+            "your eyeballs move quickly",
+            "you start dreaming",
+            "you are restless",
+            "both A and B"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "The average number of hour of sleep that an adult needs is ______.",
+          "options": [
+            "approximately six hours",
+            "around ten hours",
+            "about eight hours",
+            "not described here"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 194,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-02",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 2,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Doctors have known for a long time that extremely loud noises can cause hearing damage or ",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Doctors have known for a long time that extremely loud noises can cause hearing damage or loss. The noise can be the sound of a jet airplane or machines in factories or loud music or other common sounds found at home or at work. A person only needs to hear the noise for a little more than one second to be affected."
+        },
+        {
+          "type": "p",
+          "text": "An American scientist has found that using aspirin can increase the temporary hearing loss or damage from loud noise. He did an experiment, using a number of male students at a university who all had normal hearing. He gave them different amounts of aspirin for different periods of time, and then he tested their hearing ability. He found that the students who were given four grams of aspirin a day for two days suffered much greater temporary hearing loss than those who did not use aspirin. The hearing loss was about two times as great."
+        },
+        {
+          "type": "p",
+          "text": "The scientist said millions of people in the United States use much larger amounts of aspirin than were used in the study. He said these people face a serious danger of suffering hearing loss from loud noise."
+        }
+      ],
+      "paragraphs": [
+        "Doctors have known for a long time that extremely loud noises can cause hearing damage or loss. The noise can be the sound of a jet airplane or machines in factories or loud music or other common sounds found at home or at work. A person only needs to hear the noise for a little more than one second to be affected.",
+        "An American scientist has found that using aspirin can increase the temporary hearing loss or damage from loud noise. He did an experiment, using a number of male students at a university who all had normal hearing. He gave them different amounts of aspirin for different periods of time, and then he tested their hearing ability. He found that the students who were given four grams of aspirin a day for two days suffered much greater temporary hearing loss than those who did not use aspirin. The hearing loss was about two times as great.",
+        "The scientist said millions of people in the United States use much larger amounts of aspirin than were used in the study. He said these people face a serious danger of suffering hearing loss from loud noise."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Hearing damage or loss may be caused by ______.",
+          "options": [
+            "loud music",
+            "the sound of a jet airplane or machines",
+            "common sounds at home or at work",
+            "all of the above"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The passage suggests that one’s hearing ______.",
+          "options": [
+            "will be damaged even if he hears a loud noise for a little more than one second",
+            "will be damaged even if he hears a loud noise for a little less than one second",
+            "will not be damaged even if he hears a loud noise for a little more than one second",
+            "will not be damaged even if he hears a loud noise for a little less than one second"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "According to this passage, we can draw a conclusion that aspirin ______.",
+          "options": [
+            "should never be taken more than four grams a day",
+            "makes hearing damage from noise worse",
+            "decreases hearing damage by two times",
+            "should never be taken for more than two days"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "Millions of Americans are in danger of suffering hearing loss from loud noise because they ______.",
+          "options": [
+            "take too much aspirin",
+            "like listening to loud music",
+            "make loud noise at home and at work",
+            "often take jet airplanes"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "The scientist found from his experiment that ______ a day for two days would affect a person’s hearing.",
+          "options": [
+            "one gram of aspirin",
+            "two grams of aspirin",
+            "three grams of aspirin",
+            "four grams of aspirin"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 194,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-03",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 3,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Are some people born clever and others born stupid",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Are some people born clever and others born stupid? Or is intelligence developed by our environment and our experience? Strangely enough, the answer to these questions is yes. To some extent our intelligence is given to us at birth, and no amount of special education can make a genius out of a child born with low intelligence. On the other hand, a child who lives in a boring environment will develop his intelligence less than one who lives in rich and varied surroundings. Thus the limits of a person’s intelligence are fixed at birth, whether or not he reaches those limits will depend on his environment. This view, now held by most experts, can be supported in a number of ways."
+        },
+        {
+          "type": "p",
+          "text": "It is easy to show that intelligence is to some extent something we are born with. The closer the blood relationship between two people is, the closer they are likely to be in intelligence. Thus if we take two unrelated people at random from the population, it is likely that their degree of intelligence will be completely different. If, on the other hand, we take two identical twins, they will very likely be as intelligent as each other. Relations like brothers and sisters, parents and children, usually have similar intelligence, and this clearly suggests that intelligence depend on birth."
+        },
+        {
+          "type": "p",
+          "text": "Imagine now that we take two identical twins and put them in different environments. We might send one, for example, to a university and the other to a factory where the work is boring. We would soon find differences in their intelligence developing, and this indicates that environment as well as birth plays a part. This conclusion is also suggested by the fact that people who live in close contact with each other, but who are not related at all are likely to have similar degree of intelligence."
+        }
+      ],
+      "paragraphs": [
+        "Are some people born clever and others born stupid? Or is intelligence developed by our environment and our experience? Strangely enough, the answer to these questions is yes. To some extent our intelligence is given to us at birth, and no amount of special education can make a genius out of a child born with low intelligence. On the other hand, a child who lives in a boring environment will develop his intelligence less than one who lives in rich and varied surroundings. Thus the limits of a person’s intelligence are fixed at birth, whether or not he reaches those limits will depend on his environment. This view, now held by most experts, can be supported in a number of ways.",
+        "It is easy to show that intelligence is to some extent something we are born with. The closer the blood relationship between two people is, the closer they are likely to be in intelligence. Thus if we take two unrelated people at random from the population, it is likely that their degree of intelligence will be completely different. If, on the other hand, we take two identical twins, they will very likely be as intelligent as each other. Relations like brothers and sisters, parents and children, usually have similar intelligence, and this clearly suggests that intelligence depend on birth.",
+        "Imagine now that we take two identical twins and put them in different environments. We might send one, for example, to a university and the other to a factory where the work is boring. We would soon find differences in their intelligence developing, and this indicates that environment as well as birth plays a part. This conclusion is also suggested by the fact that people who live in close contact with each other, but who are not related at all are likely to have similar degree of intelligence."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "If a child is born with low intelligence, he can ______.",
+          "options": [
+            "not reach his intelligence limits in his life",
+            "reach his intelligence limits in rich surroundings",
+            "still become a genius if he should be given special education",
+            "become a genius"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "“if we take two unrelated people at random from the population” (Para. 2) means if we ______.",
+          "options": [
+            "choose two persons with different intelligence",
+            "choose two persons who are relative",
+            "take out two persons of close relationship",
+            "pick any two persons"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "The example of the twins going to a university and to a factory separately shows ______.",
+          "options": [
+            "the part that birth plays",
+            "the importance of their positions",
+            "the role of environment on intelligence",
+            "the importance of their intelligence"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "The writer is in favor of the view that man’s intelligence is given to him ______.",
+          "options": [
+            "neither at birth nor through education",
+            "through education",
+            "both at birth and through education",
+            "at birth"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "The best title of this passage can be ______.",
+          "options": [
+            "Effect of Education",
+            "Dependence on Environment",
+            "Intelligence",
+            "Surroundings"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 308,
+      "difficulty": "挑战",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-04",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 4,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’s influences on children from those of the family. We tend to blame TV, he says, for problems it doesn’t really cause, overlooking our own roles in shaping children’s minds."
+        },
+        {
+          "type": "p",
+          "text": "One traditional belief about television is that it reduces a child’s ability to think and to understand the world. While watching TV, children do not merely absorb words and images(影像). Instead, they learn both explicit and hidden meanings from what they see. Actually, children learn early the psychology of characters in TV shows. Furthermore, as many teachers agree, children understand far more when their parents watch TV with them, explaining new words and ideas. Yet, most parents use an educational program as a chance to sit their kids in front of the TV set and do something in another room."
+        },
+        {
+          "type": "p",
+          "text": "Another argument against television is that it replaces reading as a form of entertainment. But according to Anderson, the amount of time spent watching television is not related to reading ability. TV doesn’t take the place of reading for most children; it takes the place of similar sorts of recreation, such as listening to the radio and playing sports. Things like parents’ educational background have a stronger influence on a child’s reading. “A child’s reading ability is best predicted by how much a parent reads.” Anderson says."
+        },
+        {
+          "type": "p",
+          "text": "Traditional wisdom also has believed that heavy television-watching lowers children’s IQ scores and affects their school performance. But here, too, Anderson notes that no studies have proved it. In fact, research suggests that it’s the other way around. “If you’re smart young, you’ll watch less TV when you’re older.” Anderson says. Yet, people of lower IQ tend to be lifelong television viewers."
+        },
+        {
+          "type": "p",
+          "text": "For years, researchers have attempted to show that television is dangerous to children. However, by showing that television promotes none of the dangerous effects as conventionally (传统地) believed, Anderson suggests that television cannot be blamed without considering other influences."
+        }
+      ],
+      "paragraphs": [
+        "Daniel Anderson, a famous psychologist, believes it’s important to distinguish television’s influences on children from those of the family. We tend to blame TV, he says, for problems it doesn’t really cause, overlooking our own roles in shaping children’s minds.",
+        "One traditional belief about television is that it reduces a child’s ability to think and to understand the world. While watching TV, children do not merely absorb words and images(影像). Instead, they learn both explicit and hidden meanings from what they see. Actually, children learn early the psychology of characters in TV shows. Furthermore, as many teachers agree, children understand far more when their parents watch TV with them, explaining new words and ideas. Yet, most parents use an educational program as a chance to sit their kids in front of the TV set and do something in another room.",
+        "Another argument against television is that it replaces reading as a form of entertainment. But according to Anderson, the amount of time spent watching television is not related to reading ability. TV doesn’t take the place of reading for most children; it takes the place of similar sorts of recreation, such as listening to the radio and playing sports. Things like parents’ educational background have a stronger influence on a child’s reading. “A child’s reading ability is best predicted by how much a parent reads.” Anderson says.",
+        "Traditional wisdom also has believed that heavy television-watching lowers children’s IQ scores and affects their school performance. But here, too, Anderson notes that no studies have proved it. In fact, research suggests that it’s the other way around. “If you’re smart young, you’ll watch less TV when you’re older.” Anderson says. Yet, people of lower IQ tend to be lifelong television viewers.",
+        "For years, researchers have attempted to show that television is dangerous to children. However, by showing that television promotes none of the dangerous effects as conventionally (传统地) believed, Anderson suggests that television cannot be blamed without considering other influences."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "By watching TV, children learn ______.",
+          "options": [
+            "images through words",
+            "both explicit and hidden meanings",
+            "more about images than words",
+            "little about people’s psychology"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "According to the passage, an educational program is best watched by children ______.",
+          "options": [
+            "on their own",
+            "with other kids",
+            "with their parents",
+            "with their teachers"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following is most related to children’s reading ability?",
+          "options": [
+            "Listening to the radio.",
+            "Watching television.",
+            "Parents’ reading list.",
+            "Parent’s educational background."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "Anderson believed that ______.",
+          "options": [
+            "the more children watch TV, the smarter they are",
+            "the younger children are, the more they watch TV",
+            "the smarter children are, the less likely they are more interested in watching TV",
+            "the less children watch TV, the better they perform at school"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 327,
+      "difficulty": "挑战",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-05",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 5,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "If someone is sleepwalking, they are walking around while they are asleep",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "If someone is sleepwalking, they are walking around while they are asleep. Sleepwalking happens when a person is not fully asleep but not quite awake. Usually we move from our deepest levels of sleep to a lighter level and stay there. Sleepwalkers come right up to wake levels but do not fully awaken. It is at this time that they get up and walk."
+        },
+        {
+          "type": "p",
+          "text": "The longer a person stays in deep sleep, the more time there is for the sleep to be broken. That opens up the possibility of being awakened (but not fully) and of sleepwalking."
+        },
+        {
+          "type": "p",
+          "text": "Sleepwalking happens more often among young people than grown-ups because young people usually have more deep sleep. Up to 7% of 5- to 12-year-olds sleepwalk, while only about 2% of grown-ups sleepwalk. We get less deep sleep as we are getting older and the possibility of sleepwalking is also reduced."
+        },
+        {
+          "type": "p",
+          "text": "Sleepwalking may run in families, too. If one of your parents was a sleepwalker, you have about a 50 % possibility of also being a sleepwalker."
+        }
+      ],
+      "paragraphs": [
+        "If someone is sleepwalking, they are walking around while they are asleep. Sleepwalking happens when a person is not fully asleep but not quite awake. Usually we move from our deepest levels of sleep to a lighter level and stay there. Sleepwalkers come right up to wake levels but do not fully awaken. It is at this time that they get up and walk.",
+        "The longer a person stays in deep sleep, the more time there is for the sleep to be broken. That opens up the possibility of being awakened (but not fully) and of sleepwalking.",
+        "Sleepwalking happens more often among young people than grown-ups because young people usually have more deep sleep. Up to 7% of 5- to 12-year-olds sleepwalk, while only about 2% of grown-ups sleepwalk. We get less deep sleep as we are getting older and the possibility of sleepwalking is also reduced.",
+        "Sleepwalking may run in families, too. If one of your parents was a sleepwalker, you have about a 50 % possibility of also being a sleepwalker."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "This passage is about ______.",
+          "options": [
+            "why sleepwalking happens",
+            "where sleepwalkers go",
+            "what sleepwalkers do",
+            "when sleepwalkers walk"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "Who has more possibility of sleepwalking?",
+          "options": [
+            "Grown-ups.",
+            "Young people.",
+            "Old men.",
+            "Old women."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What does “reduced” mean in “....the possibility of sleepwalking is also reduced ”?",
+          "options": [
+            "Opened up.",
+            "Cut down.",
+            "Kept on.",
+            "Sped up."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "People have more possibility of developing sleepwalk ______.",
+          "options": [
+            "when they get older",
+            "when they become parents themselves",
+            "if their parents sleepwalked",
+            "if they don’t sleep well"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "This passage may be from ______.",
+          "options": [
+            "a story book",
+            "a travel book",
+            "a science book",
+            "a cooking book"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 168,
+      "difficulty": "基础",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-06",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 6,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Our eating habits are very important for good health and a strong body",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Our eating habits are very important for good health and a strong body. There are times when most of us would rather eat sweets and ice cream than meat and rice. Sweets and ice cream are not bad for the stomach if we eat them at the end of a meal. If we eat them before a meal, they may take away our appetite. It is important for us to eat our meal at the same time each day. When we feel hungry, it is a sign that our bodies need food. When we feel angry or excited, we may not want to eat. When we are worried, we may not want to eat, either."
+        },
+        {
+          "type": "p",
+          "text": "A long time ago, in England, some judges used to decide whether a man was telling the truth by giving him some dry bread.If the man could not swallow the bread, it was a sign that he was not telling the truth. He was telling a lie.Although this seems very strange and rather foolish, it is indeed an excellent way of finding out the truth.A man who is worrying about something has difficulty in swallowing anything dry.Because when he is worrying, he loses his appetite and does not want to eat."
+        }
+      ],
+      "paragraphs": [
+        "Our eating habits are very important for good health and a strong body. There are times when most of us would rather eat sweets and ice cream than meat and rice. Sweets and ice cream are not bad for the stomach if we eat them at the end of a meal. If we eat them before a meal, they may take away our appetite. It is important for us to eat our meal at the same time each day. When we feel hungry, it is a sign that our bodies need food. When we feel angry or excited, we may not want to eat. When we are worried, we may not want to eat, either.",
+        "A long time ago, in England, some judges used to decide whether a man was telling the truth by giving him some dry bread.If the man could not swallow the bread, it was a sign that he was not telling the truth. He was telling a lie.Although this seems very strange and rather foolish, it is indeed an excellent way of finding out the truth.A man who is worrying about something has difficulty in swallowing anything dry.Because when he is worrying, he loses his appetite and does not want to eat."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "We had better develop good eating habits if ______.",
+          "options": [
+            "we want to eat more",
+            "we want to save time",
+            "we want to be healthy and strong",
+            "we want to eat less"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "______ may take away our appetite before we have our meal.",
+          "options": [
+            "Either meat or rice",
+            "Both sweets and ice cream",
+            "Neither sweets nor ice cream",
+            "Not only meat but also rice"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "We had better have our meals ______.",
+          "options": [
+            "when our work is over",
+            "at the same time every day",
+            "when the meal is being cooked",
+            "before we go back home"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "A man who is angry has ______.",
+          "options": [
+            "a poor appetite",
+            "a better appetite",
+            "to eat more food",
+            "to eat dry bread"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "The judges in old England considered that a man could ______ if he told a lie.",
+          "options": [
+            "swallow dry bread easily",
+            "drink milk or hot water",
+            "hardly swallow dry bread",
+            "eat a lot of dry bread"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 210,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-07",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 7,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped him settle disagreements with his three older sisters. “I never got the chance to pick what we watched on TV until I learned the sport of rock, paper, scissors,” he says."
+        },
+        {
+          "type": "p",
+          "text": "Baldwin is president of the World Rock Paper Scissors Association.He has played in and hosted competitions all around the globe.He once had a 43-game winning streak.What is the secret to his success? “Look for patterns in either your opponent’s moves or behavior,” he says.As all serious rock, paper, scissors players know, there is more to the game than luck."
+        },
+        {
+          "type": "p",
+          "text": "People have been playing rock, paper, scissors for about 2, 000 years.It is played everywhere.Some cultures use different hand symbols, but the idea is the same.You and an opponent each “throw” one of three hand symbols.You win, lose, or tie (不分胜负).Many people think the game is all luck.It seems that your chances of winning and losing are about the same, but the outcome of the game is not random.That is because human behavior is not random.There are patterns in how people make decisions."
+        },
+        {
+          "type": "p",
+          "text": "A study at Zhejiang University in China looked at how people play rock, paper, scissors. It followed 360 students in a competition.Researchers found two key patterns.Winners tended to repeat their winning hand symbols.Losers tended to go from rock to paper to scissors."
+        },
+        {
+          "type": "p",
+          "text": "Knowing the psychology of the game is not a sure ticket to winning, but it can help.Ken Watson is one of the world’s best rock, paper, scissors players.He says winning takes skill. “You have to size up your opponent.” Luck and chance play a part, but “you have to be prepared and have a strategy, ” he says, “Part of my strategy is being confident.”"
+        },
+        {
+          "type": "p",
+          "text": "According to Baldwin, “practice, practice, practice” is the key to success. “You can try practicing against yourself in front of a mirror, ” he says."
+        }
+      ],
+      "paragraphs": [
+        "Wyatt Baldwin has been playing rock, paper, scissors(剪刀)since he was a kid.The game helped him settle disagreements with his three older sisters. “I never got the chance to pick what we watched on TV until I learned the sport of rock, paper, scissors,” he says.",
+        "Baldwin is president of the World Rock Paper Scissors Association.He has played in and hosted competitions all around the globe.He once had a 43-game winning streak.What is the secret to his success? “Look for patterns in either your opponent’s moves or behavior,” he says.As all serious rock, paper, scissors players know, there is more to the game than luck.",
+        "People have been playing rock, paper, scissors for about 2, 000 years.It is played everywhere.Some cultures use different hand symbols, but the idea is the same.You and an opponent each “throw” one of three hand symbols.You win, lose, or tie (不分胜负).Many people think the game is all luck.It seems that your chances of winning and losing are about the same, but the outcome of the game is not random.That is because human behavior is not random.There are patterns in how people make decisions.",
+        "A study at Zhejiang University in China looked at how people play rock, paper, scissors. It followed 360 students in a competition.Researchers found two key patterns.Winners tended to repeat their winning hand symbols.Losers tended to go from rock to paper to scissors.",
+        "Knowing the psychology of the game is not a sure ticket to winning, but it can help.Ken Watson is one of the world’s best rock, paper, scissors players.He says winning takes skill. “You have to size up your opponent.” Luck and chance play a part, but “you have to be prepared and have a strategy, ” he says, “Part of my strategy is being confident.”",
+        "According to Baldwin, “practice, practice, practice” is the key to success. “You can try practicing against yourself in front of a mirror, ” he says."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The sport of rock, paper, scissors enabled little Wyatt Baldwin to ______.",
+          "options": [
+            "cut paper with scissors",
+            "reach an agreement with his sisters",
+            "learn the sport on TV",
+            "produce TV shows with his sisters"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "What is the key to Baldwin’s success in the game?",
+          "options": [
+            "Praying for good luck.",
+            "Imitating his rival’s moves.",
+            "Figuring out his rival’s patterns.",
+            "Making friends with his opponent."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What can we learn about the game from Paragraph 3?",
+          "options": [
+            "The idea of the game varies from culture to culture.",
+            "The chances of winning or losing the game are always equal.",
+            "Different cultures use similar hand symbols to play the game.",
+            "The decision-making patterns affect the outcome of the game."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "The study at Zhejiang University found that ______.",
+          "options": [
+            "losers were likely to throw the hand symbol of paper",
+            "losers were likely to throw the hand symbol of scissors",
+            "winners were likely to ignore their opponents completely",
+            "winners were likely to repeat their winning hand symbols"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is Ken Watson’s view on the game?",
+          "options": [
+            "Being relaxed is a sure ticket to winning.",
+            "Being confident can increase the chance to win.",
+            "Your chance of winning wholly depends on luck.",
+            "Your chance of winning relates to the size of your opponent."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 332,
+      "difficulty": "挑战",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-08",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 8,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Faces, like fingerprints, are unique",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Faces, like fingerprints, are unique. Have you ever wondered how it is possible for us to recognize people? Even a skilled writer probably could not describe all the features that make one face different from another. Yet a very young child — or even an animal, such as a pigeon — can learn to recognize faces. We all take this ability for granted. We also tell people apart by how they behave. When we talk about someone’s personality, we mean the ways in which he or she acts, speaks, thinks and feels that make that individual different from others. Like the human face, human personality is very complex. But describing someone’s personality in words is somewhat easier than describing his face. If you were asked to describe what a “nice face” looked like, you probably would have a difficult time doing so. But if you were asked to describe a “nice person”, you might begin to think about someone who was kind, considerate, friendly, warm, and so forth."
+        },
+        {
+          "type": "p",
+          "text": "There are many words to describe how a person thinks, feels and acts. Gordon, an American psychologist, found nearly 18, 000 English words characterizing differences in people’s behavior. And many of us use this information as a basis for describing, or typing his personality."
+        },
+        {
+          "type": "p",
+          "text": "Bookworms, conservatives (保守派), military (军人或军事的) types — people are described with such terms. People have always tried to “type” each other. Actors in early Greek drama wore masks to show the audience whether they played the villain’s or the hero’s role. In fact, the words “person” and “personality” come from the Latin persona, meaning “mask”. Today, most television and movie actors do not wear masks. But we can easily tell the “good guys” from the “bad guys” because the two types differ in appearance as well as in actions."
+        }
+      ],
+      "paragraphs": [
+        "Faces, like fingerprints, are unique. Have you ever wondered how it is possible for us to recognize people? Even a skilled writer probably could not describe all the features that make one face different from another. Yet a very young child — or even an animal, such as a pigeon — can learn to recognize faces. We all take this ability for granted. We also tell people apart by how they behave. When we talk about someone’s personality, we mean the ways in which he or she acts, speaks, thinks and feels that make that individual different from others. Like the human face, human personality is very complex. But describing someone’s personality in words is somewhat easier than describing his face. If you were asked to describe what a “nice face” looked like, you probably would have a difficult time doing so. But if you were asked to describe a “nice person”, you might begin to think about someone who was kind, considerate, friendly, warm, and so forth.",
+        "There are many words to describe how a person thinks, feels and acts. Gordon, an American psychologist, found nearly 18, 000 English words characterizing differences in people’s behavior. And many of us use this information as a basis for describing, or typing his personality.",
+        "Bookworms, conservatives (保守派), military (军人或军事的) types — people are described with such terms. People have always tried to “type” each other. Actors in early Greek drama wore masks to show the audience whether they played the villain’s or the hero’s role. In fact, the words “person” and “personality” come from the Latin persona, meaning “mask”. Today, most television and movie actors do not wear masks. But we can easily tell the “good guys” from the “bad guys” because the two types differ in appearance as well as in actions."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "By using the example of fingerprints, the author tells us that ______.",
+          "options": [
+            "people can learn to recognize faces",
+            "people have different personalities",
+            "people have difficulty in describing the features of fingerprints",
+            "people differ from each other in facial features"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "According to this passage, some animals have the gift of ______.",
+          "options": [
+            "telling people apart by how they behave",
+            "typing each other",
+            "telling good people from bad people",
+            "recognizing human faces"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Who most probably knows best how to describe people’s personality?",
+          "options": [
+            "The ancient Greek audience.",
+            "The movie actors.",
+            "Psychologists.",
+            "The modern TV audience."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "According to the passage, it is possible for us to tell one type of person from another because ______.",
+          "options": [
+            "people differ in their behavioral and physical characteristics",
+            "human fingerprints provide unique information",
+            "people’s behavior can be easily described in words",
+            "human faces have complex features"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following is the major point of the passage?",
+          "options": [
+            "Why it is necessary to identify people’s personality.",
+            "Why it is possible to describe people.",
+            "How to get to know people.",
+            "How best to recognize people."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 294,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-09",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 9,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Long ago men learned that the world of nature is built with mathematical exactness accordi",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Long ago men learned that the world of nature is built with mathematical exactness according to refined and powerful laws: every bee strokes its wings exactly 440 times a second to propel itself forty miles an hour; the eye of every fly has exactly 7000 lenses; every spider’s thread is composed of 300 single threads."
+        },
+        {
+          "type": "p",
+          "text": "The progress of civilization itself can be measured by its range of mathematics. The early Egyptians knew enough of geometry to build the pyramids and the Greeks used trigonometry to measure the circumference of the earth two thousand years before Columbus sailed. European civilization combined geometry and trigonometry with the decimal system of the Arabs to produce the maps with which the Europeans explored the world. In a later century, mathematicians studied the pendulum (钟摆) of the newly invented clock and created the language of calculus to measure motion."
+        },
+        {
+          "type": "p",
+          "text": "The yardstick of measurement today must cover everything from units tinier than atoms to distances of millions of light years. Speed and accuracy are vital. Man can never send a rocket to Mars unless he knows the exact distance to the planet, since the slightest error could mean missing it by 30, 000 miles. In navigating amid planets and stars, man must have the help of some kind of machine calculators for fast and absolutely accurate information."
+        }
+      ],
+      "paragraphs": [
+        "Long ago men learned that the world of nature is built with mathematical exactness according to refined and powerful laws: every bee strokes its wings exactly 440 times a second to propel itself forty miles an hour; the eye of every fly has exactly 7000 lenses; every spider’s thread is composed of 300 single threads.",
+        "The progress of civilization itself can be measured by its range of mathematics. The early Egyptians knew enough of geometry to build the pyramids and the Greeks used trigonometry to measure the circumference of the earth two thousand years before Columbus sailed. European civilization combined geometry and trigonometry with the decimal system of the Arabs to produce the maps with which the Europeans explored the world. In a later century, mathematicians studied the pendulum (钟摆) of the newly invented clock and created the language of calculus to measure motion.",
+        "The yardstick of measurement today must cover everything from units tinier than atoms to distances of millions of light years. Speed and accuracy are vital. Man can never send a rocket to Mars unless he knows the exact distance to the planet, since the slightest error could mean missing it by 30, 000 miles. In navigating amid planets and stars, man must have the help of some kind of machine calculators for fast and absolutely accurate information."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The author shows how the exactness of nature’s laws is reflected in ______.",
+          "options": [
+            "the language of calculus",
+            "the measurement of motion",
+            "the creatures of nature",
+            "the progress of civilization"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "How is the second paragraph developed?",
+          "options": [
+            "By contrast.",
+            "By classification.",
+            "By making assumptions.",
+            "By giving examples."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What does the underlined word “yardstick” in Paragraph 3 mean?",
+          "options": [
+            "Standard.",
+            "Accuracy.",
+            "Method.",
+            "Process."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "What can be inferred from the text?",
+          "options": [
+            "In ancient times people knew nothing about mathematics.",
+            "The power of nature used to have a great influence on man.",
+            "Progress in civilization demands ever better mathematical tools.",
+            "Technology plays an important role in information collection."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "Where does the passage most probably come from?",
+          "options": [
+            "A news report.",
+            "A book review.",
+            "A science magazine.",
+            "A math textbook."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 215,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-10",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 10,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "As any homemaker who has tried to keep order at the dinner table knows, there is far more ",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "As any homemaker who has tried to keep order at the dinner table knows, there is far more to a family meal than food. Sociologist Michael Lewis has been studying 50 families to find out just how much more."
+        },
+        {
+          "type": "p",
+          "text": "Lewis and his co-workers carried out their study by videotaping (录像) the families while they ate ordinary meals in their own homes. They found that parents with small families talk actively with each other and their children. But as the number of children gets larger, conversation gives way to the parents’ efforts to control the loud noise they make. That can have an important effect on the children. “In general the more question-asking the parents do, the higher the children’s IQ scores, ” Lewis says, “And the more children there are, the less question-asking there is.”"
+        },
+        {
+          "type": "p",
+          "text": "The study also provides an explanation for why middle children often seem to have a harder time in life than their siblings (兄弟姐妹). Lewis found that in families with three or four children, dinner conversation is likely to center on the oldest child, who has the most to talk about, and the youngest, who needs the most attention. “Middle children are invisible, ” says Lewis. “When you see someone get up from the table and walk around during dinner, chances are it’s the middle child.” There is, however, one thing that stops all conversation and prevents anyone from having attention: “When the TV is on”, Lewis says, “dinner is a non-event.”"
+        }
+      ],
+      "paragraphs": [
+        "As any homemaker who has tried to keep order at the dinner table knows, there is far more to a family meal than food. Sociologist Michael Lewis has been studying 50 families to find out just how much more.",
+        "Lewis and his co-workers carried out their study by videotaping (录像) the families while they ate ordinary meals in their own homes. They found that parents with small families talk actively with each other and their children. But as the number of children gets larger, conversation gives way to the parents’ efforts to control the loud noise they make. That can have an important effect on the children. “In general the more question-asking the parents do, the higher the children’s IQ scores, ” Lewis says, “And the more children there are, the less question-asking there is.”",
+        "The study also provides an explanation for why middle children often seem to have a harder time in life than their siblings (兄弟姐妹). Lewis found that in families with three or four children, dinner conversation is likely to center on the oldest child, who has the most to talk about, and the youngest, who needs the most attention. “Middle children are invisible, ” says Lewis. “When you see someone get up from the table and walk around during dinner, chances are it’s the middle child.” There is, however, one thing that stops all conversation and prevents anyone from having attention: “When the TV is on”, Lewis says, “dinner is a non-event.”"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The writer’s purpose in writing the text is to ______.",
+          "options": [
+            "show the relationship between parents and children",
+            "teach parents ways to keep order at the dinner table",
+            "report on the findings of a study",
+            "give information about family problems"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "Parents with large families ask fewer question at dinner because ______.",
+          "options": [
+            "they are busy serving food to their children",
+            "they are busy keeping order at the dinner table",
+            "they have to pay more attention to younger children",
+            "they are tired out having prepared food for the whole family"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "By saying “Middle children are invisible” in Paragraph 3, Lewis means that middle children ______.",
+          "options": [
+            "have to help their parents to serve dinner",
+            "get the least attention from the family",
+            "are often kept away from the dinner table",
+            "find it hard to keep up with other children"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "Lewis’ research provides an answer to the question ______.",
+          "options": [
+            "why TV is important in family life",
+            "why parents should keep good order",
+            "why children in small families seem to be quieter",
+            "why middle children seem to have more difficulties in life"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following statements would the writer agree to ?",
+          "options": [
+            "It is important to have the right food for children.",
+            "It is a good idea to have the TV on during dinner.",
+            "Parents should talk to each of their children frequently.",
+            "Elder children should help the younger ones at dinner."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 241,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-01",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 1,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) conf",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) confidence and self-possession for a number of years before I discovered that he could not read or write. His various methods of trick, which were also skills of self-protection, were so skillful and so desperate (绝望) that neither I nor any of his other adult friends were aware of his entire helplessness in face of written words until we went to dinner one night at a local restaurant — and suddenly discovered that he could not read."
+        },
+        {
+          "type": "p",
+          "text": "Even here, it was not the first time we went out to eat, but something like the second or third, that Peter’s desperation shocked me. The first time, he was clever enough to cover the truth. He studied the menu for a moment, then looked up to the waitress and asked her if he could have \"just a coke and a hamburger\". He told me later that he had done the same thing many times before and that he had learned to act as if he were examining the menu: \"Then I ask for a coke and a hamburger... Sometimes they give me a hamburger on a plate with salad and potatoes... Then I ask them for a roll and make my own hamburger.\""
+        },
+        {
+          "type": "p",
+          "text": "As we began to go out more frequently, Peter would ask to go to Howard Johnson’s. I soon discovered the reason for his choice: The photographs, attached in cellophane (玻璃纸) containers to each of the standard items on the menu, could help him not to struggle with the shape of words at all. Howard Johnson’s, whether intentionally or not, had provided the perfect escape for the endangered pride of an adult who was illiterate (文盲)."
+        }
+      ],
+      "paragraphs": [
+        "I once knew a young man, nineteen years of age, who lived with absolute outward (外表的) confidence and self-possession for a number of years before I discovered that he could not read or write. His various methods of trick, which were also skills of self-protection, were so skillful and so desperate (绝望) that neither I nor any of his other adult friends were aware of his entire helplessness in face of written words until we went to dinner one night at a local restaurant — and suddenly discovered that he could not read.",
+        "Even here, it was not the first time we went out to eat, but something like the second or third, that Peter’s desperation shocked me. The first time, he was clever enough to cover the truth. He studied the menu for a moment, then looked up to the waitress and asked her if he could have \"just a coke and a hamburger\". He told me later that he had done the same thing many times before and that he had learned to act as if he were examining the menu: \"Then I ask for a coke and a hamburger... Sometimes they give me a hamburger on a plate with salad and potatoes... Then I ask them for a roll and make my own hamburger.\"",
+        "As we began to go out more frequently, Peter would ask to go to Howard Johnson’s. I soon discovered the reason for his choice: The photographs, attached in cellophane (玻璃纸) containers to each of the standard items on the menu, could help him not to struggle with the shape of words at all. Howard Johnson’s, whether intentionally or not, had provided the perfect escape for the endangered pride of an adult who was illiterate (文盲)."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "When he went to a restaurant, Peter would ______.",
+          "options": [
+            "pretend that he could not read or write",
+            "pretend to be studying the menu",
+            "be desperate for help from other people",
+            "protect himself by playing a musical instrument"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The young man was not found to be illiterate until ______.",
+          "options": [
+            "he dined out with his adult friends at Howard Johnson’s",
+            "he could no longer come up with various ways of deception",
+            "he had dinner with his friends at a certain local restaurant for the second or third time",
+            "he was not careful enough to be aware of his entire helplessness in face of written words"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What did the young man usually have at a restaurant?",
+          "options": [
+            "Standard items on the menu.",
+            "Foods that other people ordered.",
+            "A hamburger made by himself.",
+            "A coke and a hamburger."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "The word \"self-possession\" (Para. 1) probably means ______.",
+          "options": [
+            "self-confidence",
+            "self-consciousness",
+            "self-discipline",
+            "self-devotion"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "Why did the young man like to go to Howard Johnson’s?",
+          "options": [
+            "Howard Johnson’s provided a perfect escape when anything dangerous should happen.",
+            "The menu at Howard Johnson’s gave a clear introduction of the food it served.",
+            "The photographs attached to the main items on the menu helped conceal his illiteracy.",
+            "He would feel at ease because eaters at Howard Johnson’s were all adult non-readers."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 287,
+      "difficulty": "进阶",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-02",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 2,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "College is a new and different experience for me",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "College is a new and different experience for me. I’m away from home, so I have many things to adjust to, such as being on my own and meeting many different types of people. There are a lot of things that I like about college that I would like to describe for you."
+        },
+        {
+          "type": "p",
+          "text": "First of all, living at college gives me a sense of responsibility and of being on my own. My parents aren’t around to say, \"No, you’re not going out tonight,\" or \"Did you finish your homework?\" Everything I do has to be my decision, and that makes me responsible for my own life. During the second week I was at college, I had to go out and look for a bank where I could open an account. And when I got to the bank, I had to decide whether to have a checking or savings account and whether or not to get a credit card. Decisions! Decisions!"
+        },
+        {
+          "type": "p",
+          "text": "Friendly people is another thing I like about college. On the first day I came to Marymount University here in Virginia from New York, I was a bit confused about where I was going. My mother and I drove in. We did not know the building we were supposed to go to, but the guard was very nice. With a smile, he told us what building we were looking for and where we could park our car. My room was on the first floor of New Gerard, and I knew I had to go through some glass doors, but my mother and I didn’t know which ones. Some students saw me and asked, \"Are you a new student?\" When they found out I was looking for New Gerard, one said, \"Oh, just follow us; that’s where we’re going.\" Even now I feel comfortable in the dorm because there are friendly people around to talk with."
+        },
+        {
+          "type": "p",
+          "text": "I do like a lot of things about college, but that doesn’t mean I don’t think about things at home. Although I like college, I can still get homesick. New York is a very good place, too! And sometimes I miss it!"
+        }
+      ],
+      "paragraphs": [
+        "College is a new and different experience for me. I’m away from home, so I have many things to adjust to, such as being on my own and meeting many different types of people. There are a lot of things that I like about college that I would like to describe for you.",
+        "First of all, living at college gives me a sense of responsibility and of being on my own. My parents aren’t around to say, \"No, you’re not going out tonight,\" or \"Did you finish your homework?\" Everything I do has to be my decision, and that makes me responsible for my own life. During the second week I was at college, I had to go out and look for a bank where I could open an account. And when I got to the bank, I had to decide whether to have a checking or savings account and whether or not to get a credit card. Decisions! Decisions!",
+        "Friendly people is another thing I like about college. On the first day I came to Marymount University here in Virginia from New York, I was a bit confused about where I was going. My mother and I drove in. We did not know the building we were supposed to go to, but the guard was very nice. With a smile, he told us what building we were looking for and where we could park our car. My room was on the first floor of New Gerard, and I knew I had to go through some glass doors, but my mother and I didn’t know which ones. Some students saw me and asked, \"Are you a new student?\" When they found out I was looking for New Gerard, one said, \"Oh, just follow us; that’s where we’re going.\" Even now I feel comfortable in the dorm because there are friendly people around to talk with.",
+        "I do like a lot of things about college, but that doesn’t mean I don’t think about things at home. Although I like college, I can still get homesick. New York is a very good place, too! And sometimes I miss it!"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The text is perhaps written by ______.",
+          "options": [
+            "a new student",
+            "a new teacher",
+            "a foreign reporter",
+            "a foreign visitor"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "What does \"gives me a sense of responsibility\" in the first sentence of Paragraph 2 mean? It means it makes me feel ______.",
+          "options": [
+            "responsible for my parents",
+            "responsible for my teacher",
+            "responsible for the school",
+            "responsible for myself"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "One thing that he liked was ______.",
+          "options": [
+            "the comfortable dorm",
+            "finding his way around",
+            "his studies as a first year student",
+            "the friendly people"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "What is New Gerard?",
+          "options": [
+            "It’s a student’s name.",
+            "It’s a teacher’s name.",
+            "It’s a dorm’s name.",
+            "It’s a school’s name."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following is NOT true?",
+          "options": [
+            "People in Marymount University are friendly.",
+            "The writer likes the new experience in the university.",
+            "The writer drove to Marymount University with his mother.",
+            "The writer is not homesick."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 357,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-03",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 3,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "When I was studying English at a training center in Washington D.C",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When I was studying English at a training center in Washington D.C. in 1998, I shared a house with two young Americans, Jim and Steve. Jim was studying French and Steve was studying Chinese, both at the Foreign Service Institute. We shared many things in common, but we also thought and acted quite differently. Steve was interested in speaking Chinese. He always tried every opportunity to talk with me with his very English-like pronunciation. I was often touched with his diligence. However, I wanted to practice English with him, too. So we often spoke at the same time in the other’s mother tongue. Jim was fresh from college and the youngest of the three. He was going out all the time. The only time we met was at breakfast. There was a small round table in our kitchen, where we sat around to enjoy our food. Steve had Chinese fast food such as dumplings or noodles, and I ate bread and boiled eggs. But Jim often just drank a cup of tea because he had nothing in his fridge. He was too busy dating pretty French girls to do any shopping. I often offered him some of my food. But Steve told me in his poor Chinese that I didn’t need to do that. He said that it was Jim’s own fault and that it served him right. Although he was learning Chinese, he still held his American sense of value."
+        },
+        {
+          "type": "p",
+          "text": "Two years later, I returned to China. The three of us still keep in touch. Jim now works in a travel agency in Paris. He got married to one of the pretty girls. He wrote to tell us that now he can enjoy a delicious breakfast with his beautiful wife every morning in their comfortable living room. Steve wants to work in China. And I’m helping him with this. I have introduced him to the dean of the Overseas Section of our university. He is very interested in Steve. He wants to know if Steve can work here teaching the overseas students Chinese. I have sent the message to Steve. I’m sure he’d be very happy to accept the job. However, I hope he could try harder to improve himself. Otherwise, all the overseas students would speak with his terrible pronunciation!"
+        }
+      ],
+      "paragraphs": [
+        "When I was studying English at a training center in Washington D.C. in 1998, I shared a house with two young Americans, Jim and Steve. Jim was studying French and Steve was studying Chinese, both at the Foreign Service Institute. We shared many things in common, but we also thought and acted quite differently. Steve was interested in speaking Chinese. He always tried every opportunity to talk with me with his very English-like pronunciation. I was often touched with his diligence. However, I wanted to practice English with him, too. So we often spoke at the same time in the other’s mother tongue. Jim was fresh from college and the youngest of the three. He was going out all the time. The only time we met was at breakfast. There was a small round table in our kitchen, where we sat around to enjoy our food. Steve had Chinese fast food such as dumplings or noodles, and I ate bread and boiled eggs. But Jim often just drank a cup of tea because he had nothing in his fridge. He was too busy dating pretty French girls to do any shopping. I often offered him some of my food. But Steve told me in his poor Chinese that I didn’t need to do that. He said that it was Jim’s own fault and that it served him right. Although he was learning Chinese, he still held his American sense of value.",
+        "Two years later, I returned to China. The three of us still keep in touch. Jim now works in a travel agency in Paris. He got married to one of the pretty girls. He wrote to tell us that now he can enjoy a delicious breakfast with his beautiful wife every morning in their comfortable living room. Steve wants to work in China. And I’m helping him with this. I have introduced him to the dean of the Overseas Section of our university. He is very interested in Steve. He wants to know if Steve can work here teaching the overseas students Chinese. I have sent the message to Steve. I’m sure he’d be very happy to accept the job. However, I hope he could try harder to improve himself. Otherwise, all the overseas students would speak with his terrible pronunciation!"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which of the following statements is true according to the passage?",
+          "options": [
+            "The three of them were all language majors.",
+            "Steve and Jim were more alike in character.",
+            "The author didn’t enjoy talking with Steve.",
+            "Their living condition was rather poor."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "What is the author’s opinion of Steve?",
+          "options": [
+            "Steve was a very hardworking fellow.",
+            "Steve enjoyed cooking Chinese food.",
+            "Steve enjoyed shopping more than Jim.",
+            "Steve’s Chinese accent was quite pure."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following is true about Jim?",
+          "options": [
+            "Going out with girls cost him a lot of time.",
+            "He had a French way of making friends.",
+            "He learned French in order to date Paris girls.",
+            "He liked doing housework."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "What does the last sentence of the first paragraph imply?",
+          "options": [
+            "Steve didn’t like offering help to others.",
+            "American people only eat their own food.",
+            "Americans and Chinese differ in their sense of value.",
+            "Steve wanted Jim to do his own shopping."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "From the last paragraph, we can learn that ______.",
+          "options": [
+            "Jim is a very good husband",
+            "Steve enjoys teaching Chinese",
+            "the author works for overseas students",
+            "the three friends still keep in touch"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 382,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-04",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 4,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "I saved the grain carefully and finally had enough to plant",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "I saved the grain carefully and finally had enough to plant. I built a wall around my garden to keep the wild goats away."
+        },
+        {
+          "type": "p",
+          "text": "Then when my crop bore its fruit, the birds discovered it. The birds were not afraid of my dog at all. I shot them but as soon as I walked away, they returned. At last, I killed some birds and hung them among the crop, hoping they would serve as the scarecrows, which turned out to be successful. By harvest time, I had nearly two bushels of rice and two and a half bushels of wheat."
+        },
+        {
+          "type": "p",
+          "text": "With my new grain to store, I found a new problem. The fine grain ran through my baskets. It took me nearly two months to form and dry two ugly pots — one for rice and one for wheat."
+        },
+        {
+          "type": "p",
+          "text": "Next I formed a clay oven and made some other tools from hard wood and cloth to bake bread. I made and baked bread in my oven. I spent the third year on the island in farming and baking."
+        },
+        {
+          "type": "p",
+          "text": "Soon after that, I began to think of my days sailing in a tidy boat with Xury. I wished to have a boat and explore the island by sea."
+        },
+        {
+          "type": "p",
+          "text": "I tried to turn over the ship’s boat that I had seen washed up, but failed. I was still determined to have a boat. So I chose a strong tree and spent weeks cutting it down. Then it took me months to turn it from tree to boat."
+        },
+        {
+          "type": "p",
+          "text": "When it was time to launch, I realized I had made my boat too far from the nearest stream. The boat was far too heavy for me to move. I tried bringing the water to the boat instead of the boat to the water. I soon saw it would take me twenty years of constant labor."
+        },
+        {
+          "type": "p",
+          "text": "I celebrated my fourth year on the island with two boats, but I was no closer to a sea journey."
+        },
+        {
+          "type": "p",
+          "text": "——Taken from *The Adventures of Robinson Crusoe*"
+        }
+      ],
+      "paragraphs": [
+        "I saved the grain carefully and finally had enough to plant. I built a wall around my garden to keep the wild goats away.",
+        "Then when my crop bore its fruit, the birds discovered it. The birds were not afraid of my dog at all. I shot them but as soon as I walked away, they returned. At last, I killed some birds and hung them among the crop, hoping they would serve as the scarecrows, which turned out to be successful. By harvest time, I had nearly two bushels of rice and two and a half bushels of wheat.",
+        "With my new grain to store, I found a new problem. The fine grain ran through my baskets. It took me nearly two months to form and dry two ugly pots — one for rice and one for wheat.",
+        "Next I formed a clay oven and made some other tools from hard wood and cloth to bake bread. I made and baked bread in my oven. I spent the third year on the island in farming and baking.",
+        "Soon after that, I began to think of my days sailing in a tidy boat with Xury. I wished to have a boat and explore the island by sea.",
+        "I tried to turn over the ship’s boat that I had seen washed up, but failed. I was still determined to have a boat. So I chose a strong tree and spent weeks cutting it down. Then it took me months to turn it from tree to boat.",
+        "When it was time to launch, I realized I had made my boat too far from the nearest stream. The boat was far too heavy for me to move. I tried bringing the water to the boat instead of the boat to the water. I soon saw it would take me twenty years of constant labor.",
+        "I celebrated my fourth year on the island with two boats, but I was no closer to a sea journey.",
+        "——Taken from *The Adventures of Robinson Crusoe*"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Paragraph 2 mainly tells us ______.",
+          "options": [
+            "how much rice and wheat I harvested",
+            "how many tools I made to bake bread",
+            "how I protected my crop from the birds",
+            "how I kept the wild goats away from my crop"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The reason why I wanted to have a boat is that I wanted ______.",
+          "options": [
+            "explore the island",
+            "bring water to the plants",
+            "catch fish",
+            "leave the island"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What does \"a new problem\" in Paragraph 3 refer to?",
+          "options": [
+            "How to plant grain.",
+            "How to make pots.",
+            "How to store grain.",
+            "How to fix the baskets."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "By the last sentence, the writer means ______.",
+          "options": [
+            "I was getting closer and closer to the sea",
+            "I was getting farther and farther from the sea",
+            "it was possible for me to have a sea journey in my boats",
+            "it was still impossible for me to explore the island by sea"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "What can we infer from the passage?",
+          "options": [
+            "I managed to turn over the ship’s boat.",
+            "I spent months bringing the boat to the nearest stream.",
+            "I tried to solve the problems with my courage and wisdom.",
+            "I spent the third year on the island in farming and baking."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 337,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-05",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 5,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "It’s not easy to be an astronaut’s son",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It’s not easy to be an astronaut’s son. Everybody expects you to be special or perfect. I often wonder how my father ever had a son like me. I mean, he is so special and so good at everything he does. Even in middle school he was the class monitor and captain of the football team."
+        },
+        {
+          "type": "p",
+          "text": "Well, to be honest, I often dream about being some kind of hero or doing something special, like saving a child from a burning building or discovering a new star. I was daydreaming at school one morning when my teacher said: \"There would be a Father’s Day writing competition for the whole school. I hope we have a winner right here in my class.\""
+        },
+        {
+          "type": "p",
+          "text": "When I got home, I started to think about what to write. My father is an astronaut. No, I wouldn’t start like that. That was the way others saw him. How did I see my father?"
+        },
+        {
+          "type": "p",
+          "text": "I saw him sitting with me in the dark when I had a terrible dream. I remembered how he hugged me for hours when my dog Spotty was killed by a car. Yes, these were the things I was going to write. To me he wasn’t just a world-famous astronaut. He was my dad."
+        },
+        {
+          "type": "p",
+          "text": "My parents and I went to school on Thursday. There were so many people in the big hall! My dad looked at me, and shrugged(耸肩)."
+        },
+        {
+          "type": "p",
+          "text": "The third prize was announced and it was not me. I was relieved and disappointed at the same time. The second prize was announced. It was me."
+        },
+        {
+          "type": "p",
+          "text": "I went up to the stage and read what I had written. When I finished, the people stood up and cheered. I saw my father blowing his nose. Tears were running down my mother’s face. Dad cleared his throat and put his hand on my shoulder. \"Son, this is the proudest moment of my life.\""
+        },
+        {
+          "type": "p",
+          "text": "It was the proudest moment of my life, too. Maybe I will never be a great hero or win a Nobel Prize, but it was enough just to be my father’s son."
+        }
+      ],
+      "paragraphs": [
+        "It’s not easy to be an astronaut’s son. Everybody expects you to be special or perfect. I often wonder how my father ever had a son like me. I mean, he is so special and so good at everything he does. Even in middle school he was the class monitor and captain of the football team.",
+        "Well, to be honest, I often dream about being some kind of hero or doing something special, like saving a child from a burning building or discovering a new star. I was daydreaming at school one morning when my teacher said: \"There would be a Father’s Day writing competition for the whole school. I hope we have a winner right here in my class.\"",
+        "When I got home, I started to think about what to write. My father is an astronaut. No, I wouldn’t start like that. That was the way others saw him. How did I see my father?",
+        "I saw him sitting with me in the dark when I had a terrible dream. I remembered how he hugged me for hours when my dog Spotty was killed by a car. Yes, these were the things I was going to write. To me he wasn’t just a world-famous astronaut. He was my dad.",
+        "My parents and I went to school on Thursday. There were so many people in the big hall! My dad looked at me, and shrugged(耸肩).",
+        "The third prize was announced and it was not me. I was relieved and disappointed at the same time. The second prize was announced. It was me.",
+        "I went up to the stage and read what I had written. When I finished, the people stood up and cheered. I saw my father blowing his nose. Tears were running down my mother’s face. Dad cleared his throat and put his hand on my shoulder. \"Son, this is the proudest moment of my life.\"",
+        "It was the proudest moment of my life, too. Maybe I will never be a great hero or win a Nobel Prize, but it was enough just to be my father’s son."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The writer felt it ______ to be a son of a famous person.",
+          "options": [
+            "lucky",
+            "natural",
+            "hard",
+            "pleasant"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "In order to ______, the writer would like to save a child from a burning building.",
+          "options": [
+            "become an astronaut",
+            "become a great hero",
+            "be made school team captain",
+            "be made class president"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What did the boy probably write in his composition?",
+          "options": [
+            "A lot of special things he had done.",
+            "The story of his father as an astronaut.",
+            "The unforgettable time he had spent with his father.",
+            "The experiences his father had in middle school."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "The writer felt proud when he ______.",
+          "options": [
+            "got a prize in a writing competition",
+            "won a Nobel Prize",
+            "saved a child from a burning building",
+            "discovered a new star"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is the best title of the passage?",
+          "options": [
+            "My Daydream.",
+            "My Father’s Son.",
+            "My Famous Father.",
+            "My Happy Family."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 349,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-06",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 6,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Having graduated from college, I succeeded in finding a job at Toyota",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Having graduated from college, I succeeded in finding a job at Toyota. My first workday was not as busy as I had expected, but it taught me a lot. In actual fact, it will benefit me for my whole life."
+        },
+        {
+          "type": "p",
+          "text": "When I was enrolled in the financial department, I was assigned by the chief to check some data in the account books with the invoices. I was glad at first and thought, \"It’s a piece of cake for a graduate majoring in accounting.\" It didn’t take me long before I finished the job. Expecting to be praised, I went to the chief."
+        },
+        {
+          "type": "p",
+          "text": "Unexpectedly, he asked me to check all the data again with care, without stopping doing his own work. I felt a little disappointed. Time was passing slowly when I felt hungry. The chief came to me and said, \"Put your work aside; it’s time for lunch now.\" I relaxed, and went to the dining hall."
+        },
+        {
+          "type": "p",
+          "text": "I went on with my assignment immediately after I came back. I found some mistakes that I hadn’t noticed the first time. At this moment the chief approached me and said, \"Are there any errors? Do you think it’s necessary to repeat the whole cycle?\" I nodded with embarrassment, and told him that I’d like to do it a third time. The chief was satisfied when I handed the account books to him."
+        },
+        {
+          "type": "p",
+          "text": "Now he’s retired, and I have taken over his post. I attribute my success to the experience of my first workday at Toyota. It taught me that everything must be handled with care. There is no trifling matter in the financial department."
+        }
+      ],
+      "paragraphs": [
+        "Having graduated from college, I succeeded in finding a job at Toyota. My first workday was not as busy as I had expected, but it taught me a lot. In actual fact, it will benefit me for my whole life.",
+        "When I was enrolled in the financial department, I was assigned by the chief to check some data in the account books with the invoices. I was glad at first and thought, \"It’s a piece of cake for a graduate majoring in accounting.\" It didn’t take me long before I finished the job. Expecting to be praised, I went to the chief.",
+        "Unexpectedly, he asked me to check all the data again with care, without stopping doing his own work. I felt a little disappointed. Time was passing slowly when I felt hungry. The chief came to me and said, \"Put your work aside; it’s time for lunch now.\" I relaxed, and went to the dining hall.",
+        "I went on with my assignment immediately after I came back. I found some mistakes that I hadn’t noticed the first time. At this moment the chief approached me and said, \"Are there any errors? Do you think it’s necessary to repeat the whole cycle?\" I nodded with embarrassment, and told him that I’d like to do it a third time. The chief was satisfied when I handed the account books to him.",
+        "Now he’s retired, and I have taken over his post. I attribute my success to the experience of my first workday at Toyota. It taught me that everything must be handled with care. There is no trifling matter in the financial department."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The author was glad about the assignment at first because he thought ______.",
+          "options": [
+            "the job could benefit him for the whole life",
+            "he had found an easy job at Toyota",
+            "the job was quite easy for him",
+            "he was most suitable for the job"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The author implied that the chief turned out to be ______.",
+          "options": [
+            "strict",
+            "rude",
+            "humorous",
+            "aggressive"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "According to the passage, \"to repeat the whole cycle\" means ______.",
+          "options": [
+            "to make a circle round the errors",
+            "to check all the data again with care",
+            "to find more mistakes than the first time",
+            "to hand in the account books to the chief"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following statements is NOT true according to the passage?",
+          "options": [
+            "The author checked all the data three times.",
+            "The author ate his lunch in the dining hall of the company.",
+            "In the end, the chief was still dissatisfied with the author’s work.",
+            "The author discovered some mistakes which he had not found the first time."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "From the experience of his first workday, the author learned ______.",
+          "options": [
+            "how to find a favorite job",
+            "how to check the account books",
+            "how to help the chief of the department",
+            "how to deal with everything with care"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 272,
+      "difficulty": "进阶",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-07",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 7,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Some people bring out the best in you in a way that you might never have fully realized on",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Some people bring out the best in you in a way that you might never have fully realized on your own. My mom was one of those people."
+        },
+        {
+          "type": "p",
+          "text": "When I was nine years old, my mom became a single mother. While I was growing up, we lived a very hard life. But she gave me a lot of love. Each night, she spoke the words that would change my life, \"Kemmons, you are certain to be a great man and you can do anything in life if you work hard enough to get it.\""
+        },
+        {
+          "type": "p",
+          "text": "At fourteen, I was hit by a car and the doctors said I would never walk again. Every day, my mother spoke to me in her gentle, loving voice, telling me that no matter what those doctors said, I could walk again if I wanted to walk badly enough. She drove that message so deep into my heart that I finally believed her. A year later, I returned to school-walking on my own!"
+        },
+        {
+          "type": "p",
+          "text": "When the Great Depression hit, I left school. Over the years, I experienced various levels of business success. But the real turning point occurred on a vacation I took with my wife and five kids. I was dissatisfied with the second-class hotels available for families and was angry that they charged an extra $2 for each child. I told my wife that I was going to open a motel for families that would never charge extra for children."
+        },
+        {
+          "type": "p",
+          "text": "Not surprisingly, my mom was one of my strongest supporters. She worked behind the desk and even designed the room style. As in any business, we experienced a lot of challenges. But with my mother’s words deeply rooted in my soul, I never doubted we would succeed. Fifteen years later, we had the largest hotel system in the World-Holiday Inn. In 1979 my company had 1,759 Inns in more than fifty countries with an income of $1 billion a year."
+        },
+        {
+          "type": "p",
+          "text": "You may not have started out life in the best situations. But if you can find a task in life worth working for and believe in yourself, nothing can stop you."
+        }
+      ],
+      "paragraphs": [
+        "Some people bring out the best in you in a way that you might never have fully realized on your own. My mom was one of those people.",
+        "When I was nine years old, my mom became a single mother. While I was growing up, we lived a very hard life. But she gave me a lot of love. Each night, she spoke the words that would change my life, \"Kemmons, you are certain to be a great man and you can do anything in life if you work hard enough to get it.\"",
+        "At fourteen, I was hit by a car and the doctors said I would never walk again. Every day, my mother spoke to me in her gentle, loving voice, telling me that no matter what those doctors said, I could walk again if I wanted to walk badly enough. She drove that message so deep into my heart that I finally believed her. A year later, I returned to school-walking on my own!",
+        "When the Great Depression hit, I left school. Over the years, I experienced various levels of business success. But the real turning point occurred on a vacation I took with my wife and five kids. I was dissatisfied with the second-class hotels available for families and was angry that they charged an extra $2 for each child. I told my wife that I was going to open a motel for families that would never charge extra for children.",
+        "Not surprisingly, my mom was one of my strongest supporters. She worked behind the desk and even designed the room style. As in any business, we experienced a lot of challenges. But with my mother’s words deeply rooted in my soul, I never doubted we would succeed. Fifteen years later, we had the largest hotel system in the World-Holiday Inn. In 1979 my company had 1,759 Inns in more than fifty countries with an income of $1 billion a year.",
+        "You may not have started out life in the best situations. But if you can find a task in life worth working for and believe in yourself, nothing can stop you."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What Kemmons’ mom often told him during his childhood was ______.",
+          "options": [
+            "encouraging",
+            "boring",
+            "amusing",
+            "interesting"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "What does \"that message\" refer to in Paragraph 3?",
+          "options": [
+            "I could return to school.",
+            "I would never walk again.",
+            "I should always believe her.",
+            "I could walk again if I wanted to."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "What caused Kemmons to start a motel by himself?",
+          "options": [
+            "His previous business success at various levels.",
+            "His terrible experience with some hotels.",
+            "His wife’s suggestion.",
+            "His mom’s support."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following best describes Kemmons’ mother?",
+          "options": [
+            "Kind, helpful and beautiful.",
+            "Strict, sensitive and supportive.",
+            "Modest, helpful and hard-working.",
+            "Loving, supportive and strong-willed."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following led to Kemmons’ success according to the passage?",
+          "options": [
+            "Self-confidence, hard work, higher education and a poor family.",
+            "Clear goals, mom’s encouragement, a poor family and good luck.",
+            "Mom’s encouragement, clear goals, self-confidence and hard work.",
+            "Mom’s encouragement, a poor family, generosity and opportunities."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 352,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-08",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 8,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "From the very beginning of school we make books and reading a constant source of possible ",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "From the very beginning of school we make books and reading a constant source of possible failure and public shame. When children are little, we make them read aloud before the teacher and other children, so that we can be sure that they \"know\" all the words they are reading. This means that when they don’t know a word, they are going to make a mistake, right in front of everyone. After having taught fifth-grade classes for four years, I decided to try at all costs to rid them of their fear and dislike of books, and to get them to read more often and more adventurously."
+        },
+        {
+          "type": "p",
+          "text": "One day soon after school had started, I said to them, \"Now I’m going to say something about reading that you have probably never heard a teacher say before. I would like you to read a lot of books this year, but I want you to read them only for pleasure. If you understand enough of a book to enjoy it and want to go on reading it, that’s enough for me. Also I am not going to ask you what words mean.\""
+        },
+        {
+          "type": "p",
+          "text": "The children sat stunned（惊呆）and silent. Was this a teacher talking? One girl, who had just come to us from a school where she had had a very hard time, looked at me steadily for a long time after I had finished. Then, still looking at me, she said slowly and seriously, \"Mr. Holt, do you really mean that?\" I said just as seriously, \"I mean every word of it.\""
+        },
+        {
+          "type": "p",
+          "text": "During the spring she really astonished me. One day, she was reading *Moby Dick*! \"Don’t you find parts of it rather difficult?\" I asked. \"Oh, sure, but I just skip over those parts and go on to the next good part,\" she answered."
+        },
+        {
+          "type": "p",
+          "text": "This is exactly what reading should be and in school so seldom is — an exciting, joyous adventure. Find something, dive into it, take the good parts, skip the bad parts, get what you can out of it, and go on to something else."
+        }
+      ],
+      "paragraphs": [
+        "From the very beginning of school we make books and reading a constant source of possible failure and public shame. When children are little, we make them read aloud before the teacher and other children, so that we can be sure that they \"know\" all the words they are reading. This means that when they don’t know a word, they are going to make a mistake, right in front of everyone. After having taught fifth-grade classes for four years, I decided to try at all costs to rid them of their fear and dislike of books, and to get them to read more often and more adventurously.",
+        "One day soon after school had started, I said to them, \"Now I’m going to say something about reading that you have probably never heard a teacher say before. I would like you to read a lot of books this year, but I want you to read them only for pleasure. If you understand enough of a book to enjoy it and want to go on reading it, that’s enough for me. Also I am not going to ask you what words mean.\"",
+        "The children sat stunned（惊呆）and silent. Was this a teacher talking? One girl, who had just come to us from a school where she had had a very hard time, looked at me steadily for a long time after I had finished. Then, still looking at me, she said slowly and seriously, \"Mr. Holt, do you really mean that?\" I said just as seriously, \"I mean every word of it.\"",
+        "During the spring she really astonished me. One day, she was reading *Moby Dick*! \"Don’t you find parts of it rather difficult?\" I asked. \"Oh, sure, but I just skip over those parts and go on to the next good part,\" she answered.",
+        "This is exactly what reading should be and in school so seldom is — an exciting, joyous adventure. Find something, dive into it, take the good parts, skip the bad parts, get what you can out of it, and go on to something else."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the passage, children’s fear and dislike of books may result from ______.",
+          "options": [
+            "being made to read too much",
+            "reading little and thinking little",
+            "reading often and adventurously",
+            "being made to read aloud before others"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The teacher told the students to read ______.",
+          "options": [
+            "for enjoyment",
+            "for knowledge",
+            "for a larger vocabulary",
+            "for higher scores in exams"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Upon hearing the teacher’s talk, the children probably felt that ______.",
+          "options": [
+            "it was too good to be true",
+            "it was not surprising at all",
+            "it was understandable to them",
+            "it was no different from other teachers’ talk"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "From the teacher’s point of view, ______.",
+          "options": [
+            "children cannot tell good parts from bad parts while reading",
+            "children should be left to decide what to read and how to read",
+            "reading is never a pleasant and inspiring experience in school",
+            "reading involves understanding every little piece of information"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 346,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-09",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 9,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "On Thursday afternoon Mrs",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On Thursday afternoon Mrs. Clarke, dressed for going out, took her handbag with some money and her key in it, pulled the door behind her to lock it and went to the Over 60s Club. She always went there on Thursdays. It was a nice outing for an old woman who lived alone."
+        },
+        {
+          "type": "p",
+          "text": "At six o’clock she came home, let herself in and at once smelt cigarette smoke. Cigarette smoke in her house? How? Had someone got in? She checked the back door and the windows. All were locked or fastened, as usual. There was no sign of forced entry."
+        },
+        {
+          "type": "p",
+          "text": "Over a cup of tea she was wondering whether someone might have a key that fitted her front door — \"a master key\" perhaps. So she stayed at home the following Thursday. Nothing happened. Was anyone watching her movements? On the Thursday after that, dressed as usual, she went out at her usual time, but she didn’t go to the club. Instead she took a short cut home again, letting herself in through her garden and the back door. She settled down to wait."
+        },
+        {
+          "type": "p",
+          "text": "It was just after four o’clock when the front door bell rang. Mrs. Clarke was making a cup of tea at the time. The bell rang again, and then she heard her letter-box being pushed open. With the kettle of boiling water in her hand, she moved quietly toward the front door. A long piece of wire appeared through the letter-box, and then a hand. The wire turned and caught around the knob on the door-lock. Mrs. Clarke raised the kettle and poured the water over the hand. There was a shout outside, and the skin seemed to drop off the fingers like a glove. The wire fell to the floor, the hand was pulled back, and Mrs. Clarke heard the sound of running feet."
+        }
+      ],
+      "paragraphs": [
+        "On Thursday afternoon Mrs. Clarke, dressed for going out, took her handbag with some money and her key in it, pulled the door behind her to lock it and went to the Over 60s Club. She always went there on Thursdays. It was a nice outing for an old woman who lived alone.",
+        "At six o’clock she came home, let herself in and at once smelt cigarette smoke. Cigarette smoke in her house? How? Had someone got in? She checked the back door and the windows. All were locked or fastened, as usual. There was no sign of forced entry.",
+        "Over a cup of tea she was wondering whether someone might have a key that fitted her front door — \"a master key\" perhaps. So she stayed at home the following Thursday. Nothing happened. Was anyone watching her movements? On the Thursday after that, dressed as usual, she went out at her usual time, but she didn’t go to the club. Instead she took a short cut home again, letting herself in through her garden and the back door. She settled down to wait.",
+        "It was just after four o’clock when the front door bell rang. Mrs. Clarke was making a cup of tea at the time. The bell rang again, and then she heard her letter-box being pushed open. With the kettle of boiling water in her hand, she moved quietly toward the front door. A long piece of wire appeared through the letter-box, and then a hand. The wire turned and caught around the knob on the door-lock. Mrs. Clarke raised the kettle and poured the water over the hand. There was a shout outside, and the skin seemed to drop off the fingers like a glove. The wire fell to the floor, the hand was pulled back, and Mrs. Clarke heard the sound of running feet."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Mrs. Clarke looked forward to Thursday because ______.",
+          "options": [
+            "she worked at a club on the day",
+            "she lived alone",
+            "she visited a club on Thursdays",
+            "a special visitor came on Thursday Clarke"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "If someone had made a forced entry, ______.",
+          "options": [
+            "Mrs. Clarke would have found a broken door or window",
+            "he or she was still in the house",
+            "things would have been thrown about",
+            "he or she would have needed a master key"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "On the third Thursday, Mrs. Clarke left home ______.",
+          "options": [
+            "to go to the club as usual",
+            "to see if the thief was hanging about outside",
+            "to report the break-in to the police",
+            "to trick the thief"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "The lock on the front door was one which ______.",
+          "options": [
+            "could not be opened through the letter-box",
+            "could be opened with a long piece of wire",
+            "could not be opened without a key",
+            "could be opened by using a knob instead of a key"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "The wire fell to the floor because ______.",
+          "options": [
+            "Mrs. Clarke refused to open the door",
+            "the thief’s glove dropped off",
+            "it was too hot to hold",
+            "the thief just wanted to get away"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 308,
+      "difficulty": "挑战",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-10",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 10,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "Peter loved to buy used articles",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Peter loved to buy used articles. Almost a month ago, he bought a popular word game that used little pieces of wood with different letters on them. As he was purchasing it, the salesgirl said, \"Uh, look, the game box hasn’t even been opened yet. That might be worth some money.\""
+        },
+        {
+          "type": "p",
+          "text": "Peter examined the box, and sure enough, it was completely covered in factory-sealed plastic. He saw a date of 1973 on the back of the box."
+        },
+        {
+          "type": "p",
+          "text": "\"You should put that up for auction (拍卖) on the Internet, and see what happens,\" the salesgirl said."
+        },
+        {
+          "type": "p",
+          "text": "\"Yes, you’re right. People like something rare,\" Peter agreed, \"I can’t imagine there being very many unopened boxes of this game still around 40 years later.\""
+        },
+        {
+          "type": "p",
+          "text": "\"Don’t forget to tell me if you sell it,\" the salesgirl smiled."
+        },
+        {
+          "type": "p",
+          "text": "\"No problem,\" Peter said."
+        },
+        {
+          "type": "p",
+          "text": "After he got home, Peter went online to several auction websites looking for his game, but he could not find it. Then he typed in the name of the word game and hit SEARCH. The search result was 543 websites containing information about the changes of the games. Over the years, the game had been produced using letters in different sizes and game boards in different colors. He also found some lists of game fans looking for various versions of the game. Peter emailed some of them, telling them what he had."
+        },
+        {
+          "type": "p",
+          "text": "Two weeks later, Peter went back to the shop."
+        },
+        {
+          "type": "p",
+          "text": "\"Hello! Do you still remember the unopened word game?\""
+        },
+        {
+          "type": "p",
+          "text": "The salesgirl looked at him for a second, then recognized him and said, \"Oh, hi!\""
+        },
+        {
+          "type": "p",
+          "text": "\"I’ve got something for you,\" Peter said, \"I sold the game and made $1,000. Thank you for your suggestion,\" He handed her three $100 bills."
+        },
+        {
+          "type": "p",
+          "text": "\"Wow!\" the salesgirl cried out. \"Thank you! I never expected it.\""
+        }
+      ],
+      "paragraphs": [
+        "Peter loved to buy used articles. Almost a month ago, he bought a popular word game that used little pieces of wood with different letters on them. As he was purchasing it, the salesgirl said, \"Uh, look, the game box hasn’t even been opened yet. That might be worth some money.\"",
+        "Peter examined the box, and sure enough, it was completely covered in factory-sealed plastic. He saw a date of 1973 on the back of the box.",
+        "\"You should put that up for auction (拍卖) on the Internet, and see what happens,\" the salesgirl said.",
+        "\"Yes, you’re right. People like something rare,\" Peter agreed, \"I can’t imagine there being very many unopened boxes of this game still around 40 years later.\"",
+        "\"Don’t forget to tell me if you sell it,\" the salesgirl smiled.",
+        "\"No problem,\" Peter said.",
+        "After he got home, Peter went online to several auction websites looking for his game, but he could not find it. Then he typed in the name of the word game and hit SEARCH. The search result was 543 websites containing information about the changes of the games. Over the years, the game had been produced using letters in different sizes and game boards in different colors. He also found some lists of game fans looking for various versions of the game. Peter emailed some of them, telling them what he had.",
+        "Two weeks later, Peter went back to the shop.",
+        "\"Hello! Do you still remember the unopened word game?\"",
+        "The salesgirl looked at him for a second, then recognized him and said, \"Oh, hi!\"",
+        "\"I’ve got something for you,\" Peter said, \"I sold the game and made $1,000. Thank you for your suggestion,\" He handed her three $100 bills.",
+        "\"Wow!\" the salesgirl cried out. \"Thank you! I never expected it.\""
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which of the following best describes the word game Peter bought?",
+          "options": [
+            "It was made around 40 years ago.",
+            "It has game boards in different sizes.",
+            "It was kept in a plastic bag with a seal.",
+            "It had little pieces of wood in different colors."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "What did the salesgirl probably think of Peter’s word game?",
+          "options": [
+            "Old and handy.",
+            "Rare and valuable.",
+            "Classic and attractive.",
+            "Colorful and interesting."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Peter got the names of the game fans from ______.",
+          "options": [
+            "an auction",
+            "the Internet",
+            "a game shop",
+            "a second-hand shop"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "What happened at the end of the story?",
+          "options": [
+            "Peter gave the salesgirl $300 as a reward.",
+            "The salesgirl became Peter’s friend.",
+            "Peter returned the word game for $1,000.",
+            "The salesgirl felt confused to see Peter again."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "What message can be learned from the story?",
+          "options": [
+            "It’s important to keep a promise.",
+            "It’s great to share in other people’s happiness.",
+            "One should be grateful for the help from others.",
+            "Something rare is not worth a large amount of money."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 292,
+      "difficulty": "进阶",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingli-11",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 11,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "I am the owner of a small clothing store",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "I am the owner of a small clothing store. Three months ago I decided to move my store to Glendale, another area of town, because business was not very good. Now I rent a store in an old building. The new location in Glendale is excellent, and my sales have improved a lot. (The utilities are also cheaper!) There is a high school nearby, and many of the students come to my store to buy their clothes. This location has other advantages, too. It is closer to my home, and there is a food store on the next block, so it is convenient for me to go shopping after work."
+        },
+        {
+          "type": "p",
+          "text": "The size of my new store is better, too. It is much bigger, and there is a lot of storage space. But the building was not in very good condition, and I had to make many improvements. The paint was old and dirty, and I had to pick a new color and paint all of the walls. I hired a man to build new wooden dressing rooms. I also made new curtains for the rooms and the window. I am completely satisfied with the store now. Unfortunately, I learned last week that the owner wants to sell the building — after all my hard work! How did I learn this? I came to work on Friday and saw a \"For Sale\" sign in front of my store."
+        }
+      ],
+      "paragraphs": [
+        "I am the owner of a small clothing store. Three months ago I decided to move my store to Glendale, another area of town, because business was not very good. Now I rent a store in an old building. The new location in Glendale is excellent, and my sales have improved a lot. (The utilities are also cheaper!) There is a high school nearby, and many of the students come to my store to buy their clothes. This location has other advantages, too. It is closer to my home, and there is a food store on the next block, so it is convenient for me to go shopping after work.",
+        "The size of my new store is better, too. It is much bigger, and there is a lot of storage space. But the building was not in very good condition, and I had to make many improvements. The paint was old and dirty, and I had to pick a new color and paint all of the walls. I hired a man to build new wooden dressing rooms. I also made new curtains for the rooms and the window. I am completely satisfied with the store now. Unfortunately, I learned last week that the owner wants to sell the building — after all my hard work! How did I learn this? I came to work on Friday and saw a \"For Sale\" sign in front of my store."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "The store owner wanted to move to the new location because ______.",
+          "options": [
+            "there was a food store nearby",
+            "there was a high school on the next block",
+            "the old store did not sell a lot of goods",
+            "it was in a new area"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The store owner ______.",
+          "options": [
+            "has improved her sales until moving to the new location",
+            "sells clothes to high school students in the area",
+            "can go to the shopping center in her business hours",
+            "has been told that the furniture is cheaper there"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following statements is NOT true?",
+          "options": [
+            "It is convenient for the store owner to go shopping because the clothing store is close to her house.",
+            "The old store was smaller than the new store, where she got much storage space.",
+            "It was she who made some arrangements for the dressing rooms.",
+            "After hard work, she is very satisfied with what she has done."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "The building was not in very good condition, and ______.",
+          "options": [
+            "the landlord of the building had the walls painted",
+            "the store owner made a lot of improvements to it",
+            "the store owner asked the workmen to repair the dressing rooms",
+            "the landlord did a lot of work to rebuild it"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "The phrase \"For Sale\" means ______.",
+          "options": [
+            "to be hired",
+            "to be closed down",
+            "to be rented",
+            "to be sold"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 236,
+      "difficulty": "进阶",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "yingyong-01",
+      "catId": "yingyong",
+      "catName": "应用文类",
+      "number": 1,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "The White House is the most visited residence in the world",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The White House is the most visited residence in the world. Tours may be scheduled through our Washington DC office. Due to security and scheduling procedures, there are a few things you should know before requesting a tour:"
+        },
+        {
+          "type": "li",
+          "text": "Only groups of 10 or more may request a tour."
+        },
+        {
+          "type": "li",
+          "text": "Requests must be submitted with a minimum of one month's advance notice from the date of the tour. Notice of whether your application is accepted will be given 10 days prior to the date requested. All tours, even after they have been confirmed, are subject to cancellation due to security interests."
+        },
+        {
+          "type": "li",
+          "text": "Tours are only conducted Tuesday through Saturday from 7:30 am to 11:30 am."
+        },
+        {
+          "type": "p",
+          "text": "To process your request for a tour, please contact our Washington office at (202) 224-5521 and provide the following information:"
+        },
+        {
+          "type": "li",
+          "text": "Date(s) requesting."
+        },
+        {
+          "type": "li",
+          "text": "Security information for each person in your party, including: name as it appears on ID (ID required for ages 14 and up), date of birth, social security number, country of origin, and citizenship."
+        },
+        {
+          "type": "li",
+          "text": "A home address and daytime and evening phone numbers for the designated (指派的) leader of the group."
+        },
+        {
+          "type": "li",
+          "text": "A contact number while in DC for the designated leader of the group."
+        },
+        {
+          "type": "p",
+          "text": "After your request is confirmed or denied, our office will contact you with further instructions."
+        }
+      ],
+      "paragraphs": [
+        "The White House is the most visited residence in the world. Tours may be scheduled through our Washington DC office. Due to security and scheduling procedures, there are a few things you should know before requesting a tour:",
+        "To process your request for a tour, please contact our Washington office at (202) 224-5521 and provide the following information:",
+        "After your request is confirmed or denied, our office will contact you with further instructions."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "This notice is to provide information about ______.",
+          "options": [
+            "scheduling of Washington DC tours",
+            "the security system of the White House",
+            "application for a tour of the White House",
+            "duties of a tour group leader"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The White House is open to the public ______.",
+          "options": [
+            "on weekdays only",
+            "five days a week",
+            "every other day",
+            "on weekends only"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "Application for a group tour of the White House must be submitted ______.",
+          "options": [
+            "exactly on the date of application",
+            "at least 30 days in advance",
+            "any day between Tuesday and Saturday",
+            "10 days before the date of the tour"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "After your tour request has been confirmed, ______.",
+          "options": [
+            "it is still possible that your tour may be canceled",
+            "you are still allowed to change your visiting date",
+            "you can surely visit the White House that day",
+            "it is necessary for you to start your tour immediately"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "It can be inferred from the passage that ______.",
+          "options": [
+            "teenagers under 14 are not allowed to visit the White House",
+            "foreigners are less likely to be permitted to tour the White House",
+            "separate tours can also be scheduled for individual visitors",
+            "security is the chief concern in scheduling White House tours"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 205,
+      "difficulty": "进阶",
+      "file": "应用文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "yingyong-02",
+      "catId": "yingyong",
+      "catName": "应用文类",
+      "number": 2,
+      "heading": "Terms and Conditions of Employment",
+      "title": "Terms and Conditions of Employment",
+      "fallbackTitle": "These terms and conditions should be read before you sign your contract",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "These terms and conditions should be read before you sign your contract."
+        },
+        {
+          "type": "p",
+          "text": "Salary: Your starting salary is: $15,000. This is reviewed annually."
+        },
+        {
+          "type": "p",
+          "text": "Hours: Work are eight hours a day, Monday through Friday. You will start work on Feb. 21, 2008. On the first morning, report to your line manager John Knight."
+        },
+        {
+          "type": "p",
+          "text": "Health and safety: Please read the safety regulations attached. If you have any questions, contact the health and safety officer, whose name is at the top of the regulation sheet. If you have health problems, please inform the Senior Nurse, Chris Thomas. If you cannot work because of illness, please telephone the factory."
+        },
+        {
+          "type": "p",
+          "text": "Annual leave: During your first year of employment you are allowed twenty days' leave. This should be arranged with your line manager."
+        },
+        {
+          "type": "p",
+          "text": "Overtime (加班): If you work more than forty hours a week, you will be paid at the current overtime rate. Your line manager will keep a record of the overtime you work. If you work on public holidays, you will be paid at the current rates. If you prefer, time can be taken instead of extra pay for public holidays and overtime."
+        },
+        {
+          "type": "p",
+          "text": "Clothing: The Supplies Department provides overalls (工作服). Inform Supplies of your size two days before you need them. You can also order any other equipment you need for your job from Supplies."
+        }
+      ],
+      "paragraphs": [
+        "These terms and conditions should be read before you sign your contract.",
+        "Salary: Your starting salary is: $15,000. This is reviewed annually.",
+        "Hours: Work are eight hours a day, Monday through Friday. You will start work on Feb. 21, 2008. On the first morning, report to your line manager John Knight.",
+        "Health and safety: Please read the safety regulations attached. If you have any questions, contact the health and safety officer, whose name is at the top of the regulation sheet. If you have health problems, please inform the Senior Nurse, Chris Thomas. If you cannot work because of illness, please telephone the factory.",
+        "Annual leave: During your first year of employment you are allowed twenty days' leave. This should be arranged with your line manager.",
+        "Overtime (加班): If you work more than forty hours a week, you will be paid at the current overtime rate. Your line manager will keep a record of the overtime you work. If you work on public holidays, you will be paid at the current rates. If you prefer, time can be taken instead of extra pay for public holidays and overtime.",
+        "Clothing: The Supplies Department provides overalls (工作服). Inform Supplies of your size two days before you need them. You can also order any other equipment you need for your job from Supplies."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the contract, the salary of the employee ______.",
+          "options": [
+            "is paid weekly",
+            "is adjusted every quarter",
+            "is re-examined from year to year",
+            "is fixed for the whole contract period"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "If employees have any health problem, they should ______.",
+          "options": [
+            "telephone the factory",
+            "inform the Senior Nurse",
+            "report to their line manager",
+            "contact the health and safety officer"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "The line manager is responsible for ______.",
+          "options": [
+            "giving a pay raise",
+            "signing a contract",
+            "arranging annual leave",
+            "helping with personal affairs"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "If employees work on public holidays, usually they will get ______.",
+          "options": [
+            "extra days off",
+            "extra money",
+            "a pay raise",
+            "paid holidays"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "When they need overalls for their job, employees should inform the Supplies Department of ______.",
+          "options": [
+            "the size",
+            "the color",
+            "the style",
+            "the quantity"
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 215,
+      "difficulty": "进阶",
+      "file": "应用文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "jingji-01",
+      "catId": "jingji",
+      "catName": "经济商业类",
+      "number": 1,
+      "heading": "",
+      "title": "",
+      "fallbackTitle": "It seems obvious that you don’t give away your product for free but this is exactly what i",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It seems obvious that you don’t give away your product for free but this is exactly what indie rock group The Crimea did earlier this year. The band’s reasoning goes like this: more people will download the free album than would pay for it. Therefore, more people will hear the Crimea’s music. These people will then pay money for concerts by the band and perhaps buy a T-shirt or other merchandise. If the band play regular concerts to crowds of 200 or 300 people they can make more money than they would from sales of CDs. There will always be some people who want something they can hold in their hands so they will release the CD into the shops too—but making money through sales of their music isn’t the top priority."
+        },
+        {
+          "type": "p",
+          "text": "The story illustrates the creative thinking going on in the music business in response to dramatic changes over the last few years in the way that people buy music. Sales of music digitally—to computer, MP3 players and mobile phones—reached nearly 52 billion dollars in 2006—an increase of almost 100% on the previous year. People are simply not buying CDs in the way they used to, and by the time they stop buying them entirely, the music industry wants to make sure they are buying music in another form."
+        },
+        {
+          "type": "p",
+          "text": "This trend looks set to continue so the big question for the music industry is whether they can successfully manage the move to being primarily a digital industry without profits falling to unacceptable levels."
+        },
+        {
+          "type": "p",
+          "text": "There are both positive and negative signs. On the plus side, more and more people are buying music online. At present, teenagers buy a lot of music on mobile phones. Research by UK mobile operators suggests that 75 percent of 16- to 24-year-olds want to buy a track they like if they hear it played on the radio. But with so much competition, it is impossible for all bands to make an impact immediately by doing a free download."
+        },
+        {
+          "type": "p",
+          "text": "The bad news for the record companies, however, is the opportunity to illegally download music. Piracy—usually in the form of cheaply copied CDs—has long been a problem for the music business but the internet is allowing pirates to distribute freely and broadly through file-sharing sites and large pirate download sites."
+        },
+        {
+          "type": "p",
+          "text": "In this situation there is a danger that bands may give away their music for free and promote it in the next few years, a very interesting thing to start observing in the music business."
+        }
+      ],
+      "paragraphs": [
+        "It seems obvious that you don’t give away your product for free but this is exactly what indie rock group The Crimea did earlier this year. The band’s reasoning goes like this: more people will download the free album than would pay for it. Therefore, more people will hear the Crimea’s music. These people will then pay money for concerts by the band and perhaps buy a T-shirt or other merchandise. If the band play regular concerts to crowds of 200 or 300 people they can make more money than they would from sales of CDs. There will always be some people who want something they can hold in their hands so they will release the CD into the shops too—but making money through sales of their music isn’t the top priority.",
+        "The story illustrates the creative thinking going on in the music business in response to dramatic changes over the last few years in the way that people buy music. Sales of music digitally—to computer, MP3 players and mobile phones—reached nearly 52 billion dollars in 2006—an increase of almost 100% on the previous year. People are simply not buying CDs in the way they used to, and by the time they stop buying them entirely, the music industry wants to make sure they are buying music in another form.",
+        "This trend looks set to continue so the big question for the music industry is whether they can successfully manage the move to being primarily a digital industry without profits falling to unacceptable levels.",
+        "There are both positive and negative signs. On the plus side, more and more people are buying music online. At present, teenagers buy a lot of music on mobile phones. Research by UK mobile operators suggests that 75 percent of 16- to 24-year-olds want to buy a track they like if they hear it played on the radio. But with so much competition, it is impossible for all bands to make an impact immediately by doing a free download.",
+        "The bad news for the record companies, however, is the opportunity to illegally download music. Piracy—usually in the form of cheaply copied CDs—has long been a problem for the music business but the internet is allowing pirates to distribute freely and broadly through file-sharing sites and large pirate download sites.",
+        "In this situation there is a danger that bands may give away their music for free and promote it in the next few years, a very interesting thing to start observing in the music business."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What is unusual about the Crimea’s business plan?",
+          "options": [
+            "Their business was given away free on the internet.",
+            "They gave CDs away free in shops.",
+            "They played free concerts.",
+            "They charged more for their CDs."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 2,
+          "stem": "The Crimea hope to make money ______.",
+          "options": [
+            "through CD sales",
+            "by giving concerts and selling T-shirts and other merchandise",
+            "by selling merchandise on the internet",
+            "through sales of merchandise in shops"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 3,
+          "stem": "The Crimea also released CDs for sale in shops because ______.",
+          "options": [
+            "people who attend their concerts need them",
+            "they want to make extra money",
+            "there are still people who prefer CDs to other formats",
+            "people who fail to attend their concerts need them"
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 4,
+          "stem": "What is true about sales of music over the last year?",
+          "options": [
+            "Overall, sales are up on last year.",
+            "Overall, sales are down on last year.",
+            "There is no change compared to previous sales.",
+            "It is not mentioned in the passage."
+          ],
+          "answer": "",
+          "explanation": ""
+        },
+        {
+          "num": 5,
+          "stem": "What effect has internet had on music piracy?",
+          "options": [
+            "It has made it easier to fight piracy.",
+            "It has increased the number of pirate CDs available.",
+            "It has made it easier to illegally copy music.",
+            "It has reduced the number of pirate CDs available."
+          ],
+          "answer": "",
+          "explanation": ""
+        }
+      ],
+      "wordCount": 417,
+      "difficulty": "挑战",
+      "file": "经济商业类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "stats": {
+    "articles": 24,
+    "questions": 118,
+    "words": 6838,
+    "withAnswers": 0,
+    "withTranslations": 0
+  }
+}
