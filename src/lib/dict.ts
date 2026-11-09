@@ -1,29 +1,53 @@
 import type { DictEntry } from '@/lib/types';
 import { normalizeWord } from '@/lib/utils';
 
-export interface DictDB {
-  version: number;
-  count: number;
+interface DictChunk {
   words: Record<string, DictEntry>;
-  forms: Record<string, string>;
 }
 
-let dbPromise: Promise<DictDB | null> | null = null;
-let db: DictDB | null = null;
-
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const chunkCache = new Map<string, Promise<DictChunk | null>>();
+let formsPromise: Promise<Record<string, string>> | null = null;
 
-export function loadDictionary(): Promise<DictDB | null> {
-  if (db) return Promise.resolve(db);
-  if (dbPromise) return dbPromise;
-  dbPromise = fetch(`${BASE_PATH}/dict/ecdict.json`)
+function firstLetter(word: string): string {
+  const c = word.charAt(0);
+  return /[a-z]/.test(c) ? c : 'misc';
+}
+
+function loadChunk(letter: string): Promise<DictChunk | null> {
+  const cached = chunkCache.get(letter);
+  if (cached) return cached;
+  const p = fetch(`${BASE_PATH}/dict/words/${letter}.json`)
     .then((r) => (r.ok ? r.json() : null))
-    .then((data: DictDB | null) => {
-      db = data;
-      return data;
-    })
+    .then((data: { words?: Record<string, DictEntry> } | null) =>
+      data?.words ? { words: data.words } : null,
+    )
     .catch(() => null);
-  return dbPromise;
+  chunkCache.set(letter, p);
+  return p;
+}
+
+function loadForms(): Promise<Record<string, string>> {
+  if (!formsPromise) {
+    formsPromise = fetch(`${BASE_PATH}/dict/forms.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { forms?: Record<string, string> } | null) => data?.forms || {})
+      .catch(() => ({}));
+  }
+  return formsPromise;
+}
+
+function makeResult(word: string, base: string, entry: DictEntry): LookupResult {
+  return {
+    word,
+    base,
+    entry,
+    phonetic: entry.p,
+    meaning: entry.t,
+    tag: entry.g,
+    rank: entry.f,
+    isBaseForm: base === word,
+  };
 }
 
 export interface LookupResult {
@@ -56,65 +80,30 @@ function candidateForms(word: string): string[] {
 
 export async function lookupWord(raw: string): Promise<LookupResult> {
   const word = normalizeWord(raw);
-  const data = await loadDictionary();
-  if (!data) return { word, base: word, isBaseForm: true };
+  if (!word) return { word, base: word, isBaseForm: true };
 
-  const direct = data.words[word];
-  if (direct) {
-    return {
-      word,
-      base: word,
-      entry: direct,
-      phonetic: direct.p,
-      meaning: direct.t,
-      tag: direct.g,
-      rank: direct.f,
-      isBaseForm: true,
-    };
-  }
+  const [chunk, forms] = await Promise.all([loadChunk(firstLetter(word)), loadForms()]);
+  if (!chunk) return { word, base: word, isBaseForm: true };
 
-  const formBase = data.forms[word];
-  if (formBase && data.words[formBase]) {
-    const e = data.words[formBase];
-    return {
-      word,
-      base: formBase,
-      entry: e,
-      phonetic: e.p,
-      meaning: e.t,
-      tag: e.g,
-      rank: e.f,
-      isBaseForm: false,
-    };
+  const direct = chunk.words[word];
+  if (direct) return makeResult(word, word, direct);
+
+  const formBase = forms[word];
+  if (formBase && formBase !== word) {
+    const baseChunk = await loadChunk(firstLetter(formBase));
+    const entry = baseChunk?.words[formBase];
+    if (entry) return makeResult(word, formBase, entry);
   }
 
   for (const cand of candidateForms(word)) {
-    const e = data.words[cand];
-    if (e) {
-      return {
-        word,
-        base: cand,
-        entry: e,
-        phonetic: e.p,
-        meaning: e.t,
-        tag: e.g,
-        rank: e.f,
-        isBaseForm: cand === word,
-      };
-    }
-    const mapped = data.forms[cand];
-    if (mapped && data.words[mapped]) {
-      const me = data.words[mapped];
-      return {
-        word,
-        base: mapped,
-        entry: me,
-        phonetic: me.p,
-        meaning: me.t,
-        tag: me.g,
-        rank: me.f,
-        isBaseForm: false,
-      };
+    const entry = chunk.words[cand];
+    if (entry) return makeResult(word, cand, entry);
+
+    const mapped = forms[cand];
+    if (mapped) {
+      const mappedChunk = await loadChunk(firstLetter(mapped));
+      const me = mappedChunk?.words[mapped];
+      if (me) return makeResult(word, mapped, me);
     }
   }
 

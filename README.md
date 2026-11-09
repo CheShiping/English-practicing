@@ -22,7 +22,7 @@
 - React 19 + TypeScript
 - 纯 CSS 设计系统（无 UI 框架）
 - lucide-react 图标
-- 离线词典：ECDICT（MIT）
+- 离线词典：ECDICT（MIT），按首字母拆分为 `public/dict/words/*.json`，点词时只加载对应字母块
 
 ## 本地开发
 
@@ -129,5 +129,5 @@ public/dict/          离线英汉词典
 ## 说明
 
 - 翻译与句法提示：内置文章使用本地译文；导入文章可调用 MyMemory 在线翻译，结果会缓存到本地。
-- 词典数据来自 [ECDICT](https://github.com/skywind3000/ECDICT)（MIT License）。
+- 词典数据来自 [ECDICT](https://github.com/skywind3000/ECDICT)（MIT License）。如果重新生成了 `public/dict/ecdict.json`，请运行 `npm run dict:split` 重新生成按字母拆分的词典块。
 - 文章内容仅用于学习，请勿用于商业转载。
