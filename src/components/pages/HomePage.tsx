@@ -5,7 +5,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   BookOpen,
-  Bookmark,
   CheckCircle2,
   Clock3,
   Flame,
@@ -40,7 +39,6 @@ export default function HomePage() {
   const today = stats[todayKey()] || { minutes: 0, questions: 0, words: 0, correct: 0, articles: 0 };
   const totalWords = articles.reduce((s, a) => s + a.wordCount, 0);
   const totalQuestions = articles.reduce((s, a) => s + a.questions.length, 0);
-  const completed = articles.filter((a) => progress[a.id]?.completed).length;
 
   const continueArticle =
     articles.find((a) => a.id === lastRead) ||
@@ -94,11 +92,6 @@ export default function HomePage() {
             </a>
           </div>
           <div className="hero-note">
-            <span className="avatars" aria-hidden="true">
-              <span>读</span>
-              <span>词</span>
-              <span>句</span>
-            </span>
             <span>
               已收录 <b style={{ color: 'var(--ink-2)' }}>{articles.length}</b> 篇真题 ·{' '}
               <b style={{ color: 'var(--ink-2)' }}>{totalQuestions}</b> 道阅读题
@@ -110,7 +103,7 @@ export default function HomePage() {
           <div className="hero-stamp">精读</div>
           <div className="hero-paper-label">PASSAGE · 01</div>
           <h3>Why the Body Needs Sleep</h3>
-          <div className="hero-paper-sub">科普类 · 194 words · 5 questions</div>
+          <div className="hero-paper-sub">科普类 · 194 words · 5 题</div>
           <p className="hero-paper-text">
             After a busy day of work and play, the body needs to rest.{' '}
             <span className="hl">Sleep is necessary for good health.</span> During this time, the
@@ -119,7 +112,7 @@ export default function HomePage() {
             <span className="w-note">prepare itself</span> for the next day.
           </p>
           <div className="hero-float">
-            <b>sleep</b> /sliːp/ · n. 睡眠
+            <b>prepare</b> /prɪˈpeə(r)/ · v. 准备
             <div style={{ marginTop: 4, color: 'var(--muted)' }}>+ 加入生词本</div>
           </div>
         </div>
@@ -128,7 +121,7 @@ export default function HomePage() {
       <section className="stat-strip" aria-label="学习概览">
         <div className="stat-cell">
           <b>{articles.length}</b>
-          <span>篇精选文章</span>
+          <span>篇真题</span>
         </div>
         <div className="stat-cell">
           <b>{totalQuestions}</b>
@@ -136,7 +129,7 @@ export default function HomePage() {
         </div>
         <div className="stat-cell">
           <b>{totalWords.toLocaleString('en-US')}</b>
-          <span>Total words</span>
+          <span>总词数</span>
         </div>
         <div className="stat-cell">
           <b>{vocab.length}</b>
@@ -167,7 +160,7 @@ export default function HomePage() {
                   <span>{continueArticle.difficulty}</span>
                   {continueProgress?.completed && (
                     <span className="chip green" style={{ marginLeft: 'auto' }}>
-                      <CheckCircle2 size={12} /> 已完成
+                      <CheckCircle2 size={14} /> 已完成
                     </span>
                   )}
                 </div>
@@ -196,13 +189,18 @@ export default function HomePage() {
           <div className="today-card">
             <div>
               <div className="today-top">
-                <span>Today</span>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 5 }}>
-                  <Flame size={12} /> {readingStreak} 天连续
+                <span>今日</span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                  <Flame size={14} /> {readingStreak} 天连续
                 </span>
               </div>
               <h3>
-                {today.minutes > 0 ? '保持这个节奏，今天已经读了一会儿。' : '今天还没有翻开书页。'}
+                {today.minutes > 0
+                  ? `今天已读 ${Math.round(today.minutes)} 分钟，还差 ${Math.max(
+                      0,
+                      goalMinutes - Math.round(today.minutes)
+                    )} 分钟到目标`
+                  : '今天还没有开始阅读'}
               </h3>
             </div>
             <div>
@@ -225,7 +223,7 @@ export default function HomePage() {
                   style={{
                     display: 'flex',
                     justifyContent: 'space-between',
-                    fontSize: 10.5,
+                    fontSize: 11,
                     color: 'rgba(246,239,227,.55)',
                     marginBottom: 6,
                   }}
@@ -258,9 +256,6 @@ export default function HomePage() {
               不同题材有不同的出题逻辑。先从你最想突破的一类开始。
             </p>
           </div>
-          <div className="chip gold">
-            <Bookmark size={12} /> 已完成 {completed} / {articles.length}
-          </div>
         </div>
 
         <div className="category-grid">
@@ -271,19 +266,21 @@ export default function HomePage() {
                 key={c.id}
                 className="category-card"
                 href={hrefFor(`/library/${c.id}`)}
-                style={{ ['--cat-color' as string]: c.color }}
               >
                 <span className="category-index">0{i + 1}</span>
                 <span className="category-icon">
-                  <Icon size={20} strokeWidth={1.9} />
+                  <Icon size={18} strokeWidth={1.5} />
                 </span>
-                <h3>{c.name}</h3>
+                <h3>
+                  <span className="cat-dot" style={{ background: c.color }} />
+                  {c.name}
+                </h3>
                 <p>{c.description}</p>
                 <div className="category-foot">
                   <span>
-                    <b>{c.total}</b> 篇 · 已完成 {c.done}
+                    <b>{c.total}</b> 篇 · 完成 {c.done}
                   </span>
-                  <ArrowUpRight size={15} />
+                  <ArrowUpRight size={16} />
                 </div>
               </a>
             );
@@ -305,21 +302,24 @@ export default function HomePage() {
         </div>
 
         <div className="article-list">
-          {recentArticles.map((a) => {
+          {recentArticles.map((a, index) => {
             const p = progress[a.id];
             const cat = getCategory(a.catId);
             return (
               <a key={a.id} className="article-row" href={hrefFor(`/read/${a.id}`)}>
-                <span className="article-row-num">{String(a.number).padStart(2, '0')}</span>
+                <span className="article-row-num">{String(index + 1).padStart(2, '0')}</span>
                 <div className="article-row-main">
                   <div className="article-row-title">{a.title}</div>
                   <div className="article-row-sub">
-                    <span style={{ color: cat?.color, fontWeight: 600 }}>{a.catName}</span>
+                    <span className="cat-name">
+                      <span className="cat-dot" style={{ background: cat?.color }} />
+                      {a.catName}
+                    </span>
                     <span className="divider-dot" />
                     <span>{a.subtitle || `Passage ${a.number}`}</span>
                     <span className="divider-dot" />
                     <span>
-                      <Clock3 size={11} style={{ display: 'inline', verticalAlign: -1 }} />{' '}
+                      <Clock3 size={12} style={{ display: 'inline', verticalAlign: -1 }} />{' '}
                       {Math.max(3, Math.round(a.wordCount / 150))} 分钟
                     </span>
                   </div>
@@ -331,10 +331,10 @@ export default function HomePage() {
                       <i style={{ width: `${p?.percent || 0}%` }} />
                     </div>
                   </div>
-                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: 10.5 }}>
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11 }}>
                     {p?.percent || 0}%
                   </span>
-                  <ArrowRight size={15} />
+                  <ArrowRight size={16} />
                 </div>
               </a>
             );

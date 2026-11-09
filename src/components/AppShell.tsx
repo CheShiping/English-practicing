@@ -15,10 +15,14 @@ import ImportPage from '@/components/pages/ImportPage';
 import SettingsPage from '@/components/pages/SettingsPage';
 import { BookOpen } from 'lucide-react';
 
+const BRAND_MARK = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/brand/moread-owl.png`;
+
 function Splash() {
   return (
     <div className="splash">
-      <div className="splash-seal">墨</div>
+      <div className="splash-seal">
+        <img src={BRAND_MARK} alt="" width={52} height={52} />
+      </div>
       <div className="splash-text">
         <b>墨读英语</b>
         <span>正在展开纸页…</span>
@@ -31,7 +35,7 @@ function NotFound() {
   return (
     <div className="page" style={{ padding: '100px 0', textAlign: 'center' }}>
       <div className="splash-seal" style={{ margin: '0 auto 20px' }}>
-        墨
+        <img src={BRAND_MARK} alt="" width={52} height={52} />
       </div>
       <h1 className="section-title">这一页还没有被写下</h1>
       <p className="section-sub" style={{ margin: '10px auto 26px' }}>

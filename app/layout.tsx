@@ -5,12 +5,15 @@ import './pages.css';
 import { AppProvider } from '@/state/AppProvider';
 import AppShell from '@/components/AppShell';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const metadata: Metadata = {
   title: '墨读英语 · 沉浸式英语阅读与精读训练',
   description:
     '把每一篇真题读成自己的语感。支持点词查义、划句翻译、生词本、批注、计时与做题解析，所有学习数据保存在本地。',
   applicationName: '墨读英语',
   keywords: ['英语阅读', '专升本', '精读', '背单词', '阅读理解', '英语真题'],
+  icons: { icon: `${basePath}/brand/moread-owl.png` },
 };
 
 export const viewport: Viewport = {

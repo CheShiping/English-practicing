@@ -11,6 +11,8 @@ const NAV = [
   { key: 'stats', label: '学习数据', href: '/stats' },
 ];
 
+const BRAND_MARK = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/brand/moread-owl.png`;
+
 export default function Header({ routeName }: { routeName: string }) {
   const { settings, updateSettings, readingStreak } = useApp();
   const dark = settings.theme === 'dark';
@@ -19,10 +21,12 @@ export default function Header({ routeName }: { routeName: string }) {
     <header className="site-header">
       <div className="site-header-inner">
         <a href={hrefFor('/')} className="brand" aria-label="墨读英语首页">
-          <span className="brand-seal">墨</span>
+          <span className="brand-seal" aria-hidden="true">
+            <img src={BRAND_MARK} alt="" width={36} height={36} />
+          </span>
           <span className="brand-text">
             <span className="brand-name">墨读英语</span>
-            <span className="brand-en">MOREAD · ENGLISH</span>
+            <span className="brand-en">Moread English</span>
           </span>
         </a>
 

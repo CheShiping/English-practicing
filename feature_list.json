@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "id": "feat-001",
+      "name": "基线验证与环境启动",
+      "description": "确认 npm install、TypeScript 类型检查与静态导出构建能从干净检出跑通",
+      "dependencies": [],
+      "status": "done",
+      "evidence": "2026-11-09：npx tsc --noEmit exit 0；npm run build exit 0，生成 38 篇文章 / 187 题 / 10278 词，静态导出 2/2 成功"
+    },
+    {
+      "id": "feat-002",
+      "name": "接入历史人文与社会生活类真题",
+      "description": "把新增的 article/历史人文类专项训练.md、article/社会生活类专项训.md 及 src/data/answers/lishi-shehui-*.json、shehui-*.json 接入内容管线，并在 src/data/article-meta.ts 中呈现新分类",
+      "dependencies": ["feat-001"],
+      "status": "in-progress",
+      "evidence": "2026-11-09 构建已识别 历史人文类 2 篇 / 社会生活类 12 篇；相关文件尚未提交"
+    },
+    {
+      "id": "feat-003",
+      "name": "补全被截断的文章源文件",
+      "description": "补全 article/历史人文类专项训练.md Passage 3 与 article/应用文类专项训练.md Passage 3 的正文与题目，消除构建警告",
+      "dependencies": ["feat-002"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-004",
+      "name": "内容批次验收与提交",
+      "description": "逐篇核对新分类文章的题目、答案与译文，确认文章库与阅读器展示正常，然后提交本批内容",
+      "dependencies": ["feat-003"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-005",
+      "name": "文档与交接收尾",
+      "description": "更新 README 的分类与内容统计、progress.md 和 session-handoff.md，留下清晰的下一会话路径",
+      "dependencies": ["feat-004"],
+      "status": "not-started",
+      "evidence": ""
+    },
+    {
+      "id": "feat-006",
+      "name": "接入 C1 猫头鹰品牌标记",
+      "description": "把选定的 C1 猫头鹰形象裁切为 512px 品牌标记，接入页头、启动页、404 与 favicon，保留 GitHub Pages basePath 兼容",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "2026-11-09：public/brand/moread-owl.png 512×512（裁掉生成水印）；Header/AppShell/layout.tsx 接入；npx tsc --noEmit exit 0；npm run build exit 0（51 篇 / 244 题 / 13539 词，导出 2/2）；静态导出下页头截图确认图片加载且导航单行"
+    },
+    {
+      "id": "feat-007",
+      "name": "首页与共享样式 unslop 精修",
+      "description": "统一首页与全站共享样式的控件、字重与动效，保留纸感与朱砂红方向，并保留样张印章、READ 背景字、今日卡光斑与渐变进度条",
+      "dependencies": ["feat-001", "feat-006"],
+      "status": "done",
+      "evidence": "2026-11-09：npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）；桌面 1440、390px 移动端与夜间主题截图复核。2026-11-10 按用户要求恢复样张「精读」印章、PASSAGE · 01 标签、READ 背景字、今日卡红色光斑与渐变进度条；样张词卡改为桌面悬浮、移动端入流，不遮挡正文"
+    }
+  ]
+}

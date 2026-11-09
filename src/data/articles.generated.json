@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T15:39:46.992Z",
+  "generatedAt": "2026-11-09T16:14:24.982Z",
   "categories": [
     {
       "id": "kepu",
@@ -20,7 +20,7 @@
       "name": "应用文类",
       "order": 3,
       "file": "应用文类专项训练.md",
-      "count": 2
+      "count": 4
     },
     {
       "id": "jingji",
@@ -34,7 +34,7 @@
       "name": "历史人文类",
       "order": 5,
       "file": "历史人文类专项训练.md",
-      "count": 2
+      "count": 12
     },
     {
       "id": "shehui",
@@ -2759,6 +2759,311 @@
       ]
     },
     {
+      "id": "yingyong-03",
+      "catId": "yingyong",
+      "catName": "应用文类",
+      "number": 3,
+      "heading": "You Can Make a Windsock (风向袋)",
+      "title": "You Can Make a Windsock (风向袋)",
+      "fallbackTitle": "Have you ever seen a windsock blowing in the wind",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Have you ever seen a windsock blowing in the wind? Well, you can make one of your own! This is a fun project that you can do with things you may have. You just need to follow a few easy steps.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "You will need:",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "one piece of heavy colored paper",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "five ribbons",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "strong tape",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "a string",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "a pencil",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "What to do:",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 1: Draw pictures on the paper. You can write your name on it. Do anything that will make it special to you.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 2: Make the paper into the shape of a tube. Hold one of the shorter edges over the other. Then make them together with the tape at each end and in the middle.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 3: Use a pencil to make a hole into both sides of the tube. The holes should be only on one end of the tube. Pull the string through both holes. Then tie the ends of the string together.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Step 4: Now make five holes around the top of the other end of the tube. Put a ribbon through each of the holes. Tie a knot in the ends. Make sure the knots are bigger than the holes.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Now your windsock is ready to use. But how does it work? The shape of the tube plays an important part. Wind blows through the tube and makes it fly and dance around. Hold the windsock up in the air by its string and run around. It will fly behind you. You can also hang it outside and watch it dance around on its own!",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Have you ever seen a windsock blowing in the wind? Well, you can make one of your own! This is a fun project that you can do with things you may have. You just need to follow a few easy steps.",
+        "You will need:",
+        "What to do:",
+        "Step 1: Draw pictures on the paper. You can write your name on it. Do anything that will make it special to you.",
+        "Step 2: Make the paper into the shape of a tube. Hold one of the shorter edges over the other. Then make them together with the tape at each end and in the middle.",
+        "Step 3: Use a pencil to make a hole into both sides of the tube. The holes should be only on one end of the tube. Pull the string through both holes. Then tie the ends of the string together.",
+        "Step 4: Now make five holes around the top of the other end of the tube. Put a ribbon through each of the holes. Tie a knot in the ends. Make sure the knots are bigger than the holes.",
+        "Now your windsock is ready to use. But how does it work? The shape of the tube plays an important part. Wind blows through the tube and makes it fly and dance around. Hold the windsock up in the air by its string and run around. It will fly behind you. You can also hang it outside and watch it dance around on its own!"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "You draw pictures on the paper to make the windsock ______.",
+          "options": [
+            "fun",
+            "heavy",
+            "special",
+            "strong"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Which of these things do you need for Step 2?",
+          "options": [
+            "Tape.",
+            "Ribbons.",
+            "A pencil.",
+            "A string."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "What do you do after you put ribbons through the holes in the tube?",
+          "options": [
+            "Make holes in the tube.",
+            "Tape the tube together.",
+            "Tie knots in the ribbons.",
+            "Put a string through the hole."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What is probably the most important to make a windsock work?",
+          "options": [
+            "Its size.",
+            "Its shape.",
+            "The color of the paper.",
+            "The number of the holes."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is the main purpose of this passage?",
+          "options": [
+            "To teach an important lesson.",
+            "To tell a story about windsocks.",
+            "To show how a windsock is made.",
+            "To explain how to describe something."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 258,
+      "difficulty": "进阶",
+      "file": "应用文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "yingyong-04",
+      "catId": "yingyong",
+      "catName": "应用文类",
+      "number": 4,
+      "heading": "",
+      "title": "When you are cooking with a pressure cooker, you should learn a few common sense rules:",
+      "fallbackTitle": "When you are cooking with a pressure cooker, you should learn a few common sense rules:",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "When you are cooking with a pressure cooker, you should learn a few common sense rules:",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "(1) Never leave the cooker unwatched when it is in use.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "(2) Add sufficient liquid but never past the recommended fill point. Overfilling the cooker may block the vent (排气) pipe and cause the cooker to explode.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "(3) Set the cooking time. Too much time may overcook the food and too little time will lead to undercooked food.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "(4) If you are new to pressure cooking, follow the cooking instructions carefully. Heat and time can either result in a great meal or a ruined one.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "(5) Never try to force a pressure cooker cover open. Allow the cooker to cool or run it under cool water before trying to open the cover.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "(6) Clean the cooker thoroughly after each use. Mild detergent (洗涤剂) and hot water work the best. Do not use stove ash or sand for they may damage the cooker. The gasket (垫圈) is best cleaned in warm soapy water and then dried. Store the gasket in the bottom of the pot.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "When you are cooking with a pressure cooker, you should learn a few common sense rules:",
+        "(1) Never leave the cooker unwatched when it is in use.",
+        "(2) Add sufficient liquid but never past the recommended fill point. Overfilling the cooker may block the vent (排气) pipe and cause the cooker to explode.",
+        "(3) Set the cooking time. Too much time may overcook the food and too little time will lead to undercooked food.",
+        "(4) If you are new to pressure cooking, follow the cooking instructions carefully. Heat and time can either result in a great meal or a ruined one.",
+        "(5) Never try to force a pressure cooker cover open. Allow the cooker to cool or run it under cool water before trying to open the cover.",
+        "(6) Clean the cooker thoroughly after each use. Mild detergent (洗涤剂) and hot water work the best. Do not use stove ash or sand for they may damage the cooker. The gasket (垫圈) is best cleaned in warm soapy water and then dried. Store the gasket in the bottom of the pot."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the first rule, the user should ______.",
+          "options": [
+            "keep the cooker under close watch",
+            "always keep the cooker half full",
+            "never leave the cooker empty",
+            "never turn off the stove"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "According to the instructions, a pressure cooker cover should be opened ______.",
+          "options": [
+            "as soon as the stove is turned off",
+            "while the cooker is still cooking",
+            "with force when the cooker is hot",
+            "after the cooker is cooled down"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "According to the instructions, which of the following is TRUE?",
+          "options": [
+            "The gasket should be cleaned thoroughly with cold water.",
+            "Mild detergent and hot water can best clean the cooker.",
+            "Soapy water will often damage the cooker.",
+            "Sand can be used to clean the cooker."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following operations may be dangerous?",
+          "options": [
+            "Cleaning the cooker with detergent.",
+            "Overfilling the cooker with food and water.",
+            "Cooling the cooker with cold water.",
+            "Setting the cooking time too short."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "The purpose of this piece of writing is to ______.",
+          "options": [
+            "describe",
+            "persuade",
+            "instruct",
+            "narrate"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 171,
+      "difficulty": "基础",
+      "file": "应用文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
       "id": "jingji-01",
       "catId": "jingji",
       "catName": "经济商业类",
@@ -3092,6 +3397,1143 @@
       "translations": [
         "",
         "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-03",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 3,
+      "heading": "",
+      "title": "Finally, the Christmas season is over",
+      "fallbackTitle": "Finally, the Christmas season is over",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Finally, the Christmas season is over. We can take a long breath, put up our feet, sip from a cup of good tea and relax. The frenzy, starting from Black Friday right after Thanksgiving until Christmas Eve, of gift shopping, buying, wrapping, giving, receiving, opening, returning…is exhausting and time-consuming, but it takes place every year.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "There is considerable difference between the cultures in China and western countries when it comes to gift giving. In China, it is not polite to open a gift in front of the gift giver, and the gift is only looked at after the guest has left. Here in America, gift givers always wrap their gifts, large or small, priceless or valueless, carefully and decorate them with colorful ribbons and little pretty paper flowers; and the lucky receiver is expected to open the gift right away in front of the giver, with great eagerness and curiosity, and should always express appreciation with the all time truthful comment, “this is just exactly what I wanted!” Well, as a matter of fact, most people would take their “always wanted” gifts back to the store to exchange for something they really wanted.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Finding a gift for somebody, even a close family member, you will have to know what the person likes and shop for days before you can locate the perfect gift. But, still the person may not like the gift from you. Nowadays, stores would provide two copies of the receipts for anything they sell as a gift, one of which is included in the gift package so that the receiver can come back for an exchange. I know, it was unthinkable to cash out the gift you get, but times are different. Another good way to avoid all that shopping hassle is to purchase a gift card from one of the stores and send it to your niece, nephews, or a family member, so that they can get whatever they want or even keep the money.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Finally, the Christmas season is over. We can take a long breath, put up our feet, sip from a cup of good tea and relax. The frenzy, starting from Black Friday right after Thanksgiving until Christmas Eve, of gift shopping, buying, wrapping, giving, receiving, opening, returning…is exhausting and time-consuming, but it takes place every year.",
+        "There is considerable difference between the cultures in China and western countries when it comes to gift giving. In China, it is not polite to open a gift in front of the gift giver, and the gift is only looked at after the guest has left. Here in America, gift givers always wrap their gifts, large or small, priceless or valueless, carefully and decorate them with colorful ribbons and little pretty paper flowers; and the lucky receiver is expected to open the gift right away in front of the giver, with great eagerness and curiosity, and should always express appreciation with the all time truthful comment, “this is just exactly what I wanted!” Well, as a matter of fact, most people would take their “always wanted” gifts back to the store to exchange for something they really wanted.",
+        "Finding a gift for somebody, even a close family member, you will have to know what the person likes and shop for days before you can locate the perfect gift. But, still the person may not like the gift from you. Nowadays, stores would provide two copies of the receipts for anything they sell as a gift, one of which is included in the gift package so that the receiver can come back for an exchange. I know, it was unthinkable to cash out the gift you get, but times are different. Another good way to avoid all that shopping hassle is to purchase a gift card from one of the stores and send it to your niece, nephews, or a family member, so that they can get whatever they want or even keep the money."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Finding a gift for somebody is a(n) ______.",
+          "options": [
+            "easy job",
+            "tough task",
+            "must-be job",
+            "arranged task"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "It is quite ______ for Chinese people to open the gift in front of the givers.",
+          "options": [
+            "usual",
+            "normal",
+            "general",
+            "unusual"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Gift giving is the same thing in China and America in that ______.",
+          "options": [
+            "people spend a lot of time preparing a gift",
+            "people would cash out the gift immediately",
+            "people are eager to get a gift from a friend",
+            "people are less willing to give gifts"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following is the author’s suggestion?",
+          "options": [
+            "Open the gift immediately in front of the giver.",
+            "Wrap the gift carefully.",
+            "Express the appreciation for the gift you receive.",
+            "Buying a present card to avoid the trouble in shopping."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "The author’s attitude towards gift giving is ______.",
+          "options": [
+            "indifferent",
+            "ironic",
+            "objective",
+            "supportive"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 330,
+      "difficulty": "挑战",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-04",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 4,
+      "heading": "",
+      "title": "Are you interested in country music",
+      "fallbackTitle": "Are you interested in country music",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Are you interested in country music? I like it very much! It will take me away for a while when I am tired. The guitars and songs will take me to the mountains and fields.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Country music usually talks of everyday life and feeling. It’s the spirit of America, easy to understand, slow and simple.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Country music developed in the Southern United States. It was folk music of American countryside. Many songs tell about the lives of farmers. They talk about love, crops or death.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The life of the countryside can be hard, so the words in country music are often sad. At first, people played the music only at family parties. But it became more popular later. In the 1920s, people played country songs on the radio and they made them into the records.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "When people in the countryside moved to towns and cities to look for work, they took their music with them. Country music continued to change and became popular across America.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "John Denver was one of America’s most famous country singers in the 1970s. His song “Take Me Home, Country Roads ” is well-known and people still play it today.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Are you interested in country music? I like it very much! It will take me away for a while when I am tired. The guitars and songs will take me to the mountains and fields.",
+        "Country music usually talks of everyday life and feeling. It’s the spirit of America, easy to understand, slow and simple.",
+        "Country music developed in the Southern United States. It was folk music of American countryside. Many songs tell about the lives of farmers. They talk about love, crops or death.",
+        "The life of the countryside can be hard, so the words in country music are often sad. At first, people played the music only at family parties. But it became more popular later. In the 1920s, people played country songs on the radio and they made them into the records.",
+        "When people in the countryside moved to towns and cities to look for work, they took their music with them. Country music continued to change and became popular across America.",
+        "John Denver was one of America’s most famous country singers in the 1970s. His song “Take Me Home, Country Roads ” is well-known and people still play it today."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Country music is usually about ______.",
+          "options": [
+            "everyday life and feeling",
+            "farmers’ feeling",
+            "lives of workers",
+            "workers’ feeling"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Country music developed ______.",
+          "options": [
+            "in John Denver’s city",
+            "in the Southern United States",
+            "in the Northern United States",
+            "in the Western United States"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "People began to make country song records ______.",
+          "options": [
+            "in the 1920s",
+            "in 1920",
+            "in the 1970s",
+            "in 1970"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Why did country music become popular in America?",
+          "options": [
+            "Because city people like the music.",
+            "Because farmers moved to the cities with their music and it continues to change.",
+            "Because country music talked about city people’s lives.",
+            "Because city people liked the country."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Who is famous for the song “Take Me Home, Country Roads”?",
+          "options": [
+            "A farmer in the countryside.",
+            "A person who moved to the town.",
+            "John Denver.",
+            "A doctor."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 193,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-05",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 5,
+      "heading": "",
+      "title": "In ancient times wealth was measured and exchanged in things that could be touched: food, ",
+      "fallbackTitle": "In ancient times wealth was measured and exchanged in things that could be touched: food, ",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In ancient times wealth was measured and exchanged in things that could be touched: food, tools, and precious metals and stones. Then the barter system was replaced by coins, which still had real value since they were pieces of rare metal. Coins were followed by fiat money, paper notes that have value only because everyone agrees to accept them.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Today electronic monetary systems are gradually being introduced that will transform money into even less tangible forms, reducing it to a series of “bits and bytes”, or units of computerized information, going between machines at the speed of light. Already, electronic fund transfer allows money to be instantly sent and received by different banks, companies, and countries through computers and telecommunications devices.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "In ancient times wealth was measured and exchanged in things that could be touched: food, tools, and precious metals and stones. Then the barter system was replaced by coins, which still had real value since they were pieces of rare metal. Coins were followed by fiat money, paper notes that have value only because everyone agrees to accept them.",
+        "Today electronic monetary systems are gradually being introduced that will transform money into even less tangible forms, reducing it to a series of “bits and bytes”, or units of computerized information, going between machines at the speed of light. Already, electronic fund transfer allows money to be instantly sent and received by different banks, companies, and countries through computers and telecommunications devices."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which of the following would be the most appropriate title for the passage?",
+          "options": [
+            "International Banking Policies.",
+            "The History of Monetary Exchange.",
+            "The Development of Paper Currencies.",
+            "Current Problems in the Economy."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "According to the passage, which of the following was the earliest kind of exchange of wealth?",
+          "options": [
+            "Bartered goods.",
+            "Fiat money.",
+            "Coin currency.",
+            "Intangible forms."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "The author mentions food, tools and precious metals and stones together because they are all ______.",
+          "options": [
+            "useful items",
+            "articles of value",
+            "difficult things to obtain",
+            "material objects"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "According to the passage, coins once had real value as currency because they ______.",
+          "options": [
+            "represented a great improvement over barter",
+            "permitted easy transportation of wealth",
+            "were made of precious metals",
+            "could become collector’s items"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following statements about computerized monetary systems is NOT supported by the passage?",
+          "options": [
+            "They promote international trade.",
+            "They allow very rapid money transfers.",
+            "They are still limited to small transactions (交易).",
+            "They are dependent on good telecommunications systems."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 121,
+      "difficulty": "基础",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-06",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 6,
+      "heading": "",
+      "title": "Some people hate everything that is modern",
+      "fallbackTitle": "Some people hate everything that is modern",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Some people hate everything that is modern. They cannot imagine how anyone can really like modern music; they find it hard to accept the new fashions in clothing; they think that all modern paintings are ugly; and they seldom have a good word for the new buildings that are being built everywhere in the world. Such people look for perfection in everything, and they take their standards of perfection from the past. They are usually impatient with anyone who is brave enough to experiment with new things or to express himself or the age in original ways.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "It is, of course, true that many artists do not succeed in their work and instead produce works that can only be considered as failures. If the work of art is a painting, the artist’s failure concerns himself alone, but if it is a building, his failure concerns others too. Because it may damage the beauty of the whole place. This does sometimes happen, but it is completely untrue to say, as some people do, that modern architecture is nothing.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "We can’t judge every modern building by the standards of the ancient time, even though we admire the ancient buildings. Technologically, the modern buildings are more advanced. The modern architect knows he should learn from the ancient works, but with his greater resources of knowledge and materials, he will never be content to imitate the past. He is too proud to do that.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Some people hate everything that is modern. They cannot imagine how anyone can really like modern music; they find it hard to accept the new fashions in clothing; they think that all modern paintings are ugly; and they seldom have a good word for the new buildings that are being built everywhere in the world. Such people look for perfection in everything, and they take their standards of perfection from the past. They are usually impatient with anyone who is brave enough to experiment with new things or to express himself or the age in original ways.",
+        "It is, of course, true that many artists do not succeed in their work and instead produce works that can only be considered as failures. If the work of art is a painting, the artist’s failure concerns himself alone, but if it is a building, his failure concerns others too. Because it may damage the beauty of the whole place. This does sometimes happen, but it is completely untrue to say, as some people do, that modern architecture is nothing.",
+        "We can’t judge every modern building by the standards of the ancient time, even though we admire the ancient buildings. Technologically, the modern buildings are more advanced. The modern architect knows he should learn from the ancient works, but with his greater resources of knowledge and materials, he will never be content to imitate the past. He is too proud to do that."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Some people hate everything that is modern because ______.",
+          "options": [
+            "they are aged",
+            "they find it hard to accept modern things",
+            "they take their standards of perfection from the Greek",
+            "they look at things by the standards of the past"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "The writer of the passage thinks that ______.",
+          "options": [
+            "it is true to say artists fail in their work",
+            "it is untrue to say artists fail in their work",
+            "it is true to say some artists fail in their work",
+            "it is true to say only painters fail in their work"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "The writer thinks the failure of a building ______.",
+          "options": [
+            "means nothing",
+            "concerns others",
+            "concerns only the artist",
+            "concerns all the people in the world"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "The writer thinks that ______.",
+          "options": [
+            "we can’t judge buildings by the ancient standards",
+            "we can’t judge all the buildings by the ancient standards",
+            "we can’t judge all the modern buildings by the ancient standards",
+            "we can’t judge modern buildings"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Technologically, the modern buildings are more advanced. The sentence means ______.",
+          "options": [
+            "the ancient architects had no technology",
+            "the modern architects use more advanced technology",
+            "the modern buildings are advanced because they are completely different from the ancient buildings",
+            "the modern buildings are more beautiful"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 240,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-07",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 7,
+      "heading": "",
+      "title": "Anthropology (人类学) is the study of how people live",
+      "fallbackTitle": "Anthropology (人类学) is the study of how people live",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Anthropology (人类学) is the study of how people live. It includes their family life, religion, laws and language. The term “anthropology” comes from two Greek words: “anthropos” means “human being” and “logy” means “the science of”. Anthropology can be divided into two areas. These two main divisions are cultural anthropology and physical anthropology.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Anthropologists define human progress in three main steps. Step one begins with the first human being and continues until the last of people who hunted animals just to survive. Step two includes people who grew food. In this step, there was progress in invention and religion. Step three deals with first civilizations, such as those in Egypt and parts of Asia.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Anthropologists always seek new information about people. For instance, recent evidence found in Ethiopia and Kenya shows humans existed earlier in history than it was previously believed.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Anthropology (人类学) is the study of how people live. It includes their family life, religion, laws and language. The term “anthropology” comes from two Greek words: “anthropos” means “human being” and “logy” means “the science of”. Anthropology can be divided into two areas. These two main divisions are cultural anthropology and physical anthropology.",
+        "Anthropologists define human progress in three main steps. Step one begins with the first human being and continues until the last of people who hunted animals just to survive. Step two includes people who grew food. In this step, there was progress in invention and religion. Step three deals with first civilizations, such as those in Egypt and parts of Asia.",
+        "Anthropologists always seek new information about people. For instance, recent evidence found in Ethiopia and Kenya shows humans existed earlier in history than it was previously believed."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the passage, anthropology is study of ______.",
+          "options": [
+            "family life, religion and art",
+            "the differences between science and arts",
+            "human beings",
+            "different cultures"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Which of the following belongs to the second step of human progress?",
+          "options": [
+            "Progress was made in religion and invention.",
+            "Humans hunted animals just to survive.",
+            "The first civilization came into being.",
+            "People started to learn science and arts."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following statements is TURE?",
+          "options": [
+            "Furniture and movies belong to physical anthropology.",
+            "Anthropologists are still trying to get new findings about people.",
+            "The study of human beings began in Egypt and part of Asia.",
+            "The first civilization appeared only in Egypt and part of Asia."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "According to the passage, what have anthropologists recently found?",
+          "options": [
+            "There are cultural anthropology and physical anthropology.",
+            "There are three step in the progress of human beings.",
+            "There were more civilizations in Egypt than in parts of Asia.",
+            "There is a longer history of human beings than it was thought before."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which could be the best title for the passage?",
+          "options": [
+            "Anthropology.",
+            "The Progress of Human Beings.",
+            "The Civilizations.",
+            "The Study of Anthropologists."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 140,
+      "difficulty": "基础",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-08",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 8,
+      "heading": "",
+      "title": "Ancient people had little idea of the nature of the earth’s surface",
+      "fallbackTitle": "Ancient people had little idea of the nature of the earth’s surface",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Ancient people had little idea of the nature of the earth’s surface. But if they lived on the seashore, they knew that there was land and sea.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "People who lived near the sea noticed that there were two kinds of land. There were, first, little pieces of land surrounded by sea. One Latin word for “sea” is “salum”, which means “salt”. This is because sea water, unlike rain-water, contains salt – it is salty. So a piece of land in the sea was “in salt” in Latin, and this became isle in English.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Then there was another kind of land that went on and on. It was “continuous land”, and so became known as continent in English from the Latin “continens” meaning continuous. In English, we also speak of a continent as the mainland ( “main” comes from the Latin “magnus” meaning “great”), as opposed to island (isle-land).",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "To the ancient Greek, there seemed to be three continents separated by sea. The Mediterranean Sea, in fact, gets its name from the Latin “medius” (middle) and “terra” (land). It was a sea that lay in the middle, with three bodies of land around it. The three continents — Asia, Europe and Africa — are actually connected by land. Africa and Asia are connected by only the small Sinai Isthmus, from the Greek “isthmus” meaning “a narrow passage”, but Europe and Asia are connected by land for a thousand miles or more and it is customary to speak of Europe as a continent. Many geographers speak of the landmass of Asia plus Europe as Eurasia, and Eurasia plus Africa is sometimes called the World Island. The three together are surrounded by sea, so they form a large island, and they contain about 85 percent of the earth’s population.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Ancient people had little idea of the nature of the earth’s surface. But if they lived on the seashore, they knew that there was land and sea.",
+        "People who lived near the sea noticed that there were two kinds of land. There were, first, little pieces of land surrounded by sea. One Latin word for “sea” is “salum”, which means “salt”. This is because sea water, unlike rain-water, contains salt – it is salty. So a piece of land in the sea was “in salt” in Latin, and this became isle in English.",
+        "Then there was another kind of land that went on and on. It was “continuous land”, and so became known as continent in English from the Latin “continens” meaning continuous. In English, we also speak of a continent as the mainland ( “main” comes from the Latin “magnus” meaning “great”), as opposed to island (isle-land).",
+        "To the ancient Greek, there seemed to be three continents separated by sea. The Mediterranean Sea, in fact, gets its name from the Latin “medius” (middle) and “terra” (land). It was a sea that lay in the middle, with three bodies of land around it. The three continents — Asia, Europe and Africa — are actually connected by land. Africa and Asia are connected by only the small Sinai Isthmus, from the Greek “isthmus” meaning “a narrow passage”, but Europe and Asia are connected by land for a thousand miles or more and it is customary to speak of Europe as a continent. Many geographers speak of the landmass of Asia plus Europe as Eurasia, and Eurasia plus Africa is sometimes called the World Island. The three together are surrounded by sea, so they form a large island, and they contain about 85 percent of the earth’s population."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "People in ancient times knew ______.",
+          "options": [
+            "a lot about land and sea",
+            "some continents were connected",
+            "little about the surface of the earth",
+            "many people lived on the World Island"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "The word “continent” comes from ______ language.",
+          "options": [
+            "the Latin",
+            "the Roman",
+            "the Greek",
+            "the Hebrew"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "“Eurasia” is the name for the continents of ______.",
+          "options": [
+            "Europe and Asia",
+            "Europe and Africa",
+            "Africa and Asia",
+            "Europe, Asia and Africa"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What connects Asia and Africa?",
+          "options": [
+            "A small island.",
+            "A large desert.",
+            "A narrow passage.",
+            "A wide land."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "About 85% of the population in the world are living ______.",
+          "options": [
+            "in Europe",
+            "in Asia",
+            "in Eurasia",
+            "on the World Island"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 291,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-09",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 9,
+      "heading": "",
+      "title": "Benjamin Franklin was born in 1706 in Boston, Massachusetts",
+      "fallbackTitle": "Benjamin Franklin was born in 1706 in Boston, Massachusetts",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Benjamin Franklin was born in 1706 in Boston, Massachusetts. His mother and father were Puritans (清教徒). They left England and moved to the English colony of Massachusetts in order to escape persecution (迫害) for their religion. In Boston, Franklin left school when he was ten years old and worked for his father for two years. Then he went to work on his brother’s newspaper. He became the editor of this paper when he was sixteen. Because he wanted to be independent, he went to Philadelphia. There he began his own newspaper. He worked hard and saved his money. And by the age of 24, he was one of the most successful men in Philadelphia.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In 1732, Franklin published a book Poor Richard’s Almanac (穷理查年鉴). Most almanacs contained information for farmers, such as information about the days and weeks of the year and about the weather. To his almanacs, Franklin added wise sayings and his observations about life. Some of these sayings are still famous today. For example, “Early to bed and early to rise makes a man healthy, wealthy and wise.” “Waste not, want not.” and “A penny saved is a penny earned.”",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Benjamin Franklin was born in 1706 in Boston, Massachusetts. His mother and father were Puritans (清教徒). They left England and moved to the English colony of Massachusetts in order to escape persecution (迫害) for their religion. In Boston, Franklin left school when he was ten years old and worked for his father for two years. Then he went to work on his brother’s newspaper. He became the editor of this paper when he was sixteen. Because he wanted to be independent, he went to Philadelphia. There he began his own newspaper. He worked hard and saved his money. And by the age of 24, he was one of the most successful men in Philadelphia.",
+        "In 1732, Franklin published a book Poor Richard’s Almanac (穷理查年鉴). Most almanacs contained information for farmers, such as information about the days and weeks of the year and about the weather. To his almanacs, Franklin added wise sayings and his observations about life. Some of these sayings are still famous today. For example, “Early to bed and early to rise makes a man healthy, wealthy and wise.” “Waste not, want not.” and “A penny saved is a penny earned.”"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Benjamin Franklin was of ______.",
+          "options": [
+            "English origin",
+            "Spanish origin",
+            "French origin",
+            "German origin"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Benjamin Franklin’s parents moved to Massachusetts because they wanted ______.",
+          "options": [
+            "to became wealthy",
+            "to live with their relatives",
+            "to have their own newspaper",
+            "to escape religious persecution"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Whom did Benjamin Franklin work for at the age of 11?",
+          "options": [
+            "His father.",
+            "His mother.",
+            "His brother.",
+            "Himself."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Why did Benjamin Franklin move to Philadelphia?",
+          "options": [
+            "Because his brother disliked him.",
+            "Because his brother wanted him to go there.",
+            "Because he liked the weather there.",
+            "Because he wanted to make a living himself."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Franklin’s almanacs contained the following EXCEPT ______.",
+          "options": [
+            "information for farmers",
+            "wise sayings",
+            "Poor Richard’s experiences",
+            "his observations about life"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 187,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-10",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 10,
+      "heading": "",
+      "title": "For millions of people around the world, the very word “Christmas” brings warmth and joy t",
+      "fallbackTitle": "For millions of people around the world, the very word “Christmas” brings warmth and joy t",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For millions of people around the world, the very word “Christmas” brings warmth and joy to their hearts and homes. To some, it is simply a very popular holiday. But for many, it honors the birth of Jesus Christ. Here is a brief history of Christmas, and some of the traditions connected with it.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Why December 25th?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Well, during the first two centuries after Jesus’ death, Christmas was not celebrated at all. Various attempts were made to determine the date of birth of Jesus, and at first, May 20th became the favored date. By the middle of the fourth century, however, Pope Julius selected December 25th as the day on which to celebrate Christ’s birth. Before that, December 25th had been a widely celebrated day in the Roman world. On that date, people honored a Roman sun god. Many modern Christmas customs, such as having a tree in the house and preparing special meals, came from this ancient celebration.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Let’s decorate the tree!",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The Christmas tree tradition was started in Germany in the late fifteenth century. At that time, there was a popular theater play which included a fir tree hung with apples. Today, more than 80 percent of American families buy and decorate a tree at Christmas.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "How many Christmas cards do you usually send?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The first commercial Christmas cards were made in London in 1843. A rich man paid an artist to design a card. He then proudly sent it to his friends and relatives to wish them a “Merry Christmas”. It was a good idea and it soon caught on. Today, Americans exchange millions of Christmas cards every year.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Santa Claus is coming to town!",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "St. Nicholas was the original Santa Claus or “Father Christmas”. He was widely known as a kind man who loved children. After his death, a story developed that he used to visit children on Christmas Eve and give them presents. When the Dutch people came to live in America many years ago, they brought their St. Nicholas, or Sinterklaas in Dutch, with them. Sinterklaas is therefore where we get the name Santa Claus.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "What’s in that stocking?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "According to the story, the practice of hanging up stockings is connected with St. Nicholas. It is believed that St. Nicholas learned about a man who was hopelessly in debt. He also learned that the man and his daughters were about to be sold as slaves. Nicholas went to the man’s home at night and threw a bag of gold through the man’s window. The bag of gold landed in one of the daughters’ stockings that had been hung up to dry.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Today, all the above traditions are still kept as ways of celebrating Christmas.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "For millions of people around the world, the very word “Christmas” brings warmth and joy to their hearts and homes. To some, it is simply a very popular holiday. But for many, it honors the birth of Jesus Christ. Here is a brief history of Christmas, and some of the traditions connected with it.",
+        "Why December 25th?",
+        "Well, during the first two centuries after Jesus’ death, Christmas was not celebrated at all. Various attempts were made to determine the date of birth of Jesus, and at first, May 20th became the favored date. By the middle of the fourth century, however, Pope Julius selected December 25th as the day on which to celebrate Christ’s birth. Before that, December 25th had been a widely celebrated day in the Roman world. On that date, people honored a Roman sun god. Many modern Christmas customs, such as having a tree in the house and preparing special meals, came from this ancient celebration.",
+        "Let’s decorate the tree!",
+        "The Christmas tree tradition was started in Germany in the late fifteenth century. At that time, there was a popular theater play which included a fir tree hung with apples. Today, more than 80 percent of American families buy and decorate a tree at Christmas.",
+        "How many Christmas cards do you usually send?",
+        "The first commercial Christmas cards were made in London in 1843. A rich man paid an artist to design a card. He then proudly sent it to his friends and relatives to wish them a “Merry Christmas”. It was a good idea and it soon caught on. Today, Americans exchange millions of Christmas cards every year.",
+        "Santa Claus is coming to town!",
+        "St. Nicholas was the original Santa Claus or “Father Christmas”. He was widely known as a kind man who loved children. After his death, a story developed that he used to visit children on Christmas Eve and give them presents. When the Dutch people came to live in America many years ago, they brought their St. Nicholas, or Sinterklaas in Dutch, with them. Sinterklaas is therefore where we get the name Santa Claus.",
+        "What’s in that stocking?",
+        "According to the story, the practice of hanging up stockings is connected with St. Nicholas. It is believed that St. Nicholas learned about a man who was hopelessly in debt. He also learned that the man and his daughters were about to be sold as slaves. Nicholas went to the man’s home at night and threw a bag of gold through the man’s window. The bag of gold landed in one of the daughters’ stockings that had been hung up to dry.",
+        "Today, all the above traditions are still kept as ways of celebrating Christmas."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Lots of people celebrate Christmas to ______.",
+          "options": [
+            "show respect for Jesus Christ",
+            "get warmth and joy",
+            "spend money while shopping",
+            "have parties"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "According to Paragraph 3, which of the following is NOT true?",
+          "options": [
+            "People tried many times to decide the date of birth of Jesus.",
+            "It was Pope Julius who decided the day on which to celebrate Christ’s birth.",
+            "December 25th used to be a day on which to show respect to a Roman sun god.",
+            "Christmas was celebrated widely soon after Jesus’ death."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "What does “it soon caught on” in paragraph 7 mean?",
+          "options": [
+            "It was not allowed by the people in London.",
+            "It was popular among the people.",
+            "It was not welcomed by the man’s relatives and friends.",
+            "It was very expensive."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "From the text, we can learn that the story of Father Christmas may come from ______.",
+          "options": [
+            "the Germans",
+            "the Romans",
+            "the Dutch",
+            "the Americans"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Why does Father Christmas put the presents in the stockings?",
+          "options": [
+            "Because he doesn’t know where to put the presents.",
+            "Because the stockings are good places for the presents.",
+            "Because he wants children to spend time finding them.",
+            "Because the gold thrown by St. Nicholas happened to fall in the stockings."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 448,
+      "difficulty": "挑战",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-11",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 11,
+      "heading": "",
+      "title": "On November 19, 1863, Abraham Lincoln went to Gettysburg in Pennsylvania to speak at the N",
+      "fallbackTitle": "On November 19, 1863, Abraham Lincoln went to Gettysburg in Pennsylvania to speak at the N",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "On November 19, 1863, Abraham Lincoln went to Gettysburg in Pennsylvania to speak at the National Soldiers Cemetery. The Civil War was still going on. There was much criticism of President Lincoln at the time. He was not at all popular. He had been invited to speak at Gettysburg only out of courtesy. The principal speaker was to be Edward Everett, a famous statesman and speaker of the day. Everett was a handsome man and very popular everywhere.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "It is said that Lincoln prepared his speech on the train while going to Gettysburg. Late that night, alone in his hotel room and tired out, he again worked briefly on the speech. The next day Everett spoke first. He spoke for an hour and 57 minutes. His speech was a perfect example of the rich oratory of the day. Then Lincoln rose. The crowd of 15,000 people at first paid little attention to him. He spoke for only nine minutes. At the end there was little applause. Lincoln turned to a friend and remarked, “I have failed again.” On the train back to Washington he commented sadly, “That speech was a flat failure, and the people are disappointed.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Some newspapers at first criticized the speech. But little by little, as people read the speech, they began to understand better. They began to appreciate its simplicity and its deep meaning. It was a speech which only Abraham Lincoln could have made. Today, every American school child learns Lincoln’s Gettysburg Address by heart. Now everyone thinks of it as one of the greatest orations ever given in American history.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "On November 19, 1863, Abraham Lincoln went to Gettysburg in Pennsylvania to speak at the National Soldiers Cemetery. The Civil War was still going on. There was much criticism of President Lincoln at the time. He was not at all popular. He had been invited to speak at Gettysburg only out of courtesy. The principal speaker was to be Edward Everett, a famous statesman and speaker of the day. Everett was a handsome man and very popular everywhere.",
+        "It is said that Lincoln prepared his speech on the train while going to Gettysburg. Late that night, alone in his hotel room and tired out, he again worked briefly on the speech. The next day Everett spoke first. He spoke for an hour and 57 minutes. His speech was a perfect example of the rich oratory of the day. Then Lincoln rose. The crowd of 15,000 people at first paid little attention to him. He spoke for only nine minutes. At the end there was little applause. Lincoln turned to a friend and remarked, “I have failed again.” On the train back to Washington he commented sadly, “That speech was a flat failure, and the people are disappointed.”",
+        "Some newspapers at first criticized the speech. But little by little, as people read the speech, they began to understand better. They began to appreciate its simplicity and its deep meaning. It was a speech which only Abraham Lincoln could have made. Today, every American school child learns Lincoln’s Gettysburg Address by heart. Now everyone thinks of it as one of the greatest orations ever given in American history."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "In 1863, Abraham Lincoln was ______.",
+          "options": [
+            "very critical",
+            "unpopular",
+            "very popular",
+            "very courteous"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Lincoln was invited to speak at the National Soldiers Cemetery because he was ______.",
+          "options": [
+            "a famous orator",
+            "very handsome",
+            "President of the United States at the time",
+            "a popular statesman"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "It can be inferred from the text that ______.",
+          "options": [
+            "Lincoln prepared his speech very carefully before he went to Gettysburg",
+            "Lincoln was very busy at the time and didn’t have much time to prepare his speech",
+            "Lincoln’s speech was full of rich oratory",
+            "Lincoln’s speech was very long"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Lincoln’s speech was ______.",
+          "options": [
+            "an immediate success",
+            "warmly applauded",
+            "a total failure",
+            "not well-received at first"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following statements is NOT true?",
+          "options": [
+            "Lincoln’s Gettysburg Address has deep meaning.",
+            "Lincoln’s Gettysburg Address is simple in style.",
+            "Lincoln’s Gettysburg Address is memorized by every American school child.",
+            "Lincoln’s Gettysburg Address is the greatest speech ever delivered in the United States."
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 262,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "lishi-12",
+      "catId": "lishi",
+      "catName": "历史人文类",
+      "number": 12,
+      "heading": "",
+      "title": "In 1939 two brothers, Mac and Dick McDonald, started a drive-in restaurant in San Bernadin",
+      "fallbackTitle": "In 1939 two brothers, Mac and Dick McDonald, started a drive-in restaurant in San Bernadin",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "In 1939 two brothers, Mac and Dick McDonald, started a drive-in restaurant in San Bernadino, California. They carefully chose a busy corner for their location. They had run their own businesses for years, first a theater, then a barbecue (烤肉) restaurant, then another drive-in. But in their new operation, they offered a new, shortened menu: French fries, hamburgers, and sodas. To this small selection they added one new concept: quick service, no waiters or waitresses, and no tips. Their hamburgers sold for fifteen cents. Cheese was another four cents. Their French fries and hamburgers had a remarkable uniformity, for the brothers had developed a strict routine for the preparation of their food, and they insisted on their cooks’ sticking to their routine. Their new drive-in became incredibly popular, particularly for lunch. People drove up by the hundreds during the busy noon time. The self-service restaurant was so popular that the brothers had allowed ten copies of their restaurant to be opened. They were content with this modest success until they met Ray Kroc.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Kroc was a salesman who met the McDonald brothers in 1954, when he was selling milk shake-mixing machines. He quickly saw the unique appeal of the brothers’ fast-food restaurants and bought the right to franchise（特许经营）other copies of their restaurants. The agreement struck included the right to duplicate the menu, the equipment, even their red and white buildings with the golden arches（拱门）.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Today McDonald’s is really a household name. Its names for its sandwiches have come to mean hamburger in the decades since the day Ray Kroc watched people rush up to order fifteen-cent hamburgers. In 1976, McDonald’s had over $1 billion in total sales. Its first twenty-two years is one of the most incredible success stories in modern American business history.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "In 1939 two brothers, Mac and Dick McDonald, started a drive-in restaurant in San Bernadino, California. They carefully chose a busy corner for their location. They had run their own businesses for years, first a theater, then a barbecue (烤肉) restaurant, then another drive-in. But in their new operation, they offered a new, shortened menu: French fries, hamburgers, and sodas. To this small selection they added one new concept: quick service, no waiters or waitresses, and no tips. Their hamburgers sold for fifteen cents. Cheese was another four cents. Their French fries and hamburgers had a remarkable uniformity, for the brothers had developed a strict routine for the preparation of their food, and they insisted on their cooks’ sticking to their routine. Their new drive-in became incredibly popular, particularly for lunch. People drove up by the hundreds during the busy noon time. The self-service restaurant was so popular that the brothers had allowed ten copies of their restaurant to be opened. They were content with this modest success until they met Ray Kroc.",
+        "Kroc was a salesman who met the McDonald brothers in 1954, when he was selling milk shake-mixing machines. He quickly saw the unique appeal of the brothers’ fast-food restaurants and bought the right to franchise（特许经营）other copies of their restaurants. The agreement struck included the right to duplicate the menu, the equipment, even their red and white buildings with the golden arches（拱门）.",
+        "Today McDonald’s is really a household name. Its names for its sandwiches have come to mean hamburger in the decades since the day Ray Kroc watched people rush up to order fifteen-cent hamburgers. In 1976, McDonald’s had over $1 billion in total sales. Its first twenty-two years is one of the most incredible success stories in modern American business history."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "This passage mainly talks about ______.",
+          "options": [
+            "the development of fast food services",
+            "how McDonald’s became a billion-dollar business",
+            "the business careers of Mac and Dick McDonald",
+            "Ray Kroc’s business talent"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Mac and Dick managed all of the following businesses except ______.",
+          "options": [
+            "a drive-in",
+            "a cinema",
+            "a theater",
+            "a barbecue restaurant"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "We may infer from this passage that ______.",
+          "options": [
+            "Mac and Dick McDonald never became wealthy for they sold their idea to Kroc",
+            "the location the McDonalds chose was the only source of the great popularity of their drive-in",
+            "forty years ago there were numerous fast-food restaurants",
+            "Ray Kroc was a good businessman"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "The passage suggests that ______.",
+          "options": [
+            "creativity is an important element of business success",
+            "Ray Kroc was the close partner of the McDonald brothers",
+            "Mac and Dick McDonald became broken after they sold their ideas to Ray Kroc",
+            "California is the best place to go into business"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "As used in the second sentence of the second paragraph, the word “unique” means ______.",
+          "options": [
+            "unexpected",
+            "attractive",
+            "financial",
+            "peculiar"
+          ],
+          "answer": "",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 290,
+      "difficulty": "进阶",
+      "file": "历史人文类专项训练.md",
+      "translations": [
         "",
         "",
         ""
@@ -6110,9 +7552,9 @@
     }
   ],
   "stats": {
-    "articles": 51,
-    "questions": 244,
-    "words": 13539,
+    "articles": 63,
+    "questions": 304,
+    "words": 16470,
     "withAnswers": 244,
     "withTranslations": 24
   }
