@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-11-10T07:28:52.505Z",
+  "generatedAt": "2026-11-10T12:32:55.736Z",
   "categories": [
     {
       "id": "kepu",
       "name": "科普类",
       "order": 1,
       "file": "科普类专项训练.md",
-      "count": 10
+      "count": 17
     },
     {
       "id": "jingli",
       "name": "经历记叙类",
       "order": 2,
       "file": "经历记叙类专项训练.md",
-      "count": 11
+      "count": 12
     },
     {
       "id": "yingyong",
@@ -41,7 +41,7 @@
       "name": "社会生活类",
       "order": 6,
       "file": "社会生活类专项训.md",
-      "count": 12
+      "count": 21
     },
     {
       "id": "chongci",
@@ -1132,6 +1132,853 @@
         "任何试图维持餐桌秩序的家庭主妇都知道，一顿家庭晚餐远不止食物那么简单。社会学家迈克尔·刘易斯研究了 50 个家庭，想弄清楚它究竟还包含什么。",
         "刘易斯和同事在家庭成员于家中吃普通晚餐时进行录像。他们发现，孩子少的家庭中，父母会积极与彼此和孩子交谈。但随着孩子数量增加，交谈会让位于父母控制孩子大声喧闹的努力。这会对孩子产生重要影响。刘易斯说：“一般来说，父母提问越多，孩子的智商分数越高；而孩子越多，提问就越少。”",
         "这项研究也解释了为什么中间的孩子似乎比兄弟姐妹在生活中更艰难。刘易斯发现，在三四个孩子的家庭里，晚餐谈话往往围绕最年长的孩子（最有话可说）和最年幼的孩子（最需要关注）展开。刘易斯说：“中间的孩子是隐形的。如果你看到有人在吃饭时起身在桌边走动，那多半是中间的孩子。”不过，有一件事能终止所有谈话、让任何人都得不到关注：“电视一开，”刘易斯说，“晚餐就形同虚设。”"
+      ]
+    },
+    {
+      "id": "kepu-11",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 11,
+      "heading": "",
+      "title": "One day five men who were camping in the Perryson Mountains saw a group of huge apelike (类",
+      "fallbackTitle": "One day five men who were camping in the Perryson Mountains saw a group of huge apelike (类",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "One day five men who were camping in the Perryson Mountains saw a group of huge apelike (类人猿) creatures coming out of the woods. They ran hurriedly to a small house and locked themselves inside. While they were in, the creatures attacked them by throwing rocks against the walls of the house. After several hours, these strange hairy giants went back into the woods, leaving big footprints behind.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "As soon as the men returned to the town, they told the people of their adventure. However, it was only accepted by a few people who heard about footprints of human-like animals.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The five men, however, were not the first people to have seen Bigfoot. Long before their experience, it was said that a race of apelike animals had been living in the neighboring mountain for centuries. The local people called them Sasquatch.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In 1978, the workmen who were building a road through the jungles (丛林) often found huge footprints in the earth around their camp.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Then in 1987, Ron Patten, a film maker who was interested in finding Bigfoot, went into the jungles with a friend. While riding, they were suddenly thrown off from their horses. Patten saw a tall apelike animal standing not far away. He managed to shoot seven rolls of film of the hairy creature before it disappeared in the woods. When Patten’s film was shown to the public, not many people believed his story.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In another incident, Roy Bruce, a math teacher and also an experienced hunter, spotted a similar creature. He saw the animal clearly through the telescopic lens (望远瞄准器) of his gun. He said the creature looked more like a human than an animal.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Later many other people also found deep footprints in the same area. In spite of regular reports of sightings and footprints, most experts still do not believe that Bigfoot really exists.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "One day five men who were camping in the Perryson Mountains saw a group of huge apelike (类人猿) creatures coming out of the woods. They ran hurriedly to a small house and locked themselves inside. While they were in, the creatures attacked them by throwing rocks against the walls of the house. After several hours, these strange hairy giants went back into the woods, leaving big footprints behind.",
+        "As soon as the men returned to the town, they told the people of their adventure. However, it was only accepted by a few people who heard about footprints of human-like animals.",
+        "The five men, however, were not the first people to have seen Bigfoot. Long before their experience, it was said that a race of apelike animals had been living in the neighboring mountain for centuries. The local people called them Sasquatch.",
+        "In 1978, the workmen who were building a road through the jungles (丛林) often found huge footprints in the earth around their camp.",
+        "Then in 1987, Ron Patten, a film maker who was interested in finding Bigfoot, went into the jungles with a friend. While riding, they were suddenly thrown off from their horses. Patten saw a tall apelike animal standing not far away. He managed to shoot seven rolls of film of the hairy creature before it disappeared in the woods. When Patten’s film was shown to the public, not many people believed his story.",
+        "In another incident, Roy Bruce, a math teacher and also an experienced hunter, spotted a similar creature. He saw the animal clearly through the telescopic lens (望远瞄准器) of his gun. He said the creature looked more like a human than an animal.",
+        "Later many other people also found deep footprints in the same area. In spite of regular reports of sightings and footprints, most experts still do not believe that Bigfoot really exists."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What did the five men do when they saw a group of apelike creatures?",
+          "options": [
+            "They attacked the creatures by throwing rocks at them.",
+            "They ran into the woods and hid there for several hours.",
+            "They quickly ran to a house and hid themselves.",
+            "They threw rocks against the wall of the house to drive them away."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "When the men told others about what they saw, ______.",
+          "options": [
+            "no one believed what they said",
+            "few people thought it was a true story",
+            "some people who heard similar stories believed it",
+            "some people thought they made up their own story"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "The underlined phrase “Bigfoot” in Paragraph 3 probably refers to ______.",
+          "options": [
+            "a group of animals with fat feet",
+            "a large hairy human-like creature",
+            "a group of animals riding in mountains",
+            "a huge creature eating like humans"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Who called these apelike creatures Sasquatch?",
+          "options": [
+            "The math teacher.",
+            "The five men.",
+            "The film maker.",
+            "The local people."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What might be the best title of the passage?",
+          "options": [
+            "Stories of Bigfoot",
+            "History of Bigfoot",
+            "An Adventure of Five Men",
+            "The Adventure of Apelike Animals"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 305,
+      "difficulty": "挑战",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-12",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 12,
+      "heading": "",
+      "title": "For years and years people have been saying that the railways are dead",
+      "fallbackTitle": "For years and years people have been saying that the railways are dead",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "For years and years people have been saying that the railways are dead. “We can do without railways, people say, as if motorcars and planes made the railways unnecessary. We all keep hearing that trains are slow, that they lose money, and that they’re dying. But this is far from the truth. In these days when oil is expensive, the railways have become highly competitive with motorcars and planes. If you want to carry people or goods from place to place, they’re cheaper than planes.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Railways have much in common with planes. A plane goes in a straight line and so does a railway. What is more, it takes you from the heart of a city into the heart of another. But a railway doesn’t leave you as a plane does, miles and miles away from the city center. It doesn’t hold you up as a motorcar does, in endless traffic jams. And a single train can carry goods which no plane or motorcar could ever do.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Far from being dead, the railways are very much alive. Modern railway lines give you a smooth, untroubled journey. Where else can you eat well, sleep in comfort, feel safe and enjoy the scene while you are traveling at speed at the same time? And we are only at the beginning. We have entered the age of superfast trains, traveling at 150 miles an hour and more. Soon we will be wondering why spend so much on motorways we can’t use because we don’t have enough money to buy oil and planes we can’t fly for the same reason.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "For years and years people have been saying that the railways are dead. “We can do without railways, people say, as if motorcars and planes made the railways unnecessary. We all keep hearing that trains are slow, that they lose money, and that they’re dying. But this is far from the truth. In these days when oil is expensive, the railways have become highly competitive with motorcars and planes. If you want to carry people or goods from place to place, they’re cheaper than planes.",
+        "Railways have much in common with planes. A plane goes in a straight line and so does a railway. What is more, it takes you from the heart of a city into the heart of another. But a railway doesn’t leave you as a plane does, miles and miles away from the city center. It doesn’t hold you up as a motorcar does, in endless traffic jams. And a single train can carry goods which no plane or motorcar could ever do.",
+        "Far from being dead, the railways are very much alive. Modern railway lines give you a smooth, untroubled journey. Where else can you eat well, sleep in comfort, feel safe and enjoy the scene while you are traveling at speed at the same time? And we are only at the beginning. We have entered the age of superfast trains, traveling at 150 miles an hour and more. Soon we will be wondering why spend so much on motorways we can’t use because we don’t have enough money to buy oil and planes we can’t fly for the same reason."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Some people think the railways are dead for many reasons except that ______.",
+          "options": [
+            "trains are dying",
+            "oil is expensive today",
+            "trains are slow",
+            "railways lose money"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "The author’s idea about railways seems to be that ______.",
+          "options": [
+            "we can do without railways",
+            "trains have much in common with motorcars and planes",
+            "motorcars and planes are not as good as trains",
+            "trains are as good as motorcars and planes"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "According to the author, which of the following is NOT true?",
+          "options": [
+            "It is cheaper to travel by train than by plane.",
+            "The railway station is usually in the center of a city.",
+            "When you get off the plane you will find yourself right in the city center.",
+            "No motorcar or plane can carry as many goods as a train does in a cheap way."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "According to the author, the disadvantage of motorcars and planes is that ______.",
+          "options": [
+            "they cannot travel fast enough",
+            "too much money will be spent on oil",
+            "they cannot give a smooth, untroubled journey",
+            "the travelers cannot enjoy the scene in their journey"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What’s the main idea of the passage?",
+          "options": [
+            "The railways are dead now.",
+            "Motorcars and planes have made the railways unnecessary.",
+            "We’ve entered the age of superfast trains.",
+            "The advantages of the railways enable them to be alive even nowadays."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 265,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-13",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 13,
+      "heading": "",
+      "title": "The $11 billion self-help industry is built on the idea that you should turn negative thou",
+      "fallbackTitle": "The $11 billion self-help industry is built on the idea that you should turn negative thou",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The $11 billion self-help industry is built on the idea that you should turn negative thoughts like “I never do anything right” into positive ones like “I can succeed.” But was positive thinking advocate Norman Vincent Peale right? Is there power in positive thinking?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Researchers in Canada just published a study in the journal Psychological Science that says trying to get people to think more positively can actually have the opposite effect: it can simply highlight how unhappy they are.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The study’s authors, Joanne Wood and John Lee of the University of Waterloo and Elaine Perunovic of the University of New Brunswick, begin by citing (引证) older research showing that when people get feedback which they believe is overly positive, they actually feel worse, not better. If you tell your friend who is slow to learn that he has the potential of an Einstein, you’re just underlining his faults. In one 1990s experiment, a team including psychologist Joel Cooper of Princeton asked participants to write essays opposing funding for the disabled. When the essayists were later praised for their sympathy, they felt even worse about what they had written.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "In this experiment, Wood, Lee and Perunovic measured 68 students’ self-esteem. The participants were then asked to write down their thoughts and feelings for four minutes. Every 15 seconds, one group of students heard a bell. When it rang, they were supposed to tell themselves, “I am lovable.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Those with low self-esteem didn’t feel better after the forced self-affirmation (自我肯定). In fact, their moods turned significantly darker than those of members of the control group, who weren’t urged to think of positive thoughts.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The paper provides support for newer forms of psychotherapy (心理治疗) that urge people to accept their negative thoughts and feelings rather than fight them. In the fighting, we not only often fail but can make things worse. Meditation (静思) techniques, in contrast, can teach people to put their shortcomings into a larger, more realistic viewpoint. Call it the power of negative thinking.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "The $11 billion self-help industry is built on the idea that you should turn negative thoughts like “I never do anything right” into positive ones like “I can succeed.” But was positive thinking advocate Norman Vincent Peale right? Is there power in positive thinking?",
+        "Researchers in Canada just published a study in the journal Psychological Science that says trying to get people to think more positively can actually have the opposite effect: it can simply highlight how unhappy they are.",
+        "The study’s authors, Joanne Wood and John Lee of the University of Waterloo and Elaine Perunovic of the University of New Brunswick, begin by citing (引证) older research showing that when people get feedback which they believe is overly positive, they actually feel worse, not better. If you tell your friend who is slow to learn that he has the potential of an Einstein, you’re just underlining his faults. In one 1990s experiment, a team including psychologist Joel Cooper of Princeton asked participants to write essays opposing funding for the disabled. When the essayists were later praised for their sympathy, they felt even worse about what they had written.",
+        "In this experiment, Wood, Lee and Perunovic measured 68 students’ self-esteem. The participants were then asked to write down their thoughts and feelings for four minutes. Every 15 seconds, one group of students heard a bell. When it rang, they were supposed to tell themselves, “I am lovable.”",
+        "Those with low self-esteem didn’t feel better after the forced self-affirmation (自我肯定). In fact, their moods turned significantly darker than those of members of the control group, who weren’t urged to think of positive thoughts.",
+        "The paper provides support for newer forms of psychotherapy (心理治疗) that urge people to accept their negative thoughts and feelings rather than fight them. In the fighting, we not only often fail but can make things worse. Meditation (静思) techniques, in contrast, can teach people to put their shortcomings into a larger, more realistic viewpoint. Call it the power of negative thinking."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What do we learn from the first paragraph about the self-help industry?",
+          "options": [
+            "It is a highly profitable industry.",
+            "It was established by Norman Vincent Peale.",
+            "It is based on the concept of positive thinking.",
+            "It has yielded positive results."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "What is the finding of the Canadian researchers?",
+          "options": [
+            "There can be no simple therapy (治疗) for psychological problems.",
+            "Unhappy people cannot think positively.",
+            "The power of positive thinking is limited.",
+            "Encouraging positive thinking may do more harm than good."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "What does the author mean by “… you’re just underlining his faults”?",
+          "options": [
+            "You are emphasizing the fact that he is not intelligent.",
+            "You are not taking his mistakes seriously enough.",
+            "You are pointing out the errors he has committed.",
+            "You are trying to make him feel better about his faults."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What do we learn from the experiment of Wood, Lee and Perunovic?",
+          "options": [
+            "It is important for people to continually boost their self-esteem.",
+            "Forcing a person to think positive thoughts may lower their self-esteem.",
+            "Self-affirmation can bring a positive change to one’s mood.",
+            "People with low self-esteem seldom write down their true feelings."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What do we learn from the last paragraph?",
+          "options": [
+            "Meditation may prove to be a good form of psychotherapy.",
+            "The effects of positive thinking vary from person to person.",
+            "Different people tend to have different ways of thinking.",
+            "People can avoid making mistakes through meditation."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 327,
+      "difficulty": "挑战",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-14",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 14,
+      "heading": "",
+      "title": "With obesity now affecting 29% of the population in England, and expected to rise to 35% b",
+      "fallbackTitle": "With obesity now affecting 29% of the population in England, and expected to rise to 35% b",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "With obesity now affecting 29% of the population in England, and expected to rise to 35% by 2030, should we now recognize it as a disease? Obesity, in which excess body fat has accumulated to such an extent that health may be adversely affected, meets the dictionary definition of disease, argues Professor John Wilding. He points out that more than 200 genes influence weight. “Thus body weight is strongly influenced by biology—it is not an individual’s fault if they develop obesity.” Yet the widespread view is that obesity is self-induced and that it is entirely the individual’s responsibility to do something about it. Recognizing obesity as a chronic disease with severe complications rather than a lifestyle choice “should help reduce the stigma (耻辱) and discrimination experienced by many people with obesity,” he adds.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Professor Wilding disagrees that labeling a high proportion of the population as having a disease removes personal responsibility or may overwhelm health services, pointing out that other common diseases, such as high blood pressure and diabetes, require people to take action to manage their condition. He suggests that most people with obesity will eventually develop complications. “But unless we accept that obesity is a disease, we are not going to be able to tackle it,” he concludes.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "But Dr. Richard Pile, a physician with a special interest in diabetes, argues that adopting this approach “could actually result in worse outcomes for individuals and society.” He believes that the dictionary definition of disease “is so vague that we can classify almost anything as a disease” and says the question is not whether we can, but whether we should, and to what end.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "If labeling obesity as a disease was harmless then it wouldn’t really matter, he writes. But labeling obesity as a disease “risks reducing autonomy, disempowering and robbing people of the intrinsic (内在的) motivation that is such an important enabler of change.” What’s more, making obesity a disease “may not benefit patients, but it will benefit healthcare providers and the pharmaceutical (制药的) industry when health insurance and clinical guidelines promote treatment with drugs and surgery,” he warns.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "With obesity now affecting 29% of the population in England, and expected to rise to 35% by 2030, should we now recognize it as a disease? Obesity, in which excess body fat has accumulated to such an extent that health may be adversely affected, meets the dictionary definition of disease, argues Professor John Wilding. He points out that more than 200 genes influence weight. “Thus body weight is strongly influenced by biology—it is not an individual’s fault if they develop obesity.” Yet the widespread view is that obesity is self-induced and that it is entirely the individual’s responsibility to do something about it. Recognizing obesity as a chronic disease with severe complications rather than a lifestyle choice “should help reduce the stigma (耻辱) and discrimination experienced by many people with obesity,” he adds.",
+        "Professor Wilding disagrees that labeling a high proportion of the population as having a disease removes personal responsibility or may overwhelm health services, pointing out that other common diseases, such as high blood pressure and diabetes, require people to take action to manage their condition. He suggests that most people with obesity will eventually develop complications. “But unless we accept that obesity is a disease, we are not going to be able to tackle it,” he concludes.",
+        "But Dr. Richard Pile, a physician with a special interest in diabetes, argues that adopting this approach “could actually result in worse outcomes for individuals and society.” He believes that the dictionary definition of disease “is so vague that we can classify almost anything as a disease” and says the question is not whether we can, but whether we should, and to what end.",
+        "If labeling obesity as a disease was harmless then it wouldn’t really matter, he writes. But labeling obesity as a disease “risks reducing autonomy, disempowering and robbing people of the intrinsic (内在的) motivation that is such an important enabler of change.” What’s more, making obesity a disease “may not benefit patients, but it will benefit healthcare providers and the pharmaceutical (制药的) industry when health insurance and clinical guidelines promote treatment with drugs and surgery,” he warns."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What does Professor John Wilding argue about obesity?",
+          "options": [
+            "Its impact on society is expected to rise.",
+            "It is now too widespread to be neglected.",
+            "It should be regarded as a genetic disease.",
+            "Its dictionary definition should be updated."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "What is the popular view of obesity?",
+          "options": [
+            "It is difficult to define.",
+            "It is a modern disease.",
+            "It has much to do with one’s genes.",
+            "It results from a lack of self-control."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Why are some people opposed to labeling obesity as a disease?",
+          "options": [
+            "Obese people would not feel responsible to take any action.",
+            "Obese people would not be able to afford the medical costs.",
+            "Obese people would be overwhelmed with anxiety.",
+            "Obese people would be discriminated against."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What does Dr. Richard Pile think of the dictionary definition of disease?",
+          "options": [
+            "It is of no use in understanding obesity.",
+            "It is too inclusive and thus lacks clarity.",
+            "It helps little to solve patients’ problems.",
+            "It matters little to the debate over obesity."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is Dr. Richard Pile’s concern about classifying obesity as a disease?",
+          "options": [
+            "It may affect obese people’s quality of life.",
+            "It may accelerate the spread of obesity.",
+            "It may cause a shortage of doctors.",
+            "It may do little good to patients."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 344,
+      "difficulty": "挑战",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-15",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 15,
+      "heading": "",
+      "title": "Doctors believe that second-hand smoke may cause lung cancer in people who do not smoke",
+      "fallbackTitle": "Doctors believe that second-hand smoke may cause lung cancer in people who do not smoke",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Doctors believe that second-hand smoke may cause lung cancer in people who do not smoke. Nonsmokers often breathe in the smoke from other people’s cigarettes. This is second-hand smoke. The US Environmental Protection Agency (美国环保局) reports that about fifty-three thousand people die in the United States each year as a result of exposure to second-hand smoke.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "It is harder for children to avoid second-hand smoke. In the United States, nine million children under the age of five live in homes with at least one smoker. Research shows that these children are sick more often than children who live in homes where no one smokes. The damaging effects of second-hand smoke on children also continue as they grow up. The children of smokers are more than twice as likely to develop lung cancer when they are adults as children of nonsmokers. The risk is even higher for children who live in homes where both parents smoke.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "People are becoming very aware of the danger of second-hand smoke. As a result, they have passed laws that prohibit people from smoking in many public places. Currently, 45 states in the US have laws that restrict smoking. The most well-known law doesn’t allow people to smoke on short native airline flights, i.e. flights within the country.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Doctors believe that second-hand smoke may cause lung cancer in people who do not smoke. Nonsmokers often breathe in the smoke from other people’s cigarettes. This is second-hand smoke. The US Environmental Protection Agency (美国环保局) reports that about fifty-three thousand people die in the United States each year as a result of exposure to second-hand smoke.",
+        "It is harder for children to avoid second-hand smoke. In the United States, nine million children under the age of five live in homes with at least one smoker. Research shows that these children are sick more often than children who live in homes where no one smokes. The damaging effects of second-hand smoke on children also continue as they grow up. The children of smokers are more than twice as likely to develop lung cancer when they are adults as children of nonsmokers. The risk is even higher for children who live in homes where both parents smoke.",
+        "People are becoming very aware of the danger of second-hand smoke. As a result, they have passed laws that prohibit people from smoking in many public places. Currently, 45 states in the US have laws that restrict smoking. The most well-known law doesn’t allow people to smoke on short native airline flights, i.e. flights within the country."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Compared with nonsmokers’ children, the children whose parents both smoke are likely to ______.",
+          "options": [
+            "grow up more slowly",
+            "be sick under the age of five",
+            "develop lung cancer more often",
+            "become smokers more easily"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Why are there laws made against smoking in public places in the US?",
+          "options": [
+            "Because people are conscious of the danger of second-hand smoke.",
+            "Because more and more people don’t like smoke now.",
+            "Because parents don’t want their children to become smokers.",
+            "Because the government wants to limit the production of cigarettes."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following statements is TRUE?",
+          "options": [
+            "The number of smoker’s children is twice greater than that of nonsmokers’ children.",
+            "People are now not allowed to smoke on short airline flights in the US.",
+            "Adults whose parents smoked when they were children develop cancer less frequently.",
+            "Second-hand smoke is not as dangerous as first-hand smoke."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "From the passage we can conclude that ______.",
+          "options": [
+            "the main cause of lung cancer is second-hand smoke",
+            "most people know nothing about the danger of second-hand smoke",
+            "public places are dangerous for people to stay",
+            "children suffer most from second-hand smoke"
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "The word “restrict” in the last paragraph is closest in meaning to ______.",
+          "options": [
+            "limit",
+            "permit",
+            "control",
+            "persuade"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 211,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-16",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 16,
+      "heading": "",
+      "title": "A warm drink of milk before bed has long been the best choice for those wanting a good nig",
+      "fallbackTitle": "A warm drink of milk before bed has long been the best choice for those wanting a good nig",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "A warm drink of milk before bed has long been the best choice for those wanting a good night’s sleep. But now a study has found it really does help people nod off—if it is milked from a cow at night.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Researchers have discovered that “night milk” contains more melatonin (褪黑激素), which has been proven to help people feel sleepy and reduce anxiety.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The study, by researchers from Seoul, South Korea, involved mice being fed with dried milk powder made from cows milked both during the day and at night.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Those given night milk, which contained 10 times the amount of melatonin, were less active and less anxious than those fed with the milk collected during daytime, according to the study published in The Journal of Medicinal Food.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Night milk quickened the start of sleep and caused the mice to sleep longer.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "While the effect of cows milk harvested at different time has not been tested on humans up to now, taking melatonin drugs has been suggested to those who are struggling to fall asleep at night.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Previous studies have also indicated that milk can be excellent for helping sleep because of the calcium content, which helps people to relax.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Milk is also sugar-free and additive-free with nutritionists recommending skimmed milk as the best choice before bed as it is the least fattening. The more fat you take in before bedtime, the greater burden you will put on your body at night.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "A warm drink of milk before bed has long been the best choice for those wanting a good night’s sleep. But now a study has found it really does help people nod off—if it is milked from a cow at night.",
+        "Researchers have discovered that “night milk” contains more melatonin (褪黑激素), which has been proven to help people feel sleepy and reduce anxiety.",
+        "The study, by researchers from Seoul, South Korea, involved mice being fed with dried milk powder made from cows milked both during the day and at night.",
+        "Those given night milk, which contained 10 times the amount of melatonin, were less active and less anxious than those fed with the milk collected during daytime, according to the study published in The Journal of Medicinal Food.",
+        "Night milk quickened the start of sleep and caused the mice to sleep longer.",
+        "While the effect of cows milk harvested at different time has not been tested on humans up to now, taking melatonin drugs has been suggested to those who are struggling to fall asleep at night.",
+        "Previous studies have also indicated that milk can be excellent for helping sleep because of the calcium content, which helps people to relax.",
+        "Milk is also sugar-free and additive-free with nutritionists recommending skimmed milk as the best choice before bed as it is the least fattening. The more fat you take in before bedtime, the greater burden you will put on your body at night."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the text, the mice fed with daytime milk ______.",
+          "options": [
+            "started sleep more easily",
+            "were more anxious",
+            "were less active",
+            "woke up later"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Which of the following is true of melatonin according to the text?",
+          "options": [
+            "It’s been tested on mice for ten times.",
+            "It can make people more energetic.",
+            "It exists in milk in great amount.",
+            "It’s used in sleeping drugs."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "What can be a suitable title for the text?",
+          "options": [
+            "Night Milk and Sleep",
+            "Fat, Sugar and Health",
+            "An Experiment on Mice",
+            "Milk Drinking and Health"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "How does the author support the theme of the text?",
+          "options": [
+            "By giving examples.",
+            "By stating arguments.",
+            "By explaining statistical data.",
+            "By providing research results."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "The phrase “take in” in the last paragraph most probably means ______.",
+          "options": [
+            "include",
+            "absorb",
+            "cheat",
+            "understand"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 241,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "kepu-17",
+      "catId": "kepu",
+      "catName": "科普类",
+      "number": 17,
+      "heading": "",
+      "title": "Would it surprise you to learn that, like animals, trees communicate with each other and t",
+      "fallbackTitle": "Would it surprise you to learn that, like animals, trees communicate with each other and t",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Would it surprise you to learn that, like animals, trees communicate with each other and transmit their wealth to the next generation?",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "UBC Professor Simard explains how trees are much more complex than most of us ever imagined. Although Charles Darwin thought that trees are competing for survival of the fittest, Simard shows just how wrong he was. In fact, the opposite is true: trees survive through their co-operation and support, passing around necessary nutrition “depending on who needs it”.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Nitrogen (氮) and carbon are shared through miles of underground fungi (真菌) networks, making sure that all trees in the forest ecological system give and receive just the right amount to keep them all healthy. This hidden system works in a very similar way to the networks of neurons (神经元) in our brains, and when one tree is destroyed, it affects all.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Simard talks about “mother trees”, usually the largest and oldest plants on which all other trees depend. She explains how dying trees pass on the wealth to the next generation, transporting important minerals to young trees so they may continue to grow. When humans cut down “mother trees” with no awareness of these highly complex “tree societies” or the networks on which they feed, we are reducing the chances of survival for the entire forest.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "“We didn’t take any notice of it” Simard says sadly. “Dying trees move nutrition into the young trees before dying, but we never give them chance.” If we could put across the message to the forestry industry, we could make a huge difference towards our environmental protection efforts for the future.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Would it surprise you to learn that, like animals, trees communicate with each other and transmit their wealth to the next generation?",
+        "UBC Professor Simard explains how trees are much more complex than most of us ever imagined. Although Charles Darwin thought that trees are competing for survival of the fittest, Simard shows just how wrong he was. In fact, the opposite is true: trees survive through their co-operation and support, passing around necessary nutrition “depending on who needs it”.",
+        "Nitrogen (氮) and carbon are shared through miles of underground fungi (真菌) networks, making sure that all trees in the forest ecological system give and receive just the right amount to keep them all healthy. This hidden system works in a very similar way to the networks of neurons (神经元) in our brains, and when one tree is destroyed, it affects all.",
+        "Simard talks about “mother trees”, usually the largest and oldest plants on which all other trees depend. She explains how dying trees pass on the wealth to the next generation, transporting important minerals to young trees so they may continue to grow. When humans cut down “mother trees” with no awareness of these highly complex “tree societies” or the networks on which they feed, we are reducing the chances of survival for the entire forest.",
+        "“We didn’t take any notice of it” Simard says sadly. “Dying trees move nutrition into the young trees before dying, but we never give them chance.” If we could put across the message to the forestry industry, we could make a huge difference towards our environmental protection efforts for the future."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which is the closest meaning of the word “transmit” in Paragraph 1?",
+          "options": [
+            "change",
+            "pass on",
+            "exchange",
+            "support"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "The underlined sentence “the opposite is true” in Paragraph 2 probably means that trees ______.",
+          "options": [
+            "depend on each other",
+            "compete for survival",
+            "protect their own wealth",
+            "provide support for dying trees"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "“Mother trees” are extremely important because they ______.",
+          "options": [
+            "look the largest in size in the forest",
+            "seem more likely to be cut down by humans",
+            "pass on nutrition to young trees",
+            "know more about the complex “tree societies”"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "The underlined word “it” in the last paragraph refers to ______.",
+          "options": [
+            "how “tree societies” work",
+            "how trees grow old",
+            "how forestry industry develops",
+            "how young trees survive"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "Which of the following statements is NOT CORRECT according to the passage?",
+          "options": [
+            "Trees communicate with each other more deeply than we think.",
+            "Nitrogen and carbon play very important roles in the forest ecological system.",
+            "When “mother trees” are cut down, we are reducing the chances of survival for the forest.",
+            "We couldn’t make efforts for the future environmental protection."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 265,
+      "difficulty": "进阶",
+      "file": "科普类专项训练.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     },
     {
@@ -2474,6 +3321,99 @@
       "translations": [
         "我是一家小服装店的店主。三个月前，因为生意不太好，我决定把店搬到城里的另一个区域 Glendale。现在我租了一栋老建筑里的店面。Glendale 的新位置很好，我的销售额提高了很多。（水电费也更便宜！）附近有一所高中，很多学生来我店里买衣服。这个位置还有其他优势：它离我家更近，而且下一个街区有一家食品店，所以我下班后购物很方便。",
         "新店的面积也更好。它大得多，有很多储物空间。但这栋建筑状况不太好，我不得不做很多改善。油漆又旧又脏，我只好重新选颜色，把所有的墙都刷了一遍。我雇人搭了新的木制试衣间，还为试衣间和窗户做了新窗帘。现在我对这家店非常满意。不幸的是，上周我得知房东想卖掉这栋楼——在我辛苦付出之后！我是怎么知道的？星期五我来上班，看到店门前立着一块“出售”的牌子。"
+      ]
+    },
+    {
+      "id": "jingli-12",
+      "catId": "jingli",
+      "catName": "经历记叙类",
+      "number": 12,
+      "heading": "",
+      "title": "Madagascar is a wonderful place",
+      "fallbackTitle": "Madagascar is a wonderful place",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Madagascar is a wonderful place. About 90 percent of the animals and plants living there cannot be found elsewhere in the world. Scientists love it! There are some very unusual animals and places in Madagascar’s Tsingy de Bemaraha National park, but it’s a dangerous place. The rocks of the Tsingy in the park are very sharp.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "I arrived in Madagascar in March. At the end of the rainy season, I was with a scientist and a reporter. We wanted to find some new species. We set off to the park and after five days, we finally arrived there.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "We worked enough in the Tsingy. The rocks cut our clothes and our shoes. It was dangerous, but we saw hundreds of animals and plants. We saw beautiful birds and unusual white lemurs with red eyes. They didn’t have any problems on the Tsingy rocks! Those birds had lived here for many years. This place, with its natural environment, was the perfect habitat for varieties of rare birds, most of which were unique to Madagascar.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Madagascar is a wonderful place. About 90 percent of the animals and plants living there cannot be found elsewhere in the world. Scientists love it! There are some very unusual animals and places in Madagascar’s Tsingy de Bemaraha National park, but it’s a dangerous place. The rocks of the Tsingy in the park are very sharp.",
+        "I arrived in Madagascar in March. At the end of the rainy season, I was with a scientist and a reporter. We wanted to find some new species. We set off to the park and after five days, we finally arrived there.",
+        "We worked enough in the Tsingy. The rocks cut our clothes and our shoes. It was dangerous, but we saw hundreds of animals and plants. We saw beautiful birds and unusual white lemurs with red eyes. They didn’t have any problems on the Tsingy rocks! Those birds had lived here for many years. This place, with its natural environment, was the perfect habitat for varieties of rare birds, most of which were unique to Madagascar."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Scientists love Madagascar for its ______.",
+          "options": [
+            "wonderful March",
+            "rainy season",
+            "unusual animals and plants",
+            "sharp rocks"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Why did the group go to Madagascar?",
+          "options": [
+            "To find some new species",
+            "To visit the park",
+            "To see beautiful birds",
+            "To live in the place"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "What does the underlined word “habitat” in the last paragraph probably refer to?",
+          "options": [
+            "A natural home.",
+            "An unusual plant.",
+            "A dangerous animal.",
+            "A good hospital."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What is the best title for the text?",
+          "options": [
+            "New Species",
+            "A Trip to Madagascar",
+            "Unusual White Lemurs",
+            "A Variety of Birds"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 172,
+      "difficulty": "基础",
+      "file": "经历记叙类专项训练.md",
+      "translations": [
+        "",
+        "",
+        ""
       ]
     },
     {
@@ -5883,6 +6823,1112 @@
       ]
     },
     {
+      "id": "shehui-13",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 13,
+      "heading": "How to Help Kids Grow",
+      "title": "How to Help Kids Grow",
+      "fallbackTitle": "All parents have sky-high hopes for their children",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "All parents have sky-high hopes for their children. We want them to be confident and content. What can parents do to help their kids grow up to lead happy and productive lives? Experts advise:",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Helping them find their talents. In order to succeed, children need to feel they’re good at something. So expose your children to as many interests as possible; then let them choose those they like best!",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Applauding their accomplishments. A study found that students whose parents fussed over their abilities were far more likely to do well in school—and in life—than students whose parents didn’t show such support. So celebrate your kids’ achievements, no matter how small they are.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Giving them responsibilities. Responsibilities help youngsters grow into mature and self-motivated adults. So assign your children household chores when they are young. Four-year-olds can pitch in by picking up their dirty clothes and helping to set the table.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Letting them make decisions and mistakes. Making their own decisions increases a child’s self-control and boosts their self-esteem. And allowing kids to make wrong decisions—as long as doing so won’t harm them—helps kids learn from their mistakes.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Encouraging them to solve their own problems. As they grow, children need practice in communicating, standing up for themselves and compromising. One of the best places to learn these skills is at home. So the next time your child runs to you complaining that her brother picks on her, step back and let them work it out.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "All parents have sky-high hopes for their children. We want them to be confident and content. What can parents do to help their kids grow up to lead happy and productive lives? Experts advise:"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What should parents do so that their children are likely to do well in school?",
+          "options": [
+            "Have high expectations on them.",
+            "Appreciate their achievements.",
+            "Put great pressure on them.",
+            "Expand their range of interest."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "What is the parents’ purpose to assign their children housework?",
+          "options": [
+            "To spare some time to relax.",
+            "To relieve themselves.",
+            "To enhance children’s sense of responsibility.",
+            "To share the heavy housework."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following statements is true?",
+          "options": [
+            "Parents should stand up for children whenever they are needed.",
+            "Parents should try to settle the dispute among children.",
+            "Parents should stay out of any conflict among children.",
+            "Parents should encourage children to communicate with each other."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What should children do as advised by experts?",
+          "options": [
+            "Try every means to please parents.",
+            "Be entitled to make family decisions.",
+            "Be encouraged to solve their own problems.",
+            "Learn to make good decisions at an early age."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What does the writer mean in writing this passage?",
+          "options": [
+            "To criticize some wrong ideas held by parents.",
+            "To comment on some popular ways of family education.",
+            "To present some good ways of handling troublesome children.",
+            "To offer parents some good suggestions on children education."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 248,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-14",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 14,
+      "heading": "",
+      "title": "Most Americans switch careers at least three times throughout their lives",
+      "fallbackTitle": "Most Americans switch careers at least three times throughout their lives",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Most Americans switch careers at least three times throughout their lives. Gone are the days when people retired from the company where they first worked. The progressive mentality (心态) regarding business and technology often ensures that people move from position to position as they try to find the right career for them.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Recent college graduates ask “what career is right for me?” many times in the months before and after graduation. Now more than ever, people are also asking “what career is right for me?” into their thirties, forties and fifties. Even baby boomers (生育高峰期出生的人) are asking “what job is right for me?” as they retire and reenter the workforce in their sixties and seventies. It seems that every employee in America is wondering which career path fits him or her best.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "When you find yourself asking “what career is best for me?”, follow some of these simple tips to set yourself straight on the best path for you.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Consult a website and take its test to see which career path might be right for you.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Think about whether you are happy with your current job.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Emphasize your skills in your resume.",
+          "translation": ""
+        },
+        {
+          "type": "li",
+          "text": "Do more research about the new career.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Most Americans switch careers at least three times throughout their lives. Gone are the days when people retired from the company where they first worked. The progressive mentality (心态) regarding business and technology often ensures that people move from position to position as they try to find the right career for them.",
+        "Recent college graduates ask “what career is right for me?” many times in the months before and after graduation. Now more than ever, people are also asking “what career is right for me?” into their thirties, forties and fifties. Even baby boomers (生育高峰期出生的人) are asking “what job is right for me?” as they retire and reenter the workforce in their sixties and seventies. It seems that every employee in America is wondering which career path fits him or her best.",
+        "When you find yourself asking “what career is best for me?”, follow some of these simple tips to set yourself straight on the best path for you."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "According to the first paragraph, most Americans now ______.",
+          "options": [
+            "are more satisfied with their career than their parents",
+            "change their careers at least three times in their life",
+            "move their home more frequently than ever before",
+            "retire from the company where they first worked"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "People change their position frequently in order to ______.",
+          "options": [
+            "find a right career",
+            "support their families",
+            "start their own business",
+            "adapt to the new technology"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "All American employees seem to be asking about ______.",
+          "options": [
+            "which company they will retire from",
+            "when they should change a position",
+            "what career path is right for them",
+            "where they can find another job"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Why are you advised to consult a website and take its test?",
+          "options": [
+            "To find information about job fairs.",
+            "To improve your professional skills.",
+            "To decide the right career path.",
+            "To get in touch with a potential boss."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "The last part of the passage is mainly about ______.",
+          "options": [
+            "ways to build a website",
+            "steps to take an online test",
+            "courses to train resume writing",
+            "tips to find a right career path"
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 197,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-15",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 15,
+      "heading": "",
+      "title": "Who takes care of the elderly in the United States today",
+      "fallbackTitle": "Who takes care of the elderly in the United States today",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Who takes care of the elderly in the United States today? The fact is that family members provide over 80% of the care that elderly people need. In most cases the elderly live in their own homes. A very small percentage of America’s elderly live in nursing homes.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Samuel Preston, a sociologist at the University of Pennsylvania, studied how the American family is changing. He reported that by the time the average American couple reaches about 40 years of age, their parents are usually still alive. The statistics show the change in lifestyles and responsibilities of aging (老龄化) Americans. The average middle-aged couple can look forward to caring for elderly parents some time after their own children have grown up. Moreover, because people today live longer after an illness than people did years ago, family members must provide long-term care. These facts also mean that after caregivers provide for their elderly parents, who will eventually die, they will be old and may require care too. When they do, their spouses (配偶) will probably take care of them because they have had fewer children than their parents did.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Because Americans are living longer than ever, more social workers have begun to study ways of care-giving to improve the care of the elderly. They have found that all caregivers share a common characteristic: they believe that they are the best people for the job. The social workers have also discovered three basic reasons why the caregivers take on the responsibility of caring for an elderly, dependent relative. Many caregivers believe they had an obligation (职责) to help their relatives. Some think that helping others makes them feel more useful. Others hope that by helping someone now, they will deserve care when they become old and dependent.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Who takes care of the elderly in the United States today? The fact is that family members provide over 80% of the care that elderly people need. In most cases the elderly live in their own homes. A very small percentage of America’s elderly live in nursing homes.",
+        "Samuel Preston, a sociologist at the University of Pennsylvania, studied how the American family is changing. He reported that by the time the average American couple reaches about 40 years of age, their parents are usually still alive. The statistics show the change in lifestyles and responsibilities of aging (老龄化) Americans. The average middle-aged couple can look forward to caring for elderly parents some time after their own children have grown up. Moreover, because people today live longer after an illness than people did years ago, family members must provide long-term care. These facts also mean that after caregivers provide for their elderly parents, who will eventually die, they will be old and may require care too. When they do, their spouses (配偶) will probably take care of them because they have had fewer children than their parents did.",
+        "Because Americans are living longer than ever, more social workers have begun to study ways of care-giving to improve the care of the elderly. They have found that all caregivers share a common characteristic: they believe that they are the best people for the job. The social workers have also discovered three basic reasons why the caregivers take on the responsibility of caring for an elderly, dependent relative. Many caregivers believe they had an obligation (职责) to help their relatives. Some think that helping others makes them feel more useful. Others hope that by helping someone now, they will deserve care when they become old and dependent."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Samuel Preston’s study shows that ______.",
+          "options": [
+            "lifestyles and responsibilities of the elderly are not changing",
+            "most American couples over 40 have no living parents",
+            "middle-aged Americans have to take care of their children and parents at the same time",
+            "elderly people may need care for a long time because they live longer after an illness"
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "Who will most probably take care of the middle-aged Americans when they need care themselves?",
+          "options": [
+            "They themselves.",
+            "Their close friends.",
+            "Their children.",
+            "Their husbands or wives."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "All caregivers believe that they can ______.",
+          "options": [
+            "care for their elderly parents better than any other people",
+            "keep closer to their old parents by this means",
+            "do much better if they have a job as social workers",
+            "improve the care of the elderly with the help of the social workers"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Which of the following is NOT a reason why people look after their relatives?",
+          "options": [
+            "They feel they are of use to other people.",
+            "They want to set an example to their children.",
+            "They think it is their duty to help their relatives.",
+            "They hope they deserve care when they need it."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is the main idea of the passage?",
+          "options": [
+            "Most old people live longer today after an illness than people did years ago.",
+            "Many old people are put into nursing homes by their families, who do not visit them regularly.",
+            "Most elderly people are taken care of by their families, who assume the responsibility for different reasons.",
+            "Most elderly people are satisfied with the better ways of care-giving that social workers have come up with."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 289,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-16",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 16,
+      "heading": "",
+      "title": "Some people argue that the pressure on international sportsmen and sportswomen kills the e",
+      "fallbackTitle": "Some people argue that the pressure on international sportsmen and sportswomen kills the e",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Some people argue that the pressure on international sportsmen and sportswomen kills the essence of sport—the pursuit of personal excellence. Children kick a football around for fun. When they get older and play for local school teams, they will become competitive but they still enjoy playing. The individual representing his country cannot afford to think about enjoying himself, and he has to think only about winning. He is responsible for the entire nation’s hopes, dreams and reputation.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "A good example is the FIFA World Cup. Football is the third most important sport in the world. Winning the World Cup is perhaps the summit of international sporting success. Mention Argentina to someone and the chances are that he’ll think of football. In a sense, winning the World Cup put Argentina on the map.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Some sports fans and supporters get quite unreasonable about the World Cup. People in England felt that their country was somehow important after they won in 1966. In 1978, thousands of the Scots sold their cars, and even their houses, and spent all their money traveling to Argentina, where the finals were played.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "So, am I arguing that international competition kills the idea of sport? Certainly not! Do the Argentinean really believe that because eleven of their men proved the most skillful at football, their nation is in every way better than all others? Not really. But it’s nice to know that you won and that in one way at least your country is the best.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Some people argue that the pressure on international sportsmen and sportswomen kills the essence of sport—the pursuit of personal excellence. Children kick a football around for fun. When they get older and play for local school teams, they will become competitive but they still enjoy playing. The individual representing his country cannot afford to think about enjoying himself, and he has to think only about winning. He is responsible for the entire nation’s hopes, dreams and reputation.",
+        "A good example is the FIFA World Cup. Football is the third most important sport in the world. Winning the World Cup is perhaps the summit of international sporting success. Mention Argentina to someone and the chances are that he’ll think of football. In a sense, winning the World Cup put Argentina on the map.",
+        "Some sports fans and supporters get quite unreasonable about the World Cup. People in England felt that their country was somehow important after they won in 1966. In 1978, thousands of the Scots sold their cars, and even their houses, and spent all their money traveling to Argentina, where the finals were played.",
+        "So, am I arguing that international competition kills the idea of sport? Certainly not! Do the Argentinean really believe that because eleven of their men proved the most skillful at football, their nation is in every way better than all others? Not really. But it’s nice to know that you won and that in one way at least your country is the best."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What is the author’s main purpose in the passage?",
+          "options": [
+            "To explain the role of sport.",
+            "To compare Scotland with Argentina.",
+            "To show that Argentina is better than all others.",
+            "To prove that football is the world’s third most important sport."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "In the second paragraph, the underlined word “summit” means ______.",
+          "options": [
+            "award",
+            "summary",
+            "highest point",
+            "mountaintop"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "According to the passage, Argentina is world-famous because of its ______.",
+          "options": [
+            "obvious position on the map",
+            "success in the World Cup",
+            "excellence in the most important sports",
+            "large number of sports fans and supporters"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "If a sportsman only thinks about winning, he will ______.",
+          "options": [
+            "fail to succeed",
+            "lose enjoyment",
+            "be successful",
+            "be unreasonable"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is the author’s attitude towards international games?",
+          "options": [
+            "Nations that meet on a football field are unlikely to meet on a battlefield.",
+            "Nations that win the World Cup are regarded as best in all aspects.",
+            "Nations that win in international games prove the best on the sports field at least.",
+            "Nations that give much attention to international competitions are world-famous in many ways."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 247,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-17",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 17,
+      "heading": "",
+      "title": "Imagine walking through someone’s apartment",
+      "fallbackTitle": "Imagine walking through someone’s apartment",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Imagine walking through someone’s apartment. The rooms are almost empty, and the only pieces of furniture are a simple table and folded sofa. There are no decorative objects lying around—just the essentials. You open the closet to find you can count the number of clothing items inside on one hand. The space seems more like a prison cell than a home, and you may think the resident cannot afford to buy more things fill the apartment with.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "It turns out that the apartment’s owner is a minimalist (简约主义者) who chooses to limit his number of belongings. Minimalism goes against consumer society by dramatically reducing possessions. Minimalists follow this philosophy to varying degrees, but they claim that cutting back on excess stuff leads to a more fulfilling life.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "With fewer possessions, they do not have to spend as much time cleaning, thinking about what they are missing, or trying to keep up with the latest trends. Minimalists say this frees up their time for things that they find meaningful such as exercising, traveling, and being with loved ones.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Extreme minimalism is not for everyone, but a mild form of it has grown in popularity recently, thanks to Marie Kondo’s best-selling book The Life-Changing Magic of Tidying Up. Kondo has become distinguished for her tidying skills, which she developed naturally. One of her main beliefs is that one should only own things that one truly loves.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "It can be unpleasant to part with belongings, but Kondo’s methods have helped millions to remove useless things. Her technique for making space is to go through things by category, starting with clothing, then books, papers, tiny objects, and finally, memorable items. She instructs her followers to touch each object they own and keep only those that spark joy, promising that this will lead to domestic happiness.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Kondo stresses that it is not about throwing things away, but about finding the things you want to remain with you and striking a balance between personal joy and possessions. Even if you are not ready to become a minimalist, you may want to consider reducing the number of things you own, for it seems that letting go of things can truly make room for happiness.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Imagine walking through someone’s apartment. The rooms are almost empty, and the only pieces of furniture are a simple table and folded sofa. There are no decorative objects lying around—just the essentials. You open the closet to find you can count the number of clothing items inside on one hand. The space seems more like a prison cell than a home, and you may think the resident cannot afford to buy more things fill the apartment with.",
+        "It turns out that the apartment’s owner is a minimalist (简约主义者) who chooses to limit his number of belongings. Minimalism goes against consumer society by dramatically reducing possessions. Minimalists follow this philosophy to varying degrees, but they claim that cutting back on excess stuff leads to a more fulfilling life.",
+        "With fewer possessions, they do not have to spend as much time cleaning, thinking about what they are missing, or trying to keep up with the latest trends. Minimalists say this frees up their time for things that they find meaningful such as exercising, traveling, and being with loved ones.",
+        "Extreme minimalism is not for everyone, but a mild form of it has grown in popularity recently, thanks to Marie Kondo’s best-selling book The Life-Changing Magic of Tidying Up. Kondo has become distinguished for her tidying skills, which she developed naturally. One of her main beliefs is that one should only own things that one truly loves.",
+        "It can be unpleasant to part with belongings, but Kondo’s methods have helped millions to remove useless things. Her technique for making space is to go through things by category, starting with clothing, then books, papers, tiny objects, and finally, memorable items. She instructs her followers to touch each object they own and keep only those that spark joy, promising that this will lead to domestic happiness.",
+        "Kondo stresses that it is not about throwing things away, but about finding the things you want to remain with you and striking a balance between personal joy and possessions. Even if you are not ready to become a minimalist, you may want to consider reducing the number of things you own, for it seems that letting go of things can truly make room for happiness."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Paragraph 1 describes a person who probably ______.",
+          "options": [
+            "loves decorative objects",
+            "cannot afford the essentials",
+            "chooses to live a simple life",
+            "has a passion for counting his clothes"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "What does minimalist go against?",
+          "options": [
+            "Reducing possessions.",
+            "Living a more fulfilling life.",
+            "Limiting the number of belongings.",
+            "Buying more things than necessary."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "If people adopt the minimalist lifestyle, they will ______.",
+          "options": [
+            "have a passion for cleaning",
+            "keep up with the latest trends",
+            "think about what they are missing",
+            "have more time for meaningful things"
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "The mild form of minimalism becomes popular because of Kondo’s ______.",
+          "options": [
+            "top-selling book",
+            "writing style",
+            "personal habits",
+            "cleaning skills"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "According to the last paragraph, what is the real meaning of minimalism?",
+          "options": [
+            "Finding the right balance between belongings and joy.",
+            "Placing your possessions before your personal happiness.",
+            "Throwing away as many personal belongings as possible.",
+            "Buying a lot more things to follow the latest fashion trend."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 367,
+      "difficulty": "挑战",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-18",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 18,
+      "heading": "",
+      "title": "Beware of those who use the truth to deceive",
+      "fallbackTitle": "Beware of those who use the truth to deceive",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Beware of those who use the truth to deceive. When someone tells you something that is true, but leaves out important information that should be included, he can create a false impression.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "For example, someone might say, “I just won a hundred dollars on the lottery. It was great. I took that dollar ticket back to the store and turned it in for one hundred dollars!”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This guy’s a winner, right? Maybe, maybe not. We then discover that he bought two hundred tickets, and only one was a winner. He’s really a big loser!",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "He didn’t say anything that was false, but he deliberately omitted important information. That’s called a half-truth. Half-truths are not technically lies, but they are just as dishonest.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Untrustworthy candidates in political campaigns often use this tactic. Let’s say that during Governor Smith’s last term, her state lost one million jobs and gained three million jobs. Then she seeks another term. One of her opponents ran an advertisement, saying “During Governor Smith’s term, the state lost one million jobs!” That’s true. However, an honest statement would have been, “During Governor Smith’s term, the state had a net gain of two million jobs.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Advertisers will sometimes use half-truths. It’s against the law to make false claims so they try to mislead you with the truth. An advertisement might boast, “Nine out of ten doctors recommend Yucky Pills to cure nose pimples.” It fails to mention that they only asked ten doctors and nine of them work for the Yucky Corporation.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "This kind of deception happens too often. It’s a sad fact of life: Lies are lies, and sometimes the truth can lie as well.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Beware of those who use the truth to deceive. When someone tells you something that is true, but leaves out important information that should be included, he can create a false impression.",
+        "For example, someone might say, “I just won a hundred dollars on the lottery. It was great. I took that dollar ticket back to the store and turned it in for one hundred dollars!”",
+        "This guy’s a winner, right? Maybe, maybe not. We then discover that he bought two hundred tickets, and only one was a winner. He’s really a big loser!",
+        "He didn’t say anything that was false, but he deliberately omitted important information. That’s called a half-truth. Half-truths are not technically lies, but they are just as dishonest.",
+        "Untrustworthy candidates in political campaigns often use this tactic. Let’s say that during Governor Smith’s last term, her state lost one million jobs and gained three million jobs. Then she seeks another term. One of her opponents ran an advertisement, saying “During Governor Smith’s term, the state lost one million jobs!” That’s true. However, an honest statement would have been, “During Governor Smith’s term, the state had a net gain of two million jobs.”",
+        "Advertisers will sometimes use half-truths. It’s against the law to make false claims so they try to mislead you with the truth. An advertisement might boast, “Nine out of ten doctors recommend Yucky Pills to cure nose pimples.” It fails to mention that they only asked ten doctors and nine of them work for the Yucky Corporation.",
+        "This kind of deception happens too often. It’s a sad fact of life: Lies are lies, and sometimes the truth can lie as well."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "In which of the following situations is a person telling a half-truth?",
+          "options": [
+            "When somebody is telling a white lie.",
+            "When somebody is making up information.",
+            "When somebody is saying something that is wrong.",
+            "When somebody is intentionally leaving out important information."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "It can be inferred from the passage that ______.",
+          "options": [
+            "advertisers always make false claims",
+            "advertisements can be misleading due to partial information",
+            "Yucky pills are effective in curing nose pimples",
+            "the Yucky Corporation has a bad reputation for its drug"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "The underlined word “deception” (Para. 7) is closest in meaning to “______”.",
+          "options": [
+            "dishonesty",
+            "suggestion",
+            "situation",
+            "failure"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "The author clearly wants people to ______.",
+          "options": [
+            "think carefully about what they read and hear",
+            "be firm supporters of a particular candidate in political campaigns",
+            "never place their trust in lottery winners",
+            "vote for female candidates in political campaigns"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "An appropriate title for this passage would be ______.",
+          "options": [
+            "It Pays to Be Honest",
+            "Everyone Lies",
+            "Lying with the Truth",
+            "An Important Tactic in Advertising"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 277,
+      "difficulty": "进阶",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-19",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 19,
+      "heading": "",
+      "title": "Today’s grandparents are joining their grandchildren on social media",
+      "fallbackTitle": "Today’s grandparents are joining their grandchildren on social media",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Today’s grandparents are joining their grandchildren on social media. In the UK the over-55s are joining social media sites in increasing numbers, meaning that they will soon be the second biggest user group of these sites, with 3.5 million users aged 55–64 and 2.9 million over-65s.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Sheila, aged 59, says, “I joined to see what my grandchildren are doing, as my daughter posts videos and photos of them. It’s a much better way to see what they’re doing than waiting for letters and photos in the post. That’s how we did it when I was a child, but I think I’m lucky I get to see so much more of their lives than my grandparents did.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Unexpectedly, Sheila’s grandchildren are less likely to use social media sites themselves. Children under 17 in the UK are leaving the sites—only 2.2 million users are under 17—but they’re not going far from their smartphones. Chloe, aged 15, even sleeps with her phone. “It’s my alarm clock, so I have to,” she says. “I look at it before I go to sleep and as soon as I wake up.” Unlike her grandmother’s generation, Chloe’s age group is spending so much time on their phones at home that they are missing out on spending time with their friends in real life. Sheila, on the other hand, has made contact with old friends from school that she has not heard from in forty years.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "“We use social media sites to arrange to meet all over the country,” she says. “They have changed my social life completely.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Teenagers might have their parents to thank for their smartphone addiction (上瘾) as their parents were the early users of smartphones. Peter, 38 and a father of two teenagers, reports that he used to be on his phone or laptop constantly. “I was always connected and I felt like I was always working,” he says. “How could I tell my kids to get off their phones if I was always in front of a screen myself?” Thus, in the evenings and at weekends, he takes his SIM card out of his smartphone and puts it into an old-style mobile phone that can only make calls and send text messages. “I’m not completely cut off from the world in case of emergencies, but the important thing is that I’m setting a better example for my kids and spending more quality time with them.”",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Today’s grandparents are joining their grandchildren on social media. In the UK the over-55s are joining social media sites in increasing numbers, meaning that they will soon be the second biggest user group of these sites, with 3.5 million users aged 55–64 and 2.9 million over-65s.",
+        "Sheila, aged 59, says, “I joined to see what my grandchildren are doing, as my daughter posts videos and photos of them. It’s a much better way to see what they’re doing than waiting for letters and photos in the post. That’s how we did it when I was a child, but I think I’m lucky I get to see so much more of their lives than my grandparents did.”",
+        "Unexpectedly, Sheila’s grandchildren are less likely to use social media sites themselves. Children under 17 in the UK are leaving the sites—only 2.2 million users are under 17—but they’re not going far from their smartphones. Chloe, aged 15, even sleeps with her phone. “It’s my alarm clock, so I have to,” she says. “I look at it before I go to sleep and as soon as I wake up.” Unlike her grandmother’s generation, Chloe’s age group is spending so much time on their phones at home that they are missing out on spending time with their friends in real life. Sheila, on the other hand, has made contact with old friends from school that she has not heard from in forty years.",
+        "“We use social media sites to arrange to meet all over the country,” she says. “They have changed my social life completely.”",
+        "Teenagers might have their parents to thank for their smartphone addiction (上瘾) as their parents were the early users of smartphones. Peter, 38 and a father of two teenagers, reports that he used to be on his phone or laptop constantly. “I was always connected and I felt like I was always working,” he says. “How could I tell my kids to get off their phones if I was always in front of a screen myself?” Thus, in the evenings and at weekends, he takes his SIM card out of his smartphone and puts it into an old-style mobile phone that can only make calls and send text messages. “I’m not completely cut off from the world in case of emergencies, but the important thing is that I’m setting a better example for my kids and spending more quality time with them.”"
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "More and more over-55s in the UK are joining social media sites to ______.",
+          "options": [
+            "develop their own websites",
+            "post their videos and photos",
+            "know about the lives of their grandchildren",
+            "form online habits similar to their children’s"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "The underlined sentence in Paragraph 2 means ______.",
+          "options": [
+            "it was boring to wait for letters and photos",
+            "it was good for kids to post letters and photos",
+            "they used to wait for letters and photos in the post",
+            "they were fond of hearing from their grandparents"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "From Paragraph 3, we can see that children under 17 in the UK ______.",
+          "options": [
+            "tend to use their smartphones less",
+            "are less interested in social media sites",
+            "like to interact with their parents online",
+            "spend more time with their friends in real life"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "Why does Peter use an old-style mobile phone in the evenings and at weekends?",
+          "options": [
+            "He tries to be a model for his kids.",
+            "He thinks it is convenient to do so.",
+            "He needs to make an emergency call.",
+            "He wants to be cut off from the world."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What is the main idea of the passage?",
+          "options": [
+            "How to develop better online habits.",
+            "Different online habits of different age groups.",
+            "Good habits of using smartphones and social media.",
+            "How to keep kids away from smartphones and social media."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 396,
+      "difficulty": "挑战",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-20",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 20,
+      "heading": "",
+      "title": "Cars are an important part of life in the United States",
+      "fallbackTitle": "Cars are an important part of life in the United States",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Cars are an important part of life in the United States. Without a car most people feel that they are poor. And even if a person is poor, he doesn’t feel really poor when he has a car.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Henry Ford was the man who first started making cars in large numbers. He probably didn’t know how much the car was going to change American culture. The car made the United States a nation on wheels. And it helped make the United States what it is today.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "There are three main reasons why the car became so popular in the United States. First of all, the country is a big one and Americans like to move around it. The car makes the travel the most comfortable and cheapest. With a car people can go to any place without spending a lot of money.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The second reason cars are popular is the fact that the United States never really developed a practical and cheap public travel system. Long distance trains have never been as common in the United States as they are in other parts of the world. Now there is a good system of air-service provided by planes. But it is too expensive to be used often.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The third reason is the most important one, though. The American spirit of independence is what really made cars popular. Americans don’t like waiting for a bus, or a train or even a plane. They don’t like to have to follow an exact timetable. A car gives them the freedom to plan their own time. And this is the freedom that Americans want most to have.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Less oil has caused a big problem for Americans. But the answer will not be a bigger system of public transportation. The real answer will have to be a new kind of car, one that does not use so much oil.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Cars are an important part of life in the United States. Without a car most people feel that they are poor. And even if a person is poor, he doesn’t feel really poor when he has a car.",
+        "Henry Ford was the man who first started making cars in large numbers. He probably didn’t know how much the car was going to change American culture. The car made the United States a nation on wheels. And it helped make the United States what it is today.",
+        "There are three main reasons why the car became so popular in the United States. First of all, the country is a big one and Americans like to move around it. The car makes the travel the most comfortable and cheapest. With a car people can go to any place without spending a lot of money.",
+        "The second reason cars are popular is the fact that the United States never really developed a practical and cheap public travel system. Long distance trains have never been as common in the United States as they are in other parts of the world. Now there is a good system of air-service provided by planes. But it is too expensive to be used often.",
+        "The third reason is the most important one, though. The American spirit of independence is what really made cars popular. Americans don’t like waiting for a bus, or a train or even a plane. They don’t like to have to follow an exact timetable. A car gives them the freedom to plan their own time. And this is the freedom that Americans want most to have.",
+        "Less oil has caused a big problem for Americans. But the answer will not be a bigger system of public transportation. The real answer will have to be a new kind of car, one that does not use so much oil."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "Which of the following statements is TRUE?",
+          "options": [
+            "In the United States only the rich own cars.",
+            "In the United States all the poor have no cars.",
+            "When an American has a car, he will never be poor.",
+            "An American will feel poor unless he has a car."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "We can learn from this passage that Americans ______.",
+          "options": [
+            "spend a lot of money traveling by car",
+            "travel a lot in their cars",
+            "seldom travel by plane",
+            "use public traffic often"
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "Which of the following is not told in the passage?",
+          "options": [
+            "Buses, trains and planes are not comfortable.",
+            "Traveling by car is not expensive.",
+            "Americans have the spirit of independence.",
+            "Americans often move from place to place."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "In the writer’s opinion, cars are popular in the United States mainly because ______.",
+          "options": [
+            "Americans like planning their own time",
+            "Americans does not have enough public transportation",
+            "Americans will not feel poor when they travel in their cars",
+            "Americans cannot move around without their own cars"
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "“A nation on wheels” in the second paragraph means that ______.",
+          "options": [
+            "everyone in the United States owns a car",
+            "the United States produces most of the cars in the world",
+            "cars play an important part in Americans’ life",
+            "the United States depend on car industry for its development"
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 313,
+      "difficulty": "挑战",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "shehui-21",
+      "catId": "shehui",
+      "catName": "社会生活类",
+      "number": 21,
+      "heading": "",
+      "title": "Nationwide, only about three percent of early childhood teachers are male in the U.S",
+      "fallbackTitle": "Nationwide, only about three percent of early childhood teachers are male in the U.S",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nationwide, only about three percent of early childhood teachers are male in the U.S.. Experts say this can have an impact on young children whose understanding of gender roles and identity are rapidly forming. Research has found that having access to diverse teachers is beneficial for children. For the youngest learners, it means they are more likely to get exposed to different varieties of play and communication. It also helps them develop healthy ideas around gender.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "“In our world and our society, we have very specific stereotypes (模式化形象) of gender roles,” said Mindi Reich-Shapiro, an assistant professor in the teacher education department of the Borough of Manhattan Community College, and one of the authors of a recent study. “It’s important for children to see other possibilities and other paths they can take.”",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Despite mostly feeling supported by colleagues and family members, many of the male educators surveyed in the study reported facing social or cultural resistance in their careers as early education teachers. Some also reported that there were parents surprised or concerned that their child had a male teacher. And they had been advised by colleagues or other staff not to hug children.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Reich-Shapiro and fellow researchers made several recommendations to increase male representation in the field. Low pay has long been acknowledged as a major issue in the early childhood field. Over 70% of male educators who said they intended to stay in the early education workforce noted an increased salary was a major motivating factor for them to commit to the career long-term. The report suggests paying all early childhood educators the way elementary school teachers are paid.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "Cities and programs should establish support groups for male early childhood educators and provide mentoring and professional development advice for male educators and their program leaders.",
+          "translation": ""
+        },
+        {
+          "type": "p",
+          "text": "The authors also suggest that traditional recruitment approaches for early childhood educators “do not address the gender gap in the field.” They recommend providing young men opportunities to work with children through training and volunteer programs, targeting groups of men who are considering a career change, such as fathers.",
+          "translation": ""
+        }
+      ],
+      "paragraphs": [
+        "Nationwide, only about three percent of early childhood teachers are male in the U.S.. Experts say this can have an impact on young children whose understanding of gender roles and identity are rapidly forming. Research has found that having access to diverse teachers is beneficial for children. For the youngest learners, it means they are more likely to get exposed to different varieties of play and communication. It also helps them develop healthy ideas around gender.",
+        "“In our world and our society, we have very specific stereotypes (模式化形象) of gender roles,” said Mindi Reich-Shapiro, an assistant professor in the teacher education department of the Borough of Manhattan Community College, and one of the authors of a recent study. “It’s important for children to see other possibilities and other paths they can take.”",
+        "Despite mostly feeling supported by colleagues and family members, many of the male educators surveyed in the study reported facing social or cultural resistance in their careers as early education teachers. Some also reported that there were parents surprised or concerned that their child had a male teacher. And they had been advised by colleagues or other staff not to hug children.",
+        "Reich-Shapiro and fellow researchers made several recommendations to increase male representation in the field. Low pay has long been acknowledged as a major issue in the early childhood field. Over 70% of male educators who said they intended to stay in the early education workforce noted an increased salary was a major motivating factor for them to commit to the career long-term. The report suggests paying all early childhood educators the way elementary school teachers are paid.",
+        "Cities and programs should establish support groups for male early childhood educators and provide mentoring and professional development advice for male educators and their program leaders.",
+        "The authors also suggest that traditional recruitment approaches for early childhood educators “do not address the gender gap in the field.” They recommend providing young men opportunities to work with children through training and volunteer programs, targeting groups of men who are considering a career change, such as fathers."
+      ],
+      "questions": [
+        {
+          "num": 1,
+          "stem": "What do we learn from the first paragraph about early childhood education in the U.S.?",
+          "options": [
+            "It helps raise children’s awareness of gender roles.",
+            "It exposes children to different ways of interaction.",
+            "It is negatively impacted by a lack of male teachers.",
+            "It clearly aims to form children’s identity through play."
+          ],
+          "answer": "C",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 2,
+          "stem": "What does Mindi Reich-Shapiro emphasize in her comment on childhood education?",
+          "options": [
+            "The importance of broadening children’s horizons.",
+            "The responsibilities of fathers for children’s growth.",
+            "The urgency of creating teacher education programs.",
+            "The role of teachers in motivating children to learn."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 3,
+          "stem": "What do we learn about male teachers from their responses in the study?",
+          "options": [
+            "Some of them find it awkward when hugging children.",
+            "They feel pressured to keep up with female colleagues.",
+            "They find it hard to meet the expectations of kids’ parents.",
+            "Many of them feel prejudiced against socially and culturally."
+          ],
+          "answer": "D",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 4,
+          "stem": "What is needed for men to commit to early childhood education?",
+          "options": [
+            "Higher pay.",
+            "Job security.",
+            "Social recognition.",
+            "Better working conditions."
+          ],
+          "answer": "A",
+          "explanation": "",
+          "evidence": ""
+        },
+        {
+          "num": 5,
+          "stem": "What do the authors of the study recommend to bridge the gender gap in early childhood education?",
+          "options": [
+            "Recruiting young men who have a passion for educating young children.",
+            "Taking measures to attract prospective male teachers to work in the field.",
+            "Persuading prospective fathers to consider a change in their career.",
+            "Providing male teachers with more opportunities for advancement."
+          ],
+          "answer": "B",
+          "explanation": "",
+          "evidence": ""
+        }
+      ],
+      "wordCount": 345,
+      "difficulty": "挑战",
+      "file": "社会生活类专项训.md",
+      "translations": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
       "id": "chongci-01",
       "catId": "chongci",
       "catName": "冲刺训练",
@@ -7552,10 +9598,10 @@
     }
   ],
   "stats": {
-    "articles": 63,
-    "questions": 304,
-    "words": 16470,
-    "withAnswers": 304,
+    "articles": 80,
+    "questions": 388,
+    "words": 21279,
+    "withAnswers": 388,
     "withTranslations": 63
   }
 }
