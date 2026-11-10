@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   reactStrictMode: true,
   eslint: { ignoreDuringBuilds: true },
+  devIndicators: false,
 };
 
 export default nextConfig;
