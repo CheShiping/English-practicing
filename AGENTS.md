@@ -58,7 +58,7 @@
 - [ ] 证据（命令 + 结果）写入 `feature_list.json` 的 `evidence` 或 `progress.md`
 - [ ] 内容类改动已跑 `npm run content`，生成文件与源文件一致
 - [ ] 仓库仍可从干净状态按启动路径恢复
-- [ ] 验证通过后直接创建 commit，无需等待用户手动提交
+- [ ] 验证通过后直接 commit 并 push，无需等待用户手动提交或推送
 
 ## 范围边界
 
@@ -73,7 +73,7 @@
 1. 更新 `progress.md`：当前状态、已完成、下一步、阻塞。
 2. 更新 `feature_list.json` 的状态与 `evidence`。
 3. 记录未解决风险；跨会话的大改动写 `session-handoff.md`。
-4. 验证通过后直接 `git commit`，不要等用户手动提交；`git push` 仅在用户明确要求或确认后执行。不要提交 `.next/`、`out/`、`node_modules/`。
+4. 验证通过后直接 `git commit` 并 `git push`，不要等用户手动提交或推送。不要提交 `.next/`、`out/`、`node_modules/`。
 5. 确认下一会话可直接运行 `init.ps1` / `init.sh`。
 
 仓库应始终保持可随时重启的干净状态。
