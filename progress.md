@@ -87,6 +87,13 @@
 - `next.config.ts` - 关闭 Next.js 开发指示器（`devIndicators: false`），移除开发模式左下角黑色 N
 - 证据：`npx tsc --noEmit` exit 0；`npm run build` exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）；390px 与 320px 视口实测所有页面 `scrollWidth === innerWidth` 无横向溢出，并复核首页、文库、生词、数据、设置、阅读器、题目/更多弹层、阅读排版弹窗与单词卡截图
 
+## 2026-11-10 全站答案与解析补全
+
+- 新增 `src/data/answers/yingyong-03-04.json`（应用文 Passage 3-4，10 题）
+- 新增 `src/data/answers/lishi-03-12.json`（历史人文 Passage 3-12，50 题）
+- 每题包含 `answer`、中文 `explanation` 与 `evidence` 原文依据；阅读器「答案 / 解析」按钮与交卷后的答案区均可展示
+- 证据：`npm run content` 显示「含答案: 304 题」；校验脚本确认 304 题 answer 与 explanation 均非空（缺失 0）；`npx tsc --noEmit` exit 0；`npm run build` exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）
+
 ## 完成证据
 
 - [x] 类型检查通过：`npx tsc --noEmit`（exit 0）

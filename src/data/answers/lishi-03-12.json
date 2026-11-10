@@ -1,0 +1,272 @@
+{
+  "lishi-03": {
+    "1": {
+      "answer": "B",
+      "explanation": "第三段说给某人挑礼物时，必须先了解对方喜好，还要“shop for days”才能找到完美的礼物，说明这是一件费时费力的难事。",
+      "evidence": "you will have to know what the person likes and shop for days before you can locate the perfect gift"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第二段说在中国当着送礼人的面拆礼物“not polite”，礼物要等客人离开后才看；因此对中国人来说，当面拆礼物是不寻常的做法。",
+      "evidence": "In China, it is not polite to open a gift in front of the gift giver"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "文章开头说节日购物、包装、送礼这一过程“exhausting and time-consuming”，第三段又说挑礼物要花好几天，说明中美送礼的共同点是人们都为此投入大量时间。B 是美国人的做法，C、D 文中没有依据。",
+      "evidence": "is exhausting and time-consuming, but it takes place every year"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "作者在第三段明确建议，避免购物麻烦的好办法是购买礼品卡送给亲友，让他们自己挑选想要的东西；A、B、C 都是文中描述的现象，不是作者的建议。",
+      "evidence": "Another good way to avoid all that shopping hassle is to purchase a gift card"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "作者以旁观者的口吻比较中美送礼习俗，既陈述美国当面拆礼物、退换礼物的现象，也给出礼品卡等实用建议，整体态度是客观陈述，并非漠不关心、讽刺或一味支持。",
+      "evidence": "There is considerable difference between the cultures in China and western countries when it comes to gift giving."
+    }
+  },
+  "lishi-04": {
+    "1": {
+      "answer": "A",
+      "explanation": "第二段开头直接说明乡村音乐通常讲述“everyday life and feeling”，即日常生活和情感。",
+      "evidence": "Country music usually talks of everyday life and feeling."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第三段第一句指出乡村音乐“developed in the Southern United States”，即发展于美国南部。",
+      "evidence": "Country music developed in the Southern United States."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "第四段说 20 世纪 20 年代人们开始在电台播放乡村歌曲并把它们录成唱片，因此录唱片始于 1920 年代。",
+      "evidence": "In the 1920s, people played country songs on the radio and they made them into the records."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第五段说乡村居民到城镇找工作时把音乐一起带去，乡村音乐因此不断变化并风靡全美；这正是它流行起来的原因。",
+      "evidence": "When people in the countryside moved to towns and cities to look for work, they took their music with them."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "最后一段明确说 John Denver 是美国 20 世纪 70 年代最著名的乡村歌手之一，他的歌曲《Take Me Home, Country Roads》至今仍广为人知。",
+      "evidence": "John Denver was one of America’s most famous country singers in the 1970s."
+    }
+  },
+  "lishi-05": {
+    "1": {
+      "answer": "B",
+      "explanation": "全文按时间顺序介绍实物交换、物物交换、硬币、纸币到电子货币的演变，最合适的标题是“货币交换的历史”。",
+      "evidence": "In ancient times wealth was measured and exchanged in things that could be touched"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第一段说古代财富用食物、工具、贵金属和宝石等实物衡量和交换，随后物物交换才被硬币取代，因此最早的交换形式是物物交换的商品。",
+      "evidence": "Then the barter system was replaced by coins"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "作者列举食物、工具、贵金属和宝石，是为了说明它们都是“things that could be touched”，即有形的物质对象，与后文纸币、电子货币等无形形式形成对比。",
+      "evidence": "things that could be touched: food, tools, and precious metals and stones"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "第一段说硬币仍有真实价值，因为它们是“pieces of rare metal”，即由稀有金属制成，所以 C 正确。",
+      "evidence": "coins, which still had real value since they were pieces of rare metal"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "第二段说电子转账可以让不同银行、公司和国家之间瞬间收发资金，并未说它只限于小额交易，因此 C 是文中没有支持的 statements。",
+      "evidence": "allows money to be instantly sent and received by different banks, companies, and countries"
+    }
+  },
+  "lishi-06": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段先描述这些人排斥现代音乐、服装、绘画和建筑，随后点明原因是他们凡事追求完美，并以“过去的标准”来衡量事物，因此 D 最准确。",
+      "evidence": "they take their standards of perfection from the past"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "第二段说“many artists do not succeed”，即确实有一些艺术家会失败，但不能因此断言所有艺术家都失败；C 与作者观点一致。",
+      "evidence": "It is, of course, true that many artists do not succeed in their work"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第二段说如果是绘画，失败只关乎艺术家本人；如果是建筑，失败会“concerns others too”，因为它可能破坏整体环境的美感。",
+      "evidence": "if it is a building, his failure concerns others too"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "第三段原句是“We can’t judge every modern building by the standards of the ancient time”，即不能用古代标准评判所有现代建筑，C 与原句完全对应。",
+      "evidence": "We can’t judge every modern building by the standards of the ancient time"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "“Technologically, the modern buildings are more advanced”是在说现代建筑师掌握了更先进的技术和材料，因此建成的现代建筑在技术上更先进；并不是说古代建筑师没有技术。",
+      "evidence": "with his greater resources of knowledge and materials"
+    }
+  },
+  "lishi-07": {
+    "1": {
+      "answer": "C",
+      "explanation": "文章开头说人类学研究人们如何生活，并引用希腊词根“anthropos”（human being）和“logy”（the science of），说明它是对人类的研究。",
+      "evidence": "“anthropos” means “human being” and “logy” means “the science of”"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第二段说人类进步的第二步包括种植食物的人，这一步在“invention and religion”方面取得了进步，A 与之对应。",
+      "evidence": "In this step, there was progress in invention and religion."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第三段说人类学家“always seek new information about people”，即仍在不断寻找关于人的新发现；A、C、D 均与原文不符。",
+      "evidence": "Anthropologists always seek new information about people."
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "第三段说埃塞俄比亚和肯尼亚的新证据表明，人类存在的时间比原先认为的更早，D 正是这一发现的概括。",
+      "evidence": "humans existed earlier in history than it was previously believed"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "全文围绕人类学的定义、两大分支、人类进步的三个阶段和最新发现展开，中心词是 anthropology，因此最佳标题是 Anthropology。",
+      "evidence": "Anthropology can be divided into two areas."
+    }
+  },
+  "lishi-08": {
+    "1": {
+      "answer": "C",
+      "explanation": "文章第一句说古代人对地球表面的性质“had little idea”，只是住在海边的人知道有陆地和海洋，因此 C 正确。",
+      "evidence": "Ancient people had little idea of the nature of the earth’s surface."
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第二段说明 continent 一词来自拉丁语“continens”，意为 continuous，因此它源自拉丁语。",
+      "evidence": "became known as continent in English from the Latin “continens”"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "第四段说许多地理学家把亚洲加欧洲的陆块称为 Eurasia，因此 Eurasia 指欧洲和亚洲。",
+      "evidence": "Many geographers speak of the landmass of Asia plus Europe as Eurasia"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "第四段说非洲和亚洲只由西奈地峡相连，而 isthmus 在希腊语中意为“a narrow passage”，即狭窄通道。",
+      "evidence": "Africa and Asia are connected by only the small Sinai Isthmus"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "第四段说欧亚大陆加非洲有时被称为 World Island，这三块陆地合起来拥有约 85% 的世界人口，因此是住在 World Island 上。",
+      "evidence": "Eurasia plus Africa is sometimes called the World Island"
+    }
+  },
+  "lishi-09": {
+    "1": {
+      "answer": "A",
+      "explanation": "第一段说富兰克林的父母离开英格兰，迁往英国殖民地马萨诸塞，因此他是英国血统。",
+      "evidence": "They left England and moved to the English colony of Massachusetts"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第一段明确说他们迁往马萨诸塞是为了“escape persecution for their religion”，即逃避宗教迫害。",
+      "evidence": "in order to escape persecution (迫害) for their religion"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "富兰克林十岁离开学校后“worked for his father for two years”，因此十一岁时他给父亲工作。",
+      "evidence": "worked for his father for two years"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "第一段说他想独立，于是去了费城，并在那里创办自己的报纸、努力工作攒钱；D“想自己谋生”最符合“wanted to be independent”。",
+      "evidence": "Because he wanted to be independent, he went to Philadelphia."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文中说年鉴包含农民需要的信息、富兰克林的格言以及对生活的观察；“Poor Richard’s experiences”不是年鉴内容，Poor Richard 只是书名中的人物。",
+      "evidence": "Most almanacs contained information for farmers"
+    }
+  },
+  "lishi-10": {
+    "1": {
+      "answer": "A",
+      "explanation": "第一段说对许多人而言，圣诞节是纪念耶稣基督的诞生（“it honors the birth of Jesus Christ”），因此人们庆祝它是为了表达对耶稣的敬意。",
+      "evidence": "for many, it honors the birth of Jesus Christ"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第三段明确说耶稣去世后的最初两个世纪里“Christmas was not celebrated at all”，因此 D“耶稣死后不久圣诞节就广泛庆祝”与原文相反。",
+      "evidence": "during the first two centuries after Jesus’ death, Christmas was not celebrated at all"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "“caught on”表示“流行起来”。前文说寄圣诞卡是个好主意，随后“it soon caught on”，即很快受到人们欢迎。",
+      "evidence": "It was a good idea and it soon caught on."
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "文章说荷兰人来到美国时把他们的 St. Nicholas（Sinterklaas）也带来，Santa Claus 这个名字就来自荷兰语 Sinterklaas，因此圣诞老人的故事与荷兰人有关。",
+      "evidence": "Sinterklaas is therefore where we get the name Santa Claus."
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "文中说圣尼古拉斯夜里把一袋金子从窗户扔进屋里，金子恰好落进挂着晾干的袜子里，后来才演变成把礼物放进袜子的习俗。",
+      "evidence": "The bag of gold landed in one of the daughters’ stockings that had been hung up to dry."
+    }
+  },
+  "lishi-11": {
+    "1": {
+      "answer": "B",
+      "explanation": "第一段直接说当时对林肯批评很多，“He was not at all popular”，即他完全不受欢迎。",
+      "evidence": "He was not at all popular."
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "第一段说林肯只是“out of courtesy”才被邀请，因为当时他是美国总统；A、B、D 描述的是主要演讲者 Edward Everett。",
+      "evidence": "He had been invited to speak at Gettysburg only out of courtesy."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第二段说林肯在去葛底斯堡的火车上准备演讲，深夜疲惫地在旅馆里又“worked briefly”，说明他当时很忙、准备时间很少。",
+      "evidence": "Lincoln prepared his speech on the train while going to Gettysburg."
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "演讲结束时“there was little applause”，报纸起初也批评它，说明这篇演讲一开始并未受到好评；但后来人们逐渐理解并高度评价它。",
+      "evidence": "At the end there was little applause."
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "文章说这篇演说是美国历史上“one of the greatest orations”，即最伟大的演说之一，而不是“the greatest”（最伟大的），D 把“之一”改成了“唯一”，因此不正确。",
+      "evidence": "one of the greatest orations ever given in American history"
+    }
+  },
+  "lishi-12": {
+    "1": {
+      "answer": "C",
+      "explanation": "全文以麦当劳兄弟的创业经历为主线：他们先经营剧院、烤肉店和汽车餐厅，后来开出这家快餐店，又允许复制十家分店，最后与克罗克合作；因此主要讲的是两兄弟的商业经历。",
+      "evidence": "They had run their own businesses for years, first a theater, then a barbecue (烤肉) restaurant, then another drive-in."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第一段列举兄弟俩经营过的生意：a theater（剧院）、a barbecue restaurant（烤肉店）、another drive-in（汽车餐厅），没有提到 cinema（电影院）。",
+      "evidence": "first a theater, then a barbecue (烤肉) restaurant, then another drive-in"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "克罗克一眼看出这家快餐店的独特吸引力，买下特许经营权并把它发展成家喻户晓的品牌，说明他是个有眼光的优秀商人；A、B、C 都无法从文中推出。",
+      "evidence": "He quickly saw the unique appeal of the brothers’ fast-food restaurants"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "兄弟俩推出缩短的菜单、快速服务、无服务员、无小费的新模式，并制定严格统一的制作流程，这些创新带来了成功，说明创造力是商业成功的重要因素。",
+      "evidence": "they offered a new, shortened menu"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "unique 意为“独特的、与众不同的”，与 peculiar（独特的、特有的）最接近；句中“unique appeal”指这家快餐店独有的吸引力。",
+      "evidence": "He quickly saw the unique appeal of the brothers’ fast-food restaurants"
+    }
+  }
+}

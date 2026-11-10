@@ -65,6 +65,14 @@
       ],
       "status": "done",
       "evidence": "2026-11-10：npm run content 显示「含译文: 63 篇」；校验脚本确认 63 篇所有 block 均有 translation（缺失 0）；npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）"
+    },
+    {
+      "id": "feat-009",
+      "name": "补全全部题目答案与解析",
+      "description": "为缺失答案的 60 道题补写答案、中文解析与原文依据，覆盖应用文 Passage 3-4 与历史人文 Passage 3-12，使阅读器答题后可直接显示答案与解析",
+      "dependencies": ["feat-002"],
+      "status": "done",
+      "evidence": "2026-11-10：新增 src/data/answers/yingyong-03-04.json、lishi-03-12.json；npm run content 显示「含答案: 304 题」；校验 304 题 answer 与 explanation 均非空（缺失 0）；npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）"
     }
   ]
 }

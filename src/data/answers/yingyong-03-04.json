@@ -1,0 +1,56 @@
+{
+  "yingyong-03": {
+    "1": {
+      "answer": "C",
+      "explanation": "Step 1 明确说可以在纸上画图、写名字，做任何让它“special to you”的装饰；因此画图是为了让风向袋对你而言与众不同，而不是为了让它有趣、变重或变结实。",
+      "evidence": "Do anything that will make it special to you."
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "Step 2 要把纸卷成筒状，并用胶带在两端和中间固定，所以这一步需要的是 tape；ribbons 在 Step 4 使用，pencil 在 Step 3 使用，string 也在 Step 3 使用。",
+      "evidence": "Then make them together with the tape at each end and in the middle."
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "Step 4 的操作顺序是先在筒口打五个孔，把丝带穿过每个孔，然后在末端打结；穿完丝带后的下一步就是在丝带上打结。",
+      "evidence": "Put a ribbon through each of the holes. Tie a knot in the ends."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "文章在说明风向袋如何工作时指出“The shape of the tube plays an important part”，即筒的形状是关键，因此最重要的是它的形状。",
+      "evidence": "The shape of the tube plays an important part."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "全文先列出所需材料，再按 Step 1 到 Step 4 说明制作过程，最后解释玩法，主要目的就是教读者如何制作风向袋。",
+      "evidence": "You just need to follow a few easy steps."
+    }
+  },
+  "yingyong-04": {
+    "1": {
+      "answer": "A",
+      "explanation": "第一条规则是“Never leave the cooker unwatched when it is in use”，即使用时绝不能无人看管，也就是要密切留意高压锅。",
+      "evidence": "Never leave the cooker unwatched when it is in use."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第五条说不要强行打开锅盖，应让锅冷却或用水冲凉后再开，因此正确做法是等锅冷却后开盖。",
+      "evidence": "Allow the cooker to cool or run it under cool water before trying to open the cover."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第六条明确说“Mild detergent and hot water work the best”，即温和洗涤剂加热水清洁效果最好；A、C、D 都与原文相反。",
+      "evidence": "Mild detergent (洗涤剂) and hot water work the best."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第二条警告说装得太满会堵住排气管并可能导致高压锅爆炸，因此过度装填食物和水是最危险的操作。",
+      "evidence": "Overfilling the cooker may block the vent (排气) pipe and cause the cooker to explode."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文章用六条规则告诉读者使用高压锅时该做什么、不该做什么，属于说明操作方法的指导性文字，因此写作目的是 instruct（指导）。",
+      "evidence": ""
+    }
+  }
+}

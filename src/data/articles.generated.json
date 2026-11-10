@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T04:18:10.877Z",
+  "generatedAt": "2026-11-10T07:27:19.708Z",
   "categories": [
     {
       "id": "kepu",
@@ -2853,9 +2853,9 @@
             "special",
             "strong"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "Step 1 明确说可以在纸上画图、写名字，做任何让它“special to you”的装饰；因此画图是为了让风向袋对你而言与众不同，而不是为了让它有趣、变重或变结实。",
+          "evidence": "Do anything that will make it special to you."
         },
         {
           "num": 2,
@@ -2866,9 +2866,9 @@
             "A pencil.",
             "A string."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "Step 2 要把纸卷成筒状，并用胶带在两端和中间固定，所以这一步需要的是 tape；ribbons 在 Step 4 使用，pencil 在 Step 3 使用，string 也在 Step 3 使用。",
+          "evidence": "Then make them together with the tape at each end and in the middle."
         },
         {
           "num": 3,
@@ -2879,9 +2879,9 @@
             "Tie knots in the ribbons.",
             "Put a string through the hole."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "Step 4 的操作顺序是先在筒口打五个孔，把丝带穿过每个孔，然后在末端打结；穿完丝带后的下一步就是在丝带上打结。",
+          "evidence": "Put a ribbon through each of the holes. Tie a knot in the ends."
         },
         {
           "num": 4,
@@ -2892,9 +2892,9 @@
             "The color of the paper.",
             "The number of the holes."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "文章在说明风向袋如何工作时指出“The shape of the tube plays an important part”，即筒的形状是关键，因此最重要的是它的形状。",
+          "evidence": "The shape of the tube plays an important part."
         },
         {
           "num": 5,
@@ -2905,9 +2905,9 @@
             "To show how a windsock is made.",
             "To explain how to describe something."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "全文先列出所需材料，再按 Step 1 到 Step 4 说明制作过程，最后解释玩法，主要目的就是教读者如何制作风向袋。",
+          "evidence": "You just need to follow a few easy steps."
         }
       ],
       "wordCount": 258,
@@ -2993,9 +2993,9 @@
             "never leave the cooker empty",
             "never turn off the stove"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第一条规则是“Never leave the cooker unwatched when it is in use”，即使用时绝不能无人看管，也就是要密切留意高压锅。",
+          "evidence": "Never leave the cooker unwatched when it is in use."
         },
         {
           "num": 2,
@@ -3006,9 +3006,9 @@
             "with force when the cooker is hot",
             "after the cooker is cooled down"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第五条说不要强行打开锅盖，应让锅冷却或用水冲凉后再开，因此正确做法是等锅冷却后开盖。",
+          "evidence": "Allow the cooker to cool or run it under cool water before trying to open the cover."
         },
         {
           "num": 3,
@@ -3019,9 +3019,9 @@
             "Soapy water will often damage the cooker.",
             "Sand can be used to clean the cooker."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第六条明确说“Mild detergent and hot water work the best”，即温和洗涤剂加热水清洁效果最好；A、C、D 都与原文相反。",
+          "evidence": "Mild detergent (洗涤剂) and hot water work the best."
         },
         {
           "num": 4,
@@ -3032,9 +3032,9 @@
             "Cooling the cooker with cold water.",
             "Setting the cooking time too short."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第二条警告说装得太满会堵住排气管并可能导致高压锅爆炸，因此过度装填食物和水是最危险的操作。",
+          "evidence": "Overfilling the cooker may block the vent (排气) pipe and cause the cooker to explode."
         },
         {
           "num": 5,
@@ -3045,8 +3045,8 @@
             "instruct",
             "narrate"
           ],
-          "answer": "",
-          "explanation": "",
+          "answer": "C",
+          "explanation": "文章用六条规则告诉读者使用高压锅时该做什么、不该做什么，属于说明操作方法的指导性文字，因此写作目的是 instruct（指导）。",
           "evidence": ""
         }
       ],
@@ -3442,9 +3442,9 @@
             "must-be job",
             "arranged task"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第三段说给某人挑礼物时，必须先了解对方喜好，还要“shop for days”才能找到完美的礼物，说明这是一件费时费力的难事。",
+          "evidence": "you will have to know what the person likes and shop for days before you can locate the perfect gift"
         },
         {
           "num": 2,
@@ -3455,9 +3455,9 @@
             "general",
             "unusual"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第二段说在中国当着送礼人的面拆礼物“not polite”，礼物要等客人离开后才看；因此对中国人来说，当面拆礼物是不寻常的做法。",
+          "evidence": "In China, it is not polite to open a gift in front of the gift giver"
         },
         {
           "num": 3,
@@ -3468,9 +3468,9 @@
             "people are eager to get a gift from a friend",
             "people are less willing to give gifts"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "文章开头说节日购物、包装、送礼这一过程“exhausting and time-consuming”，第三段又说挑礼物要花好几天，说明中美送礼的共同点是人们都为此投入大量时间。B 是美国人的做法，C、D 文中没有依据。",
+          "evidence": "is exhausting and time-consuming, but it takes place every year"
         },
         {
           "num": 4,
@@ -3481,9 +3481,9 @@
             "Express the appreciation for the gift you receive.",
             "Buying a present card to avoid the trouble in shopping."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "作者在第三段明确建议，避免购物麻烦的好办法是购买礼品卡送给亲友，让他们自己挑选想要的东西；A、B、C 都是文中描述的现象，不是作者的建议。",
+          "evidence": "Another good way to avoid all that shopping hassle is to purchase a gift card"
         },
         {
           "num": 5,
@@ -3494,9 +3494,9 @@
             "objective",
             "supportive"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "作者以旁观者的口吻比较中美送礼习俗，既陈述美国当面拆礼物、退换礼物的现象，也给出礼品卡等实用建议，整体态度是客观陈述，并非漠不关心、讽刺或一味支持。",
+          "evidence": "There is considerable difference between the cultures in China and western countries when it comes to gift giving."
         }
       ],
       "wordCount": 330,
@@ -3566,9 +3566,9 @@
             "lives of workers",
             "workers’ feeling"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第二段开头直接说明乡村音乐通常讲述“everyday life and feeling”，即日常生活和情感。",
+          "evidence": "Country music usually talks of everyday life and feeling."
         },
         {
           "num": 2,
@@ -3579,9 +3579,9 @@
             "in the Northern United States",
             "in the Western United States"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第三段第一句指出乡村音乐“developed in the Southern United States”，即发展于美国南部。",
+          "evidence": "Country music developed in the Southern United States."
         },
         {
           "num": 3,
@@ -3592,9 +3592,9 @@
             "in the 1970s",
             "in 1970"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第四段说 20 世纪 20 年代人们开始在电台播放乡村歌曲并把它们录成唱片，因此录唱片始于 1920 年代。",
+          "evidence": "In the 1920s, people played country songs on the radio and they made them into the records."
         },
         {
           "num": 4,
@@ -3605,9 +3605,9 @@
             "Because country music talked about city people’s lives.",
             "Because city people liked the country."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第五段说乡村居民到城镇找工作时把音乐一起带去，乡村音乐因此不断变化并风靡全美；这正是它流行起来的原因。",
+          "evidence": "When people in the countryside moved to towns and cities to look for work, they took their music with them."
         },
         {
           "num": 5,
@@ -3618,9 +3618,9 @@
             "John Denver.",
             "A doctor."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "最后一段明确说 John Denver 是美国 20 世纪 70 年代最著名的乡村歌手之一，他的歌曲《Take Me Home, Country Roads》至今仍广为人知。",
+          "evidence": "John Denver was one of America’s most famous country singers in the 1970s."
         }
       ],
       "wordCount": 193,
@@ -3669,9 +3669,9 @@
             "The Development of Paper Currencies.",
             "Current Problems in the Economy."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "全文按时间顺序介绍实物交换、物物交换、硬币、纸币到电子货币的演变，最合适的标题是“货币交换的历史”。",
+          "evidence": "In ancient times wealth was measured and exchanged in things that could be touched"
         },
         {
           "num": 2,
@@ -3682,9 +3682,9 @@
             "Coin currency.",
             "Intangible forms."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第一段说古代财富用食物、工具、贵金属和宝石等实物衡量和交换，随后物物交换才被硬币取代，因此最早的交换形式是物物交换的商品。",
+          "evidence": "Then the barter system was replaced by coins"
         },
         {
           "num": 3,
@@ -3695,9 +3695,9 @@
             "difficult things to obtain",
             "material objects"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "作者列举食物、工具、贵金属和宝石，是为了说明它们都是“things that could be touched”，即有形的物质对象，与后文纸币、电子货币等无形形式形成对比。",
+          "evidence": "things that could be touched: food, tools, and precious metals and stones"
         },
         {
           "num": 4,
@@ -3708,9 +3708,9 @@
             "were made of precious metals",
             "could become collector’s items"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "第一段说硬币仍有真实价值，因为它们是“pieces of rare metal”，即由稀有金属制成，所以 C 正确。",
+          "evidence": "coins, which still had real value since they were pieces of rare metal"
         },
         {
           "num": 5,
@@ -3721,9 +3721,9 @@
             "They are still limited to small transactions (交易).",
             "They are dependent on good telecommunications systems."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "第二段说电子转账可以让不同银行、公司和国家之间瞬间收发资金，并未说它只限于小额交易，因此 C 是文中没有支持的 statements。",
+          "evidence": "allows money to be instantly sent and received by different banks, companies, and countries"
         }
       ],
       "wordCount": 121,
@@ -3774,9 +3774,9 @@
             "they take their standards of perfection from the Greek",
             "they look at things by the standards of the past"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第一段先描述这些人排斥现代音乐、服装、绘画和建筑，随后点明原因是他们凡事追求完美，并以“过去的标准”来衡量事物，因此 D 最准确。",
+          "evidence": "they take their standards of perfection from the past"
         },
         {
           "num": 2,
@@ -3787,9 +3787,9 @@
             "it is true to say some artists fail in their work",
             "it is true to say only painters fail in their work"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "第二段说“many artists do not succeed”，即确实有一些艺术家会失败，但不能因此断言所有艺术家都失败；C 与作者观点一致。",
+          "evidence": "It is, of course, true that many artists do not succeed in their work"
         },
         {
           "num": 3,
@@ -3800,9 +3800,9 @@
             "concerns only the artist",
             "concerns all the people in the world"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第二段说如果是绘画，失败只关乎艺术家本人；如果是建筑，失败会“concerns others too”，因为它可能破坏整体环境的美感。",
+          "evidence": "if it is a building, his failure concerns others too"
         },
         {
           "num": 4,
@@ -3813,9 +3813,9 @@
             "we can’t judge all the modern buildings by the ancient standards",
             "we can’t judge modern buildings"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "第三段原句是“We can’t judge every modern building by the standards of the ancient time”，即不能用古代标准评判所有现代建筑，C 与原句完全对应。",
+          "evidence": "We can’t judge every modern building by the standards of the ancient time"
         },
         {
           "num": 5,
@@ -3826,9 +3826,9 @@
             "the modern buildings are advanced because they are completely different from the ancient buildings",
             "the modern buildings are more beautiful"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "“Technologically, the modern buildings are more advanced”是在说现代建筑师掌握了更先进的技术和材料，因此建成的现代建筑在技术上更先进；并不是说古代建筑师没有技术。",
+          "evidence": "with his greater resources of knowledge and materials"
         }
       ],
       "wordCount": 240,
@@ -3880,9 +3880,9 @@
             "human beings",
             "different cultures"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "文章开头说人类学研究人们如何生活，并引用希腊词根“anthropos”（human being）和“logy”（the science of），说明它是对人类的研究。",
+          "evidence": "“anthropos” means “human being” and “logy” means “the science of”"
         },
         {
           "num": 2,
@@ -3893,9 +3893,9 @@
             "The first civilization came into being.",
             "People started to learn science and arts."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第二段说人类进步的第二步包括种植食物的人，这一步在“invention and religion”方面取得了进步，A 与之对应。",
+          "evidence": "In this step, there was progress in invention and religion."
         },
         {
           "num": 3,
@@ -3906,9 +3906,9 @@
             "The study of human beings began in Egypt and part of Asia.",
             "The first civilization appeared only in Egypt and part of Asia."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第三段说人类学家“always seek new information about people”，即仍在不断寻找关于人的新发现；A、C、D 均与原文不符。",
+          "evidence": "Anthropologists always seek new information about people."
         },
         {
           "num": 4,
@@ -3919,9 +3919,9 @@
             "There were more civilizations in Egypt than in parts of Asia.",
             "There is a longer history of human beings than it was thought before."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第三段说埃塞俄比亚和肯尼亚的新证据表明，人类存在的时间比原先认为的更早，D 正是这一发现的概括。",
+          "evidence": "humans existed earlier in history than it was previously believed"
         },
         {
           "num": 5,
@@ -3932,9 +3932,9 @@
             "The Civilizations.",
             "The Study of Anthropologists."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "全文围绕人类学的定义、两大分支、人类进步的三个阶段和最新发现展开，中心词是 anthropology，因此最佳标题是 Anthropology。",
+          "evidence": "Anthropology can be divided into two areas."
         }
       ],
       "wordCount": 140,
@@ -3992,9 +3992,9 @@
             "little about the surface of the earth",
             "many people lived on the World Island"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "文章第一句说古代人对地球表面的性质“had little idea”，只是住在海边的人知道有陆地和海洋，因此 C 正确。",
+          "evidence": "Ancient people had little idea of the nature of the earth’s surface."
         },
         {
           "num": 2,
@@ -4005,9 +4005,9 @@
             "the Greek",
             "the Hebrew"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第二段说明 continent 一词来自拉丁语“continens”，意为 continuous，因此它源自拉丁语。",
+          "evidence": "became known as continent in English from the Latin “continens”"
         },
         {
           "num": 3,
@@ -4018,9 +4018,9 @@
             "Africa and Asia",
             "Europe, Asia and Africa"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第四段说许多地理学家把亚洲加欧洲的陆块称为 Eurasia，因此 Eurasia 指欧洲和亚洲。",
+          "evidence": "Many geographers speak of the landmass of Asia plus Europe as Eurasia"
         },
         {
           "num": 4,
@@ -4031,9 +4031,9 @@
             "A narrow passage.",
             "A wide land."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "第四段说非洲和亚洲只由西奈地峡相连，而 isthmus 在希腊语中意为“a narrow passage”，即狭窄通道。",
+          "evidence": "Africa and Asia are connected by only the small Sinai Isthmus"
         },
         {
           "num": 5,
@@ -4044,9 +4044,9 @@
             "in Eurasia",
             "on the World Island"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第四段说欧亚大陆加非洲有时被称为 World Island，这三块陆地合起来拥有约 85% 的世界人口，因此是住在 World Island 上。",
+          "evidence": "Eurasia plus Africa is sometimes called the World Island"
         }
       ],
       "wordCount": 291,
@@ -4093,9 +4093,9 @@
             "French origin",
             "German origin"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第一段说富兰克林的父母离开英格兰，迁往英国殖民地马萨诸塞，因此他是英国血统。",
+          "evidence": "They left England and moved to the English colony of Massachusetts"
         },
         {
           "num": 2,
@@ -4106,9 +4106,9 @@
             "to have their own newspaper",
             "to escape religious persecution"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第一段明确说他们迁往马萨诸塞是为了“escape persecution for their religion”，即逃避宗教迫害。",
+          "evidence": "in order to escape persecution (迫害) for their religion"
         },
         {
           "num": 3,
@@ -4119,9 +4119,9 @@
             "His brother.",
             "Himself."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "富兰克林十岁离开学校后“worked for his father for two years”，因此十一岁时他给父亲工作。",
+          "evidence": "worked for his father for two years"
         },
         {
           "num": 4,
@@ -4132,9 +4132,9 @@
             "Because he liked the weather there.",
             "Because he wanted to make a living himself."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第一段说他想独立，于是去了费城，并在那里创办自己的报纸、努力工作攒钱；D“想自己谋生”最符合“wanted to be independent”。",
+          "evidence": "Because he wanted to be independent, he went to Philadelphia."
         },
         {
           "num": 5,
@@ -4145,9 +4145,9 @@
             "Poor Richard’s experiences",
             "his observations about life"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "文中说年鉴包含农民需要的信息、富兰克林的格言以及对生活的观察；“Poor Richard’s experiences”不是年鉴内容，Poor Richard 只是书名中的人物。",
+          "evidence": "Most almanacs contained information for farmers"
         }
       ],
       "wordCount": 187,
@@ -4252,9 +4252,9 @@
             "spend money while shopping",
             "have parties"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "第一段说对许多人而言，圣诞节是纪念耶稣基督的诞生（“it honors the birth of Jesus Christ”），因此人们庆祝它是为了表达对耶稣的敬意。",
+          "evidence": "for many, it honors the birth of Jesus Christ"
         },
         {
           "num": 2,
@@ -4265,9 +4265,9 @@
             "December 25th used to be a day on which to show respect to a Roman sun god.",
             "Christmas was celebrated widely soon after Jesus’ death."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "第三段明确说耶稣去世后的最初两个世纪里“Christmas was not celebrated at all”，因此 D“耶稣死后不久圣诞节就广泛庆祝”与原文相反。",
+          "evidence": "during the first two centuries after Jesus’ death, Christmas was not celebrated at all"
         },
         {
           "num": 3,
@@ -4278,9 +4278,9 @@
             "It was not welcomed by the man’s relatives and friends.",
             "It was very expensive."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "“caught on”表示“流行起来”。前文说寄圣诞卡是个好主意，随后“it soon caught on”，即很快受到人们欢迎。",
+          "evidence": "It was a good idea and it soon caught on."
         },
         {
           "num": 4,
@@ -4291,9 +4291,9 @@
             "the Dutch",
             "the Americans"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "文章说荷兰人来到美国时把他们的 St. Nicholas（Sinterklaas）也带来，Santa Claus 这个名字就来自荷兰语 Sinterklaas，因此圣诞老人的故事与荷兰人有关。",
+          "evidence": "Sinterklaas is therefore where we get the name Santa Claus."
         },
         {
           "num": 5,
@@ -4304,9 +4304,9 @@
             "Because he wants children to spend time finding them.",
             "Because the gold thrown by St. Nicholas happened to fall in the stockings."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "文中说圣尼古拉斯夜里把一袋金子从窗户扔进屋里，金子恰好落进挂着晾干的袜子里，后来才演变成把礼物放进袜子的习俗。",
+          "evidence": "The bag of gold landed in one of the daughters’ stockings that had been hung up to dry."
         }
       ],
       "wordCount": 448,
@@ -4367,9 +4367,9 @@
             "very popular",
             "very courteous"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第一段直接说当时对林肯批评很多，“He was not at all popular”，即他完全不受欢迎。",
+          "evidence": "He was not at all popular."
         },
         {
           "num": 2,
@@ -4380,9 +4380,9 @@
             "President of the United States at the time",
             "a popular statesman"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "第一段说林肯只是“out of courtesy”才被邀请，因为当时他是美国总统；A、B、D 描述的是主要演讲者 Edward Everett。",
+          "evidence": "He had been invited to speak at Gettysburg only out of courtesy."
         },
         {
           "num": 3,
@@ -4393,9 +4393,9 @@
             "Lincoln’s speech was full of rich oratory",
             "Lincoln’s speech was very long"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第二段说林肯在去葛底斯堡的火车上准备演讲，深夜疲惫地在旅馆里又“worked briefly”，说明他当时很忙、准备时间很少。",
+          "evidence": "Lincoln prepared his speech on the train while going to Gettysburg."
         },
         {
           "num": 4,
@@ -4406,9 +4406,9 @@
             "a total failure",
             "not well-received at first"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "演讲结束时“there was little applause”，报纸起初也批评它，说明这篇演讲一开始并未受到好评；但后来人们逐渐理解并高度评价它。",
+          "evidence": "At the end there was little applause."
         },
         {
           "num": 5,
@@ -4419,9 +4419,9 @@
             "Lincoln’s Gettysburg Address is memorized by every American school child.",
             "Lincoln’s Gettysburg Address is the greatest speech ever delivered in the United States."
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "文章说这篇演说是美国历史上“one of the greatest orations”，即最伟大的演说之一，而不是“the greatest”（最伟大的），D 把“之一”改成了“唯一”，因此不正确。",
+          "evidence": "one of the greatest orations ever given in American history"
         }
       ],
       "wordCount": 262,
@@ -4473,9 +4473,9 @@
             "the business careers of Mac and Dick McDonald",
             "Ray Kroc’s business talent"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "C",
+          "explanation": "全文以麦当劳兄弟的创业经历为主线：他们先经营剧院、烤肉店和汽车餐厅，后来开出这家快餐店，又允许复制十家分店，最后与克罗克合作；因此主要讲的是两兄弟的商业经历。",
+          "evidence": "They had run their own businesses for years, first a theater, then a barbecue (烤肉) restaurant, then another drive-in."
         },
         {
           "num": 2,
@@ -4486,9 +4486,9 @@
             "a theater",
             "a barbecue restaurant"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "B",
+          "explanation": "第一段列举兄弟俩经营过的生意：a theater（剧院）、a barbecue restaurant（烤肉店）、another drive-in（汽车餐厅），没有提到 cinema（电影院）。",
+          "evidence": "first a theater, then a barbecue (烤肉) restaurant, then another drive-in"
         },
         {
           "num": 3,
@@ -4499,9 +4499,9 @@
             "forty years ago there were numerous fast-food restaurants",
             "Ray Kroc was a good businessman"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "克罗克一眼看出这家快餐店的独特吸引力，买下特许经营权并把它发展成家喻户晓的品牌，说明他是个有眼光的优秀商人；A、B、C 都无法从文中推出。",
+          "evidence": "He quickly saw the unique appeal of the brothers’ fast-food restaurants"
         },
         {
           "num": 4,
@@ -4512,9 +4512,9 @@
             "Mac and Dick McDonald became broken after they sold their ideas to Ray Kroc",
             "California is the best place to go into business"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "A",
+          "explanation": "兄弟俩推出缩短的菜单、快速服务、无服务员、无小费的新模式，并制定严格统一的制作流程，这些创新带来了成功，说明创造力是商业成功的重要因素。",
+          "evidence": "they offered a new, shortened menu"
         },
         {
           "num": 5,
@@ -4525,9 +4525,9 @@
             "financial",
             "peculiar"
           ],
-          "answer": "",
-          "explanation": "",
-          "evidence": ""
+          "answer": "D",
+          "explanation": "unique 意为“独特的、与众不同的”，与 peculiar（独特的、特有的）最接近；句中“unique appeal”指这家快餐店独有的吸引力。",
+          "evidence": "He quickly saw the unique appeal of the brothers’ fast-food restaurants"
         }
       ],
       "wordCount": 290,
@@ -7555,7 +7555,7 @@
     "articles": 63,
     "questions": 304,
     "words": 16470,
-    "withAnswers": 244,
+    "withAnswers": 304,
     "withTranslations": 63
   }
 }
