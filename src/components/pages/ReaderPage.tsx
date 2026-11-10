@@ -168,7 +168,6 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
         lastSaveRef.current = now;
         updateProgress(article.id, pct, window.scrollY);
       }
-      if (pct >= 97) markComplete(article.id);
     };
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(compute);
@@ -181,7 +180,7 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
       window.removeEventListener('resize', onScroll);
       if (raf) cancelAnimationFrame(raf);
     };
-  }, [article?.id, markComplete, updateProgress]);
+  }, [article?.id, updateProgress]);
 
   // Dismiss popovers on outside click / escape.
   useEffect(() => {

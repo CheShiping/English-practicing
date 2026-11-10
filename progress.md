@@ -102,6 +102,13 @@
 - [x] 品牌标记视觉检查：静态导出服务下页头加载 `/brand/moread-owl.png`，无破图，导航单行
 - [ ] 手动验证：新分类页面展示待检查
 
+## 2026-11-10 完成状态改为纯手动
+
+- `src/components/pages/ReaderPage.tsx` - 移除滚动进度 ≥97% 时自动 `markComplete` 的调用
+- `src/state/AppProvider.tsx` - `updateProgress` 不再按 `percent >= 98` 自动置 `completed`，只保留手动「标记完成」
+- 进度条仍正常记录百分比，但不会再生效完成状态；主页/文库/统计的「已完成」只来自手动标记
+- 证据：`npx tsc --noEmit` exit 0；`npm run build` exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）
+
 ## 给下一会话的备注
 
 仓库中存在用户未提交的内容批次改动，开工前先 `git status --short`，不要回滚这些文件。

@@ -414,7 +414,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           scroll,
           percent: Math.min(100, nextPercent),
           updatedAt: Date.now(),
-          completed: cur?.completed || nextPercent >= 98,
+          completed: cur?.completed || false,
           timeSpent: cur?.timeSpent || 0,
         },
       };
