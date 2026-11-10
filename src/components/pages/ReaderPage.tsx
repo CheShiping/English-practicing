@@ -412,7 +412,7 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
           <footer className="article-foot">
             <div className="article-foot-note">
               <span className="eyebrow" style={{ fontSize: 10 }}>End of passage</span>
-              <p>读完了？去右侧完成题目，或选中不理解的句子查看翻译与句法提示。</p>
+              <p>读完了？打开题目面板完成练习，或选中不理解的句子查看翻译与句法提示。</p>
             </div>
             <div className="article-foot-actions">
               <button

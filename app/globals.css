@@ -522,6 +522,7 @@ html[data-theme='dark'] .btn.primary {
   position: sticky;
   top: 0;
   z-index: 40;
+  padding-top: env(safe-area-inset-top, 0px);
   background: color-mix(in srgb, var(--bg) 86%, transparent);
   backdrop-filter: blur(18px) saturate(1.15);
   border-bottom: 1px solid color-mix(in srgb, var(--line) 75%, transparent);

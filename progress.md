@@ -2,8 +2,8 @@
 
 ## 当前状态
 
-**最后更新：** 2026-11-09
-**当前功能：** feat-007 - 首页与共享样式 unslop 精修（已完成）；feat-002 内容批次仍在进行
+**最后更新：** 2026-11-10
+**当前功能：** feat-007 - 首页与共享样式 unslop 精修（已完成）；移动端适配打磨（2026-11-10 完成）；feat-002 内容批次仍在进行
 
 ## 状态概览
 
@@ -76,6 +76,15 @@
 - `app/globals.css`、`app/reader.css` - 印记容器支持图片裁切
 - `app/layout.tsx` - favicon 指向品牌标记
 - 移除 `app/icon.svg`
+
+## 2026-11-10 移动端适配打磨
+
+- `app/layout.tsx` - viewport 增加 `viewportFit: 'cover'`，启用 iOS 安全区
+- `app/globals.css` - 页头适配顶部安全区
+- `app/pages.css` - 移动端底部导航与阅读器底栏加大触控面积并适配底部安全区；文章库筛选改为「搜索整行 + 排序/收藏次行」；窄屏表单控件 16px 防止 iOS 聚焦缩放；阅读器顶栏按钮提升到 40px
+- `app/reader.css` - 启动页/阅读器/弹窗/抽屉使用 `100dvh`；底部弹层、更多面板、阅读排版弹窗、翻译抽屉适配安全区；滚动区域增加 `overscroll-behavior: contain`
+- `src/components/pages/ReaderPage.tsx`、`src/components/reader/QuestionPanel.tsx` - 移动端文案不再提「右侧」
+- 证据：`npx tsc --noEmit` exit 0；`npm run build` exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）；390px 与 320px 视口实测所有页面 `scrollWidth === innerWidth` 无横向溢出，并复核首页、文库、生词、数据、设置、阅读器、题目/更多弹层、阅读排版弹窗与单词卡截图
 
 ## 完成证据
 

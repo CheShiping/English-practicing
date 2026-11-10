@@ -107,7 +107,7 @@ export default function QuestionPanel({
       <div className="rail-empty">
         <Lightbulb size={22} />
         <p>本篇是纯阅读文章，暂无配套题目。</p>
-        <span>可以点词查义、划句翻译，或试试右侧的批注功能。</span>
+        <span>可以点词查义、划句翻译，或选中句子添加批注。</span>
       </div>
     );
   }

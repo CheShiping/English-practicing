@@ -14,6 +14,7 @@
 
 .splash {
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +69,7 @@
 .toast-stack {
   position: fixed;
   left: 50%;
-  bottom: 28px;
+  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%);
   z-index: 200;
   display: flex;
@@ -130,13 +131,15 @@ html[data-theme='dark'] .toast {
 
 .reader {
   min-height: 100vh;
-  padding-bottom: 80px;
+  min-height: 100dvh;
+  padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
 }
 
 .reader-bar {
   position: sticky;
   top: 0;
   z-index: 50;
+  padding-top: env(safe-area-inset-top, 0px);
   background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: blur(18px) saturate(1.1);
   border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
@@ -667,6 +670,7 @@ html[data-theme='dark'] .ann-pink {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
+  overscroll-behavior: contain;
   min-height: 0;
 }
 
@@ -1694,6 +1698,7 @@ html[data-theme='dark'] .sel-toolbar {
 .modal {
   width: min(560px, 100%);
   max-height: 90vh;
+  max-height: 90dvh;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -1724,6 +1729,7 @@ html[data-theme='dark'] .sel-toolbar {
 .modal-body {
   padding: 20px 22px;
   overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .modal-foot {
@@ -2410,7 +2416,8 @@ html[data-theme='dark'] .sel-toolbar {
 
 .drawer {
   width: min(540px, 100%);
-  height: 100%;
+  height: 100vh;
+  height: 100dvh;
   background: var(--surface);
   border-left: 1px solid var(--line);
   box-shadow: var(--shadow-lg);
@@ -2465,6 +2472,7 @@ html[data-theme='dark'] .sel-toolbar {
 .drawer-body {
   flex: 1;
   overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 18px 22px 30px;
 }
 
@@ -2602,11 +2610,13 @@ html[data-theme='dark'] .sel-toolbar {
 .mobile-sheet {
   width: 100%;
   max-height: 82vh;
+  max-height: 82dvh;
   background: var(--surface);
   border-radius: 20px 20px 0 0;
   border-top: 1px solid var(--line);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   animation: sheet-up 0.24s cubic-bezier(0.22, 0.8, 0.3, 1) both;
 }
 
@@ -2625,6 +2635,7 @@ html[data-theme='dark'] .sel-toolbar {
   position: static;
   height: auto;
   max-height: 78vh;
+  max-height: calc(78dvh - env(safe-area-inset-bottom, 0px));
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -2643,7 +2654,7 @@ html[data-theme='dark'] .sel-toolbar {
   background: var(--surface);
   border-radius: 20px 20px 0 0;
   border-top: 1px solid var(--line);
-  padding: 0 18px 22px;
+  padding: 0 18px calc(22px + env(safe-area-inset-bottom, 0px));
   animation: sheet-up 0.24s cubic-bezier(0.22, 0.8, 0.3, 1) both;
 }
 

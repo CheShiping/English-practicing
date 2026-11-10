@@ -1646,17 +1646,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    padding: 4px;
-    font-size: 9.5px;
+    justify-content: center;
+    gap: 3px;
+    min-height: 46px;
+    padding: 5px 4px;
+    font-size: 10px;
     color: var(--muted);
     border-radius: 8px;
   }
   .mobile-tabbar a[aria-current='page'] {
     color: var(--accent);
+    background: var(--accent-soft);
   }
   .app {
-    padding-bottom: 62px;
+    padding-bottom: calc(62px + env(safe-area-inset-bottom, 0px));
   }
   .hero {
     grid-template-columns: 1fr;
@@ -1705,8 +1708,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    font-size: 9.5px;
+    justify-content: center;
+    gap: 3px;
+    min-height: 46px;
+    font-size: 10px;
     padding: 5px;
     border-radius: 8px;
   }
@@ -1715,7 +1720,7 @@
     background: var(--accent-soft);
   }
   .reader {
-    padding-bottom: 82px;
+    padding-bottom: calc(82px + env(safe-area-inset-bottom, 0px));
   }
   .mobile-sheet-backdrop {
     display: flex;
@@ -1880,6 +1885,21 @@
   }
   .library-filters {
     width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+  .library-filters .search-box {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+  }
+  .library-filters .sort-box {
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .library-filters .filter-toggle {
+    justify-content: center;
   }
   .search-box {
     flex: 1;
@@ -1887,6 +1907,20 @@
   }
   .sort-box {
     padding: 0 8px;
+  }
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+  /* iOS 聚焦输入框时不放大页面 */
+  .search-box input,
+  .sort-box select,
+  .import-textarea,
+  .import-controls select,
+  .import-controls input,
+  .note-field textarea,
+  .timer-custom input {
+    font-size: 16px;
   }
   .lib-grid {
     grid-template-columns: 1fr;
@@ -1932,9 +1966,13 @@
   .reader-bar-actions {
     gap: 0;
   }
+  .reader-back {
+    width: 40px;
+    height: 40px;
+  }
   .rb-btn {
-    height: 34px;
-    padding: 0 7px;
+    height: 40px;
+    padding: 0 8px;
   }
   .rb-more {
     display: none;
@@ -1978,11 +2016,12 @@
     max-width: 380px;
   }
   .modal-backdrop {
-    padding: 12px;
+    padding: 12px 12px calc(12px + env(safe-area-inset-bottom, 0px));
     align-items: flex-end;
   }
   .modal {
     max-height: 88vh;
+    max-height: 88dvh;
     border-radius: 18px;
   }
   .modal-head {
@@ -2004,10 +2043,10 @@
     width: 100%;
   }
   .drawer-body {
-    padding: 16px 16px 26px;
+    padding: 16px 16px calc(26px + env(safe-area-inset-bottom, 0px));
   }
   .drawer-head {
-    padding: 16px 18px 12px;
+    padding: calc(16px + env(safe-area-inset-top, 0px)) 18px 12px;
   }
   .drawer-toolbar {
     padding: 9px 16px;
@@ -2039,7 +2078,7 @@
     flex-direction: column;
   }
   .toast-stack {
-    bottom: 84px;
+    bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   }
 }
 
