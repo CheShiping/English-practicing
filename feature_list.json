@@ -55,6 +55,16 @@
       "dependencies": ["feat-001", "feat-006"],
       "status": "done",
       "evidence": "2026-11-09：npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）；桌面 1440、390px 移动端与夜间主题截图复核。2026-11-10 按用户要求恢复样张「精读」印章、PASSAGE · 01 标签、READ 背景字、今日卡红色光斑与渐变进度条；样张词卡改为桌面悬浮、移动端入流，不遮挡正文"
+    },
+    {
+      "id": "feat-008",
+      "name": "补全全部文章内置译文",
+      "description": "为 63 篇文章的每个正文段落补齐中文译文，新增 src/data/translations-part7.json 至 translations-part12.json，覆盖应用文、历史人文、社会生活和冲刺训练类中缺失译文的 39 篇",
+      "dependencies": [
+        "feat-002"
+      ],
+      "status": "done",
+      "evidence": "2026-11-10：npm run content 显示「含译文: 63 篇」；校验脚本确认 63 篇所有 block 均有 translation（缺失 0）；npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）"
     }
   ]
 }
