@@ -59,6 +59,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   const [picks, setPicks] = useState<Record<string, string>>({});
   const [marks, setMarks] = useState<string[]>([]);
   const [cursor, setCursor] = useState(0);
+  const [session, setSession] = useState({ answered: 0, correct: 0 });
   const [wrongIdsVersion, setWrongIdsVersion] = useState(0);
 
   useEffect(() => {
@@ -139,26 +140,33 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       setPicks({});
       setMarks([]);
       setCursor(0);
+      setSession({ answered: 0, correct: 0 });
       setPhase('quiz');
     },
     [data, pool, category, sub, size, mode, toast],
   );
 
-  const submit = useCallback(() => {
+  // 即时判定：点选项立即判对错、错题入本、计入学习统计
+  const handlePick = useCallback(
+    (q: PracticeQuestion, letter: string) => {
+      if (picks[q.id]) return; // 已判定，锁定答案
+      const ok = letter === q.answer;
+      setPicks((p) => ({ ...p, [q.id]: letter }));
+      if (!ok) addWrong(q.id, letter);
+      recordActivity({ questions: 1, correct: ok ? 1 : 0 });
+      setSession((s) => ({ answered: s.answered + 1, correct: s.correct + (ok ? 1 : 0) }));
+      setWrongIdsVersion((v) => v + 1);
+    },
+    [picks, recordActivity],
+  );
+
+  const finish = useCallback(() => {
     if (!paper) return;
-    const unanswered = paper.questions.filter((q) => !picks[q.id]);
-    if (unanswered.length && !window.confirm(`还有 ${unanswered.length} 题未作答，确定交卷？`)) return;
-    let correct = 0;
-    for (const q of paper.questions) {
-      const mine = picks[q.id] || '';
-      if (mine && mine === q.answer) correct++;
-      else if (mine) addWrong(q.id, mine);
+    if (session.answered > 0) {
+      addHistory({ at: Date.now(), total: session.answered, correct: session.correct, label: paper.label });
     }
-    recordActivity({ questions: paper.questions.length, correct });
-    addHistory({ at: Date.now(), total: paper.questions.length, correct, label: paper.label });
-    setWrongIdsVersion((v) => v + 1);
     setPhase('result');
-  }, [paper, picks, recordActivity]);
+  }, [paper, session]);
 
   const restartWrong = useCallback(
     (onlyThese: string[]) => {
@@ -171,6 +179,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       setPicks({});
       setMarks([]);
       setCursor(0);
+      setSession({ answered: 0, correct: 0 });
       setPhase('quiz');
     },
     [data],
@@ -201,7 +210,8 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   // ---------- 练习中 ----------
   if (phase === 'quiz' && paper) {
     const q = paper.questions[cursor];
-    const answered = paper.questions.filter((x) => picks[x.id]).length;
+    const revealed = Boolean(picks[q.id]);
+    const isRight = picks[q.id] === q.answer;
     return (
       <div className="page practice-page practice-quiz">
         <div className="practice-quiz-top">
@@ -210,7 +220,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           </button>
           <div className="practice-progress">
             <span className="practice-progress-text">
-              第 {cursor + 1} / {paper.questions.length} 题 · 已答 {answered}
+              第 {cursor + 1} / {paper.questions.length} 题 · 已答 {session.answered} · 对 {session.correct}
             </span>
             <div className="practice-progress-bar">
               <span style={{ width: `${((cursor + 1) / paper.questions.length) * 100}%` }} />
@@ -232,19 +242,42 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           <div className="practice-options">
             {q.options.map((opt, i) => {
               const letter = LETTERS[i];
-              const chosen = picks[q.id] === letter;
+              const revealedRight = revealed && letter === q.answer;
+              const revealedWrong = revealed && !isRight && picks[q.id] === letter;
+              const dimmed = revealed && !revealedRight && !revealedWrong;
               return (
                 <button
                   key={i}
-                  className={`practice-option ${chosen ? 'chosen' : ''}`}
-                  onClick={() => setPicks((p) => ({ ...p, [q.id]: letter }))}
+                  className={`practice-option ${revealedRight ? 'reveal-right' : ''} ${revealedWrong ? 'reveal-wrong' : ''} ${dimmed ? 'dimmed' : ''}`}
+                  onClick={() => handlePick(q, letter)}
+                  disabled={revealed}
                 >
                   <span className="practice-option-letter">{letter}</span>
                   <span className="practice-option-text">{opt || '（选项缺失）'}</span>
+                  {revealedRight && <CheckCircle2 size={16} className="practice-option-state" />}
+                  {revealedWrong && <XCircle size={16} className="practice-option-state" />}
                 </button>
               );
             })}
           </div>
+
+          {revealed && (
+            <div className={`practice-reveal ${isRight ? 'right' : 'wrong'}`}>
+              <div className="practice-reveal-head">
+                {isRight ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
+                <b>{isRight ? '回答正确' : '回答错误'}</b>
+                <span>
+                  正确答案 {q.answer}. {q.options[LETTERS.indexOf(q.answer)] || ''}
+                  {!isRight && ` · 你的答案 ${picks[q.id]}`}
+                </span>
+                <span className="practice-tags">
+                  <span className={`practice-tag cat-${TAG_CLASS[q.category] || 'other'}`}>{q.category}</span>
+                  <span className="practice-tag sub">{q.sub}</span>
+                </span>
+              </div>
+              {q.explanation && <p className="practice-explanation">{q.explanation}</p>}
+            </div>
+          )}
         </div>
 
         <div className="practice-nav">
@@ -256,24 +289,29 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
               下一题 <ArrowRight size={15} />
             </button>
           ) : (
-            <button className="btn primary" onClick={submit}>
-              <Send size={15} /> 交卷
+            <button className="btn primary" onClick={finish}>
+              <Send size={15} /> 完成练习
             </button>
           )}
         </div>
 
         <div className="practice-sheet">
-          <p className="practice-sheet-title">答题卡</p>
+          <p className="practice-sheet-title">答题卡（绿 = 对，红 = 错）</p>
           <div className="practice-sheet-grid">
-            {paper.questions.map((item, i) => (
-              <button
-                key={item.id}
-                className={`practice-sheet-cell ${i === cursor ? 'cur' : ''} ${picks[item.id] ? 'done' : ''} ${marks.includes(item.id) ? 'marked' : ''}`}
-                onClick={() => setCursor(i)}
-              >
-                {i + 1}
-              </button>
-            ))}
+            {paper.questions.map((item, i) => {
+              const mine = picks[item.id];
+              const cellOk = Boolean(mine) && mine === item.answer;
+              const cellBad = Boolean(mine) && mine !== item.answer;
+              return (
+                <button
+                  key={item.id}
+                  className={`practice-sheet-cell ${i === cursor ? 'cur' : ''} ${cellOk ? 'ok' : ''} ${cellBad ? 'bad' : ''} ${marks.includes(item.id) ? 'marked' : ''}`}
+                  onClick={() => setCursor(i)}
+                >
+                  {i + 1}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -283,16 +321,19 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   // ---------- 结果 ----------
   if (phase === 'result' && paper) {
     const total = paper.questions.length;
-    const correct = paper.questions.filter((q) => picks[q.id] === q.answer).length;
-    const wrongList = paper.questions.filter((q) => picks[q.id] !== q.answer);
-    const percent = total ? Math.round((correct / total) * 100) : 0;
+    const answered = session.answered;
+    const correct = session.correct;
+    const percent = answered ? Math.round((correct / answered) * 100) : 0;
+    const wrongList = paper.questions.filter((q) => picks[q.id] && picks[q.id] !== q.answer);
     return (
       <div className="page practice-page">
         <div className="practice-score-card">
           <p className="practice-score-label">{paper.label} · 练习结果</p>
           <p className="practice-score">
-            <b>{correct}</b> / {total}
-            <span className="practice-score-pct">正确率 {percent}%</span>
+            答对 <b>{correct}</b> / {answered}
+            <span className="practice-score-pct">
+              正确率 {percent}% · 本组共 {total} 题{answered < total ? ` · 未答 ${total - answered} 题` : ''}
+            </span>
           </p>
           <div className="practice-actions">
             {paper.source === 'pool' && (
@@ -311,30 +352,31 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           </div>
         </div>
 
-        <div className="practice-review-list">
-          {paper.questions.map((q, i) => {
-            const mine = picks[q.id] || '';
-            const ok = mine === q.answer;
-            return (
-              <div key={q.id} className={`practice-review ${ok ? 'ok' : 'bad'}`}>
-                <div className="practice-review-head">
-                  {ok ? <CheckCircle2 size={17} /> : <XCircle size={17} />}
-                  <span className="practice-review-num">第 {i + 1} 题</span>
-                  <span className="practice-tags">
-                    <span className={`practice-tag cat-${TAG_CLASS[q.category] || 'other'}`}>{q.category}</span>
-                    <span className="practice-tag sub">{q.sub}</span>
-                  </span>
+        {wrongList.length > 0 && (
+          <div className="practice-review-list">
+            {wrongList.map((q) => {
+              const mine = picks[q.id] || '';
+              return (
+                <div key={q.id} className="practice-review bad">
+                  <div className="practice-review-head">
+                    <XCircle size={17} />
+                    <span className="practice-review-num">错题回顾</span>
+                    <span className="practice-tags">
+                      <span className={`practice-tag cat-${TAG_CLASS[q.category] || 'other'}`}>{q.category}</span>
+                      <span className="practice-tag sub">{q.sub}</span>
+                    </span>
+                  </div>
+                  <p className="practice-stem">{q.stem}</p>
+                  <div className="practice-review-answers">
+                    <span className="wrong-mine">你的答案：{mine}. {q.options[LETTERS.indexOf(mine)] || ''}</span>
+                    <span className="right">正确答案：{q.answer}. {q.options[LETTERS.indexOf(q.answer)] || ''}</span>
+                  </div>
+                  {q.explanation && <p className="practice-explanation">{q.explanation}</p>}
                 </div>
-                <p className="practice-stem">{q.stem}</p>
-                <div className="practice-review-answers">
-                  <span className={ok ? 'right' : 'wrong-mine'}>你的答案：{mine ? `${mine}. ${q.options[LETTERS.indexOf(mine)] || ''}` : '未作答'}</span>
-                  {!ok && <span className="right">正确答案：{q.answer}. {q.options[LETTERS.indexOf(q.answer)] || ''}</span>}
-                </div>
-                {q.explanation && <p className="practice-explanation">{q.explanation}</p>}
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     );
   }
@@ -445,7 +487,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           <span className="eyebrow">Practice</span>
           <h1 className="section-title" style={{ marginTop: 12 }}>单选练习</h1>
           <p className="section-sub">
-            共 {data.total} 道专升本词汇语法单选题，按语法框架分好考点。选考点、定题量，答完逐题看解析。
+            共 {data.total} 道专升本词汇语法单选题，按语法框架分好考点。答一题判一题，即时反馈对错与解析。
           </p>
         </div>
         <a className="btn ghost" href={hrefFor('/practice/wrong')}>

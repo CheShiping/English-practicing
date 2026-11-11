@@ -2358,6 +2358,95 @@
   color: var(--accent-deep);
 }
 
+.practice-option.reveal-right {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+  cursor: default;
+}
+
+.practice-option.reveal-wrong {
+  border-color: var(--danger);
+  background: var(--accent-soft);
+  color: var(--danger);
+  cursor: default;
+}
+
+.practice-option.dimmed {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.practice-option.dimmed:hover {
+  transform: none;
+  border-color: var(--line);
+}
+
+.practice-option.reveal-right:hover {
+  transform: none;
+}
+
+.practice-option.reveal-wrong:hover {
+  transform: none;
+}
+
+.practice-option:disabled {
+  cursor: default;
+}
+
+.practice-option-state {
+  margin-left: auto;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.practice-reveal {
+  margin-top: 16px;
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+}
+
+.practice-reveal.right {
+  background: var(--green-soft);
+}
+
+.practice-reveal.wrong {
+  background: var(--accent-soft);
+}
+
+.practice-reveal-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  flex-wrap: wrap;
+}
+
+.practice-reveal.right .practice-reveal-head {
+  color: var(--green);
+}
+
+.practice-reveal.wrong .practice-reveal-head {
+  color: var(--danger);
+}
+
+.practice-reveal-head b {
+  font-size: 14.5px;
+}
+
+.practice-reveal-head > span:first-of-type {
+  color: var(--ink-2);
+}
+
+.practice-reveal .practice-tags {
+  margin-left: auto;
+}
+
+.practice-reveal .practice-explanation {
+  background: var(--surface);
+  margin-top: 10px;
+}
+
 .practice-option-letter {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -2402,9 +2491,16 @@
   transition: all var(--dur-fast) var(--ease);
 }
 
-.practice-sheet-cell.done {
+.practice-sheet-cell.done,
+.practice-sheet-cell.ok {
   background: var(--green-soft);
   color: var(--green);
+  border-color: transparent;
+}
+
+.practice-sheet-cell.bad {
+  background: var(--accent-soft);
+  color: var(--danger);
   border-color: transparent;
 }
 
