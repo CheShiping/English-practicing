@@ -18,6 +18,9 @@ const CATEGORY_MAP = {
   '冲刺训练': { catId: 'chongci', catName: '冲刺训练', order: 7 },
 };
 
+// 由 scripts/build-practice.mjs 处理的纯题目练习文件，不进入文章管线
+const PRACTICE_FILES = new Set(['专升本词汇语法试题_单选题']);
+
 function unescapeMd(s) {
   return String(s)
     .replace(/\\([.\\\-!()_*#\[\]{}`>+~|])/g, '$1')
@@ -339,6 +342,7 @@ function main() {
 
   for (const file of files) {
     const base = path.basename(file, '.md');
+    if (PRACTICE_FILES.has(base)) continue;
     let cat = CATEGORY_MAP[base];
     if (!cat) {
       const name = base.replace(/专项训练$/, '') || base;

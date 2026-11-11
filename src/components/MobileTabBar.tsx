@@ -1,11 +1,12 @@
 'use client';
 
-import { BarChart3, BookMarked, Home, Library } from 'lucide-react';
+import { BarChart3, BookMarked, GraduationCap, Home, Library } from 'lucide-react';
 import { hrefFor } from '@/lib/router';
 
 const ITEMS = [
   { key: 'home', label: '首页', href: '/', icon: Home },
   { key: 'library', label: '文库', href: '/library', icon: Library },
+  { key: 'practice', label: '练习', href: '/practice', icon: GraduationCap },
   { key: 'vocab', label: '生词', href: '/vocab', icon: BookMarked },
   { key: 'stats', label: '数据', href: '/stats', icon: BarChart3 },
 ];

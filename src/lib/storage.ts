@@ -14,6 +14,8 @@ export const KEYS = {
   recent: PREFIX + 'recent.v1',
   translationCache: PREFIX + 'transCache.v1',
   welcome: PREFIX + 'welcome.v1',
+  practiceWrong: PREFIX + 'practice.wrong.v1',
+  practiceHistory: PREFIX + 'practice.history.v1',
 } as const;
 
 const memory = new Map<string, string>();

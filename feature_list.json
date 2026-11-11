@@ -73,6 +73,14 @@
       "dependencies": ["feat-002"],
       "status": "done",
       "evidence": "2026-11-10：新增 src/data/answers/yingyong-03-04.json、lishi-03-12.json；npm run content 显示「含答案: 304 题」；校验 304 题 answer 与 explanation 均非空（缺失 0）；npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）"
+    },
+    {
+      "id": "feat-010",
+      "name": "网站 2.0 单选练习功能",
+      "description": "把 article/专升本词汇语法试题_单选题.md 的 2774 道题按语法框架（六大词性/两个态/三大从句/五大句型/四个重点/其他）分类并补全答案与解析，新增分类组卷练习页与错题本；内容管线 scripts/build-practice.mjs 生成 public/data/practice.json 按需加载",
+      "dependencies": ["feat-001"],
+      "status": "done",
+      "evidence": "2026-11-11：2774 题全部分类（其他 1349 / 四个重点 505 / 三大从句 347 / 六大词性 247 / 五大句型 188 / 两个态 138）、652 题补答案、2774 条框架思路解析、155 处源答案键错误校订；修复源文件 25 处选项格式异常；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；dev 实测练习组卷、答题计分（8/10）、逐题解析、只重做错题均正常"
     }
   ]
 }

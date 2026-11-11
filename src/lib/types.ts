@@ -14,6 +14,43 @@ export interface Question {
   evidence?: string;
 }
 
+export interface PracticeQuestion {
+  id: string;
+  num: number;
+  section: string;
+  sectionTitle: string;
+  part: string;
+  stem: string;
+  options: string[];
+  answer: string;
+  category: string;
+  sub: string;
+  explanation: string;
+}
+
+export interface PracticeData {
+  generatedAt: string;
+  total: number;
+  categories: string[];
+  subcategories: Record<string, string[]>;
+  sections: { id: string; part: string; title: string; count: number }[];
+  questions: PracticeQuestion[];
+}
+
+export interface PracticeWrongEntry {
+  id: string;
+  wrongCount: number;
+  lastWrongAt: number;
+  myAnswer?: string;
+}
+
+export interface PracticeSessionRecord {
+  at: number;
+  total: number;
+  correct: number;
+  label: string;
+}
+
 export interface Article {
   id: string;
   catId: string;

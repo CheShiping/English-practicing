@@ -9,6 +9,7 @@ import ToastStack from '@/components/ToastStack';
 import HomePage from '@/components/pages/HomePage';
 import LibraryPage from '@/components/pages/LibraryPage';
 import ReaderPage from '@/components/pages/ReaderPage';
+import PracticePage from '@/components/pages/PracticePage';
 import VocabPage from '@/components/pages/VocabPage';
 import StatsPage from '@/components/pages/StatsPage';
 import ImportPage from '@/components/pages/ImportPage';
@@ -64,6 +65,7 @@ export default function AppShell() {
         {route.name === 'home' && <HomePage />}
         {route.name === 'library' && <LibraryPage catId={route.catId} />}
         {route.name === 'reader' && <ReaderPage articleId={route.id} />}
+        {route.name === 'practice' && <PracticePage tab={route.tab} />}
         {route.name === 'vocab' && <VocabPage />}
         {route.name === 'stats' && <StatsPage />}
         {route.name === 'import' && <ImportPage />}

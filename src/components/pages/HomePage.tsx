@@ -11,6 +11,7 @@ import {
   FlaskConical,
   Feather,
   FileText,
+  GraduationCap,
   TrendingUp,
   Landmark,
   Users,
@@ -89,6 +90,9 @@ export default function HomePage() {
             )}
             <a className="btn" href={hrefFor('/library')}>
               浏览文章库 <ArrowUpRight size={15} />
+            </a>
+            <a className="btn ghost" href={hrefFor('/practice')}>
+              <GraduationCap size={15} /> 2774 道单选练习
             </a>
           </div>
           <div className="hero-note">

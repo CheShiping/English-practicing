@@ -2082,3 +2082,557 @@
   }
 }
 
+
+/* ============================================================
+   单选练习 Practice
+   ============================================================ */
+
+.practice-page {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.practice-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 120px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.practice-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 34px 0 8px;
+}
+
+.practice-head .section-sub {
+  max-width: 560px;
+}
+
+.practice-block {
+  margin-top: 22px;
+}
+
+.practice-block-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+  margin: 0 0 10px;
+  letter-spacing: 0.02em;
+}
+
+.practice-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.practice-chip {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  border-radius: 999px;
+  padding: 8px 15px;
+  font-size: 13.5px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.practice-chip em {
+  font-style: normal;
+  color: var(--muted);
+  font-size: 11.5px;
+  margin-left: 5px;
+}
+
+.practice-chip:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+}
+
+.practice-chip.on {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--surface);
+}
+
+.practice-chip.on em {
+  color: rgba(255, 252, 246, 0.72);
+}
+
+.practice-start {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.practice-pool-hint {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.btn.large {
+  padding: 13px 26px;
+  font-size: 15px;
+}
+
+/* ---------- 错题本 ---------- */
+
+.practice-wrong-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.practice-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 70px 0;
+  color: var(--muted);
+}
+
+.practice-history {
+  margin-top: 26px;
+}
+
+.practice-history-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.practice-history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 2px;
+  border-bottom: 1px dashed var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.practice-history-label {
+  flex: 1;
+  color: var(--ink-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.practice-history-item b.good {
+  color: var(--green);
+}
+
+.practice-history-item b.bad {
+  color: var(--danger);
+}
+
+/* ---------- 练习中 ---------- */
+
+.practice-quiz-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 26px 0 0;
+}
+
+.practice-back,
+.practice-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+  flex-shrink: 0;
+}
+
+.practice-mark.on {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-soft);
+}
+
+.practice-progress {
+  flex: 1;
+  min-width: 0;
+}
+
+.practice-progress-text {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.practice-progress-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: var(--surface-3);
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.practice-progress-bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-deep));
+  transition: width var(--dur-base) var(--ease);
+}
+
+.practice-paper-label {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 14px 0 0;
+  letter-spacing: 0.02em;
+}
+
+.practice-qcard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 26px 26px 22px;
+  margin-top: 12px;
+}
+
+.practice-stem {
+  font-family: var(--font-serif);
+  font-size: 17.5px;
+  line-height: 1.75;
+  color: var(--ink);
+  margin: 0 0 18px;
+  white-space: pre-wrap;
+}
+
+.practice-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.practice-option {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  text-align: left;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 12px 15px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+  line-height: 1.55;
+}
+
+.practice-option:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+}
+
+.practice-option.chosen {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.practice-option-letter {
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.practice-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.practice-sheet {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.practice-sheet-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+  margin: 0 0 10px;
+}
+
+.practice-sheet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+  gap: 7px;
+}
+
+.practice-sheet-cell {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  border-radius: var(--radius-xs);
+  padding: 8px 0;
+  font-size: 12.5px;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.practice-sheet-cell.done {
+  background: var(--green-soft);
+  color: var(--green);
+  border-color: transparent;
+}
+
+.practice-sheet-cell.marked {
+  box-shadow: inset 0 0 0 1.5px var(--gold);
+}
+
+.practice-sheet-cell.cur {
+  background: var(--ink);
+  color: var(--surface);
+  border-color: var(--ink);
+}
+
+/* ---------- 结果 ---------- */
+
+.practice-score-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.practice-score-label {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.practice-score {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--ink);
+  margin: 0;
+}
+
+.practice-score b {
+  font-size: 44px;
+  color: var(--accent);
+}
+
+.practice-score-pct {
+  display: block;
+  margin-top: 6px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.practice-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.practice-review-list {
+  margin: 22px 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.practice-review {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+.practice-review.ok {
+  border-left: 3px solid var(--green);
+}
+
+.practice-review.bad {
+  border-left: 3px solid var(--danger);
+}
+
+.practice-review-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.practice-review.ok .practice-review-head svg {
+  color: var(--green);
+}
+
+.practice-review.bad .practice-review-head svg {
+  color: var(--danger);
+}
+
+.practice-review-num {
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.practice-review .practice-stem {
+  font-size: 15.5px;
+  margin: 10px 0 8px;
+}
+
+.practice-review-answers {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+}
+
+.practice-review-answers .right {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.practice-review-answers .wrong-mine {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.practice-explanation {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+.practice-tags {
+  display: inline-flex;
+  gap: 6px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+
+.practice-tag {
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.practice-tag.sub {
+  background: var(--surface-3);
+  color: var(--ink-2);
+}
+
+.practice-tag.cat-pos {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.practice-tag.cat-voice {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.practice-tag.cat-clause {
+  background: var(--gold-soft);
+  color: var(--gold);
+}
+
+.practice-tag.cat-pattern {
+  background: var(--pink-soft);
+  color: var(--pink);
+}
+
+.practice-tag.cat-keyfour {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.practice-tag.cat-other {
+  background: var(--surface-3);
+  color: var(--muted);
+}
+
+.practice-wrong-remove {
+  border: none;
+  background: none;
+  color: var(--faint);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-xs);
+  transition: color var(--dur-fast) var(--ease);
+}
+
+.practice-wrong-remove:hover {
+  color: var(--danger);
+}
+
+@media (max-width: 720px) {
+  .practice-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .practice-qcard {
+    padding: 20px 16px 18px;
+    border-radius: var(--radius);
+  }
+
+  .practice-stem {
+    font-size: 16.5px;
+  }
+
+  .practice-option {
+    padding: 11px 12px;
+    font-size: 14.5px;
+  }
+
+  .practice-quiz-top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .practice-progress {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .practice-review {
+    padding: 15px 14px;
+  }
+}

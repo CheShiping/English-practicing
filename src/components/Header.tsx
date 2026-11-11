@@ -7,6 +7,7 @@ import { hrefFor } from '@/lib/router';
 const NAV = [
   { key: 'home', label: '首页', href: '/' },
   { key: 'library', label: '文章库', href: '/library' },
+  { key: 'practice', label: '单选练习', href: '/practice' },
   { key: 'vocab', label: '生词本', href: '/vocab' },
   { key: 'stats', label: '学习数据', href: '/stats' },
 ];
