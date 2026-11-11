@@ -8,7 +8,7 @@
     "build": "npm run content && next build",
     "build:static": "npm run content && next build",
     "start": "npx serve out",
-    "content": "node scripts/build-content.mjs && node scripts/build-practice.mjs",
+    "content": "node scripts/build-content.mjs && node scripts/build-practice.mjs && node scripts/build-grammar.mjs",
     "dict:split": "node scripts/split-dict.mjs && node scripts/build-core-dict.mjs",
     "lint": "next lint"
   },

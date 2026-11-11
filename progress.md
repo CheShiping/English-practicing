@@ -3,7 +3,16 @@
 ## 当前状态
 
 **最后更新：** 2026-11-11
-**当前功能：** feat-011 语法知识点页（已完成）；feat-002 内容批次仍在进行
+**当前功能：** feat-013 移动端分类横滑自动居中与语法知识点全量搬入（已完成）
+
+## 2026-11-11 移动端分类横滑自动居中与语法知识点全量搬入（feat-013）
+
+- **语法知识点**：放弃 19 个精简知识点，改为内容管线 `scripts/build-grammar.mjs` 直接读取 `article/语法框架/*.md` 原文，生成 `src/data/grammar.generated.json`；`GrammarPage` 用 `src/lib/grammar-md.ts` 原样渲染标题、段落、列表、表格、`:::info`、粗体、下划线与彩色标注，5 个分区文本保真校验与源文完全一致
+- **移动端语法页**：框架导航在 ≤980px 变为吸顶横向胶囊，滚动时高亮当前分区并自动滑到中间；表格放入独立横向滚动容器，320px 下无页面溢出；正文与标题字号、间距单独适配
+- **分类横滑居中**：新增 `ChipScroller`，文章库 `cat-chips` 与单选练习四组 `practice-chips` 在切换分类后把当前按钮自动滑到可视区中间；移动端单选分类条改为单行横向滑动，不再换行堆叠
+- **单选默认顺序**：`PracticeMode` 初始值改为 `ordered`，顺序按钮排到随机前面
+- **证据**：`npx tsc --noEmit` exit 0；`npm run build` exit 0（120 篇 / 588 题 / 32558 词 + 单选 2774 题，导出 2/2）；headless Chrome 390px 与 320px 下 10 条路由 `scrollWidth === clientWidth`；文章库「文化与历史」centerDelta 0；单选「三大从句」centerDelta 0；语法页 5 分区 / 5 表格，导航自动滑动生效
+- **本次改动文件**：`scripts/build-grammar.mjs`（新增）、`src/lib/grammar-md.ts`（新增）、`src/components/ChipScroller.tsx`（新增）、`src/data/grammar.ts`、`src/data/grammar.generated.json`（生成）、`src/components/pages/GrammarPage.tsx`、`src/components/pages/LibraryPage.tsx`、`src/components/pages/PracticePage.tsx`、`app/pages.css`、`package.json`、`README.md`
 
 ## 2026-11-11 语法知识点页与生词本入口调整（feat-011）
 

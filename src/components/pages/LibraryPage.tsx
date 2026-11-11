@@ -26,6 +26,7 @@ import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
 import { CATEGORIES, searchArticles } from '@/lib/data';
 import { hrefFor } from '@/lib/router';
+import ChipScroller from '@/components/ChipScroller';
 import type { Article } from '@/lib/types';
 
 const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: number }>> = {
@@ -101,11 +102,12 @@ export default function LibraryPage({ catId }: { catId?: string }) {
       </div>
 
       <div className="library-toolbar">
-        <div className="cat-chips">
+        <ChipScroller className="cat-chips" activeKey={catId || 'all'}>
           <a
             href={hrefFor('/library')}
             className={!catId ? 'cat-chip active' : 'cat-chip'}
             aria-current={!catId ? 'page' : undefined}
+            data-active={!catId ? 'true' : undefined}
           >
             <Layers size={14} /> 全部
             <span>{articles.length}</span>
@@ -119,13 +121,14 @@ export default function LibraryPage({ catId }: { catId?: string }) {
                 href={hrefFor(`/library/${c.id}`)}
                 className={catId === c.id ? 'cat-chip active' : 'cat-chip'}
                 aria-current={catId === c.id ? 'page' : undefined}
+                data-active={catId === c.id ? 'true' : undefined}
               >
                 <Icon size={14} /> {c.name}
                 <span>{count}</span>
               </a>
             );
           })}
-        </div>
+        </ChipScroller>
 
         <div className="library-filters">
           <label className="search-box">

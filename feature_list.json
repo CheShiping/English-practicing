@@ -97,6 +97,14 @@
       "dependencies": ["feat-009"],
       "status": "done",
       "evidence": "2026-11-11：article/ 下 10 个新分类文件共 120 篇；npm run content 生成 120 篇 / 588 题 / 32558 词，含答案 388 题、含译文 63 篇；校验无重复 id、40 篇新文章均为 5 题 4 选项、各分类编号连续；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+    },
+    {
+      "id": "feat-013",
+      "name": "移动端分类横滑自动居中与语法知识点全量搬入",
+      "description": "文章库分类与单选练习分类按钮在移动端改为横向滑动，切换后自动把当前按钮滑到可视区中间；单选练习默认顺序改为「顺序」；语法知识点改为读取 article/语法框架/*.md 原文生成并完整渲染，补齐移动端表格横滑、吸顶分区导航与字号适配",
+      "dependencies": ["feat-011", "feat-012"],
+      "status": "done",
+      "evidence": "2026-11-11：新增 scripts/build-grammar.mjs，npm run content 生成语法框架 5 个分区（02 两个态 97 行 / 03 三大从句 152 行 / 04 四个重点 234 行 / 05 五大句型 56 行 / 06 六大词性 211 行）；文本保真校验 5 个分区源文与渲染文本完全一致；npx tsc --noEmit exit 0；npm run build exit 0（120 篇 / 588 题 / 32558 词 + 单选 2774 题，导出 2/2）；headless Chrome 390px 与 320px 视口 10 条路由 scrollWidth === clientWidth 无横向溢出；文章库切到「文化与历史」scrollLeft 966、centerDelta 0；单选切到「三大从句」scrollLeft 214、centerDelta 0，默认选中「顺序」；语法页 5 个分区 / 5 个表格，导航点击后自动滑到右端 133（夹取）"
     }
   ]
 }

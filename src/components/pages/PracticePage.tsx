@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { hrefFor } from '@/lib/router';
+import ChipScroller from '@/components/ChipScroller';
 import type { PracticeData, PracticeQuestion } from '@/lib/types';
 import {
   addHistory,
@@ -53,7 +54,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   const [category, setCategory] = useState<string>('全部');
   const [sub, setSub] = useState<string>('全部');
   const [size, setSize] = useState<number>(20);
-  const [mode, setMode] = useState<PracticeMode>('random');
+  const [mode, setMode] = useState<PracticeMode>('ordered');
 
   // 练习状态
   const [paper, setPaper] = useState<Paper | null>(null);
@@ -513,49 +514,86 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       <div className="practice-setup">
         <div className="practice-block">
           <p className="practice-block-title"><Layers size={15} /> 考点大类</p>
-          <div className="practice-chips">
-            <button className={`practice-chip ${category === '全部' ? 'on' : ''}`} onClick={() => { setCategory('全部'); setSub('全部'); }}>
+          <ChipScroller className="practice-chips" activeKey={category}>
+            <button
+              className={`practice-chip ${category === '全部' ? 'on' : ''}`}
+              data-active={category === '全部' ? 'true' : undefined}
+              onClick={() => { setCategory('全部'); setSub('全部'); }}
+            >
               全部 <em>{data.total}</em>
             </button>
             {categories.map((c) => (
-              <button key={c} className={`practice-chip ${category === c ? 'on' : ''}`} onClick={() => { setCategory(c); setSub('全部'); }}>
+              <button
+                key={c}
+                className={`practice-chip ${category === c ? 'on' : ''}`}
+                data-active={category === c ? 'true' : undefined}
+                onClick={() => { setCategory(c); setSub('全部'); }}
+              >
                 {c} <em>{data.questions.filter((q) => q.category === c).length}</em>
               </button>
             ))}
-          </div>
+          </ChipScroller>
         </div>
 
         {category !== '全部' && (
           <div className="practice-block">
             <p className="practice-block-title"><Layers size={15} /> 细分考点</p>
-            <div className="practice-chips">
-              <button className={`practice-chip ${sub === '全部' ? 'on' : ''}`} onClick={() => setSub('全部')}>全部</button>
+            <ChipScroller className="practice-chips" activeKey={`${category}:${sub}`}>
+              <button
+                className={`practice-chip ${sub === '全部' ? 'on' : ''}`}
+                data-active={sub === '全部' ? 'true' : undefined}
+                onClick={() => setSub('全部')}
+              >
+                全部
+              </button>
               {subs.map((s) => (
-                <button key={s} className={`practice-chip ${sub === s ? 'on' : ''}`} onClick={() => setSub(s)}>
+                <button
+                  key={s}
+                  className={`practice-chip ${sub === s ? 'on' : ''}`}
+                  data-active={sub === s ? 'true' : undefined}
+                  onClick={() => setSub(s)}
+                >
                   {s} <em>{data.questions.filter((q) => q.category === category && q.sub === s).length}</em>
                 </button>
               ))}
-            </div>
+            </ChipScroller>
           </div>
         )}
 
         <div className="practice-block">
           <p className="practice-block-title"><ClipboardList size={15} /> 题量</p>
-          <div className="practice-chips">
+          <ChipScroller className="practice-chips" activeKey={String(size)}>
             {SIZE_OPTIONS.map((n) => (
-              <button key={n} className={`practice-chip ${size === n ? 'on' : ''}`} onClick={() => setSize(n)}>
+              <button
+                key={n}
+                className={`practice-chip ${size === n ? 'on' : ''}`}
+                data-active={size === n ? 'true' : undefined}
+                onClick={() => setSize(n)}
+              >
                 {n === 0 ? '全部' : `${n} 题`}
               </button>
             ))}
-          </div>
+          </ChipScroller>
         </div>
 
         <div className="practice-block">
           <p className="practice-block-title"><Shuffle size={15} /> 顺序</p>
-          <div className="practice-chips">
-            <button className={`practice-chip ${mode === 'random' ? 'on' : ''}`} onClick={() => setMode('random')}>随机</button>
-            <button className={`practice-chip ${mode === 'ordered' ? 'on' : ''}`} onClick={() => setMode('ordered')}>顺序</button>
-          </div>
+          <ChipScroller className="practice-chips" activeKey={mode}>
+            <button
+              className={`practice-chip ${mode === 'ordered' ? 'on' : ''}`}
+              data-active={mode === 'ordered' ? 'true' : undefined}
+              onClick={() => setMode('ordered')}
+            >
+              顺序
+            </button>
+            <button
+              className={`practice-chip ${mode === 'random' ? 'on' : ''}`}
+              data-active={mode === 'random' ? 'true' : undefined}
+              onClick={() => setMode('random')}
+            >
+              随机
+            </button>
+          </ChipScroller>
         </div>
 
         <div className="practice-start">

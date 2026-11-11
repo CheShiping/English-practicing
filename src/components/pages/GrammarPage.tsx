@@ -1,61 +1,54 @@
 'use client';
 
-import { useMemo, useState } from 'react';
-import { BookOpen, ChevronDown, GraduationCap, Lightbulb, Search } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { BookOpen, GraduationCap, Search } from 'lucide-react';
 import { GRAMMAR_SECTIONS } from '@/data/grammar';
+import { grammarMarkdownToHtml } from '@/lib/grammar-md';
 import { hrefFor } from '@/lib/router';
-import { cn } from '@/lib/utils';
 
 export default function GrammarPage() {
   const [query, setQuery] = useState('');
-  const [openIds, setOpenIds] = useState<string[]>([]);
+  const [active, setActive] = useState(GRAMMAR_SECTIONS[0]?.id || '');
+  const navRef = useRef<HTMLDivElement>(null);
 
-  const pointNos = useMemo(() => {
-    const map = new Map<string, string>();
-    for (const section of GRAMMAR_SECTIONS) {
-      section.points.forEach((point, i) => map.set(point.id, `${section.order}.${i + 1}`));
-    }
-    return map;
-  }, []);
-
-  const allPoints = useMemo(
-    () => GRAMMAR_SECTIONS.flatMap((section) => section.points),
-    [],
-  );
-
-  const searching = query.trim().length > 0;
-
-  const filtered = useMemo(() => {
+  const sections = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return GRAMMAR_SECTIONS;
-    return GRAMMAR_SECTIONS.map((section) => ({
-      ...section,
-      points: section.points.filter((point) =>
-        [
-          point.title,
-          point.en,
-          point.summary,
-          point.tip,
-          ...point.rules,
-          point.example.en,
-          point.example.zh,
-        ].some((text) => text.toLowerCase().includes(q)),
-      ),
-    })).filter((section) => section.points.length > 0);
+    return GRAMMAR_SECTIONS.filter(
+      (section) =>
+        !q || `${section.title} ${section.en} ${section.content}`.toLowerCase().includes(q),
+    ).map((section) => ({ ...section, html: grammarMarkdownToHtml(section.content) }));
   }, [query]);
 
-  const matchCount = filtered.reduce((sum, section) => sum + section.points.length, 0);
-  const allOpen = openIds.length === allPoints.length;
+  // 滚动时高亮当前分区
+  useEffect(() => {
+    const sync = () => {
+      let current = GRAMMAR_SECTIONS[0]?.id || '';
+      for (const section of GRAMMAR_SECTIONS) {
+        const el = document.getElementById(section.id);
+        if (el && el.getBoundingClientRect().top <= 160) current = section.id;
+      }
+      setActive(current);
+    };
+    sync();
+    window.addEventListener('scroll', sync, { passive: true });
+    return () => window.removeEventListener('scroll', sync);
+  }, []);
 
-  const toggle = (id: string) => {
-    setOpenIds((ids) => (ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]));
-  };
-
-  const toggleAll = () => {
-    setOpenIds(allOpen ? [] : allPoints.map((point) => point.id));
-  };
+  // 当前分区按钮自动滑到导航中间
+  useEffect(() => {
+    const wrap = navRef.current;
+    if (!wrap) return;
+    const button = wrap.querySelector<HTMLElement>('[data-active="true"]');
+    if (!button) return;
+    const left = button.offsetLeft - (wrap.clientWidth - button.offsetWidth) / 2;
+    wrap.scrollTo({
+      left: Math.max(0, Math.min(left, wrap.scrollWidth - wrap.clientWidth)),
+      behavior: 'smooth',
+    });
+  }, [active]);
 
   const scrollToSection = (id: string) => {
+    setActive(id);
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
@@ -68,7 +61,7 @@ export default function GrammarPage() {
             语法知识点
           </h1>
           <p className="section-sub">
-            按 2 个态 → 3 大从句 → 4 个重点 → 5 大句型 → 6 大词性编排，做题时忘了就回来翻一页。
+            按 2 个态 → 3 大从句 → 4 个重点 → 5 大句型 → 6 大词性原样收录完整框架，做题时忘了就回来翻一页。
           </p>
         </div>
         <div className="page-head-actions">
@@ -80,18 +73,19 @@ export default function GrammarPage() {
 
       <div className="grammar-layout">
         <aside className="grammar-aside" aria-label="语法框架索引">
-          <div className="grammar-aside-inner">
+          <div className="grammar-aside-inner" ref={navRef}>
             <p className="grammar-aside-title">23456 框架</p>
-            {GRAMMAR_SECTIONS.map((section) => (
-              <button key={section.id} type="button" onClick={() => scrollToSection(section.id)}>
+            {sections.map((section) => (
+              <button
+                key={section.id}
+                type="button"
+                data-active={active === section.id ? 'true' : undefined}
+                onClick={() => scrollToSection(section.id)}
+              >
                 <em>{section.order}</em>
                 <b>{section.title}</b>
-                <span>{section.points.length}</span>
               </button>
             ))}
-            <p className="grammar-aside-note">
-              共 {allPoints.length} 个知识点。搜索框可查关键词，例如“虚拟”“倒装”“主谓一致”。
-            </p>
           </div>
         </aside>
 
@@ -111,16 +105,11 @@ export default function GrammarPage() {
               )}
             </label>
             <span className="grammar-result-count">
-              {searching ? `命中 ${matchCount} 个` : `${allPoints.length} 个知识点`}
+              {query.trim() ? `命中 ${sections.length} 个分区` : `共 ${sections.length} 个分区`}
             </span>
-            {!searching && (
-              <button className="btn small ghost" type="button" onClick={toggleAll}>
-                {allOpen ? '收起全部' : '展开全部'}
-              </button>
-            )}
           </div>
 
-          {filtered.map((section) => (
+          {sections.map((section) => (
             <section key={section.id} id={section.id} className="grammar-section">
               <div className="grammar-section-head">
                 <span className="grammar-section-num">{section.order}</span>
@@ -129,62 +118,16 @@ export default function GrammarPage() {
                     <h2>{section.title}</h2>
                     <em>{section.en}</em>
                   </div>
-                  <p className="grammar-section-intro">{section.intro}</p>
                 </div>
               </div>
-
-              <div className="grammar-cards">
-                {section.points.map((point) => {
-                  const open = searching || openIds.includes(point.id);
-                  return (
-                    <article key={point.id} className={cn('grammar-card', open && 'open')}>
-                      <button
-                        type="button"
-                        className="grammar-card-head"
-                        aria-expanded={open}
-                        disabled={searching}
-                        onClick={() => toggle(point.id)}
-                      >
-                        <span className="grammar-point-no">{pointNos.get(point.id)}</span>
-                        <span className="grammar-point-main">
-                          <b>{point.title}</b>
-                          <em>{point.en}</em>
-                          <span>{point.summary}</span>
-                        </span>
-                        {!searching && <ChevronDown size={16} className="grammar-chevron" />}
-                      </button>
-
-                      {open && (
-                        <div className="grammar-card-body">
-                          <ul className="grammar-rules">
-                            {point.rules.map((rule) => (
-                              <li key={rule}>{rule}</li>
-                            ))}
-                          </ul>
-
-                          <div className="grammar-example">
-                            <span className="grammar-example-label">Example</span>
-                            <p className="grammar-example-en">{point.example.en}</p>
-                            <p className="grammar-example-zh">{point.example.zh}</p>
-                          </div>
-
-                          <div className="grammar-tip">
-                            <Lightbulb size={14} />
-                            <span>
-                              <b>易错</b>
-                              {point.tip}
-                            </span>
-                          </div>
-                        </div>
-                      )}
-                    </article>
-                  );
-                })}
-              </div>
+              <div
+                className="grammar-content"
+                dangerouslySetInnerHTML={{ __html: section.html }}
+              />
             </section>
           ))}
 
-          {filtered.length === 0 && (
+          {sections.length === 0 && (
             <div className="grammar-empty">
               <Search size={26} />
               <h3>没有找到对应的知识点</h3>
