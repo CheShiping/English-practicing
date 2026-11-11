@@ -19,7 +19,7 @@ import { parseMarkdownArticles, type ParsedArticle } from '@/lib/parse-markdown'
 import { hrefFor, navigate } from '@/lib/router';
 import { cn, relativeTime } from '@/lib/utils';
 
-const SAMPLE = `# 科普类专项训练
+const SAMPLE = `# 健康与医学
 
 Passage 1
 
@@ -280,7 +280,7 @@ export default function ImportPage() {
           <div className="import-guide">
             <h3>格式说明</h3>
             <p>不需要严格排版，只要保持“文章 → 题目 → 选项”的顺序即可。</p>
-            <pre>{`# 科普类专项训练
+            <pre>{`# 健康与医学
 
 Passage 1
 

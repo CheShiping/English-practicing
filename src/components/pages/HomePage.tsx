@@ -5,17 +5,19 @@ import {
   ArrowRight,
   ArrowUpRight,
   BookOpen,
+  Brain,
+  Briefcase,
   CheckCircle2,
   Clock3,
-  Flame,
-  FlaskConical,
   Feather,
   FileText,
+  Flame,
   GraduationCap,
-  TrendingUp,
+  HeartPulse,
   Landmark,
+  Leaf,
+  Plane,
   Users,
-  Rocket,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
@@ -24,13 +26,16 @@ import { hrefFor } from '@/lib/router';
 import { todayKey } from '@/lib/utils';
 
 const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: number }>> = {
-  kepu: FlaskConical,
-  jingli: Feather,
-  yingyong: FileText,
-  jingji: TrendingUp,
-  lishi: Landmark,
-  shehui: Users,
-  chongci: Rocket,
+  health: HeartPulse,
+  nature: Leaf,
+  mind: Brain,
+  education: GraduationCap,
+  career: Briefcase,
+  society: Users,
+  travel: Plane,
+  culture: Landmark,
+  story: Feather,
+  practical: FileText,
 };
 
 export default function HomePage() {
@@ -107,7 +112,7 @@ export default function HomePage() {
           <div className="hero-stamp">精读</div>
           <div className="hero-paper-label">PASSAGE · 01</div>
           <h3>Why the Body Needs Sleep</h3>
-          <div className="hero-paper-sub">科普类 · 194 words · 5 题</div>
+          <div className="hero-paper-sub">健康与医学 · 194 words · 5 题</div>
           <p className="hero-paper-text">
             After a busy day of work and play, the body needs to rest.{' '}
             <span className="hl">Sleep is necessary for good health.</span> During this time, the
@@ -271,7 +276,7 @@ export default function HomePage() {
                 className="category-card"
                 href={hrefFor(`/library/${c.id}`)}
               >
-                <span className="category-index">0{i + 1}</span>
+                <span className="category-index">{String(i + 1).padStart(2, '0')}</span>
                 <span className="category-icon">
                   <Icon size={18} strokeWidth={1.5} />
                 </span>

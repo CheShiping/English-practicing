@@ -4,47 +4,65 @@ export const CATEGORY_META: Record<
   string,
   { description: string; color: string; icon: string; short: string }
 > = {
-  kepu: {
-    description: '从睡眠、听觉到智能与自然法则，训练信息定位与推理判断。',
+  health: {
+    description: '睡眠、饮食、疾病与医疗，读懂身体发出的信号。',
+    color: '#B3544E',
+    icon: 'heart',
+    short: '健康',
+  },
+  nature: {
+    description: '动物、植物、环境与前沿科技，理解自然世界如何运转。',
     color: '#3E6B57',
-    icon: 'flask',
-    short: '科普',
+    icon: 'leaf',
+    short: '自然',
   },
-  jingli: {
-    description: '在真实的人生片段里，读懂叙事线索、人物情感与写作意图。',
-    color: '#B4813A',
-    icon: 'feather',
-    short: '记叙',
+  mind: {
+    description: '认知、情绪、习惯与人际关系，观察人为什么这样想、这样做。',
+    color: '#6B5B8A',
+    icon: 'brain',
+    short: '心理',
   },
-  yingyong: {
-    description: '通知、合同、说明与操作指南，攻克应用文的信息检索题。',
-    color: '#5B5B8A',
-    icon: 'file',
-    short: '应用',
-  },
-  jingji: {
-    description: '商业案例与行业观察，练习观点、数据与逻辑关系的辨析。',
-    color: '#8A4B3A',
-    icon: 'chart',
-    short: '商业',
-  },
-  lishi: {
-    description: '从节日、奥运到礼物文化，在历史与人文语境中练习细节理解。',
-    color: '#7A5C3E',
-    icon: 'landmark',
-    short: '历史',
-  },
-  shehui: {
-    description: '初入职场、出行、饮食与健康，读懂社会生活类说明与议论文。',
+  education: {
+    description: '家庭、学校、学习与成长，讨论教育如何塑造人。',
     color: '#4F6D7A',
+    icon: 'graduation',
+    short: '教育',
+  },
+  career: {
+    description: '求职、管理、消费与经济，读懂工作与商业世界的规则。',
+    color: '#8A5A3A',
+    icon: 'briefcase',
+    short: '职场',
+  },
+  society: {
+    description: '城市、社区、公共议题与生活方式，理解社会如何变化。',
+    color: '#5B6B7A',
     icon: 'users',
     short: '社会',
   },
-  chongci: {
-    description: '考前综合冲刺：混合题材、限时阅读与快速定位训练。',
-    color: '#8E3B4E',
-    icon: 'rocket',
-    short: '冲刺',
+  travel: {
+    description: '交通、旅行与远方，在移动中观察世界与生活。',
+    color: '#3F7A8A',
+    icon: 'plane',
+    short: '旅行',
+  },
+  culture: {
+    description: '节日、艺术、传统与历史人物，在文化语境中理解细节。',
+    color: '#7A5C3E',
+    icon: 'landmark',
+    short: '文化',
+  },
+  story: {
+    description: '真实的人生片段与叙事，跟随人物经历读出情感与意图。',
+    color: '#B4813A',
+    icon: 'feather',
+    short: '故事',
+  },
+  practical: {
+    description: '通知、合同、说明与操作指南，训练信息检索与执行能力。',
+    color: '#5B5B8A',
+    icon: 'file',
+    short: '文书',
   },
 };
 

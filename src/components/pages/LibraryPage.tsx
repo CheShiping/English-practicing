@@ -6,18 +6,21 @@ import {
   ArrowRight,
   Bookmark,
   BookmarkCheck,
+  Brain,
+  Briefcase,
   CheckCircle2,
   Clock3,
   Feather,
   FileText,
-  FlaskConical,
+  GraduationCap,
+  HeartPulse,
   Search,
   SlidersHorizontal,
-  TrendingUp,
   Layers,
   Landmark,
+  Leaf,
+  Plane,
   Users,
-  Rocket,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
 import { useAllArticles } from '@/lib/use-articles';
@@ -26,13 +29,16 @@ import { hrefFor } from '@/lib/router';
 import type { Article } from '@/lib/types';
 
 const CAT_ICONS: Record<string, ComponentType<{ size?: number; strokeWidth?: number }>> = {
-  kepu: FlaskConical,
-  jingli: Feather,
-  yingyong: FileText,
-  jingji: TrendingUp,
-  lishi: Landmark,
-  shehui: Users,
-  chongci: Rocket,
+  health: HeartPulse,
+  nature: Leaf,
+  mind: Brain,
+  education: GraduationCap,
+  career: Briefcase,
+  society: Users,
+  travel: Plane,
+  culture: Landmark,
+  story: Feather,
+  practical: FileText,
 };
 
 type SortKey = 'default' | 'words' | 'questions' | 'progress';

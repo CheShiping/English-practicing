@@ -58,10 +58,16 @@ function stripQuestionPrefix(line: string): string {
 }
 
 function inferCategory(name: string): { id: string; name: string } {
-  if (/科普/.test(name)) return { id: 'kepu', name: '科普类' };
-  if (/经历|记叙|叙事/.test(name)) return { id: 'jingli', name: '经历记叙类' };
-  if (/应用文|通知|合同/.test(name)) return { id: 'yingyong', name: '应用文类' };
-  if (/经济|商业|商务/.test(name)) return { id: 'jingji', name: '经济商业类' };
+  if (/健康|医学|疾病|营养/.test(name)) return { id: 'health', name: '健康与医学' };
+  if (/自然|科技|环境|动物|植物/.test(name)) return { id: 'nature', name: '自然与科技' };
+  if (/心理|行为|认知|情绪/.test(name)) return { id: 'mind', name: '心理与行为' };
+  if (/教育|成长|学习|学校/.test(name)) return { id: 'education', name: '教育与成长' };
+  if (/职场|商业|经济|管理/.test(name)) return { id: 'career', name: '职场与商业' };
+  if (/社会|城市|社区/.test(name)) return { id: 'society', name: '社会与城市' };
+  if (/旅行|出行|交通/.test(name)) return { id: 'travel', name: '旅行与出行' };
+  if (/文化|历史|传统|艺术/.test(name)) return { id: 'culture', name: '文化与历史' };
+  if (/故事|人物|叙事|记叙/.test(name)) return { id: 'story', name: '人物与故事' };
+  if (/应用文|通知|合同|说明|指南/.test(name)) return { id: 'practical', name: '实用文书' };
   return { id: 'custom', name: name || '自定义' };
 }
 

@@ -8,14 +8,16 @@ const ARTICLE_DIR = path.join(ROOT, 'article');
 const OUT_DIR = path.join(ROOT, 'src', 'data');
 
 const CATEGORY_MAP = {
-  '科普类专项训练': { catId: 'kepu', catName: '科普类', order: 1 },
-  '经历记叙类专项训练': { catId: 'jingli', catName: '经历记叙类', order: 2 },
-  '应用文类专项训练': { catId: 'yingyong', catName: '应用文类', order: 3 },
-  '经济商业类专项训练': { catId: 'jingji', catName: '经济商业类', order: 4 },
-  '历史人文类专项训练': { catId: 'lishi', catName: '历史人文类', order: 5 },
-  '社会生活类专项训': { catId: 'shehui', catName: '社会生活类', order: 6 },
-  '社会生活类专项训练': { catId: 'shehui', catName: '社会生活类', order: 6 },
-  '冲刺训练': { catId: 'chongci', catName: '冲刺训练', order: 7 },
+  '健康与医学': { catId: 'health', catName: '健康与医学', order: 1 },
+  '自然与科技': { catId: 'nature', catName: '自然与科技', order: 2 },
+  '心理与行为': { catId: 'mind', catName: '心理与行为', order: 3 },
+  '教育与成长': { catId: 'education', catName: '教育与成长', order: 4 },
+  '职场与商业': { catId: 'career', catName: '职场与商业', order: 5 },
+  '社会与城市': { catId: 'society', catName: '社会与城市', order: 6 },
+  '旅行与出行': { catId: 'travel', catName: '旅行与出行', order: 7 },
+  '文化与历史': { catId: 'culture', catName: '文化与历史', order: 8 },
+  '人物与故事': { catId: 'story', catName: '人物与故事', order: 9 },
+  '实用文书': { catId: 'practical', catName: '实用文书', order: 10 },
 };
 
 // 由 scripts/build-practice.mjs 处理的纯题目练习文件，不进入文章管线
@@ -118,6 +120,13 @@ function parseFile(filePath, category) {
       flush();
       current = { number: passageNumber(line), heading: passageTitle(line), rawLines: [] };
       sawQuestions = false;
+      continue;
+    }
+
+    // 显式文章 ID（用于跨分类重组后保持原有 id，避免进度、答案、译文失联）
+    const idMatch = line.match(/^<!--\s*id:\s*([A-Za-z0-9_-]+)\s*-->$/i);
+    if (idMatch) {
+      current.articleId = idMatch[1];
       continue;
     }
 
@@ -368,7 +377,7 @@ function main() {
         continue;
       }
 
-      const id = `${cat.catId}-${String(p.number).padStart(2, '0')}`;
+      const id = p.articleId || `${cat.catId}-${String(p.number).padStart(2, '0')}`;
       const firstSentence = (blocks.find((b) => b.type === 'p')?.text || '').split(/(?<=[.!?])\s+/)[0] || '';
       const fallbackTitle = firstSentence.replace(/[.!?]+$/, '').slice(0, 90);
       catArticles.push({
