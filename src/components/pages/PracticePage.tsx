@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
+  BookOpen,
   BookX,
   CheckCircle2,
   ClipboardList,
@@ -226,6 +227,15 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
               <span style={{ width: `${((cursor + 1) / paper.questions.length) * 100}%` }} />
             </div>
           </div>
+          <a
+            className="practice-grammar-link"
+            href={hrefFor('/grammar')}
+            target="_blank"
+            rel="noreferrer"
+            title="新标签打开语法知识点，不打断本次答题"
+          >
+            <BookOpen size={15} /> 语法速查
+          </a>
           <button
             className={`practice-mark ${marks.includes(q.id) ? 'on' : ''}`}
             onClick={() => setMarks((m) => (m.includes(q.id) ? m.filter((x) => x !== q.id) : [...m, q.id]))}
@@ -490,9 +500,14 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
             共 {data.total} 道专升本词汇语法单选题，按语法框架分好考点。答一题判一题，即时反馈对错与解析。
           </p>
         </div>
-        <a className="btn ghost" href={hrefFor('/practice/wrong')}>
-          <BookX size={15} /> 错题本{wrongCount > 0 ? `（${wrongCount}）` : ''}
-        </a>
+        <div className="practice-head-actions">
+          <a className="btn ghost" href={hrefFor('/grammar')}>
+            <BookOpen size={15} /> 语法速查
+          </a>
+          <a className="btn ghost" href={hrefFor('/practice/wrong')}>
+            <BookX size={15} /> 错题本{wrongCount > 0 ? `（${wrongCount}）` : ''}
+          </a>
+        </div>
       </div>
 
       <div className="practice-setup">

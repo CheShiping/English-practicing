@@ -55,11 +55,16 @@ export default function StatsPage() {
           </h1>
           <p className="section-sub">每一个数字背后，都是你认真读过的一段英文。</p>
         </div>
-        <div className="streak-big">
-          <Flame size={20} />
-          <div>
-            <b>{readingStreak}</b>
-            <span>天连续学习</span>
+        <div className="stats-head-side">
+          <a className="btn" href={hrefFor('/vocab')}>
+            <BookMarked size={15} /> 生词本{vocab.length > 0 ? ` ${vocab.length}` : ''}
+          </a>
+          <div className="streak-big">
+            <Flame size={20} />
+            <div>
+              <b>{readingStreak}</b>
+              <span>天连续学习</span>
+            </div>
           </div>
         </div>
       </div>

@@ -196,6 +196,8 @@ export default function VocabPage() {
 
       <div className="vocab-footer-tip">
         <ArrowLeft size={13} />
+        <a href={hrefFor('/stats')}>回到学习数据</a>
+        <span className="divider-dot" />
         <a href={hrefFor('/library')}>回到文章库</a>
         <span className="divider-dot" />
         <span>生词与复习进度只保存在当前浏览器</span>
