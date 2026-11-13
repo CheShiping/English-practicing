@@ -11,10 +11,11 @@
 - **标记不再随练习消失**：`PracticePage` 的 `marks` 从局部 state 改为读标记本（`markVersion` 驱动刷新），点标记即写盘；旧续答存档里的 `marks` 在恢复时自动补写进标记本，`PracticeResume.source` 扩展为 `pool | wrong | marked`
 - **标记本页面**：新路由 `#/practice/marked`（`router.ts` 的 `tab` 扩为 `wrong | marked`），设置页在「错题本」右侧新增「标记本（N）」入口；页面复用错题本版式，卡片带金色左边框与「标记于 11/13 13:19」，支持取消标记、清空、重做标记题（按标记时间出卷）
 - **切题回到顶部**：`cursor` 或阶段变化时 `window.scrollTo({ top: 0 })`，上一题、下一题、答题卡跳转都会回到顶部，同时关掉可能残留的词典卡；对 `prefers-reduced-motion` 用户降级为瞬时滚动
-- **题干点词查义**：新增 `src/components/WordText.tsx`（把英文切成可点词 span，复用阅读器 `.w` 悬停样式），单选题干改用它渲染，点词弹出同一个 `WordPopover`；题干上方加「点题干里的单词可查释义」提示
+- **题干点词查义**：新增 `src/components/WordText.tsx`（把英文切成可点词 span，复用阅读器 `.w` 悬停样式），单选题干改用它渲染，点词弹出同一个 `WordPopover`
+- **题干划词翻译**：新增 `src/components/SelectionBar.tsx`（复用 `.sel-toolbar` 样式，只保留「翻译」与「复制」），题干 `mouseup`/`touchend` 捕获选区，选中多个词才出工具条、单选一个词仍走点词查义；点「翻译」打开阅读器同款 `SelectionAnalysisModal`（参考译文 + 重点词汇 + 句法提示），点别处或 Esc 收起；题干上方提示改为「点词查义 · 选中可翻译」
 - **头部布局**：`.practice-head` 左列改为可收缩（`flex: 1 1 auto; min-width: 0`）、`.practice-head-actions` 不收缩，三个入口在 1280 与 390 两档都不换行
-- **证据**：headless 实测点标记后 `moread.practice.mark.v1` 写入 `danxuan-01-001`；重载 `#/practice/marked` 渲染「标记本」1 条并带金色左边框；「重做标记题」得到「标记题重做」2 题卷；取消标记后列表转空态且 store 变 `{}`；900×520 窗口滚到 273px 点「下一题」后 `scrollY=0`；点第 4 个可点词弹出 the 的词典卡；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
-- **本次改动文件**：`src/components/pages/PracticePage.tsx`、`src/components/WordText.tsx`（新增）、`src/lib/practice.ts`、`src/lib/router.ts`、`src/lib/storage.ts`、`src/lib/types.ts`、`app/pages.css`、`feature_list.json`
+- **证据**：headless 实测点标记后 `moread.practice.mark.v1` 写入 `danxuan-01-001`；重载 `#/practice/marked` 渲染「标记本」1 条并带金色左边框；「重做标记题」得到「标记题重做」2 题卷；取消标记后列表转空态且 store 变 `{}`；900×520 窗口滚到 273px 点「下一题」后 `scrollY=0`；点第 4 个可点词弹出 the 的词典卡；选中 `good chance the child` 出工具条、点「翻译」弹出「翻译与句法提示」（参考译文「孩子很有可能」、重点词汇 chance/child），只选一个词不出工具条，点外部自动收起；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **本次改动文件**：`src/components/pages/PracticePage.tsx`、`src/components/WordText.tsx`（新增）、`src/components/SelectionBar.tsx`（新增）、`src/lib/practice.ts`、`src/lib/router.ts`、`src/lib/storage.ts`、`src/lib/types.ts`、`app/pages.css`、`feature_list.json`
 
 ## 2026-11-13 动效审计与五处交互补齐（feat-015）
 

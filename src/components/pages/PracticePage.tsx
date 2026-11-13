@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowLeft,
   ArrowRight,
@@ -22,7 +22,9 @@ import { useApp } from '@/state/AppProvider';
 import { hrefFor } from '@/lib/router';
 import ChipScroller from '@/components/ChipScroller';
 import WordText from '@/components/WordText';
+import SelectionBar from '@/components/SelectionBar';
 import WordPopover from '@/components/reader/WordPopover';
+import { SelectionAnalysisModal } from '@/components/reader/SelectionTools';
 import { normalizeWord } from '@/lib/utils';
 import type { PracticeData, PracticeQuestion } from '@/lib/types';
 import {
@@ -82,6 +84,10 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   const [markVersion, setMarkVersion] = useState(0);
   const [resumeVersion, setResumeVersion] = useState(0);
   const [wordPop, setWordPop] = useState<{ word: string; rect: DOMRect } | null>(null);
+  // 题干选区翻译：选中多个词后出工具条
+  const [stemSel, setStemSel] = useState<{ text: string; rect: DOMRect } | null>(null);
+  const [analysisText, setAnalysisText] = useState<string | null>(null);
+  const stemRef = useRef<HTMLParagraphElement>(null);
 
   // 标记存在独立的本子里，退出练习后依然保留
   const markBook = useMemo(() => {
@@ -188,9 +194,29 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   useEffect(() => {
     if (phase !== 'quiz') return;
     setWordPop(null);
+    setStemSel(null);
+    setAnalysisText(null);
     const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
     window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
   }, [cursor, phase]);
+
+  // 选区工具条：点别处或 Esc 收起
+  useEffect(() => {
+    if (!stemSel) return;
+    const onDown = (e: MouseEvent) => {
+      if ((e.target as HTMLElement).closest('.sel-toolbar')) return;
+      setStemSel(null);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setStemSel(null);
+    };
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [stemSel]);
 
   const wrongBook = useMemo(() => {
     void wrongIdsVersion;
@@ -324,8 +350,47 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   const handleStemWord = useCallback((raw: string, el: HTMLElement) => {
     const norm = normalizeWord(raw);
     if (!norm || (norm.length < 2 && norm !== 'i')) return;
+    setStemSel(null);
     setWordPop({ word: norm, rect: el.getBoundingClientRect() });
   }, []);
+
+  // 题干选区：选中多个词才出工具条，单词交给点词查义
+  const captureStemSelection = useCallback(() => {
+    const el = stemRef.current;
+    const sel = window.getSelection();
+    if (!el || !sel || sel.rangeCount === 0 || sel.isCollapsed) {
+      setStemSel(null);
+      return;
+    }
+    const range = sel.getRangeAt(0);
+    if (!el.contains(range.commonAncestorContainer)) return;
+    const raw = sel.toString().replace(/\s+/g, ' ').trim();
+    if (!raw || raw.length > 600 || /^[A-Za-z][A-Za-z'’\-]*$/.test(raw)) {
+      setStemSel(null);
+      return;
+    }
+    setWordPop(null);
+    setStemSel({ text: raw, rect: range.getBoundingClientRect() });
+  }, []);
+
+  const translateSelection = useCallback(() => {
+    if (!stemSel) return;
+    setAnalysisText(stemSel.text);
+    setStemSel(null);
+    window.getSelection()?.removeAllRanges();
+  }, [stemSel]);
+
+  const copySelection = useCallback(async () => {
+    if (!stemSel) return;
+    try {
+      await navigator.clipboard.writeText(stemSel.text);
+      toast('已复制选中内容', 'success');
+    } catch {
+      toast('复制失败，请手动选择', 'error');
+    }
+    setStemSel(null);
+    window.getSelection()?.removeAllRanges();
+  }, [stemSel, toast]);
 
   if (phase === 'loading') {
     return (
@@ -393,11 +458,16 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
 
         <div className="practice-paper-label">
           <span>{paper.label}</span>
-          <span className="practice-stem-hint">点题干里的单词可查释义</span>
+          <span className="practice-stem-hint">点词查义 · 选中可翻译</span>
         </div>
 
         <div className="practice-qcard">
-          <p className="practice-stem">
+          <p
+            className="practice-stem"
+            ref={stemRef}
+            onMouseUp={() => window.setTimeout(captureStemSelection, 0)}
+            onTouchEnd={() => window.setTimeout(captureStemSelection, 60)}
+          >
             <WordText text={q.stem} onWordClick={handleStemWord} />
           </p>
           <div className="practice-options">
@@ -506,6 +576,19 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
             anchor={wordPop.rect}
             onClose={() => setWordPop(null)}
           />
+        )}
+
+        {stemSel && (
+          <SelectionBar
+            text={stemSel.text}
+            rect={stemSel.rect}
+            onTranslate={translateSelection}
+            onCopy={copySelection}
+          />
+        )}
+
+        {analysisText && (
+          <SelectionAnalysisModal text={analysisText} onClose={() => setAnalysisText(null)} />
         )}
       </div>
     );
