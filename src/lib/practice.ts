@@ -1,5 +1,5 @@
 import type { PracticeData, PracticeQuestion, PracticeSessionRecord, PracticeWrongEntry } from '@/lib/types';
-import { KEYS, readJson, writeJson } from '@/lib/storage';
+import { KEYS, readJson, removeKey, writeJson } from '@/lib/storage';
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -62,6 +62,29 @@ export function getWrongIds(): string[] {
   return Object.values(getWrongBook())
     .sort((a, b) => b.lastWrongAt - a.lastWrongAt)
     .map((e) => e.id);
+}
+
+// ---------- 练习进度续答 ----------
+
+export interface PracticeResume {
+  ids: string[]; // 试卷题目 id 顺序
+  picks: Record<string, string>; // 已作答 id -> 选项字母
+  marks: string[]; // 已标记 id
+  label: string;
+  source: 'pool' | 'wrong';
+  updatedAt: number;
+}
+
+export function getPracticeResume(): PracticeResume | null {
+  return readJson<PracticeResume | null>(KEYS.practiceResume, null);
+}
+
+export function savePracticeResume(resume: PracticeResume): void {
+  writeJson(KEYS.practiceResume, resume);
+}
+
+export function clearPracticeResume(): void {
+  removeKey(KEYS.practiceResume);
 }
 
 // ---------- 练习记录 ----------

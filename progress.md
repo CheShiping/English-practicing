@@ -2,8 +2,18 @@
 
 ## 当前状态
 
-**最后更新：** 2026-11-11
-**当前功能：** feat-013 移动端分类横滑自动居中与语法知识点全量搬入（已完成）
+**最后更新：** 2026-11-13
+**当前功能：** feat-014 单选练习全量出题、进度续答与答题卡底部弹层（已完成）；README 视觉改造与部署地址更新
+
+## 2026-11-13 单选练习全量出题、续答与答题卡弹层；README 改造（feat-014）
+
+- **删除题量选择**：设置页只保留考点大类 / 细分考点 / 顺序，开始练习直接出当前考点全部题目（全池 2774 题可用）
+- **进度续答**：新增 `practice.resume.v1`（试卷题目顺序、作答、标记实时写盘）；重新进入 `#/practice` 自动恢复，光标落在最后答过的那道题上，已答统计与标记一并恢复；「完成练习」或存档题目失效时清除；退出练习不再弹确认框
+- **答题卡底部弹层**：移除页面常驻答题卡，导航栏中间新增「答题卡」按钮，底部弹出面板（遮罩点击 / Esc / 收起按钮关闭，`safe-area-inset-bottom` 适配，打开时锁背景滚动），点题号跳题并关闭
+- **README 改造**：新增 `assets/readme/hero.svg`（纸感 + 行线 + 精读印章视觉，含在线入口文案）与 5 张真实界面截图；重排阅读顺序（hero → 界面速览 → 它是什么 → 功能 → 快速开始 → 添加文章 → 部署 → 目录结构 → 说明）；部署地址 `https://cheshiping.github.io/English-practicing/` 写入正文
+- **部署**：git remote 由 `CheShiping/English-reading.git` 改为 `cheshiping/English-practicing.git`；部署工作流用 `actions/configure-pages` 自动探测 base_path，无需改配置
+- **证据**：headless 实测 size-block-gone:true、开始练习（2774 题）、inline-sheet:absent、sheet-opens:true、弹层点题号跳到第 5 题、刷新后 resume「第 5 / 2774 题 · 已答 2 · 对 1」均 PASS；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）；beautify-github-readme 审计脚本「image references and SVG basics」PASS；hero 在 1200 宽与 GitHub 360 宽缩放下目检通过
+- **本次改动文件**：`src/components/pages/PracticePage.tsx`、`src/lib/practice.ts`、`src/lib/storage.ts`、`app/pages.css`、`README.md`、`assets/readme/*`（新增）、`feature_list.json`
 
 ## 2026-11-11 移动端分类横滑自动居中与语法知识点全量搬入（feat-013）
 

@@ -105,6 +105,14 @@
       "dependencies": ["feat-011", "feat-012"],
       "status": "done",
       "evidence": "2026-11-11：新增 scripts/build-grammar.mjs，npm run content 生成语法框架 5 个分区（02 两个态 97 行 / 03 三大从句 152 行 / 04 四个重点 234 行 / 05 五大句型 56 行 / 06 六大词性 211 行）；文本保真校验 5 个分区源文与渲染文本完全一致；npx tsc --noEmit exit 0；npm run build exit 0（120 篇 / 588 题 / 32558 词 + 单选 2774 题，导出 2/2）；headless Chrome 390px 与 320px 视口 10 条路由 scrollWidth === clientWidth 无横向溢出；文章库切到「文化与历史」scrollLeft 966、centerDelta 0；单选切到「三大从句」scrollLeft 214、centerDelta 0，默认选中「顺序」；语法页 5 个分区 / 5 个表格，导航点击后自动滑到右端 133（夹取）"
+    },
+    {
+      "id": "feat-014",
+      "name": "单选练习全量出题、进度续答与答题卡底部弹层",
+      "description": "删除题量选择，开始练习直接练完当前考点全部题目；答题进度实时存 localStorage，重新进入练习页自动恢复到上次答过的最后一道题；页面常驻答题卡改为按钮触发的底部弹层",
+      "dependencies": ["feat-010"],
+      "status": "done",
+      "evidence": "2026-11-13：PracticePage 移除题量块与 SIZE_OPTIONS，buildPaper 固定 count=0；practice.ts 新增 PracticeResume 存取、storage.ts 新增 practice.resume.v1；答题卡改为 practice-sheet-mask/panel 底部弹层（遮罩/Esc/收起按钮关闭、safe-area 适配、锁背景滚动）；headless 实测 size-block-gone:true、开始练习（2774 题）、inline-sheet:absent、sheet-opens:true、弹层点题号跳到第 5 题、刷新后 resume「第 5 / 2774 题 · 已答 2 · 对 1」全部 PASS；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     }
   ]
 }

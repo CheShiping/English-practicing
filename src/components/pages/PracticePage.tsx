@@ -10,6 +10,7 @@ import {
   ClipboardList,
   Flag,
   Layers,
+  LayoutGrid,
   RefreshCw,
   Shuffle,
   Send,
@@ -24,18 +25,20 @@ import {
   addHistory,
   addWrong,
   buildPaper,
+  clearPracticeResume,
   clearWrongBook,
   getHistory,
+  getPracticeResume,
   getWrongBook,
   getWrongIds,
   loadPractice,
   removeWrong,
+  savePracticeResume,
   sortCategories,
   type PracticeMode,
 } from '@/lib/practice';
 
 type Phase = 'loading' | 'setup' | 'quiz' | 'result' | 'error';
-const SIZE_OPTIONS = [10, 20, 50, 0]; // 0 = 全部
 
 interface Paper {
   questions: PracticeQuestion[];
@@ -53,7 +56,6 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   // 组卷设置
   const [category, setCategory] = useState<string>('全部');
   const [sub, setSub] = useState<string>('全部');
-  const [size, setSize] = useState<number>(20);
   const [mode, setMode] = useState<PracticeMode>('ordered');
 
   // 练习状态
@@ -62,6 +64,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   const [marks, setMarks] = useState<string[]>([]);
   const [cursor, setCursor] = useState(0);
   const [session, setSession] = useState({ answered: 0, correct: 0 });
+  const [sheetOpen, setSheetOpen] = useState(false);
   const [wrongIdsVersion, setWrongIdsVersion] = useState(0);
 
   useEffect(() => {
@@ -70,6 +73,40 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       .then((d) => {
         if (!alive) return;
         setData(d);
+        // 有未完成的练习时直接续答，落在最后答过的那道题上
+        const saved = getPracticeResume();
+        if (tab !== 'wrong' && saved && Array.isArray(saved.ids) && saved.ids.length) {
+          const byId = new Map(d.questions.map((q) => [q.id, q]));
+          const questions = saved.ids
+            .map((id) => byId.get(id))
+            .filter((q): q is PracticeQuestion => Boolean(q));
+          if (questions.length) {
+            const valid = new Set(questions.map((q) => q.id));
+            const savedPicks: Record<string, string> = {};
+            for (const [id, letter] of Object.entries(saved.picks || {})) {
+              if (valid.has(id) && letter) savedPicks[id] = letter;
+            }
+            let lastAnswered = 0;
+            for (let i = 0; i < questions.length; i++) {
+              if (savedPicks[questions[i].id]) lastAnswered = i;
+            }
+            setPaper({
+              questions,
+              label: saved.label || '继续上次练习',
+              source: saved.source === 'wrong' ? 'wrong' : 'pool',
+            });
+            setPicks(savedPicks);
+            setMarks(Array.isArray(saved.marks) ? saved.marks.filter((id) => valid.has(id)) : []);
+            setCursor(lastAnswered);
+            setSession({
+              answered: Object.keys(savedPicks).length,
+              correct: questions.reduce((n, q) => n + (savedPicks[q.id] === q.answer ? 1 : 0), 0),
+            });
+            setPhase('quiz');
+            return;
+          }
+          clearPracticeResume(); // 存档题目已失效
+        }
         setPhase('setup');
       })
       .catch((e: unknown) => {
@@ -77,10 +114,36 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
         setError(e instanceof Error ? e.message : '练习数据加载失败');
         setPhase('error');
       });
-    return () => {
-      alive = false;
-    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // 答题过程中实时保存进度：刷新、退出后重进都能续答
+  useEffect(() => {
+    if (phase !== 'quiz' || !paper) return;
+    savePracticeResume({
+      ids: paper.questions.map((q) => q.id),
+      picks,
+      marks,
+      label: paper.label,
+      source: paper.source,
+      updatedAt: Date.now(),
+    });
+  }, [phase, paper, picks, marks]);
+
+  // 答题卡弹层：锁背景滚动，Esc 关闭
+  useEffect(() => {
+    if (!sheetOpen || typeof document === 'undefined') return;
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSheetOpen(false);
+    };
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = prevOverflow;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [sheetOpen]);
 
   // 路由 tab 变化（#practice / #practice/wrong）
   useEffect(() => {
@@ -133,7 +196,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
         questions = pool;
         label = `${category === '全部' ? '全部考点' : category}${sub === '全部' ? '' : ' · ' + sub}`;
       }
-      const picked = buildPaper(questions, source === 'wrong' ? 0 : size, mode);
+      const picked = buildPaper(questions, 0, mode); // 直接出当前考点的全部题
       if (!picked.length) {
         toast('没有符合条件的题目', 'info');
         return;
@@ -143,9 +206,10 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       setMarks([]);
       setCursor(0);
       setSession({ answered: 0, correct: 0 });
+      setSheetOpen(false);
       setPhase('quiz');
     },
-    [data, pool, category, sub, size, mode, toast],
+    [data, pool, category, sub, mode, toast],
   );
 
   // 即时判定：点选项立即判对错、错题入本、计入学习统计
@@ -167,6 +231,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
     if (session.answered > 0) {
       addHistory({ at: Date.now(), total: session.answered, correct: session.correct, label: paper.label });
     }
+    clearPracticeResume(); // 本次练习已完成，清除续答存档
     setPhase('result');
   }, [paper, session]);
 
@@ -182,6 +247,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       setMarks([]);
       setCursor(0);
       setSession({ answered: 0, correct: 0 });
+      setSheetOpen(false);
       setPhase('quiz');
     },
     [data],
@@ -217,7 +283,11 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
     return (
       <div className="page practice-page practice-quiz">
         <div className="practice-quiz-top">
-          <button className="practice-back" onClick={() => { if (window.confirm('退出后本次作答不会保存，确定退出？')) setPhase('setup'); }}>
+          <button
+            className="practice-back"
+            onClick={() => setPhase('setup')}
+            title="退出练习，进度已自动保存，重新进入可继续"
+          >
             <ArrowLeft size={16} /> 退出
           </button>
           <div className="practice-progress">
@@ -295,6 +365,9 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           <button className="btn ghost" disabled={cursor === 0} onClick={() => setCursor((c) => Math.max(0, c - 1))}>
             <ArrowLeft size={15} /> 上一题
           </button>
+          <button className="btn ghost" onClick={() => setSheetOpen(true)}>
+            <LayoutGrid size={15} /> 答题卡
+          </button>
           {cursor < paper.questions.length - 1 ? (
             <button className="btn primary" onClick={() => setCursor((c) => Math.min(paper.questions.length - 1, c + 1))}>
               下一题 <ArrowRight size={15} />
@@ -306,25 +379,45 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           )}
         </div>
 
-        <div className="practice-sheet">
-          <p className="practice-sheet-title">答题卡（绿 = 对，红 = 错）</p>
-          <div className="practice-sheet-grid">
-            {paper.questions.map((item, i) => {
-              const mine = picks[item.id];
-              const cellOk = Boolean(mine) && mine === item.answer;
-              const cellBad = Boolean(mine) && mine !== item.answer;
-              return (
-                <button
-                  key={item.id}
-                  className={`practice-sheet-cell ${i === cursor ? 'cur' : ''} ${cellOk ? 'ok' : ''} ${cellBad ? 'bad' : ''} ${marks.includes(item.id) ? 'marked' : ''}`}
-                  onClick={() => setCursor(i)}
-                >
-                  {i + 1}
-                </button>
-              );
-            })}
+        {sheetOpen && (
+          <div className="practice-sheet-mask" onClick={() => setSheetOpen(false)}>
+            <div
+              className="practice-sheet-panel"
+              role="dialog"
+              aria-modal="true"
+              aria-label="答题卡"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="practice-sheet-grip" />
+              <div className="practice-sheet-head">
+                <p className="practice-sheet-title">答题卡（{paper.questions.length} 题）</p>
+                <span className="practice-sheet-legend">绿 对 · 红 错 · 金框 已标记</span>
+              </div>
+              <div className="practice-sheet-grid">
+                {paper.questions.map((item, i) => {
+                  const mine = picks[item.id];
+                  const cellOk = Boolean(mine) && mine === item.answer;
+                  const cellBad = Boolean(mine) && mine !== item.answer;
+                  return (
+                    <button
+                      key={item.id}
+                      className={`practice-sheet-cell ${i === cursor ? 'cur' : ''} ${cellOk ? 'ok' : ''} ${cellBad ? 'bad' : ''} ${marks.includes(item.id) ? 'marked' : ''}`}
+                      onClick={() => {
+                        setCursor(i);
+                        setSheetOpen(false);
+                      }}
+                    >
+                      {i + 1}
+                    </button>
+                  );
+                })}
+              </div>
+              <button className="btn ghost practice-sheet-close" onClick={() => setSheetOpen(false)}>
+                收起答题卡
+              </button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     );
   }
@@ -561,22 +654,6 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
         )}
 
         <div className="practice-block">
-          <p className="practice-block-title"><ClipboardList size={15} /> 题量</p>
-          <ChipScroller className="practice-chips" activeKey={String(size)}>
-            {SIZE_OPTIONS.map((n) => (
-              <button
-                key={n}
-                className={`practice-chip ${size === n ? 'on' : ''}`}
-                data-active={size === n ? 'true' : undefined}
-                onClick={() => setSize(n)}
-              >
-                {n === 0 ? '全部' : `${n} 题`}
-              </button>
-            ))}
-          </ChipScroller>
-        </div>
-
-        <div className="practice-block">
           <p className="practice-block-title"><Shuffle size={15} /> 顺序</p>
           <ChipScroller className="practice-chips" activeKey={mode}>
             <button
@@ -598,9 +675,9 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
 
         <div className="practice-start">
           <button className="btn primary large" onClick={() => startPractice('pool')}>
-            开始练习（{Math.min(size && size > 0 ? size : pool.length, pool.length)} 题）
+            开始练习（{pool.length} 题）
           </button>
-          <p className="practice-pool-hint">当前考点池 {pool.length} 题</p>
+          <p className="practice-pool-hint">当前考点池 {pool.length} 题，进入后直接练完全部</p>
         </div>
       </div>
     </div>

@@ -2484,16 +2484,83 @@
   gap: 10px;
 }
 
-.practice-sheet {
-  margin-top: 30px;
-  padding-bottom: 40px;
-}
-
 .practice-sheet-title {
   font-size: 13px;
   font-weight: 600;
   color: var(--ink-2);
   margin: 0 0 10px;
+}
+
+/* 答题卡底部弹层 */
+
+.practice-sheet-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: flex;
+  align-items: flex-end;
+  background: rgba(24, 20, 16, 0.45);
+  animation: practice-mask-in 0.2s ease both;
+}
+
+@keyframes practice-mask-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.practice-sheet-panel {
+  width: 100%;
+  max-height: 72vh;
+  max-height: 72dvh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-radius: 20px 20px 0 0;
+  border-top: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  padding: 0 18px calc(20px + env(safe-area-inset-bottom, 0px));
+  animation: practice-panel-up 0.24s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+}
+
+@keyframes practice-panel-up {
+  from {
+    transform: translateY(48px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.practice-sheet-grip {
+  width: 38px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--line-strong);
+  margin: 10px auto 12px;
+}
+
+.practice-sheet-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.practice-sheet-head .practice-sheet-title {
+  margin: 0;
+}
+
+.practice-sheet-legend {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.practice-sheet-close {
+  width: 100%;
+  margin-top: 16px;
 }
 
 .practice-sheet-grid {
