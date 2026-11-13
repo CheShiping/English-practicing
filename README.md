@@ -16,10 +16,15 @@
 | --- | --- |
 | ![首页：精读样张、今日目标与学习统计](assets/readme/shot-home.png) | ![阅读器：左侧正文与右侧答题面板](assets/readme/shot-reader.png) |
 | **文章库 · 120 篇阅读** | **单选练习 · 答题卡底部弹层** |
-| ![文章库：按题材分类，显示词数、题量与难度](assets/readme/shot-library.png) | ![单选练习：2774 题即时判分，答题卡从底部弹出](assets/readme/shot-practice.png) |
+| ![文章库：按题材分类，显示词数、题量与难度](assets/readme/shot-library.png) | ![单选练习：2774 题即时判分，答题卡从底部弹出，题号按绿对 / 红错 / 金框标记着色](assets/readme/shot-practice.png) |
 
 <p align="center">
-  <img src="assets/readme/shot-practice-mobile.png" width="280" alt="移动端单选练习：答题卡从底部弹出，题号按对错着色" />
+  <img src="assets/readme/shot-practice-resumes.png" width="720" alt="练习进度：未完成的练习按试卷分槽列出，可继续、单条删除或一键清空" />
+</p>
+<p align="center"><sub>练习进度：每份未完成的试卷单独存档，换考点也不会互相覆盖</sub></p>
+
+<p align="center">
+  <img src="assets/readme/shot-practice-mobile.png" width="280" alt="移动端单选练习：答题卡从底部弹出，题号按绿对 / 红错 / 金框标记着色" />
 </p>
 
 ## 它是什么

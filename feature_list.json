@@ -153,6 +153,14 @@
       "dependencies": ["feat-018"],
       "status": "done",
       "evidence": "2026-11-13：新增 src/data/translations-part15.json（17 篇 / 89 段）与 src/data/answers/legacy-11-21.json（17 篇 / 84 题，answer 沿用源文件、补 explanation 与 evidence）。同日为 21 道旧题补 evidence（kepu-01/03/05/08/09、shehui-01/02/04/06/08/09/10、chongci-06/07/10/11/12、lishi-02、jingli-04、yingyong-04），按各文件原有排版逐行插入，diff 仅 21 行。npm run content：120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 120 篇，无警告；校验 588 题 answer / explanation / evidence 均非空，21 条新依据均可在正文定位；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+    },
+    {
+      "id": "feat-020",
+      "name": "补齐剩余文库元数据并重拍 README 截图",
+      "description": "为早期批次遗留的 29 篇文章补 ARTICLE_META（英文标题、中文副标题、标签、摘要），消除文库里的 Passage N 首句回退；用 headless 浏览器按当前构建重拍首页 / 阅读器 / 文章库 / 练习答题卡 / 移动端答题卡，并新增练习进度存档截图",
+      "dependencies": ["feat-019", "feat-005"],
+      "status": "done",
+      "evidence": "2026-11-13：article-meta.ts 从 91 条补到 120 条，校验 missing 0 / extra 0，补齐 kepu-11~17、shehui-13~21、lishi-03~12、jingli-12、yingyong-03/04。用本地静态产物 + headless Chromium 重拍：1440x900 五张（shot-home / shot-library / shot-reader / shot-practice / shot-practice-resumes）、390x844 一张（shot-practice-mobile）；练习图按真实答题造出绿对 / 红错 / 金框标记三种题号状态，并新增「未完成的练习（1）」存档面板图。README 界面速览换图、补存档图与说明。文库截图第二排已由 Passage 5 / Passage 6 变为 Should Obesity Be Called a Disease? / The Harm of Second-hand Smoke 及中文摘要；首页统计由 32,558 更新为 32,568。npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     }
   ]
 }
