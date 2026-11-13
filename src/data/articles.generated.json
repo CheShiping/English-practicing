@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T08:46:14.133Z",
+  "generatedAt": "2026-11-13T08:52:54.702Z",
   "categories": [
     {
       "id": "health",
@@ -509,22 +509,22 @@
         {
           "type": "p",
           "text": "With obesity now affecting 29% of the population in England, and expected to rise to 35% by 2030, should we now recognize it as a disease? Obesity, in which excess body fat has accumulated to such an extent that health may be adversely affected, meets the dictionary definition of disease, argues Professor John Wilding. He points out that more than 200 genes influence weight. “Thus body weight is strongly influenced by biology—it is not an individual’s fault if they develop obesity.” Yet the widespread view is that obesity is self-induced and that it is entirely the individual’s responsibility to do something about it. Recognizing obesity as a chronic disease with severe complications rather than a lifestyle choice “should help reduce the stigma (耻辱) and discrimination experienced by many people with obesity,” he adds.",
-          "translation": ""
+          "translation": "如今肥胖影响着英格兰 29% 的人口，预计到 2030 年将升至 35%，我们是否应当把它认定为一种疾病？约翰·威尔丁教授主张，肥胖——体内多余脂肪堆积到可能对健康造成不利影响的程度——符合疾病在词典中的定义。他指出，有 200 多个基因影响体重。“因此体重深受生物学影响——一个人患上肥胖并不是他本人的错。”然而普遍观点是，肥胖是自我造成的，完全应由个人负责去解决。他补充说，把肥胖认定为一种伴有严重并发症的慢性病，而不是一种生活方式的选择，“应有助于减少许多肥胖者所经历的耻辱与歧视”。"
         },
         {
           "type": "p",
           "text": "Professor Wilding disagrees that labeling a high proportion of the population as having a disease removes personal responsibility or may overwhelm health services, pointing out that other common diseases, such as high blood pressure and diabetes, require people to take action to manage their condition. He suggests that most people with obesity will eventually develop complications. “But unless we accept that obesity is a disease, we are not going to be able to tackle it,” he concludes.",
-          "translation": ""
+          "translation": "威尔丁教授不同意这样一种说法：把很大一部分人口标为患病会消除个人责任，或可能让医疗服务不堪重负。他指出，高血压、糖尿病等其他常见疾病也要求人们采取行动管理自身状况。他认为，多数肥胖者最终会出现并发症。“但除非我们接受肥胖是一种疾病，否则我们就无法应对它，”他总结道。"
         },
         {
           "type": "p",
           "text": "But Dr. Richard Pile, a physician with a special interest in diabetes, argues that adopting this approach “could actually result in worse outcomes for individuals and society.” He believes that the dictionary definition of disease “is so vague that we can classify almost anything as a disease” and says the question is not whether we can, but whether we should, and to what end.",
-          "translation": ""
+          "translation": "但对糖尿病有特别兴趣的内科医生理查德·派尔博士认为，采取这种做法“实际上可能给个人和社会带来更糟的结果”。他认为疾病的词典定义“如此模糊，以至于我们几乎可以把任何东西都归为疾病”，并说问题不在于我们能不能，而在于我们该不该，以及为了什么目的。"
         },
         {
           "type": "p",
           "text": "If labeling obesity as a disease was harmless then it wouldn’t really matter, he writes. But labeling obesity as a disease “risks reducing autonomy, disempowering and robbing people of the intrinsic (内在的) motivation that is such an important enabler of change.” What’s more, making obesity a disease “may not benefit patients, but it will benefit healthcare providers and the pharmaceutical (制药的) industry when health insurance and clinical guidelines promote treatment with drugs and surgery,” he warns.",
-          "translation": ""
+          "translation": "他写道，如果把肥胖标为疾病是无害的，那倒也无所谓。但把肥胖标为疾病“有可能削弱自主性，使人失去力量，并剥夺人们内在的动力，而这种动力正是改变的重要促成因素”。他警告说，此外，把肥胖变成一种疾病“可能不会让患者受益，但当医疗保险和临床指南推动药物和手术治疗时，它会令医疗服务提供者和制药业受益”。"
         }
       ],
       "paragraphs": [
@@ -544,8 +544,8 @@
             "Its dictionary definition should be updated."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "威尔丁指出 200 多个基因影响体重、体重深受生物学影响，因此他主张把肥胖视为（遗传）疾病。",
+          "evidence": "more than 200 genes influence weight"
         },
         {
           "num": 2,
@@ -557,8 +557,8 @@
             "It results from a lack of self-control."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "普遍观点认为肥胖是自我造成的，完全应由个人负责，也就是缺乏自控的结果。",
+          "evidence": "obesity is self-induced and that it is entirely the individual's responsibility"
         },
         {
           "num": 3,
@@ -570,8 +570,8 @@
             "Obese people would be discriminated against."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "反对者担心把大量人口标为患病会消除个人责任，让肥胖者觉得自己不必采取行动。",
+          "evidence": "labeling a high proportion of the population as having a disease removes personal responsibility"
         },
         {
           "num": 4,
@@ -583,8 +583,8 @@
             "It matters little to the debate over obesity."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "派尔认为词典定义太模糊，几乎什么都能归为疾病，即范围过宽、缺乏清晰边界。",
+          "evidence": "is so vague that we can classify almost anything as a disease"
         },
         {
           "num": 5,
@@ -596,18 +596,18 @@
             "It may do little good to patients."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "他警告说，把肥胖定为疾病可能不会让患者受益，却会让医疗服务提供者和制药业获利。",
+          "evidence": "may not benefit patients, but it will benefit healthcare providers and the pharmaceutical industry"
         }
       ],
       "wordCount": 344,
       "difficulty": "挑战",
       "file": "健康与医学.md",
       "translations": [
-        "",
-        "",
-        "",
-        ""
+        "如今肥胖影响着英格兰 29% 的人口，预计到 2030 年将升至 35%，我们是否应当把它认定为一种疾病？约翰·威尔丁教授主张，肥胖——体内多余脂肪堆积到可能对健康造成不利影响的程度——符合疾病在词典中的定义。他指出，有 200 多个基因影响体重。“因此体重深受生物学影响——一个人患上肥胖并不是他本人的错。”然而普遍观点是，肥胖是自我造成的，完全应由个人负责去解决。他补充说，把肥胖认定为一种伴有严重并发症的慢性病，而不是一种生活方式的选择，“应有助于减少许多肥胖者所经历的耻辱与歧视”。",
+        "威尔丁教授不同意这样一种说法：把很大一部分人口标为患病会消除个人责任，或可能让医疗服务不堪重负。他指出，高血压、糖尿病等其他常见疾病也要求人们采取行动管理自身状况。他认为，多数肥胖者最终会出现并发症。“但除非我们接受肥胖是一种疾病，否则我们就无法应对它，”他总结道。",
+        "但对糖尿病有特别兴趣的内科医生理查德·派尔博士认为，采取这种做法“实际上可能给个人和社会带来更糟的结果”。他认为疾病的词典定义“如此模糊，以至于我们几乎可以把任何东西都归为疾病”，并说问题不在于我们能不能，而在于我们该不该，以及为了什么目的。",
+        "他写道，如果把肥胖标为疾病是无害的，那倒也无所谓。但把肥胖标为疾病“有可能削弱自主性，使人失去力量，并剥夺人们内在的动力，而这种动力正是改变的重要促成因素”。他警告说，此外，把肥胖变成一种疾病“可能不会让患者受益，但当医疗保险和临床指南推动药物和手术治疗时，它会令医疗服务提供者和制药业受益”。"
       ]
     },
     {
@@ -622,17 +622,17 @@
         {
           "type": "p",
           "text": "Doctors believe that second-hand smoke may cause lung cancer in people who do not smoke. Nonsmokers often breathe in the smoke from other people’s cigarettes. This is second-hand smoke. The US Environmental Protection Agency (美国环保局) reports that about fifty-three thousand people die in the United States each year as a result of exposure to second-hand smoke.",
-          "translation": ""
+          "translation": "医生认为，二手烟可能导致不吸烟的人患肺癌。不吸烟的人常常吸入别人香烟的烟雾，这就是二手烟。美国环保局报告称，美国每年约有五万三千人因接触二手烟而死亡。"
         },
         {
           "type": "p",
           "text": "It is harder for children to avoid second-hand smoke. In the United States, nine million children under the age of five live in homes with at least one smoker. Research shows that these children are sick more often than children who live in homes where no one smokes. The damaging effects of second-hand smoke on children also continue as they grow up. The children of smokers are more than twice as likely to develop lung cancer when they are adults as children of nonsmokers. The risk is even higher for children who live in homes where both parents smoke.",
-          "translation": ""
+          "translation": "儿童更难避免二手烟。在美国，有九百万五岁以下儿童生活在至少有一名吸烟者的家庭中。研究表明，这些孩子比家中无人吸烟的孩子更常生病。二手烟对儿童的危害还会随着他们长大而持续。吸烟者的孩子成年后患肺癌的可能性是不吸烟者孩子的两倍多。如果父母双方都吸烟，孩子的风险更高。"
         },
         {
           "type": "p",
           "text": "People are becoming very aware of the danger of second-hand smoke. As a result, they have passed laws that prohibit people from smoking in many public places. Currently, 45 states in the US have laws that restrict smoking. The most well-known law doesn’t allow people to smoke on short native airline flights, i.e. flights within the country.",
-          "translation": ""
+          "translation": "人们正越来越意识到二手烟的危险。因此，他们通过了法律，禁止人们在许多公共场所吸烟。目前美国有 45 个州制定了限制吸烟的法律。最著名的法律不允许人们在短途国内航班上吸烟，即在美国境内飞行的航班。"
         }
       ],
       "paragraphs": [
@@ -651,8 +651,8 @@
             "become smokers more easily"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中说吸烟者的孩子成年后患肺癌的概率是不吸烟者孩子的两倍多，父母都吸烟的孩子风险更高。",
+          "evidence": "The risk is even higher for children who live in homes where both parents smoke."
         },
         {
           "num": 2,
@@ -664,8 +664,8 @@
             "Because the government wants to limit the production of cigarettes."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "立法禁烟的原因是人们越来越意识到二手烟的危险，因果关系在段首直接点明。",
+          "evidence": "People are becoming very aware of the danger of second-hand smoke. As a result, they have passed laws"
         },
         {
           "num": 3,
@@ -677,8 +677,8 @@
             "Second-hand smoke is not as dangerous as first-hand smoke."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "末段说美国最著名的禁烟法不允许在短途国内航班上吸烟，B 与原文一致；其余三项均与原文相反或无据。",
+          "evidence": "doesn't allow people to smoke on short native airline flights"
         },
         {
           "num": 4,
@@ -690,8 +690,8 @@
             "children suffer most from second-hand smoke"
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中强调儿童更难避开二手烟、更常生病且危害持续到成年，可推知儿童受害最深。",
+          "evidence": "It is harder for children to avoid second-hand smoke."
         },
         {
           "num": 5,
@@ -703,17 +703,17 @@
             "persuade"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "restrict 意为“限制”，与 limit 同义；permit 是“允许”，control 是“控制”，persuade 是“说服”。",
+          "evidence": "45 states in the US have laws that restrict smoking"
         }
       ],
       "wordCount": 211,
       "difficulty": "进阶",
       "file": "健康与医学.md",
       "translations": [
-        "",
-        "",
-        ""
+        "医生认为，二手烟可能导致不吸烟的人患肺癌。不吸烟的人常常吸入别人香烟的烟雾，这就是二手烟。美国环保局报告称，美国每年约有五万三千人因接触二手烟而死亡。",
+        "儿童更难避免二手烟。在美国，有九百万五岁以下儿童生活在至少有一名吸烟者的家庭中。研究表明，这些孩子比家中无人吸烟的孩子更常生病。二手烟对儿童的危害还会随着他们长大而持续。吸烟者的孩子成年后患肺癌的可能性是不吸烟者孩子的两倍多。如果父母双方都吸烟，孩子的风险更高。",
+        "人们正越来越意识到二手烟的危险。因此，他们通过了法律，禁止人们在许多公共场所吸烟。目前美国有 45 个州制定了限制吸烟的法律。最著名的法律不允许人们在短途国内航班上吸烟，即在美国境内飞行的航班。"
       ]
     },
     {
@@ -728,42 +728,42 @@
         {
           "type": "p",
           "text": "A warm drink of milk before bed has long been the best choice for those wanting a good night’s sleep. But now a study has found it really does help people nod off—if it is milked from a cow at night.",
-          "translation": ""
+          "translation": "睡前喝一杯温牛奶，长期以来一直是想睡个好觉的人的最佳选择。但如今一项研究发现，它确实能帮助人入睡——前提是这牛奶来自夜里挤奶的奶牛。"
         },
         {
           "type": "p",
           "text": "Researchers have discovered that “night milk” contains more melatonin (褪黑激素), which has been proven to help people feel sleepy and reduce anxiety.",
-          "translation": ""
+          "translation": "研究人员发现，“夜间牛奶”含有更多褪黑激素，而褪黑激素已被证明有助于让人产生睡意并减轻焦虑。"
         },
         {
           "type": "p",
           "text": "The study, by researchers from Seoul, South Korea, involved mice being fed with dried milk powder made from cows milked both during the day and at night.",
-          "translation": ""
+          "translation": "这项由韩国首尔研究人员进行的研究，让老鼠食用由白天和夜里挤出的牛奶制成的奶粉。"
         },
         {
           "type": "p",
           "text": "Those given night milk, which contained 10 times the amount of melatonin, were less active and less anxious than those fed with the milk collected during daytime, according to the study published in The Journal of Medicinal Food.",
-          "translation": ""
+          "translation": "根据发表在《药用食品杂志》上的这项研究，喂食夜间牛奶（其褪黑激素含量是白天牛奶的十倍）的老鼠，比喂食白天牛奶的老鼠活动更少、焦虑更轻。"
         },
         {
           "type": "p",
           "text": "Night milk quickened the start of sleep and caused the mice to sleep longer.",
-          "translation": ""
+          "translation": "夜间牛奶加快了入睡速度，并使老鼠睡得更久。"
         },
         {
           "type": "p",
           "text": "While the effect of cows milk harvested at different time has not been tested on humans up to now, taking melatonin drugs has been suggested to those who are struggling to fall asleep at night.",
-          "translation": ""
+          "translation": "虽然不同时间采集的牛奶的效果迄今尚未在人类身上测试，但已有建议让那些夜里难以入睡的人服用褪黑激素药物。"
         },
         {
           "type": "p",
           "text": "Previous studies have also indicated that milk can be excellent for helping sleep because of the calcium content, which helps people to relax.",
-          "translation": ""
+          "translation": "此前的研究还表明，牛奶因含钙而非常有助于睡眠，钙能帮助人放松。"
         },
         {
           "type": "p",
           "text": "Milk is also sugar-free and additive-free with nutritionists recommending skimmed milk as the best choice before bed as it is the least fattening. The more fat you take in before bedtime, the greater burden you will put on your body at night.",
-          "translation": ""
+          "translation": "牛奶还不含糖、不含添加剂，营养学家推荐脱脂牛奶作为睡前最佳选择，因为它最不容易让人发胖。睡前摄入的脂肪越多，夜里给身体带来的负担就越大。"
         }
       ],
       "paragraphs": [
@@ -787,8 +787,8 @@
             "woke up later"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "研究对比发现，喝白天牛奶的老鼠比喝夜间牛奶的更活跃、更焦虑。",
+          "evidence": "Those given night milk ... were less active and less anxious than those fed with the milk collected during daytime"
         },
         {
           "num": 2,
@@ -800,8 +800,8 @@
             "It’s used in sleeping drugs."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中提到建议睡不着的人服用褪黑激素药物，说明它被用于助眠药物。",
+          "evidence": "taking melatonin drugs has been suggested to those who are struggling to fall asleep at night"
         },
         {
           "num": 3,
@@ -813,8 +813,8 @@
             "Milk Drinking and Health"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "全文围绕“夜间挤的牛奶更助眠”这一发现展开，标题应同时包含 night milk 与 sleep。",
+          "evidence": "it really does help people nod off—if it is milked from a cow at night"
         },
         {
           "num": 4,
@@ -826,8 +826,8 @@
             "By providing research results."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "作者引用首尔研究者的老鼠实验数据与期刊发表结果来支撑主题，属于提供研究结果。",
+          "evidence": "according to the study published in The Journal of Medicinal Food"
         },
         {
           "num": 5,
@@ -839,22 +839,22 @@
             "understand"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "此处 take in 指“摄入、吸收”脂肪，与 absorb 最接近。",
+          "evidence": "The more fat you take in before bedtime"
         }
       ],
       "wordCount": 241,
       "difficulty": "进阶",
       "file": "健康与医学.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "睡前喝一杯温牛奶，长期以来一直是想睡个好觉的人的最佳选择。但如今一项研究发现，它确实能帮助人入睡——前提是这牛奶来自夜里挤奶的奶牛。",
+        "研究人员发现，“夜间牛奶”含有更多褪黑激素，而褪黑激素已被证明有助于让人产生睡意并减轻焦虑。",
+        "这项由韩国首尔研究人员进行的研究，让老鼠食用由白天和夜里挤出的牛奶制成的奶粉。",
+        "根据发表在《药用食品杂志》上的这项研究，喂食夜间牛奶（其褪黑激素含量是白天牛奶的十倍）的老鼠，比喂食白天牛奶的老鼠活动更少、焦虑更轻。",
+        "夜间牛奶加快了入睡速度，并使老鼠睡得更久。",
+        "虽然不同时间采集的牛奶的效果迄今尚未在人类身上测试，但已有建议让那些夜里难以入睡的人服用褪黑激素药物。",
+        "此前的研究还表明，牛奶因含钙而非常有助于睡眠，钙能帮助人放松。",
+        "牛奶还不含糖、不含添加剂，营养学家推荐脱脂牛奶作为睡前最佳选择，因为它最不容易让人发胖。睡前摄入的脂肪越多，夜里给身体带来的负担就越大。"
       ]
     },
     {
@@ -1641,37 +1641,37 @@
         {
           "type": "p",
           "text": "One day five men who were camping in the Perryson Mountains saw a group of huge apelike (类人猿) creatures coming out of the woods. They ran hurriedly to a small house and locked themselves inside. While they were in, the creatures attacked them by throwing rocks against the walls of the house. After several hours, these strange hairy giants went back into the woods, leaving big footprints behind.",
-          "translation": ""
+          "translation": "有一天，五个在佩里森山露营的人看见一群巨大的类人猿生物从树林里出来。他们急忙跑进一座小屋，把自己锁在里面。他们躲在屋里时，那些生物朝房子的墙壁扔石头攻击他们。几个小时后，这些奇怪的毛茸茸巨人回到树林，留下巨大的脚印。"
         },
         {
           "type": "p",
           "text": "As soon as the men returned to the town, they told the people of their adventure. However, it was only accepted by a few people who heard about footprints of human-like animals.",
-          "translation": ""
+          "translation": "这些人一回到镇上，就把自己的遭遇告诉了人们。然而，只有少数听说过类人动物脚印的人相信了这件事。"
         },
         {
           "type": "p",
           "text": "The five men, however, were not the first people to have seen Bigfoot. Long before their experience, it was said that a race of apelike animals had been living in the neighboring mountain for centuries. The local people called them Sasquatch.",
-          "translation": ""
+          "translation": "不过，这五个人并不是最早看见大脚怪的人。早在他们经历之前，就传说有一群类人猿生物在邻近的山里生活了几个世纪。当地人把它们叫做“萨斯科奇”。"
         },
         {
           "type": "p",
           "text": "In 1978, the workmen who were building a road through the jungles (丛林) often found huge footprints in the earth around their camp.",
-          "translation": ""
+          "translation": "1978 年，在丛林中修路的工人常常在营地周围的泥土里发现巨大的脚印。"
         },
         {
           "type": "p",
           "text": "Then in 1987, Ron Patten, a film maker who was interested in finding Bigfoot, went into the jungles with a friend. While riding, they were suddenly thrown off from their horses. Patten saw a tall apelike animal standing not far away. He managed to shoot seven rolls of film of the hairy creature before it disappeared in the woods. When Patten’s film was shown to the public, not many people believed his story.",
-          "translation": ""
+          "translation": "后来在 1987 年，对寻找大脚怪感兴趣的制片人罗恩·帕滕和一位朋友进入丛林。骑马时，他们突然被从马上甩了下来。帕滕看见一个高大的类人猿生物站在不远处。他设法在那只毛茸茸的生物消失于树林之前拍了七卷胶卷。当帕滕的影片公开放映时，没有多少人相信他的说法。"
         },
         {
           "type": "p",
           "text": "In another incident, Roy Bruce, a math teacher and also an experienced hunter, spotted a similar creature. He saw the animal clearly through the telescopic lens (望远瞄准器) of his gun. He said the creature looked more like a human than an animal.",
-          "translation": ""
+          "translation": "在另一起事件中，数学老师、也是经验丰富的猎人的罗伊·布鲁斯发现了一个类似的生物。他通过枪上的望远瞄准器清楚地看到了那只动物。他说那生物看起来更像人而不是动物。"
         },
         {
           "type": "p",
           "text": "Later many other people also found deep footprints in the same area. In spite of regular reports of sightings and footprints, most experts still do not believe that Bigfoot really exists.",
-          "translation": ""
+          "translation": "后来还有许多人在同一地区发现了很深的脚印。尽管经常有目击和脚印的报道，多数专家仍然不相信大脚怪真的存在。"
         }
       ],
       "paragraphs": [
@@ -1694,8 +1694,8 @@
             "They threw rocks against the wall of the house to drive them away."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "看到类人猿生物后，五个人急忙跑进一座小屋并把自己锁在里面，并没有反击或躲进树林。",
+          "evidence": "They ran hurriedly to a small house and locked themselves inside."
         },
         {
           "num": 2,
@@ -1707,8 +1707,8 @@
             "some people thought they made up their own story"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "他们的讲述只被少数人接受，而这些人都听说过类人动物的脚印，属于“听过类似说法的人才相信”。",
+          "evidence": "it was only accepted by a few people who heard about footprints of human-like animals"
         },
         {
           "num": 3,
@@ -1720,8 +1720,8 @@
             "a huge creature eating like humans"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "后文用“高大的类人猿生物”“毛茸茸的生物”来指 Bigfoot，可知它是一个体型巨大、长毛、形似人的生物。",
+          "evidence": "a tall apelike animal standing not far away"
         },
         {
           "num": 4,
@@ -1733,8 +1733,8 @@
             "The local people."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中明确说把这些生物称为 Sasquatch 的是当地人。",
+          "evidence": "The local people called them Sasquatch."
         },
         {
           "num": 5,
@@ -1746,21 +1746,21 @@
             "The Adventure of Apelike Animals"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "全文依次讲露营者、修路工人、制片人、数学老师等人的目击经历，用“大脚怪的故事”作标题最贴切。",
+          "evidence": "In another incident, Roy Bruce, a math teacher and also an experienced hunter, spotted a similar creature."
         }
       ],
       "wordCount": 305,
       "difficulty": "挑战",
       "file": "自然与科技.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "有一天，五个在佩里森山露营的人看见一群巨大的类人猿生物从树林里出来。他们急忙跑进一座小屋，把自己锁在里面。他们躲在屋里时，那些生物朝房子的墙壁扔石头攻击他们。几个小时后，这些奇怪的毛茸茸巨人回到树林，留下巨大的脚印。",
+        "这些人一回到镇上，就把自己的遭遇告诉了人们。然而，只有少数听说过类人动物脚印的人相信了这件事。",
+        "不过，这五个人并不是最早看见大脚怪的人。早在他们经历之前，就传说有一群类人猿生物在邻近的山里生活了几个世纪。当地人把它们叫做“萨斯科奇”。",
+        "1978 年，在丛林中修路的工人常常在营地周围的泥土里发现巨大的脚印。",
+        "后来在 1987 年，对寻找大脚怪感兴趣的制片人罗恩·帕滕和一位朋友进入丛林。骑马时，他们突然被从马上甩了下来。帕滕看见一个高大的类人猿生物站在不远处。他设法在那只毛茸茸的生物消失于树林之前拍了七卷胶卷。当帕滕的影片公开放映时，没有多少人相信他的说法。",
+        "在另一起事件中，数学老师、也是经验丰富的猎人的罗伊·布鲁斯发现了一个类似的生物。他通过枪上的望远瞄准器清楚地看到了那只动物。他说那生物看起来更像人而不是动物。",
+        "后来还有许多人在同一地区发现了很深的脚印。尽管经常有目击和脚印的报道，多数专家仍然不相信大脚怪真的存在。"
       ]
     },
     {
@@ -1775,27 +1775,27 @@
         {
           "type": "p",
           "text": "Would it surprise you to learn that, like animals, trees communicate with each other and transmit their wealth to the next generation?",
-          "translation": ""
+          "translation": "如果告诉你，树木和动物一样会彼此交流，并把财富传给下一代，你会吃惊吗？"
         },
         {
           "type": "p",
           "text": "UBC Professor Simard explains how trees are much more complex than most of us ever imagined. Although Charles Darwin thought that trees are competing for survival of the fittest, Simard shows just how wrong he was. In fact, the opposite is true: trees survive through their co-operation and support, passing around necessary nutrition “depending on who needs it”.",
-          "translation": ""
+          "translation": "UBC 的西马德教授解释了树木远比我们多数人想象的复杂。虽然查尔斯·达尔文认为树木在为适者生存而竞争，西马德却表明他错得有多离谱。事实上恰恰相反：树木通过合作与互助生存，把必要的养分“按谁需要”来传递。"
         },
         {
           "type": "p",
           "text": "Nitrogen (氮) and carbon are shared through miles of underground fungi (真菌) networks, making sure that all trees in the forest ecological system give and receive just the right amount to keep them all healthy. This hidden system works in a very similar way to the networks of neurons (神经元) in our brains, and when one tree is destroyed, it affects all.",
-          "translation": ""
+          "translation": "氮和碳通过绵延数英里的地下真菌网络共享，确保森林生态系统中的每棵树都获得恰好合适的量以保持健康。这个隐藏系统的工作方式与我们大脑中的神经元网络非常相似；当一棵树被毁，所有树都会受到影响。"
         },
         {
           "type": "p",
           "text": "Simard talks about “mother trees”, usually the largest and oldest plants on which all other trees depend. She explains how dying trees pass on the wealth to the next generation, transporting important minerals to young trees so they may continue to grow. When humans cut down “mother trees” with no awareness of these highly complex “tree societies” or the networks on which they feed, we are reducing the chances of survival for the entire forest.",
-          "translation": ""
+          "translation": "西马德谈到“母树”，通常是所有其他树木赖以生存的最大、最古老的树。她解释说，垂死的树木如何把财富传给下一代，把重要的矿物质输送给幼树，让它们继续生长。当人类在毫不了解这些高度复杂的“树木社会”或它们赖以生存的网络的情况下砍倒“母树”时，我们正在降低整片森林存活的机会。"
         },
         {
           "type": "p",
           "text": "“We didn’t take any notice of it” Simard says sadly. “Dying trees move nutrition into the young trees before dying, but we never give them chance.” If we could put across the message to the forestry industry, we could make a huge difference towards our environmental protection efforts for the future.",
-          "translation": ""
+          "translation": "“我们根本没有注意过这件事，”西马德难过地说。“垂死的树木在死前把养分送进幼树，但我们从不给它们机会。”如果我们能把这一信息传达给林业，我们就能为未来的环境保护工作带来巨大改变。"
         }
       ],
       "paragraphs": [
@@ -1816,8 +1816,8 @@
             "support"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "transmit 与后文“传给下一代”呼应，意为传递、传给，因此与 pass on 最接近。",
+          "evidence": "transmit their wealth to the next generation"
         },
         {
           "num": 2,
@@ -1829,8 +1829,8 @@
             "provide support for dying trees"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "达尔文认为树木竞争，西马德证明相反：树木靠合作与互助生存，即彼此依存。",
+          "evidence": "trees survive through their co-operation and support"
         },
         {
           "num": 3,
@@ -1842,8 +1842,8 @@
             "know more about the complex “tree societies”"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "母树之所以关键，是因为垂死时会先把矿物质和养分输送给幼树，让它们继续生长。",
+          "evidence": "transporting important minerals to young trees so they may continue to grow"
         },
         {
           "num": 4,
@@ -1855,8 +1855,8 @@
             "how young trees survive"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "“it”回指前一句提到的复杂“树木社会”及其赖以生存的网络，即树木之间如何运作。",
+          "evidence": "these highly complex “tree societies” or the networks on which they feed"
         },
         {
           "num": 5,
@@ -1868,19 +1868,19 @@
             "We couldn’t make efforts for the future environmental protection."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "末句说如果能把这一信息传达给林业，就能为环保带来巨大改变，因此“我们无法为未来环保出力”是错误的。",
+          "evidence": "we could make a huge difference towards our environmental protection efforts"
         }
       ],
       "wordCount": 265,
       "difficulty": "进阶",
       "file": "自然与科技.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "如果告诉你，树木和动物一样会彼此交流，并把财富传给下一代，你会吃惊吗？",
+        "UBC 的西马德教授解释了树木远比我们多数人想象的复杂。虽然查尔斯·达尔文认为树木在为适者生存而竞争，西马德却表明他错得有多离谱。事实上恰恰相反：树木通过合作与互助生存，把必要的养分“按谁需要”来传递。",
+        "氮和碳通过绵延数英里的地下真菌网络共享，确保森林生态系统中的每棵树都获得恰好合适的量以保持健康。这个隐藏系统的工作方式与我们大脑中的神经元网络非常相似；当一棵树被毁，所有树都会受到影响。",
+        "西马德谈到“母树”，通常是所有其他树木赖以生存的最大、最古老的树。她解释说，垂死的树木如何把财富传给下一代，把重要的矿物质输送给幼树，让它们继续生长。当人类在毫不了解这些高度复杂的“树木社会”或它们赖以生存的网络的情况下砍倒“母树”时，我们正在降低整片森林存活的机会。",
+        "“我们根本没有注意过这件事，”西马德难过地说。“垂死的树木在死前把养分送进幼树，但我们从不给它们机会。”如果我们能把这一信息传达给林业，我们就能为未来的环境保护工作带来巨大改变。"
       ]
     },
     {
@@ -3159,32 +3159,32 @@
         {
           "type": "p",
           "text": "The $11 billion self-help industry is built on the idea that you should turn negative thoughts like “I never do anything right” into positive ones like “I can succeed.” But was positive thinking advocate Norman Vincent Peale right? Is there power in positive thinking?",
-          "translation": ""
+          "translation": "这个价值 110 亿美元的自助产业建立在一个观念上：你应当把“我什么事都做不好”这类消极想法转变成“我能成功”这类积极想法。但积极思维的倡导者诺曼·文森特·皮尔说得对吗？积极思维真的有力量吗？"
         },
         {
           "type": "p",
           "text": "Researchers in Canada just published a study in the journal Psychological Science that says trying to get people to think more positively can actually have the opposite effect: it can simply highlight how unhappy they are.",
-          "translation": ""
+          "translation": "加拿大的研究人员刚在《心理科学》杂志上发表了一项研究，指出试图让人们更积极地思考，实际上可能产生相反效果：它只会让人更清楚地看到自己有多不快乐。"
         },
         {
           "type": "p",
           "text": "The study’s authors, Joanne Wood and John Lee of the University of Waterloo and Elaine Perunovic of the University of New Brunswick, begin by citing (引证) older research showing that when people get feedback which they believe is overly positive, they actually feel worse, not better. If you tell your friend who is slow to learn that he has the potential of an Einstein, you’re just underlining his faults. In one 1990s experiment, a team including psychologist Joel Cooper of Princeton asked participants to write essays opposing funding for the disabled. When the essayists were later praised for their sympathy, they felt even worse about what they had written.",
-          "translation": ""
+          "translation": "该研究的作者——滑铁卢大学的乔安妮·伍德、约翰·李和新不伦瑞克大学的伊莱恩·佩鲁诺维奇——首先引用了较早的研究：当人们收到自认为过于正面的反馈时，他们实际上感觉更糟，而不是更好。如果你对一个学得慢的朋友说他有一爱因斯坦的潜力，你只是在强调他的缺陷。在 20 世纪 90 年代的一项实验中，包括普林斯顿大学心理学家乔尔·库珀在内的团队让参与者写文章反对资助残疾人。后来当这些作者因富有同情心而受到表扬时，他们对自己所写的内容感觉更糟。"
         },
         {
           "type": "p",
           "text": "In this experiment, Wood, Lee and Perunovic measured 68 students’ self-esteem. The participants were then asked to write down their thoughts and feelings for four minutes. Every 15 seconds, one group of students heard a bell. When it rang, they were supposed to tell themselves, “I am lovable.”",
-          "translation": ""
+          "translation": "在这项实验中，伍德、李和佩鲁诺维奇测量了 68 名学生的自尊。然后要求参与者在四分钟内写下自己的想法和感受。每 15 秒，一组学生会听到一声铃响。铃响时，他们应当对自己说：“我是可爱的。”"
         },
         {
           "type": "p",
           "text": "Those with low self-esteem didn’t feel better after the forced self-affirmation (自我肯定). In fact, their moods turned significantly darker than those of members of the control group, who weren’t urged to think of positive thoughts.",
-          "translation": ""
+          "translation": "自尊心低的人在被迫自我肯定之后并没有感觉更好。事实上，他们的情绪比对照组明显更低落，而对照组并没有被要求想积极的事情。"
         },
         {
           "type": "p",
           "text": "The paper provides support for newer forms of psychotherapy (心理治疗) that urge people to accept their negative thoughts and feelings rather than fight them. In the fighting, we not only often fail but can make things worse. Meditation (静思) techniques, in contrast, can teach people to put their shortcomings into a larger, more realistic viewpoint. Call it the power of negative thinking.",
-          "translation": ""
+          "translation": "这篇论文为较新的心理治疗形式提供了支持，这些疗法鼓励人们接纳自己的消极想法和感受，而不是与之对抗。在对抗中，我们不仅常常失败，还可能把事情弄得更糟。相比之下，静思技巧可以教人把自身缺点放进一个更大、更现实的视角中。不妨称之为消极思维的力量。"
         }
       ],
       "paragraphs": [
@@ -3206,8 +3206,8 @@
             "It has yielded positive results."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "首句说这个产业建立在“把消极想法转成积极想法”的观念上，即积极思维。",
+          "evidence": "is built on the idea that you should turn negative thoughts like “I never do anything right” into positive ones"
         },
         {
           "num": 2,
@@ -3219,8 +3219,8 @@
             "Encouraging positive thinking may do more harm than good."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "研究结论是：试图让人更积极地思考会产生相反效果，等于说鼓励积极思考可能弊大于利。",
+          "evidence": "trying to get people to think more positively can actually have the opposite effect"
         },
         {
           "num": 3,
@@ -3232,8 +3232,8 @@
             "You are trying to make him feel better about his faults."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "对一个学得慢的人说他有一爱因斯坦的潜力，只会反衬出他当下的不足，即强调他不够聪明。",
+          "evidence": "you're just underlining his faults"
         },
         {
           "num": 4,
@@ -3245,8 +3245,8 @@
             "People with low self-esteem seldom write down their true feelings."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "实验发现低自尊者被迫自我肯定后情绪更低落，说明强迫人想积极的事可能降低自尊。",
+          "evidence": "Those with low self-esteem didn't feel better after the forced self-affirmation"
         },
         {
           "num": 5,
@@ -3258,20 +3258,20 @@
             "People can avoid making mistakes through meditation."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "末段说静思技巧能让人以更现实的角度看待缺点，为“接纳消极想法”的心理治疗提供了支持。",
+          "evidence": "Meditation techniques, in contrast, can teach people to put their shortcomings into a larger, more realistic viewpoint."
         }
       ],
       "wordCount": 327,
       "difficulty": "挑战",
       "file": "心理与行为.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "这个价值 110 亿美元的自助产业建立在一个观念上：你应当把“我什么事都做不好”这类消极想法转变成“我能成功”这类积极想法。但积极思维的倡导者诺曼·文森特·皮尔说得对吗？积极思维真的有力量吗？",
+        "加拿大的研究人员刚在《心理科学》杂志上发表了一项研究，指出试图让人们更积极地思考，实际上可能产生相反效果：它只会让人更清楚地看到自己有多不快乐。",
+        "该研究的作者——滑铁卢大学的乔安妮·伍德、约翰·李和新不伦瑞克大学的伊莱恩·佩鲁诺维奇——首先引用了较早的研究：当人们收到自认为过于正面的反馈时，他们实际上感觉更糟，而不是更好。如果你对一个学得慢的朋友说他有一爱因斯坦的潜力，你只是在强调他的缺陷。在 20 世纪 90 年代的一项实验中，包括普林斯顿大学心理学家乔尔·库珀在内的团队让参与者写文章反对资助残疾人。后来当这些作者因富有同情心而受到表扬时，他们对自己所写的内容感觉更糟。",
+        "在这项实验中，伍德、李和佩鲁诺维奇测量了 68 名学生的自尊。然后要求参与者在四分钟内写下自己的想法和感受。每 15 秒，一组学生会听到一声铃响。铃响时，他们应当对自己说：“我是可爱的。”",
+        "自尊心低的人在被迫自我肯定之后并没有感觉更好。事实上，他们的情绪比对照组明显更低落，而对照组并没有被要求想积极的事情。",
+        "这篇论文为较新的心理治疗形式提供了支持，这些疗法鼓励人们接纳自己的消极想法和感受，而不是与之对抗。在对抗中，我们不仅常常失败，还可能把事情弄得更糟。相比之下，静思技巧可以教人把自身缺点放进一个更大、更现实的视角中。不妨称之为消极思维的力量。"
       ]
     },
     {
@@ -3286,37 +3286,37 @@
         {
           "type": "p",
           "text": "Beware of those who use the truth to deceive. When someone tells you something that is true, but leaves out important information that should be included, he can create a false impression.",
-          "translation": ""
+          "translation": "当心那些用真相来欺骗的人。当某人告诉你一件真实的事，却省略了本应包含的重要信息时，他就能制造出虚假的印象。"
         },
         {
           "type": "p",
           "text": "For example, someone might say, “I just won a hundred dollars on the lottery. It was great. I took that dollar ticket back to the store and turned it in for one hundred dollars!”",
-          "translation": ""
+          "translation": "例如，有人可能会说：“我刚中了一百美元彩票。太棒了。我把那张一美元的彩票拿回店里，换了一百美元！”"
         },
         {
           "type": "p",
           "text": "This guy’s a winner, right? Maybe, maybe not. We then discover that he bought two hundred tickets, and only one was a winner. He’s really a big loser!",
-          "translation": ""
+          "translation": "这家伙是个赢家，对吧？也许是，也许不是。我们随后发现他买了两百张彩票，只有一张中奖。他其实是个大输家！"
         },
         {
           "type": "p",
           "text": "He didn’t say anything that was false, but he deliberately omitted important information. That’s called a half-truth. Half-truths are not technically lies, but they are just as dishonest.",
-          "translation": ""
+          "translation": "他没有说任何假话，但故意省略了重要信息。这叫做半真半假。半真半假严格来说不是谎言，但同样不诚实。"
         },
         {
           "type": "p",
           "text": "Untrustworthy candidates in political campaigns often use this tactic. Let’s say that during Governor Smith’s last term, her state lost one million jobs and gained three million jobs. Then she seeks another term. One of her opponents ran an advertisement, saying “During Governor Smith’s term, the state lost one million jobs!” That’s true. However, an honest statement would have been, “During Governor Smith’s term, the state had a net gain of two million jobs.”",
-          "translation": ""
+          "translation": "政治竞选中不可靠的候选人常用这种手法。假设史密斯州长上个任期内，本州失去了一百万个工作岗位，又增加了三百万个。然后她寻求连任。她的一位对手打广告说：“史密斯州长任期内，本州失去了一百万个工作岗位！”这是真的。然而，诚实的说法应是：“史密斯州长任期内，本州净增了两百万个工作岗位。”"
         },
         {
           "type": "p",
           "text": "Advertisers will sometimes use half-truths. It’s against the law to make false claims so they try to mislead you with the truth. An advertisement might boast, “Nine out of ten doctors recommend Yucky Pills to cure nose pimples.” It fails to mention that they only asked ten doctors and nine of them work for the Yucky Corporation.",
-          "translation": ""
+          "translation": "广告商有时也会使用半真半假。做虚假宣传是违法的，所以他们试图用真相误导你。一则广告可能吹嘘：“十分之九的医生推荐 Yucky 药片治疗鼻痘。”它没有提到，他们只问了十位医生，其中九位为 Yucky 公司工作。"
         },
         {
           "type": "p",
           "text": "This kind of deception happens too often. It’s a sad fact of life: Lies are lies, and sometimes the truth can lie as well.",
-          "translation": ""
+          "translation": "这种欺骗发生得太频繁了。这是生活中令人悲哀的事实：谎言就是谎言，而有时真相也会说谎。"
         }
       ],
       "paragraphs": [
@@ -3339,8 +3339,8 @@
             "When somebody is intentionally leaving out important information."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "半真半假的定义是：说的都是真话，但故意省略重要信息。",
+          "evidence": "he deliberately omitted important information"
         },
         {
           "num": 2,
@@ -3352,8 +3352,8 @@
             "the Yucky Corporation has a bad reputation for its drug"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "广告商不能做虚假宣传，便用部分真相误导消费者，可推知广告可能因信息不全而误导人。",
+          "evidence": "It's against the law to make false claims so they try to mislead you with the truth."
         },
         {
           "num": 3,
@@ -3365,8 +3365,8 @@
             "failure"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "deception 指欺骗行为，与前文“半真半假同样不诚实”呼应，因此与 dishonesty 最接近。",
+          "evidence": "Half-truths are not technically lies, but they are just as dishonest."
         },
         {
           "num": 4,
@@ -3378,8 +3378,8 @@
             "vote for female candidates in political campaigns"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "首句提醒“当心那些用真相欺骗的人”，作者希望读者对读到和听到的信息多加思考。",
+          "evidence": "Beware of those who use the truth to deceive."
         },
         {
           "num": 5,
@@ -3391,21 +3391,21 @@
             "An Important Tactic in Advertising"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "全文讲的是用真话骗人，末句“有时真相也会说谎”点题，Lying with the Truth 最贴切。",
+          "evidence": "Lies are lies, and sometimes the truth can lie as well."
         }
       ],
       "wordCount": 277,
       "difficulty": "进阶",
       "file": "心理与行为.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "当心那些用真相来欺骗的人。当某人告诉你一件真实的事，却省略了本应包含的重要信息时，他就能制造出虚假的印象。",
+        "例如，有人可能会说：“我刚中了一百美元彩票。太棒了。我把那张一美元的彩票拿回店里，换了一百美元！”",
+        "这家伙是个赢家，对吧？也许是，也许不是。我们随后发现他买了两百张彩票，只有一张中奖。他其实是个大输家！",
+        "他没有说任何假话，但故意省略了重要信息。这叫做半真半假。半真半假严格来说不是谎言，但同样不诚实。",
+        "政治竞选中不可靠的候选人常用这种手法。假设史密斯州长上个任期内，本州失去了一百万个工作岗位，又增加了三百万个。然后她寻求连任。她的一位对手打广告说：“史密斯州长任期内，本州失去了一百万个工作岗位！”这是真的。然而，诚实的说法应是：“史密斯州长任期内，本州净增了两百万个工作岗位。”",
+        "广告商有时也会使用半真半假。做虚假宣传是违法的，所以他们试图用真相误导你。一则广告可能吹嘘：“十分之九的医生推荐 Yucky 药片治疗鼻痘。”它没有提到，他们只问了十位医生，其中九位为 Yucky 公司工作。",
+        "这种欺骗发生得太频繁了。这是生活中令人悲哀的事实：谎言就是谎言，而有时真相也会说谎。"
       ]
     },
     {
@@ -5231,32 +5231,32 @@
         {
           "type": "p",
           "text": "All parents have sky-high hopes for their children. We want them to be confident and content. What can parents do to help their kids grow up to lead happy and productive lives? Experts advise:",
-          "translation": ""
+          "translation": "所有父母都对孩子抱有极高的期望。我们希望他们自信、满足。父母能做些什么来帮助孩子长大后过上快乐而富有成效的生活？专家建议："
         },
         {
           "type": "li",
           "text": "Helping them find their talents. In order to succeed, children need to feel they’re good at something. So expose your children to as many interests as possible; then let them choose those they like best!",
-          "translation": ""
+          "translation": "帮助他们发现自己的才能。为了成功，孩子需要感到自己擅长某件事。所以让孩子接触尽可能多的兴趣，然后让他们选择最喜欢的！"
         },
         {
           "type": "li",
           "text": "Applauding their accomplishments. A study found that students whose parents fussed over their abilities were far more likely to do well in school—and in life—than students whose parents didn’t show such support. So celebrate your kids’ achievements, no matter how small they are.",
-          "translation": ""
+          "translation": "称赞他们的成就。一项研究发现，父母对孩子的能力大加赞赏的学生，在学校和生活中表现好的可能性远高于父母不这样支持的学生。所以，庆祝孩子的成就，无论多小。"
         },
         {
           "type": "li",
           "text": "Giving them responsibilities. Responsibilities help youngsters grow into mature and self-motivated adults. So assign your children household chores when they are young. Four-year-olds can pitch in by picking up their dirty clothes and helping to set the table.",
-          "translation": ""
+          "translation": "给他们责任。责任帮助年轻人成长为成熟、有自我驱动力的成年人。所以趁孩子小的时候给他们分配家务。四岁的孩子可以帮忙捡起脏衣服、摆餐桌。"
         },
         {
           "type": "li",
           "text": "Letting them make decisions and mistakes. Making their own decisions increases a child’s self-control and boosts their self-esteem. And allowing kids to make wrong decisions—as long as doing so won’t harm them—helps kids learn from their mistakes.",
-          "translation": ""
+          "translation": "让他们做决定、犯错误。自己做决定能增强孩子的自我控制、提升自尊。允许孩子做错误的决定——只要不会伤害他们——能帮助孩子从错误中学习。"
         },
         {
           "type": "li",
           "text": "Encouraging them to solve their own problems. As they grow, children need practice in communicating, standing up for themselves and compromising. One of the best places to learn these skills is at home. So the next time your child runs to you complaining that her brother picks on her, step back and let them work it out.",
-          "translation": ""
+          "translation": "鼓励他们自己解决问题。随着成长，孩子需要在沟通、为自己争取和妥协方面得到练习。学习这些技能最好的地方之一就是家里。所以下次孩子跑来向你抱怨哥哥或姐姐欺负她时，退后一步，让他们自己解决。"
         }
       ],
       "paragraphs": [
@@ -5273,8 +5273,8 @@
             "Expand their range of interest."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "研究显示，父母对孩子的能力大加赞赏的学生更可能在学校表现好，因此父母应称赞孩子的成就。",
+          "evidence": "students whose parents fussed over their abilities were far more likely to do well in school"
         },
         {
           "num": 2,
@@ -5286,8 +5286,8 @@
             "To share the heavy housework."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "分配家务的目的是让责任帮助孩子成长为成熟、有自我驱动力的成年人，即增强责任感。",
+          "evidence": "Responsibilities help youngsters grow into mature and self-motivated adults."
         },
         {
           "num": 3,
@@ -5299,8 +5299,8 @@
             "Parents should encourage children to communicate with each other."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "专家建议孩子抱怨时家长退后一步，让他们自己解决，即鼓励孩子相互沟通、自行化解矛盾。",
+          "evidence": "step back and let them work it out"
         },
         {
           "num": 4,
@@ -5312,8 +5312,8 @@
             "Learn to make good decisions at an early age."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "专家五条建议中明确有一条是鼓励孩子自己解决问题，C 与之一致。",
+          "evidence": "Encouraging them to solve their own problems."
         },
         {
           "num": 5,
@@ -5325,20 +5325,20 @@
             "To offer parents some good suggestions on children education."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "开头提出问题“父母能做什么”，随后逐条给出专家建议，写作目的是给父母提供教育方法。",
+          "evidence": "What can parents do to help their kids grow up to lead happy and productive lives? Experts advise:"
         }
       ],
       "wordCount": 248,
       "difficulty": "进阶",
       "file": "教育与成长.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "所有父母都对孩子抱有极高的期望。我们希望他们自信、满足。父母能做些什么来帮助孩子长大后过上快乐而富有成效的生活？专家建议：",
+        "帮助他们发现自己的才能。为了成功，孩子需要感到自己擅长某件事。所以让孩子接触尽可能多的兴趣，然后让他们选择最喜欢的！",
+        "称赞他们的成就。一项研究发现，父母对孩子的能力大加赞赏的学生，在学校和生活中表现好的可能性远高于父母不这样支持的学生。所以，庆祝孩子的成就，无论多小。",
+        "给他们责任。责任帮助年轻人成长为成熟、有自我驱动力的成年人。所以趁孩子小的时候给他们分配家务。四岁的孩子可以帮忙捡起脏衣服、摆餐桌。",
+        "让他们做决定、犯错误。自己做决定能增强孩子的自我控制、提升自尊。允许孩子做错误的决定——只要不会伤害他们——能帮助孩子从错误中学习。",
+        "鼓励他们自己解决问题。随着成长，孩子需要在沟通、为自己争取和妥协方面得到练习。学习这些技能最好的地方之一就是家里。所以下次孩子跑来向你抱怨哥哥或姐姐欺负她时，退后一步，让他们自己解决。"
       ]
     },
     {
@@ -5353,32 +5353,32 @@
         {
           "type": "p",
           "text": "Nationwide, only about three percent of early childhood teachers are male in the U.S.. Experts say this can have an impact on young children whose understanding of gender roles and identity are rapidly forming. Research has found that having access to diverse teachers is beneficial for children. For the youngest learners, it means they are more likely to get exposed to different varieties of play and communication. It also helps them develop healthy ideas around gender.",
-          "translation": ""
+          "translation": "在全美范围内，美国只有约 3% 的幼儿教师是男性。专家说，这会影响那些性别角色与身份认知正在迅速形成的幼儿。研究发现，接触多元化的教师对孩子有益。对最小的学习者来说，这意味着他们更可能接触不同种类的游戏与交流方式。这也有助于他们形成健康的性别观念。"
         },
         {
           "type": "p",
           "text": "“In our world and our society, we have very specific stereotypes (模式化形象) of gender roles,” said Mindi Reich-Shapiro, an assistant professor in the teacher education department of the Borough of Manhattan Community College, and one of the authors of a recent study. “It’s important for children to see other possibilities and other paths they can take.”",
-          "translation": ""
+          "translation": "“在我们的世界和社会里，我们对性别角色有非常刻板的印象，”曼哈顿社区学院教师教育系助理教授、最近一项研究的作者之一明迪·赖希-夏皮罗说。“让孩子看到其他可能性、看到他们可以走的其他道路，这很重要。”"
         },
         {
           "type": "p",
           "text": "Despite mostly feeling supported by colleagues and family members, many of the male educators surveyed in the study reported facing social or cultural resistance in their careers as early education teachers. Some also reported that there were parents surprised or concerned that their child had a male teacher. And they had been advised by colleagues or other staff not to hug children.",
-          "translation": ""
+          "translation": "尽管多数受访的男性教育工作者感到同事和家人支持自己，但他们在幼儿教育职业生涯中仍遭遇社会或文化上的阻力。一些人还提到，有家长对孩子的老师是男性感到惊讶或担忧。还有同事或其他员工建议他们不要拥抱孩子。"
         },
         {
           "type": "p",
           "text": "Reich-Shapiro and fellow researchers made several recommendations to increase male representation in the field. Low pay has long been acknowledged as a major issue in the early childhood field. Over 70% of male educators who said they intended to stay in the early education workforce noted an increased salary was a major motivating factor for them to commit to the career long-term. The report suggests paying all early childhood educators the way elementary school teachers are paid.",
-          "translation": ""
+          "translation": "赖希-夏皮罗和其他研究者提出了几项建议，以增加该领域的男性比例。低薪长期以来被认为是幼儿教育领域的主要问题。超过 70% 表示打算留在幼儿教育行业的男性教育工作者指出，加薪是他们长期投身这一职业的主要动力。报告建议，让所有幼儿教育工作者获得与小学教师相同的薪酬。"
         },
         {
           "type": "p",
           "text": "Cities and programs should establish support groups for male early childhood educators and provide mentoring and professional development advice for male educators and their program leaders.",
-          "translation": ""
+          "translation": "城市和项目应为男性幼儿教育工作者建立支持小组，并为男性教育者及其项目负责人提供指导和职业发展建议。"
         },
         {
           "type": "p",
           "text": "The authors also suggest that traditional recruitment approaches for early childhood educators “do not address the gender gap in the field.” They recommend providing young men opportunities to work with children through training and volunteer programs, targeting groups of men who are considering a career change, such as fathers.",
-          "translation": ""
+          "translation": "作者们还指出，传统的幼儿教育工作者招聘方式“没有解决该领域的性别差距”。他们建议通过培训和志愿项目，为年轻男性提供与孩子共事的机会，并把目标对准正在考虑转行的男性群体，比如父亲们。"
         }
       ],
       "paragraphs": [
@@ -5400,8 +5400,8 @@
             "It clearly aims to form children’s identity through play."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "首段指出美国幼儿教师中男性仅约 3%，专家认为这会影响幼儿性别认知的形成，即男性教师短缺带来负面影响。",
+          "evidence": "only about three percent of early childhood teachers are male ... this can have an impact on young children"
         },
         {
           "num": 2,
@@ -5413,8 +5413,8 @@
             "The role of teachers in motivating children to learn."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "赖希-夏皮罗强调孩子应看到更多可能性与可走的道路，即拓宽孩子的视野。",
+          "evidence": "It's important for children to see other possibilities and other paths they can take."
         },
         {
           "num": 3,
@@ -5426,8 +5426,8 @@
             "Many of them feel prejudiced against socially and culturally."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "调查显示许多男性教育工作者在职业中遭遇社会或文化阻力，即感到被偏见对待。",
+          "evidence": "facing social or cultural resistance in their careers as early education teachers"
         },
         {
           "num": 4,
@@ -5439,8 +5439,8 @@
             "Better working conditions."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "超过七成打算留下的男性教育工作者表示，加薪是他们长期坚持的主要动力。",
+          "evidence": "an increased salary was a major motivating factor for them to commit to the career long-term"
         },
         {
           "num": 5,
@@ -5452,20 +5452,20 @@
             "Providing male teachers with more opportunities for advancement."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "作者认为传统招聘方式无效，建议通过培训与志愿项目吸引潜在男性教师进入该领域。",
+          "evidence": "traditional recruitment approaches for early childhood educators “do not address the gender gap in the field.”"
         }
       ],
       "wordCount": 345,
       "difficulty": "挑战",
       "file": "教育与成长.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "在全美范围内，美国只有约 3% 的幼儿教师是男性。专家说，这会影响那些性别角色与身份认知正在迅速形成的幼儿。研究发现，接触多元化的教师对孩子有益。对最小的学习者来说，这意味着他们更可能接触不同种类的游戏与交流方式。这也有助于他们形成健康的性别观念。",
+        "“在我们的世界和社会里，我们对性别角色有非常刻板的印象，”曼哈顿社区学院教师教育系助理教授、最近一项研究的作者之一明迪·赖希-夏皮罗说。“让孩子看到其他可能性、看到他们可以走的其他道路，这很重要。”",
+        "尽管多数受访的男性教育工作者感到同事和家人支持自己，但他们在幼儿教育职业生涯中仍遭遇社会或文化上的阻力。一些人还提到，有家长对孩子的老师是男性感到惊讶或担忧。还有同事或其他员工建议他们不要拥抱孩子。",
+        "赖希-夏皮罗和其他研究者提出了几项建议，以增加该领域的男性比例。低薪长期以来被认为是幼儿教育领域的主要问题。超过 70% 表示打算留在幼儿教育行业的男性教育工作者指出，加薪是他们长期投身这一职业的主要动力。报告建议，让所有幼儿教育工作者获得与小学教师相同的薪酬。",
+        "城市和项目应为男性幼儿教育工作者建立支持小组，并为男性教育者及其项目负责人提供指导和职业发展建议。",
+        "作者们还指出，传统的幼儿教育工作者招聘方式“没有解决该领域的性别差距”。他们建议通过培训和志愿项目，为年轻男性提供与孩子共事的机会，并把目标对准正在考虑转行的男性群体，比如父亲们。"
       ]
     },
     {
@@ -7092,37 +7092,37 @@
         {
           "type": "p",
           "text": "Most Americans switch careers at least three times throughout their lives. Gone are the days when people retired from the company where they first worked. The progressive mentality (心态) regarding business and technology often ensures that people move from position to position as they try to find the right career for them.",
-          "translation": ""
+          "translation": "大多数美国人一生中至少换三次职业。从第一份工作的公司退休的时代已经过去。关于商业和技术的进步心态，往往使人们在寻找适合自己的职业时不断从一个职位转向另一个职位。"
         },
         {
           "type": "p",
           "text": "Recent college graduates ask “what career is right for me?” many times in the months before and after graduation. Now more than ever, people are also asking “what career is right for me?” into their thirties, forties and fifties. Even baby boomers (生育高峰期出生的人) are asking “what job is right for me?” as they retire and reenter the workforce in their sixties and seventies. It seems that every employee in America is wondering which career path fits him or her best.",
-          "translation": ""
+          "translation": "刚毕业的大学生在毕业前后几个月里会多次问“什么职业适合我？”。如今比以往任何时候都多的人，在三十多岁、四十多岁和五十多岁时也在问“什么职业适合我？”。甚至婴儿潮一代在六七十岁退休并重返职场时，也在问“什么工作适合我？”。似乎美国的每个雇员都在想哪条职业道路最适合自己。"
         },
         {
           "type": "p",
           "text": "When you find yourself asking “what career is best for me?”, follow some of these simple tips to set yourself straight on the best path for you.",
-          "translation": ""
+          "translation": "当你发现自己问“什么职业最适合我？”时，遵循以下一些简单建议，让自己走上最适合的道路。"
         },
         {
           "type": "li",
           "text": "Consult a website and take its test to see which career path might be right for you.",
-          "translation": ""
+          "translation": "咨询一个网站，做它的测试，看看哪条职业道路可能适合你。"
         },
         {
           "type": "li",
           "text": "Think about whether you are happy with your current job.",
-          "translation": ""
+          "translation": "想想你对目前的工作是否满意。"
         },
         {
           "type": "li",
           "text": "Emphasize your skills in your resume.",
-          "translation": ""
+          "translation": "在简历中突出你的技能。"
         },
         {
           "type": "li",
           "text": "Do more research about the new career.",
-          "translation": ""
+          "translation": "对新职业做更多研究。"
         }
       ],
       "paragraphs": [
@@ -7141,8 +7141,8 @@
             "retire from the company where they first worked"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "首句即说多数美国人一生至少换三次职业，B 是原文的同义转述。",
+          "evidence": "Most Americans switch careers at least three times throughout their lives."
         },
         {
           "num": 2,
@@ -7154,8 +7154,8 @@
             "adapt to the new technology"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中说人们不断换职位，是为了找到适合自己的职业。",
+          "evidence": "as they try to find the right career for them"
         },
         {
           "num": 3,
@@ -7167,8 +7167,8 @@
             "where they can find another job"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "第二段结尾说美国每个雇员都在想哪条职业道路最适合自己。",
+          "evidence": "every employee in America is wondering which career path fits him or her best"
         },
         {
           "num": 4,
@@ -7180,8 +7180,8 @@
             "To get in touch with a potential boss."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "建议做网站测试，是为了判断哪条职业道路可能适合自己。",
+          "evidence": "take its test to see which career path might be right for you"
         },
         {
           "num": 5,
@@ -7193,21 +7193,21 @@
             "tips to find a right career path"
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文章最后以四条列表给出找对职业道路的具体建议，D 概括准确。",
+          "evidence": "follow some of these simple tips to set yourself straight on the best path for you"
         }
       ],
       "wordCount": 197,
       "difficulty": "进阶",
       "file": "职场与商业.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "大多数美国人一生中至少换三次职业。从第一份工作的公司退休的时代已经过去。关于商业和技术的进步心态，往往使人们在寻找适合自己的职业时不断从一个职位转向另一个职位。",
+        "刚毕业的大学生在毕业前后几个月里会多次问“什么职业适合我？”。如今比以往任何时候都多的人，在三十多岁、四十多岁和五十多岁时也在问“什么职业适合我？”。甚至婴儿潮一代在六七十岁退休并重返职场时，也在问“什么工作适合我？”。似乎美国的每个雇员都在想哪条职业道路最适合自己。",
+        "当你发现自己问“什么职业最适合我？”时，遵循以下一些简单建议，让自己走上最适合的道路。",
+        "咨询一个网站，做它的测试，看看哪条职业道路可能适合你。",
+        "想想你对目前的工作是否满意。",
+        "在简历中突出你的技能。",
+        "对新职业做更多研究。"
       ]
     },
     {
@@ -8569,17 +8569,17 @@
         {
           "type": "p",
           "text": "Who takes care of the elderly in the United States today? The fact is that family members provide over 80% of the care that elderly people need. In most cases the elderly live in their own homes. A very small percentage of America’s elderly live in nursing homes.",
-          "translation": ""
+          "translation": "今天在美国，谁照顾老人？事实是，家庭成员提供了老人所需照料的 80% 以上。多数情况下老人住在自己家里。美国老人中只有很小一部分住在养老院。"
         },
         {
           "type": "p",
           "text": "Samuel Preston, a sociologist at the University of Pennsylvania, studied how the American family is changing. He reported that by the time the average American couple reaches about 40 years of age, their parents are usually still alive. The statistics show the change in lifestyles and responsibilities of aging (老龄化) Americans. The average middle-aged couple can look forward to caring for elderly parents some time after their own children have grown up. Moreover, because people today live longer after an illness than people did years ago, family members must provide long-term care. These facts also mean that after caregivers provide for their elderly parents, who will eventually die, they will be old and may require care too. When they do, their spouses (配偶) will probably take care of them because they have had fewer children than their parents did.",
-          "translation": ""
+          "translation": "宾夕法尼亚大学社会学家塞缪尔·普雷斯顿研究了美国家庭如何变化。他报告说，到美国夫妻平均约 40 岁时，他们的父母通常还健在。统计数字显示了老龄美国人生活方式与责任的变化。普通中年夫妻可以预期，在自己的孩子长大之后的某个时候要照顾年迈的父母。此外，由于今天人们在病后存活的时间比过去更长，家庭成员必须提供长期照料。这些事实还意味着，当照护者送走最终会去世的年迈父母后，他们自己也将年老，也可能需要照料。到那时，照顾他们的很可能是配偶，因为他们比父母那一代生的孩子少。"
         },
         {
           "type": "p",
           "text": "Because Americans are living longer than ever, more social workers have begun to study ways of care-giving to improve the care of the elderly. They have found that all caregivers share a common characteristic: they believe that they are the best people for the job. The social workers have also discovered three basic reasons why the caregivers take on the responsibility of caring for an elderly, dependent relative. Many caregivers believe they had an obligation (职责) to help their relatives. Some think that helping others makes them feel more useful. Others hope that by helping someone now, they will deserve care when they become old and dependent.",
-          "translation": ""
+          "translation": "由于美国人比以往活得更久，更多社会工作者开始研究照护方式，以改善对老人的照料。他们发现所有照护者都有一个共同特点：他们相信自己最适合做这件事。社会工作者还发现了照护者承担照顾年迈、依赖他人的亲属这一责任的三个基本原因。许多照护者认为自己有责任帮助亲属。有些人认为帮助他人让他们觉得自己更有用。另一些人则希望，现在帮助别人，等自己年老、需要依赖他人时，就理应得到照料。"
         }
       ],
       "paragraphs": [
@@ -8598,8 +8598,8 @@
             "elderly people may need care for a long time because they live longer after an illness"
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "普雷斯顿指出，由于今天人们病后存活更久，家庭成员必须提供长期照护，D 是原文的直接转述。",
+          "evidence": "because people today live longer after an illness than people did years ago, family members must provide long-term care"
         },
         {
           "num": 2,
@@ -8611,8 +8611,8 @@
             "Their husbands or wives."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中说这些人年老需要照料时，照顾他们的很可能是配偶。",
+          "evidence": "their spouses will probably take care of them"
         },
         {
           "num": 3,
@@ -8624,8 +8624,8 @@
             "improve the care of the elderly with the help of the social workers"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "所有照护者的共同点是：他们相信自己最适合承担这项工作，比别人照顾得更好。",
+          "evidence": "they believe that they are the best people for the job"
         },
         {
           "num": 4,
@@ -8637,8 +8637,8 @@
             "They hope they deserve care when they need it."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中给出的三个原因是责任、觉得自己有用、希望将来也得到照料；“给子女树立榜样”不在其中。",
+          "evidence": "Many caregivers believe they had an obligation to help their relatives."
         },
         {
           "num": 5,
@@ -8650,17 +8650,17 @@
             "Most elderly people are satisfied with the better ways of care-giving that social workers have come up with."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "全文主线是家庭承担了绝大部分老人照料，并解释照护者承担这一责任的原因。",
+          "evidence": "family members provide over 80% of the care that elderly people need"
         }
       ],
       "wordCount": 289,
       "difficulty": "进阶",
       "file": "社会与城市.md",
       "translations": [
-        "",
-        "",
-        ""
+        "今天在美国，谁照顾老人？事实是，家庭成员提供了老人所需照料的 80% 以上。多数情况下老人住在自己家里。美国老人中只有很小一部分住在养老院。",
+        "宾夕法尼亚大学社会学家塞缪尔·普雷斯顿研究了美国家庭如何变化。他报告说，到美国夫妻平均约 40 岁时，他们的父母通常还健在。统计数字显示了老龄美国人生活方式与责任的变化。普通中年夫妻可以预期，在自己的孩子长大之后的某个时候要照顾年迈的父母。此外，由于今天人们在病后存活的时间比过去更长，家庭成员必须提供长期照料。这些事实还意味着，当照护者送走最终会去世的年迈父母后，他们自己也将年老，也可能需要照料。到那时，照顾他们的很可能是配偶，因为他们比父母那一代生的孩子少。",
+        "由于美国人比以往活得更久，更多社会工作者开始研究照护方式，以改善对老人的照料。他们发现所有照护者都有一个共同特点：他们相信自己最适合做这件事。社会工作者还发现了照护者承担照顾年迈、依赖他人的亲属这一责任的三个基本原因。许多照护者认为自己有责任帮助亲属。有些人认为帮助他人让他们觉得自己更有用。另一些人则希望，现在帮助别人，等自己年老、需要依赖他人时，就理应得到照料。"
       ]
     },
     {
@@ -8675,22 +8675,22 @@
         {
           "type": "p",
           "text": "Some people argue that the pressure on international sportsmen and sportswomen kills the essence of sport—the pursuit of personal excellence. Children kick a football around for fun. When they get older and play for local school teams, they will become competitive but they still enjoy playing. The individual representing his country cannot afford to think about enjoying himself, and he has to think only about winning. He is responsible for the entire nation’s hopes, dreams and reputation.",
-          "translation": ""
+          "translation": "有人主张，国际男女运动员身上的压力扼杀了体育的本质——对个人卓越的追求。孩子们踢足球是为了好玩。当他们长大、为当地校队踢球时，会变得好胜，但仍然享受踢球。代表国家出战的个人则不能想着享受，他只能想着赢。他肩负着整个民族的希望、梦想与声誉。"
         },
         {
           "type": "p",
           "text": "A good example is the FIFA World Cup. Football is the third most important sport in the world. Winning the World Cup is perhaps the summit of international sporting success. Mention Argentina to someone and the chances are that he’ll think of football. In a sense, winning the World Cup put Argentina on the map.",
-          "translation": ""
+          "translation": "国际足联世界杯就是一个好例子。足球是世界上第三重要的运动。赢得世界杯也许是国际体育成功的顶峰。向某人提到阿根廷，他很可能会想到足球。某种意义上，赢得世界杯让阿根廷闻名于世。"
         },
         {
           "type": "p",
           "text": "Some sports fans and supporters get quite unreasonable about the World Cup. People in England felt that their country was somehow important after they won in 1966. In 1978, thousands of the Scots sold their cars, and even their houses, and spent all their money traveling to Argentina, where the finals were played.",
-          "translation": ""
+          "translation": "一些球迷和支持者对世界杯相当不理智。1966 年英格兰夺冠后，英国人觉得自己的国家似乎变得重要了。1978 年，成千上万的苏格兰人卖掉汽车甚至房子，花光所有的钱前往决赛举办地阿根廷。"
         },
         {
           "type": "p",
           "text": "So, am I arguing that international competition kills the idea of sport? Certainly not! Do the Argentinean really believe that because eleven of their men proved the most skillful at football, their nation is in every way better than all others? Not really. But it’s nice to know that you won and that in one way at least your country is the best.",
-          "translation": ""
+          "translation": "那么，我是在主张国际竞争扼杀了体育的理念吗？当然不是！阿根廷人真的相信，因为他们的十一个男人证明了自己最擅长足球，他们的国家就在各方面都优于所有其他国家吗？并非如此。但知道自己赢了，知道自己的国家至少在某一方面是最好的，这种感觉很好。"
         }
       ],
       "paragraphs": [
@@ -8710,8 +8710,8 @@
             "To prove that football is the world’s third most important sport."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "作者先提出“国际竞技是否扼杀体育本质”的问题，再说明体育对个人、国家和球迷意味着什么，主旨是解释体育的作用。",
+          "evidence": "am I arguing that international competition kills the idea of sport? Certainly not!"
         },
         {
           "num": 2,
@@ -8723,8 +8723,8 @@
             "mountaintop"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "summit 本义是山顶，此处引申为“顶峰、最高点”，指国际体育成功的最高成就。",
+          "evidence": "Winning the World Cup is perhaps the summit of international sporting success."
         },
         {
           "num": 3,
@@ -8736,8 +8736,8 @@
             "large number of sports fans and supporters"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中说提到阿根廷人们就想到足球，赢得世界杯让阿根廷闻名于世，即因世界杯的成功而闻名。",
+          "evidence": "In a sense, winning the World Cup put Argentina on the map."
         },
         {
           "num": 4,
@@ -8749,8 +8749,8 @@
             "be unreasonable"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "代表国家出战的运动员不能想着享受，只能想着赢，说明只想着赢就会失去运动的乐趣。",
+          "evidence": "cannot afford to think about enjoying himself"
         },
         {
           "num": 5,
@@ -8762,18 +8762,18 @@
             "Nations that give much attention to international competitions are world-famous in many ways."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "作者认为赢了至少说明本国在球场这一方面最好，这正是他对国际比赛持肯定态度的理由。",
+          "evidence": "in one way at least your country is the best"
         }
       ],
       "wordCount": 247,
       "difficulty": "进阶",
       "file": "社会与城市.md",
       "translations": [
-        "",
-        "",
-        "",
-        ""
+        "有人主张，国际男女运动员身上的压力扼杀了体育的本质——对个人卓越的追求。孩子们踢足球是为了好玩。当他们长大、为当地校队踢球时，会变得好胜，但仍然享受踢球。代表国家出战的个人则不能想着享受，他只能想着赢。他肩负着整个民族的希望、梦想与声誉。",
+        "国际足联世界杯就是一个好例子。足球是世界上第三重要的运动。赢得世界杯也许是国际体育成功的顶峰。向某人提到阿根廷，他很可能会想到足球。某种意义上，赢得世界杯让阿根廷闻名于世。",
+        "一些球迷和支持者对世界杯相当不理智。1966 年英格兰夺冠后，英国人觉得自己的国家似乎变得重要了。1978 年，成千上万的苏格兰人卖掉汽车甚至房子，花光所有的钱前往决赛举办地阿根廷。",
+        "那么，我是在主张国际竞争扼杀了体育的理念吗？当然不是！阿根廷人真的相信，因为他们的十一个男人证明了自己最擅长足球，他们的国家就在各方面都优于所有其他国家吗？并非如此。但知道自己赢了，知道自己的国家至少在某一方面是最好的，这种感觉很好。"
       ]
     },
     {
@@ -8788,32 +8788,32 @@
         {
           "type": "p",
           "text": "Imagine walking through someone’s apartment. The rooms are almost empty, and the only pieces of furniture are a simple table and folded sofa. There are no decorative objects lying around—just the essentials. You open the closet to find you can count the number of clothing items inside on one hand. The space seems more like a prison cell than a home, and you may think the resident cannot afford to buy more things fill the apartment with.",
-          "translation": ""
+          "translation": "想象你走过某人的公寓。房间几乎空无一物，仅有的家具是一张简易桌子和一张折叠沙发。周围没有装饰品——只有必需品。你打开衣柜，发现里面的衣物一只手就能数完。这个空间更像牢房而不是家，你可能会想，住户是买不起更多东西来填满公寓。"
         },
         {
           "type": "p",
           "text": "It turns out that the apartment’s owner is a minimalist (简约主义者) who chooses to limit his number of belongings. Minimalism goes against consumer society by dramatically reducing possessions. Minimalists follow this philosophy to varying degrees, but they claim that cutting back on excess stuff leads to a more fulfilling life.",
-          "translation": ""
+          "translation": "原来，这套公寓的主人是一位简约主义者，他选择限制自己的物品数量。极简主义通过大幅减少所有物来对抗消费社会。极简主义者践行这一理念的程度各不相同，但他们声称，削减多余的东西能带来更充实的生活。"
         },
         {
           "type": "p",
           "text": "With fewer possessions, they do not have to spend as much time cleaning, thinking about what they are missing, or trying to keep up with the latest trends. Minimalists say this frees up their time for things that they find meaningful such as exercising, traveling, and being with loved ones.",
-          "translation": ""
+          "translation": "物品更少，他们就不必花那么多时间打扫、琢磨自己缺什么，或努力追赶最新潮流。极简主义者说，这为他们认为有意义的事情腾出了时间，比如锻炼、旅行和与所爱之人相处。"
         },
         {
           "type": "p",
           "text": "Extreme minimalism is not for everyone, but a mild form of it has grown in popularity recently, thanks to Marie Kondo’s best-selling book The Life-Changing Magic of Tidying Up. Kondo has become distinguished for her tidying skills, which she developed naturally. One of her main beliefs is that one should only own things that one truly loves.",
-          "translation": ""
+          "translation": "极端极简主义并不适合所有人，但多亏近藤麻理惠的畅销书《怦然心动的人生整理魔法》，一种温和的极简主义近来日益流行。近藤因其整理技巧而闻名，这些技巧是她自然而然发展出来的。她的主要信念之一是：人只应拥有自己真正喜爱的物品。"
         },
         {
           "type": "p",
           "text": "It can be unpleasant to part with belongings, but Kondo’s methods have helped millions to remove useless things. Her technique for making space is to go through things by category, starting with clothing, then books, papers, tiny objects, and finally, memorable items. She instructs her followers to touch each object they own and keep only those that spark joy, promising that this will lead to domestic happiness.",
-          "translation": ""
+          "translation": "与物品告别可能令人不快，但近藤的方法已帮助数百万人清除无用之物。她腾出空间的方法是按类别逐一整理，从衣物开始，然后是书籍、纸张、小物件，最后是有纪念意义的物品。她指导追随者触摸自己拥有的每件物品，只保留那些能带来心动感的，并承诺这会带来家庭幸福。"
         },
         {
           "type": "p",
           "text": "Kondo stresses that it is not about throwing things away, but about finding the things you want to remain with you and striking a balance between personal joy and possessions. Even if you are not ready to become a minimalist, you may want to consider reducing the number of things you own, for it seems that letting go of things can truly make room for happiness.",
-          "translation": ""
+          "translation": "近藤强调，这不是关于扔掉东西，而是关于找到你想留在身边的东西，并在个人快乐与物品之间取得平衡。即使你还没准备成为极简主义者，也不妨考虑减少自己拥有的物品数量，因为放下物品似乎真的能为幸福腾出空间。"
         }
       ],
       "paragraphs": [
@@ -8835,8 +8835,8 @@
             "has a passion for counting his clothes"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "第一段描写的极简居所，住户是主动限制物品数量的简约主义者，即选择过简朴生活。",
+          "evidence": "a minimalist who chooses to limit his number of belongings"
         },
         {
           "num": 2,
@@ -8848,8 +8848,8 @@
             "Buying more things than necessary."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "极简主义通过大幅减少所有物来对抗消费社会，也就是反对购买超过需要的东西。",
+          "evidence": "Minimalism goes against consumer society by dramatically reducing possessions."
         },
         {
           "num": 3,
@@ -8861,8 +8861,8 @@
             "have more time for meaningful things"
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "物品少就不必花大量时间打扫、追赶潮流，从而把时间留给有意义的事。",
+          "evidence": "frees up their time for things that they find meaningful"
         },
         {
           "num": 4,
@@ -8874,8 +8874,8 @@
             "cleaning skills"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "温和极简主义的流行要归功于近藤麻理惠的畅销书。",
+          "evidence": "thanks to Marie Kondo's best-selling book The Life-Changing Magic of Tidying Up"
         },
         {
           "num": 5,
@@ -8887,20 +8887,20 @@
             "Buying a lot more things to follow the latest fashion trend."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "末段强调极简不是扔掉东西，而是在个人快乐与物品之间找到平衡。",
+          "evidence": "striking a balance between personal joy and possessions"
         }
       ],
       "wordCount": 367,
       "difficulty": "挑战",
       "file": "社会与城市.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "想象你走过某人的公寓。房间几乎空无一物，仅有的家具是一张简易桌子和一张折叠沙发。周围没有装饰品——只有必需品。你打开衣柜，发现里面的衣物一只手就能数完。这个空间更像牢房而不是家，你可能会想，住户是买不起更多东西来填满公寓。",
+        "原来，这套公寓的主人是一位简约主义者，他选择限制自己的物品数量。极简主义通过大幅减少所有物来对抗消费社会。极简主义者践行这一理念的程度各不相同，但他们声称，削减多余的东西能带来更充实的生活。",
+        "物品更少，他们就不必花那么多时间打扫、琢磨自己缺什么，或努力追赶最新潮流。极简主义者说，这为他们认为有意义的事情腾出了时间，比如锻炼、旅行和与所爱之人相处。",
+        "极端极简主义并不适合所有人，但多亏近藤麻理惠的畅销书《怦然心动的人生整理魔法》，一种温和的极简主义近来日益流行。近藤因其整理技巧而闻名，这些技巧是她自然而然发展出来的。她的主要信念之一是：人只应拥有自己真正喜爱的物品。",
+        "与物品告别可能令人不快，但近藤的方法已帮助数百万人清除无用之物。她腾出空间的方法是按类别逐一整理，从衣物开始，然后是书籍、纸张、小物件，最后是有纪念意义的物品。她指导追随者触摸自己拥有的每件物品，只保留那些能带来心动感的，并承诺这会带来家庭幸福。",
+        "近藤强调，这不是关于扔掉东西，而是关于找到你想留在身边的东西，并在个人快乐与物品之间取得平衡。即使你还没准备成为极简主义者，也不妨考虑减少自己拥有的物品数量，因为放下物品似乎真的能为幸福腾出空间。"
       ]
     },
     {
@@ -8915,27 +8915,27 @@
         {
           "type": "p",
           "text": "Today’s grandparents are joining their grandchildren on social media. In the UK the over-55s are joining social media sites in increasing numbers, meaning that they will soon be the second biggest user group of these sites, with 3.5 million users aged 55–64 and 2.9 million over-65s.",
-          "translation": ""
+          "translation": "如今的祖父母正加入孙辈的社交媒体。在英国，55 岁以上人群正越来越多地加入社交网站，这意味着他们很快将成为这些网站的第二大用户群：55 至 64 岁用户有 350 万，65 岁以上有 290 万。"
         },
         {
           "type": "p",
           "text": "Sheila, aged 59, says, “I joined to see what my grandchildren are doing, as my daughter posts videos and photos of them. It’s a much better way to see what they’re doing than waiting for letters and photos in the post. That’s how we did it when I was a child, but I think I’m lucky I get to see so much more of their lives than my grandparents did.”",
-          "translation": ""
+          "translation": "59 岁的希拉说：“我加入是为了看看孙辈在做什么，因为我女儿会发他们的视频和照片。这比等邮寄来的信件和照片好多了。我小时候我们就是这样做的，但我觉得自己很幸运，能比我的祖父母看到更多孙辈的生活。”"
         },
         {
           "type": "p",
           "text": "Unexpectedly, Sheila’s grandchildren are less likely to use social media sites themselves. Children under 17 in the UK are leaving the sites—only 2.2 million users are under 17—but they’re not going far from their smartphones. Chloe, aged 15, even sleeps with her phone. “It’s my alarm clock, so I have to,” she says. “I look at it before I go to sleep and as soon as I wake up.” Unlike her grandmother’s generation, Chloe’s age group is spending so much time on their phones at home that they are missing out on spending time with their friends in real life. Sheila, on the other hand, has made contact with old friends from school that she has not heard from in forty years.",
-          "translation": ""
+          "translation": "出乎意料的是，希拉的孙辈自己倒不太使用社交网站。英国 17 岁以下的孩子正在离开这些网站——只有 220 万用户未满 17 岁——但他们并没有远离智能手机。15 岁的克洛伊甚至和手机一起睡觉。“它是我的闹钟，所以我必须这样，”她说。“我睡前看它，一醒来就看。”与祖母那一代不同，克洛伊这个年龄段的人在家花太多时间在手机上，以至于错过了与朋友在现实生活中相处的时间。而希拉则与四十年来没有联系的老同学重新建立了联系。"
         },
         {
           "type": "p",
           "text": "“We use social media sites to arrange to meet all over the country,” she says. “They have changed my social life completely.”",
-          "translation": ""
+          "translation": "“我们用社交网站安排在全国各地见面，”她说。“它们彻底改变了我的社交生活。”"
         },
         {
           "type": "p",
           "text": "Teenagers might have their parents to thank for their smartphone addiction (上瘾) as their parents were the early users of smartphones. Peter, 38 and a father of two teenagers, reports that he used to be on his phone or laptop constantly. “I was always connected and I felt like I was always working,” he says. “How could I tell my kids to get off their phones if I was always in front of a screen myself?” Thus, in the evenings and at weekends, he takes his SIM card out of his smartphone and puts it into an old-style mobile phone that can only make calls and send text messages. “I’m not completely cut off from the world in case of emergencies, but the important thing is that I’m setting a better example for my kids and spending more quality time with them.”",
-          "translation": ""
+          "translation": "青少年或许要感谢父母让他们对智能手机上瘾，因为父母是智能手机的早期用户。38 岁、有两个青少年的父亲彼得说，他过去常常一直盯着手机或笔记本电脑。“我总是保持在线，感觉自己一直在工作，”他说。“如果我自己总是面对屏幕，怎么能让孩子放下手机？”于是，在晚上和周末，他把 SIM 卡从智能手机里取出，装进一部只能打电话和发短信的老式手机。“我不是完全与世隔绝，以防有急事，但重要的是，我在给孩子树立更好的榜样，并与他们共度更多高质量的时光。”"
         }
       ],
       "paragraphs": [
@@ -8956,8 +8956,8 @@
             "form online habits similar to their children’s"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "希拉说自己加入社交网站是为了看看孙辈在做什么，即了解孙辈的生活。",
+          "evidence": "I joined to see what my grandchildren are doing"
         },
         {
           "num": 2,
@@ -8969,8 +8969,8 @@
             "they were fond of hearing from their grandparents"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "画线句回忆的是她小时候靠邮寄信件和照片了解亲友近况，因此意为“过去要等邮递的信件和照片”。",
+          "evidence": "That's how we did it when I was a child"
         },
         {
           "num": 3,
@@ -8982,8 +8982,8 @@
             "spend more time with their friends in real life"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "第三段说英国 17 岁以下用户正在离开社交网站，人数只有 220 万，说明他们对社交网站兴趣下降。",
+          "evidence": "Children under 17 in the UK are leaving the sites"
         },
         {
           "num": 4,
@@ -8995,8 +8995,8 @@
             "He wants to be cut off from the world."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "彼得换用老式手机，是为了不在孩子面前总盯着屏幕，给孩子树立更好的榜样。",
+          "evidence": "I'm setting a better example for my kids"
         },
         {
           "num": 5,
@@ -9008,19 +9008,19 @@
             "How to keep kids away from smartphones and social media."
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文章分别讲祖父母、青少年和父母三类人的网络使用习惯，主旨是不同年龄段的网络习惯差异。",
+          "evidence": "Today's grandparents are joining their grandchildren on social media."
         }
       ],
       "wordCount": 396,
       "difficulty": "挑战",
       "file": "社会与城市.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "如今的祖父母正加入孙辈的社交媒体。在英国，55 岁以上人群正越来越多地加入社交网站，这意味着他们很快将成为这些网站的第二大用户群：55 至 64 岁用户有 350 万，65 岁以上有 290 万。",
+        "59 岁的希拉说：“我加入是为了看看孙辈在做什么，因为我女儿会发他们的视频和照片。这比等邮寄来的信件和照片好多了。我小时候我们就是这样做的，但我觉得自己很幸运，能比我的祖父母看到更多孙辈的生活。”",
+        "出乎意料的是，希拉的孙辈自己倒不太使用社交网站。英国 17 岁以下的孩子正在离开这些网站——只有 220 万用户未满 17 岁——但他们并没有远离智能手机。15 岁的克洛伊甚至和手机一起睡觉。“它是我的闹钟，所以我必须这样，”她说。“我睡前看它，一醒来就看。”与祖母那一代不同，克洛伊这个年龄段的人在家花太多时间在手机上，以至于错过了与朋友在现实生活中相处的时间。而希拉则与四十年来没有联系的老同学重新建立了联系。",
+        "“我们用社交网站安排在全国各地见面，”她说。“它们彻底改变了我的社交生活。”",
+        "青少年或许要感谢父母让他们对智能手机上瘾，因为父母是智能手机的早期用户。38 岁、有两个青少年的父亲彼得说，他过去常常一直盯着手机或笔记本电脑。“我总是保持在线，感觉自己一直在工作，”他说。“如果我自己总是面对屏幕，怎么能让孩子放下手机？”于是，在晚上和周末，他把 SIM 卡从智能手机里取出，装进一部只能打电话和发短信的老式手机。“我不是完全与世隔绝，以防有急事，但重要的是，我在给孩子树立更好的榜样，并与他们共度更多高质量的时光。”"
       ]
     },
     {
@@ -9374,17 +9374,17 @@
         {
           "type": "p",
           "text": "For years and years people have been saying that the railways are dead. “We can do without railways, people say, as if motorcars and planes made the railways unnecessary. We all keep hearing that trains are slow, that they lose money, and that they’re dying. But this is far from the truth. In these days when oil is expensive, the railways have become highly competitive with motorcars and planes. If you want to carry people or goods from place to place, they’re cheaper than planes.",
-          "translation": ""
+          "translation": "多年来人们一直说铁路已经死了。“没有铁路我们也行，”人们说，仿佛汽车和飞机让铁路变得多余。我们不断听到火车很慢、铁路亏钱、正在消亡的说法。但这远非事实。在石油昂贵的今天，铁路与汽车和飞机相比已极具竞争力。如果要运送人或货物，铁路比飞机便宜。"
         },
         {
           "type": "p",
           "text": "Railways have much in common with planes. A plane goes in a straight line and so does a railway. What is more, it takes you from the heart of a city into the heart of another. But a railway doesn’t leave you as a plane does, miles and miles away from the city center. It doesn’t hold you up as a motorcar does, in endless traffic jams. And a single train can carry goods which no plane or motorcar could ever do.",
-          "translation": ""
+          "translation": "铁路与飞机有许多共同之处。飞机走直线，铁路也走直线。更重要的是，它把你从一个城市的中心送到另一个城市的中心。但铁路不会像飞机那样，把你丢在离市中心许多英里之外。它也不会像汽车那样，让你堵在没完没了的车流里。而且一列火车能运的货物，任何飞机或汽车都做不到。"
         },
         {
           "type": "p",
           "text": "Far from being dead, the railways are very much alive. Modern railway lines give you a smooth, untroubled journey. Where else can you eat well, sleep in comfort, feel safe and enjoy the scene while you are traveling at speed at the same time? And we are only at the beginning. We have entered the age of superfast trains, traveling at 150 miles an hour and more. Soon we will be wondering why spend so much on motorways we can’t use because we don’t have enough money to buy oil and planes we can’t fly for the same reason.",
-          "translation": ""
+          "translation": "铁路远没有死，而是活得很好。现代铁路给你平稳、无忧的旅程。还有哪里能让你在高速行进的同时吃得好、睡得舒服、感到安全并欣赏风景？而且我们才刚刚开始。我们已经进入超高速列车时代，时速达到 150 英里甚至更高。很快我们就会纳闷：为什么要花那么多钱修我们无法使用的高速公路——因为我们没钱买油；又为什么要买同样因为没油而飞不起来的飞机。"
         }
       ],
       "paragraphs": [
@@ -9403,8 +9403,8 @@
             "railways lose money"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "“火车慢、亏钱、正在消亡”是人们认为铁路已死的理由；石油昂贵恰恰是作者用来反驳“铁路已死”的论据。",
+          "evidence": "In these days when oil is expensive, the railways have become highly competitive"
         },
         {
           "num": 2,
@@ -9416,8 +9416,8 @@
             "trains are as good as motorcars and planes"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "作者列举铁路比飞机便宜、直达市中心、不受堵车拖累、运货更多，意在说明汽车和飞机不如火车。",
+          "evidence": "the railways have become highly competitive with motorcars and planes"
         },
         {
           "num": 3,
@@ -9429,8 +9429,8 @@
             "No motorcar or plane can carry as many goods as a train does in a cheap way."
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中说铁路不会像飞机那样把人丢在离市中心许多英里外，因此“下飞机就在市中心”与原文相反。",
+          "evidence": "a railway doesn't leave you as a plane does, miles and miles away from the city center"
         },
         {
           "num": 4,
@@ -9442,8 +9442,8 @@
             "the travelers cannot enjoy the scene in their journey"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "末段说将来会纳闷为何花钱修用不上的高速公路、买飞不起的飞机，原因都是没钱买油，即石油开支过大。",
+          "evidence": "we don't have enough money to buy oil"
         },
         {
           "num": 5,
@@ -9455,17 +9455,17 @@
             "The advantages of the railways enable them to be alive even nowadays."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "全文先驳“铁路已死”，再逐条列出铁路相对飞机汽车的优势，主旨是这些优势让铁路至今仍有生命力。",
+          "evidence": "Far from being dead, the railways are very much alive."
         }
       ],
       "wordCount": 265,
       "difficulty": "进阶",
       "file": "旅行与出行.md",
       "translations": [
-        "",
-        "",
-        ""
+        "多年来人们一直说铁路已经死了。“没有铁路我们也行，”人们说，仿佛汽车和飞机让铁路变得多余。我们不断听到火车很慢、铁路亏钱、正在消亡的说法。但这远非事实。在石油昂贵的今天，铁路与汽车和飞机相比已极具竞争力。如果要运送人或货物，铁路比飞机便宜。",
+        "铁路与飞机有许多共同之处。飞机走直线，铁路也走直线。更重要的是，它把你从一个城市的中心送到另一个城市的中心。但铁路不会像飞机那样，把你丢在离市中心许多英里之外。它也不会像汽车那样，让你堵在没完没了的车流里。而且一列火车能运的货物，任何飞机或汽车都做不到。",
+        "铁路远没有死，而是活得很好。现代铁路给你平稳、无忧的旅程。还有哪里能让你在高速行进的同时吃得好、睡得舒服、感到安全并欣赏风景？而且我们才刚刚开始。我们已经进入超高速列车时代，时速达到 150 英里甚至更高。很快我们就会纳闷：为什么要花那么多钱修我们无法使用的高速公路——因为我们没钱买油；又为什么要买同样因为没油而飞不起来的飞机。"
       ]
     },
     {
@@ -9600,32 +9600,32 @@
         {
           "type": "p",
           "text": "Cars are an important part of life in the United States. Without a car most people feel that they are poor. And even if a person is poor, he doesn’t feel really poor when he has a car.",
-          "translation": ""
+          "translation": "汽车是美国生活的重要部分。没有车，多数人觉得自己很穷。即使一个人很穷，只要有车，他就不会觉得自己真的穷。"
         },
         {
           "type": "p",
           "text": "Henry Ford was the man who first started making cars in large numbers. He probably didn’t know how much the car was going to change American culture. The car made the United States a nation on wheels. And it helped make the United States what it is today.",
-          "translation": ""
+          "translation": "亨利·福特是第一个开始大量生产汽车的人。他也许不知道汽车将如何改变美国文化。汽车使美国成为一个“车轮上的国家”，也帮助美国成为今天的样子。"
         },
         {
           "type": "p",
           "text": "There are three main reasons why the car became so popular in the United States. First of all, the country is a big one and Americans like to move around it. The car makes the travel the most comfortable and cheapest. With a car people can go to any place without spending a lot of money.",
-          "translation": ""
+          "translation": "汽车在美国如此流行有三个主要原因。首先，这个国家很大，美国人喜欢四处走动。汽车使旅行成为最舒适、最便宜的方式。有车，人们可以不花很多钱就去任何地方。"
         },
         {
           "type": "p",
           "text": "The second reason cars are popular is the fact that the United States never really developed a practical and cheap public travel system. Long distance trains have never been as common in the United States as they are in other parts of the world. Now there is a good system of air-service provided by planes. But it is too expensive to be used often.",
-          "translation": ""
+          "translation": "汽车流行的第二个原因，是美国从未真正发展出实用而廉价的公共交通系统。长途火车在美国从未像在世界其他地区那样普遍。现在有飞机提供的良好航空服务，但太贵，无法经常使用。"
         },
         {
           "type": "p",
           "text": "The third reason is the most important one, though. The American spirit of independence is what really made cars popular. Americans don’t like waiting for a bus, or a train or even a plane. They don’t like to have to follow an exact timetable. A car gives them the freedom to plan their own time. And this is the freedom that Americans want most to have.",
-          "translation": ""
+          "translation": "不过第三个原因最重要。真正让汽车流行的是美国人的独立精神。美国人不喜欢等公交、等火车甚至等飞机。他们不喜欢必须遵守精确的时间表。汽车给了他们自由安排自己时间的自由，而这正是美国人最想要的自由。"
         },
         {
           "type": "p",
           "text": "Less oil has caused a big problem for Americans. But the answer will not be a bigger system of public transportation. The real answer will have to be a new kind of car, one that does not use so much oil.",
-          "translation": ""
+          "translation": "石油减少给美国人带来了大问题。但答案不会是更大的公共交通系统。真正的答案必须是一种新型汽车——一种不消耗那么多石油的汽车。"
         }
       ],
       "paragraphs": [
@@ -9647,8 +9647,8 @@
             "An American will feel poor unless he has a car."
           ],
           "answer": "D",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "首段说没有车多数人觉得自己穷，即使贫穷，只要有车就不觉得真的穷，D 概括准确。",
+          "evidence": "Without a car most people feel that they are poor."
         },
         {
           "num": 2,
@@ -9660,8 +9660,8 @@
             "use public traffic often"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中说美国很大、美国人喜欢四处走动，汽车让出行最舒适也最便宜，说明他们经常开车出行。",
+          "evidence": "Americans like to move around it. The car makes the travel the most comfortable and cheapest."
         },
         {
           "num": 3,
@@ -9673,8 +9673,8 @@
             "Americans often move from place to place."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "文中只比较了价格与便利，从未说公交、火车、飞机不舒适，A 属于无中生有。",
+          "evidence": "The car makes the travel the most comfortable and cheapest."
         },
         {
           "num": 4,
@@ -9686,8 +9686,8 @@
             "Americans cannot move around without their own cars"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "作者明确说第三个原因最重要：汽车让人自由安排时间，而这是美国人最想要的自由。",
+          "evidence": "A car gives them the freedom to plan their own time."
         },
         {
           "num": 5,
@@ -9699,20 +9699,20 @@
             "the United States depend on car industry for its development"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "“车轮上的国家”是比喻，说明汽车在美国人生活中占据重要地位。",
+          "evidence": "The car made the United States a nation on wheels."
         }
       ],
       "wordCount": 313,
       "difficulty": "挑战",
       "file": "旅行与出行.md",
       "translations": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "汽车是美国生活的重要部分。没有车，多数人觉得自己很穷。即使一个人很穷，只要有车，他就不会觉得自己真的穷。",
+        "亨利·福特是第一个开始大量生产汽车的人。他也许不知道汽车将如何改变美国文化。汽车使美国成为一个“车轮上的国家”，也帮助美国成为今天的样子。",
+        "汽车在美国如此流行有三个主要原因。首先，这个国家很大，美国人喜欢四处走动。汽车使旅行成为最舒适、最便宜的方式。有车，人们可以不花很多钱就去任何地方。",
+        "汽车流行的第二个原因，是美国从未真正发展出实用而廉价的公共交通系统。长途火车在美国从未像在世界其他地区那样普遍。现在有飞机提供的良好航空服务，但太贵，无法经常使用。",
+        "不过第三个原因最重要。真正让汽车流行的是美国人的独立精神。美国人不喜欢等公交、等火车甚至等飞机。他们不喜欢必须遵守精确的时间表。汽车给了他们自由安排自己时间的自由，而这正是美国人最想要的自由。",
+        "石油减少给美国人带来了大问题。但答案不会是更大的公共交通系统。真正的答案必须是一种新型汽车——一种不消耗那么多石油的汽车。"
       ]
     },
     {
@@ -13024,17 +13024,17 @@
         {
           "type": "p",
           "text": "Madagascar is a wonderful place. About 90 percent of the animals and plants living there cannot be found elsewhere in the world. Scientists love it! There are some very unusual animals and places in Madagascar’s Tsingy de Bemaraha National park, but it’s a dangerous place. The rocks of the Tsingy in the park are very sharp.",
-          "translation": ""
+          "translation": "马达加斯加是个奇妙的地方。那里约 90% 的动植物在世界其他地方都找不到。科学家喜爱它！马达加斯加的黥基·德·贝马拉哈国家公园里有一些非常奇特的动物和地点，但那是个危险的地方。公园里黥基的岩石非常锋利。"
         },
         {
           "type": "p",
           "text": "I arrived in Madagascar in March. At the end of the rainy season, I was with a scientist and a reporter. We wanted to find some new species. We set off to the park and after five days, we finally arrived there.",
-          "translation": ""
+          "translation": "我三月抵达马达加斯加。正值雨季末尾，我和一位科学家、一位记者同行。我们想发现一些新物种。我们出发前往公园，五天后终于到达。"
         },
         {
           "type": "p",
           "text": "We worked enough in the Tsingy. The rocks cut our clothes and our shoes. It was dangerous, but we saw hundreds of animals and plants. We saw beautiful birds and unusual white lemurs with red eyes. They didn’t have any problems on the Tsingy rocks! Those birds had lived here for many years. This place, with its natural environment, was the perfect habitat for varieties of rare birds, most of which were unique to Madagascar.",
-          "translation": ""
+          "translation": "我们在黥基里做了足够的工作。岩石划破了我们的衣服和鞋子。那里很危险，但我们看到了数百种动植物。我们看到了美丽的鸟，还有长着红眼睛的奇特白狐猴。它们在黥基岩石上毫无问题！那些鸟在这里生活了许多年。这个地方凭借其自然环境，是各种珍稀鸟类的完美栖息地，其中大多数是马达加斯加特有的。"
         }
       ],
       "paragraphs": [
@@ -13053,8 +13053,8 @@
             "sharp rocks"
           ],
           "answer": "C",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "首段说那里约 90% 的动植物在世界其他地方找不到，科学家因此喜爱马达加斯加。",
+          "evidence": "About 90 percent of the animals and plants living there cannot be found elsewhere in the world"
         },
         {
           "num": 2,
@@ -13066,8 +13066,8 @@
             "To live in the place"
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "第二段直接说明此行的目的：想发现一些新物种。",
+          "evidence": "We wanted to find some new species."
         },
         {
           "num": 3,
@@ -13079,8 +13079,8 @@
             "A good hospital."
           ],
           "answer": "A",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "habitat 指动植物自然生长的地方，即“自然家园”；后文说这里是珍稀鸟类的完美栖息地。",
+          "evidence": "was the perfect habitat for varieties of rare birds"
         },
         {
           "num": 4,
@@ -13092,17 +13092,17 @@
             "A Variety of Birds"
           ],
           "answer": "B",
-          "explanation": "",
-          "evidence": ""
+          "explanation": "全文以第一人称叙述作者前往马达加斯加、在黥基公园考察的经历，B 最能涵盖全文。",
+          "evidence": "I arrived in Madagascar in March."
         }
       ],
       "wordCount": 172,
       "difficulty": "基础",
       "file": "人物与故事.md",
       "translations": [
-        "",
-        "",
-        ""
+        "马达加斯加是个奇妙的地方。那里约 90% 的动植物在世界其他地方都找不到。科学家喜爱它！马达加斯加的黥基·德·贝马拉哈国家公园里有一些非常奇特的动物和地点，但那是个危险的地方。公园里黥基的岩石非常锋利。",
+        "我三月抵达马达加斯加。正值雨季末尾，我和一位科学家、一位记者同行。我们想发现一些新物种。我们出发前往公园，五天后终于到达。",
+        "我们在黥基里做了足够的工作。岩石划破了我们的衣服和鞋子。那里很危险，但我们看到了数百种动植物。我们看到了美丽的鸟，还有长着红眼睛的奇特白狐猴。它们在黥基岩石上毫无问题！那些鸟在这里生活了许多年。这个地方凭借其自然环境，是各种珍稀鸟类的完美栖息地，其中大多数是马达加斯加特有的。"
       ]
     },
     {
@@ -14227,6 +14227,6 @@
     "questions": 588,
     "words": 32568,
     "withAnswers": 588,
-    "withTranslations": 103
+    "withTranslations": 120
   }
 }

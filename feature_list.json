@@ -149,10 +149,10 @@
     {
       "id": "feat-019",
       "name": "补齐 17 篇旧文章译文与解析",
-      "description": "冲刺训练2 拆分产生的 kepu-11 ~ kepu-17、shehui-13 ~ shehui-21、jingli-12 共 17 篇（89 个正文块、84 道题）仍缺中文译文与解析，需按 feat-018 的口径补齐",
+      "description": "冲刺训练2 拆分产生的 kepu-11 ~ kepu-17、shehui-13 ~ shehui-21、jingli-12 共 17 篇（89 个正文块、84 道题）补齐中文译文与解析",
       "dependencies": ["feat-018"],
-      "status": "not-started",
-      "evidence": "2026-11-13 校验发现：17 篇无任何译文，84 题有答案但 explanation 为空；不属于本次 40 篇阻塞范围，留作下一功能"
+      "status": "done",
+      "evidence": "2026-11-13：新增 src/data/translations-part15.json（17 篇 / 89 段）与 src/data/answers/legacy-11-21.json（17 篇 / 84 题，answer 沿用源文件、补 explanation 与 evidence）。npm run content：120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 120 篇，无警告；校验全站 582 个正文块均有译文、588 题 answer 与 explanation 均非空；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）。遗留 21 道旧题有解析但无 evidence，界面按条件渲染，不影响展示"
     }
   ]
 }

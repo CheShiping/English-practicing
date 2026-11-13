@@ -3,7 +3,17 @@
 ## 当前状态
 
 **最后更新：** 2026-11-13
-**当前功能：** feat-018 新增 40 篇补答案、解析、译文与文库元数据（已完成）
+**当前功能：** feat-019 补齐 17 篇旧文章译文与解析（已完成）
+
+## 2026-11-13 补齐 17 篇旧文章译文与解析（feat-019）
+
+- **范围**：冲刺训练2 拆分产生的 `kepu-11` ~ `kepu-17`、`shehui-13` ~ `shehui-21`、`jingli-12`，共 17 篇 / 89 段 / 84 题
+- **译文**：新增 `src/data/translations-part15.json`，按 block 索引逐段对应，含列表型文章的 5 条建议
+- **解析**：新增 `src/data/answers/legacy-11-21.json`，`answer` 沿用源文件（校验 84 题答案与原文完全一致），补写中文 `explanation` 与英文 `evidence`
+- **覆盖结果**：全站 120 篇全部有译文、582 个正文块全部有 `translation`、588 题全部有 `answer` 与 `explanation`
+- **证据**：`npm run content` 120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 120 篇，无警告；校验缺失块 0、缺失解析 0；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **遗留**：21 道旧题（kepu-01/03/05/08/09、shehui-01/02/04/06/08/09/10、chongci-06/07/10/11/12、lishi-02、jingli-04、yingyong-04）有解析但无 `evidence`，界面按条件渲染，不影响展示
+- **本次改动文件**：`src/data/translations-part15.json`（新增）、`src/data/answers/legacy-11-21.json`（新增）、`feature_list.json`
 
 ## 2026-11-13 新增 40 篇内容收尾：答案、解析、译文与元数据（feat-018）
 
@@ -102,19 +112,17 @@
 
 ### 进行中
 
-- [ ] feat-019 补齐 17 篇旧文章译文与解析
-  - 范围：`kepu-11` ~ `kepu-17`、`shehui-13` ~ `shehui-21`、`jingli-12`（89 个正文块、84 道题）
-  - 现状：有答案，但 `explanation` 为空、无任何中文译文
+- 无。内容侧三批工作（feat-009 答案、feat-008/feat-018/feat-019 译文）已全部收口
 
 ### 下一步
 
-1. 按 feat-018 的口径为上述 17 篇补译文与解析（可复用 `translations-part15.json` 与 `answers/legacy-*.json`）
-2. 补完后复核全站 120 篇译文覆盖与 588 题解析完整度
-3. 视需要更新 README 的内容统计
+1. 可选：为 21 道旧题补 `evidence`，让 588 题在「原文依据」上完全一致
+2. 更新 README 的内容统计（120 篇 / 588 题 / 100% 译文）
+3. 用户确认后检查一次阅读器与文库的整体展示
 
 ## 阻塞 / 风险
 
-- [ ] 17 篇旧文章（冲刺训练2 拆分产物）缺译文与解析，阅读器翻译抽屉与「答案/解析」在这些篇目下为空
+- [ ] 21 道旧题有解析但无 `evidence`；`QuestionPanel` 按 `q.evidence &&` 条件渲染，不会出现空块
 - [ ] Windows 构建缓存：`npx next build` 可能因缺失 `.next/static/<id>/_ssgManifest.js` 失败；先删除 `.next` 并预建 `.next\static` 再构建
 - [ ] 生成文件噪声：`src/data/articles.generated.json`、`public/data/practice.json`、`src/data/grammar.generated.json` 含 `generatedAt` 时间戳，每次构建都会产生 diff
 - [ ] 无 ESLint 配置：`npm run lint` 会进入交互式初始化，不能作为验证门槛
