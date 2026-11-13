@@ -2296,6 +2296,38 @@
   flex-wrap: wrap;
 }
 
+/* 续答提示卡：设置页展示未完成练习 */
+
+.practice-resume-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-top: 26px;
+}
+
+.practice-resume-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.practice-resume-title {
+  margin: 0;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--accent-deep);
+}
+
+.practice-resume-sub {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
 .practice-progress {
   flex: 1;
   min-width: 0;

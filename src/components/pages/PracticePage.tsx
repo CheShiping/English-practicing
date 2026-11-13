@@ -11,6 +11,7 @@ import {
   Flag,
   Layers,
   LayoutGrid,
+  Play,
   RefreshCw,
   Shuffle,
   Send,
@@ -36,6 +37,7 @@ import {
   savePracticeResume,
   sortCategories,
   type PracticeMode,
+  type PracticeResume,
 } from '@/lib/practice';
 
 type Phase = 'loading' | 'setup' | 'quiz' | 'result' | 'error';
@@ -66,6 +68,43 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   const [session, setSession] = useState({ answered: 0, correct: 0 });
   const [sheetOpen, setSheetOpen] = useState(false);
   const [wrongIdsVersion, setWrongIdsVersion] = useState(0);
+  const [resumeVersion, setResumeVersion] = useState(0);
+
+  // 把一份续答存档恢复进练习状态；返回是否恢复成功
+  const restoreResume = useCallback((saved: PracticeResume, d: PracticeData): boolean => {
+    const byId = new Map(d.questions.map((q) => [q.id, q]));
+    const questions = saved.ids
+      .map((id) => byId.get(id))
+      .filter((q): q is PracticeQuestion => Boolean(q));
+    if (!questions.length) {
+      clearPracticeResume(); // 存档题目已失效
+      return false;
+    }
+    const valid = new Set(questions.map((q) => q.id));
+    const savedPicks: Record<string, string> = {};
+    for (const [id, letter] of Object.entries(saved.picks || {})) {
+      if (valid.has(id) && letter) savedPicks[id] = letter;
+    }
+    let lastAnswered = 0;
+    for (let i = 0; i < questions.length; i++) {
+      if (savedPicks[questions[i].id]) lastAnswered = i;
+    }
+    setPaper({
+      questions,
+      label: saved.label || '继续上次练习',
+      source: saved.source === 'wrong' ? 'wrong' : 'pool',
+    });
+    setPicks(savedPicks);
+    setMarks(Array.isArray(saved.marks) ? saved.marks.filter((id) => valid.has(id)) : []);
+    setCursor(lastAnswered);
+    setSession({
+      answered: Object.keys(savedPicks).length,
+      correct: questions.reduce((n, q) => n + (savedPicks[q.id] === q.answer ? 1 : 0), 0),
+    });
+    setSheetOpen(false);
+    setPhase('quiz');
+    return true;
+  }, []);
 
   useEffect(() => {
     let alive = true;
@@ -76,36 +115,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
         // 有未完成的练习时直接续答，落在最后答过的那道题上
         const saved = getPracticeResume();
         if (tab !== 'wrong' && saved && Array.isArray(saved.ids) && saved.ids.length) {
-          const byId = new Map(d.questions.map((q) => [q.id, q]));
-          const questions = saved.ids
-            .map((id) => byId.get(id))
-            .filter((q): q is PracticeQuestion => Boolean(q));
-          if (questions.length) {
-            const valid = new Set(questions.map((q) => q.id));
-            const savedPicks: Record<string, string> = {};
-            for (const [id, letter] of Object.entries(saved.picks || {})) {
-              if (valid.has(id) && letter) savedPicks[id] = letter;
-            }
-            let lastAnswered = 0;
-            for (let i = 0; i < questions.length; i++) {
-              if (savedPicks[questions[i].id]) lastAnswered = i;
-            }
-            setPaper({
-              questions,
-              label: saved.label || '继续上次练习',
-              source: saved.source === 'wrong' ? 'wrong' : 'pool',
-            });
-            setPicks(savedPicks);
-            setMarks(Array.isArray(saved.marks) ? saved.marks.filter((id) => valid.has(id)) : []);
-            setCursor(lastAnswered);
-            setSession({
-              answered: Object.keys(savedPicks).length,
-              correct: questions.reduce((n, q) => n + (savedPicks[q.id] === q.answer ? 1 : 0), 0),
-            });
-            setPhase('quiz');
-            return;
-          }
-          clearPracticeResume(); // 存档题目已失效
+          if (restoreResume(saved, d)) return;
         }
         setPhase('setup');
       })
@@ -154,6 +164,13 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
     void wrongIdsVersion;
     return getWrongBook();
   }, [wrongIdsVersion, view, phase]);
+
+  // 设置页展示的未完成练习（退出后想继续，不必重开页面）
+  const savedResume = useMemo(() => {
+    void resumeVersion;
+    if (phase !== 'setup') return null;
+    return getPracticeResume();
+  }, [resumeVersion, phase]);
 
   const wrongCount = Object.keys(wrongBook).length;
 
@@ -584,6 +601,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   }
 
   // ---------- 组卷设置 ----------
+  const resumeAnswered = savedResume ? Object.keys(savedResume.picks || {}).filter(Boolean).length : 0;
   return (
     <div className="page practice-page">
       <div className="practice-head">
@@ -603,6 +621,36 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           </a>
         </div>
       </div>
+
+      {savedResume && savedResume.ids.length > 0 && resumeAnswered > 0 && (
+        <div className="practice-resume-card">
+          <div className="practice-resume-info">
+            <p className="practice-resume-title">上次练习未完成</p>
+            <p className="practice-resume-sub">
+              已答 {resumeAnswered} / {savedResume.ids.length} 题
+              {savedResume.label ? ` · ${savedResume.label}` : ''}，可从上次答过的题继续
+            </p>
+          </div>
+          <button
+            className="btn primary"
+            onClick={() => {
+              if (!restoreResume(savedResume, data)) setResumeVersion((v) => v + 1);
+            }}
+          >
+            <Play size={15} /> 继续上次练习
+          </button>
+          <button
+            className="btn ghost"
+            title="放弃上次的作答进度"
+            onClick={() => {
+              clearPracticeResume();
+              setResumeVersion((v) => v + 1);
+            }}
+          >
+            <Trash2 size={15} /> 放弃
+          </button>
+        </div>
+      )}
 
       <div className="practice-setup">
         <div className="practice-block">
