@@ -9,7 +9,7 @@ export default function ToastStack() {
   return (
     <div className="toast-stack" role="status" aria-live="polite">
       {toasts.map((t) => (
-        <div key={t.id} className={`toast toast-${t.kind}`}>
+        <div key={t.id} className={`toast toast-${t.kind}${t.closing ? ' closing' : ''}`}>
           <span className="toast-icon">
             {t.kind === 'success' ? (
               <CheckCircle2 size={16} />

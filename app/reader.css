@@ -90,7 +90,22 @@
   padding: 10px 14px;
   font-size: 12.5px;
   box-shadow: var(--shadow-lg);
-  animation: pop-in 0.2s ease both;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 160ms var(--ease), transform 160ms var(--ease);
+}
+
+/* 从底部堆栈里升上来，也从同一条边退回去；用过渡而非 keyframes，连发时能接着当前值走 */
+@starting-style {
+  .toast {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+.toast.closing {
+  opacity: 0;
+  transform: translateY(8px);
 }
 
 html[data-theme='dark'] .toast {

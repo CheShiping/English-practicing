@@ -232,8 +232,8 @@ function VocabCard({ word, onRemove, onMaster }: { word: VocabWord; onRemove: ()
           </button>
         </div>
       </div>
-      <button className="vocab-meaning" onClick={() => setOpen((v) => !v)}>
-        {(word.meaning || '暂无释义').split('\n').slice(0, open ? 6 : 2).join('\n')}
+      <button className="vocab-meaning" onClick={() => setOpen((v) => !v)} aria-expanded={open}>
+        {(word.meaning || '暂无释义').split('\n').slice(0, 6).join('\n')}
       </button>
       <div className="vocab-card-foot">
         <div className="mastery-dots" title={`掌握度 ${word.mastery}/5`}>

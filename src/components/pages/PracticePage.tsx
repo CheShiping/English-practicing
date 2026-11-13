@@ -472,7 +472,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
         </div>
 
         {wrongList.length > 0 && (
-          <div className="practice-review-list">
+          <div className="practice-review-list result">
             {wrongList.map((q) => {
               const mine = picks[q.id] || '';
               return (

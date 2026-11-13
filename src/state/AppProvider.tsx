@@ -51,6 +51,7 @@ interface ToastItem {
   id: string;
   message: string;
   kind: 'info' | 'success' | 'error';
+  closing?: boolean;
 }
 
 interface AppContextValue {
@@ -278,17 +279,22 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
   }, [timerElapsed, timer.status, timer.mode, timer.totalMs]);
 
-  const toast = useCallback((message: string, kind: ToastItem['kind'] = 'info') => {
-    const id = uid('toast');
-    setToasts((list) => [...list.slice(-2), { id, message, kind }]);
+  // 退场先给节点打 closing 标记，等 CSS 过渡走完（180ms）再摘掉，避免原地消失
+  const dismissToast = useCallback((id: string) => {
+    setToasts((list) => list.map((t) => (t.id === id ? { ...t, closing: true } : t)));
     window.setTimeout(() => {
       setToasts((list) => list.filter((t) => t.id !== id));
-    }, 3200);
+    }, 180);
   }, []);
 
-  const dismissToast = useCallback((id: string) => {
-    setToasts((list) => list.filter((t) => t.id !== id));
-  }, []);
+  const toast = useCallback(
+    (message: string, kind: ToastItem['kind'] = 'info') => {
+      const id = uid('toast');
+      setToasts((list) => [...list.slice(-2), { id, message, kind }]);
+      window.setTimeout(() => dismissToast(id), 3000);
+    },
+    [dismissToast],
+  );
 
   const updateSettings = useCallback((patch: Partial<Settings>) => {
     setSettings((s) => ({ ...s, ...patch }));

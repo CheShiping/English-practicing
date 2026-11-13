@@ -3,7 +3,17 @@
 ## 当前状态
 
 **最后更新：** 2026-11-13
-**当前功能：** feat-014 单选练习全量出题、进度续答与答题卡底部弹层（已完成）；README 视觉改造与部署地址更新
+**当前功能：** feat-015 动效审计与五处交互补齐（已完成）
+
+## 2026-11-13 动效审计与五处交互补齐（feat-015）
+
+- **审计口径**：按「频率 → 目的 → 时长 → 是否妨碍功能」四道门槛筛，候选先淘汰再落地；全站只留 5 处，题目切换、文章库筛选重排、首页数字滚动、路由切换一律不动
+- **练习即时判定**：判定解析块以 `practice-reveal-in` 200ms `--ease` 从 `translateY(4px)` 落位；对错图标 `practice-state-in` 140ms 从 `scale(0.8)` 起跳（不用 0）
+- **交卷结果页**：成绩卡 `practice-score-in` 280ms（新增 `--dur-slow`）；错题回顾按 60/100/140/180/220/260ms 递进，只作用于 `.practice-review-list.result`，错题本整页列表保持静态
+- **生词卡展开**：释义文本固定渲染 6 行，用 `max-height: calc(2 * 1.7em) → calc(6 * 1.7em)` 过渡裁切，替代原来的 `slice(0, open ? 6 : 2)` 行数跳变
+- **Toast 退场**：`ToastItem` 增加 `closing`，`dismissToast` 先打标记、180ms 后再摘节点；`.toast` 入场改用 `@starting-style`，退场走 `.closing`，同一条边进出；自动消失从 3200ms 调整为 3000ms + 180ms 过渡
+- **证据**：headless 实测 reveal 200ms / stateIcon 140ms / scoreCard 280ms / 回顾首项 delay 60ms / 生词卡 40.8px→122.4px / toast 入场 opacity 0.69 中间态、3050ms 带 closing、3550ms 已移除，pageerrors none；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **本次改动文件**：`app/globals.css`、`app/pages.css`、`app/reader.css`、`src/state/AppProvider.tsx`、`src/components/ToastStack.tsx`、`src/components/pages/PracticePage.tsx`、`src/components/pages/VocabPage.tsx`
 
 ## 2026-11-13 单选练习全量出题、续答与答题卡弹层；README 改造（feat-014）
 

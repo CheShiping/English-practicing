@@ -572,6 +572,14 @@
   color: var(--ink-2);
   white-space: pre-line;
   padding: 0;
+  /* 释义默认露出两行，展开后到六行：文本不变，只裁切高度，避免行数跳变 */
+  max-height: calc(2 * 1.7em);
+  overflow: hidden;
+  transition: max-height var(--dur-base) var(--ease);
+}
+
+.vocab-card.open .vocab-meaning {
+  max-height: calc(6 * 1.7em);
 }
 
 .vocab-card-foot {
@@ -2453,12 +2461,40 @@
   margin-left: auto;
   flex-shrink: 0;
   align-self: center;
+  animation: practice-state-in var(--dur-fast) var(--ease) both;
+}
+
+/* 判定对错的图标：从 0.8 起跳，不用 0，避免"凭空出现" */
+@keyframes practice-state-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .practice-reveal {
   margin-top: 16px;
   border-radius: var(--radius-sm);
   padding: 14px 16px;
+  animation: practice-reveal-in var(--dur-base) var(--ease) both;
+}
+
+/* 答案解析在选项下方被撑开，用 4px 上移接住视线，不用大位移 */
+@keyframes practice-reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .practice-reveal.right {
@@ -2646,6 +2682,20 @@
   padding: 30px;
   margin-top: 30px;
   text-align: center;
+  animation: practice-score-in var(--dur-slow) var(--ease) both;
+}
+
+/* 交卷是从答题页硬切过来的，给成绩一点"落地"的时间 */
+@keyframes practice-score-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .practice-score-label {
@@ -2686,6 +2736,47 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+/* 只给结果页的错题回顾做入场编排，错题本整页列表保持静态 */
+.practice-review-list.result .practice-review {
+  animation: practice-review-in var(--dur-fast) var(--ease) both;
+}
+
+@keyframes practice-review-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.practice-review-list.result .practice-review:nth-child(1) {
+  animation-delay: 60ms;
+}
+
+.practice-review-list.result .practice-review:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.practice-review-list.result .practice-review:nth-child(3) {
+  animation-delay: 140ms;
+}
+
+.practice-review-list.result .practice-review:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.practice-review-list.result .practice-review:nth-child(5) {
+  animation-delay: 220ms;
+}
+
+.practice-review-list.result .practice-review:nth-child(n + 6) {
+  animation-delay: 260ms;
 }
 
 .practice-review {

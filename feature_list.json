@@ -113,6 +113,14 @@
       "dependencies": ["feat-010"],
       "status": "done",
       "evidence": "2026-11-13：PracticePage 移除题量块与 SIZE_OPTIONS，buildPaper 固定 count=0；practice.ts 新增 PracticeResume 存取、storage.ts 新增 practice.resume.v1；答题卡改为 practice-sheet-mask/panel 底部弹层（遮罩/Esc/收起按钮关闭、safe-area 适配、锁背景滚动）；headless 实测 size-block-gone:true、开始练习（2774 题）、inline-sheet:absent、sheet-opens:true、弹层点题号跳到第 5 题、刷新后 resume「第 5 / 2774 题 · 已答 2 · 对 1」全部 PASS。同日按用户反馈调整：续答改为手动——进入练习页不再自动跳转，统一停在设置页由「继续上次练习」卡片进入；实测 reenter:setup、auto-quiz:none、card「已答 2 / 2774 题」、continue「第 2 / 2774 题 · 已答 2 · 对 1」PASS；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+    },
+    {
+      "id": "feat-015",
+      "name": "动效审计与五处交互补齐",
+      "description": "按克制原则审计全站动效机会，只落地四处有实际收益的：练习即时判定的解析块与对错图标入场、交卷结果页落地与错题回顾 40ms 递进、生词卡释义 2→6 行高度过渡、Toast 与入场对称的退场；沿用既有 --ease / --dur-fast / --dur-base，新增 --dur-slow: 280ms 补齐时长刻度",
+      "dependencies": ["feat-014"],
+      "status": "done",
+      "evidence": "2026-11-13：globals.css 增加 --dur-slow；pages.css 新增 practice-reveal-in / practice-state-in / practice-score-in / practice-review-in 四组关键帧与 .practice-review-list.result 递进延迟；AppProvider ToastItem 增加 closing，dismissToast 先标记再 180ms 后摘除；reader.css 的 .toast 改为 @starting-style 入场 + .closing 退场过渡。headless 实测：reveal practice-reveal-in 200ms、stateIcon practice-state-in 140ms、成绩卡 practice-score-in 280ms、回顾首项 delay 60ms、生词卡 max-height 40.8px→122.4px（2 行→6 行，无半行截断）、toast 入场 opacity 0.69 中间态 / 3050ms 带 closing / 3550ms 已移除，pageerrors none；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     }
   ]
 }
