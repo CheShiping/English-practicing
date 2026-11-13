@@ -2,8 +2,8 @@
 
 ## 当前目标
 
-- 目标：完成内容侧收尾——新增 40 篇（feat-018）与 17 篇旧文章（feat-019）的答案、解析、译文、元数据
-- 当前状态：全站 120 篇均有译文，582 个正文块全部有译文，588 题全部有答案与解析，构建通过，已提交
+- 目标：完成内容侧收尾（feat-018 / feat-019）与全站文档同步（feat-005）
+- 当前状态：120 篇 / 588 题全量译文、解析与原文依据；README、AGENTS、功能清单与交接文档已同步；构建通过，已提交
 - 分支 / 提交：`main`
 
 ## 本次会话已完成
@@ -13,7 +13,9 @@
 - [x] `src/data/article-meta.ts`：新增 40 条标题、副标题、标签、摘要
 - [x] `src/data/translations-part15.json`：17 篇旧文章 / 89 段译文
 - [x] `src/data/answers/legacy-11-21.json`：17 篇旧文章 / 84 题的解析与原文依据（答案沿用源文件并逐题核对）
+- [x] 21 道旧题补 `evidence`，588 题三字段齐全
 - [x] 源文件清理：9 处 `## Exercise N` 选项污染、7 处空行断句、read-05 截词、read-11 缺谓语
+- [x] 文档同步：README 增加分类表与规模说明，AGENTS 补译文/元数据/完成定义，feat-002 ~ feat-005 收口
 
 ## 验证证据
 
@@ -29,7 +31,9 @@
 
 - 新增 `src/data/answers/read-01-20.json`、`read-21-40.json`、`legacy-11-21.json`
 - 新增 `src/data/translations-part13.json`、`translations-part14.json`、`translations-part15.json`
-- 修改 `src/data/article-meta.ts`、`article/` 下 7 个分类文件、`feature_list.json`、`progress.md`
+- 修改 `src/data/answers/` 下 10 个旧答案文件（21 道题补 evidence）
+- 修改 `src/data/article-meta.ts`、`article/` 下 7 个分类文件
+- 修改 `README.md`、`AGENTS.md`、`feature_list.json`、`progress.md`、`session-handoff.md`
 
 ## 已做出的决策
 
@@ -51,4 +55,5 @@
 
 ## 下一步建议
 
-- 更新 README 的内容统计（120 篇 / 588 题 / 全量译文与解析）
+- 可选：把 README 截图更新到最新界面
+- 例行检查：改动后跑 `npm run content`，确认「含答案 588 题 · 含译文 120 篇」且无警告

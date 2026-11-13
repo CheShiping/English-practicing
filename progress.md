@@ -107,17 +107,19 @@
 
 - [x] 建立项目 harness：`AGENTS.md`、`init.ps1` / `init.sh`、功能与进度追踪文件
 - [x] 基线验证：`npx tsc --noEmit` 与 `npm run build` 均通过
-- [x] 首页与全站共享样式 unslop 精修：统一控件圆角与字重，清理伪头像与悬停位移；按用户要求保留样张印章、READ 背景字、今日卡光斑与渐变进度条（feat-007）
-- [x] 品牌标记：C1 猫头鹰标记接入页头、启动页、404 与 favicon（feat-006）
+- [x] 内容资产：10 个题材分类 / 120 篇 / 588 题 / 32568 词；588 题的答案、解析、原文依据齐全，582 个正文块全部有译文，120 篇均有 `ARTICLE_META`（feat-002 ~ feat-009、feat-012、feat-018、feat-019）
+- [x] 练习与工具：2774 道单选练习、语法速查、生词本、学习统计、导入与备份（feat-010 ~ feat-017）
+- [x] 视觉与品牌：C1 猫头鹰标记、首页与共享样式精修、动效审计（feat-006、feat-007、feat-015）
+- [x] 文档同步：README 分类表与规模说明、AGENTS 内容规则、交接文档（feat-005）
 
 ### 进行中
 
-- 无。内容侧三批工作（feat-009 答案、feat-008/feat-018/feat-019 译文）已全部收口
+- 无。内容、练习、文档三条线均已收口
 
 ### 下一步
 
-1. 更新 README 的内容统计（120 篇 / 588 题 / 全量译文与解析）
-2. 用户确认后检查一次阅读器与文库的整体展示
+1. 用户确认后检查一次阅读器与文库的整体展示
+2. 可选：把 README 截图更新到最新界面
 
 ## 阻塞 / 风险
 
@@ -129,15 +131,16 @@
 
 - **验证门槛只保留类型检查与构建**：`npx tsc --noEmit` + `npm run build`，避免不可用的 lint 阻塞 agent
 - **Windows 入口独立**：`init.ps1` 供 PowerShell 使用，`init.sh` 保留为跨平台入口
-- **不手改生成物**：只改 `article/*.md` 与 `src/data/answers/*.json`，由 `npm run content` 生成 `articles.generated.json`
+- **不手改生成物**：只改 `article/*.md`、`src/data/answers/*.json`、`src/data/translations-part*.json` 与 `article-meta.ts`，由 `npm run content` 生成数据
+- **内容四件套**：答案/解析/依据、逐段译文、文库元数据缺一不可，已写入 `AGENTS.md` 的完成定义
 
 ## 本次会话修改的文件
 
-- `AGENTS.md` - 新增项目级 agent 指令
-- `init.sh`、`init.ps1` - 新增标准启动与验证入口
-- `feature_list.json` - 建立功能追踪
-- `progress.md` - 记录当前状态
-- `session-handoff.md` - 建立交接模板
+- `README.md` - 分类篇数表、内容规模、译文与答案解析功能点、内容四件套与目录结构
+- `AGENTS.md` - 项目地图（译文/答案/练习库）、内容管线规则、完成定义、生成物边界
+- `feature_list.json` - feat-002 ~ feat-005 收口，新增 feat-018、feat-019
+- `progress.md`、`session-handoff.md` - 状态、证据与下一步同步
+- `src/data/answers/*.json`、`src/data/translations-part13/14/15.json`、`src/data/article-meta.ts` - 内容补齐
 
 ## 2026-11-09 unslop 精修
 
