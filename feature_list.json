@@ -112,7 +112,7 @@
       "description": "删除题量选择，开始练习直接练完当前考点全部题目；答题进度实时存 localStorage，重新进入练习页自动恢复到上次答过的最后一道题；页面常驻答题卡改为按钮触发的底部弹层",
       "dependencies": ["feat-010"],
       "status": "done",
-      "evidence": "2026-11-13：PracticePage 移除题量块与 SIZE_OPTIONS，buildPaper 固定 count=0；practice.ts 新增 PracticeResume 存取、storage.ts 新增 practice.resume.v1；答题卡改为 practice-sheet-mask/panel 底部弹层（遮罩/Esc/收起按钮关闭、safe-area 适配、锁背景滚动）；headless 实测 size-block-gone:true、开始练习（2774 题）、inline-sheet:absent、sheet-opens:true、弹层点题号跳到第 5 题、刷新后 resume「第 5 / 2774 题 · 已答 2 · 对 1」全部 PASS。同日按用户反馈补全续答路径：退出后设置页显示「继续上次练习」卡片（restoreResume 共用），实测 continue「第 2 / 2774 题 · 已答 2 · 对 1」、discard 卡片消失、刷新自动续答正常；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+      "evidence": "2026-11-13：PracticePage 移除题量块与 SIZE_OPTIONS，buildPaper 固定 count=0；practice.ts 新增 PracticeResume 存取、storage.ts 新增 practice.resume.v1；答题卡改为 practice-sheet-mask/panel 底部弹层（遮罩/Esc/收起按钮关闭、safe-area 适配、锁背景滚动）；headless 实测 size-block-gone:true、开始练习（2774 题）、inline-sheet:absent、sheet-opens:true、弹层点题号跳到第 5 题、刷新后 resume「第 5 / 2774 题 · 已答 2 · 对 1」全部 PASS。同日按用户反馈调整：续答改为手动——进入练习页不再自动跳转，统一停在设置页由「继续上次练习」卡片进入；实测 reenter:setup、auto-quiz:none、card「已答 2 / 2774 题」、continue「第 2 / 2774 题 · 已答 2 · 对 1」PASS；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     }
   ]
 }

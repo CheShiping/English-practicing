@@ -112,11 +112,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       .then((d) => {
         if (!alive) return;
         setData(d);
-        // 有未完成的练习时直接续答，落在最后答过的那道题上
-        const saved = getPracticeResume();
-        if (tab !== 'wrong' && saved && Array.isArray(saved.ids) && saved.ids.length) {
-          if (restoreResume(saved, d)) return;
-        }
+        // 进入设置页；未完成的练习由「继续上次练习」卡片手动选择，不自动跳转
         setPhase('setup');
       })
       .catch((e: unknown) => {
@@ -124,10 +120,12 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
         setError(e instanceof Error ? e.message : '练习数据加载失败');
         setPhase('error');
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    return () => {
+      alive = false;
+    };
   }, []);
 
-  // 答题过程中实时保存进度：刷新、退出后重进都能续答
+  // 答题过程中实时保存进度：退出或刷新后，设置页可继续上次练习
   useEffect(() => {
     if (phase !== 'quiz' || !paper) return;
     savePracticeResume({
