@@ -110,28 +110,76 @@ export function clearMarkBook(): void {
 }
 
 // ---------- 练习进度续答 ----------
+// 每份试卷一个存档位（考点 + 细分考点），换分类答题不会覆盖别的记录
 
 export type PracticeSource = 'pool' | 'wrong' | 'marked';
 
 export interface PracticeResume {
+  key: string; // 存档位：pool:大类:细分 / wrong / marked
   ids: string[]; // 试卷题目 id 顺序
   picks: Record<string, string>; // 已作答 id -> 选项字母
   marks: string[]; // 已标记 id
   label: string;
   source: PracticeSource;
+  cursor: number; // 上次停留的题目下标
   updatedAt: number;
 }
 
-export function getPracticeResume(): PracticeResume | null {
-  return readJson<PracticeResume | null>(KEYS.practiceResume, null);
+// 同时保留几份未完成练习
+const MAX_RESUMES = 20;
+
+export function practiceResumeKey(source: PracticeSource, category = '', sub = ''): string {
+  return source === 'pool' ? `pool:${category}:${sub}` : source;
+}
+
+function readResumeMap(): Record<string, PracticeResume> {
+  return readJson<Record<string, PracticeResume>>(KEYS.practiceResumes, {});
+}
+
+// 读取全部未完成练习；旧版单条存档会在首次读取时迁移进来
+export function getPracticeResumes(): PracticeResume[] {
+  let map = readResumeMap();
+  if (!Object.keys(map).length) {
+    const legacy = readJson<PracticeResume | null>(KEYS.practiceResume, null);
+    if (legacy && Array.isArray(legacy.ids) && legacy.ids.length) {
+      const key = legacy.key || `legacy:${legacy.updatedAt || 0}`;
+      const migrated: PracticeResume = { ...legacy, key, cursor: legacy.cursor || 0 };
+      map = { [key]: migrated };
+      writeJson(KEYS.practiceResumes, map);
+      removeKey(KEYS.practiceResume);
+    }
+  }
+  return Object.values(map).sort((a, b) => b.updatedAt - a.updatedAt);
+}
+
+export function getPracticeResume(key: string): PracticeResume | null {
+  return getPracticeResumes().find((r) => r.key === key) || null;
 }
 
 export function savePracticeResume(resume: PracticeResume): void {
-  writeJson(KEYS.practiceResume, resume);
+  const map = readResumeMap();
+  map[resume.key] = resume;
+  const kept = Object.entries(map)
+    .sort((a, b) => b[1].updatedAt - a[1].updatedAt)
+    .slice(0, MAX_RESUMES);
+  writeJson(KEYS.practiceResumes, Object.fromEntries(kept));
 }
 
-export function clearPracticeResume(): void {
+export function clearPracticeResume(key: string): void {
+  const map = readResumeMap();
+  if (!map[key]) return;
+  delete map[key];
+  writeJson(KEYS.practiceResumes, map);
+}
+
+export function clearAllPracticeResumes(): void {
+  writeJson(KEYS.practiceResumes, {});
   removeKey(KEYS.practiceResume);
+}
+
+// 已作答数量，用于列表展示与按钮文案
+export function answeredCount(resume: PracticeResume): number {
+  return Object.keys(resume.picks || {}).filter(Boolean).length;
 }
 
 // ---------- 练习记录 ----------

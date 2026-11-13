@@ -3,7 +3,18 @@
 ## 当前状态
 
 **最后更新：** 2026-11-13
-**当前功能：** feat-016 练习标记本、切题回顶与题干点词查义（已完成）
+**当前功能：** feat-017 练习支持多份未完成记录（已完成）
+
+## 2026-11-13 练习支持多份未完成记录（feat-017）
+
+- **问题**：续答只有一条 `practice.resume.v1`，换分类开新卷会把上一条覆盖掉，之前的速度全废
+- **存档改多槽**：换成 `moread.practice.resumes.v2`，key 为 `pool:大类:细分` / `wrong` / `marked`，每份卷各存 `ids / picks / marks / label / source / cursor / updatedAt`；`savePracticeResume` 按 `updatedAt` 淘汰，最多留 20 份
+- **新增 API**：`practiceResumeKey` / `getPracticeResumes` / `getPracticeResume(key)` / `clearPracticeResume(key)` / `clearAllPracticeResumes` / `answeredCount`；`PracticeResume` 增加 `key` 与 `cursor`（续答回到上次停留的题，不再只回到最后答过的那道）
+- **设置页**：单张「上次练习」卡片换成「未完成的练习」列表——每行显示标签、已答 / 总数、相对时间（刚刚 / N 分钟前 / 昨天 / N 天前），右侧「继续」与删除图标；面板右上「清空全部」，超过 4 条时底部「展开全部（N）」/「收起」
+- **开始区**：当前考点已有记录时，主按钮变「继续练习（已答 N / M）」，旁边给「重新开始（N 题）」，提示文案说明重新开始会覆盖这个考点的记录
+- **兼容**：首次读取时把旧的 `practice.resume.v1` 迁成 `legacy:<时间戳>` 槽并清掉 v1，历史进度不丢
+- **证据**：headless 实测两大考点各答几题后两槽共存、列表两行；继续后回到第 3 题且已答 2；完成练习只清当前槽；重新开始覆盖同一 key（0 picks、ids=2774）；5 条记录默认展示 4 行 + 展开全部；旧 v1 迁移为 legacy 槽且 v1 被删除；1280 / 390 截图确认行内不折行、按钮不溢出；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **本次改动文件**：`src/components/pages/PracticePage.tsx`、`src/lib/practice.ts`、`src/lib/storage.ts`、`app/pages.css`、`feature_list.json`
 
 ## 2026-11-13 练习标记本、切题回顶与题干点词查义（feat-016）
 

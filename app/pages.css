@@ -2313,21 +2313,80 @@
 
 /* 续答提示卡：设置页展示未完成练习 */
 
-.practice-resume-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
+/* 未完成练习列表：每个考点一份存档，换分类不会互相覆盖 */
+
+.practice-resume-panel {
   background: var(--accent-soft);
   border: 1px solid var(--accent);
   border-radius: var(--radius);
-  padding: 14px 18px;
+  padding: 14px 18px 6px;
   margin-top: 26px;
+}
+
+.practice-resume-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.practice-resume-clear {
+  border: none;
+  background: none;
+  color: var(--accent-deep);
+  font-family: inherit;
+  font-size: 12.5px;
+  cursor: pointer;
+  padding: 2px 0;
+  opacity: 0.72;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.practice-resume-clear:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.practice-resume-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+}
+
+.practice-resume-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 0;
+  border-top: 1px dashed color-mix(in srgb, var(--accent) 34%, transparent);
+}
+
+.practice-resume-row:first-child {
+  border-top: none;
+}
+
+.practice-resume-more {
+  width: 100%;
+  border: none;
+  border-top: 1px dashed color-mix(in srgb, var(--accent) 34%, transparent);
+  background: none;
+  color: var(--accent-deep);
+  font-family: inherit;
+  font-size: 12.5px;
+  padding: 9px 0 8px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity var(--dur-fast) var(--ease);
+}
+
+.practice-resume-more:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .practice-resume-info {
   flex: 1;
-  min-width: 200px;
+  min-width: 0;
 }
 
 .practice-resume-title {
@@ -2337,10 +2396,35 @@
   color: var(--accent-deep);
 }
 
+.practice-resume-label {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .practice-resume-sub {
-  margin: 3px 0 0;
-  font-size: 13px;
+  margin: 2px 0 0;
+  font-size: 12.5px;
   color: var(--ink-2);
+}
+
+.practice-resume-del {
+  border: none;
+  background: none;
+  color: var(--faint);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-xs);
+  transition: color var(--dur-fast) var(--ease);
+  flex-shrink: 0;
+}
+
+.practice-resume-del:hover {
+  color: var(--danger);
 }
 
 .practice-progress {
