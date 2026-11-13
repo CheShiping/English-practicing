@@ -77,7 +77,7 @@ export default function HomePage() {
         <div className="hero-copy">
           <span className="eyebrow">Read deeply · 精读训练</span>
           <h1>
-            把每一篇真题，
+            把每一篇阅读，
             <br />
             读成自己的<em>语感</em>。
           </h1>
@@ -102,7 +102,7 @@ export default function HomePage() {
           </div>
           <div className="hero-note">
             <span>
-              已收录 <b style={{ color: 'var(--ink-2)' }}>{articles.length}</b> 篇真题 ·{' '}
+              已收录 <b style={{ color: 'var(--ink-2)' }}>{articles.length}</b> 篇阅读 ·{' '}
               <b style={{ color: 'var(--ink-2)' }}>{totalQuestions}</b> 道阅读题
             </span>
           </div>
@@ -130,7 +130,7 @@ export default function HomePage() {
       <section className="stat-strip" aria-label="学习概览">
         <div className="stat-cell">
           <b>{articles.length}</b>
-          <span>篇真题</span>
+          <span>篇阅读</span>
         </div>
         <div className="stat-cell">
           <b>{totalQuestions}</b>

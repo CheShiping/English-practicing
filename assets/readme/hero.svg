@@ -20,7 +20,7 @@
     <text x="62" y="158" font-family="Georgia, 'Songti SC', 'Noto Serif SC', SimSun, serif" font-size="64" font-weight="700" fill="#27231e">墨读英语</text>
     <text x="340" y="156" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#736a5e">Moread English</text>
 
-    <text x="62" y="205" font-family="Georgia, 'Songti SC', 'Noto Serif SC', SimSun, serif" font-size="27" fill="#27231e">把每一篇真题，读成自己的<tspan fill="#b3462f" font-weight="700">语感</tspan>。</text>
+    <text x="62" y="205" font-family="Georgia, 'Songti SC', 'Noto Serif SC', SimSun, serif" font-size="27" fill="#27231e">把每一篇阅读，读成自己的<tspan fill="#b3462f" font-weight="700">语感</tspan>。</text>
     <path d="M386 214 q30 8 62 0" stroke="#b3462f" stroke-width="2.5" fill="none" opacity="0.55" stroke-linecap="round"/>
 
     <!-- 能力标签 -->
