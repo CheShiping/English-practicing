@@ -3,7 +3,16 @@
 ## 当前状态
 
 **最后更新：** 2026-11-13
-**当前功能：** feat-017 练习支持多份未完成记录（已完成）
+**当前功能：** feat-018 新增 40 篇补答案、解析、译文与文库元数据（已完成）
+
+## 2026-11-13 新增 40 篇内容收尾：答案、解析、译文与元数据（feat-018）
+
+- **答案与解析**：新增 `src/data/answers/read-01-20.json`、`read-21-40.json`，覆盖 read-01 ~ read-40 共 200 题，每题含 `answer`、中文 `explanation` 与英文 `evidence`
+- **译文**：新增 `src/data/translations-part13.json`、`translations-part14.json`，按 block 索引覆盖 40 篇 / 172 段，与源文段落一一对应
+- **文库元数据**：`article-meta.ts` 新增 40 条 `ARTICLE_META`，补齐英文标题、中文副标题、标签与一句话摘要，文库不再使用首句回退标题
+- **源文件修复（影响题目与段落）**：清掉 9 处被并进选项行尾的 `## Exercise N` 分节标记（read-04/08/12/16/20/24/28/32/36）；合并 7 处被空行截断的句子（read-03/04/05/18/19/26/33）；补全 read-05 两处右边界截词与 read-11 首句缺失的谓语
+- **证据**：`npm run content` 生成 120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 103 篇，无警告；校验 588 题 answer 与 explanation 均非空、read-01~40 的 172 个正文块全部有译文、无 `## Exercise` 残留；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **本次改动文件**：`src/data/answers/read-01-20.json`（新增）、`src/data/answers/read-21-40.json`（新增）、`src/data/translations-part13.json`（新增）、`src/data/translations-part14.json`（新增）、`src/data/article-meta.ts`、`article/*.md`（7 个分类文件的断句与标记清理）、`feature_list.json`
 
 ## 2026-11-13 练习支持多份未完成记录（feat-017）
 
@@ -93,21 +102,21 @@
 
 ### 进行中
 
-- [ ] 新内容批次（未提交，属用户已有改动）
-  - 详情：`article/历史人文类专项训练.md`、`article/社会生活类专项训.md`、`src/data/answers/lishi-shehui-*.json`、`shehui-*.json`
-  - 阻塞：历史人文类 Passage 3、应用文类 Passage 3 原文截断，构建时被跳过
+- [ ] feat-019 补齐 17 篇旧文章译文与解析
+  - 范围：`kepu-11` ~ `kepu-17`、`shehui-13` ~ `shehui-21`、`jingli-12`（89 个正文块、84 道题）
+  - 现状：有答案，但 `explanation` 为空、无任何中文译文
 
 ### 下一步
 
-1. 继续核对新增文章（当前构建 63 篇 / 304 题 / 16470 词），检查文章库与阅读器（feat-002 / feat-004）
-2. 更新 README 分类与内容统计（feat-005）
-3. 用户确认后提交本批内容与 UI 精修
+1. 按 feat-018 的口径为上述 17 篇补译文与解析（可复用 `translations-part15.json` 与 `answers/legacy-*.json`）
+2. 补完后复核全站 120 篇译文覆盖与 588 题解析完整度
+3. 视需要更新 README 的内容统计
 
 ## 阻塞 / 风险
 
-- [ ] 截断文章：`历史人文类专项训练.md` Passage 3 与 `应用文类专项训练.md` Passage 3 无题目，构建警告但不阻断
+- [ ] 17 篇旧文章（冲刺训练2 拆分产物）缺译文与解析，阅读器翻译抽屉与「答案/解析」在这些篇目下为空
 - [ ] Windows 构建缓存：`npx next build` 可能因缺失 `.next/static/<id>/_ssgManifest.js` 失败；先删除 `.next` 并预建 `.next\static` 再构建
-- [ ] 生成文件噪声：`src/data/articles.generated.json` 含 `generatedAt` 时间戳，每次构建都会产生 diff
+- [ ] 生成文件噪声：`src/data/articles.generated.json`、`public/data/practice.json`、`src/data/grammar.generated.json` 含 `generatedAt` 时间戳，每次构建都会产生 diff
 - [ ] 无 ESLint 配置：`npm run lint` 会进入交互式初始化，不能作为验证门槛
 
 ## 已做出的决策

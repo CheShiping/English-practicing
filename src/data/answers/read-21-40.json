@@ -1,0 +1,542 @@
+{
+  "read-21": {
+    "1": {
+      "answer": "C",
+      "explanation": "研究剪掉照片背景是为了消除一切可供辨认的线索，让受试者只能凭面孔判断，避免背景泄露身份。",
+      "evidence": "All background was cut from the photos to remove any clues."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "这句话意为“他们的判断并不比瞎猜强”，说明受试者面对新婚照片时很难认出夫妻配对。",
+      "evidence": "They failed totally with the first group."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "下文紧接着解释“一个人会不自觉地照另一个人的样子做”，可见 imitate 与 copy 同义。",
+      "evidence": "One person tends to copy or do the same as someone else without knowing it."
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "夫妻会越长越像，原因是彼此模仿与共同经历，这说明伴侣之间的相互影响可以很强。",
+      "evidence": "Dr. Aiken believes there are several reasons why couples grow alike."
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "第一段介绍实验发现“幸福夫妻面容相似”，第二段解释原因（模仿与共同经历），写作目的就是解释这一现象。",
+      "evidence": "there are several reasons why couples grow alike"
+    }
+  },
+  "read-22": {
+    "1": {
+      "answer": "D",
+      "explanation": "作者并不否认电脑的价值，而是提醒人们不要过度信任、懒得动脑，主旨是警告对电脑的思维懒惰。",
+      "evidence": "it should not be seen as a substitute for fundamental thinking and reasoning skills"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "首段说战后初期人们普遍担心电脑有一天会“从人类手中接管世界”。",
+      "evidence": "computers would take over the world from man one day"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "作者建议保留自己的“内部计算机”，在感觉不对时核查机器，即保持合理的怀疑。",
+      "evidence": "people should also rely on their own internal computers and check the machine"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "“internal computer”是比喻，指人自身积累的知识以及处理这些知识的能力。",
+      "evidence": "rely on their own internal computers"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "文中所说的问题不是技术故障，而是人们过度信任电脑、不愿质疑的心理倾向。",
+      "evidence": "People tend to be over-trusting of computers"
+    }
+  },
+  "read-23": {
+    "1": {
+      "answer": "B",
+      "explanation": "首句说如今已没有“典型”大学生，各年龄段的人都在上大学，全文谈的是大学生群体的变化。",
+      "evidence": "Today, there is no such thing as a \"typical\" college student. People of all ages are enrolled"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "过去的大学生多为 18 至 21 岁、初次离家，不必承担养家的责任；养家是年长学生的情况。",
+      "evidence": "usually range in age from 18 to 21, and are most often away from home for the first time"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "新型（年长）学生最看重的是毕业后获得新职业或职位晋升。",
+      "evidence": "Most important to them are the hopes of a new career or a job promotion"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "第三段说无论出于什么原因，结果都一样：这是他们为自己或家人创造更好生活的机会。",
+      "evidence": "It is their chance to make a better life for themselves or their families."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "作者用积极笔调描述年长者重返校园，称他们“也看到了自由”，并认为校园因此有了新的希望与梦想。",
+      "evidence": "those who are returning to school also see freedom"
+    }
+  },
+  "read-24": {
+    "1": {
+      "answer": "D",
+      "explanation": "纽约州要求商店对饮料容器收取押金，消费者退还空瓶即可拿回押金，这就是押金回收制度。",
+      "evidence": "ordered stores to charge a deposit on beverage containers"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "当时塑料瓶缺乏再利用途径，大部分被埋进垃圾填埋场，即最终到了地下。",
+      "evidence": "much of it would be buried in landfills"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第二段指出，回收的关键在于有人想出办法让废弃物获得“第二次生命”，也就是把它变成有用的东西。",
+      "evidence": "until somebody figures out how to give it a second life"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "填埋空间减少、掩埋和焚烧成本上升，使回收成为最便宜的垃圾处理方式，因此成为首选。",
+      "evidence": "rising costs for burying and burning rubbish are forcing local governments to look more closely at recycling"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "末段既算经济账（每吨省下 100 多美元、创造就业），又算环境账（减少污染与能耗），所以回收在经济和环境两方面都值得推荐。",
+      "evidence": "recycling is already the least expensive waste management option"
+    }
+  },
+  "read-25": {
+    "1": {
+      "answer": "D",
+      "explanation": "文中说笑能让人少些担忧、平静下来，预防由 stress 引起的疾病，因此 stress 指压力与忧虑。",
+      "evidence": "preventing illnesses that are caused by stress"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "实验发现即使只是做出微笑表情，心率和血压也会下降，所以心情不好时微笑仍能让人感觉好一些。",
+      "evidence": "even if we feel sad inside, smiling seems to make us feel better"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "文章主要篇幅在讲笑与微笑如何影响健康：减少压力、降低心率血压，这是作者关注的重点。",
+      "evidence": "smiling and laughing help us to become less worried and calm"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "实验明确测到微笑时心率和血压下降，C 正确；A、B、D 都与原文相反或无据。",
+      "evidence": "when the students smiled, their heart rate and their blood pressure went down"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "最后一段说“什么让我们发笑”这个问题远非简单，答案取决于年龄等多种因素。",
+      "evidence": "It seems that the answer to the question is far from simple."
+    }
+  },
+  "read-26": {
+    "1": {
+      "answer": "A",
+      "explanation": "文中说战争结束后“我们就会回伦敦”，而作者对伦敦已没有印象，说明战前一家住在伦敦。",
+      "evidence": "When the war was over we would go back to London"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "作者说冰淇淋和香蕉只是“听说过”，可见战时他肯定没吃过这两样。",
+      "evidence": "people had eaten things like ice-cream and bananas, which I had only heard of"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "篝火上的人形戴着标志性的小胡子，结合二战结束的背景，这个被焚烧的形象是希特勒。",
+      "evidence": "the unmistakable figure with the moustache"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "末段明确说父亲“曾参加第一次世界大战”；篝火是众人所建，扔椅子的是老妇人，父亲并未参战二战。",
+      "evidence": "He had fought in the First World War"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "父亲经历了一战，看着庆祝的火焰说“希望这次真的是最后一次”，是希望世界不再有战争。",
+      "evidence": "Let's hope that this time it really will be the last one."
+    }
+  },
+  "read-27": {
+    "1": {
+      "answer": "D",
+      "explanation": "第三段说“我们的一些偏好显然是心理因素造成的”，并用深蓝、黄色、红色为例说明联想的作用。",
+      "evidence": "Some of our preferences are clearly psychological."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "实验显示鲜红会让人呼吸加快、心跳加快、血压升高，并没有提到“感到满足”。",
+      "evidence": "People exposed to bright red show an increase in breath, in heartbeat and in blood pressure"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "文中说亮黄色消防车能“让交通戛然而止”，是更醒目的警示色，并未说它造成许多事故。",
+      "evidence": "bright yellow colors that stop the traffic dead"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "文中说原始人把红色与血、愤怒以及用力带来的热联系起来；A、B、D 均与原文相反或混淆。",
+      "evidence": "he soon saw red as the color of blood and anger and the heat that came with effort"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "全文从色彩联想讲到色彩对人的生理与情绪影响，落点是颜色与感受的关系。",
+      "evidence": "colors, partly because of their psychological associations, also have a direct psychological effect"
+    }
+  },
+  "read-28": {
+    "1": {
+      "answer": "C",
+      "explanation": "首段说饥饿的人吃饱之后才会想到大衣，第二段又说第一层食物需求满足后第二层衣物住所才出现。",
+      "evidence": "When a hungry man gets a meal, he begins to think about an overcoat"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "二战结束时美国多数人刚满足前两层需求，第三层（汽车、新房）随后才出现，可见当时多数人还没有汽车。",
+      "evidence": "Then a third level appeared. It included such items as automobiles and new houses."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "第四层强调被认可、成就与幸福等精神需求，成功的事业属于这一层；舒适的住处、美餐、家用车都是物质满足。",
+      "evidence": "this level stresses mental needs for recognition, achievement, and happiness"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第四层是“丰富生活”层，重点在精神满足，而非商品或奢侈品的数量，更不是收入本身。",
+      "evidence": "this level stresses mental needs for recognition, achievement, and happiness"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "作者说第五层要通过社区与政府行动实现，目的是让人更充分地享受前四层的好东西，因此它比前四层更令人向往。",
+      "evidence": "we now may seek to ensure the health, safety, and leisure to enjoy more fully the good things on the first four levels"
+    }
+  },
+  "read-29": {
+    "1": {
+      "answer": "A",
+      "explanation": "首句给出因果：互联网把全球通讯成本降到很低，形成近乎完美的信息市场，从而催生企业、振兴经济，因此是“高速低价的信息”。",
+      "evidence": "by lowering the cost of global communication to moderate levels, is leading to a near-perfect market for information"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "第二段说孩子（或自己）更容易接触到本不该看到的图像和文字，即不良信息。",
+      "evidence": "being confronted by an image or text that better might have been left unseen"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "“把整个世界搬进客厅”是比喻，指人们可以方便地获取世界各地信息；A 是字面误解，B、D 偏离重点。",
+      "evidence": "The Internet has brought the entire world into the living room"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "垃圾邮件是作为“网络带来麻烦”的例证：多到占三成流量，许多人被迫弃用邮箱。",
+      "evidence": "On a bad day, up to 30% of the email processed by major Internet service providers is spam"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "作者既称互联网带来“巨大的好处”，又指出它“当然”也带来问题，末句只是提醒隐患，整体是中立、平衡的态度。",
+      "evidence": "The tremendous good done by the popularization of the Internet has caused some problems, of course."
+    }
+  },
+  "read-30": {
+    "1": {
+      "answer": "B",
+      "explanation": "作者说我们和许多人相处融洽，但真正称得上朋友的很少，可见朋友比一般相处好的人更亲密。",
+      "evidence": "While we get on well with a number of people, we are usually friends with only a very few"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "文中说这些因素虽非最重要，但年龄与背景差异明显时确实更难相处，所以交朋友时会考虑它们。",
+      "evidence": "it is more difficult to get on with people when there is a marked difference in age and background"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "该短语前一句就是解释：亲密朋友往往有相似的想法、信念、态度与兴趣。",
+      "evidence": "close friends to have similar ideas and beliefs, and to have attitudes and interests in common"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "文中说有些友谊正建立在争论之上，朋友也要容忍分歧，因此“朋友从不争吵”与原文相悖。",
+      "evidence": "Some friendly relationships can be kept on argument and discussion"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "末段说友谊没有仪式，但共同经历与情感带来的相互支持理解能形成牢固关系。",
+      "evidence": "the supporting and understanding of each other that results from shared experiences and emotions"
+    }
+  },
+  "read-31": {
+    "1": {
+      "answer": "B",
+      "explanation": "作者带着讽刺说户外旅行已成“潮流”，城里人被高端零售商牵着走，消费欲望不断被放大，B 最贴合这种失控的意味。",
+      "evidence": "outdoor travel has become such a trend that urban people find themselves with some upscale retailers"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "该短语意为“从消费者身上大赚一笔”，四个选项里只有 B 涉及把消费者的钱掏出来。",
+      "evidence": "they can make serious cash off all the consumers"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "第二段说这些人去户外不是为了自然，而是为了在鸡尾酒会上有谈资，正是消费社会对户外旅行影响的体现。",
+      "evidence": "These are consumers who get outdoors not for nature's sake, but to work out simply for a splendid cocktail party."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "作者批评政府百年来不断出售或出租公共土地牟利，认为公共土地不该被卖给个人。",
+      "evidence": "the government has been slowly selling or leasing off public lands for profit"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "作者说普通人正被高昂的价格“挤出自然”，帐篷睡袋即将过时，暗示他们除了放弃别无他法。",
+      "evidence": "The rest of us are being slowly priced out of nature."
+    }
+  },
+  "read-32": {
+    "1": {
+      "answer": "C",
+      "explanation": "这句话意为“美国的事务就是商业”，即商业是美国社会最受关注、最有威望的事业。",
+      "evidence": "business institutions have more prestige in American society than any other kind of organization"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "文中说竞争是保护个人自由、机会平等等基本价值观的手段，美国人相信只有通过竞争才能实现这些价值。",
+      "evidence": "Competition is not only good in itself, it is the means by which other basic American values is protected."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "竞争迫使企业公平对待顾客，否则顾客会流向对手，因此商人和消费者都能从竞争中受益。",
+      "evidence": "it will lose to competing business which treats its customers more fairly"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "文中把政府与商业对比，说政府是“all-powerful”“monopoly”，即绝对控制权力。",
+      "evidence": "In contrast to one, all-powerful government"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "文中说竞争成功被视为“凭家庭背景决定社会等级”的美国式替代，可推知在许多国家成功仍靠社会地位。",
+      "evidence": "Competitive success is commonly seen as the American alternative to social rank based on family background."
+    }
+  },
+  "read-33": {
+    "1": {
+      "answer": "B",
+      "explanation": "文中说夏威夷的二十座岛上有数百英里海滩，可见群岛由二十座岛组成。",
+      "evidence": "There are hundreds of miles of beaches on the twenty islands of Hawaii."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "文中说火山不只是岛屿的一部分，它们最初“造出了这些岛”，而且岛屿至今仍在生长。",
+      "evidence": "These volcanoes are not just a part of the islands; they made the islands in the first place."
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "文中说夏威夷菠萝产量世界第一，这使都乐公司成为全球最大的水果包装公司。",
+      "evidence": "the islands produce more than any other places in the world, which has made Dole Company the biggest fruit-packing company"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "作者说夏威夷人从不匆忙，因为他们更看重人而不是机器，这种对人的关怀才是最美的。",
+      "evidence": "they care more for human life than they care for the machine"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "岛上 64 种种族组合和睦相处，这句话强调人性高于国族，即人性没有国界。",
+      "evidence": "There are 64 different combinations of races on the islands, and they all live in peace."
+    }
+  },
+  "read-34": {
+    "1": {
+      "answer": "D",
+      "explanation": "作者开头就说本该花钱请人搬运，却出于对自己车技的盲目自信亲自租车，这是事后最后悔的决定。",
+      "evidence": "I should have paid a man to do it for me, but foolishly confident in my driving ability, I decided to hire a van and drive it myself."
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "在高峰时段开着大货车穿行，作者说“我的神经崩溃了”，可见他当时非常害怕。",
+      "evidence": "My nerves broke down"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "停车时他把后面一辆车撞得挪了三英尺，车身留下白色划痕，属于撞到别人的车。",
+      "evidence": "You've shifted the car parked behind you three feet"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "“monster”指那辆又长又宽、让他吃尽苦头的货车，他一心想逃离它。",
+      "evidence": "Wanting only to escape the monster, I drove the van back"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "作者说若自己不是那么感激，租车行的人娴熟的车技会让他羞愧，所以主要是感激。",
+      "evidence": "it would have shamed me if I had not been so grateful"
+    }
+  },
+  "read-35": {
+    "1": {
+      "answer": "C",
+      "explanation": "第三段解释美国电视质量不高的原因：广告商出钱并制作节目，节目必须迎合赞助商与最大观众群，因此偏娱乐而非教育。",
+      "evidence": "Sponsors not only paid money for time within programs, but many actually produced the programs."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "第二段先说电视深入生活、影响巨大，随即指出节目质量低、只维持现状而不提升理解，两方面都涵盖。",
+      "evidence": "television is not a teacher but a sustainer"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "作者批评节目只求娱乐、吸引观众，隐含的期待是电视应当有创意、有教育意义。",
+      "evidence": "requires that the programs be entertaining rather than educational"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "第二段说电视改变了人们看世界的方式，在许多方面支撑并维持现代生活，即从多方面影响生活。",
+      "evidence": "It alters people's ways of seeing the world"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "全文用“poor quality”“not a teacher”等评价，并称要真正改善社会需改变整个体制，态度是批判的。",
+      "evidence": "the poor quality of programming does not elevate people into greater understanding"
+    }
+  },
+  "read-36": {
+    "1": {
+      "answer": "D",
+      "explanation": "研究发现经常多任务处理的人在实际同时处理多项任务时表现最差，且他们多任务并非为了提高效率。",
+      "evidence": "those people turn out to be the worst at handling different things"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "研究者用一项需要心算并记字母的难题来评估受试者的多任务处理能力。",
+      "evidence": "evaluated the participants' multitasking ability with a tricky mental task"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "Sanbonmatsu 说人们多任务是因为容易分心、无法专注于一件事，而不是为了产出更多。",
+      "evidence": "because they are easily distracted and can't focus on one activity"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "末段说多任务者对危险情境不够敏感，因而不能对潜在危险迅速作出反应。",
+      "evidence": "People who are multitasking are generally less sensitive to risky situations."
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "全文围绕一项新研究的发现展开：谁最爱多任务、为什么、结果如何，写作目的是介绍研究结论。",
+      "evidence": "The findings, based on performances and self-evaluation by about 275 college students"
+    }
+  },
+  "read-37": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段说小学教育的要旨是让孩子快乐、有兴趣，第二段说社会教育强调合作，两者合起来即快乐与合作。",
+      "evidence": "the important thing is to make the children happy and interested"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "有人抱怨学校在让孩子快乐这件事上走得太远，反而没有给孩子真正的知识传授。",
+      "evidence": "they have gone too far in the direction of trying to make children happy and interested rather than giving them actual instruction"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "作者承认教育存在竞争社会带来的矛盾，但明确说不能说教育失败，它确实让人变得友善，态度是肯定的。",
+      "evidence": "It probably does succeed in making most people sociable"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "第二段反复强调美国教育在过程中重合作而非竞争。",
+      "evidence": "the emphasis is on cooperation rather than competition"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "下文说他们乐于在物质上互助，并以善意和友好相待，sociable 即“与人友善、易于相处”。",
+      "evidence": "ready to help one another both in material ways and through kindness and friendliness"
+    }
+  },
+  "read-38": {
+    "1": {
+      "answer": "A",
+      "explanation": "文章说赢家不纠结该怪谁，而是专注于解决问题、想办法补救。",
+      "evidence": "stop focusing on whom to blame and start focusing on how to remedy the situation"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "remedy 与 blame 相对，指“补救、改善”处境，因此与 improve 最接近。",
+      "evidence": "how to remedy the situation"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "作者建议想办法应对同事的不负责任或能力不足，而不是简单指责对方。",
+      "evidence": "find ways of dealing with his irresponsibility or inability rather than simply blame the person"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "文中说赢家把问题看作挑战，看作发展自身才能的机会。",
+      "evidence": "They are just better at seeing those problems as challenges and opportunities to develop their own talents."
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "全文揭示赢家与输家的根本差别：不推责、专注补救，这正是“赢家的秘诀”。",
+      "evidence": "This is the winner's key to success."
+    }
+  },
+  "read-39": {
+    "1": {
+      "answer": "D",
+      "explanation": "该词前一句说“我们已有的材料超过所需”，over-consumption 即过度消费、拥有超过需要的物品。",
+      "evidence": "we already have more material than we need"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "包装总量增长 12%、占家庭垃圾三分之一，这些数字是为了说明包装过度使用的事实。",
+      "evidence": "The total amount of packaging increased by 12% between 2010 and 2017."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "文中说包装焚烧会排放温室气体，而回收有帮助，因此回收有助于控制温室效应。",
+      "evidence": "If such packaging is burnt, it gives off greenhouse gases which go on to cause the greenhouse effect."
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "第四段说我们把包装与质量划等号，认为没有包装的东西质量差，作者显然认为这种判断方式并不合理。",
+      "evidence": "We have learned to think that something unpackaged is of poor quality."
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "末句说我们还有一座山要爬，比喻改变浪费型消费文化非常艰难。",
+      "evidence": "we have a mountain to climb"
+    }
+  },
+  "read-40": {
+    "1": {
+      "answer": "B",
+      "explanation": "调查显示机场头号烦心事是乘客带太多随身行李过安检、登机。",
+      "evidence": "The No. 1 airport headache is passengers who pull too many carry-on bags"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "随身行李激增的原因很明确：国内主要航空公司连第一件托运行李都要收费，乘客为省钱改带随身行李。",
+      "evidence": "All the major domestic airlines now charge to check even one bag"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "“the fun continues”是反语，指过了安检后登机时麻烦更多：抢行李架、登机变慢、座位下塞满包。",
+      "evidence": "there's a fierce fight for scarce overhead bin space, extending the boarding process"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "作者主张对行李费征税，因为现在行李费免税，反而促使航空公司靠收费而非提高票价创收。",
+      "evidence": "encouraging airlines to generate income through fees rather than fare increases"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "末段开头就说“我们同情航空业赚钱的需要”，随后才批评行李费带来的问题，态度是同情式批评。",
+      "evidence": "We're sympathetic to the airline industry's need to make money"
+    }
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "read-01": {
+    "1": {
+      "answer": "B",
+      "explanation": "第二段开头明确说原始人旅行不是为了消遣，而是为了给畜群找草场、躲避敌对邻居或寻找更宜人的气候，属于“出于需要”。",
+      "evidence": "In primitive times they did not travel for pleasure but to find new places where their herds could feed"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "文中说他们用木棍、石棒防身，夜里点火并“keeping together”结伴而行；只有“从不在夜间赶路”与原文相反，因为夜间点火正是他们的自保方式。",
+      "evidence": "by lighting fires at night and, above all, by keeping together"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第三段说他们骑在家畜背上、把树干挖空当船划水，因此出行变得更容易；马车、公路、气候都不是这一段给出的原因。",
+      "evidence": "They rode on the backs of their domesticated animals; they hollowed out tree trunks"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第四段先列举汽车、公路、快车、巨轮、喷气客机带来的舒适与安全，再说明这就是旅行成为高度组织化产业的原因。",
+      "evidence": "There are cars and splendid roads, express trains, huge ships and jet airliners, all of which provide us with comforts and security."
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "hostile 与“找草场、躲敌人”的语境一致，指“怀有敌意的、不友好的”；talkative（健谈）、hotheaded（急躁）、enthusiastic（热情）都不合文意。",
+      "evidence": "or to escape from hostile neighbors"
+    }
+  },
+  "read-02": {
+    "1": {
+      "answer": "C",
+      "explanation": "首句点题：有许多因素影响成人和儿童能否过上健康生活；后文依次谈忙碌、汽车、科技、媒体、环境与动机，都是在列举这些因素。",
+      "evidence": "There are many factors which may have an influence on adults and children being able to lead a healthy life."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "前一句说电脑、电视、游戏机取代了传统的积极活动，因此 sedentary 指“久坐的、缺少身体活动的”。",
+      "evidence": "This has led to a more sedentary lifestyle."
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "文中提到媒体推广快餐、生活忙碌、买快餐更省事，唯独没有把“价格便宜”列为快餐流行的原因。",
+      "evidence": "they also promote fast food which fits easily into busy lifestyles"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "文中列出的因素有污染、依赖汽车、家人影响（父母都上班、孩子承担家务）等，没有提到经济因素。",
+      "evidence": "We may be exposed to pollution, such as cigarette smoke."
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "最后一段明确指出，也许影响健康生活方式最重要的因素是动机，也就是“想健康的愿望”。",
+      "evidence": "the important factor influencing healthy lifestyles is motivation, or the desire to be healthy"
+    }
+  },
+  "read-03": {
+    "1": {
+      "answer": "C",
+      "explanation": "第一段交代 Alan 忘了戴手表，又不想早到或迟到，所以才向等出租车的人问时间。",
+      "evidence": "He had forgotten to put on his watch"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "对方不理他，Alan 心里想的是“他听得见，只是粗鲁”，可见他认为对方没礼貌。",
+      "evidence": "he must be just rude"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "“Put yourself in my shoes”是英语习语，意为“设身处地为我想想”，后面那人推演的一长串后果正是在解释自己的顾虑。",
+      "evidence": "Put yourself in my shoes."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "那人最后点明理由：他不愿把女儿嫁给一个穷得买不起手表的人，因此在他眼里 Alan 是个穷人。",
+      "evidence": "I do not want my daughter to marry a man who is too poor to buy a watch."
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "整篇故事从“问时间”这件小事推演出一连串后果，最后落到“买不起手表”，说明一件小事如何引出另一件事。",
+      "evidence": "Before we know what is happening we have a friendly conversation."
+    }
+  },
+  "read-04": {
+    "1": {
+      "answer": "D",
+      "explanation": "新院长到任后判断学院最缺的是钱，并把筹款当成自己的首要职能，因此他认为最重要的事是筹钱。",
+      "evidence": "he felt that what it needed most was money"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "他与前任最大的不同是常年在外筹款，不再像前任那样处理日常事务。",
+      "evidence": "But he was not attending to the day-to-day things as the previous dean had."
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "教师们起初不满他缺席，派代表要求换院长；后来钱到位、他们认可了他的愿景，说明一开始并不理解他的思路。",
+      "evidence": "The faculty became so upset with his absence that they sent a delegation to the president"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "教师后来见他就喊“出去，别在这儿，去弄更多钱回来”，说明他们要的是他继续筹款，而不是赶走他。",
+      "evidence": "Go out and bring in more funds."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "他承认的错误是团队建设、解释和沟通做得不够，也就是没有把想法充分传达给教师。",
+      "evidence": "the mistake he made was not doing enough team building, enough explaining, enough educating"
+    }
+  },
+  "read-05": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段说网上订票第一件要做的事是“shop around”，即多找几家、比较之后再下单。",
+      "evidence": "The first thing a traveler should do when booking online is to shop around."
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "文章说网站众多，有的票价更低，各家的政策和收费也不同，所以要货比三家。",
+      "evidence": "some may have cheaper fares than others"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "第二段明确列出票价随起飞时间、经停次数和机场而变化，其中只有“经停次数”出现在选项里。",
+      "evidence": "Fares can change, depending on when the airline flight departs, how many stops are involved, and at what airport."
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "查看网站政策和费用，主要是为了确认是否有订票手续费以及改签、退票方面的限制。",
+      "evidence": "have other restrictions about canceling flights"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "电子票取代纸质票后，旅客收到的确认邮件就是订票凭证，文中建议打印出来随行程文件保存。",
+      "evidence": "print out the reservation e-mail and save it with his travel documents"
+    }
+  },
+  "read-06": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段首句说老板掌握着你的前途，后面补充有些老板难相处、有些不懂待人，核心仍是老板决定你的职业前景。",
+      "evidence": "Your boss holds your future prospects in his hands."
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "“rise up the career ladder”字面是爬职业梯子，意为职位晋升。",
+      "evidence": "a major factor in determining your rise up the career ladder"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "第三段说老板也需要你把工作做到最好，才能实现他的目标。",
+      "evidence": "Your boss also needs you to perform at your best in order to accomplish his objectives."
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第四段开头直接给出答案：关键在于沟通。",
+      "evidence": "The key is communication."
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "全文从老板的重要性谈到如何了解其目标、风格并有效沟通，落脚点是“如何与老板相处”。",
+      "evidence": "In short, getting along with your boss requires getting to know his likes and dislikes"
+    }
+  },
+  "read-07": {
+    "1": {
+      "answer": "D",
+      "explanation": "作者建议寻找课程积极的一面，必要时请家教或自主阅读，归根到底是要有正确的态度。",
+      "evidence": "with the right attitude, success is possible"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "第二、三段对比两类学生，反复强调的是对学习的态度：前者积极，后者消极。",
+      "evidence": "usually have a positive interest toward learning"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "该短语指“实际表现低于考试成绩所显示的能力”，也就是实际学习效果不如考试分数。",
+      "evidence": "those who function below their ability shown by test scores"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "电脑的例子说明：消极态度会让人找各种借口，从而阻碍自己使用好工具、学会新东西。",
+      "evidence": "your negative attitude prevents you from learning"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "首句即点明学习量和对所学内容的态度之间存在可测量的关系，全文都在论证态度对学习的影响。",
+      "evidence": "There is a measurable relation between how much a person learns and his attitude toward the subject"
+    }
+  },
+  "read-08": {
+    "1": {
+      "answer": "B",
+      "explanation": "第一段说明学习有两种基本过程，随后分别介绍经典条件作用与操作性条件作用，写作目的就是向普通读者说明这两种学习。",
+      "evidence": "there are two basic processes by which learning takes place"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "讲笑话得到积极回应是一种奖励，于是人会更愿意讲，这符合“做出能带来奖励的行为”的操作性条件作用。",
+      "evidence": "learns to do things that produce rewards in his environment"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "被狗咬与疼痛反复配对，使孩子把毛茸茸的动物与疼痛联系起来，这是刺激配对形成的经典条件作用。",
+      "evidence": "one event or stimulus is consistently paired with or followed by, a reward or punishment"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "第三段用“某人对我们好/坏”的例子说明我们会把此人与正面或负面情绪联系起来，仍是经典条件作用的延伸例证。",
+      "evidence": "we learn to associate this person with positive feelings"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文章已介绍两种学习，第三段补充的是经典条件作用的例子，接下来最可能继续补充操作性条件作用的例子。",
+      "evidence": "learns not to do things that produce punishments"
+    }
+  },
+  "read-09": {
+    "1": {
+      "answer": "C",
+      "explanation": "首段给智力下的定义是“一种生活和行为方式，尤其在新环境或令人不安的处境中”，即应对生活的能力。",
+      "evidence": "By intelligence we mean a way of living and behaving, especially in a new or upsetting situation."
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "第二段说聪明的人面对新情况时想的是“这个处境该怎么办”，而不是自己会怎样。",
+      "evidence": "an intelligent person thinks about the situation, not about himself"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "文中说失败时他不会感到羞耻，而是从错误中学习。",
+      "evidence": "he just tries to learn from his mistakes"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "作者强调聪明的孩子与不聪明的孩子是“两种不同类型的人”，而不只是智力多少的差别。",
+      "evidence": "They are actually two different kinds of people"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "文章结尾停在“不聪明的孩子把自己关在梦的世界里，与生活隔着一堵墙”，下文最可能接着谈如何教育这样的孩子。",
+      "evidence": "he seems to have a wall between him and life in general"
+    }
+  },
+  "read-10": {
+    "1": {
+      "answer": "C",
+      "explanation": "全文围绕珊瑚礁大量死亡、可能灭绝展开，C 最能概括主题；A、D 只是原因之一，B 把珊瑚礁误作雨林。",
+      "evidence": "the reefs may be headed for total extinction"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "“take steps to address the problem”意为采取措施应对问题，address 在此等于 deal with。",
+      "evidence": "If no major steps are taken to address the problem"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "文中给出比喻后立刻解释原因：珊瑚礁为种类繁多的海洋生物提供栖息地。",
+      "evidence": "because they provide shelter for a wide variety of sea life"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "第四段直接说珊瑚排出水藻后会变白，这一过程叫 bleaching。",
+      "evidence": "the corals turn white in a process called \"bleaching\""
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "最后一段说污染、工业活动、过度捕捞都是威胁，但科学家最担心的是全球气候变化。",
+      "evidence": "it is global climate change that most concerns scientists"
+    }
+  },
+  "read-11": {
+    "1": {
+      "answer": "D",
+      "explanation": "首句说广告诉诸购买动机，可能产生正面也可能产生负面效果；劣质产品正是通过迎合购买动机被卖出去的。",
+      "evidence": "The appeal of advertising to buying motives can have both negative and positive effects."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "面包广告的误导在于：每片热量少只是因为切得薄，一整条面包的总热量并没有减少。",
+      "evidence": "there were the same number of calories in every loaf"
+    },
+    "3": {
+      "answer": "A",
+      "explanation": "第三段以火灾保险为例，说明情感诉求有时回应的是消费者真实的需求，广告也确实在卖人们需要的东西。",
+      "evidence": "But fear of loss is the real reason for fire insurance."
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "最后一段建议消费者评估自身情况，掂量产品的好处是否值得购买，即理性看待广告中描述的利益。",
+      "evidence": "Are the benefits of the product important enough to justify buying it?"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "文章一半讲误导与劣质产品，一半讲情感诉求的正面作用，最后落到消费者自主判断，主旨是广告的正反两面。",
+      "evidence": "On the positive side, emotional appeals may respond to a consumer's real concerns."
+    }
+  },
+  "read-12": {
+    "1": {
+      "answer": "A",
+      "explanation": "第二段说随着年龄增长，适应不同舒适区的能力变难，社会偏见又使舒适区范围变窄。",
+      "evidence": "Social prejudice narrows the comfort zone range."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "该短语字面是“对当前舒适区不满”，也就是对现状不满意，这是成长与改变的前提。",
+      "evidence": "we must first be discontent with our current comfort zone"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "作者认为一切有意义的持久改变都先在白日梦中发生，再进入现实，所以白日梦是在为改变做准备。",
+      "evidence": "all meaningful and lasting changes occur first in daydreaming and then they work their way into reality"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "第四段说有人把问题、痛苦、贫穷当作舒适区，管理者与员工也习惯互相挑错，可见舒适区未必是积极的。",
+      "evidence": "For some people, problems, suffering, poverty, bad breaks are their comfort zone."
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "最后一段说金钱、权力和影响力不是目标，只是个人成就的回报，说明人们追求更好的舒适区是为了取得更大成就。",
+      "evidence": "Money, power and influence are not goals; they are rewards only for personal achievement."
+    }
+  },
+  "read-13": {
+    "1": {
+      "answer": "B",
+      "explanation": "文章讨论的是哪些因素让社会变化更容易或更难发生：人群构成、物质与非物质层面、习得早晚等。",
+      "evidence": "Social change is more likely to occur in societies where there is a mixture of different kinds of people"
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "先进技术是第二段所说的“变化更容易发生的领域”，不是第一段列举的促变因素（世俗兴趣、不同观点、宽容）。",
+      "evidence": "in technology rather than in values"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "文中说混合社会里“更多的分歧与争论”恰恰推动变化，B 说分歧会减缓变化，与原文相反。",
+      "evidence": "There are more ideas, more disagreements in interest"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "“greater tolerance”与前面的“更多想法、更多分歧”并列，指更愿意接受不同意见和观念。",
+      "evidence": "there is usually a greater worldly interest and greater tolerance in mixed societies"
+    },
+    "5": {
+      "answer": "B",
+      "explanation": "在人群高度相似的社会里，一切似乎都一样，现状虽不理想却被视为习惯且无人质疑，人们因此很少觉得需要改变。",
+      "evidence": "they are at least customary and undisputed"
+    }
+  },
+  "read-14": {
+    "1": {
+      "answer": "D",
+      "explanation": "第一段说除水以外，茶是世界上消费量最大的饮料，即茶排第二。",
+      "evidence": "People drink more tea than any other drink in the world, except for water."
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "文中说绿茶可能有助于预防感冒和帕金森病，是“可能预防”，并未说能治愈帕金森病。",
+      "evidence": "green tea is thought to possibly protect against colds and Parkinson's disease"
+    },
+    "3": {
+      "answer": "B",
+      "explanation": "第三段说泡茶的过程迫使饮者放慢速度、放松片刻，这是喝茶的又一好处。",
+      "evidence": "forces drinkers to slow down and relax a while"
+    },
+    "4": {
+      "answer": "D",
+      "explanation": "结尾说茶的使用不只是一种潮流，如果我们证实了它的益处，它必将成为未来生活的重要部分。",
+      "evidence": "it will undoubtedly be an important element of our future"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "全文围绕喝茶人数增加的原因展开，重点讲绿茶防癌、防病等健康益处，兼及泡茶放松的作用。",
+      "evidence": "people are coming to notice the benefits of drinking tea, particularly green tea"
+    }
+  },
+  "read-15": {
+    "1": {
+      "answer": "A",
+      "explanation": "他的灵感来自亲身经历：母亲开车送他上学时，车被路面大坑损坏。",
+      "evidence": "Their car was damaged as it went over a huge pothole"
+    },
+    "2": {
+      "answer": "C",
+      "explanation": "文中说靠近坑洼时手机会发出“beep”提示音。",
+      "evidence": "your phone will warn you with a beep"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "司机还可以用这款应用查找其他路线，避开有坑洼的道路。",
+      "evidence": "to look for other routes they can take to avoid roads that have them"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "为了开发应用，Chokwe 和朋友们走遍全城街道实地考察，最后确定先聚焦最繁忙的 10 条街。",
+      "evidence": "they also went street by street throughout the city"
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "最后一段说他希望把覆盖范围从 10 条街扩大到全城，再到全国，可见他志向远大。",
+      "evidence": "I want to keep working on the app until it's nationwide"
+    }
+  },
+  "read-16": {
+    "1": {
+      "answer": "B",
+      "explanation": "首段说堵车、排队时失去耐心并不新鲜，但专家认为如今的人比过去更没耐心。",
+      "evidence": "some experts believe that people are less patient today than in the past"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "第二段指出，技术带来的即时结果反而提高了人们对即时满足的渴望，这是耐心下降的直接心理原因。",
+      "evidence": "have in turn increased our desire for instant satisfaction"
+    },
+    "3": {
+      "answer": "D",
+      "explanation": "第四段解释邮件可能过时，是因为人们没耐心等几小时甚至几分钟的回复，转而使用即时通讯。",
+      "evidence": "do not have the patience to wait hours, or even minutes, for a response"
+    },
+    "4": {
+      "answer": "A",
+      "explanation": "文中说很多人不愿花时间校对，结果信件和邮件里满是语法和拼写错误。",
+      "evidence": "letters and e-mails contain numerous grammatical and spelling errors"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "全文从现象、原因到生活各领域的表现，都在回答“我们今天是不是更没耐心了”，A 最贴切。",
+      "evidence": "people are less patient today than in the past"
+    }
+  },
+  "read-17": {
+    "1": {
+      "answer": "B",
+      "explanation": "第三段说科学家认为这种差异有生理原因，即女孩大脑左侧神经末梢发育更快。",
+      "evidence": "Scientists think there is a physical reason for this."
+    },
+    "2": {
+      "answer": "D",
+      "explanation": "文中说女孩在词汇、拼写、记忆测试中更强，男孩在数学推理、机械能力、解决问题上得分更高；D 把“解决问题”说成女孩的优势，与原文不符。",
+      "evidence": "Females show superior ability in tests measuring vocabulary, spelling, and memory."
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "最后一段说男孩在学前发展出“aggression”，这样的人有勇气和精力，感到自己强壮而独立。",
+      "evidence": "An aggressive person has courage and energy. He feels strong and independent."
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "“this”回指前一句提到的女孩大脑左侧神经末梢发育更快，即大脑的发育差异。",
+      "evidence": "the nerve endings in the left side of the brain develop faster in girls"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "作者引用骨骼、肌肉、神经发育的研究与测试数据，依据是科学事实而非个人经验或推理。",
+      "evidence": "It is known that bones, muscles and nerves develop faster in baby girls."
+    }
+  },
+  "read-18": {
+    "1": {
+      "answer": "C",
+      "explanation": "首段结论说艺术表达一个时代与地方的本质特征，研究艺术史因而能让我们理解得更深。",
+      "evidence": "art expresses the essential qualities of a time and a place"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "文中说艺术是主观的，因为它反映情感与观点，即呈现对历史的一种个人化、情感化的视角。",
+      "evidence": "it reflects emotions and opinions"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "文中说中东艺术的主要特征之一是不出现人与动物形象，因此在宫殿等建筑上几乎看不到这类图像。",
+      "evidence": "its absence of human and animal images"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "文章以一般历史课只讲政治、经济、战争为对照，说明艺术史能提供更多信息，主体是在比较两者的差别。",
+      "evidence": "But art history focuses on much more than this"
+    },
+    "5": {
+      "answer": "C",
+      "explanation": "既然历史书只给事实、不表达观点，可以推知历史教师必须保持客观；A、D 与原文相反，B 文中无据。",
+      "evidence": "facts about politics are given, but opinions are not expressed"
+    }
+  },
+  "read-19": {
+    "1": {
+      "answer": "D",
+      "explanation": "第二段同时给出两个条件：大脑在思考重要但不紧急的问题，外部环境不再提供有趣的问题，A、B 都对。",
+      "evidence": "when the external environment ceases posing interesting and engaging problems"
+    },
+    "2": {
+      "answer": "B",
+      "explanation": "Mason 认为多数时候我们处于“较少指向性、非刻意的思维”，只是常被有目标的思考打断，这颠覆了心理学界的旧假设。",
+      "evidence": "most of the time we are engaged in less directed, unintended thought"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "最后一段说研究者训练受试者熟练掌握某些任务，使其在执行时能够走神。",
+      "evidence": "They trained study subjects to become proficient on certain tasks"
+    },
+    "4": {
+      "answer": "C",
+      "explanation": "文中说走神时大脑从一个念头跳到另一个念头，产生图像、声音、想法和感受，C 与此一致。",
+      "evidence": "the brain flits from one thought to the next, generating images, voices, thoughts and feelings"
+    },
+    "5": {
+      "answer": "A",
+      "explanation": "文章报道美国研究者在《Science》上发表的新发现，语言通俗、面向大众，最可能出自科普杂志。",
+      "evidence": "according to a new U.S. study"
+    }
+  },
+  "read-20": {
+    "1": {
+      "answer": "D",
+      "explanation": "反对增长者给出的理由是资源有限、工业破坏环境、人口持续增长；D“应努力改善物质生活”不在其中。",
+      "evidence": "These include the fixed supply of natural resources, the possible negative effects of industry"
+    },
+    "2": {
+      "answer": "A",
+      "explanation": "支持增长者认为，只有继续增长才能创造提高生活品质所需的资本，也就是对整体福祉至关重要。",
+      "evidence": "only more growth can create the capital needed to improve the quality of life in the world"
+    },
+    "3": {
+      "answer": "C",
+      "explanation": "proponents 与前面的 critics 相对，指支持、主张经济增长的人。",
+      "evidence": "These proponents of economic growth believe"
+    },
+    "4": {
+      "answer": "B",
+      "explanation": "首句点明当下正围绕经济增长是否可取展开讨论，全文呈现双方观点，B 最全面。",
+      "evidence": "There is much discussion today about whether economic growth is desirable."
+    },
+    "5": {
+      "answer": "D",
+      "explanation": "作者没有站队，但强调这些问题不能被忽视，必须持续关注和讨论，态度是忧虑的。",
+      "evidence": "the problems they mention cannot be ignored"
+    }
+  }
+}
