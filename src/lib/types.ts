@@ -44,6 +44,11 @@ export interface PracticeWrongEntry {
   myAnswer?: string;
 }
 
+export interface PracticeMarkEntry {
+  id: string;
+  markedAt: number;
+}
+
 export interface PracticeSessionRecord {
   at: number;
   total: number;

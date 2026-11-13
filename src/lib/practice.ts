@@ -1,4 +1,10 @@
-import type { PracticeData, PracticeQuestion, PracticeSessionRecord, PracticeWrongEntry } from '@/lib/types';
+import type {
+  PracticeData,
+  PracticeMarkEntry,
+  PracticeQuestion,
+  PracticeSessionRecord,
+  PracticeWrongEntry,
+} from '@/lib/types';
 import { KEYS, readJson, removeKey, writeJson } from '@/lib/storage';
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
@@ -64,14 +70,55 @@ export function getWrongIds(): string[] {
     .map((e) => e.id);
 }
 
+// ---------- 标记本 ----------
+// 标记独立于单次练习存档：退出练习、换一组题、刷新页面后依然保留
+
+export function getMarkBook(): Record<string, PracticeMarkEntry> {
+  return readJson<Record<string, PracticeMarkEntry>>(KEYS.practiceMark, {});
+}
+
+export function getMarkedIds(): string[] {
+  return Object.values(getMarkBook())
+    .sort((a, b) => b.markedAt - a.markedAt)
+    .map((e) => e.id);
+}
+
+export function markQuestion(id: string): void {
+  const book = getMarkBook();
+  if (book[id]) return; // 已标记则保留原始时间
+  book[id] = { id, markedAt: Date.now() };
+  writeJson(KEYS.practiceMark, book);
+}
+
+export function removeMark(id: string): void {
+  const book = getMarkBook();
+  if (!book[id]) return;
+  delete book[id];
+  writeJson(KEYS.practiceMark, book);
+}
+
+// 返回切换后的状态：true 表示现在已标记
+export function toggleMarkQuestion(id: string): boolean {
+  const on = Boolean(getMarkBook()[id]);
+  if (on) removeMark(id);
+  else markQuestion(id);
+  return !on;
+}
+
+export function clearMarkBook(): void {
+  writeJson(KEYS.practiceMark, {});
+}
+
 // ---------- 练习进度续答 ----------
+
+export type PracticeSource = 'pool' | 'wrong' | 'marked';
 
 export interface PracticeResume {
   ids: string[]; // 试卷题目 id 顺序
   picks: Record<string, string>; // 已作答 id -> 选项字母
   marks: string[]; // 已标记 id
   label: string;
-  source: 'pool' | 'wrong';
+  source: PracticeSource;
   updatedAt: number;
 }
 

@@ -21,23 +21,33 @@ import {
 import { useApp } from '@/state/AppProvider';
 import { hrefFor } from '@/lib/router';
 import ChipScroller from '@/components/ChipScroller';
+import WordText from '@/components/WordText';
+import WordPopover from '@/components/reader/WordPopover';
+import { normalizeWord } from '@/lib/utils';
 import type { PracticeData, PracticeQuestion } from '@/lib/types';
 import {
   addHistory,
   addWrong,
   buildPaper,
+  clearMarkBook,
   clearPracticeResume,
   clearWrongBook,
   getHistory,
+  getMarkBook,
+  getMarkedIds,
   getPracticeResume,
   getWrongBook,
   getWrongIds,
   loadPractice,
+  markQuestion,
+  removeMark,
   removeWrong,
   savePracticeResume,
   sortCategories,
+  toggleMarkQuestion,
   type PracticeMode,
   type PracticeResume,
+  type PracticeSource,
 } from '@/lib/practice';
 
 type Phase = 'loading' | 'setup' | 'quiz' | 'result' | 'error';
@@ -45,15 +55,17 @@ type Phase = 'loading' | 'setup' | 'quiz' | 'result' | 'error';
 interface Paper {
   questions: PracticeQuestion[];
   label: string;
-  source: 'pool' | 'wrong';
+  source: PracticeSource;
 }
 
-export default function PracticePage({ tab }: { tab?: 'wrong' }) {
+export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   const { recordActivity, toast } = useApp();
   const [data, setData] = useState<PracticeData | null>(null);
   const [phase, setPhase] = useState<Phase>('loading');
   const [error, setError] = useState('');
-  const [view, setView] = useState<'setup' | 'wrong'>(tab === 'wrong' ? 'wrong' : 'setup');
+  const [view, setView] = useState<'setup' | 'wrong' | 'marked'>(
+    tab === 'wrong' ? 'wrong' : tab === 'marked' ? 'marked' : 'setup',
+  );
 
   // 组卷设置
   const [category, setCategory] = useState<string>('全部');
@@ -63,12 +75,22 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   // 练习状态
   const [paper, setPaper] = useState<Paper | null>(null);
   const [picks, setPicks] = useState<Record<string, string>>({});
-  const [marks, setMarks] = useState<string[]>([]);
   const [cursor, setCursor] = useState(0);
   const [session, setSession] = useState({ answered: 0, correct: 0 });
   const [sheetOpen, setSheetOpen] = useState(false);
   const [wrongIdsVersion, setWrongIdsVersion] = useState(0);
+  const [markVersion, setMarkVersion] = useState(0);
   const [resumeVersion, setResumeVersion] = useState(0);
+  const [wordPop, setWordPop] = useState<{ word: string; rect: DOMRect } | null>(null);
+
+  // 标记存在独立的本子里，退出练习后依然保留
+  const markBook = useMemo(() => {
+    void markVersion;
+    void view;
+    void phase;
+    return getMarkBook();
+  }, [markVersion, view, phase]);
+  const marks = useMemo(() => Object.keys(markBook), [markBook]);
 
   // 把一份续答存档恢复进练习状态；返回是否恢复成功
   const restoreResume = useCallback((saved: PracticeResume, d: PracticeData): boolean => {
@@ -92,10 +114,14 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
     setPaper({
       questions,
       label: saved.label || '继续上次练习',
-      source: saved.source === 'wrong' ? 'wrong' : 'pool',
+      source: saved.source === 'wrong' ? 'wrong' : saved.source === 'marked' ? 'marked' : 'pool',
     });
     setPicks(savedPicks);
-    setMarks(Array.isArray(saved.marks) ? saved.marks.filter((id) => valid.has(id)) : []);
+    // 老存档里的标记还没进独立标记本，这里补写进去
+    for (const id of Array.isArray(saved.marks) ? saved.marks : []) {
+      if (valid.has(id)) markQuestion(id);
+    }
+    setMarkVersion((v) => v + 1);
     setCursor(lastAnswered);
     setSession({
       answered: Object.keys(savedPicks).length,
@@ -153,10 +179,18 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
     };
   }, [sheetOpen]);
 
-  // 路由 tab 变化（#practice / #practice/wrong）
+  // 路由 tab 变化（#practice / #practice/wrong / #practice/marked）
   useEffect(() => {
-    setView(tab === 'wrong' ? 'wrong' : 'setup');
+    setView(tab === 'wrong' ? 'wrong' : tab === 'marked' ? 'marked' : 'setup');
   }, [tab]);
+
+  // 切题后回到顶部：长题干、选项与解析不会把新题顶出屏幕
+  useEffect(() => {
+    if (phase !== 'quiz') return;
+    setWordPop(null);
+    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  }, [cursor, phase]);
 
   const wrongBook = useMemo(() => {
     void wrongIdsVersion;
@@ -171,6 +205,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   }, [resumeVersion, phase]);
 
   const wrongCount = Object.keys(wrongBook).length;
+  const markCount = marks.length;
 
   const categories = useMemo(() => {
     if (!data) return [];
@@ -195,7 +230,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
   }, [data, category, sub]);
 
   const startPractice = useCallback(
-    (source: 'pool' | 'wrong') => {
+    (source: PracticeSource) => {
       if (!data) return;
       let questions: PracticeQuestion[];
       let label: string;
@@ -207,21 +242,32 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           return;
         }
         label = '错题重做';
+      } else if (source === 'marked') {
+        const byId = new Map(data.questions.map((q) => [q.id, q]));
+        questions = getMarkedIds()
+          .map((id) => byId.get(id))
+          .filter((q): q is PracticeQuestion => Boolean(q));
+        if (!questions.length) {
+          toast('标记本是空的，练习时点「标记」就会收进来', 'info');
+          return;
+        }
+        label = '标记题重做';
       } else {
         questions = pool;
         label = `${category === '全部' ? '全部考点' : category}${sub === '全部' ? '' : ' · ' + sub}`;
       }
-      const picked = buildPaper(questions, 0, mode); // 直接出当前考点的全部题
+      // 错题与标记题按各自的收录顺序出卷，不受「随机」影响
+      const picked = buildPaper(questions, 0, source === 'pool' ? mode : 'ordered');
       if (!picked.length) {
         toast('没有符合条件的题目', 'info');
         return;
       }
       setPaper({ questions: picked, label, source });
       setPicks({});
-      setMarks([]);
       setCursor(0);
       setSession({ answered: 0, correct: 0 });
       setSheetOpen(false);
+      setWordPop(null);
       setPhase('quiz');
     },
     [data, pool, category, sub, mode, toast],
@@ -259,14 +305,27 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
       const picked = buildPaper(questions, 0, 'ordered');
       setPaper({ questions: picked, label: '错题重做', source: 'wrong' });
       setPicks({});
-      setMarks([]);
       setCursor(0);
       setSession({ answered: 0, correct: 0 });
       setSheetOpen(false);
+      setWordPop(null);
       setPhase('quiz');
     },
     [data],
   );
+
+  // 标记开关：直接落到标记本，退出练习也不会丢
+  const handleToggleMark = useCallback((id: string) => {
+    toggleMarkQuestion(id);
+    setMarkVersion((v) => v + 1);
+  }, []);
+
+  // 题干点词：弹出与原阅读器一致的词典卡
+  const handleStemWord = useCallback((raw: string, el: HTMLElement) => {
+    const norm = normalizeWord(raw);
+    if (!norm || (norm.length < 2 && norm !== 'i')) return;
+    setWordPop({ word: norm, rect: el.getBoundingClientRect() });
+  }, []);
 
   if (phase === 'loading') {
     return (
@@ -324,17 +383,23 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           </a>
           <button
             className={`practice-mark ${marks.includes(q.id) ? 'on' : ''}`}
-            onClick={() => setMarks((m) => (m.includes(q.id) ? m.filter((x) => x !== q.id) : [...m, q.id]))}
-            title="标记本题"
+            onClick={() => handleToggleMark(q.id)}
+            title={marks.includes(q.id) ? '取消标记，标记本里也会同步移除' : '标记本题，存进标记本稍后回看'}
+            aria-pressed={marks.includes(q.id)}
           >
             <Flag size={15} /> {marks.includes(q.id) ? '已标记' : '标记'}
           </button>
         </div>
 
-        <p className="practice-paper-label">{paper.label}</p>
+        <div className="practice-paper-label">
+          <span>{paper.label}</span>
+          <span className="practice-stem-hint">点题干里的单词可查释义</span>
+        </div>
 
         <div className="practice-qcard">
-          <p className="practice-stem">{q.stem}</p>
+          <p className="practice-stem">
+            <WordText text={q.stem} onWordClick={handleStemWord} />
+          </p>
           <div className="practice-options">
             {q.options.map((opt, i) => {
               const letter = LETTERS[i];
@@ -433,6 +498,15 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
             </div>
           </div>
         )}
+
+        {wordPop && (
+          <WordPopover
+            key={wordPop.word}
+            word={wordPop.word}
+            anchor={wordPop.rect}
+            onClose={() => setWordPop(null)}
+          />
+        )}
       </div>
     );
   }
@@ -489,6 +563,95 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
                   <div className="practice-review-answers">
                     <span className="wrong-mine">你的答案：{mine}. {q.options[LETTERS.indexOf(mine)] || ''}</span>
                     <span className="right">正确答案：{q.answer}. {q.options[LETTERS.indexOf(q.answer)] || ''}</span>
+                  </div>
+                  {q.explanation && <p className="practice-explanation">{q.explanation}</p>}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // ---------- 标记本 ----------
+  if (view === 'marked') {
+    const entries = Object.values(markBook).sort((a, b) => b.markedAt - a.markedAt);
+    const byId = new Map(data.questions.map((q) => [q.id, q]));
+    return (
+      <div className="page practice-page">
+        <div className="practice-head">
+          <div>
+            <span className="eyebrow">Practice</span>
+            <h1 className="section-title" style={{ marginTop: 12 }}>标记本</h1>
+            <p className="section-sub">练习时点「标记」把题收进这里，退出或换一组题都不会丢，方便集中复盘。</p>
+          </div>
+          <a className="btn ghost" href={hrefFor('/practice')}>← 考点练习</a>
+        </div>
+
+        <div className="practice-wrong-actions">
+          <button className="btn primary" onClick={() => startPractice('marked')} disabled={!entries.length}>
+            <Shuffle size={15} /> 重做标记题（{entries.length}）
+          </button>
+          {entries.length > 0 && (
+            <button
+              className="btn ghost"
+              onClick={() => {
+                if (window.confirm('确定清空全部标记？')) {
+                  clearMarkBook();
+                  setMarkVersion((v) => v + 1);
+                }
+              }}
+            >
+              <Trash2 size={15} /> 清空
+            </button>
+          )}
+        </div>
+
+        {entries.length === 0 ? (
+          <div className="practice-empty">
+            <Flag size={26} />
+            <p>还没有标记题。练习时点右上角「标记」，题就会收到这里。</p>
+            <a className="btn primary" href={hrefFor('/practice')}>开始练习</a>
+          </div>
+        ) : (
+          <div className="practice-review-list">
+            {entries.map((e) => {
+              const q = byId.get(e.id);
+              if (!q) return null;
+              return (
+                <div key={e.id} className="practice-review mark">
+                  <div className="practice-review-head">
+                    <Flag size={17} />
+                    <span className="practice-review-num">
+                      标记于{' '}
+                      {new Date(e.markedAt).toLocaleString('zh-CN', {
+                        month: 'numeric',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                      })}
+                    </span>
+                    <span className="practice-tags">
+                      <span className={`practice-tag cat-${TAG_CLASS[q.category] || 'other'}`}>{q.category}</span>
+                      <span className="practice-tag sub">{q.sub}</span>
+                    </span>
+                    <button
+                      className="practice-wrong-remove"
+                      title="取消标记"
+                      onClick={() => {
+                        removeMark(e.id);
+                        setMarkVersion((v) => v + 1);
+                      }}
+                    >
+                      <Trash2 size={14} />
+                    </button>
+                  </div>
+                  <p className="practice-stem">{q.stem}</p>
+                  <div className="practice-review-answers">
+                    <span className="right">
+                      正确答案：{q.answer}. {q.options[LETTERS.indexOf(q.answer)] || ''}
+                    </span>
                   </div>
                   {q.explanation && <p className="practice-explanation">{q.explanation}</p>}
                 </div>
@@ -616,6 +779,9 @@ export default function PracticePage({ tab }: { tab?: 'wrong' }) {
           </a>
           <a className="btn ghost" href={hrefFor('/practice/wrong')}>
             <BookX size={15} /> 错题本{wrongCount > 0 ? `（${wrongCount}）` : ''}
+          </a>
+          <a className="btn ghost" href={hrefFor('/practice/marked')}>
+            <Flag size={15} /> 标记本{markCount > 0 ? `（${markCount}）` : ''}
           </a>
         </div>
       </div>

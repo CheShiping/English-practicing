@@ -121,6 +121,14 @@
       "dependencies": ["feat-014"],
       "status": "done",
       "evidence": "2026-11-13：globals.css 增加 --dur-slow；pages.css 新增 practice-reveal-in / practice-state-in / practice-score-in / practice-review-in 四组关键帧与 .practice-review-list.result 递进延迟；AppProvider ToastItem 增加 closing，dismissToast 先标记再 180ms 后摘除；reader.css 的 .toast 改为 @starting-style 入场 + .closing 退场过渡。headless 实测：reveal practice-reveal-in 200ms、stateIcon practice-state-in 140ms、成绩卡 practice-score-in 280ms、回顾首项 delay 60ms、生词卡 max-height 40.8px→122.4px（2 行→6 行，无半行截断）、toast 入场 opacity 0.69 中间态 / 3050ms 带 closing / 3550ms 已移除，pageerrors none；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+    },
+    {
+      "id": "feat-016",
+      "name": "练习标记本、切题回顶与题干点词查义",
+      "description": "把标记做成独立持久化的标记本：新增 storage key moread.practice.mark.v1 与 PracticeMarkEntry，练习中点标记直接落库，设置页在错题本旁新增「标记本」入口（#practice/marked），支持列表、取消标记、清空与重做标记题；切题（上一题/下一题/答题卡跳转）自动回到页面顶部；单选题干改为可点词，复用阅读器 WordPopover 弹词典",
+      "dependencies": ["feat-014"],
+      "status": "done",
+      "evidence": "2026-11-13：新增 src/components/WordText.tsx；lib/practice 增加 getMarkBook/getMarkedIds/markQuestion/removeMark/toggleMarkQuestion/clearMarkBook，PracticeResume.source 扩展 pool|wrong|marked；router 增加 #practice/marked；PracticePage 的 marks 改为读标记本，旧续答存档 marks 自动补写。headless 实测：点标记后 localStorage moread.practice.mark.v1 写入 danxuan-01-001；重载进 #practice/marked 显示「标记本」1 条、金色左边框；重做标记题得到「标记题重做」2 题卷；取消标记后列表为空态且 store 变 {}；900x520 窗口滚到 273px 点下一题后 scrollY=0；点第 4 个可点词弹出 the 的词典卡；1280/390 两档截图确认头部三按钮不换行、移动端题头不溢出；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     }
   ]
 }

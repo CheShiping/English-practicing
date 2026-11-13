@@ -15,6 +15,7 @@ export const KEYS = {
   translationCache: PREFIX + 'transCache.v1',
   welcome: PREFIX + 'welcome.v1',
   practiceWrong: PREFIX + 'practice.wrong.v1',
+  practiceMark: PREFIX + 'practice.mark.v1',
   practiceHistory: PREFIX + 'practice.history.v1',
   practiceResume: PREFIX + 'practice.resume.v1',
 } as const;
