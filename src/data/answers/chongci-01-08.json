@@ -33,13 +33,13 @@
     "1": { "answer": "B", "explanation": "第三段列出大幅增长的国家：China, Saudi Arabia, Vietnam, Iran and Venezuela，B 最完整。", "evidence": "big increases from China, Saudi Arabia, Vietnam, Iran and Venezuela" },
     "2": { "answer": "C", "explanation": "留学生总数超过 720,000，中国学生约占 22%，720,000 × 22% ≈ 158,000。", "evidence": "Almost 22% of international students were Chinese" },
     "3": { "answer": "B", "explanation": "第四段说中国学生现在遍布美国各类院校：社区学院、小型文理学院、研究型大学，B 正确。", "evidence": "spread across the US ... community colleges, small liberal arts institutions, and research universities" },
-    "4": { "answer": "C", "explanation": "全文介绍美国国际学生数量、来源国、就读院校和热门专业的新变化，最佳标题是 New Trends。", "evidence": "" }
+    "4": { "answer": "C", "explanation": "全文介绍美国国际学生数量、来源国、就读院校和热门专业的新变化，最佳标题是 New Trends。", "evidence": "The number of international students at colleges and universities in the United States has increased continually for the fifth year." }
   },
   "chongci-07": {
     "1": { "answer": "D", "explanation": "文章建议避免用 yes/no 回答的封闭式问题，D“Do you like reading science fiction?”正是封闭式问题。", "evidence": "avoid asking closed questions that can be answered with yes or no" },
     "2": { "answer": "A", "explanation": "mind drift 指听人说话时走神、想别的事情，A 正确。", "evidence": "thinking about other things while listening to someone" },
     "3": { "answer": "D", "explanation": "Step 4 说与对方互动、面对面交流，是为了实现良好的沟通（good communication）。", "evidence": "Good communication is when you really engage." },
-    "4": { "answer": "A", "explanation": "文章给出四个改善沟通的技巧：开放问题、积极倾听、创造专注空间、投入互动，主题是 communication skills。", "evidence": "" }
+    "4": { "answer": "A", "explanation": "文章给出四个改善沟通的技巧：开放问题、积极倾听、创造专注空间、投入互动，主题是 communication skills。", "evidence": "For a conversation to flow well, it’s important to ask open questions" }
   },
   "chongci-08": {
     "1": { "answer": "A", "explanation": "作者说软饮料“completely lack nutritional value”，不值得花时间，即几乎没有价值。", "evidence": "Given their complete lack of nutritional value, soft drinks aren’t worth your time." },

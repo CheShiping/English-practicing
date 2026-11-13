@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T08:52:54.702Z",
+  "generatedAt": "2026-11-13T08:59:48.684Z",
   "categories": [
     {
       "id": "health",
@@ -167,7 +167,7 @@
           ],
           "answer": "D",
           "explanation": "文章只讨论了睡眠层次、REM 和入睡方法，没有给出成年人平均需要多少小时睡眠。",
-          "evidence": ""
+          "evidence": "There are four levels of sleep, each being a little deeper than the one before."
         }
       ],
       "wordCount": 194,
@@ -385,7 +385,7 @@
           ],
           "answer": "C",
           "explanation": "文章用睡眠阶段、百分比和遗传概率解释梦游，属于科普说明文，最可能出自科学类书籍。",
-          "evidence": ""
+          "evidence": "Up to 7% of 5- to 12-year-olds sleepwalk, while only about 2% of grown-ups sleepwalk."
         }
       ],
       "wordCount": 168,
@@ -951,7 +951,7 @@
           ],
           "answer": "A",
           "explanation": "全文对比美国和英国的医疗服务体系，最佳标题是 Health Care in the United States and Britain。",
-          "evidence": ""
+          "evidence": "Unlike Britain, the United States does not have a national health care service."
         }
       ],
       "wordCount": 180,
@@ -1369,7 +1369,7 @@
           ],
           "answer": "D",
           "explanation": "全文介绍情绪性进食的问题，并给出具体应对方法：找压力源、延迟进食、求助医生，目的是指导读者应对。",
-          "evidence": ""
+          "evidence": "You can get back in control of your emotional eating."
         },
         {
           "num": 5,
@@ -1382,7 +1382,7 @@
           ],
           "answer": "C",
           "explanation": "文章面向大众，语言通俗，讲健康与心理，最可能出自科普或健康杂志。",
-          "evidence": ""
+          "evidence": "Make a list of what is stressing you, and make a plan to take control of the situation"
         }
       ],
       "wordCount": 289,
@@ -1617,7 +1617,7 @@
           ],
           "answer": "C",
           "explanation": "文章以科普方式介绍自然界的数学规律和数学在文明、航天中的应用，最可能出自科学杂志。",
-          "evidence": ""
+          "evidence": "the world of nature is built with mathematical exactness according to refined and powerful laws"
         }
       ],
       "wordCount": 215,
@@ -1982,7 +1982,7 @@
           ],
           "answer": "D",
           "explanation": "全文围绕植物在压力下发出的声频（sound frequencies）及研究意义展开，最佳标题是 Sound Frequencies of Plants。",
-          "evidence": ""
+          "evidence": "plants have been recorded making airborne sounds when stressed"
         },
         {
           "num": 5,
@@ -2902,7 +2902,7 @@
           ],
           "answer": "C",
           "explanation": "全文围绕“智力由什么决定”展开，先天、环境、教育都是围绕 intelligence 这个中心话题的论据，因此最佳标题是 Intelligence。",
-          "evidence": ""
+          "evidence": "Are some people born clever and others born stupid?"
         }
       ],
       "wordCount": 308,
@@ -3135,7 +3135,7 @@
           ],
           "answer": "B",
           "explanation": "文章从“人脸独特”谈到“人格复杂但可以用语言描述”，核心是解释为什么我们能够描述和区分人；不是讲如何识别人或人格的重要性。",
-          "evidence": ""
+          "evidence": "describing someone’s personality in words is somewhat easier than describing his face"
         }
       ],
       "wordCount": 294,
@@ -3513,7 +3513,7 @@
           ],
           "answer": "A",
           "explanation": "文章给出四个改善沟通的技巧：开放问题、积极倾听、创造专注空间、投入互动，主题是 communication skills。",
-          "evidence": ""
+          "evidence": "For a conversation to flow well, it’s important to ask open questions"
         }
       ],
       "wordCount": 234,
@@ -5091,7 +5091,7 @@
           ],
           "answer": "A",
           "explanation": "全文围绕继续教育课程（继续学习）、其目的、内容和提供方式展开，最佳标题是 Continuing Education Classes。",
-          "evidence": ""
+          "evidence": "Continuing education gives these adults the opportunity to increase their knowledge about their own field"
         }
       ],
       "wordCount": 232,
@@ -5206,7 +5206,7 @@
           ],
           "answer": "D",
           "explanation": "文章介绍成功语言学习者的几种技巧：独立、主动、有目的，目的是教给读者有用的学习方法。",
-          "evidence": ""
+          "evidence": "we may discover a few techniques which make language learning easier for them"
         }
       ],
       "wordCount": 216,
@@ -5948,7 +5948,7 @@
           ],
           "answer": "C",
           "explanation": "全文介绍美国国际学生数量、来源国、就读院校和热门专业的新变化，最佳标题是 New Trends。",
-          "evidence": ""
+          "evidence": "The number of international students at colleges and universities in the United States has increased continually for the fifth year."
         }
       ],
       "wordCount": 250,
@@ -6835,7 +6835,7 @@
           ],
           "answer": "A",
           "explanation": "全文给刚参加工作的年轻人提供如何适应职场、学习良好工作习惯的建议，属于职业指导。",
-          "evidence": ""
+          "evidence": "Perhaps the best way to learn how to behave in the working world is to identify a worker you admire"
         },
         {
           "num": 5,
@@ -7067,7 +7067,7 @@
           ],
           "answer": "D",
           "explanation": "全文逐条讲如何写求职信：内容、个人信息、突出优势、语言表达，最佳标题是 How to Write a Letter of Application。",
-          "evidence": ""
+          "evidence": "In your letter of application, aim to say just enough to introduce yourself."
         }
       ],
       "wordCount": 222,
@@ -8426,7 +8426,7 @@
           ],
           "answer": "D",
           "explanation": "全文对比男人和女人买衣服时的不同目的、方式和态度，最佳概括是男女购物的差异。",
-          "evidence": ""
+          "evidence": "Shopping for clothes is not the same experience for a man as it is for a woman."
         }
       ],
       "wordCount": 198,
@@ -9135,7 +9135,7 @@
           ],
           "answer": "C",
           "explanation": "文章报道上海首座森林图书馆开放，引用读者和工作人员采访，最可能出自报纸。",
-          "evidence": ""
+          "evidence": "The first forest library in Shanghai recently opened to the public."
         }
       ],
       "wordCount": 226,
@@ -9574,7 +9574,7 @@
           ],
           "answer": "B",
           "explanation": "全文讲行李的查找、重量限制、超重付费、标签填写等处理办法，最全面的概括是 the handling of your luggage。",
-          "evidence": ""
+          "evidence": "Each suitcase, bag or package must be clearly labeled with your name and destination."
         }
       ],
       "wordCount": 225,
@@ -10506,7 +10506,7 @@
           ],
           "answer": "D",
           "explanation": "冬季奥运会项目是冰雪运动，四个选项中只有滑冰（skating）属于冬季项目。",
-          "evidence": ""
+          "evidence": "Different kinds of sports were drawn on these small stamps."
         }
       ],
       "wordCount": 195,
@@ -12225,7 +12225,7 @@
           ],
           "answer": "C",
           "explanation": "作者不断用墙、稻草人、陶罐、造船等办法解决生存问题，体现勇气与智慧；A 与“failed”相反，B 与“twenty years”不符，D 是原文直述而非推断。",
-          "evidence": ""
+          "evidence": "I was still determined to have a boat."
         }
       ],
       "wordCount": 337,
@@ -14043,7 +14043,7 @@
           ],
           "answer": "C",
           "explanation": "文章用六条规则告诉读者使用高压锅时该做什么、不该做什么，属于说明操作方法的指导性文字，因此写作目的是 instruct（指导）。",
-          "evidence": ""
+          "evidence": "When you are cooking with a pressure cooker, you should learn a few common sense rules"
         }
       ],
       "wordCount": 171,

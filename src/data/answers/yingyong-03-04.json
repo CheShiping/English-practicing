@@ -50,7 +50,7 @@
     "5": {
       "answer": "C",
       "explanation": "文章用六条规则告诉读者使用高压锅时该做什么、不该做什么，属于说明操作方法的指导性文字，因此写作目的是 instruct（指导）。",
-      "evidence": ""
+      "evidence": "When you are cooking with a pressure cooker, you should learn a few common sense rules"
     }
   }
 }

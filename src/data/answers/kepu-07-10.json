@@ -50,7 +50,7 @@
     "5": {
       "answer": "B",
       "explanation": "文章从“人脸独特”谈到“人格复杂但可以用语言描述”，核心是解释为什么我们能够描述和区分人；不是讲如何识别人或人格的重要性。",
-      "evidence": ""
+      "evidence": "describing someone’s personality in words is somewhat easier than describing his face"
     }
   },
   "kepu-09": {
@@ -77,7 +77,7 @@
     "5": {
       "answer": "C",
       "explanation": "文章以科普方式介绍自然界的数学规律和数学在文明、航天中的应用，最可能出自科学杂志。",
-      "evidence": ""
+      "evidence": "the world of nature is built with mathematical exactness according to refined and powerful laws"
     }
   },
   "kepu-10": {

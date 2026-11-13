@@ -10,10 +10,10 @@
 - **范围**：冲刺训练2 拆分产生的 `kepu-11` ~ `kepu-17`、`shehui-13` ~ `shehui-21`、`jingli-12`，共 17 篇 / 89 段 / 84 题
 - **译文**：新增 `src/data/translations-part15.json`，按 block 索引逐段对应，含列表型文章的 5 条建议
 - **解析**：新增 `src/data/answers/legacy-11-21.json`，`answer` 沿用源文件（校验 84 题答案与原文完全一致），补写中文 `explanation` 与英文 `evidence`
-- **覆盖结果**：全站 120 篇全部有译文、582 个正文块全部有 `translation`、588 题全部有 `answer` 与 `explanation`
-- **证据**：`npm run content` 120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 120 篇，无警告；校验缺失块 0、缺失解析 0；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
-- **遗留**：21 道旧题（kepu-01/03/05/08/09、shehui-01/02/04/06/08/09/10、chongci-06/07/10/11/12、lishi-02、jingli-04、yingyong-04）有解析但无 `evidence`，界面按条件渲染，不影响展示
-- **本次改动文件**：`src/data/translations-part15.json`（新增）、`src/data/answers/legacy-11-21.json`（新增）、`feature_list.json`
+- **覆盖结果**：全站 120 篇全部有译文、582 个正文块全部有 `translation`、588 题全部有 `answer` / `explanation` / `evidence`
+- **原文依据补齐**：21 道旧题（kepu-01/03/05/08/09、shehui-01/02/04/06/08/09/10、chongci-06/07/10/11/12、lishi-02、jingli-04、yingyong-04）按各文件原有排版逐行插入 `evidence`，10 个文件合计 21 行 diff，无整体重排
+- **证据**：`npm run content` 120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 120 篇，无警告；校验缺失块 0、缺失解析 0、缺失依据 0，21 条新依据均可在正文定位；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **本次改动文件**：`src/data/translations-part15.json`（新增）、`src/data/answers/legacy-11-21.json`（新增）、`src/data/answers/chongci-01-08.json`、`chongci-09-13.json`、`lishi-shehui-01-02.json`、`shehui-03-06.json`、`shehui-07-10.json`、`jingli-04-06.json`、`kepu-01-03.json`、`kepu-04-06.json`、`kepu-07-10.json`、`yingyong-03-04.json`、`feature_list.json`
 
 ## 2026-11-13 新增 40 篇内容收尾：答案、解析、译文与元数据（feat-018）
 
@@ -116,13 +116,11 @@
 
 ### 下一步
 
-1. 可选：为 21 道旧题补 `evidence`，让 588 题在「原文依据」上完全一致
-2. 更新 README 的内容统计（120 篇 / 588 题 / 100% 译文）
-3. 用户确认后检查一次阅读器与文库的整体展示
+1. 更新 README 的内容统计（120 篇 / 588 题 / 全量译文与解析）
+2. 用户确认后检查一次阅读器与文库的整体展示
 
 ## 阻塞 / 风险
 
-- [ ] 21 道旧题有解析但无 `evidence`；`QuestionPanel` 按 `q.evidence &&` 条件渲染，不会出现空块
 - [ ] Windows 构建缓存：`npx next build` 可能因缺失 `.next/static/<id>/_ssgManifest.js` 失败；先删除 `.next` 并预建 `.next\static` 再构建
 - [ ] 生成文件噪声：`src/data/articles.generated.json`、`public/data/practice.json`、`src/data/grammar.generated.json` 含 `generatedAt` 时间戳，每次构建都会产生 diff
 - [ ] 无 ESLint 配置：`npm run lint` 会进入交互式初始化，不能作为验证门槛

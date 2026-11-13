@@ -11,7 +11,7 @@
     "2": { "answer": "A", "explanation": "第二段说继续教育让成年人增加本领域知识、学习新领域，并提升旧技能或学习新技能。", "evidence": "increase their knowledge ... improve their old skills or to learn new ones" },
     "3": { "answer": "C", "explanation": "第三段说如果学到更多，他们“can get a better job or earn more money”，因此 C 有原文依据；A、B、D 都过于绝对或与原文不符。", "evidence": "they can get a better job or earn more money" },
     "4": { "answer": "D", "explanation": "最后一段说几乎所有社区学院或公立学校系统都有继续教育项目，因此通常由社区学院和公立学校提供。", "evidence": "Almost any community college or public school system has a continuing education program" },
-    "5": { "answer": "A", "explanation": "全文围绕继续教育课程（继续学习）、其目的、内容和提供方式展开，最佳标题是 Continuing Education Classes。", "evidence": "" }
+    "5": { "answer": "A", "explanation": "全文围绕继续教育课程（继续学习）、其目的、内容和提供方式展开，最佳标题是 Continuing Education Classes。", "evidence": "Continuing education gives these adults the opportunity to increase their knowledge about their own field" }
   },
   "shehui-05": {
     "1": { "answer": "A", "explanation": "第一段指出全球残疾人估计超过 4.5 亿，印度一国就超过加拿大总人口的两倍，核心是残疾人数量很多。", "evidence": "estimates suggest the number is over 450 million" },
@@ -25,6 +25,6 @@
     "2": { "answer": "D", "explanation": "第三段说成功学习者“do not wait for a chance ... they look for such a chance”，即主动寻找使用语言的机会。", "evidence": "they look for such a chance" },
     "3": { "answer": "C", "explanation": "第二段说他们是“good guessers who look for clues and form their own conclusions”，遇到生词会尝试猜测。", "evidence": "They are good guessers who look for clues" },
     "4": { "answer": "B", "explanation": "第四段明确说“successful language learners are learners with a purpose”，B 正确；A、C、D 文中没有依据。", "evidence": "learners with a purpose" },
-    "5": { "answer": "D", "explanation": "文章介绍成功语言学习者的几种技巧：独立、主动、有目的，目的是教给读者有用的学习方法。", "evidence": "" }
+    "5": { "answer": "D", "explanation": "文章介绍成功语言学习者的几种技巧：独立、主动、有目的，目的是教给读者有用的学习方法。", "evidence": "we may discover a few techniques which make language learning easier for them" }
   }
 }

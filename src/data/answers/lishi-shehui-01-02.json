@@ -11,13 +11,13 @@
     "2": { "answer": "B", "explanation": "第一段说 1932 年第三届白色奥运会的邮票发行后，“From then on, publishing stamps ... became a rule”，即从第三届之后成为惯例。", "evidence": "From then on, publishing stamps during the White Olympics became a rule." },
     "3": { "answer": "C", "explanation": "冬季奥运会每四年举办一次，这是常识；文中也提到第三届（1932）与第四届（1936）相隔四年。", "evidence": "the 3rd White Olympics ... 1932 ... the 4th Winter Olympic Games ... 1936" },
     "4": { "answer": "C", "explanation": "第三段说主办国和非主办国都发行邮票纪念奥运会，中国也在 1980 年发行了四枚，因此所有国家都可以发行。", "evidence": "the host countries as well as the non-host countries published stamps" },
-    "5": { "answer": "D", "explanation": "冬季奥运会项目是冰雪运动，四个选项中只有滑冰（skating）属于冬季项目。", "evidence": "" }
+    "5": { "answer": "D", "explanation": "冬季奥运会项目是冰雪运动，四个选项中只有滑冰（skating）属于冬季项目。", "evidence": "Different kinds of sports were drawn on these small stamps." }
   },
   "shehui-01": {
     "1": { "answer": "B", "explanation": "第一段说年轻人最终意识到“university classes can’t be the only preparation” for the working world，即大学课堂所学不足以应对新生活。", "evidence": "university classes can’t be the only preparation" },
     "2": { "answer": "A", "explanation": "arise 在句中表示“出现、产生”，与 come into being 同义；bring about/cause 是“使发生”，方向相反。", "evidence": "all of the different situations that arise in the working world" },
     "3": { "answer": "B", "explanation": "第二段说最好的办法是找一个你敬佩的同事，观察他在危机和日常情境中的行为；不是简单跟随或交朋友。", "evidence": "identify a worker you admire and observe his behavior" },
-    "4": { "answer": "A", "explanation": "全文给刚参加工作的年轻人提供如何适应职场、学习良好工作习惯的建议，属于职业指导。", "evidence": "" },
+    "4": { "answer": "A", "explanation": "全文给刚参加工作的年轻人提供如何适应职场、学习良好工作习惯的建议，属于职业指导。", "evidence": "Perhaps the best way to learn how to behave in the working world is to identify a worker you admire" },
     "5": { "answer": "C", "explanation": "文章核心是观察并学习一个榜样（model）的行为，因此最佳标题是 Learn from a Model。", "evidence": "By watching and learning from a model" }
   },
   "shehui-02": {
@@ -25,6 +25,6 @@
     "2": { "answer": "A", "explanation": "第二段建议向航空公司询问行李额度（luggage allowances），即先确认行李限制。", "evidence": "Inquire about luggage allowances from the airline" },
     "3": { "answer": "B", "explanation": "第二段说超重行李必须额外付费，且 CIDA 不予补偿，因此费用由乘客自己承担。", "evidence": "you must pay extra for excess luggage" },
     "4": { "answer": "C", "explanation": "最后一段说如果什么信息都没有，“you can use CIDA’s address”，即加拿大国际开发署的地址。", "evidence": "you can use CIDA’s address" },
-    "5": { "answer": "B", "explanation": "全文讲行李的查找、重量限制、超重付费、标签填写等处理办法，最全面的概括是 the handling of your luggage。", "evidence": "" }
+    "5": { "answer": "B", "explanation": "全文讲行李的查找、重量限制、超重付费、标签填写等处理办法，最全面的概括是 the handling of your luggage。", "evidence": "Each suitcase, bag or package must be clearly labeled with your name and destination." }
   }
 }

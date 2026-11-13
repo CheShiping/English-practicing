@@ -23,7 +23,7 @@
     "5": {
       "answer": "D",
       "explanation": "文章只讨论了睡眠层次、REM 和入睡方法，没有给出成年人平均需要多少小时睡眠。",
-      "evidence": ""
+      "evidence": "There are four levels of sleep, each being a little deeper than the one before."
     }
   },
   "kepu-02": {
@@ -77,7 +77,7 @@
     "5": {
       "answer": "C",
       "explanation": "全文围绕“智力由什么决定”展开，先天、环境、教育都是围绕 intelligence 这个中心话题的论据，因此最佳标题是 Intelligence。",
-      "evidence": ""
+      "evidence": "Are some people born clever and others born stupid?"
     }
   }
 }

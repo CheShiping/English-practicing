@@ -10,20 +10,20 @@
     "1": { "answer": "B", "explanation": "第三段说求职信的目的是让老板注意到“why you rather than any of the other applicants should be chosen”，即说明你为什么最适合。", "evidence": "why you rather than any of the other applicants should be chosen" },
     "2": { "answer": "C", "explanation": "第二段开头说求职信应“say just enough to introduce yourself”，即用简洁的话提供足够信息。", "evidence": "aim to say just enough to introduce yourself" },
     "3": { "answer": "A", "explanation": "referees 是为你写推荐信、证明你品格和能力的人；文中说应选择“know enough about your character and ability”的人。", "evidence": "people who know enough about your character and ability" },
-    "4": { "answer": "D", "explanation": "全文逐条讲如何写求职信：内容、个人信息、突出优势、语言表达，最佳标题是 How to Write a Letter of Application。", "evidence": "" }
+    "4": { "answer": "D", "explanation": "全文逐条讲如何写求职信：内容、个人信息、突出优势、语言表达，最佳标题是 How to Write a Letter of Application。", "evidence": "In your letter of application, aim to say just enough to introduce yourself." }
   },
   "shehui-09": {
     "1": { "answer": "D", "explanation": "第一段说政府帮助支付“people who are on low incomes and for old people”的部分医疗费用，即穷人和老人。", "evidence": "people who are on low incomes and for old people" },
     "2": { "answer": "B", "explanation": "第一段说大多数美国人购买保险“to help pay for medical care”，即支付自己的医疗费用。", "evidence": "most people buy insurance to help pay for medical care" },
     "3": { "answer": "B", "explanation": "第二段说在英国人们生病时“usually go to a family doctor first”，先看家庭医生。", "evidence": "they usually go to a family doctor first" },
     "4": { "answer": "C", "explanation": "第三段说美国医院必须治疗所有重病患者，“even if they do not have medical insurance”，即没有保险也能得到治疗。", "evidence": "hospitals must treat all seriously ill patients, even if they do not have medical insurance" },
-    "5": { "answer": "A", "explanation": "全文对比美国和英国的医疗服务体系，最佳标题是 Health Care in the United States and Britain。", "evidence": "" }
+    "5": { "answer": "A", "explanation": "全文对比美国和英国的医疗服务体系，最佳标题是 Health Care in the United States and Britain。", "evidence": "Unlike Britain, the United States does not have a national health care service." }
   },
   "shehui-10": {
     "1": { "answer": "B", "explanation": "第一段说男人购物是因为“he needs something”，目的明确，因此基于需要（need）。", "evidence": "A man goes shopping because he needs something." },
     "2": { "answer": "A", "explanation": "第一段说男人的目的“clear and decided in advance”，他知道自己要什么，直接进店询问，即事先有计划。", "evidence": "His purpose is clear and decided in advance." },
     "3": { "answer": "C", "explanation": "第一段说男人把价格放在“the second place for consideration”，即不太在意价格；C 最符合。", "evidence": "the price is the second place for consideration" },
     "4": { "answer": "D", "explanation": "第二段说女人购物常常只是“having a look round”，即使什么都没买也会满意，因此 D 正确。", "evidence": "she is only “having a look round”" },
-    "5": { "answer": "D", "explanation": "全文对比男人和女人买衣服时的不同目的、方式和态度，最佳概括是男女购物的差异。", "evidence": "" }
+    "5": { "answer": "D", "explanation": "全文对比男人和女人买衣服时的不同目的、方式和态度，最佳概括是男女购物的差异。", "evidence": "Shopping for clothes is not the same experience for a man as it is for a woman." }
   }
 }
