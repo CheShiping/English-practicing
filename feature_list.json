@@ -161,6 +161,14 @@
       "dependencies": ["feat-019", "feat-005"],
       "status": "done",
       "evidence": "2026-11-13：article-meta.ts 从 91 条补到 120 条，校验 missing 0 / extra 0，补齐 kepu-11~17、shehui-13~21、lishi-03~12、jingli-12、yingyong-03/04。用本地静态产物 + headless Chromium 重拍：1440x900 五张（shot-home / shot-library / shot-reader / shot-practice / shot-practice-resumes）、390x844 一张（shot-practice-mobile）；练习图按真实答题造出绿对 / 红错 / 金框标记三种题号状态，并新增「未完成的练习（1）」存档面板图。README 界面速览换图、补存档图与说明。文库截图第二排已由 Passage 5 / Passage 6 变为 Should Obesity Be Called a Disease? / The Harm of Second-hand Smoke 及中文摘要；首页统计由 32,558 更新为 32,568。npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+    },
+    {
+      "id": "feat-021",
+      "name": "同步六大词性语法知识点并支持压平导出",
+      "description": "用户重新导出 article/语法框架/六大词性.md（212 行 → 1 行、8532 → 13763 字，新增名词复数规则、人称代词表格、数词/冠词/情态动词补充）。新增对笔记软件「单行导出」的结构化还原（标题、表格、段落），并让渲染器识别 rgb() 颜色标注；源 md 保持用户原样，文字零改动。",
+      "dependencies": ["feat-013"],
+      "status": "done",
+      "evidence": "2026-11-14：scripts/build-grammar.mjs 增加 restoreFlattenedMarkdown（仅单个超长行且含 ≥2 个内联标题或内联表格时启用；标签栈避免拆断 <font>/<u>；表格 10 行连续拼接；末尾 stripWhitespace 保真校验，不一致即中止）。src/lib/grammar-md.ts 的 fontToSpan 支持 #hex 与 rgb()，#262626 / rgb(38,38,38) / rgb(15,17,21) / 纯白视为中性色跟随主题，并跳过只剩空标记的段落。生成结果：六大词性 224 行 / 13763 字，6 个考点标题、1 张 10 行表格、27 处彩色标注、0 空段落；源 md ↔ 生成内容 ↔ 渲染可见文字三方一致；另 4 个分区行数与内容完全未变（97/152/234/56）。headless Chrome 实际渲染 #/grammar：6 个标题、新增口诀「妻子持刀去宰狼」与「情态动词加have done表虚拟语气」、6 张表格、31 处彩色 span 均在 DOM 中，1440 宽截图确认标题分层、分段、下划线与表格正常无空块。npm run content（120 篇 / 588 题 / 32568 词 + 2774 单选 + 语法 5 分区）、npx tsc --noEmit exit 0、npm run build exit 0（静态导出 2/2）；纯时间戳变动的 practice.json / articles.generated.json 已还原，未纳入提交"
     }
   ]
 }

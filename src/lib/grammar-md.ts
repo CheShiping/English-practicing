@@ -1,18 +1,36 @@
 // 把 article/语法框架 的原始 Markdown 转成可渲染 HTML。
 // 只做排版转换，不改动任何文字：标题、段落、列表、表格、:::info、粗体、
-// 下划线、<font color> 高亮与 <br/> 都按原文保留。
+// 下划线、<font> 的 #hex / rgb() 高亮与 <br/> 都按原文保留；默认正文色跟随站点主题。
 
 function escapeHtml(text: string): string {
   return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+// 笔记工具既用 #hex 也用 rgb() 写颜色，取色时避开 background-color 里的 "color:"。
+function readColor(tag: string, property: 'color' | 'background-color'): string | undefined {
+  const pattern = new RegExp(
+    `(?:^|[;"'\\s])${property}\\s*:\\s*(#[0-9a-fA-F]{3,8}|rgb\\([^)]*\\))`,
+    'i',
+  );
+  return pattern.exec(tag)?.[1];
+}
+
+// 笔记工具的默认正文色（#262626 / rgb(38,38,38) / rgb(15,17,21)）与纯白
+// 都不写死，跟随站点主题，否则夜间模式下黑字会看不见。
+function isNeutralColor(value: string): boolean {
+  if (/^#262626$/i.test(value) || /^#fff(?:fff)?$/i.test(value)) return true;
+  const rgb = /^rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$/i.exec(value);
+  if (!rgb) return false;
+  const [r, g, b] = [Number(rgb[1]), Number(rgb[2]), Number(rgb[3])];
+  return (r < 60 && g < 60 && b < 60) || (r > 235 && g > 235 && b > 235);
+}
+
 function fontToSpan(tag: string): string {
-  const color = /color:\s*(#[0-9a-fA-F]{3,8})/.exec(tag)?.[1];
-  const background = /background-color:\s*(#[0-9a-fA-F]{3,8})/.exec(tag)?.[1];
+  const color = readColor(tag, 'color');
+  const background = readColor(tag, 'background-color');
   const styles: string[] = [];
-  // #262626 是笔记工具的默认正文色，去掉后跟随站点主题。
-  if (color && !/^#262626$/i.test(color)) styles.push(`color:${color}`);
-  if (background && !/^#ffffff$/i.test(background)) styles.push(`background-color:${background}`);
+  if (color && !isNeutralColor(color)) styles.push(`color:${color}`);
+  if (background && !isNeutralColor(background)) styles.push(`background-color:${background}`);
   return styles.length ? `<span style="${styles.join(';')}">` : '<span>';
 }
 
@@ -159,7 +177,9 @@ export function grammarMarkdownToHtml(markdown: string): string {
       paragraph.push(lines[i].trim());
       i += 1;
     }
-    html.push(`<p>${paragraph.map(inline).join('<br/>')}</p>`);
+    const body = paragraph.map(inline).join('<br/>');
+    // 只剩空标记（如 "****"）的段落不渲染，避免页面出现空白块。
+    if (body.replace(/<[^>]*>/g, '').trim()) html.push(`<p>${body}</p>`);
   }
 
   return html.join('\n');
