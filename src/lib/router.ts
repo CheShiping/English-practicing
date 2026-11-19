@@ -7,6 +7,7 @@ export type Route =
   | { name: 'library'; catId?: string }
   | { name: 'reader'; id: string }
   | { name: 'practice'; tab?: 'wrong' | 'marked' }
+  | { name: 'cloze'; id?: string }
   | { name: 'grammar' }
   | { name: 'vocab' }
   | { name: 'stats' }
@@ -29,6 +30,8 @@ export function parseRoute(hash: string): Route {
         name: 'practice',
         tab: rest[0] === 'wrong' ? 'wrong' : rest[0] === 'marked' ? 'marked' : undefined,
       };
+    case 'cloze':
+      return { name: 'cloze', id: rest[0] };
     case 'grammar':
       return { name: 'grammar' };
     case 'vocab':

@@ -13,6 +13,17 @@
 - **证据**：headless Chrome 移动仿真 360×732：选句工具条 bottom=72px、top=625px，点色块成功落 1 个 `.ann`；选单词工具条 top=270px 且无 `sel-toolbar-sentence`；`contextmenu` defaultPrevented=true。桌面 1280 宽选句工具条 top=326px、右键 defaultPrevented=false；练习页题干条 top=169px；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
 - **本次改动文件**：`src/components/reader/SelectionTools.tsx`、`src/components/reader/ArticleBody.tsx`、`app/reader.css`、`feature_list.json`、`progress.md`
 
+## 2026-11-19 网站 3.0：完型填空上线（feat-023）
+
+- **题目提取**：新增 `scripts/extract-cloze-pdf.py`，把 `article/完型/` 的 3 份 PDF 还原成 markdown——按「第（N）篇」切分、把散落的数字行/`__N__`/`N ______` 统一成 `___N___`、合并被换行拆断的句子与 `life-\nsaving` 这类连字符、按出现顺序把 A-D 选项对回题号（PDF 里有编号重复与错位）。40 篇中 35 篇有完整选项，第 22/23/37/38/40 篇 PDF 本身没有选项，未收录；3 处原文缺空格/编号笔误（第 3 篇缺第 3 空、第 15 篇把 11 写成 2、第 20 篇漏下划线）在脚本里定点修补
+- **题库规模**：`完形填空_题目提取.md` 基础 30 篇 + PDF 提取的进阶 35 篇 = **65 篇 / 1065 空**；每空都补了 A-D 答案与中文解析，解析写成 `src/data/answers/cloze-*.json`（11 个文件），中文小标题写进 `src/data/cloze-meta.ts`
+- **内容管线**：新增 `scripts/build-cloze.mjs`，读两份 md 与 `answers/cloze*.json`，重排不连续题号（第 18 篇原文 21-35 → 1-15）、把 PDF 里的 `/` 选项显示成「（不填）」、自动从正文截取含答案的「原句」，生成 `public/data/cloze.json`；`npm run content` 已串上这一步
+- **前端**：新增 `#/cloze` 题库页与 `#/cloze/:id` 作答页——正文里空格做成编号胶囊（点胶囊跳到小题）、逐空 2×2 选项、选中即判定并显示中文解析与原句、答题卡弹层（绿对/红错/金框当前）、交卷结果页只列错题、可重做本篇；作答实时写 `moread.cloze.v1`，重新打开同一篇带着上次答案继续
+- **入口与版本**：Header 与移动端底栏新增「完型」（移动端 6 个 tab），首页 hero 下新增 3.0 横幅，`package.json` 升到 `3.0.0`
+- **一个交互坑**：点卡片后先 `setPaper` 再改 hash，路由副作用会用旧 `passageId` 把页面打回题库；改成用 `enteredRef` 记住已进入的篇目、路由副作用只负责「直链进入」与「回题库」两种情况
+- **证据**：`npm run content` 完型 65 篇 / 1065 空 / 含解析 1065 空、无警告；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）；headless Chrome 实测题库 65 张卡片、chips「全部 65 篇 / 1065 空 / 基础 30 篇 / 450 空 / 进阶 35 篇 / 615 空」；b01 有 10 个内联空格与 10 道小题，选 D 即时判对、胶囊变绿、`moread.cloze.v1` 写入、刷新后恢复；答满 10 空出现「查看结果」→ 4/10 · 40% + 6 条错题回顾，题库卡片变「已完成 · 40%」；直链 `#/cloze/j17` 进入 20 空篇、答题卡 20 格、点第 5 格跳第 5 空；交卷显示「未答 10 空」，重做后已答标记清零；390px 视口题库页与答题页 `scrollWidth === clientWidth`，底部 6 个 tab
+- **本次改动文件**：`scripts/extract-cloze-pdf.py`（新增）、`scripts/build-cloze.mjs`（新增）、`article/完型/完型填空_PDF提取.md`（生成）、`article/完型/完形填空_题目提取.md`（补 1 处缺失空格）、`src/data/answers/cloze-*.json`（新增 11 个）、`src/data/cloze-meta.ts`（新增）、`src/lib/cloze.ts`（新增）、`src/lib/types.ts`、`src/lib/router.ts`、`src/lib/storage.ts`、`src/components/pages/ClozePage.tsx`（新增）、`src/components/AppShell.tsx`、`src/components/Header.tsx`、`src/components/MobileTabBar.tsx`、`src/components/pages/HomePage.tsx`、`app/pages.css`、`app/globals.css`、`package.json`、`README.md`、`AGENTS.md`、`feature_list.json`
+
 ## 2026-11-19 五大语法分区全面更新与内容目录重组（feat-022）
 
 - **用户更新**：5 个语法框架 md 全部重写，内容量约 2.4 倍——两个态 10239、三大从句 7494、四个重点 23321、五大句型 11735、六大词性 15951 字符（合计约 6.9 万字，此前约 2.9 万字）；新增主谓一致、虚拟语气、非谓语、倒装、反义疑问、感叹、强调、祈使等大量内容，`六大词性` 新增「介词」「连词」两个考点
@@ -158,6 +169,7 @@
 - [x] 视觉资产：补齐剩余 29 条 `ARTICLE_META`，重拍 6 张 README 截图并新增练习存档图（feat-020）
 - [x] 语法知识点同步：六大词性更新上线，内容管线支持笔记软件压平导出与 `rgb()` 颜色（feat-021）
 - [x] 语法框架全面更新：五大分区约 6.9 万字上线，分割线渲染与题型分目录的内容管线适配（feat-022）
+- [x] 完型填空：65 篇 / 1065 空题库、内联空格作答页、答题卡与结果页，3.0 上线（feat-023）
 - [x] 移动端划句标记：整句选区工具条避让浏览器复制气泡，单词选区与桌面端保持原位（feat-023）
 
 ### 进行中
@@ -168,7 +180,8 @@
 
 1. 用户确认后检查一次阅读器与文库的整体展示
 2. 若其他语法分区也从笔记软件重新导出，先跑 `npm run content`，确认日志出现「已还原压平导出」且无保真校验报错
-3. 完型题源已放进 `article/完型/`（3 份 PDF + 提取的 md），尚未接入功能；若要做完型练习，需要新增题型页与对应内容管线
+3. 完型第 22/23/37/38/40 篇 PDF 内没有选项，未收录；若用户补上选项，重跑 `python scripts/extract-cloze-pdf.py` 再补 `cloze-*.json` 即可
+4. 完型的错题与标记尚未并入单选的错题本/标记本，目前按篇独立保存；如需统一，可把完型空号也写进 `practiceWrong`
 
 ## 阻塞 / 风险
 

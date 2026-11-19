@@ -1,14 +1,14 @@
 {
   "name": "moread-english",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "墨读英语 · 沉浸式英语阅读与精读训练",
+  "description": "墨读英语 · 沉浸式英语阅读、单选与完型训练",
   "scripts": {
     "dev": "next dev",
     "build": "npm run content && next build",
     "build:static": "npm run content && next build",
     "start": "npx serve out",
-    "content": "node scripts/build-content.mjs && node scripts/build-practice.mjs && node scripts/build-grammar.mjs",
+    "content": "node scripts/build-content.mjs && node scripts/build-practice.mjs && node scripts/build-grammar.mjs && node scripts/build-cloze.mjs",
     "dict:split": "node scripts/split-dict.mjs && node scripts/build-core-dict.mjs",
     "lint": "next lint"
   },

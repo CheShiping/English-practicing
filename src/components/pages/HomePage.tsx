@@ -127,6 +127,17 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="cloze-banner" aria-label="3.0 新增完型填空">
+        <div>
+          <span className="eyebrow">New in 3.0 · Cloze</span>
+          <h2>完型填空上线：基础 + 进阶两档题库</h2>
+          <p>先通读全文，再逐空选词。每选一空立刻判定对错，并给出中文解析与原句依据。</p>
+        </div>
+        <a className="btn primary" href={hrefFor('/cloze')}>
+          进入完型题库 <ArrowRight size={15} />
+        </a>
+      </section>
+
       <section className="stat-strip" aria-label="学习概览">
         <div className="stat-cell">
           <b>{articles.length}</b>

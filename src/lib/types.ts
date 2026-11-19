@@ -37,6 +37,42 @@ export interface PracticeData {
   questions: PracticeQuestion[];
 }
 
+// ---------- 完型填空 ----------
+
+export interface ClozeBlank {
+  num: number;
+  options: string[];
+  answer: string;
+  note?: string;
+  evidence?: string;
+}
+
+export interface ClozePassage {
+  id: string;
+  no: number;
+  bank: '基础' | '进阶' | string;
+  label: string;
+  title: string;
+  zh: string;
+  blocks: string[];
+  blanks: ClozeBlank[];
+  wordCount: number;
+}
+
+export interface ClozeData {
+  generatedAt: string;
+  total: number;
+  blankTotal: number;
+  banks: { name: string; count: number; blanks: number }[];
+  passages: ClozePassage[];
+}
+
+export interface ClozeRecord {
+  picks: Record<number, string>;
+  updatedAt: number;
+  finishedAt?: number;
+}
+
 export interface PracticeWrongEntry {
   id: string;
   wrongCount: number;

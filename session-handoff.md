@@ -2,16 +2,17 @@
 
 ## 当前目标
 
-- 目标：内容侧、文档与视觉素材已收口；最新完成五大语法分区全面更新与题型分目录的管线适配（feat-022）
-- 当前状态：120 篇 / 588 题全量译文、解析、原文依据与 ARTICLE_META；五个语法分区约 6.9 万字上线（含主谓一致、虚拟语气、非谓语、倒装、介词、连词等）；`article/` 已按 `阅读` / `单选` / `完型` 分目录，内容管线改为递归扫描并跳过非文章目录；构建通过，待提交推送
+- 目标：网站 3.0 已上线——完型填空题库与练习页接入（feat-023）
+- 当前状态：120 篇 / 588 题阅读、2774 道单选、65 篇 / 1065 空完型（每空答案 + 中文解析 + 原句依据）；Header / 移动端 / 首页均有完型入口，版本号 3.0.0；`npm run content`、`npx tsc --noEmit`、`npm run build` 全通过，headless Chrome 实测通过，已提交推送
 - 分支 / 提交：`main`
 
 ## 本次会话已完成
 
-- [x] 语法同步：5 个语法框架 md 的用户更新全部上线（约 2.9 万 → 6.9 万字），`grammar.generated.json` 重新生成
-- [x] 渲染增强：`grammar-md.ts` 支持 `---` / `***` / `___` → `<hr/>`，`pages.css` 补 `.grammar-content hr` 虚线样式
-- [x] 管线适配：`build-content.mjs` 递归扫描 `article/` 并跳过 `语法框架` / `单选` / `完型`；`build-practice.mjs` 单选源支持 `article/单选/` 与顶层双路径，缺失时保留现有 `practice.json`
-- [x] 数据核对：10 个阅读文件与单选源 sha1 与旧文件一致（仅移动），`articles.generated.json` / `practice.json` 除时间戳外零变化
+- [x] 完型提取：新增 `scripts/extract-cloze-pdf.py`，把 3 份 PDF 还原成 `article/完型/完型填空_PDF提取.md`（35 篇，含空格与 A-D 选项；第 22/23/37/38/40 篇 PDF 无选项未收录）
+- [x] 完型题库：基础 30 篇 + 进阶 35 篇 = 65 篇 / 1065 空，逐空补答案与中文解析（`src/data/answers/cloze-*.json` 11 个文件），中文小标题写进 `src/data/cloze-meta.ts`
+- [x] 完型管线：`scripts/build-cloze.mjs` 生成 `public/data/cloze.json`，自动重排不连续题号、处理「（不填）」选项、截取原句依据
+- [x] 完型前端：`#/cloze` 题库页 + `#/cloze/:id` 作答页（内联空格胶囊、2×2 选项、即时判定、答题卡弹层、结果页、重做），进度存 `moread.cloze.v1`
+- [x] 入口与版本：Header「完型」、移动端 6 tab、首页 3.0 横幅、`package.json` 3.0.0
 
 ## 历史会话已完成
 
@@ -40,9 +41,20 @@
 | 截图资产 | headless Chromium | 通过 | 1440×900 五张 + 390×844 一张，引用路径与尺寸逐一核对 |
 | 静态构建 | `npm run build` | 通过 | 静态导出 2/2 |
 | 语法页渲染 | headless Chrome `#/grammar` | 通过 | 5 个分区 / 16 张表格 / 1 条 hr / 1 个 callout / 38 处彩色标注，五分区可见文字与源文逐一一致 |
+| 完型内容 | `npm run content` | 通过 | 65 篇 / 1065 空，含解析 1065 空，无警告 |
+| 完型作答 | headless Chrome `#/cloze` → `#/cloze/b01` | 通过 | 65 张卡片；10 空格 + 10 小题；选 D 即时判对、胶囊变绿、`moread.cloze.v1` 写入、刷新恢复；答满后结果 4/10 · 40% + 6 条错题 |
+| 完型直链 / 答题卡 | headless Chrome `#/cloze/j17` | 通过 | 20 空篇直达；答题卡 20 格，点第 5 格跳到第 5 空；交卷「未答 10 空」；重做后标记清零 |
+| 完型移动端 | headless Chrome 390px | 通过 | 题库/答题页 `scrollWidth === clientWidth`，底部 6 个 tab |
 
 ## 文件变更
 
+- `scripts/extract-cloze-pdf.py`（新增）、`scripts/build-cloze.mjs`（新增）
+- `article/完型/完型填空_PDF提取.md`（生成）、`article/完型/完形填空_题目提取.md`（补 1 处缺失空格）
+- `src/data/answers/cloze-*.json`（新增 11 个）、`src/data/cloze-meta.ts`（新增）
+- `src/lib/cloze.ts`（新增）、`src/components/pages/ClozePage.tsx`（新增）
+- `src/lib/types.ts`、`src/lib/router.ts`、`src/lib/storage.ts`、`src/components/AppShell.tsx`、`src/components/Header.tsx`、`src/components/MobileTabBar.tsx`、`src/components/pages/HomePage.tsx`
+- `app/pages.css`（完型样式）、`app/globals.css`（3.0 横幅）
+- `package.json`（3.0.0 + content 脚本串入完型）
 - `article/语法框架/*.md`（5 个，用户更新）
 - `article/` 目录重组：10 个分类文件移入 `阅读/`，单选源移入 `单选/`，新增 `完型/`（3 份 PDF + 提取的 md）与一份高频词组 PDF
 - `scripts/build-content.mjs`（递归扫描 + 目录跳过）、`scripts/build-practice.mjs`（双路径 + 容错）
@@ -59,6 +71,7 @@
 - 元数据标题风格对齐既有 80 篇：英文标题 + 中文副标题 + 2~3 个标签 + 一句话摘要
 - 语法框架 md 保持笔记软件导出的原样，结构化还原统一放在 `scripts/build-grammar.mjs`：仅检测到「单个超长行 + 多个内联标题或内联表格」时启用，还原后做去空白逐字保真校验；不手改源文件、不手改生成物
 - 内容源按题型分目录：文章管线递归扫描 `article/`，但显式跳过 `语法框架` / `单选` / `完型`；单选源用候选路径并在缺失时保留现有 `practice.json`，避免源文件移动导致部署失败
+- 完型答案按「篇 id → 空号」写入 `src/data/answers/cloze-*.json`，解析写中文、原句由管线自动截取；PDF 提取脚本只做排版还原，缺空格/编号笔误用脚本内 `PATCHES` 定点修补，不手改生成物
 
 ## 阻塞 / 风险
 
@@ -75,5 +88,6 @@
 
 - 例行检查：改动后跑 `npm run content`，确认「含答案 588 题 · 含译文 120 篇」且无警告
 - 语法框架再更新时：看 `npm run content` 日志是否标注「已还原压平导出」、有无保真校验报错，再用 `out/` + headless Chrome 打开 `#/grammar` 复核标题、表格与彩色标注
-- `article/完型/` 已有 3 份完型 PDF 与 `完形填空_题目提取.md`，尚未接入功能；若要做完型练习，需要新增题型页、考点数据与独立内容管线（当前文章管线已显式跳过该目录）
+- 完型第 22/23/37/38/40 篇 PDF 内没有选项，暂未收录；补到 PDF 后重跑 `python scripts/extract-cloze-pdf.py`，再补 `cloze-*.json` 答案即可
+- 完型的错题与标记目前按篇独立保存，没有并入单选的错题本 / 标记本；若要统一，可把完型空号（如 `j17-8`）也写进 `practiceWrong` / `practiceMark`
 - 若再次调整界面，用 `out/` 静态产物 + headless Chromium 按 1440×900 / 390×844 两档重拍 `assets/readme/` 截图，练习图需先真实答几题以呈现绿对 / 红错 / 金框标记

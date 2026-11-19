@@ -19,6 +19,7 @@ export const KEYS = {
   practiceHistory: PREFIX + 'practice.history.v1',
   practiceResume: PREFIX + 'practice.resume.v1',
   practiceResumes: PREFIX + 'practice.resumes.v2',
+  cloze: PREFIX + 'cloze.v1',
 } as const;
 
 const memory = new Map<string, string>();

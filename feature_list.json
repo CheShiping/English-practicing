@@ -12,7 +12,9 @@
       "id": "feat-002",
       "name": "接入历史人文与社会生活类真题",
       "description": "把新增的历史人文、社会生活类真题与答案文件接入内容管线，并在 src/data/article-meta.ts 中呈现新分类（2026-11-11 内容重组后已并入 10 个题材分类）",
-      "dependencies": ["feat-001"],
+      "dependencies": [
+        "feat-001"
+      ],
       "status": "done",
       "evidence": "2026-11-11 内容重组：历史人文/社会生活内容并入文化与历史、社会与城市等分类文件，原 id 保留；lishi-shehui-01-02.json、shehui-03-06/07-10/11-12.json 继续按 id 生效"
     },
@@ -20,7 +22,9 @@
       "id": "feat-003",
       "name": "补全被截断的文章源文件",
       "description": "补全历史人文类 Passage 3 与实用文书类 Passage 3 的正文与题目，消除构建警告",
-      "dependencies": ["feat-002"],
+      "dependencies": [
+        "feat-002"
+      ],
       "status": "done",
       "evidence": "2026-11-11 重组时以完整原文重建分类文件；npm run content 已无「正文截断」「未解析到题目」警告"
     },
@@ -28,7 +32,9 @@
       "id": "feat-004",
       "name": "内容批次验收与提交",
       "description": "逐篇核对文章的题目、答案与译文，确认文章库与阅读器展示正常，然后提交内容批次",
-      "dependencies": ["feat-003"],
+      "dependencies": [
+        "feat-003"
+      ],
       "status": "done",
       "evidence": "2026-11-13 全站 120 篇 / 588 题核对完成：answer、explanation、evidence 均非空，582 个正文块均有译文；内容批次随 64c4564、1d6e47e、de4230a 提交"
     },
@@ -36,7 +42,9 @@
       "id": "feat-005",
       "name": "文档与交接收尾",
       "description": "更新 README 的分类与内容统计、AGENTS 的内容规则、progress.md 和 session-handoff.md，留下清晰的下一会话路径",
-      "dependencies": ["feat-004"],
+      "dependencies": [
+        "feat-004"
+      ],
       "status": "done",
       "evidence": "2026-11-13：README 增加 10 个分类的篇数表与「120 篇 / 588 题 / 2774 道单选」规模说明，补译文与答案解析功能点、内容四件套规则与目录结构；AGENTS 补译文/元数据/完成定义；progress 与 session-handoff 同步"
     },
@@ -44,7 +52,9 @@
       "id": "feat-006",
       "name": "接入 C1 猫头鹰品牌标记",
       "description": "把选定的 C1 猫头鹰形象裁切为 512px 品牌标记，接入页头、启动页、404 与 favicon，保留 GitHub Pages basePath 兼容",
-      "dependencies": ["feat-001"],
+      "dependencies": [
+        "feat-001"
+      ],
       "status": "done",
       "evidence": "2026-11-09：public/brand/moread-owl.png 512×512（裁掉生成水印）；Header/AppShell/layout.tsx 接入；npx tsc --noEmit exit 0；npm run build exit 0（51 篇 / 244 题 / 13539 词，导出 2/2）；静态导出下页头截图确认图片加载且导航单行"
     },
@@ -52,7 +62,10 @@
       "id": "feat-007",
       "name": "首页与共享样式 unslop 精修",
       "description": "统一首页与全站共享样式的控件、字重与动效，保留纸感与朱砂红方向，并保留样张印章、READ 背景字、今日卡光斑与渐变进度条",
-      "dependencies": ["feat-001", "feat-006"],
+      "dependencies": [
+        "feat-001",
+        "feat-006"
+      ],
       "status": "done",
       "evidence": "2026-11-09：npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）；桌面 1440、390px 移动端与夜间主题截图复核。2026-11-10 按用户要求恢复样张「精读」印章、PASSAGE · 01 标签、READ 背景字、今日卡红色光斑与渐变进度条；样张词卡改为桌面悬浮、移动端入流，不遮挡正文"
     },
@@ -70,7 +83,9 @@
       "id": "feat-009",
       "name": "补全全部题目答案与解析",
       "description": "为缺失答案的 60 道题补写答案、中文解析与原文依据，覆盖应用文 Passage 3-4 与历史人文 Passage 3-12，使阅读器答题后可直接显示答案与解析",
-      "dependencies": ["feat-002"],
+      "dependencies": [
+        "feat-002"
+      ],
       "status": "done",
       "evidence": "2026-11-10：新增 src/data/answers/yingyong-03-04.json、lishi-03-12.json；npm run content 显示「含答案: 304 题」；校验 304 题 answer 与 explanation 均非空（缺失 0）；npx tsc --noEmit exit 0；npm run build exit 0（63 篇 / 304 题 / 16470 词，导出 2/2）"
     },
@@ -78,7 +93,9 @@
       "id": "feat-010",
       "name": "网站 2.0 单选练习功能",
       "description": "把 article/专升本词汇语法试题_单选题.md 的 2774 道题按语法框架（六大词性/两个态/三大从句/五大句型/四个重点/其他）分类并补全答案与解析，新增分类组卷练习页与错题本；内容管线 scripts/build-practice.mjs 生成 public/data/practice.json 按需加载",
-      "dependencies": ["feat-001"],
+      "dependencies": [
+        "feat-001"
+      ],
       "status": "done",
       "evidence": "2026-11-11：2774 题全部分类（其他 1349 / 四个重点 505 / 三大从句 347 / 六大词性 247 / 五大句型 188 / 两个态 138）、652 题补答案、2774 条框架思路解析、155 处源答案键错误校订；修复源文件 25 处选项格式异常；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；dev 实测练习组卷、答题计分（8/10）、逐题解析、只重做错题均正常"
     },
@@ -86,7 +103,9 @@
       "id": "feat-011",
       "name": "语法知识点页与生词本入口调整",
       "description": "把导航中的生词本替换为按 23456 框架编排的语法知识点页，支持关键词搜索与折叠；生词本保留原路由并从学习数据页按钮进入；练习页增加语法速查入口",
-      "dependencies": ["feat-010"],
+      "dependencies": [
+        "feat-010"
+      ],
       "status": "done",
       "evidence": "2026-11-11：新增 src/data/grammar.ts（5 个分区 / 19 个知识点）与 GrammarPage；#/grammar 路由、Header 与移动端导航改为「语法」；学习数据页新增生词本按钮；练习页新增语法速查（新标签打开）；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；dev 实测 5 个分区可见、搜索「虚拟」命中 1 个、展开全部生效、数据页生词本入口可进入、练习页语法速查存在，均 PASS"
     },
@@ -94,7 +113,9 @@
       "id": "feat-012",
       "name": "阅读文章重新分类与新增 40 篇",
       "description": "把原有 80 篇与新增 article/阅读.md 的 40 篇按题材重组为 10 个新分类（健康与医学、自然与科技、心理与行为、教育与成长、职场与商业、社会与城市、旅行与出行、文化与历史、人物与故事、实用文书），保留既有文章 id 以沿用答案、译文与学习进度，避免文章重复",
-      "dependencies": ["feat-009"],
+      "dependencies": [
+        "feat-009"
+      ],
       "status": "done",
       "evidence": "2026-11-11：article/ 下 10 个新分类文件共 120 篇；npm run content 生成 120 篇 / 588 题 / 32558 词，含答案 388 题、含译文 63 篇；校验无重复 id、40 篇新文章均为 5 题 4 选项、各分类编号连续；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -102,7 +123,10 @@
       "id": "feat-013",
       "name": "移动端分类横滑自动居中与语法知识点全量搬入",
       "description": "文章库分类与单选练习分类按钮在移动端改为横向滑动，切换后自动把当前按钮滑到可视区中间；单选练习默认顺序改为「顺序」；语法知识点改为读取 article/语法框架/*.md 原文生成并完整渲染，补齐移动端表格横滑、吸顶分区导航与字号适配",
-      "dependencies": ["feat-011", "feat-012"],
+      "dependencies": [
+        "feat-011",
+        "feat-012"
+      ],
       "status": "done",
       "evidence": "2026-11-11：新增 scripts/build-grammar.mjs，npm run content 生成语法框架 5 个分区（02 两个态 97 行 / 03 三大从句 152 行 / 04 四个重点 234 行 / 05 五大句型 56 行 / 06 六大词性 211 行）；文本保真校验 5 个分区源文与渲染文本完全一致；npx tsc --noEmit exit 0；npm run build exit 0（120 篇 / 588 题 / 32558 词 + 单选 2774 题，导出 2/2）；headless Chrome 390px 与 320px 视口 10 条路由 scrollWidth === clientWidth 无横向溢出；文章库切到「文化与历史」scrollLeft 966、centerDelta 0；单选切到「三大从句」scrollLeft 214、centerDelta 0，默认选中「顺序」；语法页 5 个分区 / 5 个表格，导航点击后自动滑到右端 133（夹取）"
     },
@@ -110,7 +134,9 @@
       "id": "feat-014",
       "name": "单选练习全量出题、进度续答与答题卡底部弹层",
       "description": "删除题量选择，开始练习直接练完当前考点全部题目；答题进度实时存 localStorage，重新进入练习页自动恢复到上次答过的最后一道题；页面常驻答题卡改为按钮触发的底部弹层",
-      "dependencies": ["feat-010"],
+      "dependencies": [
+        "feat-010"
+      ],
       "status": "done",
       "evidence": "2026-11-13：PracticePage 移除题量块与 SIZE_OPTIONS，buildPaper 固定 count=0；practice.ts 新增 PracticeResume 存取、storage.ts 新增 practice.resume.v1；答题卡改为 practice-sheet-mask/panel 底部弹层（遮罩/Esc/收起按钮关闭、safe-area 适配、锁背景滚动）；headless 实测 size-block-gone:true、开始练习（2774 题）、inline-sheet:absent、sheet-opens:true、弹层点题号跳到第 5 题、刷新后 resume「第 5 / 2774 题 · 已答 2 · 对 1」全部 PASS。同日按用户反馈调整：续答改为手动——进入练习页不再自动跳转，统一停在设置页由「继续上次练习」卡片进入；实测 reenter:setup、auto-quiz:none、card「已答 2 / 2774 题」、continue「第 2 / 2774 题 · 已答 2 · 对 1」PASS；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -118,7 +144,9 @@
       "id": "feat-015",
       "name": "动效审计与五处交互补齐",
       "description": "按克制原则审计全站动效机会，只落地四处有实际收益的：练习即时判定的解析块与对错图标入场、交卷结果页落地与错题回顾 40ms 递进、生词卡释义 2→6 行高度过渡、Toast 与入场对称的退场；沿用既有 --ease / --dur-fast / --dur-base，新增 --dur-slow: 280ms 补齐时长刻度",
-      "dependencies": ["feat-014"],
+      "dependencies": [
+        "feat-014"
+      ],
       "status": "done",
       "evidence": "2026-11-13：globals.css 增加 --dur-slow；pages.css 新增 practice-reveal-in / practice-state-in / practice-score-in / practice-review-in 四组关键帧与 .practice-review-list.result 递进延迟；AppProvider ToastItem 增加 closing，dismissToast 先标记再 180ms 后摘除；reader.css 的 .toast 改为 @starting-style 入场 + .closing 退场过渡。headless 实测：reveal practice-reveal-in 200ms、stateIcon practice-state-in 140ms、成绩卡 practice-score-in 280ms、回顾首项 delay 60ms、生词卡 max-height 40.8px→122.4px（2 行→6 行，无半行截断）、toast 入场 opacity 0.69 中间态 / 3050ms 带 closing / 3550ms 已移除，pageerrors none；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -126,7 +154,9 @@
       "id": "feat-016",
       "name": "练习标记本、切题回顶与题干点词查义",
       "description": "把标记做成独立持久化的标记本：新增 storage key moread.practice.mark.v1 与 PracticeMarkEntry，练习中点标记直接落库，设置页在错题本旁新增「标记本」入口（#practice/marked），支持列表、取消标记、清空与重做标记题；切题（上一题/下一题/答题卡跳转）自动回到页面顶部；单选题干改为可点词，点词复用阅读器 WordPopover 查义，选中多个词则出选区工具条走 SelectionAnalysisModal 翻译与句法解析",
-      "dependencies": ["feat-014"],
+      "dependencies": [
+        "feat-014"
+      ],
       "status": "done",
       "evidence": "2026-11-13：新增 src/components/WordText.tsx 与 src/components/SelectionBar.tsx；lib/practice 增加 getMarkBook/getMarkedIds/markQuestion/removeMark/toggleMarkQuestion/clearMarkBook，PracticeResume.source 扩展 pool|wrong|marked；router 增加 #practice/marked；PracticePage 的 marks 改为读标记本，旧续答存档 marks 自动补写。headless 实测：点标记后 localStorage moread.practice.mark.v1 写入 danxuan-01-001；重载进 #practice/marked 显示「标记本」1 条、金色左边框；重做标记题得到「标记题重做」2 题卷；取消标记后列表为空态且 store 变 {}；900x520 窗口滚到 273px 点下一题后 scrollY=0；点第 4 个可点词弹出 the 的词典卡；选中 good chance the child 出工具条、点翻译后弹「翻译与句法提示」（参考译文「孩子很有可能」、重点词汇 chance/child），单选一个词不出工具条，点外部收起工具条；1280/390 两档截图确认头部三按钮不换行、移动端题头不溢出；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -134,7 +164,9 @@
       "id": "feat-017",
       "name": "练习支持多份未完成记录",
       "description": "续答存档从单条改为按试卷分槽：storage 换成 moread.practice.resumes.v2，key 为 pool:大类:细分 / wrong / marked，每份试卷各自记录 picks、marks 与当前题号，最多保留 20 份；设置页把「上次练习」卡片换成「未完成的练习」列表（标签、已答/总数、相对时间、继续、删除、清空、超过 4 条可展开），当前考点已有记录时开始按钮变为「继续练习 + 重新开始」；旧版单条存档首次读取自动迁移",
-      "dependencies": ["feat-016"],
+      "dependencies": [
+        "feat-016"
+      ],
       "status": "done",
       "evidence": "2026-11-13：lib/practice 增加 practiceResumeKey / getPracticeResumes / getPracticeResume / savePracticeResume（按 updatedAt 淘汰到 20 份）/ clearPracticeResume(key) / clearAllPracticeResumes / answeredCount，PracticeResume 增加 key 与 cursor；PracticePage 增加 paperKey 状态，保存副作用写入 cursor，finish 只清当前槽。headless 实测：六大词性答 2 题退出、三大从句答 1 题退出后 localStorage 同时存在 pool:六大词性:全部 与 pool:三大从句:全部，列表两行「已答 2 / 247」「已答 1 / 347」；切回六大词性开始区变「继续练习（已答 2 / 3）＋重新开始（247 题）」，继续后落在第 3 题且已答 2；点完成练习后该槽被删除、另一槽保留；点重新开始时同一 key 被覆盖为 0 picks、ids=2774；种子 5 条记录时默认展示 4 行 + 「展开全部（5）」，展开后 5 行且按钮变「收起」；旧 practice.resume.v1 迁移成 legacy:<ts> 槽且 v1 被清空；1280/390 截图确认行内标签不折行、按钮不溢出；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -142,7 +174,9 @@
       "id": "feat-018",
       "name": "新增 40 篇补答案、解析、译文与文库元数据",
       "description": "为 read-01 ~ read-40 的 200 道题补答案、中文解析与原文依据，为 172 个正文段落补中文译文，并在 article-meta.ts 补 40 条标题/副标题/标签/摘要；同时清掉源文件里被并进选项的 Exercise 分节标记、被空行截断的句子与 read-05 的截词",
-      "dependencies": ["feat-012"],
+      "dependencies": [
+        "feat-012"
+      ],
       "status": "done",
       "evidence": "2026-11-13：新增 src/data/answers/read-01-20.json、read-21-40.json（40 篇 / 200 题，answer + explanation + evidence 均非空）；新增 src/data/translations-part13.json、translations-part14.json（40 篇 / 172 段全覆盖）；article-meta.ts 增 40 条元数据。源文件修复：9 处选项行尾 ## Exercise N、7 处空行断句（read-03/04/05/18/19/26/33）、read-05 两处被截断的词句、read-11 首句缺谓语。npm run content：120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 103 篇，无警告；校验 588 题 answer 与 explanation 均非空、read-01~40 的 172 个正文块全部有译文、全站 103 篇有译文；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -150,7 +184,9 @@
       "id": "feat-019",
       "name": "补齐 17 篇旧文章译文与解析",
       "description": "冲刺训练2 拆分产生的 kepu-11 ~ kepu-17、shehui-13 ~ shehui-21、jingli-12 共 17 篇（89 个正文块、84 道题）补齐中文译文与解析",
-      "dependencies": ["feat-018"],
+      "dependencies": [
+        "feat-018"
+      ],
       "status": "done",
       "evidence": "2026-11-13：新增 src/data/translations-part15.json（17 篇 / 89 段）与 src/data/answers/legacy-11-21.json（17 篇 / 84 题，answer 沿用源文件、补 explanation 与 evidence）。同日为 21 道旧题补 evidence（kepu-01/03/05/08/09、shehui-01/02/04/06/08/09/10、chongci-06/07/10/11/12、lishi-02、jingli-04、yingyong-04），按各文件原有排版逐行插入，diff 仅 21 行。npm run content：120 篇 / 588 题 / 32568 词，含答案 588 题、含译文 120 篇，无警告；校验 588 题 answer / explanation / evidence 均非空，21 条新依据均可在正文定位；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -158,7 +194,10 @@
       "id": "feat-020",
       "name": "补齐剩余文库元数据并重拍 README 截图",
       "description": "为早期批次遗留的 29 篇文章补 ARTICLE_META（英文标题、中文副标题、标签、摘要），消除文库里的 Passage N 首句回退；用 headless 浏览器按当前构建重拍首页 / 阅读器 / 文章库 / 练习答题卡 / 移动端答题卡，并新增练习进度存档截图",
-      "dependencies": ["feat-019", "feat-005"],
+      "dependencies": [
+        "feat-019",
+        "feat-005"
+      ],
       "status": "done",
       "evidence": "2026-11-13：article-meta.ts 从 91 条补到 120 条，校验 missing 0 / extra 0，补齐 kepu-11~17、shehui-13~21、lishi-03~12、jingli-12、yingyong-03/04。用本地静态产物 + headless Chromium 重拍：1440x900 五张（shot-home / shot-library / shot-reader / shot-practice / shot-practice-resumes）、390x844 一张（shot-practice-mobile）；练习图按真实答题造出绿对 / 红错 / 金框标记三种题号状态，并新增「未完成的练习（1）」存档面板图。README 界面速览换图、补存档图与说明。文库截图第二排已由 Passage 5 / Passage 6 变为 Should Obesity Be Called a Disease? / The Harm of Second-hand Smoke 及中文摘要；首页统计由 32,558 更新为 32,568。npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     },
@@ -166,7 +205,9 @@
       "id": "feat-021",
       "name": "同步六大词性语法知识点并支持压平导出",
       "description": "用户重新导出 article/语法框架/六大词性.md（212 行 → 1 行、8532 → 13763 字，新增名词复数规则、人称代词表格、数词/冠词/情态动词补充）。新增对笔记软件「单行导出」的结构化还原（标题、表格、段落），并让渲染器识别 rgb() 颜色标注；源 md 保持用户原样，文字零改动。",
-      "dependencies": ["feat-013"],
+      "dependencies": [
+        "feat-013"
+      ],
       "status": "done",
       "evidence": "2026-11-14：scripts/build-grammar.mjs 增加 restoreFlattenedMarkdown（仅单个超长行且含 ≥2 个内联标题或内联表格时启用；标签栈避免拆断 <font>/<u>；表格 10 行连续拼接；末尾 stripWhitespace 保真校验，不一致即中止）。src/lib/grammar-md.ts 的 fontToSpan 支持 #hex 与 rgb()，#262626 / rgb(38,38,38) / rgb(15,17,21) / 纯白视为中性色跟随主题，并跳过只剩空标记的段落。生成结果：六大词性 224 行 / 13763 字，6 个考点标题、1 张 10 行表格、27 处彩色标注、0 空段落；源 md ↔ 生成内容 ↔ 渲染可见文字三方一致；另 4 个分区行数与内容完全未变（97/152/234/56）。headless Chrome 实际渲染 #/grammar：6 个标题、新增口诀「妻子持刀去宰狼」与「情态动词加have done表虚拟语气」、6 张表格、31 处彩色 span 均在 DOM 中，1440 宽截图确认标题分层、分段、下划线与表格正常无空块。npm run content（120 篇 / 588 题 / 32568 词 + 2774 单选 + 语法 5 分区）、npx tsc --noEmit exit 0、npm run build exit 0（静态导出 2/2）；纯时间戳变动的 practice.json / articles.generated.json 已还原，未纳入提交"
     },
@@ -174,7 +215,9 @@
       "id": "feat-022",
       "name": "同步五大语法分区全面更新并适配题型分目录",
       "description": "用户重写全部 5 个语法框架 md（内容量约 2.4 倍），同时把 article/ 按题型重组为「阅读 / 单选 / 完型」子目录。本次同步语法内容、补上渲染器的标准分割线支持，并让内容管线支持子目录扫描，避免部署时把文章库清空。",
-      "dependencies": ["feat-021"],
+      "dependencies": [
+        "feat-021"
+      ],
       "status": "done",
       "evidence": "2026-11-19：语法内容从约 2.9 万字增至 6.9 万字（两个态 10239 / 三大从句 7494 / 四个重点 23321 / 五大句型 11735 / 六大词性 15951 字符）。渲染结果：h1 17 / h2 16 / h3 5 / h4 7、表格 16 张 98 行、hr 1、callout 1、彩色标注 38 处、空段落 0；五分区「源 md ↔ 渲染可见文字」逐一比对全部一致（差异仅为 _**/**_ 粗斜体、- 列表、:::info 标记被正确转换）。src/lib/grammar-md.ts 新增标准分割线（---/***/___）到 <hr/> 的转换，app/pages.css 补 .grammar-content hr 虚线样式。内容管线：build-content.mjs 改为递归扫描 article/ 并跳过「语法框架/单选/完型」目录，file 字段仍取纯文件名；build-practice.mjs 单选源支持 article/单选/ 与顶层两个位置，缺失时警告并保留现有 practice.json。验证：npm run content 生成 120 篇 / 588 题 / 32568 词、2774 单选、语法 5 分区，articles.generated.json 与 practice.json 除 generatedAt 外与 HEAD 完全一致；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；headless Chrome #/grammar 无错误页，5 个分区标题、16 张表格、hr、callout、38 处彩色标注均在 DOM；1440 宽截图确认两个态 / 五大句型 / 四个重点的标题层级、表格、列表排版正常；README 与 AGENTS 的源文件路径、目录结构与管线边界同步更新"
     },
@@ -182,9 +225,21 @@
       "id": "feat-023",
       "name": "移动端整句选区工具条避让浏览器复制气泡",
       "description": "移动端划句子做高亮/批注时，浏览器原生复制气泡会盖住选区工具条。文章正文在触摸设备禁用系统长按菜单；选中多词句子时把工具条固定到底栏上方，单词选区与桌面端保持原位。",
-      "dependencies": ["feat-016"],
+      "dependencies": [
+        "feat-016"
+      ],
       "status": "done",
       "evidence": "2026-11-19：SelectionTools 给整句选区加 sel-toolbar-sentence，定位改走 --sel-top/--sel-left 变量；reader.css 在 .article-body 及子节点加 -webkit-touch-callout: none，并在 (hover: none) and (pointer: coarse) 下把 .sel-toolbar-sentence 固定到 calc(72px + env(safe-area-inset-bottom)) 且水平居中；ArticleBody 仅在 coarse pointer 下 preventDefault contextmenu。headless Chrome 移动仿真（360×732，coarse=true）实测选句「After a busy day 」→ 工具条含 sel-toolbar-sentence、bottom=72px、top=625px，点色块后生成 1 个 .ann 且工具条收起；同环境选单词「After」→ 工具条仍在选区上方 top=270px、无 sentence 类；contextmenu defaultPrevented=true。桌面 1280 宽 coarse=false，选句工具条仍在选区上方 top=326px，右键菜单 defaultPrevented=false；练习页题干选区条仍按行内 top/left 定位（top=169px）；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
+    },
+    {
+      "id": "feat-023",
+      "name": "网站 3.0：完型填空练习",
+      "description": "提取 article/完型/ 下 3 份 PDF 的 40 篇完型题目，与已有的 30 篇提取稿合并为 65 篇 / 1065 空的完型题库；新增 #/cloze 题库页与 #/cloze/:id 作答页（正文内联空格胶囊 + 逐空 2×2 选项 + 即时判定 + 中文解析与原句依据 + 答题卡 + 结果页），补全逐空答案与解析，接入导航、首页 3.0 横幅，版本号升级到 3.0.0",
+      "dependencies": [
+        "feat-022"
+      ],
+      "status": "done",
+      "evidence": "2026-11-19：新增 scripts/extract-cloze-pdf.py（PDF → md，含空格/选项还原与 3 处定点修补）、scripts/build-cloze.mjs（两份 md + answers/cloze-*.json → public/data/cloze.json）、src/data/answers/cloze-*.json（11 个文件，1065 空答案+中文解析）、src/data/cloze-meta.ts（65 条中文小标题）、src/lib/cloze.ts、src/components/pages/ClozePage.tsx、#/cloze 与 #/cloze/:id 路由、Header/移动端/首页入口、app/pages.css 完型样式。PDF 40 篇中 35 篇有完整选项（第 22/23/37/38/40 篇 PDF 内无选项，未收录）；基础 30 篇来自 完形填空_题目提取.md。验证：npm run content 完型 65 篇 / 1065 空 / 含解析 1065 空、无警告；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；headless Chrome 实测题库 65 卡片、chips 全部 65 篇/1065 空、基础 30/450、进阶 35/615；b01 显示 10 个内联空格与 10 道小题，选 D 即时判对、胶囊变绿、localStorage 写入 moread.cloze.v1、刷新后恢复；答满后「查看结果」→ 4/10 · 40% + 6 条错题回顾，题库卡片变「已完成 · 40%」；直链 #/cloze/j17 进入 20 空篇、答题卡 20 格、点第 5 格跳到第 5 空；交卷显示「未答 10 空」、重做后已答标记清零；390px 视口两页 scrollWidth === clientWidth，底部 6 个 tab；首页 3.0 横幅与「完型」导航均在。"
     }
   ]
 }

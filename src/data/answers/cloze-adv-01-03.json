@@ -1,0 +1,53 @@
+{
+  "j01": {
+    "1": { "a": "C", "n": "yet 表转折：危险重重，但潜在的「回报」让采挖值得。" },
+    "2": { "a": "C", "n": "break the calm 意为「打破宁静」，指急救电话突然响起。" },
+    "3": { "a": "A", "n": "带着流动诊所的「医生」，与后文急救、送医相符。" },
+    "4": { "a": "D", "n": "老人因高海拔虚弱而「昏倒」，才有后面的急救。" },
+    "5": { "a": "B", "n": "Recognizing the severity 意为「意识到情况严重」，随即行动。" },
+    "6": { "a": "C", "n": "over a decade of experience 意为「十多年的经验」。" },
+    "7": { "a": "A", "n": "Upon reaching the elderly man 意为「一到老人身边」。" },
+    "8": { "a": "B", "n": "the critical condition 意为「危急状况」，与急性高山病对应。" },
+    "9": { "a": "B", "n": "stabilize the man's condition 意为「先稳住病情」，再决定送医。" },
+    "10": { "a": "D", "n": "a test of skill and nerve 意为「对技术与胆量的考验」。" },
+    "11": { "a": "A", "n": "the next phase of care 意为「下一阶段的救治」，救护车接手。" },
+    "12": { "a": "C", "n": "be transported 意为「被转运」，指老人被送进医院。" },
+    "13": { "a": "D", "n": "take over 意为「接手」，医院人员接管后续治疗。" },
+    "14": { "a": "B", "n": "an inspiring example 意为「鼓舞人心的例子」，与 resilience 呼应。" },
+    "15": { "a": "B", "n": "nature's challenges 意为「自然的挑战」，指高山环境的艰险。" }
+  },
+  "j02": {
+    "1": { "a": "B", "n": "垃圾桶被掀翻，是「奇怪的」事，故用 strange。" },
+    "2": { "a": "A", "n": "周六清晨进店帮忙，对应早餐的忙碌时段。" },
+    "3": { "a": "A", "n": "be tipped over 意为「被弄翻」，与前文 knocked over 同义。" },
+    "4": { "a": "D", "n": "Emerging from the dustbin 意为「从垃圾桶里钻出来」。" },
+    "5": { "a": "B", "n": "raced down to the alley 意为「冲下楼到巷子里」，表现急切。" },
+    "6": { "a": "B", "n": "finally understanding 意为「终于明白了」，指明白是谁弄翻垃圾桶。" },
+    "7": { "a": "A", "n": "grab at a container 意为「去抓那个盒子」，想弄到里面的虾饺。" },
+    "8": { "a": "C", "n": "half-eaten shrimp dumplings 意为「吃剩的虾饺」，符合流浪猫觅食。" },
+    "9": { "a": "D", "n": "with the rain picking up 意为「雨越下越大」，所以猫不敢出来。" },
+    "10": { "a": "D", "n": "slowly made my way 意为「慢慢走过去」，好让猫跟着我。" },
+    "11": { "a": "A", "n": "Sure enough 意为「果然」，猫确实被食物香味引来。" },
+    "12": { "a": "C", "n": "happy to be out of the rain 意为「乐于躲开雨」，与 cheer up 呼应。" },
+    "13": { "a": "D", "n": "the smell of your cooking 意为「你做的菜的香味」。" },
+    "14": { "a": "B", "n": "expand our menu 意为「扩充菜单」，加入猫能吃的小点心。" },
+    "15": { "a": "A", "n": "agree with the suggestion 意为「赞同这个提议」，指小猫每天第一个来排队。" }
+  },
+  "j03": {
+    "1": { "a": "C", "n": "occupy the window seat 意为「占了靠窗的座位」。" },
+    "2": { "a": "B", "n": "a curious expression 意为「好奇的表情」，孩子总在看我的屏幕。" },
+    "3": { "a": "A", "n": "engage her 意为「吸引她的注意力」，所以我换成动画片。" },
+    "4": { "a": "C", "n": "brush up on my language skills 意为「温习语言能力」。" },
+    "5": { "a": "B", "n": "read along 意为「跟着读」，指跟着字幕读。" },
+    "6": { "a": "C", "n": "become focused on my screen 意为「专注在我的屏幕上」。" },
+    "7": { "a": "D", "n": "kept resting her head on me 意为「一直靠在我身上」。" },
+    "8": { "a": "A", "n": "shift her toward him 意为「把她往自己那边挪」。" },
+    "9": { "a": "D", "n": "Nevertheless 意为「然而」，她还是会挪回我这边。" },
+    "10": { "a": "A", "n": "after several examples of this pattern 意为「这样来回几次之后」。" },
+    "11": { "a": "D", "n": "for the duration of the flight 意为「整个飞行期间」。" },
+    "12": { "a": "B", "n": "have a fear of flying 意为「害怕坐飞机」，与 put my mind at ease 对比。" },
+    "13": { "a": "A", "n": "feel trusted by both 意为「被孩子和父亲信任」，所以感觉很好。" },
+    "14": { "a": "C", "n": "our collective willingness 意为「我们共同的意愿」。" },
+    "15": { "a": "A", "n": "among strangers 意为「陌生人之间」，点明九小时航程的氛围。" }
+  }
+}

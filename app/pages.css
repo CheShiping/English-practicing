@@ -3587,3 +3587,510 @@
     border-radius: 8px;
   }
 }
+
+/* ============================================================
+   完型填空 Cloze
+   ============================================================ */
+
+.cloze-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cloze-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 26px;
+}
+
+.cloze-summary > div {
+  background: var(--surface);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cloze-summary b {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.cloze-summary span {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.cloze-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.cloze-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  padding: 18px 20px 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform var(--dur-base) var(--ease), border-color var(--dur-base) var(--ease),
+    box-shadow var(--dur-base) var(--ease);
+}
+
+.cloze-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.cloze-card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.cloze-card-no {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+  letter-spacing: 0.06em;
+}
+
+.cloze-badge {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.cloze-card-meta {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.cloze-card h3 {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cloze-card-zh {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.cloze-card-foot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  color: var(--faint);
+}
+
+.cloze-card-state {
+  font-size: 11.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.cloze-card-state.doing {
+  color: var(--accent);
+}
+
+.cloze-card-state.done {
+  color: var(--green);
+}
+
+.cloze-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 26px;
+  padding: 14px 16px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.7;
+}
+
+.cloze-tip svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ---------- 作答 ---------- */
+
+.cloze-paper {
+  margin-top: 14px;
+  padding: 30px 34px 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.cloze-paper-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.cloze-paper-kicker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 11.5px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.cloze-paper-title {
+  font-family: var(--font-serif);
+  font-size: 25px;
+  line-height: 1.35;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cloze-paper-zh {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+
+.cloze-paper-hint {
+  font-size: 12.5px;
+  color: var(--faint);
+  margin: 0;
+}
+
+.cloze-text {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 2.05;
+  color: var(--ink-2);
+}
+
+.cloze-para {
+  margin: 0 0 14px;
+}
+
+.cloze-para:last-child {
+  margin-bottom: 0;
+}
+
+.cloze-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 22px;
+  padding: 0 7px;
+  margin: 0 2px;
+  white-space: nowrap;
+  vertical-align: 0;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1;
+  vertical-align: 1px;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.cloze-inline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cloze-inline.right {
+  border-style: solid;
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.cloze-inline.wrong {
+  border-style: solid;
+  border-color: var(--danger);
+  background: var(--accent-soft);
+  color: var(--danger);
+}
+
+.cloze-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cloze-q {
+  padding: 12px 15px 11px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color var(--dur-fast) var(--ease);
+}
+
+.cloze-q.active {
+  border-color: var(--line-strong);
+}
+
+.cloze-q.right {
+  border-color: color-mix(in srgb, var(--green) 45%, var(--line));
+}
+
+.cloze-q.wrong {
+  border-color: color-mix(in srgb, var(--danger) 40%, var(--line));
+}
+
+.cloze-q-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cloze-q-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.cloze-q.right .cloze-q-num {
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.cloze-q.wrong .cloze-q-num {
+  background: var(--accent-soft);
+  color: var(--danger);
+}
+
+.cloze-q-state {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.cloze-q.right .cloze-q-state {
+  color: var(--green);
+}
+
+.cloze-q.wrong .cloze-q-state {
+  color: var(--danger);
+}
+
+.cloze-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.cloze-option {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  text-align: left;
+  padding: 8px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 13.5px;
+  line-height: 1.55;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.cloze-option:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+}
+
+.cloze-option-letter {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--faint);
+  flex-shrink: 0;
+}
+
+.cloze-option.reveal-right {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+  cursor: default;
+}
+
+.cloze-option.reveal-right .cloze-option-letter {
+  color: var(--green);
+}
+
+.cloze-option.reveal-wrong {
+  border-color: var(--danger);
+  background: var(--accent-soft);
+  color: var(--danger);
+  cursor: default;
+}
+
+.cloze-option.reveal-wrong .cloze-option-letter {
+  color: var(--danger);
+}
+
+.cloze-option.dimmed {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.cloze-option.dimmed:hover,
+.cloze-option.reveal-right:hover,
+.cloze-option.reveal-wrong:hover {
+  transform: none;
+}
+
+.cloze-option:disabled {
+  cursor: default;
+}
+
+.cloze-note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  line-height: 1.7;
+  animation: practice-reveal-in var(--dur-base) var(--ease) both;
+}
+
+.cloze-note.right {
+  background: var(--green-soft);
+}
+
+.cloze-note.wrong {
+  background: var(--accent-soft);
+}
+
+.cloze-note p {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.cloze-note .cloze-evidence {
+  margin-top: 6px;
+  font-family: var(--font-serif);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.cloze-evidence {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0;
+}
+
+.cloze-endbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .cloze-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cloze-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cloze-paper {
+    padding: 22px 18px 20px;
+    border-radius: var(--radius);
+  }
+
+  .cloze-paper-title {
+    font-size: 20px;
+  }
+
+  .cloze-text {
+    font-size: 16px;
+    line-height: 1.95;
+  }
+
+  .cloze-options {
+    grid-template-columns: 1fr;
+  }
+
+  .cloze-endbar {
+    padding: 10px 14px;
+    font-size: 12px;
+    border-radius: var(--radius);
+  }
+}

@@ -865,6 +865,48 @@ html[data-theme='dark'] .hero-paper-text .hl {
   margin-top: 64px;
 }
 
+/* 3.0 完型填空上线横幅 */
+.cloze-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 26px;
+  margin: 0 0 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.cloze-banner .eyebrow {
+  color: var(--accent);
+}
+
+.cloze-banner h2 {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 500;
+  margin: 8px 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.cloze-banner p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
+@media (max-width: 640px) {
+  .cloze-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+}
+
 .home-section-head {
   display: flex;
   align-items: flex-end;
