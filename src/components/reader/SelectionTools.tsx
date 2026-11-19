@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties } from 'react';
 import {
   BookmarkPlus,
   Copy,
@@ -60,8 +60,10 @@ export function SelectionToolbar({
   return (
     <div
       ref={ref}
-      className="sel-toolbar"
-      style={{ top: pos.top, left: pos.left }}
+      className={selection.isWord ? 'sel-toolbar' : 'sel-toolbar sel-toolbar-sentence'}
+      style={
+        { '--sel-top': `${pos.top}px`, '--sel-left': `${pos.left}px` } as CSSProperties
+      }
       onMouseDown={(e) => e.preventDefault()}
       role="toolbar"
       aria-label="选区操作"

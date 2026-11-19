@@ -3,7 +3,15 @@
 ## 当前状态
 
 **最后更新：** 2026-11-19
-**当前功能：** feat-022 同步五大语法分区全面更新并适配题型分目录（已完成）
+**当前功能：** feat-023 移动端整句选区工具条避让浏览器复制气泡（已完成）
+
+## 2026-11-19 移动端整句选区工具条避让（feat-023）
+
+- **用户反馈**：滑词翻译正常，但移动端划句子做标记时浏览器弹出的「复制」气泡盖住了高亮/批注工具条
+- **做法**：`SelectionTools` 按选区是否为单词加 `sel-toolbar-sentence`，定位改走 CSS 变量；`reader.css` 在文章正文及子节点加 `-webkit-touch-callout: none`（iOS 长按气泡），并在 `(hover: none) and (pointer: coarse)` 下把整句工具条固定到底栏上方、水平居中（Android 复制气泡无法用 CSS 屏蔽，改从位置上避开）；`ArticleBody` 只在 coarse pointer 下拦 `contextmenu`，桌面右键菜单不受影响
+- **边界**：单词选区不加深色句选类，仍在手指选区上方原位；练习页题干的 `SelectionBar` 仍用行内 `top/left`，不受 CSS 变量化影响
+- **证据**：headless Chrome 移动仿真 360×732：选句工具条 bottom=72px、top=625px，点色块成功落 1 个 `.ann`；选单词工具条 top=270px 且无 `sel-toolbar-sentence`；`contextmenu` defaultPrevented=true。桌面 1280 宽选句工具条 top=326px、右键 defaultPrevented=false；练习页题干条 top=169px；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
+- **本次改动文件**：`src/components/reader/SelectionTools.tsx`、`src/components/reader/ArticleBody.tsx`、`app/reader.css`、`feature_list.json`、`progress.md`
 
 ## 2026-11-19 五大语法分区全面更新与内容目录重组（feat-022）
 
@@ -150,6 +158,7 @@
 - [x] 视觉资产：补齐剩余 29 条 `ARTICLE_META`，重拍 6 张 README 截图并新增练习存档图（feat-020）
 - [x] 语法知识点同步：六大词性更新上线，内容管线支持笔记软件压平导出与 `rgb()` 颜色（feat-021）
 - [x] 语法框架全面更新：五大分区约 6.9 万字上线，分割线渲染与题型分目录的内容管线适配（feat-022）
+- [x] 移动端划句标记：整句选区工具条避让浏览器复制气泡，单词选区与桌面端保持原位（feat-023）
 
 ### 进行中
 

@@ -432,6 +432,11 @@ html[data-theme='dark'] .toast {
   font-variant-numeric: tabular-nums;
 }
 
+.article-body,
+.article-body * {
+  -webkit-touch-callout: none;
+}
+
 .article-body {
   margin-top: 32px;
   font-family: var(--reader-font);
@@ -1632,6 +1637,8 @@ html[data-theme='dark'] .ann-pink {
 .sel-toolbar {
   position: fixed;
   z-index: 130;
+  top: var(--sel-top, -999px);
+  left: var(--sel-left, -999px);
   display: flex;
   align-items: center;
   gap: 3px;
@@ -1694,6 +1701,18 @@ html[data-theme='dark'] .sel-toolbar {
 
 .sel-btn.icon {
   padding: 5px;
+}
+
+/* 触摸设备上整句选区的工具条移到底栏上方，避开浏览器自带的复制气泡 */
+@media (hover: none) and (pointer: coarse) {
+  .sel-toolbar-sentence {
+    top: auto;
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+    left: 0;
+    right: 0;
+    width: max-content;
+    margin-inline: auto;
+  }
 }
 
 /* ---------- Modal / drawer ---------- */

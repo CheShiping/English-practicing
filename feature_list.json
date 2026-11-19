@@ -177,6 +177,14 @@
       "dependencies": ["feat-021"],
       "status": "done",
       "evidence": "2026-11-19：语法内容从约 2.9 万字增至 6.9 万字（两个态 10239 / 三大从句 7494 / 四个重点 23321 / 五大句型 11735 / 六大词性 15951 字符）。渲染结果：h1 17 / h2 16 / h3 5 / h4 7、表格 16 张 98 行、hr 1、callout 1、彩色标注 38 处、空段落 0；五分区「源 md ↔ 渲染可见文字」逐一比对全部一致（差异仅为 _**/**_ 粗斜体、- 列表、:::info 标记被正确转换）。src/lib/grammar-md.ts 新增标准分割线（---/***/___）到 <hr/> 的转换，app/pages.css 补 .grammar-content hr 虚线样式。内容管线：build-content.mjs 改为递归扫描 article/ 并跳过「语法框架/单选/完型」目录，file 字段仍取纯文件名；build-practice.mjs 单选源支持 article/单选/ 与顶层两个位置，缺失时警告并保留现有 practice.json。验证：npm run content 生成 120 篇 / 588 题 / 32568 词、2774 单选、语法 5 分区，articles.generated.json 与 practice.json 除 generatedAt 外与 HEAD 完全一致；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；headless Chrome #/grammar 无错误页，5 个分区标题、16 张表格、hr、callout、38 处彩色标注均在 DOM；1440 宽截图确认两个态 / 五大句型 / 四个重点的标题层级、表格、列表排版正常；README 与 AGENTS 的源文件路径、目录结构与管线边界同步更新"
+    },
+    {
+      "id": "feat-023",
+      "name": "移动端整句选区工具条避让浏览器复制气泡",
+      "description": "移动端划句子做高亮/批注时，浏览器原生复制气泡会盖住选区工具条。文章正文在触摸设备禁用系统长按菜单；选中多词句子时把工具条固定到底栏上方，单词选区与桌面端保持原位。",
+      "dependencies": ["feat-016"],
+      "status": "done",
+      "evidence": "2026-11-19：SelectionTools 给整句选区加 sel-toolbar-sentence，定位改走 --sel-top/--sel-left 变量；reader.css 在 .article-body 及子节点加 -webkit-touch-callout: none，并在 (hover: none) and (pointer: coarse) 下把 .sel-toolbar-sentence 固定到 calc(72px + env(safe-area-inset-bottom)) 且水平居中；ArticleBody 仅在 coarse pointer 下 preventDefault contextmenu。headless Chrome 移动仿真（360×732，coarse=true）实测选句「After a busy day 」→ 工具条含 sel-toolbar-sentence、bottom=72px、top=625px，点色块后生成 1 个 .ann 且工具条收起；同环境选单词「After」→ 工具条仍在选区上方 top=270px、无 sentence 类；contextmenu defaultPrevented=true。桌面 1280 宽 coarse=false，选句工具条仍在选区上方 top=326px，右键菜单 defaultPrevented=false；练习页题干选区条仍按行内 top/left 定位（top=169px）；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）"
     }
   ]
 }

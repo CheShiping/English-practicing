@@ -290,6 +290,10 @@ export default function ArticleBody({
       ref={containerRef}
       onMouseUp={handleMouseUp}
       onTouchEnd={handleTouchEnd}
+      onContextMenu={(e) => {
+        // 触摸设备只保留站内选区工具条，避免原生长按菜单盖住高亮/批注入口
+        if (window.matchMedia('(pointer: coarse)').matches) e.preventDefault();
+      }}
     >
       {nodes}
     </div>
