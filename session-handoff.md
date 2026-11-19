@@ -12,7 +12,11 @@
 - [x] 完型题库：基础 30 篇 + 进阶 35 篇 = 65 篇 / 1065 空，逐空补答案与中文解析（`src/data/answers/cloze-*.json` 11 个文件），中文小标题写进 `src/data/cloze-meta.ts`
 - [x] 完型管线：`scripts/build-cloze.mjs` 生成 `public/data/cloze.json`，自动重排不连续题号、处理「（不填）」选项、截取原句依据
 - [x] 完型前端：`#/cloze` 题库页 + `#/cloze/:id` 作答页（内联空格胶囊、2×2 选项、即时判定、答题卡弹层、结果页、重做），进度存 `moread.cloze.v1`
-- [x] 入口与版本：Header「完型」、移动端 6 tab、首页 3.0 横幅、`package.json` 3.0.0
+- [x] 入口与版本：Header「完型」、移动端 6 tab（完型第 3、单选第 4）、首页 3.0 横幅、`package.json` 3.0.0
+- [x] 作答布局：桌面端右侧固定答题面板 + 移动端底部答题弹层（取消长列表滚动）
+- [x] 全文翻译：65 篇 / 245 段译文（`translations-cloze*.json`），抽屉里英文按正确答案补全并标绿
+- [x] 划线批注：四色高亮 + 批注 + 划词翻译（复用阅读器组件与 `moread.annotations.v1`，`articleId=cloze:<id>`）
+- [x] 划线批注：四色高亮 + 批注 + 划词翻译（复用阅读器组件与 `moread.annotations.v1`，`articleId=cloze:<id>`）
 
 ## 历史会话已完成
 
@@ -45,6 +49,10 @@
 | 完型作答 | headless Chrome `#/cloze` → `#/cloze/b01` | 通过 | 65 张卡片；10 空格 + 10 小题；选 D 即时判对、胶囊变绿、`moread.cloze.v1` 写入、刷新恢复；答满后结果 4/10 · 40% + 6 条错题 |
 | 完型直链 / 答题卡 | headless Chrome `#/cloze/j17` | 通过 | 20 空篇直达；答题卡 20 格，点第 5 格跳到第 5 空；交卷「未答 10 空」；重做后标记清零 |
 | 完型移动端 | headless Chrome 390px | 通过 | 题库/答题页 `scrollWidth === clientWidth`，底部 6 个 tab |
+| 完型作答布局 | headless Chrome 1440 / 390 | 通过 | 桌面 744+356 双栏、右侧面板随空格切换；移动端面板隐藏、底部弹层作答、锁定背景滚动 |
+| 完型全文翻译 | headless Chrome `#/cloze/b01` / `b13` | 通过 | 桌面 3 段 / 10 个补全词；移动 6 段；无 `___` 残留，无横向溢出 |
+| 完型划线批注 | headless Chrome `#/cloze/b01` | 通过 | 标黄生成 4 段 mark、写入 `cloze:b01/0/0-336/yellow`、刷新保留、点圆点打开批注、翻译弹窗正文按答案补全 |
+| 完型划线批注 | headless Chrome `#/cloze/b01` | 通过 | 标黄生成 4 段 mark、写入 `cloze:b01/0/0-336/yellow`、刷新保留、点圆点打开批注、翻译弹窗正文按答案补全 |
 
 ## 文件变更
 

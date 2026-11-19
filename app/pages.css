@@ -4094,3 +4094,728 @@
     border-radius: var(--radius);
   }
 }
+
+/* ---------- 完型：桌面右侧答题面板 / 移动端底部弹层 ---------- */
+
+.cloze-quiz {
+  max-width: 1120px;
+}
+
+.cloze-quiz-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 356px;
+  gap: 20px;
+  align-items: start;
+  margin-top: 14px;
+}
+
+.cloze-main {
+  min-width: 0;
+}
+
+.cloze-side {
+  position: sticky;
+  top: 16px;
+  padding: 16px 16px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cloze-side-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cloze-side-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-2);
+  letter-spacing: 0.02em;
+}
+
+.cloze-side-count {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.cloze-side-card {
+  padding: 13px 14px 12px;
+}
+
+.cloze-side-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.cloze-side-nav .btn {
+  flex: 1;
+  justify-content: center;
+  padding: 9px 10px;
+  font-size: 13px;
+}
+
+.cloze-side-grid {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 5px;
+  padding-top: 2px;
+}
+
+.cloze-cell {
+  height: 26px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--ink-2);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.cloze-cell:hover {
+  border-color: var(--line-strong);
+}
+
+.cloze-cell.ok {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.cloze-cell.bad {
+  border-color: var(--danger);
+  background: var(--accent-soft);
+  color: var(--danger);
+}
+
+.cloze-cell.cur {
+  box-shadow: 0 0 0 2px var(--gold);
+  border-color: var(--gold);
+}
+
+.cloze-side-tip {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--faint);
+  line-height: 1.6;
+}
+
+/* 正文胶囊：当前题高亮，桌面/移动共用 */
+.cloze-inline.cur {
+  border-style: solid;
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-soft);
+}
+
+.cloze-inline.cur.right {
+  border-color: var(--green);
+  color: var(--green);
+  background: var(--green-soft);
+}
+
+.cloze-inline.cur.wrong {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: var(--accent-soft);
+}
+
+.cloze-hint-mobile {
+  display: none;
+}
+
+/* 移动端底部进度条 */
+.cloze-mobile-bar {
+  display: none;
+}
+
+/* 移动端答题弹层 */
+.cloze-sheet-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  background: rgba(24, 20, 14, 0.42);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: cloze-mask-in var(--dur-base) var(--ease) both;
+}
+
+@keyframes cloze-mask-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.cloze-sheet {
+  width: 100%;
+  max-width: 560px;
+  max-height: 84dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--surface);
+  border-radius: 22px 22px 0 0;
+  padding: 8px 18px calc(18px + env(safe-area-inset-bottom, 0px));
+  box-shadow: 0 -20px 60px -20px rgba(55, 43, 26, 0.45);
+  animation: cloze-sheet-in var(--dur-base) var(--ease) both;
+}
+
+@keyframes cloze-sheet-in {
+  from {
+    transform: translateY(24px);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cloze-sheet-grip {
+  width: 40px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--line-strong);
+  margin: 2px auto 10px;
+}
+
+.cloze-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.cloze-sheet-kicker {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.cloze-sheet-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.cloze-sheet-card {
+  padding: 12px 13px 11px;
+}
+
+.cloze-sheet-nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.cloze-sheet-nav .btn {
+  flex: 1;
+  justify-content: center;
+}
+
+@media (max-width: 980px) {
+  .cloze-quiz {
+    padding-bottom: 64px;
+  }
+
+  .cloze-quiz-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .cloze-side {
+    display: none;
+  }
+
+  .cloze-hint-desktop {
+    display: none;
+  }
+
+  .cloze-hint-mobile {
+    display: inline;
+  }
+
+  .cloze-endbar {
+    display: none;
+  }
+
+  .cloze-mobile-bar {
+    display: flex;
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(66px + env(safe-area-inset-bottom, 0px));
+    z-index: 80;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--surface) 94%, transparent);
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-md);
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .cloze-mobile-bar .btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* ---------- 完型：全文翻译抽屉 ---------- */
+
+.cloze-paper-hint-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cloze-tr-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 6px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-2);
+  font-family: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease);
+}
+
+.cloze-tr-open:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.cloze-tr-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 135;
+  background: rgba(24, 20, 14, 0.42);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cloze-tr-panel {
+  width: min(560px, 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-left: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+  animation: cloze-tr-in var(--dur-base) var(--ease) both;
+}
+
+@keyframes cloze-tr-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cloze-tr-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 22px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.cloze-tr-title {
+  margin: 0 0 4px;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  color: var(--ink);
+}
+
+.cloze-tr-sub {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.cloze-tr-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.cloze-tr-body {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 18px 22px calc(24px + env(safe-area-inset-bottom, 0px));
+}
+
+.cloze-tr-block + .cloze-tr-block {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--line);
+}
+
+.cloze-tr-en {
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+
+.cloze-tr-word {
+  color: var(--green);
+  font-weight: 600;
+  border-bottom: 1px solid color-mix(in srgb, var(--green) 45%, transparent);
+  padding: 0 1px;
+}
+
+.cloze-tr-zh {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .cloze-paper-hint-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .cloze-tr-mask {
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .cloze-tr-panel {
+    width: 100%;
+    height: auto;
+    max-height: 86dvh;
+    border-left: none;
+    border-radius: 22px 22px 0 0;
+    animation: cloze-sheet-in var(--dur-base) var(--ease) both;
+  }
+
+  .cloze-tr-head {
+    padding: 16px 18px 12px;
+  }
+
+  .cloze-tr-body {
+    padding: 14px 18px calc(20px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* ---------- 完型：批注侧栏 ---------- */
+
+.cloze-paper-tools {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.cloze-note-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.cloze-note-empty p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+.cloze-note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cloze-note-item {
+  display: flex;
+  gap: 10px;
+  padding: 14px 14px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.cloze-note-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.cloze-note-dot.c-yellow {
+  background: #f2d675;
+}
+
+.cloze-note-dot.c-green {
+  background: #a9cfa9;
+}
+
+.cloze-note-dot.c-blue {
+  background: #a9c4e0;
+}
+
+.cloze-note-dot.c-pink {
+  background: #e8b3c2;
+}
+
+.cloze-note-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.cloze-note-quote {
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cloze-note-text {
+  margin: 0 0 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.cloze-note-meta {
+  margin: 0 0 8px;
+  font-size: 11.5px;
+  color: var(--faint);
+}
+
+.cloze-note-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cloze-note-actions .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.danger-text {
+  color: var(--danger);
+}
+
+.danger-text:hover {
+  border-color: var(--danger);
+  background: var(--accent-soft);
+}
+
+@media (max-width: 720px) {
+  .cloze-paper-hint-row {
+    gap: 10px;
+  }
+
+  .cloze-paper-tools {
+    width: 100%;
+  }
+
+  .cloze-paper-tools .cloze-tr-open {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* ---------- 完型：批注侧栏 ---------- */
+
+.cloze-paper-tools {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.cloze-note-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 60px 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.cloze-note-empty p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 260px;
+}
+
+.cloze-note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cloze-note-item {
+  display: flex;
+  gap: 10px;
+  padding: 14px 14px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+
+.cloze-note-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.cloze-note-dot.c-yellow {
+  background: #f2d675;
+}
+
+.cloze-note-dot.c-green {
+  background: #a9cfa9;
+}
+
+.cloze-note-dot.c-blue {
+  background: #a9c4e0;
+}
+
+.cloze-note-dot.c-pink {
+  background: #e8b3c2;
+}
+
+.cloze-note-main {
+  min-width: 0;
+  flex: 1;
+}
+
+.cloze-note-quote {
+  margin: 0 0 6px;
+  font-family: var(--font-serif);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cloze-note-text {
+  margin: 0 0 6px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.cloze-note-meta {
+  margin: 0 0 8px;
+  font-size: 11.5px;
+  color: var(--faint);
+}
+
+.cloze-note-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.cloze-note-actions .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.danger-text {
+  color: var(--danger);
+}
+
+.danger-text:hover {
+  border-color: var(--danger);
+  background: var(--accent-soft);
+}
+
+@media (max-width: 720px) {
+  .cloze-paper-hint-row {
+    gap: 10px;
+  }
+
+  .cloze-paper-tools {
+    width: 100%;
+  }
+
+  .cloze-paper-tools .cloze-tr-open {
+    flex: 1;
+    justify-content: center;
+  }
+}

@@ -6,8 +6,8 @@ import { hrefFor } from '@/lib/router';
 const ITEMS = [
   { key: 'home', label: '首页', href: '/', icon: Home },
   { key: 'library', label: '文库', href: '/library', icon: Library },
-  { key: 'practice', label: '单选', href: '/practice', icon: GraduationCap },
   { key: 'cloze', label: '完型', href: '/cloze', icon: PenLine },
+  { key: 'practice', label: '单选', href: '/practice', icon: GraduationCap },
   { key: 'grammar', label: '语法', href: '/grammar', icon: BookOpen },
   { key: 'stats', label: '数据', href: '/stats', icon: BarChart3 },
 ];

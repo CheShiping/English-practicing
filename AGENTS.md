@@ -32,6 +32,7 @@
 | `scripts/extract-cloze-pdf.py` | 一次性工具：把 `article/完型/*.pdf` 提取成 markdown（需 PyMuPDF，产物需人工校对） |
 | `src/data/answers/*.json` | 阅读题答案、解析、原文依据；`danxuan.json` 为单选练习答案与考点；`cloze-*.json` 为完型逐空答案与解析 |
 | `src/data/cloze-meta.ts` | 完型中文小标题（英文标题由管线取首句生成） |
+| `src/data/translations-cloze*.json` | 完型逐段中文译文，空格按正确答案翻译 |
 | `src/data/translations-part*.json` | 逐段中文译文，数组下标对应 `blocks` 索引 |
 | `public/data/practice.json` | 单选练习题库（生成产物，按需 fetch） |
 | `public/data/cloze.json` | 完型填空题库（生成产物，按需 fetch） |
@@ -47,6 +48,8 @@
 - **内容四件套**：新增文章时，题目的 answer/explanation/evidence、逐段译文、`ARTICLE_META` 标题/副标题/标签/摘要必须一并补齐；缺任何一项都算未完成。
 - **完型填空**：改 `article/完型/*.md`（空格写 `___N___`，选项写 `N. A. … B. … C. … D. …`），答案与解析写 `src/data/answers/cloze-*.json`，中文小标题写 `src/data/cloze-meta.ts`，然后跑 `npm run content` 生成 `public/data/cloze.json`；PDF 原件用 `python scripts/extract-cloze-pdf.py` 重新提取，产物必须逐篇校对空格与选项。
 - **完型答案完整性**：每篇每个空都要有 `a`（A-D）与 `n`（中文解析），管线会逐空报「无答案 / 选项数不对」；交卷页的「原句」由管线自动从正文截取。
+- **完型全文翻译**：写 `src/data/translations-cloze*.json`（键为篇 id，值为与 `blocks` 等长的译文数组），空格处按正确答案翻译、不要跳过；「全文翻译」抽屉里英文行会用正确答案补全并标绿。段数不一致时管线会报警。
+- **完型标注**：复用阅读器的批注存储（`moread.annotations.v1`），`articleId` 用 `cloze:<篇 id>`，偏移以整段 `blocks` 文本为坐标、空格按 `___N___` 宽度计；渲染时按空格胶囊切段，注意一条标注会被切成多段，小圆点只在标注末尾输出一次。
 - **词典**：`npm run dict:split` 重建 `public/dict/`，成本高，非必要不跑。
 - `articles.generated.json` 每次生成都会更新 `generatedAt` 时间戳，该文件出现 diff 属正常。
 

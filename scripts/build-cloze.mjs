@@ -12,6 +12,7 @@ const SRC_BASIC = path.join(ROOT, 'article', '完型', '完形填空_题目提�
 const SRC_ADV = path.join(ROOT, 'article', '完型', '完型填空_PDF提取.md');
 const ANSWERS_DIR = path.join(ROOT, 'src', 'data', 'answers');
 const META = path.join(ROOT, 'src', 'data', 'cloze-meta.ts');
+const TR_DIR = path.join(ROOT, 'src', 'data');
 const OUT = path.join(ROOT, 'public', 'data', 'cloze.json');
 
 // 答案按批分文件，合并时以先出现的为准
@@ -158,6 +159,22 @@ function collectAdvanced() {
   return out;
 }
 
+// 译文按批分文件（translations-cloze*.json），合并时以先出现的为准
+function readTranslations() {
+  const merged = {};
+  const files = fs
+    .readdirSync(TR_DIR)
+    .filter((f) => /^translations-cloze.*\.json$/i.test(f))
+    .sort();
+  for (const file of files) {
+    const data = JSON.parse(fs.readFileSync(path.join(TR_DIR, file), 'utf8'));
+    for (const [id, paras] of Object.entries(data)) {
+      if (!merged[id]) merged[id] = paras;
+    }
+  }
+  return merged;
+}
+
 function readMeta() {
   if (!fs.existsSync(META)) return {};
   const text = fs.readFileSync(META, 'utf8');
@@ -198,6 +215,7 @@ function main() {
   const sources = [...collectBasic(), ...collectAdvanced()];
   const answers = loadAnswers();
   const meta = readMeta();
+  const translations = readTranslations();
 
   const warnings = [];
   const passages = [];
@@ -252,6 +270,13 @@ function main() {
       .split(/\s+/)
       .filter((w) => /[A-Za-z]/.test(w)).length;
 
+    const tr = translations[p.id];
+    const translationsAligned = Array.isArray(tr) ? tr : [];
+    if (!translationsAligned.length) warnings.push(`${p.id} 缺全文翻译`);
+    else if (translationsAligned.length !== blocksFixed.length) {
+      warnings.push(`${p.id} 译文段数 ${translationsAligned.length} ≠ 正文段数 ${blocksFixed.length}`);
+    }
+
     passages.push({
       id: p.id,
       no: index + 1,
@@ -261,6 +286,7 @@ function main() {
       zh: meta[p.id]?.zh || '',
       blocks: blocksFixed,
       blanks,
+      translations: translationsAligned,
       wordCount,
     });
   });
@@ -286,6 +312,7 @@ function main() {
   if (remapped) console.log(`  注: ${remapped} 篇沿用上一套题号，已重排为 1..N`);
   const withNotes = passages.reduce((n, p) => n + p.blanks.filter((b) => b.note).length, 0);
   console.log(`  含解析: ${withNotes} 空`);
+  console.log(`  含全文翻译: ${passages.filter((p) => (p.translations || []).length).length} 篇`);
   if (warnings.length) {
     console.log('\n⚠ 警告:');
     for (const w of warnings.slice(0, 40)) console.log('  ' + w);

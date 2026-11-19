@@ -550,14 +550,26 @@ html[data-theme='dark'] .ann-pink {
 }
 
 .ann-dot {
+  position: relative;
   display: inline-block;
-  width: 4px;
-  height: 4px;
+  width: 8px;
+  height: 8px;
+  margin-left: -1px;
+  margin-right: -7px;
+  vertical-align: super;
+  cursor: pointer;
+}
+
+.ann-dot::after {
+  content: '';
+  position: absolute;
+  left: 1.5px;
+  top: 0.5px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: currentColor;
-  opacity: 0.4;
-  margin-left: 3px;
-  vertical-align: super;
+  opacity: 0.45;
 }
 
 .block-translation {

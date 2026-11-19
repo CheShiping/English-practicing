@@ -56,6 +56,7 @@ export interface ClozePassage {
   zh: string;
   blocks: string[];
   blanks: ClozeBlank[];
+  translations?: string[];
   wordCount: number;
 }
 
