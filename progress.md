@@ -13,7 +13,7 @@
 - **证据**：headless Chrome 移动仿真 360×732：选句工具条 bottom=72px、top=625px，点色块成功落 1 个 `.ann`；选单词工具条 top=270px 且无 `sel-toolbar-sentence`；`contextmenu` defaultPrevented=true。桌面 1280 宽选句工具条 top=326px、右键 defaultPrevented=false；练习页题干条 top=169px；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）
 - **本次改动文件**：`src/components/reader/SelectionTools.tsx`、`src/components/reader/ArticleBody.tsx`、`app/reader.css`、`feature_list.json`、`progress.md`
 
-## 2026-11-19 网站 3.0：完型填空上线（feat-023）
+## 2026-11-19 网站 3.0：完型填空上线（feat-024）
 
 - **题目提取**：新增 `scripts/extract-cloze-pdf.py`，把 `article/完型/` 的 3 份 PDF 还原成 markdown——按「第（N）篇」切分、把散落的数字行/`__N__`/`N ______` 统一成 `___N___`、合并被换行拆断的句子与 `life-\nsaving` 这类连字符、按出现顺序把 A-D 选项对回题号（PDF 里有编号重复与错位）。40 篇中 35 篇有完整选项，第 22/23/37/38/40 篇 PDF 本身没有选项，未收录；3 处原文缺空格/编号笔误（第 3 篇缺第 3 空、第 15 篇把 11 写成 2、第 20 篇漏下划线）在脚本里定点修补
 - **题库规模**：`完形填空_题目提取.md` 基础 30 篇 + PDF 提取的进阶 35 篇 = **65 篇 / 1065 空**；每空都补了 A-D 答案与中文解析，解析写成 `src/data/answers/cloze-*.json`（11 个文件），中文小标题写进 `src/data/cloze-meta.ts`
@@ -169,7 +169,7 @@
 - [x] 视觉资产：补齐剩余 29 条 `ARTICLE_META`，重拍 6 张 README 截图并新增练习存档图（feat-020）
 - [x] 语法知识点同步：六大词性更新上线，内容管线支持笔记软件压平导出与 `rgb()` 颜色（feat-021）
 - [x] 语法框架全面更新：五大分区约 6.9 万字上线，分割线渲染与题型分目录的内容管线适配（feat-022）
-- [x] 完型填空：65 篇 / 1065 空题库、内联空格作答页、答题卡与结果页，3.0 上线（feat-023）
+- [x] 完型填空：65 篇 / 1065 空题库、内联空格作答页、答题卡与结果页，3.0 上线（feat-024）
 - [x] 移动端划句标记：整句选区工具条避让浏览器复制气泡，单词选区与桌面端保持原位（feat-023）
 
 ### 进行中
