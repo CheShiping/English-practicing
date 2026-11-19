@@ -48,6 +48,7 @@
 - `scripts/build-content.mjs`（递归扫描 + 目录跳过）、`scripts/build-practice.mjs`（双路径 + 容错）
 - `src/lib/grammar-md.ts`（分割线支持）、`app/pages.css`（hr 样式）
 - `src/data/grammar.generated.json`（生成）
+- `README.md`、`AGENTS.md`（源文件路径、目录结构与管线边界）
 - `feature_list.json`、`progress.md`、`session-handoff.md`
 
 ## 已做出的决策

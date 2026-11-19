@@ -24,7 +24,9 @@
 | `src/state/AppProvider.tsx` | 全局状态与 localStorage 持久化 |
 | `src/lib/` | 词典、Markdown 解析、路由、存储、翻译、类型定义 |
 | `src/data/article-meta.ts` | 文章标题/副标题/标签/摘要与分类文案（按文章 id 索引） |
-| `article/*.md` | 文章与题目源文件（唯一内容源，按 10 个题材分类） |
+| `article/阅读/*.md` | 阅读文章与题目源文件（唯一内容源，10 个题材分类） |
+| `article/单选/*.md` | 单选练习题库源文件（由 `build-practice.mjs` 处理） |
+| `article/完型/` | 完型填空题源（PDF 与提取文本，尚未接入功能） |
 | `scripts/build-content.mjs` | 内容管线：解析文章 → `src/data/articles.generated.json` |
 | `src/data/answers/*.json` | 阅读题答案、解析、原文依据；`danxuan.json` 为单选练习答案与考点 |
 | `src/data/translations-part*.json` | 逐段中文译文，数组下标对应 `blocks` 索引 |
@@ -33,7 +35,8 @@
 
 ## 内容管线
 
-- **新增/修改文章**：只改 `article/*.md`，然后跑 `npm run content`；不要手改 `src/data/articles.generated.json`。
+- **新增/修改文章**：只改 `article/阅读/*.md`，然后跑 `npm run content`；不要手改 `src/data/articles.generated.json`。
+- **目录边界**：`build-content.mjs` 递归扫描 `article/`，但跳过 `语法框架` / `单选` / `完型`；`build-practice.mjs` 依次尝试 `article/单选/` 与顶层，找不到时保留现有 `practice.json`。
 - **文件名决定分类**：映射表在 `scripts/build-content.mjs` 顶部的 `CATEGORY_MAP`；新增分类还需同步 `src/data/article-meta.ts` 的 `CATEGORY_META`。
 - **答案与解析**：写 `src/data/answers/*.json`，按文章 id 与题号 `num` 合并；每项含 `answer`、`explanation`、`evidence`（可定位的英文原句）。
 - **译文**：写 `src/data/translations-part*.json`，键为文章 id，值为按 `blocks` 顺序排列的译文数组，长度必须与 `blocks` 一致。

@@ -14,7 +14,7 @@
 - **渲染增强**：`grammar-md.ts` 支持标准分割线 `---` / `***` / `___` → `<hr/>`（`五大句型` 的「完全倒装 / 部分倒装」之间有一条）；`pages.css` 补 `.grammar-content hr` 虚线样式
 - **核对结果**：`articles.generated.json` 与 `practice.json` 除 `generatedAt` 外与 HEAD **完全一致**（10 个阅读文件与单选源 sha1 逐一比对均与旧文件相同，只是移动位置），网站文章库与题库不受影响
 - **证据**：`npm run content` 120 篇 / 588 题 / 32568 词 + 2774 单选 + 语法 5 分区（130 / 176 / 273 / 185 / 312 行）；`npx tsc --noEmit` exit 0；`npm run build` exit 0（导出 2/2）；headless Chrome `#/grammar` 无错误页，DOM 含 5 个分区标题、16 张表格、1 条 `<hr>`、1 个 callout、38 处彩色 span；五个分区「源 md ↔ 渲染可见文字」逐一比对全部一致；1440 宽截图确认 `两个态` / `五大句型` / `四个重点` 的标题层级、表格与列表排版正常
-- **本次改动文件**：`article/语法框架/*.md`（5 个，用户改动）、`article/` 目录重组（用户改动）、`scripts/build-content.mjs`、`scripts/build-practice.mjs`、`src/lib/grammar-md.ts`、`app/pages.css`、`src/data/grammar.generated.json`（生成）、`feature_list.json`、`progress.md`、`session-handoff.md`
+- **本次改动文件**：`article/语法框架/*.md`（5 个，用户改动）、`article/` 目录重组（用户改动）、`scripts/build-content.mjs`、`scripts/build-practice.mjs`、`src/lib/grammar-md.ts`、`app/pages.css`、`src/data/grammar.generated.json`（生成）、`README.md`、`AGENTS.md`、`feature_list.json`、`progress.md`、`session-handoff.md`
 
 ## 2026-11-14 同步六大词性语法知识点更新（feat-021）
 
