@@ -108,6 +108,7 @@ function renderTable(block: TableBlock): string {
 }
 
 const isHeading = (line: string) => /^#{1,6}\s+/.test(line);
+const isDivider = (line: string) => /^\s*(?:-{3,}|\*{3,}|_{3,})\s*$/.test(line);
 const isTableRow = (line: string) => /^\s*\|/.test(line);
 const isListItem = (line: string) => /^\s*[-*]\s+/.test(line);
 const isCallout = (line: string) => /^:::info\s*$/.test(line);
@@ -134,6 +135,12 @@ export function grammarMarkdownToHtml(markdown: string): string {
       }
       i += 1;
       html.push(`<div class="grammar-md-callout"><p>${body.map(inline).join('<br/>')}</p></div>`);
+      continue;
+    }
+
+    if (isDivider(line)) {
+      html.push('<hr/>');
+      i += 1;
       continue;
     }
 
@@ -169,6 +176,7 @@ export function grammarMarkdownToHtml(markdown: string): string {
       i < lines.length &&
       lines[i].trim() &&
       !isHeading(lines[i]) &&
+      !isDivider(lines[i]) &&
       !isTableRow(lines[i]) &&
       !isListItem(lines[i]) &&
       !isCallout(lines[i]) &&

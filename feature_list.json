@@ -169,6 +169,14 @@
       "dependencies": ["feat-013"],
       "status": "done",
       "evidence": "2026-11-14：scripts/build-grammar.mjs 增加 restoreFlattenedMarkdown（仅单个超长行且含 ≥2 个内联标题或内联表格时启用；标签栈避免拆断 <font>/<u>；表格 10 行连续拼接；末尾 stripWhitespace 保真校验，不一致即中止）。src/lib/grammar-md.ts 的 fontToSpan 支持 #hex 与 rgb()，#262626 / rgb(38,38,38) / rgb(15,17,21) / 纯白视为中性色跟随主题，并跳过只剩空标记的段落。生成结果：六大词性 224 行 / 13763 字，6 个考点标题、1 张 10 行表格、27 处彩色标注、0 空段落；源 md ↔ 生成内容 ↔ 渲染可见文字三方一致；另 4 个分区行数与内容完全未变（97/152/234/56）。headless Chrome 实际渲染 #/grammar：6 个标题、新增口诀「妻子持刀去宰狼」与「情态动词加have done表虚拟语气」、6 张表格、31 处彩色 span 均在 DOM 中，1440 宽截图确认标题分层、分段、下划线与表格正常无空块。npm run content（120 篇 / 588 题 / 32568 词 + 2774 单选 + 语法 5 分区）、npx tsc --noEmit exit 0、npm run build exit 0（静态导出 2/2）；纯时间戳变动的 practice.json / articles.generated.json 已还原，未纳入提交"
+    },
+    {
+      "id": "feat-022",
+      "name": "同步五大语法分区全面更新并适配题型分目录",
+      "description": "用户重写全部 5 个语法框架 md（内容量约 2.4 倍），同时把 article/ 按题型重组为「阅读 / 单选 / 完型」子目录。本次同步语法内容、补上渲染器的标准分割线支持，并让内容管线支持子目录扫描，避免部署时把文章库清空。",
+      "dependencies": ["feat-021"],
+      "status": "done",
+      "evidence": "2026-11-19：语法内容从约 2.9 万字增至 6.9 万字（两个态 10239 / 三大从句 7494 / 四个重点 23321 / 五大句型 11735 / 六大词性 15951 字符）。渲染结果：h1 17 / h2 16 / h3 5 / h4 7、表格 16 张 98 行、hr 1、callout 1、彩色标注 38 处、空段落 0；五分区「源 md ↔ 渲染可见文字」逐一比对全部一致（差异仅为 _**/**_ 粗斜体、- 列表、:::info 标记被正确转换）。src/lib/grammar-md.ts 新增标准分割线（---/***/___）到 <hr/> 的转换，app/pages.css 补 .grammar-content hr 虚线样式。内容管线：build-content.mjs 改为递归扫描 article/ 并跳过「语法框架/单选/完型」目录，file 字段仍取纯文件名；build-practice.mjs 单选源支持 article/单选/ 与顶层两个位置，缺失时警告并保留现有 practice.json。验证：npm run content 生成 120 篇 / 588 题 / 32568 词、2774 单选、语法 5 分区，articles.generated.json 与 practice.json 除 generatedAt 外与 HEAD 完全一致；npx tsc --noEmit exit 0；npm run build exit 0（导出 2/2）；headless Chrome #/grammar 无错误页，5 个分区标题、16 张表格、hr、callout、38 处彩色标注均在 DOM；1440 宽截图确认两个态 / 五大句型 / 四个重点的标题层级、表格、列表排版正常"
     }
   ]
 }
