@@ -7,7 +7,12 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
-const SRC = path.join(ROOT, 'article', '专升本词汇语法试题_单选题.md');
+// 单选源允许放在 article/单选/ 或 article/ 顶层（历史位置）
+const SRC_CANDIDATES = [
+  path.join(ROOT, 'article', '单选', '专升本词汇语法试题_单选题.md'),
+  path.join(ROOT, 'article', '专升本词汇语法试题_单选题.md'),
+];
+const SRC = SRC_CANDIDATES.find((p) => fs.existsSync(p)) || null;
 const ANSWERS = path.join(ROOT, 'src', 'data', 'answers', 'danxuan.json');
 const OUT = path.join(ROOT, 'public', 'data', 'practice.json');
 
@@ -80,6 +85,10 @@ function parseMd() {
 }
 
 function main() {
+  if (!SRC) {
+    console.warn('⚠ 未找到单选源文件，跳过本次生成（保留现有 public/data/practice.json）');
+    return;
+  }
   const sections = parseMd();
   const answers = JSON.parse(fs.readFileSync(ANSWERS, 'utf8'));
 

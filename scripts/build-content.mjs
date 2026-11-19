@@ -23,6 +23,24 @@ const CATEGORY_MAP = {
 // 由 scripts/build-practice.mjs 处理的纯题目练习文件，不进入文章管线
 const PRACTICE_FILES = new Set(['专升本词汇语法试题_单选题']);
 
+// article/ 已按题型分目录：语法笔记、单选与完型题源不进入阅读文章管线，
+// 其余子目录（当前为「阅读」）与顶层 md 都作为文章源。
+const SKIP_DIRS = new Set(['语法框架', '单选', '完型']);
+
+function collectMarkdown(dir, prefix = '') {
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const rel = prefix ? `${prefix}/${entry.name}` : entry.name;
+    if (entry.isDirectory()) {
+      if (SKIP_DIRS.has(entry.name)) continue;
+      out.push(...collectMarkdown(path.join(dir, entry.name), rel));
+    } else if (entry.name.endsWith('.md')) {
+      out.push({ fullPath: path.join(dir, entry.name), rel });
+    }
+  }
+  return out;
+}
+
 function unescapeMd(s) {
   return String(s)
     .replace(/\\([.\\\-!()_*#\[\]{}`>+~|])/g, '$1')
@@ -344,13 +362,13 @@ function main() {
   }
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  const files = fs.readdirSync(ARTICLE_DIR).filter((f) => f.endsWith('.md'));
+  const files = collectMarkdown(ARTICLE_DIR).sort((a, b) => a.rel.localeCompare(b.rel, 'zh'));
   const articles = [];
   const categories = [];
   const warnings = [];
 
-  for (const file of files) {
-    const base = path.basename(file, '.md');
+  for (const entry of files) {
+    const base = path.basename(entry.rel, '.md');
     if (PRACTICE_FILES.has(base)) continue;
     let cat = CATEGORY_MAP[base];
     if (!cat) {
@@ -358,7 +376,7 @@ function main() {
       cat = { catId: `custom-${shortHash(base)}`, catName: name, order: 99 };
       warnings.push(`未注册分类「${name}」：已自动归入「${name}」，可在 article-meta.ts 中补充配色与图标`);
     }
-    const parsed = parseFile(path.join(ARTICLE_DIR, file), cat);
+    const parsed = parseFile(entry.fullPath, cat);
     const catArticles = [];
     for (const p of parsed.passages) {
       const { bodyLines, qLines } = splitBodyAndQuestions(p.rawLines);
@@ -366,14 +384,14 @@ function main() {
       const questions = parseQuestions(qLines);
       const text = blocks.map((b) => b.text).join(' ');
       const words = (text.match(/[A-Za-z][A-Za-z'’\-]*/g) || []).length;
-      if (!blocks.length) { warnings.push(`${file} Passage ${p.number}: 正文为空，已跳过`); continue; }
-      if (!questions.length) { warnings.push(`${file} Passage ${p.number}: 未解析到题目（可能原文被截断）`); }
+      if (!blocks.length) { warnings.push(`${entry.rel} Passage ${p.number}: 正文为空，已跳过`); continue; }
+      if (!questions.length) { warnings.push(`${entry.rel} Passage ${p.number}: 未解析到题目（可能原文被截断）`); }
 
       // Skip clearly truncated passages: too little body, or a body that ends mid-instruction.
       const lastText = (blocks[blocks.length - 1]?.text || '').trim();
-      if (words < 60) { warnings.push(`${file} Passage ${p.number}: 正文过短（${words} 词），疑似截断，已跳过`); continue; }
+      if (words < 60) { warnings.push(`${entry.rel} Passage ${p.number}: 正文过短（${words} 词），疑似截断，已跳过`); continue; }
       if (!questions.length && (/[:：]$/.test(lastText) || !/[.!?。！？"”']$/.test(lastText))) {
-        warnings.push(`${file} Passage ${p.number}: 正文在“${lastText}”处截断且无题目，已跳过`);
+        warnings.push(`${entry.rel} Passage ${p.number}: 正文在“${lastText}”处截断且无题目，已跳过`);
         continue;
       }
 
@@ -393,7 +411,7 @@ function main() {
         questions,
         wordCount: words,
         difficulty: estimateDifficulty(words, questions.length),
-        file,
+        file: path.basename(entry.rel),
       });
     }
     catArticles.sort((a, b) => a.number - b.number);
@@ -403,7 +421,7 @@ function main() {
         id: cat.catId,
         name: cat.catName,
         order: cat.order,
-        file,
+        file: path.basename(entry.rel),
         count: catArticles.length,
       });
     }
