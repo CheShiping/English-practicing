@@ -173,6 +173,7 @@
 ## 阻塞 / 风险
 
 - [x] 2026-11-14 推送受阻已解除：`git push` 一度因本机代理 `127.0.0.1:63727` 返回 `CONNECT tunnel failed, response 502`（绕过代理直连为 `Connection was reset`）失败；14:16 重试成功，`dc1275b..95e93d8  main -> main`，2 个提交已上远端，GitHub Pages 自动部署已触发
+- [ ] 2026-11-19 本地提交 `161da01`（feat-023）推送受阻：代理 `127.0.0.1:50729` 返回 `CONNECT tunnel failed, response 502`，绕过代理直连 21s 超时，schannel 另报 `CRYPT_E_REVOCATION_OFFLINE`；`http.schannelCheckRevoke=false` 与 `http.sslBackend=openssl` 均重试无效。提交已在本地 main，待网络恢复后 `git push origin main`
 - [ ] Windows 构建缓存：`npx next build` 可能因缺失 `.next/static/<id>/_ssgManifest.js` 失败；先删除 `.next` 并预建 `.next\static` 再构建
 - [ ] 生成文件噪声：`src/data/articles.generated.json`、`public/data/practice.json`、`src/data/grammar.generated.json` 含 `generatedAt` 时间戳，每次构建都会产生 diff
 - [ ] 无 ESLint 配置：`npm run lint` 会进入交互式初始化，不能作为验证门槛
