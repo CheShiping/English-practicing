@@ -6,12 +6,9 @@ import {
   ArrowRight,
   BookOpen,
   BookX,
-  Brain,
   CheckCircle2,
   ChevronLeft,
   ChevronRight,
-  Eye,
-  EyeOff,
   Languages,
   LayoutGrid,
   Play,
@@ -37,19 +34,12 @@ import {
   loadCloze,
   saveClozePick,
 } from '@/lib/cloze';
-import {
-  getReciteBook,
-  getUnknownEntries,
-  removeRecite,
-  setReciteStatus,
-} from '@/lib/recite';
 import type { Annotation, Article, ClozeBlank, ClozeData, ClozePassage, HighlightColor } from '@/lib/types';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 const BLANK_RE = /___(\d{1,2})___/g;
 
 type Phase = 'loading' | 'list' | 'quiz' | 'result' | 'error';
-type Drill = 'answer' | 'recite';
 
 export default function ClozePage({ passageId }: { passageId?: string }) {
   const { recordActivity, toast, annotations, addAnnotation, removeAnnotation } = useApp();
@@ -63,9 +53,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
   const [showSheet, setShowSheet] = useState(false);
   const [wordPop, setWordPop] = useState<{ word: string; rect: DOMRect } | null>(null);
   const [active, setActive] = useState(1);
-  // 作答 / 背题：背题直接把答案填进正文，逐空自评「记住了 / 没记住」
-  const [drill, setDrill] = useState<Drill>('answer');
-  const [reciteVersion, setReciteVersion] = useState(0);
   // 手机端：点正文空格后用底部弹层答题；桌面端答在右侧固定面板
   const [answerSheet, setAnswerSheet] = useState(false);
   const [trOpen, setTrOpen] = useState(false);
@@ -133,90 +120,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
     }
     return { done, answered, correct, percent: answered ? Math.round((correct / answered) * 100) : 0 };
   }, [passages, book]);
-
-  // 背题自评：逐空记录「记住了 / 没记住」，跨篇按 passageId 聚合
-  const reciteBook = useMemo(() => {
-    void reciteVersion;
-    return getReciteBook();
-  }, [reciteVersion]);
-
-  const reciteStat = useMemo(() => {
-    if (!paper) return { known: 0, unknown: 0 };
-    const prefix = `${paper.id}#`;
-    let known = 0;
-    let unknown = 0;
-    for (const e of Object.values(reciteBook)) {
-      if (e.scope !== 'cloze' || !e.ref.startsWith(prefix)) continue;
-      if (e.status === 'known') known += 1;
-      else unknown += 1;
-    }
-    return { known, unknown };
-  }, [reciteBook, paper]);
-
-  const rateBlank = useCallback(
-    (b: ClozeBlank, known: boolean) => {
-      if (!paper) return;
-      setReciteStatus('cloze', `${paper.id}#${b.num}`, known ? 'known' : 'unknown');
-      setReciteVersion((v) => v + 1);
-    },
-    [paper],
-  );
-
-  // 背题本里「没记住」的完型空格数量
-  const reciteUnknownCount = useMemo(() => {
-    void reciteVersion;
-    return getUnknownEntries('cloze').length;
-  }, [reciteVersion]);
-
-  // 背题模式下右侧/弹层显示的是「这一空的答案与解析」，不是选项
-  const reciteCard = (b: ClozeBlank, index: number) => {
-    const answerText = (b.options[LETTERS.indexOf(b.answer)] || '').trim();
-    const marked = reciteBook[`cloze:${paper?.id}#${b.num}`];
-    return (
-      <>
-        <div className="cloze-q-head">
-          <span className="cloze-q-num">{b.num}</span>
-          <span className="cloze-q-state">
-            {marked?.status === 'known' ? (
-              <>
-                <CheckCircle2 size={14} /> 已记住
-              </>
-            ) : marked?.status === 'unknown' ? (
-              <>
-                <XCircle size={14} /> 没记住
-              </>
-            ) : (
-              `第 ${index + 1} 空 · 待背`
-            )}
-          </span>
-        </div>
-        <div className="recite-answer">
-          正确答案 {b.answer}. {answerText}
-        </div>
-        {b.note && <p className="practice-explanation">{b.note}</p>}
-        {b.evidence && (
-          <p className="cloze-evidence">
-            原句：{b.evidence.replace(`___${b.num}___`, `【${answerText.toLowerCase()}】`)}
-          </p>
-        )}
-        <div className="recite-actions">
-          <button
-            className={`btn small ${marked?.status === 'known' ? 'primary' : ''}`}
-            onClick={() => rateBlank(b, true)}
-          >
-            <CheckCircle2 size={14} /> 记住了
-          </button>
-          <button
-            className={`btn small ${marked?.status === 'unknown' ? 'ghost danger-text' : 'ghost'}`}
-            onClick={() => rateBlank(b, false)}
-            title="收进背题本，下次再背一遍"
-          >
-            <XCircle size={14} /> 没记住
-          </button>
-        </div>
-      </>
-    );
-  };
 
   // 打开某一篇：带上次作答进入
   const openPassage = useCallback((p: ClozePassage) => {
@@ -525,42 +428,22 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
           </button>
           <div className="practice-progress">
             <span className="practice-progress-text">
-              {drill === 'recite'
-                ? `${paper.bank} · ${paper.label} · 背题 · 已背 ${reciteStat.known + reciteStat.unknown} / ${paper.blanks.length} 空`
-                : `${paper.bank} · ${paper.label} · 已答 ${stat.answered} / ${stat.total} · 对 ${stat.correct}`}
+              {paper.bank} · {paper.label} · 已答 {stat.answered} / {stat.total} · 对 {stat.correct}
             </span>
             <div className="practice-progress-bar">
-              <span
-                style={{
-                  width: `${
-                    drill === 'recite'
-                      ? ((reciteStat.known + reciteStat.unknown) / paper.blanks.length) * 100
-                      : (stat.answered / stat.total) * 100
-                  }%`,
-                }}
-              />
+              <span style={{ width: `${(stat.answered / stat.total) * 100}%` }} />
             </div>
           </div>
-          <button
-            className={`practice-mark ${drill === 'recite' ? 'on' : ''}`}
-            onClick={() => setDrill((d) => (d === 'recite' ? 'answer' : 'recite'))}
-            title={drill === 'recite' ? '退出背题，回到逐空作答' : '切到背题模式：正文直接显示答案并逐空自评'}
-            aria-pressed={drill === 'recite'}
-          >
-            {drill === 'recite' ? <EyeOff size={15} /> : <Eye size={15} />} {drill === 'recite' ? '退出背题' : '背题'}
-          </button>
           <button className="practice-mark" onClick={() => setShowSheet(true)}>
             <LayoutGrid size={15} /> 答题卡
           </button>
-          {drill === 'answer' && (
-            <button
-              className="practice-mark"
-              onClick={finish}
-              title={allDone ? '查看本篇结果' : `还剩 ${remain} 空未答`}
-            >
-              <CheckCircle2 size={15} /> 交卷
-            </button>
-          )}
+          <button
+            className="practice-mark"
+            onClick={finish}
+            title={allDone ? '查看本篇结果' : `还剩 ${remain} 空未答`}
+          >
+            <CheckCircle2 size={15} /> 交卷
+          </button>
         </div>
 
         <div className="cloze-quiz-grid">
@@ -619,7 +502,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
                       active,
                       anns.filter((a) => a.blockIndex === bi),
                       (ann, el) => setNoteEdit(ann),
-                      drill === 'recite',
                     )}
                   </p>
                 ))}
@@ -646,14 +528,14 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
           {/* 桌面端：右侧固定答题面板 */}
           <aside className="cloze-side" aria-label="答题面板">
             <div className="cloze-side-head">
-              <p className="cloze-side-title">{drill === 'recite' ? '背题' : '答题'}</p>
+              <p className="cloze-side-title">答题</p>
               <span className="cloze-side-count">
                 {activeIndex + 1} / {paper.blanks.length} 空
               </span>
             </div>
 
-            <div className={`cloze-q cloze-side-card ${drill === 'recite' ? '' : picks[activeBlank.num] ? (picks[activeBlank.num] === activeBlank.answer ? 'right' : 'wrong') : ''}`}>
-              {drill === 'recite' ? reciteCard(activeBlank, activeIndex) : blankCard(activeBlank, activeIndex)}
+            <div className={`cloze-q cloze-side-card ${picks[activeBlank.num] ? (picks[activeBlank.num] === activeBlank.answer ? 'right' : 'wrong') : ''}`}>
+              {blankCard(activeBlank, activeIndex)}
             </div>
 
             <div className="cloze-side-nav">
@@ -673,25 +555,12 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
               {paper.blanks.map((b) => {
                 const mine = picks[b.num];
                 const ok = mine === b.answer;
-                const marked = reciteBook[`cloze:${paper.id}#${b.num}`];
                 return (
                   <button
                     key={b.num}
-                    className={`cloze-cell ${active === b.num ? 'cur' : ''} ${
-                      drill === 'recite'
-                        ? marked?.status === 'known'
-                          ? 'ok'
-                          : marked?.status === 'unknown'
-                            ? 'bad'
-                            : ''
-                        : mine
-                          ? ok
-                            ? 'ok'
-                            : 'bad'
-                          : ''
-                    }`}
+                    className={`cloze-cell ${active === b.num ? 'cur' : ''} ${mine ? (ok ? 'ok' : 'bad') : ''}`}
                     onClick={() => setActive(b.num)}
-                    title={`第 ${b.num} 空${drill === 'recite' ? (marked ? `：${marked.status === 'known' ? '已记住' : '没记住'}` : '：待背') : mine ? '：已选 ' + mine : ''}`}
+                    title={`第 ${b.num} 空${mine ? '：已选 ' + mine : ''}`}
                   >
                     {b.num}
                   </button>
@@ -699,8 +568,7 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
               })}
             </div>
 
-            <p className="cloze-side-tip">
-              {drill === 'recite' ? '绿 已记住 · 红 没记住 · 金框当前；点空号可切换' : '绿色对 · 红色错 · 金框当前；点空号可切换'}
+            <p className="cloze-side-tip">绿色对 · 红色错 · 金框当前；点空号可切换
             </p>
           </aside>
         </div>
@@ -708,15 +576,9 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
         {/* 移动端：底部进度条 + 答题弹层 */}
         <div className="cloze-mobile-bar">
           <span>
-            {drill === 'recite'
-              ? `已背 ${reciteStat.known + reciteStat.unknown} / ${stat.total} 空 · 记住 ${reciteStat.known}`
-              : `已答 ${stat.answered} / ${stat.total} · 对 ${stat.correct}`}
+            已答 {stat.answered} / {stat.total} · 对 {stat.correct}
           </span>
-          {drill === 'recite' ? (
-            <button className="btn primary" onClick={() => focusBlank(nextUnrecited(paper, reciteBook))}>
-              继续背
-            </button>
-          ) : allDone ? (
+          {allDone ? (
             <button className="btn primary" onClick={finish}>
               查看结果
             </button>
@@ -745,8 +607,8 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
                   <X size={16} />
                 </button>
               </div>
-              <div className={`cloze-q cloze-sheet-card ${drill === 'recite' ? '' : picks[activeBlank.num] ? (picks[activeBlank.num] === activeBlank.answer ? 'right' : 'wrong') : ''}`}>
-                {drill === 'recite' ? reciteCard(activeBlank, activeIndex) : blankCard(activeBlank, activeIndex)}
+              <div className={`cloze-q cloze-sheet-card ${picks[activeBlank.num] ? (picks[activeBlank.num] === activeBlank.answer ? 'right' : 'wrong') : ''}`}>
+                {blankCard(activeBlank, activeIndex)}
               </div>
               <div className="cloze-sheet-nav">
                 <button className="btn ghost" disabled={activeIndex === 0} onClick={() => stepBlank(-1)}>
@@ -755,10 +617,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
                 {activeIndex < paper.blanks.length - 1 ? (
                   <button className="btn primary" onClick={() => stepBlank(1)}>
                     下一空 <ChevronRight size={15} />
-                  </button>
-                ) : drill === 'recite' ? (
-                  <button className="btn primary" onClick={() => setAnswerSheet(false)}>
-                    背完这空
                   </button>
                 ) : (
                   <button className="btn primary" onClick={finish}>
@@ -781,34 +639,17 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
             >
               <div className="practice-sheet-grip" />
               <div className="practice-sheet-head">
-                <p className="practice-sheet-title">
-                  {drill === 'recite' ? '背题进度' : '答题卡'}（{paper.blanks.length} 空）
-                </p>
-                <span className="practice-sheet-legend">
-                  {drill === 'recite' ? '绿 已记住 · 红 没记住 · 金框 当前' : '绿 对 · 红 错 · 金框 当前'}
-                </span>
+                <p className="practice-sheet-title">答题卡（{paper.blanks.length} 空）</p>
+                <span className="practice-sheet-legend">绿 对 · 红 错 · 金框 当前</span>
               </div>
               <div className="practice-sheet-grid">
                 {paper.blanks.map((b) => {
                   const mine = picks[b.num];
                   const ok = mine === b.answer;
-                  const marked = reciteBook[`cloze:${paper.id}#${b.num}`];
                   return (
                     <button
                       key={b.num}
-                      className={`practice-sheet-cell ${active === b.num ? 'cur' : ''} ${
-                        drill === 'recite'
-                          ? marked?.status === 'known'
-                            ? 'ok'
-                            : marked?.status === 'unknown'
-                              ? 'bad'
-                              : ''
-                          : mine
-                            ? ok
-                              ? 'ok'
-                              : 'bad'
-                            : ''
-                      }`}
+                      className={`practice-sheet-cell ${active === b.num ? 'cur' : ''} ${mine ? (ok ? 'ok' : 'bad') : ''}`}
                       onClick={() => {
                         setActive(b.num);
                         setShowSheet(false);
@@ -1087,9 +928,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
           <a className="btn ghost" href={hrefFor('/practice')}>
             <Play size={15} /> 单选练习
           </a>
-          <a className="btn ghost" href={hrefFor('/recite')}>
-            <Brain size={15} /> 背题本{reciteUnknownCount > 0 ? `（${reciteUnknownCount}）` : ''}
-          </a>
           <a className="btn ghost" href={hrefFor('/grammar')}>
             <BookOpen size={15} /> 语法速查
           </a>
@@ -1138,16 +976,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
         {shown.map((p) => {
           const stat = clozeStat(p, book[p.id]);
           const started = stat.answered > 0;
-          // 本篇的背题自评进度
-          const prefix = `${p.id}#`;
-          let rKnown = 0;
-          let rUnknown = 0;
-          for (const e of Object.values(reciteBook)) {
-            if (e.scope !== 'cloze' || !e.ref.startsWith(prefix)) continue;
-            if (e.status === 'known') rKnown += 1;
-            else rUnknown += 1;
-          }
-          const rTotal = rKnown + rUnknown;
           return (
             <button key={p.id} className="cloze-card" onClick={() => openPassage(p)}>
               <div className="cloze-card-top">
@@ -1168,12 +996,6 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
                 </span>
                 <ChevronRight size={15} />
               </div>
-              {rTotal > 0 && (
-                <div className="cloze-card-recite">
-                  <Brain size={13} /> 已背 {rTotal} / {p.blanks.length} 空
-                  {rUnknown > 0 ? ` · ${rUnknown} 空没记住` : ''}
-                </div>
-              )}
             </button>
           );
         })}
@@ -1199,7 +1021,6 @@ function renderBlock(
   active: number,
   anns: Annotation[],
   onAnnClick: (ann: Annotation, el: HTMLElement) => void,
-  recite = false,
 ) {
   const nodes: React.ReactNode[] = [];
   let last = 0;
@@ -1242,27 +1063,19 @@ function renderBlock(
     pushText(last, start);
     const blank = blanks.find((b) => b.num === num);
     const mine = picks[num];
-    // 背题模式：正文直接按正确答案填好，不再遮住；偏移仍按 ___N___ 计，标注位置不变
-    const answerWord = blank ? (blank.options[LETTERS.indexOf(blank.answer)] || '').trim() : '';
-    const state = recite ? 'right' : !mine ? 'empty' : mine === blank?.answer ? 'right' : 'wrong';
+    const state = !mine ? 'empty' : mine === blank?.answer ? 'right' : 'wrong';
     nodes.push(
       <button
         key={`b${key++}`}
-        className={`cloze-inline ${state} ${active === num ? 'cur' : ''} ${recite ? 'recite' : ''}`}
+        className={`cloze-inline ${state} ${active === num ? 'cur' : ''}`}
         data-num={num}
         onClick={(e) => {
           e.stopPropagation();
           onJump(num);
         }}
-        title={
-          recite
-            ? `第 ${num} 空 · 正确答案 ${answerWord}`
-            : mine
-              ? `第 ${num} 空：已选 ${mine}`
-              : `第 ${num} 空，点此作答`
-        }
+        title={mine ? `第 ${num} 空：已选 ${mine}` : `第 ${num} 空，点此作答`}
       >
-        {recite ? answerWord || num : mine || num}
+        {mine || num}
       </button>,
     );
     last = start + m[0].length;
@@ -1370,12 +1183,6 @@ function renderTranslated(block: string, blanks: ClozeBlank[]) {
 
 function nextUnanswered(p: ClozePassage, picks: Record<number, string>): number {
   const found = p.blanks.find((b) => !picks[b.num]);
-  return found ? found.num : p.blanks[0]?.num || 1;
-}
-
-// 背题：找下一个还没自评过的空
-function nextUnrecited(p: ClozePassage, reciteBook: Record<string, { status: string }>): number {
-  const found = p.blanks.find((b) => !reciteBook[`cloze:${p.id}#${b.num}`]);
   return found ? found.num : p.blanks[0]?.num || 1;
 }
 

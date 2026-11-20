@@ -112,10 +112,10 @@ export function clearMarkBook(): void {
 // ---------- 练习进度续答 ----------
 // 每份试卷一个存档位（考点 + 细分考点），换分类答题不会覆盖别的记录
 
-export type PracticeSource = 'pool' | 'wrong' | 'marked' | 'unknown';
+export type PracticeSource = 'pool' | 'wrong' | 'marked';
 
 export interface PracticeResume {
-  key: string; // 存档位：pool:大类:细分 / wrong / marked / unknown / recite:大类:细分
+  key: string; // 存档位：pool:大类:细分 / wrong / marked / recite:大类:细分
   ids: string[]; // 试卷题目 id 顺序
   picks: Record<string, string>; // 已作答 id -> 选项字母
   marks: string[]; // 已标记 id
@@ -123,8 +123,7 @@ export interface PracticeResume {
   source: PracticeSource;
   cursor: number; // 上次停留的题目下标
   updatedAt: number;
-  mode?: 'answer' | 'recite'; // 背题模式的存档：seen 记录已翻开过答案的题
-  seen?: string[]; // 背题模式：已翻开答案的题 id
+  mode?: 'answer' | 'recite'; // 背题模式的存档
 }
 
 // 同时保留几份未完成练习
@@ -139,7 +138,7 @@ export function practiceResumeKey(
   if (source === 'pool') {
     return mode === 'recite' ? `recite:${category}:${sub}` : `pool:${category}:${sub}`;
   }
-  return source === 'unknown' ? 'unknown' : source;
+  return source;
 }
 
 function readResumeMap(): Record<string, PracticeResume> {
@@ -189,8 +188,8 @@ export function clearAllPracticeResumes(): void {
 
 // 已作答数量，用于列表展示与按钮文案
 export function answeredCount(resume: PracticeResume): number {
-  // 背题模式按「已翻开的题」计，做题模式按「已作答的题」计
-  if (resume.mode === 'recite') return (resume.seen || []).length;
+  // 背题模式不判对错，进度就是翻到的题号；做题模式按「已作答的题」计
+  if (resume.mode === 'recite') return (resume.cursor || 0) + 1;
   return Object.keys(resume.picks || {}).filter(Boolean).length;
 }
 

@@ -141,11 +141,11 @@ export default function HomePage() {
       <section className="cloze-banner recite-banner" aria-label="3.1 新增背题模式">
         <div>
           <span className="eyebrow">New in 3.1 · Recite</span>
-          <h2>背题模式上线：单选与完型都能遮住答案背</h2>
-          <p>先自己回想，再翻开答案核对，最后标记「记住了 / 没记住」——没记住的自动收进背题本。</p>
+          <h2>背题模式上线：单选题直接看答案与解析</h2>
+          <p>不想做题时切到背题模式，正确选项、考点标签和中文解析一次性摊开，逐题过一遍最适合复习。</p>
         </div>
-        <a className="btn primary" href={hrefFor('/recite')}>
-          打开背题本 <ArrowRight size={15} />
+        <a className="btn primary" href={hrefFor('/practice')}>
+          去背题 <ArrowRight size={15} />
         </a>
       </section>
 

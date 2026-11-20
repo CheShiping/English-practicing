@@ -3,21 +3,18 @@
 ## 当前状态
 
 **最后更新：** 2026-11-20
-**当前功能：** feat-025 网站 3.1：背题模式（单选 + 完型）（已完成）
+**当前功能：** feat-025 网站 3.1：单选背题模式（已完成）
 
-## 2026-11-20 网站 3.1：背题模式上线（feat-025）
+## 2026-11-20 网站 3.1：单选背题模式（feat-025）
 
-- **用户需求**：新增背题功能，覆盖单选与完型两处，系统版本升到 3.1.1，验证完直接提交
-- **背题模式（单选）**：`PracticePage` 加 `drill` 状态与「做题 / 背题」模式块。背题时**不显示选项**、只给题干与「想好了？翻开答案」按钮；翻开后四个选项按 2×2 排出、正确项绿色高亮并给出中文解析与考点标签，再自评「记住了 / 没记住」——自评完自动翻到下一题，背起来连贯
-- **背题模式（完型）**：`ClozePage` 顶部加「背题」开关。切过去后**正文空格直接按正确答案填好并标绿**（`.cloze-inline.recite`），右侧面板 / 移动端弹层改显示「正确答案 + 中文解析 + 原句依据」并给逐空自评按钮；空号一览与答题卡按绿（已记住）/ 红（没记住）着色，移动端底栏「继续背」自动跳到下一个还没自评的空
-- **统一背题本**（`#/recite`）：新增 `src/components/pages/RecitePage.tsx`，把单选「没记住」的题与完型「没记住」的空汇总到一处，可按单选 / 完型筛选；点「显示答案」核对，确认记住后移出。Header 导航与首页 3.1 横幅都加了入口
-- **数据层**：新增 `src/lib/recite.ts`，统一存自评（`moread.recite.v1`，已加入 `storage.ts` 的 KEYS，跟着备份导出 / 导入走）。单选用 `practice:<题目 id>`，完型用 `cloze:<篇 id>#<空号>`
-- **只背没记住的**：单选练习页在背题模式下多一个「只背没记住的（N 题）」按钮，直接出卷背题本里那批题，不用从头过
-- **存档隔离**：背题与做题各占一个存档位（`recite:<大类>:<细分>` vs `pool:<大类>:<细分>`），互不覆盖；`PracticeResume` 加 `mode` 与 `seen` 字段，`answeredCount` 按模式分别计「已背 / 已答」
-- **口径**：背题**不计入**做题正确率统计，也不写入练习历史——它是记忆活动，不是测评
-- **一个踩坑**：新加的 `useMemo` 一开始放在了条件 `return` 之后，React 报 #310（渲染时 hook 数量变化）；已全部提到组件顶层。`out/` 目录被 Python 静态服务占用时 `next build` 清理失败，先停服务再构建即可
-- **证据**：`npx tsc --noEmit` exit 0；`npm run build` exit 0（静态导出 2/2）；headless Chrome 实测单选：切背题后主按钮变「开始背题（2774 题）」、题干区 0 个选项、点「想好了？翻开答案」后出现 4 个选项且正确项 `Dcame` 高亮、解析正常、自评「没记住」后进度变「第 1 / 2774 题 · 已背 1」并自动跳到第 2 题、`moread.recite.v1` 写入 `practice:danxuan-01-001` status=unknown、续答存档独立落在 `recite:全部:全部`；「只背没记住的（1 题）」出卷 1 题、题干正确；完型：`#/cloze/b01` 切背题后正文空格由 `1/2/3/4` 变为 `houses/lonely/free/attention`、右侧面板显示「正确答案 D. houses」+中文解析+原句依据、自评「没记住」写入 `cloze:b01#1`、进度变「已背 1 / 10 空」；背题本：单选 + 完型各 1 条汇总为「2 待背条目」、两个分区标题正确、点「显示答案」出正确答案与解析、点「记住了」后条目移出（待背 0 / 已记住 1）且存储状态改为 known；移动端 390px 下练习设置 / 背题卡 / 完型背题 / 背题本四页 `scrollWidth === clientWidth`；桌面 1280 与 1100 宽下导航 7 项单行不换行、无横向溢出
-- **本次改动文件**：`src/lib/recite.ts`（新增）、`src/components/pages/RecitePage.tsx`（新增）、`src/lib/storage.ts`、`src/lib/practice.ts`、`src/lib/router.ts`、`src/components/AppShell.tsx`、`src/components/Header.tsx`、`src/components/pages/PracticePage.tsx`、`src/components/pages/ClozePage.tsx`、`src/components/pages/HomePage.tsx`、`app/pages.css`、`app/globals.css`、`package.json`、`README.md`、`feature_list.json`、`progress.md`、`session-handoff.md`
+- **用户需求**：新增背题功能覆盖单选与完型，版本升到 3.1.1，验证完直接提交。**同日用户反馈调整**：完型不要背题功能；单选背题改成**直接显示答案**，不再手动点「记住了 / 没记住」。最终按调整后的形态收口
+- **单选背题**：`PracticePage` 加 `drill` 状态与「做题 / 背题」模式块。背题时**进入即显示**四个选项（正确项绿色高亮、其余淡化）、正确答案、考点标签与中文解析，逐题过一遍；删掉了原版的「想好了？翻开答案」按钮与两个自评按钮，也删掉了遮盖逻辑
+- **完型背题全部撤销**：顶部「背题」开关、`drill` 状态、答案填充渲染（`.cloze-inline.recite`）、逐空自评面板（`reciteCard`）、空号一览的绿/红着色、题库卡片的背题进度标识、题库页的背题本入口全部删除，完型回到改动前的样子
+- **背题本整体移除**：`RecitePage.tsx`、`src/lib/recite.ts`、`#/recite` 路由、`storage.ts` 的 `recite` key、Header 导航的「背题本」项、首页 3.1 横幅（改为指向 `#/practice`）全部删掉；`PracticeSource` 的 `unknown` 分支与 `PracticeResume` 的 `seen` 字段也一并清掉
+- **存档隔离保留**：背题 `recite:<大类>:<细分>` 与做题 `pool:<大类>:<细分>` 各占一槽，互不覆盖；`answeredCount` 在背题模式按 `cursor + 1` 计（翻到第几题就是进度）
+- **背题结果页**：背题没有作答与判分，单独给一张「背题完成」卡（「过完 N 题」+「再背一组 / 返回」），不再显示正确率与错题回顾
+- **证据**：`npx tsc --noEmit` exit 0；`npm run build` exit 0（静态导出 2/2）；headless Chrome 实测单选：切背题后主按钮变「开始背题（2774 题）」、进入即显示 4 个选项且正确项 `Dcame` 高亮、其余 3 个淡化、显示「正确答案 D」+中文解析+考点标签（两个态 / 时态），`recite-open-btn` 与 `recite-actions` 按钮数均为 0；翻到第 3 题答案依然常驻、存档 `cursor=2` / `mode=recite` / key 为 `recite:全部:全部`；答题卡标题「背题进度（2774 题）」；最后一题点「背完这组」进入「背题完成」页显示「过完 2774 题」+「再背一组 / 返回」、无误题回顾、存档已清空；完型 `#/cloze/b01` 顶部按钮回到「题库 / 答题卡 / 交卷」三项、侧栏标题「答题」、正文空格仍为题号、`.cloze-inline.recite` 与 `.cloze-card-recite` 计数均为 0；`#/recite` 路由返回 404 页、Header 导航回到 6 项、首页横幅文案改为「背题模式上线：单选题直接看答案与解析」且按钮指向 `#/practice`；移动端 390px 下练习设置 / 背题卡 / 完型页 `scrollWidth === clientWidth`；同时开做题与背题两个卷时存档并存 `pool:全部:全部` 与 `recite:全部:全部`
+- **本次改动文件**：`src/components/pages/PracticePage.tsx`、`src/components/pages/ClozePage.tsx`、`src/components/pages/HomePage.tsx`、`src/components/Header.tsx`、`src/components/AppShell.tsx`、`src/lib/practice.ts`、`src/lib/router.ts`、`src/lib/storage.ts`、`app/pages.css`、`README.md`、`feature_list.json`、`progress.md`、`session-handoff.md`；删除 `src/components/pages/RecitePage.tsx`、`src/lib/recite.ts`
 
 ## 2026-11-19 移动端整句选区工具条避让（feat-023）
 
@@ -189,7 +186,7 @@
 - [x] 语法知识点同步：六大词性更新上线，内容管线支持笔记软件压平导出与 `rgb()` 颜色（feat-021）
 - [x] 语法框架全面更新：五大分区约 6.9 万字上线，分割线渲染与题型分目录的内容管线适配（feat-022）
 - [x] 完型填空：65 篇 / 1065 空题库、内联空格作答页、答题卡与结果页，3.0 上线（feat-024）
-- [x] 背题模式：单选与完型都能遮住答案背、自评记住了/没记住、统一背题本，3.1 上线（feat-025）
+- [x] 单选背题模式：可切「做题 / 背题」，背题直接显示答案与解析，3.1 上线（feat-025）
 - [x] 移动端划句标记：整句选区工具条避让浏览器复制气泡，单词选区与桌面端保持原位（feat-023）
 
 ### 进行中
@@ -202,7 +199,7 @@
 2. 若其他语法分区也从笔记软件重新导出，先跑 `npm run content`，确认日志出现「已还原压平导出」且无保真校验报错
 3. 完型第 22/23/37/38/40 篇 PDF 内没有选项，未收录；若用户补上选项，重跑 `python scripts/extract-cloze-pdf.py` 再补 `cloze-*.json` 即可
 4. 完型的错题与标记尚未并入单选的错题本/标记本，目前按篇独立保存；如需统一，可把完型空号也写进 `practiceWrong`
-5. 背题本目前只收「没记住」的条目；若想加「已记住」的复习队列（艾宾浩斯式间隔重复），可在 `recite.ts` 上加 `nextReviewAt` 字段
+5. 背题目前只做「直接显示答案」的过题式复习；若之后想加「先遮答案自己回忆」的翻卡交互或间隔重复队列，可在 `drill` 模式上再扩展
 
 ## 阻塞 / 风险
 
