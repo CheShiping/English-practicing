@@ -1264,3 +1264,19 @@ html[data-theme='dark'] .today-card {
 
 /* ---------- Splash / toast ---------- */
 
+
+/* 3.1 背题模式上线横幅 */
+.recite-banner {
+  border-color: color-mix(in srgb, var(--gold) 32%, var(--line));
+  background: linear-gradient(180deg, var(--surface), var(--gold-soft));
+}
+
+.recite-banner .eyebrow {
+  color: var(--gold);
+}
+
+.recite-banner .btn.primary {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fffdf6;
+}

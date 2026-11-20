@@ -6,8 +6,10 @@ import {
   ArrowRight,
   BookOpen,
   BookX,
+  Brain,
   CheckCircle2,
   ClipboardList,
+  Eye,
   Flag,
   Layers,
   LayoutGrid,
@@ -27,6 +29,13 @@ import WordPopover from '@/components/reader/WordPopover';
 import { SelectionAnalysisModal } from '@/components/reader/SelectionTools';
 import { normalizeWord } from '@/lib/utils';
 import type { PracticeData, PracticeQuestion } from '@/lib/types';
+import {
+  getReciteBook,
+  getUnknownEntries,
+  practiceProgress,
+  removeRecite,
+  setReciteStatus,
+} from '@/lib/recite';
 import {
   addHistory,
   addWrong,
@@ -56,11 +65,13 @@ import {
 } from '@/lib/practice';
 
 type Phase = 'loading' | 'setup' | 'quiz' | 'result' | 'error';
+type Drill = 'answer' | 'recite';
 
 interface Paper {
   questions: PracticeQuestion[];
   label: string;
   source: PracticeSource;
+  mode: Drill;
 }
 
 export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
@@ -76,6 +87,8 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   const [category, setCategory] = useState<string>('全部');
   const [sub, setSub] = useState<string>('全部');
   const [mode, setMode] = useState<PracticeMode>('ordered');
+  // 做题 / 背题：背题先遮住答案，自己回想后再翻开并自评
+  const [drill, setDrill] = useState<Drill>('answer');
 
   // 练习状态
   const [paper, setPaper] = useState<Paper | null>(null);
@@ -89,6 +102,9 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   const [resumeVersion, setResumeVersion] = useState(0);
   const [showAllResumes, setShowAllResumes] = useState(false);
   const [wordPop, setWordPop] = useState<{ word: string; rect: DOMRect } | null>(null);
+  // 背题：已翻开过答案的题 id + 背题本自评版本
+  const [reciteSeen, setReciteSeen] = useState<Record<string, boolean>>({});
+  const [reciteVersion, setReciteVersion] = useState(0);
   // 题干选区翻译：选中多个词后出工具条
   const [stemSel, setStemSel] = useState<{ text: string; rect: DOMRect } | null>(null);
   const [analysisText, setAnalysisText] = useState<string | null>(null);
@@ -102,6 +118,12 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
     return getMarkBook();
   }, [markVersion, view, phase]);
   const marks = useMemo(() => Object.keys(markBook), [markBook]);
+
+  // 背题本里「没记住」的单选题数量
+  const reciteUnknownCount = useMemo(() => {
+    void reciteVersion;
+    return getUnknownEntries('practice').length;
+  }, [reciteVersion]);
 
   // 把一份续答存档恢复进练习状态；返回是否恢复成功
   const restoreResume = useCallback((saved: PracticeResume, d: PracticeData): boolean => {
@@ -123,12 +145,29 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
       if (savedPicks[questions[i].id]) lastAnswered = i;
     }
     setPaperKey(saved.key);
+    const recite = saved.mode === 'recite';
     setPaper({
       questions,
       label: saved.label || '继续上次练习',
-      source: saved.source === 'wrong' ? 'wrong' : saved.source === 'marked' ? 'marked' : 'pool',
+      source:
+        saved.source === 'wrong'
+          ? 'wrong'
+          : saved.source === 'marked'
+            ? 'marked'
+            : saved.source === 'unknown'
+              ? 'unknown'
+              : 'pool',
+      mode: recite ? 'recite' : 'answer',
     });
     setPicks(savedPicks);
+    // 背题存档：恢复已翻开的题
+    if (recite) {
+      const seen: Record<string, boolean> = {};
+      for (const id of saved.seen || []) if (valid.has(id)) seen[id] = true;
+      setReciteSeen(seen);
+    } else {
+      setReciteSeen({});
+    }
     // 老存档里的标记还没进独立标记本，这里补写进去
     for (const id of Array.isArray(saved.marks) ? saved.marks : []) {
       if (valid.has(id)) markQuestion(id);
@@ -176,8 +215,10 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
       source: paper.source,
       cursor,
       updatedAt: Date.now(),
+      mode: paper.mode,
+      seen: paper.mode === 'recite' ? Object.keys(reciteSeen) : undefined,
     });
-  }, [phase, paper, paperKey, picks, marks, cursor]);
+  }, [phase, paper, paperKey, picks, marks, cursor, reciteSeen]);
 
   // 答题卡弹层：锁背景滚动，Esc 关闭
   useEffect(() => {
@@ -239,7 +280,8 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
     return getPracticeResumes().filter((r) => answeredCount(r) > 0);
   }, [resumeVersion, phase]);
 
-  const currentKey = practiceResumeKey('pool', category, sub);
+  // 做题与背题各占一个存档位，互不覆盖
+  const currentKey = practiceResumeKey('pool', category, sub, drill);
   const currentResume = resumes.find((r) => r.key === currentKey) || null;
 
   const wrongCount = Object.keys(wrongBook).length;
@@ -268,7 +310,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
   }, [data, category, sub]);
 
   const startPractice = useCallback(
-    (source: PracticeSource) => {
+    (source: PracticeSource, drillMode: Drill = 'answer') => {
       if (!data) return;
       let questions: PracticeQuestion[];
       let label: string;
@@ -290,6 +332,20 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
           return;
         }
         label = '标记题重做';
+      } else if (source === 'unknown') {
+        // 背题本里标记「没记住」的单选题
+        const ids = new Set(
+          getUnknownEntries('practice').map((e) => e.ref),
+        );
+        const byId = new Map(data.questions.map((q) => [q.id, q]));
+        questions = [...ids]
+          .map((id) => byId.get(id))
+          .filter((q): q is PracticeQuestion => Boolean(q));
+        if (!questions.length) {
+          toast('背题本里还没有没记住的单选题', 'info');
+          return;
+        }
+        label = '背题本 · 没记住';
       } else {
         questions = pool;
         label = `${category === '全部' ? '全部考点' : category}${sub === '全部' ? '' : ' · ' + sub}`;
@@ -300,9 +356,19 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
         toast('没有符合条件的题目', 'info');
         return;
       }
-      setPaper({ questions: picked, label, source });
-      setPaperKey(source === 'pool' ? practiceResumeKey('pool', category, sub) : practiceResumeKey(source));
+      setPaper({
+        questions: picked,
+        label: drillMode === 'recite' ? `背题 · ${label}` : label,
+        source,
+        mode: drillMode,
+      });
+      setPaperKey(
+        source === 'pool'
+          ? practiceResumeKey('pool', category, sub, drillMode)
+          : practiceResumeKey(source),
+      );
       setPicks({});
+      setReciteSeen({});
       setCursor(0);
       setSession({ answered: 0, correct: 0 });
       setSheetOpen(false);
@@ -326,8 +392,30 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
     [picks, recordActivity],
   );
 
+  // 背题：翻开答案看解析，然后自评「记住了 / 没记住」
+  const handleReciteReveal = useCallback((q: PracticeQuestion) => {
+    setReciteSeen((s) => ({ ...s, [q.id]: true }));
+  }, []);
+
+  const handleReciteRate = useCallback(
+    (q: PracticeQuestion, known: boolean) => {
+      setReciteStatus('practice', q.id, known ? 'known' : 'unknown');
+      setReciteVersion((v) => v + 1);
+      // 自评完自动翻到下一题，背起来更顺
+      setCursor((c) => Math.min(c + 1, (paper?.questions.length || 1) - 1));
+    },
+    [paper],
+  );
+
   const finish = useCallback(() => {
     if (!paper) return;
+    if (paper.mode === 'recite') {
+      // 背题不计入做题正确率，只清掉这份背题存档
+      clearPracticeResume(paperKey);
+      setResumeVersion((v) => v + 1);
+      setPhase('result');
+      return;
+    }
     if (session.answered > 0) {
       addHistory({ at: Date.now(), total: session.answered, correct: session.correct, label: paper.label });
     }
@@ -343,7 +431,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
       const questions = data.questions.filter((q) => ids.has(q.id));
       if (!questions.length) return;
       const picked = buildPaper(questions, 0, 'ordered');
-      setPaper({ questions: picked, label: '错题重做', source: 'wrong' });
+      setPaper({ questions: picked, label: '错题重做', source: 'wrong', mode: 'answer' });
       setPaperKey(practiceResumeKey('wrong'));
       setPicks({});
       setCursor(0);
@@ -434,6 +522,199 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
     const q = paper.questions[cursor];
     const revealed = Boolean(picks[q.id]);
     const isRight = picks[q.id] === q.answer;
+
+    // ---------- 背题中 ----------
+    if (paper.mode === 'recite') {
+      const open = Boolean(reciteSeen[q.id]);
+      const seenCount = Object.keys(reciteSeen).length;
+      const marked = getReciteBook()[`practice:${q.id}`];
+      return (
+        <div className="page practice-page practice-quiz practice-recite">
+          <div className="practice-quiz-top">
+            <button
+              className="practice-back"
+              onClick={() => setPhase('setup')}
+              title="退出背题，进度已自动保存，重新进入可继续"
+            >
+              <ArrowLeft size={16} /> 退出
+            </button>
+            <div className="practice-progress">
+              <span className="practice-progress-text">
+                第 {cursor + 1} / {paper.questions.length} 题 · 已背 {seenCount}
+              </span>
+              <div className="practice-progress-bar">
+                <span style={{ width: `${(seenCount / paper.questions.length) * 100}%` }} />
+              </div>
+            </div>
+            <a
+              className="practice-grammar-link"
+              href={hrefFor('/grammar')}
+              target="_blank"
+              rel="noreferrer"
+              title="新标签打开语法知识点，不打断本次背题"
+            >
+              <BookOpen size={15} /> 语法速查
+            </a>
+            <button
+              className={`practice-mark ${marks.includes(q.id) ? 'on' : ''}`}
+              onClick={() => handleToggleMark(q.id)}
+              title={marks.includes(q.id) ? '取消标记' : '标记本题'}
+              aria-pressed={marks.includes(q.id)}
+            >
+              <Flag size={15} /> {marks.includes(q.id) ? '已标记' : '标记'}
+            </button>
+          </div>
+
+          <div className="practice-paper-label">
+            <span>{paper.label}</span>
+            <span className="practice-stem-hint">先自己想，再翻答案</span>
+          </div>
+
+          <div className="practice-qcard practice-recite-card">
+            <p
+              className="practice-stem"
+              ref={stemRef}
+              onMouseUp={() => window.setTimeout(captureStemSelection, 0)}
+              onTouchEnd={() => window.setTimeout(captureStemSelection, 60)}
+            >
+              <WordText text={q.stem} onWordClick={handleStemWord} />
+            </p>
+
+            {open ? (
+              <>
+                <div className="practice-options">
+                  {q.options.map((opt, i) => {
+                    const letter = LETTERS[i];
+                    const isAnswer = letter === q.answer;
+                    return (
+                      <div
+                        key={i}
+                        className={`practice-option recite-option ${isAnswer ? 'recite-right' : 'recite-dim'}`}
+                      >
+                        <span className="practice-option-letter">{letter}</span>
+                        <span className="practice-option-text">{opt || '（选项缺失）'}</span>
+                        {isAnswer && <CheckCircle2 size={16} className="practice-option-state" />}
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className="practice-reveal right">
+                  <div className="practice-reveal-head">
+                    <CheckCircle2 size={16} />
+                    <b>正确答案 {q.answer}</b>
+                    <span>
+                      {q.options[LETTERS.indexOf(q.answer)] || ''}
+                    </span>
+                    <span className="practice-tags">
+                      <span className={`practice-tag cat-${TAG_CLASS[q.category] || 'other'}`}>
+                        {q.category}
+                      </span>
+                      <span className="practice-tag sub">{q.sub}</span>
+                    </span>
+                  </div>
+                  {q.explanation && <p className="practice-explanation">{q.explanation}</p>}
+                </div>
+                <div className="recite-actions">
+                  <button
+                    className={`btn ${marked?.status === 'known' ? 'primary' : ''}`}
+                    onClick={() => handleReciteRate(q, true)}
+                  >
+                    <CheckCircle2 size={15} /> 记住了
+                  </button>
+                  <button
+                    className={`btn ${marked?.status === 'unknown' ? 'ghost danger-text' : 'ghost'}`}
+                    onClick={() => handleReciteRate(q, false)}
+                    title="收进背题本，下次再背一遍"
+                  >
+                    <XCircle size={15} /> 没记住
+                  </button>
+                </div>
+              </>
+            ) : (
+              <button className="btn primary large recite-open-btn" onClick={() => handleReciteReveal(q)}>
+                <Eye size={15} /> 想好了？翻开答案
+              </button>
+            )}
+          </div>
+
+          <div className="practice-nav">
+            <button className="btn ghost" disabled={cursor === 0} onClick={() => setCursor((c) => Math.max(0, c - 1))}>
+              <ArrowLeft size={15} /> 上一题
+            </button>
+            <button className="btn ghost" onClick={() => setSheetOpen(true)}>
+              <LayoutGrid size={15} /> 答题卡
+            </button>
+            {cursor < paper.questions.length - 1 ? (
+              <button className="btn primary" onClick={() => setCursor((c) => Math.min(paper.questions.length - 1, c + 1))}>
+                下一题 <ArrowRight size={15} />
+              </button>
+            ) : (
+              <button className="btn primary" onClick={finish}>
+                <Send size={15} /> 背完这组
+              </button>
+            )}
+          </div>
+
+          {sheetOpen && (
+            <div className="practice-sheet-mask" onClick={() => setSheetOpen(false)}>
+              <div
+                className="practice-sheet-panel"
+                role="dialog"
+                aria-modal="true"
+                aria-label="答题卡"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="practice-sheet-grip" />
+                <div className="practice-sheet-head">
+                  <p className="practice-sheet-title">背题进度（{paper.questions.length} 题）</p>
+                  <span className="practice-sheet-legend">绿 已翻答案 · 金框 当前</span>
+                </div>
+                <div className="practice-sheet-grid">
+                  {paper.questions.map((item, i) => (
+                    <button
+                      key={item.id}
+                      className={`practice-sheet-cell ${i === cursor ? 'cur' : ''} ${reciteSeen[item.id] ? 'ok' : ''}`}
+                      onClick={() => {
+                        setCursor(i);
+                        setSheetOpen(false);
+                      }}
+                    >
+                      {i + 1}
+                    </button>
+                  ))}
+                </div>
+                <button className="btn ghost practice-sheet-close" onClick={() => setSheetOpen(false)}>
+                  收起答题卡
+                </button>
+              </div>
+            </div>
+          )}
+
+          {wordPop && (
+            <WordPopover
+              key={wordPop.word}
+              word={wordPop.word}
+              anchor={wordPop.rect}
+              onClose={() => setWordPop(null)}
+            />
+          )}
+
+          {stemSel && (
+            <SelectionBar
+              text={stemSel.text}
+              rect={stemSel.rect}
+              onTranslate={translateSelection}
+              onCopy={copySelection}
+            />
+          )}
+
+          {analysisText && (
+            <SelectionAnalysisModal text={analysisText} onClose={() => setAnalysisText(null)} />
+          )}
+        </div>
+      );
+    }
+
     return (
       <div className="page practice-page practice-quiz">
         <div className="practice-quiz-top">
@@ -867,12 +1148,15 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
           <span className="eyebrow">Practice</span>
           <h1 className="section-title" style={{ marginTop: 12 }}>单选练习</h1>
           <p className="section-sub">
-            共 {data.total} 道专升本词汇语法单选题，按语法框架分好考点。答一题判一题，即时反馈对错与解析。
+            共 {data.total} 道专升本词汇语法单选题，按语法框架分好考点。答一题判一题，即时反馈对错与解析；也可以切到背题模式，先遮住答案自己回想。
           </p>
         </div>
         <div className="practice-head-actions">
           <a className="btn ghost" href={hrefFor('/grammar')}>
             <BookOpen size={15} /> 语法速查
+          </a>
+          <a className="btn ghost" href={hrefFor('/recite')}>
+            <Brain size={15} /> 背题本{reciteUnknownCount > 0 ? `（${reciteUnknownCount}）` : ''}
           </a>
           <a className="btn ghost" href={hrefFor('/practice/wrong')}>
             <BookX size={15} /> 错题本{wrongCount > 0 ? `（${wrongCount}）` : ''}
@@ -907,7 +1191,7 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
                   <div className="practice-resume-info">
                     <p className="practice-resume-label">{r.label}</p>
                     <p className="practice-resume-sub">
-                      已答 {done} / {r.ids.length} 题 · {timeAgo(r.updatedAt)}
+                      已{r.mode === 'recite' ? '背' : '答'} {done} / {r.ids.length} 题 · {timeAgo(r.updatedAt)}
                     </p>
                   </div>
                   <button
@@ -990,6 +1274,31 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
         )}
 
         <div className="practice-block">
+          <p className="practice-block-title"><Brain size={15} /> 模式</p>
+          <ChipScroller className="practice-chips" activeKey={drill}>
+            <button
+              className={`practice-chip ${drill === 'answer' ? 'on' : ''}`}
+              data-active={drill === 'answer' ? 'true' : undefined}
+              onClick={() => setDrill('answer')}
+            >
+              做题
+            </button>
+            <button
+              className={`practice-chip ${drill === 'recite' ? 'on' : ''}`}
+              data-active={drill === 'recite' ? 'true' : undefined}
+              onClick={() => setDrill('recite')}
+            >
+              背题
+            </button>
+          </ChipScroller>
+          <p className="practice-pool-hint" style={{ marginTop: 8 }}>
+            {drill === 'recite'
+              ? '背题模式：答案先遮住，自己回想后再翻开核对，并标记「记住了 / 没记住」。'
+              : '做题模式：点选项即时判定对错，错题自动进错题本。'}
+          </p>
+        </div>
+
+        <div className="practice-block">
           <p className="practice-block-title"><Shuffle size={15} /> 顺序</p>
           <ChipScroller className="practice-chips" activeKey={mode}>
             <button
@@ -1018,21 +1327,29 @@ export default function PracticePage({ tab }: { tab?: 'wrong' | 'marked' }) {
                   if (!restoreResume(currentResume, data)) setResumeVersion((v) => v + 1);
                 }}
               >
-                <Play size={15} /> 继续练习（已答 {answeredCount(currentResume)} / {currentResume.ids.length}）
+                <Play size={15} /> 继续{drill === 'recite' ? '背题' : '练习'}（已{drill === 'recite' ? '背' : '答'}{' '}
+                {answeredCount(currentResume)} / {currentResume.ids.length}）
               </button>
-              <button className="btn ghost" onClick={() => startPractice('pool')}>
+              <button className="btn ghost" onClick={() => startPractice('pool', drill)}>
                 <RefreshCw size={15} /> 重新开始（{pool.length} 题）
               </button>
             </>
           ) : (
-            <button className="btn primary large" onClick={() => startPractice('pool')}>
-              开始练习（{pool.length} 题）
+            <button className="btn primary large" onClick={() => startPractice('pool', drill)}>
+              {drill === 'recite' ? '开始背题' : '开始练习'}（{pool.length} 题）
+            </button>
+          )}
+          {drill === 'recite' && reciteUnknownCount > 0 && (
+            <button className="btn" onClick={() => startPractice('unknown', 'recite')}>
+              <Brain size={15} /> 只背没记住的（{reciteUnknownCount} 题）
             </button>
           )}
           <p className="practice-pool-hint">
             {currentResume
               ? '继续会接着上次的作答往下做，重新开始会覆盖这个考点的记录'
-              : `当前考点池 ${pool.length} 题，进入后直接练完全部`}
+              : drill === 'recite'
+                ? `当前考点池 ${pool.length} 题，进入后逐题翻开答案自评`
+                : `当前考点池 ${pool.length} 题，进入后直接练完全部`}
           </p>
         </div>
       </div>

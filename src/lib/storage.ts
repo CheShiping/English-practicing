@@ -20,6 +20,7 @@ export const KEYS = {
   practiceResume: PREFIX + 'practice.resume.v1',
   practiceResumes: PREFIX + 'practice.resumes.v2',
   cloze: PREFIX + 'cloze.v1',
+  recite: PREFIX + 'recite.v1',
 } as const;
 
 const memory = new Map<string, string>();

@@ -8,6 +8,7 @@ export type Route =
   | { name: 'reader'; id: string }
   | { name: 'practice'; tab?: 'wrong' | 'marked' }
   | { name: 'cloze'; id?: string }
+  | { name: 'recite' }
   | { name: 'grammar' }
   | { name: 'vocab' }
   | { name: 'stats' }
@@ -32,6 +33,8 @@ export function parseRoute(hash: string): Route {
       };
     case 'cloze':
       return { name: 'cloze', id: rest[0] };
+    case 'recite':
+      return { name: 'recite' };
     case 'grammar':
       return { name: 'grammar' };
     case 'vocab':

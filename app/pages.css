@@ -4819,3 +4819,174 @@
     justify-content: center;
   }
 }
+
+/* ============================================================
+   3.1 背题模式 Recite
+   ============================================================ */
+
+.recite-page {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.recite-section {
+  margin-top: 26px;
+}
+
+.recite-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+.recite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recite-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 20px 16px;
+}
+
+.recite-card-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.recite-cloze-title {
+  font-size: 13px;
+  color: var(--ink-2);
+  font-weight: 500;
+}
+
+.recite-time {
+  margin-left: auto;
+  font-size: 11.5px;
+  color: var(--faint);
+}
+
+.recite-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 12px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.recite-link:hover {
+  text-decoration: underline;
+}
+
+.recite-answer {
+  margin-top: 4px;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.recite-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.recite-reveal-btn {
+  align-self: flex-start;
+}
+
+/* 背题作答卡片 */
+
+.practice-recite-card .recite-option {
+  cursor: default;
+}
+
+.practice-recite-card .recite-option:hover {
+  transform: none;
+  border-color: var(--line);
+}
+
+.practice-recite-card .recite-right {
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+}
+
+.practice-recite-card .recite-dim {
+  opacity: 0.5;
+}
+
+.recite-open-btn {
+  align-self: center;
+  display: inline-flex;
+  margin-top: 4px;
+}
+
+.practice-recite .practice-progress-bar span {
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+}
+
+/* 完型：背题模式下正文直接显示答案词 */
+.cloze-inline.recite {
+  border-style: solid;
+  border-color: var(--green);
+  background: var(--green-soft);
+  color: var(--green);
+  font-family: var(--font-serif);
+  font-size: 14px;
+  height: 24px;
+  padding: 0 8px;
+}
+
+.cloze-inline.recite:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* 完型卡片上的背题进度 */
+.cloze-card-recite {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--line);
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.cloze-card-recite svg {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+/* 背题本：单选卡片与完型卡片共用 */
+.recite-card .practice-stem {
+  margin-bottom: 10px;
+}
+
+.recite-card .cloze-evidence {
+  margin: 0 0 10px;
+}
+
+.recite-card .recite-answer {
+  margin-bottom: 0;
+}

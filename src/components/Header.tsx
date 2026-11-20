@@ -9,6 +9,7 @@ const NAV = [
   { key: 'library', label: '文章库', href: '/library' },
   { key: 'cloze', label: '完型', href: '/cloze' },
   { key: 'practice', label: '单选练习', href: '/practice' },
+  { key: 'recite', label: '背题本', href: '/recite' },
   { key: 'grammar', label: '语法', href: '/grammar' },
   { key: 'stats', label: '学习数据', href: '/stats' },
 ];

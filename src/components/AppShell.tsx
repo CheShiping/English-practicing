@@ -11,6 +11,7 @@ import LibraryPage from '@/components/pages/LibraryPage';
 import ReaderPage from '@/components/pages/ReaderPage';
 import PracticePage from '@/components/pages/PracticePage';
 import ClozePage from '@/components/pages/ClozePage';
+import RecitePage from '@/components/pages/RecitePage';
 import GrammarPage from '@/components/pages/GrammarPage';
 import VocabPage from '@/components/pages/VocabPage';
 import StatsPage from '@/components/pages/StatsPage';
@@ -69,6 +70,7 @@ export default function AppShell() {
         {route.name === 'reader' && <ReaderPage articleId={route.id} />}
         {route.name === 'practice' && <PracticePage tab={route.tab} />}
         {route.name === 'cloze' && <ClozePage passageId={route.id} />}
+        {route.name === 'recite' && <RecitePage />}
         {route.name === 'grammar' && <GrammarPage />}
         {route.name === 'vocab' && <VocabPage />}
         {route.name === 'stats' && <StatsPage />}
