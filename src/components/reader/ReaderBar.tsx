@@ -13,9 +13,10 @@ import {
   Timer as TimerIcon,
 } from 'lucide-react';
 import type { Article } from '@/lib/types';
-import { cn, formatDuration } from '@/lib/utils';
+import { cn } from '@/lib/utils';
 import { useApp } from '@/state/AppProvider';
 import { hrefFor } from '@/lib/router';
+import SessionClock from '@/components/SessionClock';
 
 interface Props {
   article: Article;
@@ -24,7 +25,6 @@ interface Props {
   hasNext: boolean;
   onPrev: () => void;
   onNext: () => void;
-  onTimer: () => void;
   onTranslate: () => void;
   onSettings: () => void;
 }
@@ -36,11 +36,10 @@ export default function ReaderBar({
   hasNext,
   onPrev,
   onNext,
-  onTimer,
   onTranslate,
   onSettings,
 }: Props) {
-  const { bookmarks, toggleBookmark, timer, timerElapsed, timerRemaining, toast } = useApp();
+  const { bookmarks, toggleBookmark, toast } = useApp();
   const [menu, setMenu] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const bookmarked = bookmarks.includes(article.id);
@@ -70,18 +69,12 @@ export default function ReaderBar({
         </div>
 
         <div className="reader-bar-actions">
-          <button
-            className={cn('rb-btn', timer.status !== 'idle' && 'active')}
-            onClick={onTimer}
-            title="阅读计时"
-          >
+          <span className="rb-timer" title="进入阅读自动计时，退出阅读时结算本次用时">
             <TimerIcon size={15} />
-            <span className="rb-label">
-              {timer.status === 'idle'
-                ? '计时'
-                : formatDuration(timer.mode === 'down' ? timerRemaining : timerElapsed)}
-            </span>
-          </button>
+            <b>
+              <SessionClock fallback="00:00" />
+            </b>
+          </span>
 
           <button className="rb-btn" onClick={onTranslate} title="全文翻译">
             <Languages size={15} />

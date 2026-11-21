@@ -268,6 +268,35 @@ html[data-theme='dark'] .toast {
   justify-content: center;
 }
 
+/* 自动计时读数：进入阅读就开始走，离开时结算 */
+.rb-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 11px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.rb-timer b {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+}
+
+.rb-timer svg {
+  opacity: 0.85;
+}
+
 .rb-nav {
   display: flex;
   align-items: center;
@@ -1867,8 +1896,7 @@ html[data-theme='dark'] .sel-toolbar {
 }
 
 .note-field textarea,
-.import-textarea,
-.timer-custom input {
+.import-textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -1882,8 +1910,7 @@ html[data-theme='dark'] .sel-toolbar {
 }
 
 .note-field textarea:focus,
-.import-textarea:focus,
-.timer-custom input:focus {
+.import-textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 12%, transparent);
 }
@@ -2220,231 +2247,6 @@ html[data-theme='dark'] .sel-toolbar {
 
 .switch input:checked + span::after {
   transform: translateX(17px);
-}
-
-/* Timer modal */
-
-.timer-modal {
-  width: min(500px, 100%);
-}
-
-.timer-mode {
-  display: flex;
-  width: 100%;
-}
-
-.timer-mode button {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  padding: 9px;
-}
-
-.timer-mode button small {
-  font-size: 9.5px;
-  font-weight: 500;
-  opacity: 0.65;
-}
-
-.timer-duration {
-  margin-top: 18px;
-}
-
-.timer-label {
-  font-size: 10.5px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 9px;
-}
-
-.timer-presets {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
-}
-
-.timer-preset {
-  height: 34px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-  color: var(--ink-2);
-  font-size: 11.5px;
-  font-weight: 600;
-}
-
-.timer-preset:hover {
-  border-color: var(--line-strong);
-  background: var(--surface-2);
-}
-
-.timer-preset.active {
-  border-color: var(--accent);
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-
-.timer-custom {
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11.5px;
-  color: var(--muted);
-}
-
-.timer-custom input {
-  width: 90px;
-  padding: 7px 10px;
-  font-size: 12px;
-}
-
-.timer-tip {
-  margin-top: 18px;
-  display: flex;
-  align-items: flex-start;
-  gap: 7px;
-  font-size: 10.5px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.timer-live {
-  text-align: center;
-  padding: 12px 0 4px;
-}
-
-.timer-live-time {
-  font-family: var(--font-serif);
-  font-size: 58px;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-}
-
-.timer-live-label {
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 11.5px;
-}
-
-.timer-live-actions {
-  margin-top: 22px;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-/* Floating timer */
-
-.timer-float {
-  position: fixed;
-  z-index: 80;
-  width: 176px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: var(--shadow-lg);
-  overflow: hidden;
-  animation: pop-in 0.2s ease both;
-  user-select: none;
-}
-
-.timer-float.done {
-  border-color: var(--gold);
-  animation: timer-pulse 1.6s ease-in-out infinite;
-}
-
-@keyframes timer-pulse {
-  0%,
-  100% {
-    box-shadow: var(--shadow-lg);
-  }
-  50% {
-    box-shadow: 0 0 0 4px color-mix(in srgb, var(--gold) 22%, transparent), var(--shadow-lg);
-  }
-}
-
-.timer-float-head {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 7px 9px;
-  background: var(--surface-2);
-  border-bottom: 1px solid var(--line);
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  cursor: grab;
-}
-
-.timer-float-head:active {
-  cursor: grabbing;
-}
-
-.timer-float-grip {
-  color: var(--faint);
-  display: inline-flex;
-}
-
-.timer-mini {
-  margin-left: auto;
-  border: 0;
-  background: transparent;
-  color: var(--faint);
-  padding: 1px;
-}
-
-.timer-mini:hover {
-  color: var(--ink-2);
-}
-
-.timer-float-time {
-  display: block;
-  width: 100%;
-  border: 0;
-  background: transparent;
-  font-family: var(--font-serif);
-  font-size: 31px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  padding: 10px 10px 4px;
-  font-variant-numeric: tabular-nums;
-  color: var(--ink);
-}
-
-.timer-float-actions {
-  display: flex;
-  border-top: 1px solid var(--line);
-}
-
-.timer-float-actions button {
-  flex: 1;
-  border: 0;
-  background: transparent;
-  color: var(--muted);
-  font-size: 9.5px;
-  font-weight: 600;
-  padding: 7px 4px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-}
-
-.timer-float-actions button:hover {
-  background: var(--surface-2);
-  color: var(--ink-2);
-}
-
-.timer-float-actions button + button {
-  border-left: 1px solid var(--line);
 }
 
 /* Translation drawer */

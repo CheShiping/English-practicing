@@ -46,12 +46,13 @@ export function saveClozePick(id: string, num: number, letter: string): void {
   writeJson(KEYS.cloze, book);
 }
 
-export function finishCloze(id: string): void {
+export function finishCloze(id: string, timeSpent = 0): void {
   const book = readBook();
   const rec = book[id];
   if (!rec) return;
   rec.finishedAt = Date.now();
   rec.updatedAt = Date.now();
+  if (timeSpent > 0) rec.timeSpent = timeSpent;
   writeJson(KEYS.cloze, book);
 }
 

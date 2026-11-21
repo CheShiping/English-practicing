@@ -16,8 +16,10 @@ import type {
   DayStat,
   HighlightColor,
   ReadingProgress,
+  SessionKind,
+  SessionRecap,
   Settings,
-  TimerState,
+  StudySession,
   VocabWord,
 } from '@/lib/types';
 import { KEYS, readJson, writeJson } from '@/lib/storage';
@@ -34,15 +36,6 @@ const DEFAULT_SETTINGS: Settings = {
   highlightVocab: true,
   autoSpeak: false,
   showTranslation: false,
-};
-
-const DEFAULT_TIMER: TimerState = {
-  status: 'idle',
-  mode: 'up',
-  totalMs: 0,
-  accumulated: 0,
-  startedAt: null,
-  hidden: false,
 };
 
 export type ReviewRating = 'again' | 'good' | 'easy';
@@ -100,14 +93,21 @@ interface AppContextValue {
   lastRead: string;
   setLastRead: (id: string) => void;
 
-  timer: TimerState;
-  timerElapsed: number;
-  timerRemaining: number;
-  startTimer: (mode: 'up' | 'down', totalMs: number) => void;
-  pauseTimer: () => void;
-  resumeTimer: () => void;
-  resetTimer: () => void;
-  hideTimer: (hidden: boolean) => void;
+  /** 自动计时会话：进入阅读 / 完型即开始，离开时结算 */
+  session: StudySession | null;
+  sessionRecap: SessionRecap | null;
+  startSession: (
+    kind: SessionKind,
+    meta: { refId: string; label: string; answered?: number; total?: number },
+  ) => void;
+  syncSession: (patch: { answered?: number; total?: number }) => void;
+  endSession: (opts?: {
+    completed?: boolean;
+    answered?: number;
+    total?: number;
+    silent?: boolean;
+  }) => number;
+  dismissSessionRecap: () => void;
 
   toasts: ToastItem[];
   toast: (message: string, kind?: ToastItem['kind']) => void;
@@ -120,15 +120,6 @@ interface AppContextValue {
 const AppContext = createContext<AppContextValue | null>(null);
 
 function loadAll() {
-  const savedTimer = { ...DEFAULT_TIMER, ...readJson<Partial<TimerState>>(KEYS.timer, {}) };
-  // A page reload must not turn a running timer into hours of "reading time".
-  // Keep the accumulated value and pause it; the user can resume deliberately.
-  if (savedTimer.status === 'running' && savedTimer.startedAt) {
-    savedTimer.accumulated += Math.min(Date.now() - savedTimer.startedAt, 60000);
-    savedTimer.status = 'paused';
-    savedTimer.startedAt = null;
-  }
-
   return {
     settings: { ...DEFAULT_SETTINGS, ...readJson<Partial<Settings>>(KEYS.settings, {}) },
     vocab: readJson<VocabWord[]>(KEYS.vocab, []),
@@ -140,7 +131,6 @@ function loadAll() {
     bookmarks: readJson<string[]>(KEYS.bookmarks, []),
     recent: readJson<string[]>(KEYS.recent, []),
     lastRead: readJson<string>(KEYS.lastRead, ''),
-    timer: savedTimer,
   };
 }
 
@@ -156,10 +146,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [recent, setRecent] = useState<string[]>([]);
   const [lastRead, setLastReadState] = useState('');
-  const [timer, setTimer] = useState<TimerState>(DEFAULT_TIMER);
-  const [now, setNow] = useState(Date.now());
+  const [session, setSession] = useState<StudySession | null>(null);
+  const [sessionRecap, setSessionRecap] = useState<SessionRecap | null>(null);
   const [toasts, setToasts] = useState<ToastItem[]>([]);
-  const timerAlerted = useRef(false);
+  // 结算发生在组件卸载时，用 ref 拿最新一版会话，避免闭包里的旧值
+  const sessionRef = useRef<StudySession | null>(null);
 
   const refreshFromStorage = useCallback(() => {
     const d = loadAll();
@@ -173,7 +164,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setBookmarks(d.bookmarks);
     setRecent(d.recent);
     setLastReadState(d.lastRead);
-    setTimer(d.timer);
     setHydrated(true);
   }, []);
 
@@ -221,10 +211,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     if (!hydrated) return;
     writeJson(KEYS.lastRead, lastRead);
   }, [lastRead, hydrated]);
-  useEffect(() => {
-    if (!hydrated) return;
-    writeJson(KEYS.timer, timer);
-  }, [timer, hydrated]);
 
   // Apply reading preferences to the document so every screen benefits.
   useEffect(() => {
@@ -237,47 +223,31 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     root.style.setProperty('--reader-justify', settings.justify ? 'justify' : 'left');
   }, [settings]);
 
-  // Timer tick
+  const applySession = useCallback((next: StudySession | null) => {
+    sessionRef.current = next;
+    setSession(next);
+  }, []);
+
+  // 切到后台就把计时挂起，回来接着走，避免把挂机时间算进「本次耗时」
   useEffect(() => {
-    if (timer.status !== 'running') return;
-    const id = window.setInterval(() => setNow(Date.now()), 400);
-    return () => window.clearInterval(id);
-  }, [timer.status]);
-
-  const timerElapsed = useMemo(() => {
-    if (timer.status === 'running' && timer.startedAt) {
-      return timer.accumulated + Math.max(0, now - timer.startedAt);
-    }
-    return timer.accumulated;
-  }, [timer, now]);
-
-  const timerRemaining = useMemo(
-    () =>
-      timer.mode === 'down' && timer.totalMs > 0
-        ? Math.max(0, timer.totalMs - timerElapsed)
-        : timerElapsed,
-    [timer.mode, timer.totalMs, timerElapsed],
-  );
-
-  // Countdown completion
-  useEffect(() => {
-    if (timer.status !== 'running' || timer.mode !== 'down') return;
-    if (timerElapsed >= timer.totalMs && timer.totalMs > 0) {
-      setTimer((t) => ({ ...t, status: 'done', accumulated: t.totalMs, startedAt: null }));
-      if (!timerAlerted.current) {
-        timerAlerted.current = true;
-        setToasts((list) => [
-          ...list,
-          { id: uid('toast'), message: '倒计时结束，休息一下吧', kind: 'success' },
-        ]);
-        try {
-          if ('vibrate' in navigator) navigator.vibrate?.([120, 60, 120]);
-        } catch {
-          /* ignore */
-        }
+    const onVisibility = () => {
+      const cur = sessionRef.current;
+      if (!cur) return;
+      const t = Date.now();
+      if (document.visibilityState === 'hidden') {
+        if (cur.startedAt == null) return;
+        applySession({
+          ...cur,
+          accumulated: cur.accumulated + Math.max(0, t - cur.startedAt),
+          startedAt: null,
+        });
+      } else if (cur.startedAt == null) {
+        applySession({ ...cur, startedAt: t });
       }
-    }
-  }, [timerElapsed, timer.status, timer.mode, timer.totalMs]);
+    };
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => document.removeEventListener('visibilitychange', onVisibility);
+  }, [applySession]);
 
   // 退场先给节点打 closing 标记，等 CSS 过渡走完（180ms）再摘掉，避免原地消失
   const dismissToast = useCallback((id: string) => {
@@ -519,30 +489,109 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
   const setLastRead = useCallback((id: string) => setLastReadState(id), []);
 
-  const startTimer = useCallback((mode: 'up' | 'down', totalMs: number) => {
-    timerAlerted.current = false;
-    setNow(Date.now());
-    setTimer({
-      status: 'running',
-      mode,
-      totalMs,
-      accumulated: 0,
-      startedAt: Date.now(),
-      hidden: false,
-    });
-  }, []);
-  const pauseTimer = useCallback(() => {
-    setTimer((t) => {
-      if (t.status !== 'running' || !t.startedAt) return t;
-      return { ...t, status: 'paused', accumulated: t.accumulated + (Date.now() - t.startedAt), startedAt: null };
-    });
-  }, []);
-  const resumeTimer = useCallback(() => {
-    setNow(Date.now());
-    setTimer((t) => (t.status === 'paused' ? { ...t, status: 'running', startedAt: Date.now() } : t));
-  }, []);
-  const resetTimer = useCallback(() => setTimer(DEFAULT_TIMER), []);
-  const hideTimer = useCallback((hidden: boolean) => setTimer((t) => ({ ...t, hidden })), []);
+  // 进入阅读 / 完型时调用；阅读换篇不重置，完型换篇重开一局
+  const startSession = useCallback<AppContextValue['startSession']>(
+    (kind, meta) => {
+      const cur = sessionRef.current;
+      const t = Date.now();
+      // 后台标签页里开的新会话先挂起，等页面可见再走表
+      const startAt =
+        typeof document !== 'undefined' && document.visibilityState === 'hidden' ? null : t;
+      // 新一段学习开始时，上一段的结算框就该退场了
+      setSessionRecap(null);
+      if (cur && cur.kind === kind) {
+        if (cur.refId === meta.refId) {
+          const next: StudySession = {
+            ...cur,
+            label: meta.label,
+            answered: meta.answered ?? cur.answered,
+            total: meta.total ?? cur.total,
+          };
+          if (
+            next.label === cur.label &&
+            next.answered === cur.answered &&
+            next.total === cur.total
+          ) {
+            return;
+          }
+          applySession(next);
+          return;
+        }
+        if (kind === 'reading') {
+          // 上一篇 / 下一篇还是一次阅读，时钟继续走
+          applySession({
+            ...cur,
+            refId: meta.refId,
+            label: meta.label,
+            passages: cur.passages + 1,
+            startedAt: cur.startedAt ?? startAt,
+          });
+          return;
+        }
+        // 完型一次只做一篇：换篇就是新的一局
+        applySession({
+          kind,
+          refId: meta.refId,
+          label: meta.label,
+          startedAt: startAt,
+          accumulated: 0,
+          passages: 1,
+          answered: meta.answered ?? 0,
+          total: meta.total ?? 0,
+        });
+        return;
+      }
+      applySession({
+        kind,
+        refId: meta.refId,
+        label: meta.label,
+        startedAt: startAt,
+        accumulated: 0,
+        passages: 1,
+        answered: meta.answered ?? 0,
+        total: meta.total ?? 0,
+      });
+    },
+    [applySession],
+  );
+
+  const syncSession = useCallback<AppContextValue['syncSession']>(
+    (patch) => {
+      const cur = sessionRef.current;
+      if (!cur) return;
+      const answered = patch.answered ?? cur.answered;
+      const total = patch.total ?? cur.total;
+      if (answered === cur.answered && total === cur.total) return;
+      applySession({ ...cur, answered, total });
+    },
+    [applySession],
+  );
+
+  const endSession = useCallback<AppContextValue['endSession']>(
+    (opts) => {
+      const cur = sessionRef.current;
+      if (!cur) return 0;
+      const t = Date.now();
+      const ms = cur.accumulated + (cur.startedAt != null ? Math.max(0, t - cur.startedAt) : 0);
+      applySession(null);
+      // 停留太短多半是误点进来，不值得弹结算框
+      if (!opts?.silent && ms >= 3000) {
+        setSessionRecap({
+          kind: cur.kind,
+          ms,
+          label: cur.label,
+          passages: cur.passages,
+          answered: opts?.answered ?? cur.answered,
+          total: opts?.total ?? cur.total,
+          completed: Boolean(opts?.completed),
+        });
+      }
+      return ms;
+    },
+    [applySession],
+  );
+
+  const dismissSessionRecap = useCallback(() => setSessionRecap(null), []);
 
   const clearAll = useCallback(() => {
     setVocab([]);
@@ -554,8 +603,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setBookmarks([]);
     setRecent([]);
     setLastReadState('');
-    setTimer(DEFAULT_TIMER);
-  }, []);
+    applySession(null);
+    setSessionRecap(null);
+  }, [applySession]);
 
   const value: AppContextValue = {
     hydrated,
@@ -594,14 +644,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     pushRecent,
     lastRead,
     setLastRead,
-    timer,
-    timerElapsed,
-    timerRemaining,
-    startTimer,
-    pauseTimer,
-    resumeTimer,
-    resetTimer,
-    hideTimer,
+    session,
+    sessionRecap,
+    startSession,
+    syncSession,
+    endSession,
+    dismissSessionRecap,
     toasts,
     toast,
     dismissToast,

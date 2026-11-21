@@ -1,8 +1,8 @@
 {
   "name": "moread-english",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "private": true,
-  "description": "墨读英语 · 沉浸式英语阅读、单选与完型训练、背题模式",
+  "description": "墨读英语 · 沉浸式英语阅读、单选与完型训练、自动计时与背题模式",
   "scripts": {
     "dev": "next dev",
     "build": "npm run content && next build",

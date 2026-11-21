@@ -13,7 +13,6 @@ import {
   ListChecks,
   MoreHorizontal,
   Settings2,
-  Timer as TimerIcon,
   X,
 } from 'lucide-react';
 import { useApp } from '@/state/AppProvider';
@@ -33,7 +32,6 @@ import {
 import NoteModal from '@/components/reader/NoteModal';
 import ReaderBar from '@/components/reader/ReaderBar';
 import ReaderRail, { type RailTab } from '@/components/reader/ReaderRail';
-import { TimerModal, TimerWidget } from '@/components/reader/Timer';
 import TranslationDrawer from '@/components/reader/TranslationDrawer';
 import ReaderSettings from '@/components/reader/ReaderSettings';
 
@@ -64,6 +62,8 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
     bookmarks,
     toggleBookmark,
     toast,
+    startSession,
+    endSession,
   } = useApp();
 
   const [activeTab, setActiveTab] = useState<RailTab>('questions');
@@ -81,7 +81,6 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
   const [analysisText, setAnalysisText] = useState<string | null>(null);
   const [analysisFallback, setAnalysisFallback] = useState('');
   const [showSettings, setShowSettings] = useState(false);
-  const [showTimer, setShowTimer] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [scrollPct, setScrollPct] = useState(0);
   const [quizStartedAt, setQuizStartedAt] = useState<number | null>(null);
@@ -119,6 +118,22 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [articleId]);
+
+  // 自动计时：进阅读即开始；上一篇 / 下一篇仍算同一次阅读，只有退出阅读才结算
+  useEffect(() => {
+    if (!article) return;
+    startSession('reading', {
+      refId: article.id,
+      label: article.title || article.fallbackTitle,
+    });
+  }, [article, startSession]);
+
+  useEffect(
+    () => () => {
+      endSession();
+    },
+    [endSession],
+  );
 
   // Reading clock: count visible time and flush every ~15s.
   useEffect(() => {
@@ -360,7 +375,6 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
         hasNext={!!neighbors.next}
         onPrev={() => neighbors.prev && navigate(`/read/${neighbors.prev.id}`)}
         onNext={() => neighbors.next && navigate(`/read/${neighbors.next.id}`)}
-        onTimer={() => setShowTimer(true)}
         onTranslate={() => setShowTranslation(true)}
         onSettings={() => setShowSettings(true)}
       />
@@ -510,9 +524,6 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
             <div className="mobile-sheet-grip" />
             <div className="mobile-more-title">更多操作</div>
             <div className="mobile-more-grid">
-              <button onClick={() => { setShowTimer(true); setMobileMore(false); }}>
-                <TimerIcon size={18} /> 计时
-              </button>
               <button onClick={() => { setShowTranslation(true); setMobileMore(false); }}>
                 <Languages size={18} /> 全文翻译
               </button>
@@ -551,8 +562,6 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
           </div>
         </div>
       )}
-
-      <TimerWidget onOpen={() => setShowTimer(true)} />
 
       {wordPop && (
         <WordPopover
@@ -603,7 +612,6 @@ export default function ReaderPage({ articleId }: { articleId: string }) {
       )}
 
       {showSettings && <ReaderSettings onClose={() => setShowSettings(false)} />}
-      {showTimer && <TimerModal onClose={() => setShowTimer(false)} />}
       {showTranslation && (
         <TranslationDrawer article={article} onClose={() => setShowTranslation(false)} />
       )}

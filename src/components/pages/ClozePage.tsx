@@ -14,6 +14,7 @@ import {
   Play,
   RotateCcw,
   StickyNote,
+  Timer as TimerIcon,
   Trash2,
   X,
   XCircle,
@@ -25,7 +26,8 @@ import WordText from '@/components/WordText';
 import WordPopover from '@/components/reader/WordPopover';
 import NoteModal from '@/components/reader/NoteModal';
 import { SelectionAnalysisModal, SelectionToolbar } from '@/components/reader/SelectionTools';
-import { normalizeWord } from '@/lib/utils';
+import SessionClock from '@/components/SessionClock';
+import { formatDuration, normalizeWord } from '@/lib/utils';
 import {
   clearClozeRecord,
   clozeStat,
@@ -42,7 +44,16 @@ const BLANK_RE = /___(\d{1,2})___/g;
 type Phase = 'loading' | 'list' | 'quiz' | 'result' | 'error';
 
 export default function ClozePage({ passageId }: { passageId?: string }) {
-  const { recordActivity, toast, annotations, addAnnotation, removeAnnotation } = useApp();
+  const {
+    recordActivity,
+    toast,
+    annotations,
+    addAnnotation,
+    removeAnnotation,
+    startSession,
+    syncSession,
+    endSession,
+  } = useApp();
   const [data, setData] = useState<ClozeData | null>(null);
   const [phase, setPhase] = useState<Phase>('loading');
   const [error, setError] = useState('');
@@ -76,6 +87,17 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
   const paraRefs = useRef<Record<number, HTMLParagraphElement | null>>({});
   // 记录已经从路由进入过哪一篇，避免状态更新触发路由副作用把页面打回题库
   const enteredRef = useRef('');
+  // 交卷时顺手记下本次用时，结果页显示
+  const [lastMs, setLastMs] = useState(0);
+  // 只有本次作答亲手填满最后一个空才自动交卷，重进已完成篇不会闪退
+  const canAutoFinish = useRef(false);
+  // 卸载结算要用最新一版的数据，闭包里的旧值不可靠
+  const liveRef = useRef<{ phase: Phase; paper: ClozePassage | null; picks: Record<number, string> }>({
+    phase: 'loading',
+    paper: null,
+    picks: {},
+  });
+  liveRef.current = { phase, paper, picks };
 
   useEffect(() => {
     let alive = true;
@@ -125,6 +147,8 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
   const openPassage = useCallback((p: ClozePassage) => {
     const rec = getClozeBook()[p.id];
     enteredRef.current = p.id;
+    canAutoFinish.current = false;
+    setLastMs(0);
     setPaper(p);
     setPicks(rec?.picks || {});
     setActive(nextUnanswered(p, rec?.picks || {}));
@@ -138,10 +162,27 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
     window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
   }, []);
 
+  // 静默收掉本篇计时：完型一次一篇，退出即停止，不会在后台续走
+  const closeSession = useCallback(
+    (completed: boolean) => {
+      const s = liveRef.current;
+      const p = s.paper;
+      return endSession({
+        completed,
+        // 交卷的时间在结果页展示，不再弹结算框
+        silent: completed,
+        answered: p ? p.blanks.filter((b) => s.picks[b.num]).length : 0,
+        total: p?.blanks.length ?? 0,
+      });
+    },
+    [endSession],
+  );
+
   // 路由变化时同步：直接访问 #/cloze/xxx 也能进入；回到 #/cloze 则回题库
   useEffect(() => {
     if (!data) return;
     if (!passageId) {
+      if (liveRef.current.phase === 'quiz') closeSession(false);
       enteredRef.current = '';
       setPhase('list');
       return;
@@ -149,21 +190,60 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
     if (enteredRef.current === passageId) return;
     const target = data.passages.find((p) => p.id === passageId);
     if (!target) {
+      if (liveRef.current.phase === 'quiz') closeSession(false);
       setPhase('list');
       return;
     }
     enteredRef.current = target.id;
     const saved = getClozeBook()[target.id]?.picks || {};
+    canAutoFinish.current = false;
+    setLastMs(0);
     setPaper(target);
     setPicks(saved);
     setActive(nextUnanswered(target, saved));
     setPhase('quiz');
-  }, [passageId, data]);
+  }, [passageId, data, closeSession]);
+
+  // 进篇自动开始计时，离开就结算
+  useEffect(() => {
+    if (phase !== 'quiz' || !paper) return;
+    startSession('cloze', {
+      refId: paper.id,
+      label: `${paper.bank} · ${paper.label}`,
+      answered: paper.blanks.filter((b) => picks[b.num]).length,
+      total: paper.blanks.length,
+    });
+    // 只负责开表；作答进度交给下面的 syncSession
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, paper?.id, startSession]);
+
+  useEffect(() => {
+    if (phase !== 'quiz' || !paper) return;
+    syncSession({
+      answered: paper.blanks.filter((b) => picks[b.num]).length,
+      total: paper.blanks.length,
+    });
+  }, [picks, phase, paper, syncSession]);
+
+  // 直接切走页面（导航、浏览器返回）时也要把本次计时收掉
+  useEffect(
+    () => () => {
+      const s = liveRef.current;
+      if (s.phase !== 'quiz' || !s.paper) return;
+      endSession({
+        completed: false,
+        answered: s.paper.blanks.filter((b) => s.picks[b.num]).length,
+        total: s.paper.blanks.length,
+      });
+    },
+    [endSession],
+  );
 
   const handlePick = useCallback(
     (blank: ClozeBlank, letter: string) => {
       if (!paper) return;
       if (picks[blank.num]) return;
+      canAutoFinish.current = true;
       setPicks((prev) => ({ ...prev, [blank.num]: letter }));
       saveClozePick(paper.id, blank.num, letter);
       const ok = letter === blank.answer;
@@ -191,19 +271,37 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
     [paper, active],
   );
 
-  const finish = useCallback(() => {
-    if (!paper) return;
-    finishCloze(paper.id);
-    setVersion((v) => v + 1);
-    setAnswerSheet(false);
-    setPhase('result');
-    window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
-  }, [paper]);
+  const finish = useCallback(
+    (auto = false) => {
+      if (!paper) return;
+      const ms = closeSession(true);
+      setLastMs(ms);
+      finishCloze(paper.id, ms);
+      canAutoFinish.current = false;
+      setVersion((v) => v + 1);
+      setAnswerSheet(false);
+      setPhase('result');
+      if (auto) toast('全部答完，已自动交卷', 'success');
+      window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+    },
+    [paper, closeSession, toast],
+  );
+
+  // 全部答完自动交卷，不用再手动点一次
+  useEffect(() => {
+    if (phase !== 'quiz' || !paper || !canAutoFinish.current) return;
+    const answered = paper.blanks.filter((b) => picks[b.num]).length;
+    if (answered < paper.blanks.length) return;
+    const id = window.setTimeout(() => finish(true), 900);
+    return () => window.clearTimeout(id);
+  }, [picks, phase, paper, finish]);
 
   const reset = useCallback(() => {
     if (!paper) return;
     clearClozeRecord(paper.id);
+    canAutoFinish.current = false;
     setPicks({});
+    setLastMs(0);
     setActive(1);
     setVersion((v) => v + 1);
     setPhase('quiz');
@@ -419,6 +517,7 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
           <button
             className="practice-back"
             onClick={() => {
+              closeSession(false);
               enteredRef.current = '';
               setPhase('list');
               navigate('/cloze');
@@ -434,12 +533,16 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
               <span style={{ width: `${(stat.answered / stat.total) * 100}%` }} />
             </div>
           </div>
+          <span className="practice-clock" title="进入本篇自动计时，交卷或退出时停止">
+            <TimerIcon size={14} />
+            <SessionClock fallback="00:00" />
+          </span>
           <button className="practice-mark" onClick={() => setShowSheet(true)}>
             <LayoutGrid size={15} /> 答题卡
           </button>
           <button
             className="practice-mark"
-            onClick={finish}
+            onClick={() => finish()}
             title={allDone ? '查看本篇结果' : `还剩 ${remain} 空未答`}
           >
             <CheckCircle2 size={15} /> 交卷
@@ -514,7 +617,7 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
                 {allDone ? ' · 全部完成' : ` · 还剩 ${remain} 空`}
               </span>
               {allDone ? (
-                <button className="btn primary" onClick={finish}>
+                <button className="btn primary" onClick={() => finish()}>
                   查看结果 <ArrowRight size={15} />
                 </button>
               ) : (
@@ -579,7 +682,7 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
             已答 {stat.answered} / {stat.total} · 对 {stat.correct}
           </span>
           {allDone ? (
-            <button className="btn primary" onClick={finish}>
+            <button className="btn primary" onClick={() => finish()}>
               查看结果
             </button>
           ) : (
@@ -619,7 +722,7 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
                     下一空 <ChevronRight size={15} />
                   </button>
                 ) : (
-                  <button className="btn primary" onClick={finish}>
+                  <button className="btn primary" onClick={() => finish()}>
                     查看结果
                   </button>
                 )}
@@ -860,6 +963,11 @@ export default function ClozePage({ passageId }: { passageId?: string }) {
               正确率 {stat.percent}% · 共 {stat.total} 空
               {emptyList.length ? ` · 未答 ${emptyList.length} 空` : ''}
             </span>
+            {lastMs > 0 && (
+              <span className="practice-score-pct practice-score-time">
+                <TimerIcon size={13} /> 本次用时 {formatDuration(lastMs)}
+              </span>
+            )}
           </p>
           <div className="practice-actions">
             <button className="btn primary" onClick={reset}>

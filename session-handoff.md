@@ -2,18 +2,18 @@
 
 ## 当前目标
 
-- 目标：网站 3.1 已上线——单选背题模式（feat-025）
-- 当前状态：120 篇 / 588 题阅读、2774 道单选、65 篇 / 1065 空完型（每空答案 + 中文解析 + 原句依据）；单选练习页可切「做题 / 背题」，背题直接显示答案与解析；完型**不设**背题功能，回到纯作答；版本号 3.1.1；`npm run content`、`npx tsc --noEmit`、`npm run build` 全通过，headless Chrome 实测通过，已提交推送
+- 目标：网站 3.2 已上线——阅读与完型自动计时（feat-026）
+- 当前状态：120 篇 / 588 题阅读、2774 道单选、65 篇 / 1065 空完型；阅读进入即自动计时、换篇不中断、退出弹结算框；完型一次一篇、进篇自动计时、未完成退出弹提示、答完自动交卷；旧的手动正计时 / 倒计时 / 悬浮卡已移除；版本号 3.2.0；`npm run content`、`npx tsc --noEmit`、`npm run build` 全通过，headless Chrome 18 项断言全 PASS
 - 分支 / 提交：`main`
 
 ## 本次会话已完成
 
-- [x] 单选背题：练习页加「做题 / 背题」模式块；背题**进入即显示**四个选项（正确项绿色高亮、其余淡化）+ 正确答案 + 考点标签 + 中文解析，逐题过一遍
-- [x] 完型背题全部撤销：顶部开关、答案填充渲染、逐空自评面板、背题进度统计、题库卡片背题标识、题库页背题本入口
-- [x] 背题本整体移除：`RecitePage.tsx`、`src/lib/recite.ts`、`#/recite` 路由、`storage.ts` 的 `recite` key、Header 导航项、首页横幅（改为指向 `#/practice`）
-- [x] 存档隔离：背题 `recite:<大类>:<细分>` 与做题 `pool:<大类>:<细分>` 各占一槽，互不覆盖；背题不计入做题正确率统计
-- [x] 背题结果页：单独给「背题完成」卡（「过完 N 题」+「再背一组 / 返回」），不显示正确率与错题回顾
-- [x] 版本与入口：`package.json` 3.1.1、首页 3.1 横幅文案改为「单选题直接看答案与解析」
+- [x] 全局自动计时会话：`StudySession` / `startSession` / `syncSession` / `endSession` / `sessionRecap` 替换 `TimerState` 手动计时；页面不可见时挂起，回来续走
+- [x] 阅读：进篇自动开始；上一篇 / 下一篇（含地址栏换篇）继续计时并累计篇数；退出阅读弹「本次阅读结束」结算框，展示时长与连续篇数，随后清零，下次进入重新开始；顶栏胶囊与侧栏「数据」实时显示本次用时
+- [x] 完型：进篇自动开始、换篇重开；题库返回 / 浏览器返回 / 切到其它页面按未完成结算，弹「本篇没做完」并说明计时已停止、已答 X / Y 空；手动交卷与自动交卷不弹框，时间只出现在结果页
+- [x] 答完自动交卷：本次作答填满最后一个空后 900ms 自动进结果页并 toast；重进已答完的篇不会闪退，可继续复盘
+- [x] 清理：删除 `src/components/reader/Timer.tsx` 与 `app/reader.css` 的 224 行 `.timer-*` 样式；`KEYS.timer` 仅保留用于导出 / 清理旧数据
+- [x] 版本与文档：`package.json` 3.2.0；README 计时说明改为自动计时；feature_list / progress / 本交接同步
 
 ## 历史会话已完成
 
@@ -53,6 +53,10 @@
 | 完型无背题 | headless Chrome `#/cloze/b01` | 通过 | 顶部按钮回到「题库 / 答题卡 / 交卷」、侧栏标题「答题」、正文空格仍为题号、`.cloze-inline.recite` 计数 0 |
 | 背题本移除 | headless Chrome `#/recite` | 通过 | 路由返回 404 页、Header 导航回到 6 项、首页横幅按钮指向 `#/practice` |
 | 背题响应式 | headless Chrome 390 / 1280 / 1100 | 通过 | 移动端四页 `scrollWidth === clientWidth`；桌面导航 7 项单行不换行 |
+| 阅读自动计时 | headless Chrome `#/read/kepu-01` | 通过 | 2.2s 后 00:03；点「下一篇」00:03→00:05 不清零；侧栏「本次阅读」00:05；退出到文库弹「本次阅读结束 · 00:05 / 连续阅读 2 篇」；重进从 00:01 开始；停留 <3s 不弹结算；地址栏换篇也不清零 |
+| 完型自动计时 | headless Chrome `#/cloze/b01` | 通过 | 进入 00:02→00:04；答 1 空后返回题库弹「本篇没做完 · 00:04 / 已答 1 / 10 空」；1.8s 后读数不变且页面已无 `.practice-clock`；重进 00:00 |
+| 完型自动交卷 | headless Chrome `#/cloze/b01` | 通过 | 连答 10 空后 900ms 自动进结果页、显示「本次用时 00:03」；交卷与离开结果页均不再弹结算框 |
+| 计时响应式 | headless Chrome 390×844 | 通过 | 阅读器与完型页 `scrollWidth === innerWidth`，计时胶囊可见 |
 
 ## 文件变更
 
@@ -61,6 +65,8 @@
 - `src/data/answers/cloze-*.json`（新增 11 个）、`src/data/cloze-meta.ts`（新增）
 - `src/lib/cloze.ts`（新增）、`src/components/pages/ClozePage.tsx`（新增）
 - `src/lib/types.ts`、`src/lib/router.ts`、`src/lib/storage.ts`、`src/components/AppShell.tsx`、`src/components/Header.tsx`、`src/components/MobileTabBar.tsx`、`src/components/pages/HomePage.tsx`
+- `src/components/SessionClock.tsx`（新增）、`src/components/SessionRecap.tsx`（新增）；删除 `src/components/reader/Timer.tsx`
+- `src/state/AppProvider.tsx`（自动会话）、`src/lib/types.ts`（StudySession / SessionRecap）、`src/lib/cloze.ts`（记录用时）、`src/components/pages/ReaderPage.tsx`、`src/components/pages/ClozePage.tsx`、`src/components/reader/ReaderBar.tsx`、`src/components/reader/ReaderRail.tsx`、`app/reader.css`、`app/pages.css`（计时胶囊与结算框）
 - `app/pages.css`（完型样式）、`app/globals.css`（3.0 横幅）
 - `package.json`（3.0.0 + content 脚本串入完型）
 - `article/语法框架/*.md`（5 个，用户更新）
@@ -81,6 +87,12 @@
 - 内容源按题型分目录：文章管线递归扫描 `article/`，但显式跳过 `语法框架` / `单选` / `完型`；单选源用候选路径并在缺失时保留现有 `practice.json`，避免源文件移动导致部署失败
 - 完型答案按「篇 id → 空号」写入 `src/data/answers/cloze-*.json`，解析写中文、原句由管线自动截取；PDF 提取脚本只做排版还原，缺空格/编号笔误用脚本内 `PATCHES` 定点修补，不手改生成物
 - 背题自评与背题本已按用户反馈整体撤销：单选背题只做「直接显示答案」的过题式复习，不留标记、不存自评数据
+- 计时改为「会话制」而非「手动开关」：阅读一次进入算一段会话，换篇只在 `passages` 上加一，退出才结算；完型一篇一局，换篇即重置
+- 结算耗时取「页面可见时间」：`visibilitychange` 隐藏时把已走时累加进 `accumulated` 并把 `startedAt` 置空，回到前台再继续，挂机时间不计入
+- 计时读数由 `SessionClock` 各自每秒刷新，不把 `now` 放进全局 context，避免整页树跟着时钟重渲染
+- 结算框只在「阅读退出」与「完型未完成退出」出现；交卷（手动 / 自动）走 `silent`，用时改在结果页展示，避免弹两次
+- 停留不足 3 秒不弹结算，防止误点进入阅读页时被弹框打断
+- 完型自动交卷只由本次作答的最后一空触发（`canAutoFinish` ref），重进已答完的篇不会直接跳到结果页，保留复盘入口
 
 ## 阻塞 / 风险
 

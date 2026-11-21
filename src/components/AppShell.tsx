@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import MobileTabBar from '@/components/MobileTabBar';
 import ToastStack from '@/components/ToastStack';
+import SessionRecapModal from '@/components/SessionRecap';
 import HomePage from '@/components/pages/HomePage';
 import LibraryPage from '@/components/pages/LibraryPage';
 import ReaderPage from '@/components/pages/ReaderPage';
@@ -78,6 +79,7 @@ export default function AppShell() {
       </main>
       {!isReader && <Footer />}
       {!isReader && <MobileTabBar routeName={routeName} />}
+      <SessionRecapModal />
       <ToastStack />
     </div>
   );

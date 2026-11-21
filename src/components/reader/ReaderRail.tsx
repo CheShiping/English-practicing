@@ -17,6 +17,7 @@ import type { VocabWord } from '@/lib/types';
 import { cn, formatDuration, percent, relativeTime } from '@/lib/utils';
 import { speakWord } from '@/lib/dict';
 import QuestionPanel from '@/components/reader/QuestionPanel';
+import SessionClock from '@/components/SessionClock';
 import { hrefFor } from '@/lib/router';
 import { useApp } from '@/state/AppProvider';
 
@@ -38,7 +39,7 @@ interface Props {
 
 export default function ReaderRail(props: Props) {
   const { article, activeTab, onTab } = props;
-  const { annotations, vocab, settings, updateSettings, progress, timerElapsed, timer, markComplete, removeWord, removeAnnotation, toast } =
+  const { annotations, vocab, settings, updateSettings, progress, session, markComplete, removeWord, removeAnnotation, toast } =
     useApp();
 
   const articleAnns = annotations.filter((a) => a.articleId === article.id);
@@ -218,10 +219,12 @@ export default function ReaderRail(props: Props) {
               </div>
             </div>
 
-            {timer.status !== 'idle' && (
+            {session?.kind === 'reading' && (
               <div className="rail-timer-row">
-                <span>本次计时</span>
-                <b>{formatDuration(timerElapsed)}</b>
+                <span>本次阅读</span>
+                <b>
+                  <SessionClock fallback="00:00" />
+                </b>
               </div>
             )}
 

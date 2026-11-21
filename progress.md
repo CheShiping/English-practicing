@@ -2,8 +2,19 @@
 
 ## 当前状态
 
-**最后更新：** 2026-11-20
-**当前功能：** feat-025 网站 3.1：单选背题模式（已完成）
+**最后更新：** 2026-11-21
+**当前功能：** feat-026 阅读 / 完型自动计时（已完成）
+
+## 2026-11-21 阅读与完型自动计时（feat-026）
+
+- **用户需求**：阅读进来自动计时，上一篇 / 下一篇不退出阅读就要继续计时，只有退出阅读才弹计时框说明本次耗时并自动清零、下次重开；完型进来自动计时，没做完就退出要在弹框里说明题没做完且退出后不再继续计时，完型一次一篇，答完后自动推送（自动交卷到结果页）
+- **全局会话计时**：`AppProvider` 用 `StudySession` 替换原来的手动计时器（`TimerState` / 倒计时 / 暂停 / 悬浮卡全部移除）。`startSession(kind, meta)` 开表、`syncSession` 同步完型已答进度、`endSession` 结算并产出 `sessionRecap`；页面切到后台时把计时挂起（`startedAt=null`），回来继续，挂机时间不计入
+- **阅读**：`ReaderPage` 挂载即 `startSession('reading')`；路由换篇时同一会话继续走、`passages` 累加（同一篇重复进入不重置）；卸载时才 `endSession()`，停留 ≥3 秒才弹结算框，避免误点弹出。顶栏原「计时」按钮改为实时胶囊（`SessionClock`，每秒局部刷新，不带动整页重渲染），侧栏「数据」页显示「本次阅读」
+- **完型**：进入 `quiz` 即开表，换篇视为新的一局（重置为 00:00）；「题库」返回、浏览器返回、切到别的页面都会 `endSession({ completed:false })`，弹框标题「本篇没做完」并说明计时已停止、已答 X / Y 空；手动交卷与自动交卷走 `silent` 结算，时间只在结果页「本次用时」展示
+- **答完自动交卷**：本次作答亲手填满最后一个空后 900ms 自动 `finish(true)` 跳到结果页并 toast「全部答完，已自动交卷」；重进已答完的篇不会闪退，仍可通读复盘
+- **清理**：删除 `src/components/reader/Timer.tsx`（手动计时弹窗 + 悬浮卡）与 `app/reader.css` 中 224 行 `.timer-*` 样式；`KEYS.timer` 仅保留用于导出 / 清理旧数据
+- **证据**：`npx tsc --noEmit` exit 0；`npm run build` exit 0（120 篇 / 588 题、完型 65 篇 / 1065 空，导出 2/2）；headless Chrome 18 项断言全 PASS——阅读 2.2s 后 00:03、下一篇 00:03→00:05 不清零、侧栏「本次阅读」00:05、退出到文章库弹「本次阅读结束 · 00:05 / 连续阅读 2 篇」、关闭后重进从 00:01 开始；完型进入 00:02→00:04、答 1 空后返回题库弹「本篇没做完 · 00:04 / 已答 1 / 10 空 / 题没做完就退出」，1.8s 后读数不变且页面无 `.practice-clock`、重进 00:00、连答 10 空后 900ms 自动进结果页显示「本次用时 00:03」、交卷与离开结果页均不再弹结算框；390px 阅读器与完型页 `scrollWidth === innerWidth` 且计时胶囊可见；停留不足 3 秒不弹结算、地址栏切篇也不清零
+- **本次改动文件**：`src/state/AppProvider.tsx`、`src/lib/types.ts`、`src/lib/cloze.ts`、`src/lib/storage.ts`、`src/components/AppShell.tsx`、`src/components/SessionClock.tsx`（新增）、`src/components/SessionRecap.tsx`（新增）、`src/components/pages/ReaderPage.tsx`、`src/components/pages/ClozePage.tsx`、`src/components/reader/ReaderBar.tsx`、`src/components/reader/ReaderRail.tsx`、`app/reader.css`、`app/pages.css`、`README.md`、`package.json`、`feature_list.json`、`progress.md`、`session-handoff.md`；删除 `src/components/reader/Timer.tsx`
 
 ## 2026-11-20 网站 3.1：单选背题模式（feat-025）
 

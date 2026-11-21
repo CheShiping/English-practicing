@@ -1791,6 +1791,13 @@
   .page-narrow {
     width: calc(100% - 28px);
   }
+  .rb-timer {
+    padding: 0 9px;
+    gap: 4px;
+  }
+  .rb-timer svg {
+    display: none;
+  }
   .site-header-inner {
     width: calc(100% - 28px);
     gap: 12px;
@@ -1932,8 +1939,7 @@
   .import-textarea,
   .import-controls select,
   .import-controls input,
-  .note-field textarea,
-  .timer-custom input {
+  .note-field textarea {
     font-size: 16px;
   }
   .lib-grid {
@@ -2049,9 +2055,6 @@
   }
   .analysis-words {
     grid-template-columns: 1fr;
-  }
-  .timer-presets {
-    grid-template-columns: repeat(3, 1fr);
   }
   .drawer {
     width: 100%;
@@ -2435,6 +2438,24 @@
 .practice-progress-text {
   font-size: 12.5px;
   color: var(--muted);
+}
+
+/* 完型作答时的自动计时读数 */
+.practice-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .practice-progress-bar {
@@ -2841,6 +2862,16 @@
   margin-top: 6px;
   font-size: 13.5px;
   color: var(--muted);
+}
+
+.practice-score-time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
 }
 
 .practice-actions {
@@ -4848,4 +4879,87 @@
 
 .practice-recite .practice-progress-bar span {
   background: linear-gradient(90deg, var(--accent), var(--gold));
+}
+
+/* ============================================================
+   3.2 自动计时结算
+   ============================================================ */
+
+.recap-modal {
+  width: min(430px, 100%);
+}
+
+.recap-body {
+  padding-top: 26px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.recap-time {
+  font-family: var(--font-serif);
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.recap-caption {
+  margin-top: 9px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.recap-meter {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.recap-meter-ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.recap-warn {
+  margin: 18px 0 0;
+  padding: 11px 13px;
+  border-radius: var(--radius-sm);
+  background: var(--gold-soft);
+  color: var(--ink-2);
+  font-size: 12px;
+  line-height: 1.65;
+  text-align: left;
+  display: flex;
+  gap: 8px;
+}
+
+.recap-warn svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--gold);
+}
+
+.recap-note {
+  margin: 18px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.recap-foot {
+  justify-content: flex-end;
 }

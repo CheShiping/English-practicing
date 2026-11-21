@@ -8,6 +8,7 @@ export const KEYS = {
   progress: PREFIX + 'progress.v1',
   stats: PREFIX + 'stats.v1',
   imported: PREFIX + 'imported.v1',
+  // 3.2 起改为内存里的自动计时会话，此键只用于导出 / 清理旧版数据
   timer: PREFIX + 'timer.v1',
   bookmarks: PREFIX + 'bookmarks.v1',
   lastRead: PREFIX + 'lastRead.v1',

@@ -72,6 +72,8 @@ export interface ClozeRecord {
   picks: Record<number, string>;
   updatedAt: number;
   finishedAt?: number;
+  /** 交卷时本次用时（毫秒） */
+  timeSpent?: number;
 }
 
 export interface PracticeWrongEntry {
@@ -208,18 +210,33 @@ export interface Settings {
   showTranslation: boolean;
 }
 
-export interface TimerSettings {
-  mode: 'up' | 'down';
-  totalMs: number;
+// ---------- 自动计时会话 ----------
+
+export type SessionKind = 'reading' | 'cloze';
+
+export interface StudySession {
+  kind: SessionKind;
+  /** 当前文章 id / 完型篇 id */
+  refId: string;
+  label: string;
+  /** null = 页面切到后台，计时挂起 */
+  startedAt: number | null;
+  accumulated: number;
+  /** 阅读：本次连续读了几篇；完型固定 1 */
+  passages: number;
+  /** 完型：已答空数 / 总空数 */
+  answered: number;
+  total: number;
 }
 
-export interface TimerState {
-  status: 'idle' | 'running' | 'paused' | 'done';
-  mode: 'up' | 'down';
-  totalMs: number;
-  accumulated: number;
-  startedAt: number | null;
-  hidden: boolean;
+export interface SessionRecap {
+  kind: SessionKind;
+  ms: number;
+  label: string;
+  passages: number;
+  answered: number;
+  total: number;
+  completed: boolean;
 }
 
 export interface DictEntry {
