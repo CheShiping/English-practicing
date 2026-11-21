@@ -14,6 +14,7 @@
 - **答完自动交卷**：本次作答亲手填满最后一个空后 900ms 自动 `finish(true)` 跳到结果页并 toast「全部答完，已自动交卷」；重进已答完的篇不会闪退，仍可通读复盘
 - **清理**：删除 `src/components/reader/Timer.tsx`（手动计时弹窗 + 悬浮卡）与 `app/reader.css` 中 224 行 `.timer-*` 样式；`KEYS.timer` 仅保留用于导出 / 清理旧数据
 - **证据**：`npx tsc --noEmit` exit 0；`npm run build` exit 0（120 篇 / 588 题、完型 65 篇 / 1065 空，导出 2/2）；headless Chrome 18 项断言全 PASS——阅读 2.2s 后 00:03、下一篇 00:03→00:05 不清零、侧栏「本次阅读」00:05、退出到文章库弹「本次阅读结束 · 00:05 / 连续阅读 2 篇」、关闭后重进从 00:01 开始；完型进入 00:02→00:04、答 1 空后返回题库弹「本篇没做完 · 00:04 / 已答 1 / 10 空 / 题没做完就退出」，1.8s 后读数不变且页面无 `.practice-clock`、重进 00:00、连答 10 空后 900ms 自动进结果页显示「本次用时 00:03」、交卷与离开结果页均不再弹结算框；390px 阅读器与完型页 `scrollWidth === innerWidth` 且计时胶囊可见；停留不足 3 秒不弹结算、地址栏切篇也不清零
+- **提交与推送**：`f1e7728` feat-026，已推送 `34aa250..f1e7728  main -> main`（本会话可用代理为 `127.0.0.1:7897` + `http.sslBackend=openssl`；`$HTTPS_PROXY` 指向的 50231 端口返回 502）
 - **本次改动文件**：`src/state/AppProvider.tsx`、`src/lib/types.ts`、`src/lib/cloze.ts`、`src/lib/storage.ts`、`src/components/AppShell.tsx`、`src/components/SessionClock.tsx`（新增）、`src/components/SessionRecap.tsx`（新增）、`src/components/pages/ReaderPage.tsx`、`src/components/pages/ClozePage.tsx`、`src/components/reader/ReaderBar.tsx`、`src/components/reader/ReaderRail.tsx`、`app/reader.css`、`app/pages.css`、`README.md`、`package.json`、`feature_list.json`、`progress.md`、`session-handoff.md`；删除 `src/components/reader/Timer.tsx`
 
 ## 2026-11-20 网站 3.1：单选背题模式（feat-025）
